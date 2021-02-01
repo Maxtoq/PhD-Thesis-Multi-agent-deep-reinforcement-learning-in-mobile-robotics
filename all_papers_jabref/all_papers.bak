@@ -1,0 +1,212 @@
+% Encoding: UTF-8
+
+@Article{Haarnoja2018,
+  author        = {Tuomas Haarnoja and Aurick Zhou and Pieter Abbeel and Sergey Levine},
+  title         = {Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor},
+  year          = {2018},
+  month         = jan,
+  abstract      = {Model-free deep reinforcement learning (RL) algorithms have been demonstrated on a range of challenging decision making and control tasks. However, these methods typically suffer from two major challenges: very high sample complexity and brittle convergence properties, which necessitate meticulous hyperparameter tuning. Both of these challenges severely limit the applicability of such methods to complex, real-world domains. In this paper, we propose soft actor-critic, an off-policy actor-critic deep RL algorithm based on the maximum entropy reinforcement learning framework. In this framework, the actor aims to maximize expected reward while also maximizing entropy. That is, to succeed at the task while acting as randomly as possible. Prior deep RL methods based on this framework have been formulated as Q-learning methods. By combining off-policy updates with a stable stochastic actor-critic formulation, our method achieves state-of-the-art performance on a range of continuous control benchmark tasks, outperforming prior on-policy and off-policy methods. Furthermore, we demonstrate that, in contrast to other off-policy algorithms, our approach is very stable, achieving very similar performance across different random seeds.},
+  archiveprefix = {arXiv},
+  comment       = {Soft Actor Critic},
+  eprint        = {1801.01290},
+  file          = {:Haarnoja2018 - Soft Actor Critic_ off Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor.pdf:PDF},
+  groups        = {Policy based, Actor Critic},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Fujimoto2018,
+  author        = {Scott Fujimoto and Herke van Hoof and David Meger},
+  title         = {Addressing Function Approximation Error in Actor-Critic Methods},
+  year          = {2018},
+  month         = feb,
+  abstract      = {In value-based reinforcement learning methods such as deep Q-learning, function approximation errors are known to lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance. We evaluate our method on the suite of OpenAI gym tasks, outperforming the state of the art in every environment tested.},
+  archiveprefix = {arXiv},
+  comment       = {Twin Delayed DDPG},
+  eprint        = {1802.09477},
+  file          = {:Fujimoto2018 - Addressing Function Approximation Error in Actor Critic Methods.pdf:PDF},
+  groups        = {Policy based, Actor Critic, DDPG},
+  keywords      = {cs.AI, cs.LG, stat.ML},
+  primaryclass  = {cs.AI},
+  readstatus    = {read},
+}
+
+@Article{Schulman2017,
+  author        = {John Schulman and Filip Wolski and Prafulla Dhariwal and Alec Radford and Oleg Klimov},
+  title         = {Proximal Policy Optimization Algorithms},
+  year          = {2017},
+  month         = jul,
+  abstract      = {We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a "surrogate" objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates. The new methods, which we call proximal policy optimization (PPO), have some of the benefits of trust region policy optimization (TRPO), but they are much simpler to implement, more general, and have better sample complexity (empirically). Our experiments test PPO on a collection of benchmark tasks, including simulated robotic locomotion and Atari game playing, and we show that PPO outperforms other online policy gradient methods, and overall strikes a favorable balance between sample complexity, simplicity, and wall-time.},
+  archiveprefix = {arXiv},
+  comment       = {PPO},
+  eprint        = {1707.06347},
+  file          = {:Schulman2017 - Proximal Policy Optimization Algorithms.pdf:PDF},
+  groups        = {Policy based, Actor Critic, TRPO},
+  keywords      = {cs.LG},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Schulman2015,
+  author        = {John Schulman and Sergey Levine and Philipp Moritz and Michael I. Jordan and Pieter Abbeel},
+  title         = {Trust Region Policy Optimization},
+  year          = {2015},
+  month         = feb,
+  abstract      = {We describe an iterative procedure for optimizing policies, with guaranteed monotonic improvement. By making several approximations to the theoretically-justified procedure, we develop a practical algorithm, called Trust Region Policy Optimization (TRPO). This algorithm is similar to natural policy gradient methods and is effective for optimizing large nonlinear policies such as neural networks. Our experiments demonstrate its robust performance on a wide variety of tasks: learning simulated robotic swimming, hopping, and walking gaits; and playing Atari games using images of the screen as input. Despite its approximations that deviate from the theory, TRPO tends to give monotonic improvement, with little tuning of hyperparameters.},
+  archiveprefix = {arXiv},
+  comment       = {TRPO},
+  eprint        = {1502.05477},
+  file          = {:Schulman2015 - Trust Region Policy Optimization.pdf:PDF},
+  groups        = {Policy based, Actor Critic, TRPO},
+  keywords      = {cs.LG},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Schrittwieser2019,
+  author        = {Julian Schrittwieser and Ioannis Antonoglou and Thomas Hubert and Karen Simonyan and Laurent Sifre and Simon Schmitt and Arthur Guez and Edward Lockhart and Demis Hassabis and Thore Graepel and Timothy Lillicrap and David Silver},
+  title         = {Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model},
+  year          = {2019},
+  month         = nov,
+  abstract      = {Constructing agents with planning capabilities has long been one of the main challenges in the pursuit of artificial intelligence. Tree-based planning methods have enjoyed huge success in challenging domains, such as chess and Go, where a perfect simulator is available. However, in real-world problems the dynamics governing the environment are often complex and unknown. In this work we present the MuZero algorithm which, by combining a tree-based search with a learned model, achieves superhuman performance in a range of challenging and visually complex domains, without any knowledge of their underlying dynamics. MuZero learns a model that, when applied iteratively, predicts the quantities most directly relevant to planning: the reward, the action-selection policy, and the value function. When evaluated on 57 different Atari games - the canonical video game environment for testing AI techniques, in which model-based planning approaches have historically struggled - our new algorithm achieved a new state of the art. When evaluated on Go, chess and shogi, without any knowledge of the game rules, MuZero matched the superhuman performance of the AlphaZero algorithm that was supplied with the game rules.},
+  archiveprefix = {arXiv},
+  comment       = {Muzero},
+  doi           = {10.1038/s41586-020-03051-4},
+  eprint        = {1911.08265},
+  file          = {:Schrittwieser2019 - Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model.pdf:PDF},
+  groups        = {Model based},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Hafner2019,
+  author        = {Danijar Hafner and Timothy Lillicrap and Jimmy Ba and Mohammad Norouzi},
+  title         = {Dream to Control: Learning Behaviors by Latent Imagination},
+  year          = {2019},
+  month         = dec,
+  abstract      = {Learned world models summarize an agent's experience to facilitate learning complex behaviors. While learning world models from high-dimensional sensory inputs is becoming feasible through deep learning, there are many potential ways for deriving behaviors from them. We present Dreamer, a reinforcement learning agent that solves long-horizon tasks from images purely by latent imagination. We efficiently learn behaviors by propagating analytic gradients of learned state values back through trajectories imagined in the compact state space of a learned world model. On 20 challenging visual control tasks, Dreamer exceeds existing approaches in data-efficiency, computation time, and final performance.},
+  archiveprefix = {arXiv},
+  comment       = {Dreamer},
+  eprint        = {1912.01603},
+  file          = {:Hafner2019 - Dream to Control_ Learning Behaviors by Latent Imagination.pdf:PDF},
+  groups        = {Model based},
+  keywords      = {cs.LG, cs.AI, cs.RO},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Pathak2017,
+  author        = {Deepak Pathak and Pulkit Agrawal and Alexei A. Efros and Trevor Darrell},
+  title         = {Curiosity-driven Exploration by Self-supervised Prediction},
+  year          = {2017},
+  month         = may,
+  abstract      = {In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent's ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: VizDoom and Super Mario Bros. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch. Demo video and code available at https://pathak22.github.io/noreward-rl/},
+  archiveprefix = {arXiv},
+  comment       = {Intrinsinc Curiosity Module},
+  eprint        = {1705.05363},
+  file          = {:Pathak2017 - Curiosity Driven Exploration by Self Supervised Prediction.pdf:PDF},
+  groups        = {Intrinsic goals, Curiosity},
+  keywords      = {cs.LG, cs.AI, cs.CV, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Burda2018,
+  author        = {Yuri Burda and Harrison Edwards and Amos Storkey and Oleg Klimov},
+  title         = {Exploration by Random Network Distillation},
+  year          = {2018},
+  month         = oct,
+  abstract      = {We introduce an exploration bonus for deep reinforcement learning methods that is easy to implement and adds minimal overhead to the computation performed. The bonus is the error of a neural network predicting features of the observations given by a fixed randomly initialized neural network. We also introduce a method to flexibly combine intrinsic and extrinsic rewards. We find that the random network distillation (RND) bonus combined with this increased flexibility enables significant progress on several hard exploration Atari games. In particular we establish state of the art performance on Montezuma's Revenge, a game famously difficult for deep reinforcement learning methods. To the best of our knowledge, this is the first method that achieves better than average human performance on this game without using demonstrations or having access to the underlying state of the game, and occasionally completes the first level.},
+  archiveprefix = {arXiv},
+  eprint        = {1810.12894},
+  file          = {:Burda2018 - Exploration by Random Network Distillation.pdf:PDF},
+  groups        = {Intrinsic goals, Curiosity},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Lillicrap2015,
+  author        = {Timothy P. Lillicrap and Jonathan J. Hunt and Alexander Pritzel and Nicolas Heess and Tom Erez and Yuval Tassa and David Silver and Daan Wierstra},
+  title         = {Continuous control with deep reinforcement learning},
+  year          = {2015},
+  month         = sep,
+  abstract      = {We adapt the ideas underlying the success of Deep Q-Learning to the continuous action domain. We present an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. Using the same learning algorithm, network architecture and hyper-parameters, our algorithm robustly solves more than 20 simulated physics tasks, including classic problems such as cartpole swing-up, dexterous manipulation, legged locomotion and car driving. Our algorithm is able to find policies whose performance is competitive with those found by a planning algorithm with full access to the dynamics of the domain and its derivatives. We further demonstrate that for many of the tasks the algorithm can learn policies end-to-end: directly from raw pixel inputs.},
+  archiveprefix = {arXiv},
+  comment       = {Deep Deterministic Policy Gradient},
+  eprint        = {1509.02971},
+  file          = {:Lillicrap2015 - Continuous Control with Deep Reinforcement Learning.pdf:PDF},
+  groups        = {Policy based, Actor Critic, DDPG},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Misc{Williams1992,
+  author     = {Ronald J. Williams},
+  title      = {Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning},
+  year       = {1992},
+  comment    = {Reinforce},
+  doi        = {10.1007/978-1-4615-3618-5_2},
+  file       = {:Williams1992_Article_SimpleStatisticalGradient-foll.pdf:PDF},
+  groups     = {Policy based},
+  pages      = {5-32},
+  readstatus = {read},
+}
+
+@Article{Zhang2018,
+  author        = {Marvin Zhang and Sharad Vikram and Laura Smith and Pieter Abbeel and Matthew J. Johnson and Sergey Levine},
+  title         = {SOLAR: Deep Structured Representations for Model-Based Reinforcement Learning},
+  year          = {2018},
+  month         = aug,
+  abstract      = {Model-based reinforcement learning (RL) has proven to be a data efficient approach for learning control tasks but is difficult to utilize in domains with complex observations such as images. In this paper, we present a method for learning representations that are suitable for iterative model-based policy improvement, even when the underlying dynamical system has complex dynamics and image observations, in that these representations are optimized for inferring simple dynamics and cost models given data from the current policy. This enables a model-based RL method based on the linear-quadratic regulator (LQR) to be used for systems with image observations. We evaluate our approach on a range of robotics tasks, including manipulation with a real-world robotic arm directly from images. We find that our method produces substantially better final performance than other model-based RL methods while being significantly more efficient than model-free RL.},
+  archiveprefix = {arXiv},
+  eprint        = {1808.09105},
+  file          = {:Zhang2018 - SOLAR_ Deep Structured Representations for Model Based Reinforcement Learning.pdf:PDF},
+  groups        = {Model based},
+  keywords      = {cs.LG, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Sekar2020,
+  author        = {Ramanan Sekar and Oleh Rybkin and Kostas Daniilidis and Pieter Abbeel and Danijar Hafner and Deepak Pathak},
+  title         = {Planning to Explore via Self-Supervised World Models},
+  year          = {2020},
+  month         = may,
+  abstract      = {Reinforcement learning allows solving complex tasks, however, the learning tends to be task-specific and the sample efficiency remains a challenge. We present Plan2Explore, a self-supervised reinforcement learning agent that tackles both these challenges through a new approach to self-supervised exploration and fast adaptation to new tasks, which need not be known during exploration. During exploration, unlike prior methods which retrospectively compute the novelty of observations after the agent has already reached them, our agent acts efficiently by leveraging planning to seek out expected future novelty. After exploration, the agent quickly adapts to multiple downstream tasks in a zero or a few-shot manner. We evaluate on challenging control tasks from high-dimensional image inputs. Without any training supervision or task-specific interaction, Plan2Explore outperforms prior self-supervised exploration methods, and in fact, almost matches the performances oracle which has access to rewards. Videos and code at https://ramanans1.github.io/plan2explore/},
+  archiveprefix = {arXiv},
+  eprint        = {2005.05960},
+  file          = {:Sekar2020 - Planning to Explore Via Self Supervised World Models.pdf:PDF},
+  groups        = {Model based, Disagreement},
+  keywords      = {cs.LG, cs.AI, cs.CV, cs.NE, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Pathak2019,
+  author        = {Deepak Pathak and Dhiraj Gandhi and Abhinav Gupta},
+  title         = {Self-Supervised Exploration via Disagreement},
+  year          = {2019},
+  month         = jun,
+  abstract      = {Efficient exploration is a long-standing problem in sensorimotor learning. Major advances have been demonstrated in noise-free, non-stochastic domains such as video games and simulation. However, most of these formulations either get stuck in environments with stochastic dynamics or are too inefficient to be scalable to real robotics setups. In this paper, we propose a formulation for exploration inspired by the work in active learning literature. Specifically, we train an ensemble of dynamics models and incentivize the agent to explore such that the disagreement of those ensembles is maximized. This allows the agent to learn skills by exploring in a self-supervised manner without any external reward. Notably, we further leverage the disagreement objective to optimize the agent's policy in a differentiable manner, without using reinforcement learning, which results in a sample-efficient exploration. We demonstrate the efficacy of this formulation across a variety of benchmark environments including stochastic-Atari, Mujoco and Unity. Finally, we implement our differentiable exploration on a real robot which learns to interact with objects completely from scratch. Project videos and code are at https://pathak22.github.io/exploration-by-disagreement/},
+  archiveprefix = {arXiv},
+  eprint        = {1906.04161},
+  file          = {:Pathak2019 - Self Supervised Exploration Via Disagreement.pdf:PDF},
+  groups        = {Disagreement},
+  keywords      = {cs.LG, cs.AI, cs.CV, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Disagreement\;0\;0\;0x8a8a8aff\;\;\;;
+}
