@@ -125,6 +125,7 @@
   groups        = {Intrinsic goals, Curiosity},
   keywords      = {cs.LG, cs.AI, stat.ML},
   primaryclass  = {cs.LG},
+  readstatus    = {read},
 }
 
 @Article{Lillicrap2015,
@@ -197,16 +198,91 @@
   primaryclass  = {cs.LG},
 }
 
+@Article{Hessel2017,
+  author        = {Matteo Hessel and Joseph Modayil and Hado van Hasselt and Tom Schaul and Georg Ostrovski and Will Dabney and Dan Horgan and Bilal Piot and Mohammad Azar and David Silver},
+  title         = {Rainbow: Combining Improvements in Deep Reinforcement Learning},
+  year          = {2017},
+  month         = oct,
+  abstract      = {The deep reinforcement learning community has made several independent improvements to the DQN algorithm. However, it is unclear which of these extensions are complementary and can be fruitfully combined. This paper examines six extensions to the DQN algorithm and empirically studies their combination. Our experiments show that the combination provides state-of-the-art performance on the Atari 2600 benchmark, both in terms of data efficiency and final performance. We also provide results from a detailed ablation study that shows the contribution of each component to overall performance.},
+  archiveprefix = {arXiv},
+  eprint        = {1710.02298},
+  file          = {:Hessel2017 - Rainbow_ Combining Improvements in Deep Reinforcement Learning.pdf:PDF},
+  groups        = {Value based},
+  keywords      = {cs.AI, cs.LG},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Vecerik2017,
+  author        = {Mel Vecerik and Todd Hester and Jonathan Scholz and Fumin Wang and Olivier Pietquin and Bilal Piot and Nicolas Heess and Thomas Rothörl and Thomas Lampe and Martin Riedmiller},
+  title         = {Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards},
+  year          = {2017},
+  month         = jul,
+  abstract      = {We propose a general and model-free approach for Reinforcement Learning (RL) on real robotics with sparse rewards. We build upon the Deep Deterministic Policy Gradient (DDPG) algorithm to use demonstrations. Both demonstrations and actual interactions are used to fill a replay buffer and the sampling ratio between demonstrations and transitions is automatically tuned via a prioritized replay mechanism. Typically, carefully engineered shaping rewards are required to enable the agents to efficiently explore on high dimensional control problems such as robotics. They are also required for model-based acceleration methods relying on local solvers such as iLQG (e.g. Guided Policy Search and Normalized Advantage Function). The demonstrations replace the need for carefully engineered rewards, and reduce the exploration problem encountered by classical RL approaches in these domains. Demonstrations are collected by a robot kinesthetically force-controlled by a human demonstrator. Results on four simulated insertion tasks show that DDPG from demonstrations out-performs DDPG, and does not require engineered rewards. Finally, we demonstrate the method on a real robotics task consisting of inserting a clip (flexible object) into a rigid object.},
+  archiveprefix = {arXiv},
+  eprint        = {1707.08817},
+  file          = {:Vecerik2017 - Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards.pdf:PDF},
+  groups        = {DDPG, Robotics},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Eysenbach2018,
+  author        = {Benjamin Eysenbach and Abhishek Gupta and Julian Ibarz and Sergey Levine},
+  title         = {Diversity is All You Need: Learning Skills without a Reward Function},
+  year          = {2018},
+  month         = feb,
+  abstract      = {Intelligent creatures can explore their environments and learn useful skills without supervision. In this paper, we propose DIAYN ('Diversity is All You Need'), a method for learning useful skills without a reward function. Our proposed method learns skills by maximizing an information theoretic objective using a maximum entropy policy. On a variety of simulated robotic tasks, we show that this simple objective results in the unsupervised emergence of diverse skills, such as walking and jumping. In a number of reinforcement learning benchmark environments, our method is able to learn a skill that solves the benchmark task despite never receiving the true task reward. We show how pretrained skills can provide a good parameter initialization for downstream tasks, and can be composed hierarchically to solve complex, sparse reward tasks. Our results suggest that unsupervised discovery of skills can serve as an effective pretraining mechanism for overcoming challenges of exploration and data efficiency in reinforcement learning.},
+  archiveprefix = {arXiv},
+  eprint        = {1802.06070},
+  file          = {:Eysenbach2018 - Diversity Is All You Need_ Learning Skills without a Reward Function.pdf:PDF},
+  groups        = {Diversity},
+  keywords      = {cs.AI, cs.RO},
+  primaryclass  = {cs.AI},
+  readstatus    = {skimmed},
+}
+
+@Article{Burda2018a,
+  author        = {Yuri Burda and Harri Edwards and Deepak Pathak and Amos Storkey and Trevor Darrell and Alexei A. Efros},
+  title         = {Large-Scale Study of Curiosity-Driven Learning},
+  year          = {2018},
+  month         = aug,
+  abstract      = {Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups. Game-play videos and code are at https://pathak22.github.io/large-scale-curiosity/},
+  archiveprefix = {arXiv},
+  eprint        = {1808.04355},
+  file          = {:Burda2018a - Large Scale Study of Curiosity Driven Learning.pdf:PDF},
+  groups        = {Curiosity},
+  keywords      = {cs.LG, cs.AI, cs.CV, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Achiam2017,
+  author        = {Joshua Achiam and Shankar Sastry},
+  title         = {Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning},
+  year          = {2017},
+  month         = mar,
+  abstract      = {Exploration in complex domains is a key challenge in reinforcement learning, especially for tasks with very sparse rewards. Recent successes in deep reinforcement learning have been achieved mostly using simple heuristic exploration strategies such as $\epsilon$-greedy action selection or Gaussian control noise, but there are many tasks where these methods are insufficient to make any learning progress. Here, we consider more complex heuristics: efficient and scalable exploration strategies that maximize a notion of an agent's surprise about its experiences via intrinsic motivation. We propose to learn a model of the MDP transition probabilities concurrently with the policy, and to form intrinsic rewards that approximate the KL-divergence of the true transition probabilities from the learned model. One of our approximations results in using surprisal as intrinsic motivation, while the other gives the $k$-step learning progress. We show that our incentives enable agents to succeed in a wide range of environments with high-dimensional state spaces and very sparse rewards, including continuous control tasks and games in the Atari RAM domain, outperforming several other heuristic exploration techniques.},
+  archiveprefix = {arXiv},
+  eprint        = {1703.01732},
+  file          = {:Achiam2017 - Surprise Based Intrinsic Motivation for Deep Reinforcement Learning.pdf:PDF},
+  groups        = {Curiosity},
+  keywords      = {cs.LG},
+  primaryclass  = {cs.LG},
+  readstatus    = {skimmed},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Disagreement\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 }
