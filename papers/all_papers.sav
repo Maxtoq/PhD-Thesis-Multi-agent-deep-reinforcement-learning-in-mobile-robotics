@@ -10,7 +10,7 @@
   comment       = {Soft Actor Critic},
   eprint        = {1801.01290},
   file          = {:Haarnoja2018 - Soft Actor Critic_ off Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor.pdf:PDF},
-  groups        = {Policy based, Actor Critic},
+  groups        = {Policy based, Actor Critic, Soft Actor Critic},
   keywords      = {cs.LG, cs.AI, stat.ML},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -190,7 +190,7 @@
 	After learning the world model through exploration, adapts on tasks in zero-shot (only imagination) or few-shot (imagination and few iteraction)},
   eprint        = {2005.05960},
   file          = {:Sekar2020 - Planning to Explore Via Self Supervised World Models.pdf:PDF},
-  groups        = {Model based, Disagreement, Model-based exploration},
+  groups        = {Model based, Disagreement, Model-based exploration, Intrinsic goals},
   keywords      = {cs.LG, cs.AI, cs.CV, cs.NE, cs.RO, stat.ML},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -205,7 +205,7 @@
   archiveprefix = {arXiv},
   eprint        = {1906.04161},
   file          = {:Pathak2019 - Self Supervised Exploration Via Disagreement.pdf:PDF},
-  groups        = {Disagreement},
+  groups        = {Disagreement, Intrinsic goals},
   keywords      = {cs.LG, cs.AI, cs.CV, cs.RO, stat.ML},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -234,7 +234,7 @@
   archiveprefix = {arXiv},
   eprint        = {1707.08817},
   file          = {:Vecerik2017 - Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards.pdf:PDF},
-  groups        = {DDPG, Robotics},
+  groups        = {DDPG, Robotics, Actor Critic, Policy based},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
 }
@@ -248,7 +248,7 @@
   archiveprefix = {arXiv},
   eprint        = {1802.06070},
   file          = {:Eysenbach2018 - Diversity Is All You Need_ Learning Skills without a Reward Function.pdf:PDF},
-  groups        = {Diversity},
+  groups        = {Diversity, Intrinsic goals},
   keywords      = {cs.AI, cs.RO},
   primaryclass  = {cs.AI},
   readstatus    = {skimmed},
@@ -263,7 +263,7 @@
   archiveprefix = {arXiv},
   eprint        = {1808.04355},
   file          = {:Burda2018a - Large Scale Study of Curiosity Driven Learning.pdf:PDF},
-  groups        = {Curiosity},
+  groups        = {Curiosity, Intrinsic goals},
   keywords      = {cs.LG, cs.AI, cs.CV, cs.RO, stat.ML},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -278,7 +278,7 @@
   archiveprefix = {arXiv},
   eprint        = {1703.01732},
   file          = {:Achiam2017 - Surprise Based Intrinsic Motivation for Deep Reinforcement Learning.pdf:PDF},
-  groups        = {Curiosity},
+  groups        = {Curiosity, Intrinsic goals},
   keywords      = {cs.LG},
   primaryclass  = {cs.LG},
   readstatus    = {skimmed},
@@ -322,8 +322,62 @@
   archiveprefix = {arXiv},
   eprint        = {1810.12162},
   file          = {:Shyam2018 - Model Based Active Exploration.pdf:PDF},
-  groups        = {Model-based exploration},
+  groups        = {Model-based exploration, Model based},
   keywords      = {cs.LG, cs.AI, cs.IT, cs.NE, math.IT, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Lee2019,
+  author        = {Alex X. Lee and Anusha Nagabandi and Pieter Abbeel and Sergey Levine},
+  title         = {Stochastic Latent Actor-Critic: Deep Reinforcement Learning with a Latent Variable Model},
+  year          = {2019},
+  month         = jul,
+  abstract      = {Deep reinforcement learning (RL) algorithms can use high-capacity deep networks to learn directly from image observations. However, these high-dimensional observation spaces present a number of challenges in practice, since the policy must now solve two problems: representation learning and task learning. In this work, we tackle these two problems separately, by explicitly learning latent representations that can accelerate reinforcement learning from images. We propose the stochastic latent actor-critic (SLAC) algorithm: a sample-efficient and high-performing RL algorithm for learning policies for complex continuous control tasks directly from high-dimensional image inputs. SLAC provides a novel and principled approach for unifying stochastic sequential models and RL into a single method, by learning a compact latent representation and then performing RL in the model's learned latent space. Our experimental evaluation demonstrates that our method outperforms both model-free and model-based alternatives in terms of final performance and sample efficiency, on a range of difficult image-based control tasks. Our code and videos of our results are available at our website.},
+  archiveprefix = {arXiv},
+  comment       = {- PROBLEM:
+	It is difficult to learn directly from high-dimensional image inputs (task learning)
+	It is difficult to extract compact representations of the underlying task-relevant information from which to learn (representation learning)
+- SOLUTION:
+	Treat task learning and representation learning separately: learn a latent representation space with a predictive model, and train a RL agent in that learning latent space
+- MODEL:
+	Maximize ELBO (model objective + maximum entropy RL objective)
+	Sequential latent variable model objective: predict next latent state based on next state, current latent state and current action
+	RL objective: Soft Actor-Critic
+- RESULTS: 
+	Better than several sota model-free and model-based approaches
+	Very sample-efficient},
+  eprint        = {1907.00953},
+  file          = {:Lee2019 - Stochastic Latent Actor Critic_ Deep Reinforcement Learning with a Latent Variable Model (1).pdf:PDF},
+  groups        = {Model based, POMDP, Soft Actor Critic},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Hausknecht2015,
+  author        = {Matthew Hausknecht and Peter Stone},
+  title         = {Deep Recurrent Q-Learning for Partially Observable MDPs},
+  year          = {2015},
+  month         = jul,
+  abstract      = {Deep Reinforcement Learning has yielded proficient controllers for complex tasks. However, these controllers have limited memory and rely on being able to perceive the complete game screen at each decision point. To address these shortcomings, this article investigates the effects of adding recurrency to a Deep Q-Network (DQN) by replacing the first post-convolutional fully-connected layer with a recurrent LSTM. The resulting \textit{Deep Recurrent Q-Network} (DRQN), although capable of seeing only a single frame at each timestep, successfully integrates information through time and replicates DQN's performance on standard Atari games and partially observed equivalents featuring flickering game screens. Additionally, when trained with partial observations and evaluated with incrementally more complete observations, DRQN's performance scales as a function of observability. Conversely, when trained with full observations and evaluated with partial observations, DRQN's performance degrades less than DQN's. Thus, given the same length of history, recurrency is a viable alternative to stacking a history of frames in the DQN's input layer and while recurrency confers no systematic advantage when learning to play the game, the recurrent net can better adapt at evaluation time if the quality of observations changes.},
+  archiveprefix = {arXiv},
+  eprint        = {1507.06527},
+  file          = {:Hausknecht2015 - Deep Recurrent Q Learning for Partially Observable MDPs.pdf:PDF},
+  groups        = {POMDP},
+  keywords      = {cs.LG},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Zhu2018,
+  author        = {Pengfei Zhu and Xin Li and Pascal Poupart and Guanghui Miao},
+  title         = {On Improving Deep Reinforcement Learning for POMDPs},
+  year          = {2018},
+  month         = apr,
+  abstract      = {Deep Reinforcement Learning (RL) recently emerged as one of the most competitive approaches for learning in sequential decision making problems with fully observable environments, e.g., computer Go. However, very little work has been done in deep RL to handle partially observable environments. We propose a new architecture called Action-specific Deep Recurrent Q-Network (ADRQN) to enhance learning performance in partially observable domains. Actions are encoded by a fully connected layer and coupled with a convolutional observation to form an action-observation pair. The time series of action-observation pairs are then integrated by an LSTM layer that learns latent states based on which a fully connected layer computes Q-values as in conventional Deep Q-Networks (DQNs). We demonstrate the effectiveness of our new architecture in several partially observable domains, including flickering Atari games.},
+  archiveprefix = {arXiv},
+  eprint        = {1804.06309},
+  file          = {:- On Improving Deep Reinforcement Learning for POMDPs.pdf:PDF},
+  groups        = {POMDP},
+  keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
 }
 
@@ -335,6 +389,7 @@
 2 StaticGroup:Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
@@ -343,4 +398,5 @@
 2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
 }
