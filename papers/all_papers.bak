@@ -168,6 +168,7 @@
   groups        = {Model based},
   keywords      = {cs.LG, cs.RO, stat.ML},
   primaryclass  = {cs.LG},
+  readstatus    = {skimmed},
 }
 
 @Article{Sekar2020,
@@ -319,11 +320,17 @@
   month         = nov,
   abstract      = {Planning has been very successful for control tasks with known environment dynamics. To leverage planning in unknown environments, the agent needs to learn the dynamics from interactions with the world. However, learning dynamics models that are accurate enough for planning has been a long-standing challenge, especially in image-based domains. We propose the Deep Planning Network (PlaNet), a purely model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space. To achieve high performance, the dynamics model must accurately predict the rewards ahead for multiple time steps. We approach this using a latent dynamics model with both deterministic and stochastic transition components. Moreover, we propose a multi-step variational inference objective that we name latent overshooting. Using only pixel observations, our agent solves continuous control tasks with contact dynamics, partial observability, and sparse rewards, which exceed the difficulty of tasks that were previously solved by planning with learned models. PlaNet uses substantially fewer episodes and reaches final performance close to and sometimes higher than strong model-free algorithms.},
   archiveprefix = {arXiv},
+  comment       = {- MODEL:
+	PlaNet: Deep Planning Network, a model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space
+- RESULTS:
+	Beat A3C and sometimes D4PG
+	Way more sample efficient (200x)},
   eprint        = {1811.04551},
   file          = {:Hafner2018 - Learning Latent Dynamics for Planning from Pixels.pdf:PDF},
   groups        = {Model based, Latent Dynamics Model},
   keywords      = {cs.LG, cs.AI, stat.ML},
   primaryclass  = {cs.LG},
+  readstatus    = {skimmed},
 }
 
 @Article{Shyam2018,
@@ -333,11 +340,20 @@
   month         = oct,
   abstract      = {Efficient exploration is an unsolved problem in Reinforcement Learning which is usually addressed by reactively rewarding the agent for fortuitously encountering novel situations. This paper introduces an efficient active exploration algorithm, Model-Based Active eXploration (MAX), which uses an ensemble of forward models to plan to observe novel events. This is carried out by optimizing agent behaviour with respect to a measure of novelty derived from the Bayesian perspective of exploration, which is estimated using the disagreement between the futures predicted by the ensemble members. We show empirically that in semi-random discrete environments where directed exploration is critical to make progress, MAX is at least an order of magnitude more efficient than strong baselines. MAX scales to high-dimensional continuous environments where it builds task-agnostic models that can be used for any downstream task.},
   archiveprefix = {arXiv},
+  comment       = {- PROBLEM:
+	Over-commitment: intrinsic exploration bonus have to be unlearned once the novelty of a state's vicinity has worn off, making exploration inefficient
+- SOLUTION:
+	Model-based Active eXploration (MAX): actively seek out novelty in future states by measuring the amount of conflict between predictions of an ensemble of forward models
+- RESULTS:
+	Active exploration prevents from getting stuck in a local optimum
+	Model-based methods suffer from model-bias: bad model in certain regions of the state space leading to bad policy. MAX would explore more difficult aspects of the environment, thereby improving the quality of the models
+	Less computationally efficient than baselines, BUT trading off for data efficiency},
   eprint        = {1810.12162},
   file          = {:Shyam2018 - Model Based Active Exploration.pdf:PDF},
-  groups        = {Model-based exploration, Model based},
+  groups        = {Model-based exploration, Model based, Disagreement},
   keywords      = {cs.LG, cs.AI, cs.IT, cs.NE, math.IT, stat.ML},
   primaryclass  = {cs.LG},
+  readstatus    = {skimmed},
 }
 
 @Article{Lee2019,
@@ -395,6 +411,117 @@
   primaryclass  = {cs.LG},
 }
 
+@Article{Bellemare2016,
+  author        = {Marc G. Bellemare and Sriram Srinivasan and Georg Ostrovski and Tom Schaul and David Saxton and Remi Munos},
+  title         = {Unifying Count-Based Exploration and Intrinsic Motivation},
+  year          = {2016},
+  month         = jun,
+  abstract      = {We consider an agent's uncertainty about its environment and the problem of generalizing this uncertainty across observations. Specifically, we focus on the problem of exploration in non-tabular reinforcement learning. Drawing inspiration from the intrinsic motivation literature, we use density models to measure uncertainty, and propose a novel algorithm for deriving a pseudo-count from an arbitrary density model. This technique enables us to generalize count-based exploration algorithms to the non-tabular case. We apply our ideas to Atari 2600 games, providing sensible pseudo-counts from raw pixels. We transform these pseudo-counts into intrinsic rewards and obtain significantly improved exploration in a number of hard games, including the infamously difficult Montezuma's Revenge.},
+  archiveprefix = {arXiv},
+  eprint        = {1606.01868},
+  file          = {:Bellemare2016 - Unifying Count Based Exploration and Intrinsic Motivation.pdf:PDF},
+  groups        = {Visitation count},
+  keywords      = {cs.AI, cs.LG, stat.ML},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Tampuu2015,
+  author        = {Ardi Tampuu and Tambet Matiisen and Dorian Kodelja and Ilya Kuzovkin and Kristjan Korjus and Juhan Aru and Jaan Aru and Raul Vicente},
+  title         = {Multiagent Cooperation and Competition with Deep Reinforcement Learning},
+  year          = {2015},
+  month         = nov,
+  abstract      = {Multiagent systems appear in most social, economical, and political situations. In the present work we extend the Deep Q-Learning Network architecture proposed by Google DeepMind to multiagent environments and investigate how two agents controlled by independent Deep Q-Networks interact in the classic videogame Pong. By manipulating the classical rewarding scheme of Pong we demonstrate how competitive and collaborative behaviors emerge. Competitive agents learn to play and score efficiently. Agents trained under collaborative rewarding schemes find an optimal strategy to keep the ball in the game as long as possible. We also describe the progression from competitive to collaborative behavior. The present work demonstrates that Deep Q-Networks can become a practical tool for studying the decentralized learning of multiagent systems living in highly complex environments.},
+  archiveprefix = {arXiv},
+  eprint        = {1511.08779},
+  file          = {:Tampuu2015 - Multiagent Cooperation and Competition with Deep Reinforcement Learning.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.AI, cs.LG, q-bio.NC},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Wang2019,
+  author        = {Yixiang Wang and Feng Wu},
+  title         = {Multi-Agent Deep Reinforcement Learning with Adaptive Policies},
+  year          = {2019},
+  month         = nov,
+  abstract      = {We propose a novel approach to address one aspect of the non-stationarity problem in multi-agent reinforcement learning (RL), where the other agents may alter their policies due to environment changes during execution. This violates the Markov assumption that governs most single-agent RL methods and is one of the key challenges in multi-agent RL. To tackle this, we propose to train multiple policies for each agent and postpone the selection of the best policy at execution time. Specifically, we model the environment non-stationarity with a finite set of scenarios and train policies fitting each scenario. In addition to multiple policies, each agent also learns a policy predictor to determine which policy is the best with its local information. By doing so, each agent is able to adapt its policy when the environment changes and consequentially the other agents alter their policies during execution. We empirically evaluated our method on a variety of common benchmark problems proposed for multi-agent deep RL in the literature. Our experimental results show that the agents trained by our algorithm have better adaptiveness in changing environments and outperform the state-of-the-art methods in all the tested environments.},
+  archiveprefix = {arXiv},
+  eprint        = {1912.00949},
+  file          = {:Wang2019 - Multi Agent Deep Reinforcement Learning with Adaptive Policies.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Bard2020,
+  author    = {Nolan Bard and Jakob N. Foerster and Sarath Chandar and Neil Burch and Marc Lanctot and H. Francis Song and Emilio Parisotto and Vincent Dumoulin and Subhodeep Moitra and Edward Hughes and Iain Dunning and Shibl Mourad and Hugo Larochelle and Marc G. Bellemare and Michael Bowling},
+  journal   = {Artif. Intell.},
+  title     = {The Hanabi challenge: {A} new frontier for {AI} research},
+  year      = {2020},
+  pages     = {103216},
+  volume    = {280},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/ai/BardFCBLSPDMHDM20.bib},
+  doi       = {10.1016/j.artint.2019.103216},
+  file      = {:Bard2020 - The Hanabi Challenge_ a New Frontier for AI Research.pdf:PDF},
+  groups    = {MARL},
+}
+
+@Article{Long2020,
+  author        = {Qian Long and Zihan Zhou and Abhibav Gupta and Fei Fang and Yi Wu and Xiaolong Wang},
+  title         = {Evolutionary Population Curriculum for Scaling Multi-Agent Reinforcement Learning},
+  year          = {2020},
+  month         = mar,
+  abstract      = {In multi-agent games, the complexity of the environment can grow exponentially as the number of agents increases, so it is particularly challenging to learn good policies when the agent population is large. In this paper, we introduce Evolutionary Population Curriculum (EPC), a curriculum learning paradigm that scales up Multi-Agent Reinforcement Learning (MARL) by progressively increasing the population of training agents in a stage-wise manner. Furthermore, EPC uses an evolutionary approach to fix an objective misalignment issue throughout the curriculum: agents successfully trained in an early stage with a small population are not necessarily the best candidates for adapting to later stages with scaled populations. Concretely, EPC maintains multiple sets of agents in each stage, performs mix-and-match and fine-tuning over these sets and promotes the sets of agents with the best adaptability to the next stage. We implement EPC on a popular MARL algorithm, MADDPG, and empirically show that our approach consistently outperforms baselines by a large margin as the number of agents grows exponentially.},
+  archiveprefix = {arXiv},
+  eprint        = {2003.10423},
+  file          = {:Long2020 - Evolutionary Population Curriculum for Scaling Multi Agent Reinforcement Learning.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.LG, cs.AI, cs.NE, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Li,
+  author  = {Shihui Li and Yi Wu and Xinyue Cui and Honghua Dong and Fei Fang and Stuart Russell},
+  journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title   = {Robust Multi-Agent Reinforcement Learning via Minimax Deep Deterministic Policy Gradient},
+  year    = {2019},
+  issn    = {2374-3468},
+  pages   = {4213-4220},
+  volume  = {33},
+  doi     = {10.1609/aaai.v33i01.33014213},
+  file    = {:Li - Robust Multi Agent Reinforcement Learning Via Minimax Deep Deterministic Policy Gradient.pdf:PDF},
+  groups  = {MARL},
+}
+
+@Article{Hu2021,
+  author        = {Siyi Hu and Fengda Zhu and Xiaojun Chang and Xiaodan Liang},
+  title         = {UPDeT: Universal Multi-agent Reinforcement Learning via Policy Decoupling with Transformers},
+  year          = {2021},
+  month         = jan,
+  abstract      = {Recent advances in multi-agent reinforcement learning have been largely limited in training one model from scratch for every new task. The limitation is due to the restricted model architecture related to fixed input and output dimensions. This hinders the experience accumulation and transfer of the learned agent over tasks with diverse levels of difficulty (e.g. 3 vs 3 or 5 vs 6 multi-agent games). In this paper, we make the first attempt to explore a universal multi-agent reinforcement learning pipeline, designing one single architecture to fit tasks with the requirement of different observation and action configurations. Unlike previous RNN-based models, we utilize a transformer-based model to generate a flexible policy by decoupling the policy distribution from the intertwined input observation with an importance weight measured by the merits of the self-attention mechanism. Compared to a standard transformer block, the proposed model, named as Universal Policy Decoupling Transformer (UPDeT), further relaxes the action restriction and makes the multi-agent task's decision process more explainable. UPDeT is general enough to be plugged into any multi-agent reinforcement learning pipeline and equip them with strong generalization abilities that enables the handling of multiple tasks at a time. Extensive experiments on large-scale SMAC multi-agent competitive games demonstrate that the proposed UPDeT-based multi-agent reinforcement learning achieves significant results relative to state-of-the-art approaches, demonstrating advantageous transfer capability in terms of both performance and training speed (10 times faster).},
+  archiveprefix = {arXiv},
+  eprint        = {2101.08001},
+  file          = {:Hu2021 - UPDeT_ Universal Multi Agent Reinforcement Learning Via Policy Decoupling with Transformers.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.LG, cs.AI},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Rafailov2020,
+  author        = {Rafael Rafailov and Tianhe Yu and Aravind Rajeswaran and Chelsea Finn},
+  title         = {Offline Reinforcement Learning from Images with Latent Space Models},
+  year          = {2020},
+  month         = dec,
+  abstract      = {Offline reinforcement learning (RL) refers to the problem of learning policies from a static dataset of environment interactions. Offline RL enables extensive use and re-use of historical datasets, while also alleviating safety concerns associated with online exploration, thereby expanding the real-world applicability of RL. Most prior work in offline RL has focused on tasks with compact state representations. However, the ability to learn directly from rich observation spaces like images is critical for real-world applications such as robotics. In this work, we build on recent advances in model-based algorithms for offline RL, and extend them to high-dimensional visual observation spaces. Model-based offline RL algorithms have achieved state of the art results in state based tasks and have strong theoretical guarantees. However, they rely crucially on the ability to quantify uncertainty in the model predictions, which is particularly challenging with image observations. To overcome this challenge, we propose to learn a latent-state dynamics model, and represent the uncertainty in the latent space. Our approach is both tractable in practice and corresponds to maximizing a lower bound of the ELBO in the unknown POMDP. In experiments on a range of challenging image-based locomotion and manipulation tasks, we find that our algorithm significantly outperforms previous offline model-free RL methods as well as state-of-the-art online visual model-based RL methods. Moreover, we also find that our approach excels on an image-based drawer closing task on a real robot using a pre-existing dataset. All results including videos can be found online at https://sites.google.com/view/lompo/ .},
+  archiveprefix = {arXiv},
+  eprint        = {2012.11547},
+  file          = {:http\://arxiv.org/pdf/2012.11547v1:PDF},
+  groups        = {Latent Dynamics Model},
+  keywords      = {cs.LG, cs.AI, cs.RO},
+  primaryclass  = {cs.LG},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -411,7 +538,9 @@
 2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
 }
