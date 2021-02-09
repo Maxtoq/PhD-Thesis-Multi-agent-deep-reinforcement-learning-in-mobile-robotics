@@ -1,0 +1,214 @@
+% Encoding: UTF-8
+
+@Article{Tesauro1995,
+  author    = {Gerald Tesauro},
+  journal   = {Commun. {ACM}},
+  title     = {Temporal Difference Learning and TD-Gammon},
+  year      = {1995},
+  number    = {3},
+  pages     = {58--68},
+  volume    = {38},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/cacm/Tesauro95.bib},
+  doi       = {10.1145/203330.203343},
+  groups    = {Introduction, TD Learning},
+}
+
+@Article{Sutton1988,
+  author = {Richard S. Sutton},
+  title  = {Learning to predict by the methods of temporal differences},
+  year   = {1988},
+  issn   = {0885-6125},
+  pages  = {9-44},
+  volume = {3},
+  doi    = {10.1007/bf00115009},
+  groups = {Introduction, TD Learning},
+}
+
+@Misc{Tanner2005,
+  author   = {Brian Tanner and Richard S. Sutton},
+  title    = {TD(λ) networks},
+  year     = {2005},
+  doi      = {10.1145/1102351.1102463},
+  groups   = {Introduction, TD Learning},
+  subtitle = {temporal-difference networks with eligibility traces},
+}
+
+@Article{Silver2012,
+  author = {David Silver and Richard S. Sutton and Martin Müller},
+  title  = {Temporal-difference search in computer Go},
+  year   = {2012},
+  issn   = {0885-6125},
+  pages  = {183-219},
+  volume = {87},
+  doi    = {10.1007/s10994-012-5280-0},
+  groups = {Introduction, TD Learning},
+}
+
+@InProceedings{Kohl2004,
+  author    = {Nate Kohl and Peter Stone},
+  booktitle = {Proceedings of the 2004 {IEEE} International Conference on Robotics and Automation, {ICRA} 2004, April 26 - May 1, 2004, New Orleans, LA, {USA}},
+  title     = {Policy Gradient Reinforcement Learning for Fast Quadrupedal Locomotion},
+  year      = {2004},
+  pages     = {2619--2624},
+  publisher = {{IEEE}},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/conf/icra/KohlS04.bib},
+  doi       = {10.1109/ROBOT.2004.1307456},
+  groups    = {Policy Gradient},
+}
+
+@InProceedings{Ng2004,
+  author    = {Andrew Y. Ng and Adam Coates and Mark Diel and Varun Ganapathi and Jamie Schulte and Ben Tse and Eric Berger and Eric Liang},
+  booktitle = {Experimental Robotics IX, The 9th International Symposium on Experimental Robotics {[ISER} 2004, Singapore, 18.-21. June 2004]},
+  title     = {Autonomous Inverted Helicopter Flight via Reinforcement Learning},
+  year      = {2004},
+  editor    = {Marcelo H. Ang Jr. and Oussama Khatib},
+  pages     = {363--372},
+  publisher = {Springer},
+  series    = {Springer Tracts in Advanced Robotics},
+  volume    = {21},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/conf/iser/NgCDGSTBL04.bib},
+  doi       = {10.1007/11552246\_35},
+  groups    = {Policy Gradient},
+  url       = {https://doi.org/10.1007/11552246_35},
+}
+
+@Article{Williams1992,
+  author    = {Ronald J. Williams},
+  journal   = {Mach. Learn.},
+  title     = {Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning},
+  year      = {1992},
+  pages     = {229--256},
+  volume    = {8},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/ml/Williams92.bib},
+  doi       = {10.1007/BF00992696},
+  groups    = {Policy Gradient},
+}
+
+@InProceedings{Sutton1990,
+  author    = {Richard S. Sutton},
+  booktitle = {Machine Learning, Proceedings of the Seventh International Conference on Machine Learning, Austin, Texas, USA, June 21-23, 1990},
+  title     = {Integrated Architectures for Learning, Planning, and Reacting Based on Approximating Dynamic Programming},
+  year      = {1990},
+  editor    = {Bruce W. Porter and Raymond J. Mooney},
+  pages     = {216--224},
+  publisher = {Morgan Kaufmann},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/conf/icml/Sutton90.bib},
+  doi       = {10.1016/b978-1-55860-141-3.50030-4},
+  groups    = {Model-based},
+}
+
+@Article{Watkins1992a,
+  author = {Christopher J. C. H. Watkins and Peter Dayan},
+  title  = {Q-learning},
+  year   = {1992},
+  issn   = {0885-6125},
+  pages  = {279-292},
+  volume = {8},
+  doi    = {10.1007/bf00992698},
+  groups = {Q Learning},
+}
+
+@Book{Rummery1994,
+  author    = {G. A. Rummery and M. Niranjan},
+  publisher = {Univ. of Cambridge, Department of Engineering},
+  title     = {On-line q-learning using connectionist systems},
+  year      = {1994},
+  address   = {Cambridge},
+  number    = {166},
+  series    = {CUED/F-INFENG/TR},
+  comment   = {SARSA},
+  groups    = {Q Learning},
+  pagetotal = {20},
+  ppn_gvk   = {181088983},
+}
+
+@Article{Bengio2013,
+  author    = {Yoshua Bengio and Aaron C. Courville and Pascal Vincent},
+  journal   = {{IEEE} Trans. Pattern Anal. Mach. Intell.},
+  title     = {Representation Learning: {A} Review and New Perspectives},
+  year      = {2013},
+  number    = {8},
+  pages     = {1798--1828},
+  volume    = {35},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/pami/BengioCV13.bib},
+  doi       = {10.1109/TPAMI.2013.50},
+  groups    = {Representation Learning},
+}
+
+@Article{Mnih2015,
+  author    = {Volodymyr Mnih and Koray Kavukcuoglu and David Silver and Andrei A. Rusu and Joel Veness and Marc G. Bellemare and Alex Graves and Martin A. Riedmiller and Andreas Fidjeland and Georg Ostrovski and Stig Petersen and Charles Beattie and Amir Sadik and Ioannis Antonoglou and Helen King and Dharshan Kumaran and Daan Wierstra and Shane Legg and Demis Hassabis},
+  journal   = {Nat.},
+  title     = {Human-level control through deep reinforcement learning},
+  year      = {2015},
+  number    = {7540},
+  pages     = {529--533},
+  volume    = {518},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/nature/MnihKSRVBGRFOPB15.bib},
+  doi       = {10.1038/nature14236},
+  groups    = {Deep Q-Network},
+}
+
+@Article{Silver2016,
+  author    = {David Silver and Aja Huang and Chris J. Maddison and Arthur Guez and Laurent Sifre and George van den Driessche and Julian Schrittwieser and Ioannis Antonoglou and Vedavyas Panneershelvam and Marc Lanctot and Sander Dieleman and Dominik Grewe and John Nham and Nal Kalchbrenner and Ilya Sutskever and Timothy P. Lillicrap and Madeleine Leach and Koray Kavukcuoglu and Thore Graepel and Demis Hassabis},
+  journal   = {Nat.},
+  title     = {Mastering the game of Go with deep neural networks and tree search},
+  year      = {2016},
+  number    = {7587},
+  pages     = {484--489},
+  volume    = {529},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/nature/SilverHMGSDSAPL16.bib},
+  doi       = {10.1038/nature16961},
+  groups    = {Model based},
+}
+
+@Article{Silver2017,
+  author    = {David Silver and Julian Schrittwieser and Karen Simonyan and Ioannis Antonoglou and Aja Huang and Arthur Guez and Thomas Hubert and Lucas Baker and Matthew Lai and Adrian Bolton and Yutian Chen and Timothy P. Lillicrap and Fan Hui and Laurent Sifre and George van den Driessche and Thore Graepel and Demis Hassabis},
+  journal   = {Nat.},
+  title     = {Mastering the game of Go without human knowledge},
+  year      = {2017},
+  number    = {7676},
+  pages     = {354--359},
+  volume    = {550},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/nature/SilverSSAHGHBLB17.bib},
+  doi       = {10.1038/nature24270},
+  groups    = {Model based},
+}
+
+@Article{Silver2017a,
+  author        = {David Silver and Thomas Hubert and Julian Schrittwieser and Ioannis Antonoglou and Matthew Lai and Arthur Guez and Marc Lanctot and Laurent Sifre and Dharshan Kumaran and Thore Graepel and Timothy P. Lillicrap and Karen Simonyan and Demis Hassabis},
+  journal       = {CoRR},
+  title         = {Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm},
+  year          = {2017},
+  volume        = {abs/1712.01815},
+  archiveprefix = {arXiv},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-1712-01815.bib},
+  eprint        = {1712.01815},
+  groups        = {Model based},
+  url           = {http://arxiv.org/abs/1712.01815},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Introduction\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:TD Learning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Q Learning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Policy Gradient\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Model-based\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Representation Learning\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Deep Reinforcement Learning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Value based\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Deep Q-Network\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
+}
