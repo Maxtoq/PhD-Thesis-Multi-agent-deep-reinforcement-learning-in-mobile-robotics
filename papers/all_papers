@@ -75,7 +75,7 @@
   doi           = {10.1038/s41586-020-03051-4},
   eprint        = {1911.08265},
   file          = {:Schrittwieser2019 - Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model.pdf:PDF},
-  groups        = {Model based},
+  groups        = {Model based, Tree-based},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -692,6 +692,80 @@
   url       = {http://proceedings.mlr.press/v48/wangf16.html},
 }
 
+@Article{Conti2017,
+  author        = {Edoardo Conti and Vashisht Madhavan and Felipe Petroski Such and Joel Lehman and Kenneth O. Stanley and Jeff Clune},
+  title         = {Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents},
+  year          = {2017},
+  month         = dec,
+  abstract      = {Evolution strategies (ES) are a family of black-box optimization algorithms able to train deep neural networks roughly as well as Q-learning and policy gradient methods on challenging deep reinforcement learning (RL) problems, but are much faster (e.g. hours vs. days) because they parallelize better. However, many RL problems require directed exploration because they have reward functions that are sparse or deceptive (i.e. contain local optima), and it is unknown how to encourage such exploration with ES. Here we show that algorithms that have been invented to promote directed exploration in small-scale evolved neural networks via populations of exploring agents, specifically novelty search (NS) and quality diversity (QD) algorithms, can be hybridized with ES to improve its performance on sparse or deceptive deep RL tasks, while retaining scalability. Our experiments confirm that the resultant new algorithms, NS-ES and two QD algorithms, NSR-ES and NSRA-ES, avoid local optima encountered by ES to achieve higher performance on Atari and simulated robots learning to walk around a deceptive trap. This paper thus introduces a family of fast, scalable algorithms for reinforcement learning that are capable of directed exploration. It also adds this new family of exploration algorithms to the RL toolbox and raises the interesting possibility that analogous algorithms with multiple simultaneous paths of exploration might also combine well with existing RL algorithms outside ES.},
+  archiveprefix = {arXiv},
+  eprint        = {1712.06560},
+  file          = {:Conti2017 - Improving Exploration in Evolution Strategies for Deep Reinforcement Learning Via a Population of Novelty Seeking Agents.pdf:PDF},
+  groups        = {Diversity},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Ecoffet2019,
+  author        = {Adrien Ecoffet and Joost Huizinga and Joel Lehman and Kenneth O. Stanley and Jeff Clune},
+  journal       = {CoRR},
+  title         = {Go-Explore: a New Approach for Hard-Exploration Problems},
+  year          = {2019},
+  volume        = {abs/1901.10995},
+  archiveprefix = {arXiv},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-1901-10995.bib},
+  eprint        = {1901.10995},
+  groups        = {Random Exploration, Imitation},
+  url           = {http://arxiv.org/abs/1901.10995},
+}
+
+@Article{Ostrovski2017,
+  author        = {Georg Ostrovski and Marc G. Bellemare and A{\"{a}}ron van den Oord and R{\'{e}}mi Munos},
+  journal       = {CoRR},
+  title         = {Count-Based Exploration with Neural Density Models},
+  year          = {2017},
+  volume        = {abs/1703.01310},
+  archiveprefix = {arXiv},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/OstrovskiBOM17.bib},
+  eprint        = {1703.01310},
+  groups        = {Visitation count},
+  url           = {http://arxiv.org/abs/1703.01310},
+}
+
+@InProceedings{Bellemare2017,
+  author    = {Marc G. Bellemare and Will Dabney and R{\'e}mi Munos},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning},
+  title     = {A Distributional Perspective on Reinforcement Learning},
+  year      = {2017},
+  address   = {International Convention Centre, Sydney, Australia},
+  editor    = {Doina Precup and Yee Whye Teh},
+  month     = {06--11 Aug},
+  pages     = {449--458},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {70},
+  abstract  = {In this paper we argue for the fundamental importance of the value distribution: the distribution of the random return received by a reinforcement learning agent. This is in contrast to the common approach to reinforcement learning which models the expectation of this return, or value. Although there is an established body of literature studying the value distribution, thus far it has always been used for a specific purpose such as implementing risk-aware behaviour. We begin with theoretical results in both the policy evaluation and control settings, exposing a significant distributional instability in the latter. We then use the distributional perspective to design a new algorithm which applies Bellman’s equation to the learning of approximate value distributions. We evaluate our algorithm using the suite of games from the Arcade Learning Environment. We obtain both state-of-the-art results and anecdotal evidence demonstrating the importance of the value distribution in approximate reinforcement learning. Finally, we combine theoretical and empirical evidence to highlight the ways in which the value distribution impacts learning in the approximate setting.},
+  groups    = {Value based},
+  pdf       = {http://proceedings.mlr.press/v70/bellemare17a/bellemare17a.pdf},
+  url       = {http://proceedings.mlr.press/v70/bellemare17a.html},
+}
+
+@Article{Fortunato2017,
+  author        = {Meire Fortunato and Mohammad Gheshlaghi Azar and Bilal Piot and Jacob Menick and Ian Osband and Alex Graves and Vlad Mnih and Remi Munos and Demis Hassabis and Olivier Pietquin and Charles Blundell and Shane Legg},
+  title         = {Noisy Networks for Exploration},
+  year          = {2017},
+  month         = jun,
+  abstract      = {We introduce NoisyNet, a deep reinforcement learning agent with parametric noise added to its weights, and show that the induced stochasticity of the agent's policy can be used to aid efficient exploration. The parameters of the noise are learned with gradient descent along with the remaining network weights. NoisyNet is straightforward to implement and adds little computational overhead. We find that replacing the conventional exploration heuristics for A3C, DQN and dueling agents (entropy reward and $\epsilon$-greedy respectively) with NoisyNet yields substantially higher scores for a wide range of Atari games, in some cases advancing the agent from sub to super-human performance.},
+  archiveprefix = {arXiv},
+  eprint        = {1706.10295},
+  file          = {:- Noisy Networks for Exploration.pdf:PDF},
+  groups        = {Value based},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -704,11 +778,13 @@
 1 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Tree-based\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
@@ -716,4 +792,5 @@
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 }

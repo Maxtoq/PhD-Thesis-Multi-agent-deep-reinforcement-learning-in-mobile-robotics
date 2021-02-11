@@ -335,6 +335,38 @@
   url       = {http://proceedings.mlr.press/v48/wangf16.html},
 }
 
+@InProceedings{Bellemare2017,
+  author    = {Marc G. Bellemare and Will Dabney and R{\'e}mi Munos},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning},
+  title     = {A Distributional Perspective on Reinforcement Learning},
+  year      = {2017},
+  address   = {International Convention Centre, Sydney, Australia},
+  editor    = {Doina Precup and Yee Whye Teh},
+  month     = {06--11 Aug},
+  pages     = {449--458},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {70},
+  abstract  = {In this paper we argue for the fundamental importance of the value distribution: the distribution of the random return received by a reinforcement learning agent. This is in contrast to the common approach to reinforcement learning which models the expectation of this return, or value. Although there is an established body of literature studying the value distribution, thus far it has always been used for a specific purpose such as implementing risk-aware behaviour. We begin with theoretical results in both the policy evaluation and control settings, exposing a significant distributional instability in the latter. We then use the distributional perspective to design a new algorithm which applies Bellman’s equation to the learning of approximate value distributions. We evaluate our algorithm using the suite of games from the Arcade Learning Environment. We obtain both state-of-the-art results and anecdotal evidence demonstrating the importance of the value distribution in approximate reinforcement learning. Finally, we combine theoretical and empirical evidence to highlight the ways in which the value distribution impacts learning in the approximate setting.},
+  groups    = {Value based, Distributional RL},
+  pdf       = {http://proceedings.mlr.press/v70/bellemare17a/bellemare17a.pdf},
+  url       = {http://proceedings.mlr.press/v70/bellemare17a.html},
+}
+
+@Article{Fortunato2017,
+  author        = {Meire Fortunato and Mohammad Gheshlaghi Azar and Bilal Piot and Jacob Menick and Ian Osband and Alex Graves and Vlad Mnih and Remi Munos and Demis Hassabis and Olivier Pietquin and Charles Blundell and Shane Legg},
+  title         = {Noisy Networks for Exploration},
+  year          = {2017},
+  month         = jun,
+  abstract      = {We introduce NoisyNet, a deep reinforcement learning agent with parametric noise added to its weights, and show that the induced stochasticity of the agent's policy can be used to aid efficient exploration. The parameters of the noise are learned with gradient descent along with the remaining network weights. NoisyNet is straightforward to implement and adds little computational overhead. We find that replacing the conventional exploration heuristics for A3C, DQN and dueling agents (entropy reward and $\epsilon$-greedy respectively) with NoisyNet yields substantially higher scores for a wide range of Atari games, in some cases advancing the agent from sub to super-human performance.},
+  archiveprefix = {arXiv},
+  eprint        = {1706.10295},
+  file          = {:- Noisy Networks for Exploration.pdf:PDF},
+  groups        = {Value based, Noisy DQN},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -351,6 +383,8 @@
 3 StaticGroup:Double DQN\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:PER\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Dueling DQN\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Distributional RL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Noisy DQN\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
 }

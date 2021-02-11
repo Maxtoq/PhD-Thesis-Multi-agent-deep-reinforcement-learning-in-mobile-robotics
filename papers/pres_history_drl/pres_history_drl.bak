@@ -319,6 +319,40 @@
   url       = {http://arxiv.org/abs/1511.05952},
 }
 
+@InProceedings{Wang2016,
+  author    = {Ziyu Wang and Tom Schaul and Matteo Hessel and Hado van Hasselt and Marc Lanctot and Nando de Freitas},
+  booktitle = {Proceedings of the 33nd International Conference on Machine Learning, {ICML} 2016, New York City, NY, USA, June 19-24, 2016},
+  title     = {Dueling Network Architectures for Deep Reinforcement Learning},
+  year      = {2016},
+  editor    = {Maria{-}Florina Balcan and Kilian Q. Weinberger},
+  pages     = {1995--2003},
+  publisher = {JMLR.org},
+  series    = {{JMLR} Workshop and Conference Proceedings},
+  volume    = {48},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/conf/icml/WangSHHLF16.bib},
+  groups    = {Dueling DQN},
+  url       = {http://proceedings.mlr.press/v48/wangf16.html},
+}
+
+@InProceedings{Bellemare2017,
+  author    = {Marc G. Bellemare and Will Dabney and R{\'e}mi Munos},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning},
+  title     = {A Distributional Perspective on Reinforcement Learning},
+  year      = {2017},
+  address   = {International Convention Centre, Sydney, Australia},
+  editor    = {Doina Precup and Yee Whye Teh},
+  month     = {06--11 Aug},
+  pages     = {449--458},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {70},
+  abstract  = {In this paper we argue for the fundamental importance of the value distribution: the distribution of the random return received by a reinforcement learning agent. This is in contrast to the common approach to reinforcement learning which models the expectation of this return, or value. Although there is an established body of literature studying the value distribution, thus far it has always been used for a specific purpose such as implementing risk-aware behaviour. We begin with theoretical results in both the policy evaluation and control settings, exposing a significant distributional instability in the latter. We then use the distributional perspective to design a new algorithm which applies Bellman’s equation to the learning of approximate value distributions. We evaluate our algorithm using the suite of games from the Arcade Learning Environment. We obtain both state-of-the-art results and anecdotal evidence demonstrating the importance of the value distribution in approximate reinforcement learning. Finally, we combine theoretical and empirical evidence to highlight the ways in which the value distribution impacts learning in the approximate setting.},
+  groups    = {Value based, Distributional RL},
+  pdf       = {http://proceedings.mlr.press/v70/bellemare17a/bellemare17a.pdf},
+  url       = {http://proceedings.mlr.press/v70/bellemare17a.html},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -334,6 +368,8 @@
 3 StaticGroup:Deep Q-Network\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Double DQN\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:PER\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Dueling DQN\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Distributional RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
 }
