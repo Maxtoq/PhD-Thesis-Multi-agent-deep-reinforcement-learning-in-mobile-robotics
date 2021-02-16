@@ -151,7 +151,15 @@
   volume    = {518},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl    = {https://dblp.org/rec/journals/nature/MnihKSRVBGRFOPB15.bib},
-  comment   = {DQN},
+  comment   = {DQN
+- PROBLEM:
+	Efficient representation learning from high-dimensional sensory inputs
+	Generalize well to new situations
+	Leverage recent advances in deep neural networks to train artificial agents
+- SOLUTION:
+	DQN
+- RESULTS:
+	Using only pixels as input, surpasses all previous algos and achieve professional human level on 49 Atari games, with the same architecture},
   doi       = {10.1038/nature14236},
   groups    = {Deep Q-Network, Value based},
 }
@@ -285,6 +293,10 @@
   month         = dec,
   abstract      = {We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.},
   archiveprefix = {arXiv},
+  comment       = {- PROBLEM:
+	Learning to control agents directly from high-dimensional sensory inputs
+- SOLUTION:
+	CNN to analyse raw pixels and output the value of states},
   eprint        = {1312.5602},
   file          = {:Mnih2013 - Playing Atari with Deep Reinforcement Learning.pdf:PDF},
   groups        = {Deep Q-Network},
@@ -302,7 +314,13 @@
   publisher = {{AAAI} Press},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl    = {https://dblp.org/rec/conf/aaai/HasseltGS16.bib},
-  comment   = {Double DQN},
+  comment   = {- PROBLEM:
+	(Deep)Q-learning overestimates action values sometimes
+- SOLUTION:
+	Double DQN: two models are train for selecting and evaluating actions
+- RESULT: 
+	Reduces overestimation problem
+	Increases performance on several games},
   groups    = {Value based, Double DQN},
   url       = {http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12389},
 }
@@ -315,6 +333,14 @@
   editor    = {Yoshua Bengio and Yann LeCun},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl    = {https://dblp.org/rec/journals/corr/SchaulQAS15.bib},
+  comment   = {- PROBLEM: 
+	Classic experience replay simply replays transitions at the same frequency that they were originally experienced
+	Sample efficiency
+- SOLUTION:
+	PER: more frequently replay transitions with high expected learning progress (high TD-Error)
+- RESULT:
+	Learning sped up by a factor 2
+	New sota performance on Atari benchmark},
   groups    = {PER},
   url       = {http://arxiv.org/abs/1511.05952},
 }

@@ -151,7 +151,15 @@
   volume    = {518},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl    = {https://dblp.org/rec/journals/nature/MnihKSRVBGRFOPB15.bib},
-  comment   = {DQN},
+  comment   = {DQN
+- PROBLEM:
+	Efficient representation learning from high-dimensional sensory inputs
+	Generalize well to new situations
+	Leverage recent advances in deep neural networks to train artificial agents
+- SOLUTION:
+	DQN
+- RESULTS:
+	Using only pixels as input, surpasses all previous algos and achieve professional human level on 49 Atari games, with the same architecture},
   doi       = {10.1038/nature14236},
   groups    = {Deep Q-Network, Value based},
 }
@@ -285,6 +293,10 @@
   month         = dec,
   abstract      = {We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.},
   archiveprefix = {arXiv},
+  comment       = {- PROBLEM:
+	Learning to control agents directly from high-dimensional sensory inputs
+- SOLUTION:
+	CNN to analyse raw pixels and output the value of states},
   eprint        = {1312.5602},
   file          = {:Mnih2013 - Playing Atari with Deep Reinforcement Learning.pdf:PDF},
   groups        = {Deep Q-Network},
@@ -302,7 +314,13 @@
   publisher = {{AAAI} Press},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl    = {https://dblp.org/rec/conf/aaai/HasseltGS16.bib},
-  comment   = {Double DQN},
+  comment   = {- PROBLEM:
+	(Deep)Q-learning overestimates action values sometimes
+- SOLUTION:
+	Double DQN: two models are train for selecting and evaluating actions
+- RESULT: 
+	Reduces overestimation problem
+	Increases performance on several games},
   groups    = {Value based, Double DQN},
   url       = {http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12389},
 }
@@ -365,6 +383,23 @@
   groups        = {Value based, Noisy DQN},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
+}
+
+@Article{Schrittwieser2019,
+  author        = {Julian Schrittwieser and Ioannis Antonoglou and Thomas Hubert and Karen Simonyan and Laurent Sifre and Simon Schmitt and Arthur Guez and Edward Lockhart and Demis Hassabis and Thore Graepel and Timothy Lillicrap and David Silver},
+  title         = {Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model},
+  year          = {2019},
+  month         = nov,
+  abstract      = {Constructing agents with planning capabilities has long been one of the main challenges in the pursuit of artificial intelligence. Tree-based planning methods have enjoyed huge success in challenging domains, such as chess and Go, where a perfect simulator is available. However, in real-world problems the dynamics governing the environment are often complex and unknown. In this work we present the MuZero algorithm which, by combining a tree-based search with a learned model, achieves superhuman performance in a range of challenging and visually complex domains, without any knowledge of their underlying dynamics. MuZero learns a model that, when applied iteratively, predicts the quantities most directly relevant to planning: the reward, the action-selection policy, and the value function. When evaluated on 57 different Atari games - the canonical video game environment for testing AI techniques, in which model-based planning approaches have historically struggled - our new algorithm achieved a new state of the art. When evaluated on Go, chess and shogi, without any knowledge of the game rules, MuZero matched the superhuman performance of the AlphaZero algorithm that was supplied with the game rules.},
+  archiveprefix = {arXiv},
+  comment       = {Muzero},
+  doi           = {10.1038/s41586-020-03051-4},
+  eprint        = {1911.08265},
+  file          = {:Schrittwieser2019 - Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model.pdf:PDF},
+  groups        = {Model based, Tree-based},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
