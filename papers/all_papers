@@ -780,6 +780,34 @@
   primaryclass  = {cs.LG},
 }
 
+@Article{Yu2021,
+  author        = {Tianhe Yu and Aviral Kumar and Rafael Rafailov and Aravind Rajeswaran and Sergey Levine and Chelsea Finn},
+  title         = {COMBO: Conservative Offline Model-Based Policy Optimization},
+  year          = {2021},
+  month         = feb,
+  abstract      = {Model-based algorithms, which learn a dynamics model from logged experience and perform some sort of pessimistic planning under the learned model, have emerged as a promising paradigm for offline reinforcement learning (offline RL). However, practical variants of such model-based algorithms rely on explicit uncertainty quantification for incorporating pessimism. Uncertainty estimation with complex models, such as deep neural networks, can be difficult and unreliable. We overcome this limitation by developing a new model-based offline RL algorithm, COMBO, that regularizes the value function on out-of-support state-action tuples generated via rollouts under the learned model. This results in a conservative estimate of the value function for out-of-support state-action tuples, without requiring explicit uncertainty estimation. We theoretically show that our method optimizes a lower bound on the true policy value, that this bound is tighter than that of prior methods, and our approach satisfies a policy improvement guarantee in the offline setting. Through experiments, we find that COMBO consistently performs as well or better as compared to prior offline model-free and model-based methods on widely studied offline RL benchmarks, including image-based tasks.},
+  archiveprefix = {arXiv},
+  eprint        = {2102.08363},
+  file          = {:Yu2021 - COMBO_ Conservative Offline Model Based Policy Optimization.pdf:PDF},
+  groups        = {Offline RL},
+  keywords      = {cs.LG, cs.AI, cs.RO},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Kumar2020,
+  author        = {Aviral Kumar and Aurick Zhou and George Tucker and Sergey Levine},
+  title         = {Conservative Q-Learning for Offline Reinforcement Learning},
+  year          = {2020},
+  month         = jun,
+  abstract      = {Effectively leveraging large, previously collected datasets in reinforcement learning (RL) is a key challenge for large-scale real-world applications. Offline RL algorithms promise to learn effective policies from previously-collected, static datasets without further interaction. However, in practice, offline RL presents a major challenge, and standard off-policy RL methods can fail due to overestimation of values induced by the distributional shift between the dataset and the learned policy, especially when training on complex and multi-modal data distributions. In this paper, we propose conservative Q-learning (CQL), which aims to address these limitations by learning a conservative Q-function such that the expected value of a policy under this Q-function lower-bounds its true value. We theoretically show that CQL produces a lower bound on the value of the current policy and that it can be incorporated into a policy learning procedure with theoretical improvement guarantees. In practice, CQL augments the standard Bellman error objective with a simple Q-value regularizer which is straightforward to implement on top of existing deep Q-learning and actor-critic implementations. On both discrete and continuous control domains, we show that CQL substantially outperforms existing offline RL methods, often learning policies that attain 2-5 times higher final return, especially when learning from complex and multi-modal data distributions.},
+  archiveprefix = {arXiv},
+  eprint        = {2006.04779},
+  file          = {:Kumar2020 - Conservative Q Learning for Offline Reinforcement Learning.pdf:PDF},
+  groups        = {Offline RL},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:

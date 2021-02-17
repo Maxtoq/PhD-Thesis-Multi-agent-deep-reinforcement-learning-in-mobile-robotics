@@ -357,6 +357,13 @@
   volume    = {48},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl    = {https://dblp.org/rec/conf/icml/WangSHHLF16.bib},
+  comment   = {- PROBLEM:
+	Find better suited neural network architectures for model-free RL
+- SOLUTION:
+	Dueling DQN: Separately estimate state-value and advantage for each action
+- RESULTS:
+	Less variance in traing
+	Increased performance},
   groups    = {Dueling DQN},
   url       = {http://proceedings.mlr.press/v48/wangf16.html},
 }
@@ -374,6 +381,14 @@
   series    = {Proceedings of Machine Learning Research},
   volume    = {70},
   abstract  = {In this paper we argue for the fundamental importance of the value distribution: the distribution of the random return received by a reinforcement learning agent. This is in contrast to the common approach to reinforcement learning which models the expectation of this return, or value. Although there is an established body of literature studying the value distribution, thus far it has always been used for a specific purpose such as implementing risk-aware behaviour. We begin with theoretical results in both the policy evaluation and control settings, exposing a significant distributional instability in the latter. We then use the distributional perspective to design a new algorithm which applies Bellman’s equation to the learning of approximate value distributions. We evaluate our algorithm using the suite of games from the Arcade Learning Environment. We obtain both state-of-the-art results and anecdotal evidence demonstrating the importance of the value distribution in approximate reinforcement learning. Finally, we combine theoretical and empirical evidence to highlight the ways in which the value distribution impacts learning in the approximate setting.},
+  comment   = {- PROBLEM:
+	When learning the expected (average) return of an action, we lose some information about possible outcomes
+- SOLUTION:
+	Learn a distribution of random return for each action (value distribution)
+- RESULTS:
+	Greatly increased performance on Atari benchmark
+	Learning a value distribution matters, even when using a policy which aims to maximize expected return},
+  file      = {:/home/doctoq/Desktop/THESE/papers/bellemare17a.pdf:PDF},
   groups    = {Value based, Distributional RL},
   pdf       = {http://proceedings.mlr.press/v70/bellemare17a/bellemare17a.pdf},
   url       = {http://proceedings.mlr.press/v70/bellemare17a.html},
@@ -386,8 +401,15 @@
   month         = jun,
   abstract      = {We introduce NoisyNet, a deep reinforcement learning agent with parametric noise added to its weights, and show that the induced stochasticity of the agent's policy can be used to aid efficient exploration. The parameters of the noise are learned with gradient descent along with the remaining network weights. NoisyNet is straightforward to implement and adds little computational overhead. We find that replacing the conventional exploration heuristics for A3C, DQN and dueling agents (entropy reward and $\epsilon$-greedy respectively) with NoisyNet yields substantially higher scores for a wide range of Atari games, in some cases advancing the agent from sub to super-human performance.},
   archiveprefix = {arXiv},
+  comment       = {- PROBLEM:
+	Most exploration strategies rely on random perturbations of the agent's policy (e.g. epsilon-greedy, entropy regularisation) to induce novel behaviors, thus they are unlikely to lead to large-scale efficient exploration
+- SOLUTION:
+	Parametric noise added to model's weights to induce stochasticity in agent's policy and efficient exploration
+	Noise parameters learned with gradient descent concurrently with model's weights
+- RESULTS: 
+	Way better results than with other exploration strategies},
   eprint        = {1706.10295},
-  file          = {:- Noisy Networks for Exploration.pdf:PDF},
+  file          = {:Fortunato2017 - Noisy Networks for Exploration.pdf:PDF},
   groups        = {Value based, Noisy DQN},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
@@ -408,6 +430,20 @@
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
   readstatus    = {read},
+}
+
+@Article{Hessel2017,
+  author        = {Matteo Hessel and Joseph Modayil and Hado van Hasselt and Tom Schaul and Georg Ostrovski and Will Dabney and Dan Horgan and Bilal Piot and Mohammad Azar and David Silver},
+  title         = {Rainbow: Combining Improvements in Deep Reinforcement Learning},
+  year          = {2017},
+  month         = oct,
+  abstract      = {The deep reinforcement learning community has made several independent improvements to the DQN algorithm. However, it is unclear which of these extensions are complementary and can be fruitfully combined. This paper examines six extensions to the DQN algorithm and empirically studies their combination. Our experiments show that the combination provides state-of-the-art performance on the Atari 2600 benchmark, both in terms of data efficiency and final performance. We also provide results from a detailed ablation study that shows the contribution of each component to overall performance.},
+  archiveprefix = {arXiv},
+  eprint        = {1710.02298},
+  file          = {:/home/doctoq/Desktop/THESE/papers/Hessel2017 - Rainbow_ Combining Improvements in Deep Reinforcement Learning.pdf:PDF},
+  groups        = {Value based},
+  keywords      = {cs.AI, cs.LG},
+  primaryclass  = {cs.AI},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
