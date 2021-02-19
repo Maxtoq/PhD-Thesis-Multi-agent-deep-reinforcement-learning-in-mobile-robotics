@@ -7,7 +7,17 @@
   month         = jan,
   abstract      = {Model-free deep reinforcement learning (RL) algorithms have been demonstrated on a range of challenging decision making and control tasks. However, these methods typically suffer from two major challenges: very high sample complexity and brittle convergence properties, which necessitate meticulous hyperparameter tuning. Both of these challenges severely limit the applicability of such methods to complex, real-world domains. In this paper, we propose soft actor-critic, an off-policy actor-critic deep RL algorithm based on the maximum entropy reinforcement learning framework. In this framework, the actor aims to maximize expected reward while also maximizing entropy. That is, to succeed at the task while acting as randomly as possible. Prior deep RL methods based on this framework have been formulated as Q-learning methods. By combining off-policy updates with a stable stochastic actor-critic formulation, our method achieves state-of-the-art performance on a range of continuous control benchmark tasks, outperforming prior on-policy and off-policy methods. Furthermore, we demonstrate that, in contrast to other off-policy algorithms, our approach is very stable, achieving very similar performance across different random seeds.},
   archiveprefix = {arXiv},
-  comment       = {Soft Actor Critic},
+  comment       = {Soft Actor Critic
+- PROBLEM:
+	Model-free DRL algos typically suffer from two major challenges: very high sample complexity and brittle convergence properties (=> meticulous hyperparameter tuning)
+- SOLUTION:
+	Soft Actor-Critic: based on Maximum Entropy RL framework: maximize expected reward while also maximizing entropy = succeed at the task while acting as randomly as possible
+- MODEL:
+	Double DQN to mitigate overestimation of Q values
+	Target network for policy and Q-functions for more stable training
+- RESULTS:
+	Outperforms sota model-free DRL methods (DDPG and PPO)
+	Very stable accross different random seeds},
   eprint        = {1801.01290},
   file          = {:Haarnoja2018 - Soft Actor Critic_ off Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor.pdf:PDF},
   groups        = {Policy based, Actor Critic, Soft Actor Critic},
@@ -23,7 +33,16 @@
   month         = feb,
   abstract      = {In value-based reinforcement learning methods such as deep Q-learning, function approximation errors are known to lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance. We evaluate our method on the suite of OpenAI gym tasks, outperforming the state of the art in every environment tested.},
   archiveprefix = {arXiv},
-  comment       = {Twin Delayed DDPG},
+  comment       = {- PROBLEM:
+	Overestimation of Q-values estimates leading to suboptimal policies, even in DDPG
+- SOLUTION:
+	TD3: Double DQN and Clipped Double-Q trick
+	Target networks => more stable training
+	Delayed Policy Updates => more stable
+	Target Policy smoothing: add noise to choses action  => mitigates overestimation of Q-values
+- RESULTS:
+	Reduces overestimation of Q-values
+	Outperforms all previous policy-based algorithms},
   eprint        = {1802.09477},
   file          = {:Fujimoto2018 - Addressing Function Approximation Error in Actor Critic Methods.pdf:PDF},
   groups        = {Policy based, Actor Critic, DDPG},
@@ -135,7 +154,16 @@
   month         = sep,
   abstract      = {We adapt the ideas underlying the success of Deep Q-Learning to the continuous action domain. We present an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. Using the same learning algorithm, network architecture and hyper-parameters, our algorithm robustly solves more than 20 simulated physics tasks, including classic problems such as cartpole swing-up, dexterous manipulation, legged locomotion and car driving. Our algorithm is able to find policies whose performance is competitive with those found by a planning algorithm with full access to the dynamics of the domain and its derivatives. We further demonstrate that for many of the tasks the algorithm can learn policies end-to-end: directly from raw pixel inputs.},
   archiveprefix = {arXiv},
-  comment       = {Deep Deterministic Policy Gradient},
+  comment       = {- PROBLEM:
+	Adapt DQN to continuous action domain
+- SOLUTION:
+	Combine Actor-Critic with the recent successes of DQN
+	Policy network to compute action that maximizes Q
+	DQN to learn Q
+- RESULTS:
+	Achieves learning policy for continuous actions
+	Struggles to learn from raw pixels somtimes
+	Overestimation of Q values sometimes},
   eprint        = {1509.02971},
   file          = {:Lillicrap2015 - Continuous Control with Deep Reinforcement Learning.pdf:PDF},
   groups        = {Policy based, Actor Critic, DDPG},

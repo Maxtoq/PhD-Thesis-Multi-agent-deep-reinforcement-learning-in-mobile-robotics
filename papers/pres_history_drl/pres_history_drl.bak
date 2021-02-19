@@ -405,6 +405,7 @@
 	Most exploration strategies rely on random perturbations of the agent's policy (e.g. epsilon-greedy, entropy regularisation) to induce novel behaviors, thus they are unlikely to lead to large-scale efficient exploration
 - SOLUTION:
 	Parametric noise added to model's weights to induce stochasticity in agent's policy and efficient exploration
+	Noise parameters learned with gradient descent concurrently with model's weights
 - RESULTS: 
 	Way better results than with other exploration strategies},
   eprint        = {1706.10295},

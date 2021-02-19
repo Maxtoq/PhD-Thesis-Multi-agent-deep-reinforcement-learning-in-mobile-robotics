@@ -7,7 +7,17 @@
   month         = jan,
   abstract      = {Model-free deep reinforcement learning (RL) algorithms have been demonstrated on a range of challenging decision making and control tasks. However, these methods typically suffer from two major challenges: very high sample complexity and brittle convergence properties, which necessitate meticulous hyperparameter tuning. Both of these challenges severely limit the applicability of such methods to complex, real-world domains. In this paper, we propose soft actor-critic, an off-policy actor-critic deep RL algorithm based on the maximum entropy reinforcement learning framework. In this framework, the actor aims to maximize expected reward while also maximizing entropy. That is, to succeed at the task while acting as randomly as possible. Prior deep RL methods based on this framework have been formulated as Q-learning methods. By combining off-policy updates with a stable stochastic actor-critic formulation, our method achieves state-of-the-art performance on a range of continuous control benchmark tasks, outperforming prior on-policy and off-policy methods. Furthermore, we demonstrate that, in contrast to other off-policy algorithms, our approach is very stable, achieving very similar performance across different random seeds.},
   archiveprefix = {arXiv},
-  comment       = {Soft Actor Critic},
+  comment       = {Soft Actor Critic
+- PROBLEM:
+	Model-free DRL algos typically suffer from two major challenges: very high sample complexity and brittle convergence properties (=> meticulous hyperparameter tuning)
+- SOLUTION:
+	Soft Actor-Critic: based on Maximum Entropy RL framework: maximize expected reward while also maximizing entropy = succeed at the task while acting as randomly as possible
+- MODEL:
+	Double DQN to mitigate overestimation of Q values
+	Target network for policy and Q-functions for more stable training
+- RESULTS:
+	Outperforms sota model-free DRL methods (DDPG and PPO)
+	Very stable accross different random seeds},
   eprint        = {1801.01290},
   file          = {:Haarnoja2018 - Soft Actor Critic_ off Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor.pdf:PDF},
   groups        = {Policy based, Actor Critic, Soft Actor Critic},
@@ -135,7 +145,16 @@
   month         = sep,
   abstract      = {We adapt the ideas underlying the success of Deep Q-Learning to the continuous action domain. We present an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. Using the same learning algorithm, network architecture and hyper-parameters, our algorithm robustly solves more than 20 simulated physics tasks, including classic problems such as cartpole swing-up, dexterous manipulation, legged locomotion and car driving. Our algorithm is able to find policies whose performance is competitive with those found by a planning algorithm with full access to the dynamics of the domain and its derivatives. We further demonstrate that for many of the tasks the algorithm can learn policies end-to-end: directly from raw pixel inputs.},
   archiveprefix = {arXiv},
-  comment       = {Deep Deterministic Policy Gradient},
+  comment       = {- PROBLEM:
+	Adapt DQN to continuous action domain
+- SOLUTION:
+	Combine Actor-Critic with the recent successes of DQN
+	Policy network to compute action that maximizes Q
+	DQN to learn Q
+- RESULTS:
+	Achieves learning policy for continuous actions
+	Struggles to learn from raw pixels somtimes
+	Overestimation of Q values sometimes},
   eprint        = {1509.02971},
   file          = {:Lillicrap2015 - Continuous Control with Deep Reinforcement Learning.pdf:PDF},
   groups        = {Policy based, Actor Critic, DDPG},
@@ -802,7 +821,7 @@
   abstract      = {Effectively leveraging large, previously collected datasets in reinforcement learning (RL) is a key challenge for large-scale real-world applications. Offline RL algorithms promise to learn effective policies from previously-collected, static datasets without further interaction. However, in practice, offline RL presents a major challenge, and standard off-policy RL methods can fail due to overestimation of values induced by the distributional shift between the dataset and the learned policy, especially when training on complex and multi-modal data distributions. In this paper, we propose conservative Q-learning (CQL), which aims to address these limitations by learning a conservative Q-function such that the expected value of a policy under this Q-function lower-bounds its true value. We theoretically show that CQL produces a lower bound on the value of the current policy and that it can be incorporated into a policy learning procedure with theoretical improvement guarantees. In practice, CQL augments the standard Bellman error objective with a simple Q-value regularizer which is straightforward to implement on top of existing deep Q-learning and actor-critic implementations. On both discrete and continuous control domains, we show that CQL substantially outperforms existing offline RL methods, often learning policies that attain 2-5 times higher final return, especially when learning from complex and multi-modal data distributions.},
   archiveprefix = {arXiv},
   eprint        = {2006.04779},
-  file          = {:http\://arxiv.org/pdf/2006.04779v3:PDF},
+  file          = {:Kumar2020 - Conservative Q Learning for Offline Reinforcement Learning.pdf:PDF},
   groups        = {Offline RL},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
