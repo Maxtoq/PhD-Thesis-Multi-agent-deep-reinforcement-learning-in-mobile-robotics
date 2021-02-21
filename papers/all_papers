@@ -836,6 +836,54 @@
   primaryclass  = {cs.LG},
 }
 
+@Article{Silver2016,
+  author    = {David Silver and Aja Huang and Chris J. Maddison and Arthur Guez and Laurent Sifre and George van den Driessche and Julian Schrittwieser and Ioannis Antonoglou and Vedavyas Panneershelvam and Marc Lanctot and Sander Dieleman and Dominik Grewe and John Nham and Nal Kalchbrenner and Ilya Sutskever and Timothy P. Lillicrap and Madeleine Leach and Koray Kavukcuoglu and Thore Graepel and Demis Hassabis},
+  journal   = {Nat.},
+  title     = {Mastering the game of Go with deep neural networks and tree search},
+  year      = {2016},
+  number    = {7587},
+  pages     = {484--489},
+  volume    = {529},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/nature/SilverHMGSDSAPL16.bib},
+  comment   = {AlphaGo},
+  doi       = {10.1038/nature16961},
+  file      = {:Silver2016 - Mastering the Game of Go with Deep Neural Networks and Tree Search.pdf:PDF},
+  groups    = {Model based},
+}
+
+@Article{Silver2017,
+  author    = {David Silver and Julian Schrittwieser and Karen Simonyan and Ioannis Antonoglou and Aja Huang and Arthur Guez and Thomas Hubert and Lucas Baker and Matthew Lai and Adrian Bolton and Yutian Chen and Timothy P. Lillicrap and Fan Hui and Laurent Sifre and George van den Driessche and Thore Graepel and Demis Hassabis},
+  journal   = {Nat.},
+  title     = {Mastering the game of Go without human knowledge},
+  year      = {2017},
+  number    = {7676},
+  pages     = {354--359},
+  volume    = {550},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/nature/SilverSSAHGHBLB17.bib},
+  comment   = {AlphaGo Zero},
+  doi       = {10.1038/nature24270},
+  file      = {:Silver2017 - Mastering the Game of Go without Human Knowledge.pdf:PDF},
+  groups    = {Model based},
+}
+
+@Article{Silver2017a,
+  author        = {David Silver and Thomas Hubert and Julian Schrittwieser and Ioannis Antonoglou and Matthew Lai and Arthur Guez and Marc Lanctot and Laurent Sifre and Dharshan Kumaran and Thore Graepel and Timothy P. Lillicrap and Karen Simonyan and Demis Hassabis},
+  journal       = {CoRR},
+  title         = {Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm},
+  year          = {2017},
+  volume        = {abs/1712.01815},
+  archiveprefix = {arXiv},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-1712-01815.bib},
+  comment       = {AlphaZero},
+  eprint        = {1712.01815},
+  file          = {:Silver2017a - Mastering Chess and Shogi by Self Play with a General Reinforcement Learning Algorithm.pdf:PDF},
+  groups        = {Model based},
+  url           = {http://arxiv.org/abs/1712.01815},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
