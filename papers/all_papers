@@ -90,14 +90,19 @@
   month         = nov,
   abstract      = {Constructing agents with planning capabilities has long been one of the main challenges in the pursuit of artificial intelligence. Tree-based planning methods have enjoyed huge success in challenging domains, such as chess and Go, where a perfect simulator is available. However, in real-world problems the dynamics governing the environment are often complex and unknown. In this work we present the MuZero algorithm which, by combining a tree-based search with a learned model, achieves superhuman performance in a range of challenging and visually complex domains, without any knowledge of their underlying dynamics. MuZero learns a model that, when applied iteratively, predicts the quantities most directly relevant to planning: the reward, the action-selection policy, and the value function. When evaluated on 57 different Atari games - the canonical video game environment for testing AI techniques, in which model-based planning approaches have historically struggled - our new algorithm achieved a new state of the art. When evaluated on Go, chess and shogi, without any knowledge of the game rules, MuZero matched the superhuman performance of the AlphaZero algorithm that was supplied with the game rules.},
   archiveprefix = {arXiv},
-  comment       = {Muzero},
+  comment       = {Muzero
+- PROBLEM:
+	Tree-based planning requires a perfect simulator of the environment, which is not available in real-world environments
+- RESULTS: 
+	Achieves new state-of-the-art performance on Atari benchmark, in which model-based approaches have historically struggle
+	In Go, Chess and Shogi, match performance of AlphaZero which was given a perfect simulator},
   doi           = {10.1038/s41586-020-03051-4},
   eprint        = {1911.08265},
   file          = {:Schrittwieser2019 - Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model.pdf:PDF},
   groups        = {Model based, Tree-based},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
-  readstatus    = {read},
+  readstatus    = {skimmed},
 }
 
 @Article{Hafner2019,
@@ -113,7 +118,7 @@
   groups        = {Model based, Latent Dynamics Model},
   keywords      = {cs.LG, cs.AI, cs.RO},
   primaryclass  = {cs.LG},
-  readstatus    = {read},
+  readstatus    = {skimmed},
 }
 
 @Article{Pathak2017,
@@ -216,7 +221,7 @@
 	Learn policy and value with Dreamer
 	Induce exploration by generating an intrinsic reward using ensemble disagreement, like Pathak2019
 	No reward from the environment during learning the model
-	After learning the world model through exploration, adapts on tasks in zero-shot (only imagination) or few-shot (imagination and few iteraction)},
+	After learning the world model through exploration, adapts on tasks in zero-shot (only imagination) or few-shot (imagination and few interaction)},
   eprint        = {2005.05960},
   file          = {:Sekar2020 - Planning to Explore Via Self Supervised World Models.pdf:PDF},
   groups        = {Model based, Disagreement, Model-based exploration, Intrinsic goals},
@@ -348,8 +353,15 @@
   month         = nov,
   abstract      = {Planning has been very successful for control tasks with known environment dynamics. To leverage planning in unknown environments, the agent needs to learn the dynamics from interactions with the world. However, learning dynamics models that are accurate enough for planning has been a long-standing challenge, especially in image-based domains. We propose the Deep Planning Network (PlaNet), a purely model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space. To achieve high performance, the dynamics model must accurately predict the rewards ahead for multiple time steps. We approach this using a latent dynamics model with both deterministic and stochastic transition components. Moreover, we propose a multi-step variational inference objective that we name latent overshooting. Using only pixel observations, our agent solves continuous control tasks with contact dynamics, partial observability, and sparse rewards, which exceed the difficulty of tasks that were previously solved by planning with learned models. PlaNet uses substantially fewer episodes and reaches final performance close to and sometimes higher than strong model-free algorithms.},
   archiveprefix = {arXiv},
-  comment       = {- MODEL:
+  comment       = {- PROBLEM:
+	Learning the dynamics of high-dimensional environments is hard:
+	model inaccuracies
+	accumulation of multi-step prediction errors
+	failure to capture multiple possible futures
+	overconfident predictions during testing
+- SOLUTION:
 	PlaNet: Deep Planning Network, a model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space
+	Learn compact latent representations of high-dimensional environment fitted for multi-step prediction
 - RESULTS:
 	Beat A3C and sometimes D4PG
 	Way more sample efficient (200x)},
@@ -882,6 +894,20 @@
   file          = {:Silver2017a - Mastering Chess and Shogi by Self Play with a General Reinforcement Learning Algorithm.pdf:PDF},
   groups        = {Model based},
   url           = {http://arxiv.org/abs/1712.01815},
+}
+
+@InProceedings{Kapturowski2019,
+  author    = {Steven Kapturowski and Georg Ostrovski and John Quan and R{\'{e}}mi Munos and Will Dabney},
+  booktitle = {7th International Conference on Learning Representations, {ICLR} 2019, New Orleans, LA, USA, May 6-9, 2019},
+  title     = {Recurrent Experience Replay in Distributed Reinforcement Learning},
+  year      = {2019},
+  publisher = {OpenReview.net},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/conf/iclr/KapturowskiOQMD19.bib},
+  comment   = {R2D2},
+  file      = {:Kapturowski2019 - Recurrent Experience Replay in Distributed Reinforcement Learning.pdf:PDF},
+  groups    = {Value based},
+  url       = {https://openreview.net/forum?id=r1lyTjAqYX},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
