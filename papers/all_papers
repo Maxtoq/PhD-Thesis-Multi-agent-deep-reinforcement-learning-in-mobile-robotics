@@ -910,6 +910,34 @@
   url       = {https://openreview.net/forum?id=r1lyTjAqYX},
 }
 
+@Article{Hafner2020,
+  author        = {Danijar Hafner and Timothy Lillicrap and Mohammad Norouzi and Jimmy Ba},
+  title         = {Mastering Atari with Discrete World Models},
+  year          = {2020},
+  month         = oct,
+  abstract      = {Intelligent agents need to generalize from past experience to achieve goals in complex environments. World models facilitate such generalization and allow learning behaviors from imagined outcomes to increase sample-efficiency. While learning world models from image inputs has recently become feasible for some tasks, modeling Atari games accurately enough to derive successful behaviors has remained an open challenge for many years. We introduce DreamerV2, a reinforcement learning agent that learns behaviors purely from predictions in the compact latent space of a powerful world model. The world model uses discrete representations and is trained separately from the policy. DreamerV2 constitutes the first agent that achieves human-level performance on the Atari benchmark of 55 tasks by learning behaviors inside a separately trained world model. With the same computational budget and wall-clock time, DreamerV2 reaches 200M frames and exceeds the final performance of the top single-GPU agents IQN and Rainbow.},
+  archiveprefix = {arXiv},
+  eprint        = {2010.02193},
+  file          = {:Hafner2020 - Mastering Atari with Discrete World Models.pdf:PDF},
+  groups        = {Model based},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Hu2021a,
+  author        = {Jian Hu and Haibin Wu and Seth Austin Harding and Siyang Jiang and Shih-wei Liao},
+  title         = {RIIT: Rethinking the Importance of Implementation Tricks in Multi-Agent Reinforcement Learning},
+  year          = {2021},
+  month         = feb,
+  abstract      = {In recent years, Multi-Agent Deep Reinforcement Learning (MADRL) has been successfully applied to various complex scenarios such as computer games and robot swarms. We investigate the impact of "implementation tricks" of state-of-the-art (SOTA) cooperative QMIX-based algorithms. Firstly, we find that such tricks described as auxiliary details to the core algorithm, seemingly of secondary importance, have a major impact. This finding demonstrates that, after modest tuning, the QMIX attains extraordinarily high win rates and achieves SOTA in the StarCraft Multi-Agent Challenge (SMAC). Furthermore, we find that the consideration of QMIX's monotonicity condition is critical for cooperative tasks. Based on the above findings, we propose a new algorithm called: RIIT, which achieves SOTA among policy-based algorithms (allowing for convenient complex action space modeling). We open-sourced the code at \url{https://github.com/hijkzzz/pymarl2}.},
+  archiveprefix = {arXiv},
+  eprint        = {2102.03479},
+  file          = {:Hu2021a - RIIT_ Rethinking the Importance of Implementation Tricks in Multi Agent Reinforcement Learning.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.LG, cs.AI, cs.MA},
+  primaryclass  = {cs.LG},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
