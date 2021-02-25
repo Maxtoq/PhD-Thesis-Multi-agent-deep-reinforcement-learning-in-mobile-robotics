@@ -90,19 +90,14 @@
   month         = nov,
   abstract      = {Constructing agents with planning capabilities has long been one of the main challenges in the pursuit of artificial intelligence. Tree-based planning methods have enjoyed huge success in challenging domains, such as chess and Go, where a perfect simulator is available. However, in real-world problems the dynamics governing the environment are often complex and unknown. In this work we present the MuZero algorithm which, by combining a tree-based search with a learned model, achieves superhuman performance in a range of challenging and visually complex domains, without any knowledge of their underlying dynamics. MuZero learns a model that, when applied iteratively, predicts the quantities most directly relevant to planning: the reward, the action-selection policy, and the value function. When evaluated on 57 different Atari games - the canonical video game environment for testing AI techniques, in which model-based planning approaches have historically struggled - our new algorithm achieved a new state of the art. When evaluated on Go, chess and shogi, without any knowledge of the game rules, MuZero matched the superhuman performance of the AlphaZero algorithm that was supplied with the game rules.},
   archiveprefix = {arXiv},
-  comment       = {Muzero
-- PROBLEM:
-	Tree-based planning requires a perfect simulator of the environment, which is not available in real-world environments
-- RESULTS: 
-	Achieves new state-of-the-art performance on Atari benchmark, in which model-based approaches have historically struggle
-	In Go, Chess and Shogi, match performance of AlphaZero which was given a perfect simulator},
+  comment       = {Muzero},
   doi           = {10.1038/s41586-020-03051-4},
   eprint        = {1911.08265},
   file          = {:Schrittwieser2019 - Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model.pdf:PDF},
   groups        = {Model based, Tree-based},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
-  readstatus    = {skimmed},
+  readstatus    = {read},
 }
 
 @Article{Hafner2019,
@@ -118,7 +113,7 @@
   groups        = {Model based, Latent Dynamics Model},
   keywords      = {cs.LG, cs.AI, cs.RO},
   primaryclass  = {cs.LG},
-  readstatus    = {skimmed},
+  readstatus    = {read},
 }
 
 @Article{Pathak2017,
@@ -221,7 +216,7 @@
 	Learn policy and value with Dreamer
 	Induce exploration by generating an intrinsic reward using ensemble disagreement, like Pathak2019
 	No reward from the environment during learning the model
-	After learning the world model through exploration, adapts on tasks in zero-shot (only imagination) or few-shot (imagination and few interaction)},
+	After learning the world model through exploration, adapts on tasks in zero-shot (only imagination) or few-shot (imagination and few iteraction)},
   eprint        = {2005.05960},
   file          = {:Sekar2020 - Planning to Explore Via Self Supervised World Models.pdf:PDF},
   groups        = {Model based, Disagreement, Model-based exploration, Intrinsic goals},
@@ -353,15 +348,8 @@
   month         = nov,
   abstract      = {Planning has been very successful for control tasks with known environment dynamics. To leverage planning in unknown environments, the agent needs to learn the dynamics from interactions with the world. However, learning dynamics models that are accurate enough for planning has been a long-standing challenge, especially in image-based domains. We propose the Deep Planning Network (PlaNet), a purely model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space. To achieve high performance, the dynamics model must accurately predict the rewards ahead for multiple time steps. We approach this using a latent dynamics model with both deterministic and stochastic transition components. Moreover, we propose a multi-step variational inference objective that we name latent overshooting. Using only pixel observations, our agent solves continuous control tasks with contact dynamics, partial observability, and sparse rewards, which exceed the difficulty of tasks that were previously solved by planning with learned models. PlaNet uses substantially fewer episodes and reaches final performance close to and sometimes higher than strong model-free algorithms.},
   archiveprefix = {arXiv},
-  comment       = {- PROBLEM:
-	Learning the dynamics of high-dimensional environments is hard:
-	model inaccuracies
-	accumulation of multi-step prediction errors
-	failure to capture multiple possible futures
-	overconfident predictions during testing
-- SOLUTION:
+  comment       = {- MODEL:
 	PlaNet: Deep Planning Network, a model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space
-	Learn compact latent representations of high-dimensional environment fitted for multi-step prediction
 - RESULTS:
 	Beat A3C and sometimes D4PG
 	Way more sample efficient (200x)},
@@ -896,46 +884,149 @@
   url           = {http://arxiv.org/abs/1712.01815},
 }
 
-@InProceedings{Kapturowski2019,
-  author    = {Steven Kapturowski and Georg Ostrovski and John Quan and R{\'{e}}mi Munos and Will Dabney},
-  booktitle = {7th International Conference on Learning Representations, {ICLR} 2019, New Orleans, LA, USA, May 6-9, 2019},
-  title     = {Recurrent Experience Replay in Distributed Reinforcement Learning},
-  year      = {2019},
-  publisher = {OpenReview.net},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/conf/iclr/KapturowskiOQMD19.bib},
-  comment   = {R2D2},
-  file      = {:Kapturowski2019 - Recurrent Experience Replay in Distributed Reinforcement Learning.pdf:PDF},
-  groups    = {Value based},
-  url       = {https://openreview.net/forum?id=r1lyTjAqYX},
+@Article{Lowe2017,
+  author        = {Ryan Lowe and Yi Wu and Aviv Tamar and Jean Harb and Pieter Abbeel and Igor Mordatch},
+  journal       = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+  title         = {Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments},
+  year          = {2017},
+  month         = jun,
+  abstract      = {We explore deep reinforcement learning methods for multi-agent domains. We begin by analyzing the difficulty of traditional algorithms in the multi-agent case: Q-learning is challenged by an inherent non-stationarity of the environment, while policy gradient suffers from a variance that increases as the number of agents grows. We then present an adaptation of actor-critic methods that considers action policies of other agents and is able to successfully learn policies that require complex multi-agent coordination. Additionally, we introduce a training regimen utilizing an ensemble of policies for each agent that leads to more robust multi-agent policies. We show the strength of our approach compared to existing methods in cooperative as well as competitive scenarios, where agent populations are able to discover various physical and informational coordination strategies.},
+  archiveprefix = {arXiv},
+  eprint        = {1706.02275},
+  file          = {:Lowe2017 - Multi Agent Actor Critic for Mixed Cooperative Competitive Environments.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.LG, cs.AI, cs.NE},
+  primaryclass  = {cs.LG},
 }
 
-@Article{Hafner2020,
-  author        = {Danijar Hafner and Timothy Lillicrap and Mohammad Norouzi and Jimmy Ba},
-  title         = {Mastering Atari with Discrete World Models},
-  year          = {2020},
-  month         = oct,
-  abstract      = {Intelligent agents need to generalize from past experience to achieve goals in complex environments. World models facilitate such generalization and allow learning behaviors from imagined outcomes to increase sample-efficiency. While learning world models from image inputs has recently become feasible for some tasks, modeling Atari games accurately enough to derive successful behaviors has remained an open challenge for many years. We introduce DreamerV2, a reinforcement learning agent that learns behaviors purely from predictions in the compact latent space of a powerful world model. The world model uses discrete representations and is trained separately from the policy. DreamerV2 constitutes the first agent that achieves human-level performance on the Atari benchmark of 55 tasks by learning behaviors inside a separately trained world model. With the same computational budget and wall-clock time, DreamerV2 reaches 200M frames and exceeds the final performance of the top single-GPU agents IQN and Rainbow.},
+@Article{Schulman2015a,
+  author        = {John Schulman and Philipp Moritz and Sergey Levine and Michael Jordan and Pieter Abbeel},
+  journal       = {ICLR 2016},
+  title         = {High-Dimensional Continuous Control Using Generalized Advantage Estimation},
+  year          = {2015},
+  month         = jun,
+  abstract      = {Policy gradient methods are an appealing approach in reinforcement learning because they directly optimize the cumulative reward and can straightforwardly be used with nonlinear function approximators such as neural networks. The two main challenges are the large number of samples typically required, and the difficulty of obtaining stable and steady improvement despite the nonstationarity of the incoming data. We address the first challenge by using value functions to substantially reduce the variance of policy gradient estimates at the cost of some bias, with an exponentially-weighted estimator of the advantage function that is analogous to TD(lambda). We address the second challenge by using trust region optimization procedure for both the policy and the value function, which are represented by neural networks. Our approach yields strong empirical results on highly challenging 3D locomotion tasks, learning running gaits for bipedal and quadrupedal simulated robots, and learning a policy for getting the biped to stand up from starting out lying on the ground. In contrast to a body of prior work that uses hand-crafted policy representations, our neural network policies map directly from raw kinematics to joint torques. Our algorithm is fully model-free, and the amount of simulated experience required for the learning tasks on 3D bipeds corresponds to 1-2 weeks of real time.},
   archiveprefix = {arXiv},
-  eprint        = {2010.02193},
-  file          = {:Hafner2020 - Mastering Atari with Discrete World Models.pdf:PDF},
-  groups        = {Model based},
+  comment       = {General Advantage Estimator},
+  eprint        = {1506.02438},
+  file          = {:Schulman2015a - High Dimensional Continuous Control Using Generalized Advantage Estimation.pdf:PDF},
+  groups        = {TRPO},
+  keywords      = {cs.LG, cs.RO, cs.SY},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Heess2017,
+  author        = {Nicolas Heess and Dhruva TB and Srinivasan Sriram and Jay Lemmon and Josh Merel and Greg Wayne and Yuval Tassa and Tom Erez and Ziyu Wang and S. M. Ali Eslami and Martin Riedmiller and David Silver},
+  title         = {Emergence of Locomotion Behaviours in Rich Environments},
+  year          = {2017},
+  month         = jul,
+  abstract      = {The reinforcement learning paradigm allows, in principle, for complex behaviours to be learned directly from simple reward signals. In practice, however, it is common to carefully hand-design the reward function to encourage a particular solution, or to derive it from demonstration data. In this paper explore how a rich environment can help to promote the learning of complex behavior. Specifically, we train agents in diverse environmental contexts, and find that this encourages the emergence of robust behaviours that perform well across a suite of tasks. We demonstrate this principle for locomotion -- behaviours that are known for their sensitivity to the choice of reward. We train several simulated bodies on a diverse set of challenging terrains and obstacles, using a simple reward function based on forward progress. Using a novel scalable variant of policy gradient reinforcement learning, our agents learn to run, jump, crouch and turn as required by the environment without explicit reward-based guidance. A visual depiction of highlights of the learned behavior can be viewed following https://youtu.be/hx_bgoTF7bs .},
+  archiveprefix = {arXiv},
+  eprint        = {1707.02286},
+  file          = {:Heess2017 - Emergence of Locomotion Behaviours in Rich Environments.pdf:PDF},
+  groups        = {TRPO},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Leibo2019,
+  author        = {Joel Z. Leibo and Edward Hughes and Marc Lanctot and Thore Graepel},
+  title         = {Autocurricula and the Emergence of Innovation from Social Interaction: A Manifesto for Multi-Agent Intelligence Research},
+  year          = {2019},
+  month         = mar,
+  abstract      = {Evolution has produced a multi-scale mosaic of interacting adaptive units. Innovations arise when perturbations push parts of the system away from stable equilibria into new regimes where previously well-adapted solutions no longer work. Here we explore the hypothesis that multi-agent systems sometimes display intrinsic dynamics arising from competition and cooperation that provide a naturally emergent curriculum, which we term an autocurriculum. The solution of one social task often begets new social tasks, continually generating novel challenges, and thereby promoting innovation. Under certain conditions these challenges may become increasingly complex over time, demanding that agents accumulate ever more innovations.},
+  archiveprefix = {arXiv},
+  eprint        = {1903.00742},
+  file          = {:Leibo2019 - Autocurricula and the Emergence of Innovation from Social Interaction_ a Manifesto for Multi Agent Intelligence Research.pdf:PDF},
+  groups        = {Multi-agent Systems},
+  keywords      = {cs.AI, cs.GT, cs.MA, cs.NE, q-bio.NC},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Baker2019,
+  author        = {Bowen Baker and Ingmar Kanitscheider and Todor Markov and Yi Wu and Glenn Powell and Bob McGrew and Igor Mordatch},
+  title         = {Emergent Tool Use From Multi-Agent Autocurricula},
+  year          = {2019},
+  month         = sep,
+  abstract      = {Through multi-agent competition, the simple objective of hide-and-seek, and standard reinforcement learning algorithms at scale, we find that agents create a self-supervised autocurriculum inducing multiple distinct rounds of emergent strategy, many of which require sophisticated tool use and coordination. We find clear evidence of six emergent phases in agent strategy in our environment, each of which creates a new pressure for the opposing team to adapt; for instance, agents learn to build multi-object shelters using moveable boxes which in turn leads to agents discovering that they can overcome obstacles using ramps. We further provide evidence that multi-agent competition may scale better with increasing environment complexity and leads to behavior that centers around far more human-relevant skills than other self-supervised reinforcement learning methods such as intrinsic motivation. Finally, we propose transfer and fine-tuning as a way to quantitatively evaluate targeted capabilities, and we compare hide-and-seek agents to both intrinsic motivation and random initialization baselines in a suite of domain-specific intelligence tests.},
+  archiveprefix = {arXiv},
+  eprint        = {1909.07528},
+  file          = {:Baker2019 - Emergent Tool Use from Multi Agent Autocurricula.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Bansal2017,
+  author        = {Trapit Bansal and Jakub Pachocki and Szymon Sidor and Ilya Sutskever and Igor Mordatch},
+  journal       = {ICLR 2018},
+  title         = {Emergent Complexity via Multi-Agent Competition},
+  year          = {2017},
+  month         = oct,
+  abstract      = {Reinforcement learning algorithms can train agents that solve problems in complex, interesting environments. Normally, the complexity of the trained agent is closely related to the complexity of the environment. This suggests that a highly capable agent requires a complex environment for training. In this paper, we point out that a competitive multi-agent environment trained with self-play can produce behaviors that are far more complex than the environment itself. We also point out that such environments come with a natural curriculum, because for any skill level, an environment full of agents of this level will have the right level of difficulty. This work introduces several competitive multi-agent environments where agents compete in a 3D world with simulated physics. The trained agents learn a wide variety of complex and interesting skills, even though the environment themselves are relatively simple. The skills include behaviors such as running, blocking, ducking, tackling, fooling opponents, kicking, and defending using both arms and legs. A highlight of the learned behaviors can be found here: https://goo.gl/eR7fbX},
+  archiveprefix = {arXiv},
+  eprint        = {1710.03748},
+  file          = {:Bansal2017 - Emergent Complexity Via Multi Agent Competition.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Jaderberg2018,
+  author        = {Max Jaderberg and Wojciech M. Czarnecki and Iain Dunning and Luke Marris and Guy Lever and Antonio Garcia Castaneda and Charles Beattie and Neil C. Rabinowitz and Ari S. Morcos and Avraham Ruderman and Nicolas Sonnerat and Tim Green and Louise Deason and Joel Z. Leibo and David Silver and Demis Hassabis and Koray Kavukcuoglu and Thore Graepel},
+  journal       = {Science, 364(6443):859–865, 2019},
+  title         = {Human-level performance in first-person multiplayer games with population-based deep reinforcement learning},
+  year          = {2018},
+  month         = jul,
+  abstract      = {Recent progress in artificial intelligence through reinforcement learning (RL) has shown great success on increasingly complex single-agent environments and two-player turn-based games. However, the real-world contains multiple agents, each learning and acting independently to cooperate and compete with other agents, and environments reflecting this degree of complexity remain an open challenge. In this work, we demonstrate for the first time that an agent can achieve human-level in a popular 3D multiplayer first-person video game, Quake III Arena Capture the Flag, using only pixels and game points as input. These results were achieved by a novel two-tier optimisation process in which a population of independent RL agents are trained concurrently from thousands of parallel matches with agents playing in teams together and against each other on randomly generated environments. Each agent in the population learns its own internal reward signal to complement the sparse delayed reward from winning, and selects actions using a novel temporally hierarchical representation that enables the agent to reason at multiple timescales. During game-play, these agents display human-like behaviours such as navigating, following, and defending based on a rich learned representation that is shown to encode high-level game knowledge. In an extensive tournament-style evaluation the trained agents exceeded the win-rate of strong human players both as teammates and opponents, and proved far stronger than existing state-of-the-art agents. These results demonstrate a significant jump in the capabilities of artificial agents, bringing us closer to the goal of human-level intelligence.},
+  archiveprefix = {arXiv},
+  doi           = {10.1126/science.aau6249},
+  eprint        = {1807.01281},
+  file          = {:Jaderberg2018 - Human Level Performance in First Person Multiplayer Games with Population Based Deep Reinforcement Learning.pdf:PDF},
+  groups        = {MARL},
   keywords      = {cs.LG, cs.AI, stat.ML},
   primaryclass  = {cs.LG},
 }
 
-@Article{Hu2021a,
-  author        = {Jian Hu and Haibin Wu and Seth Austin Harding and Siyang Jiang and Shih-wei Liao},
-  title         = {RIIT: Rethinking the Importance of Implementation Tricks in Multi-Agent Reinforcement Learning},
-  year          = {2021},
+@Article{Liu2019,
+  author        = {Siqi Liu and Guy Lever and Josh Merel and Saran Tunyasuvunakool and Nicolas Heess and Thore Graepel},
+  title         = {Emergent Coordination Through Competition},
+  year          = {2019},
   month         = feb,
-  abstract      = {In recent years, Multi-Agent Deep Reinforcement Learning (MADRL) has been successfully applied to various complex scenarios such as computer games and robot swarms. We investigate the impact of "implementation tricks" of state-of-the-art (SOTA) cooperative QMIX-based algorithms. Firstly, we find that such tricks described as auxiliary details to the core algorithm, seemingly of secondary importance, have a major impact. This finding demonstrates that, after modest tuning, the QMIX attains extraordinarily high win rates and achieves SOTA in the StarCraft Multi-Agent Challenge (SMAC). Furthermore, we find that the consideration of QMIX's monotonicity condition is critical for cooperative tasks. Based on the above findings, we propose a new algorithm called: RIIT, which achieves SOTA among policy-based algorithms (allowing for convenient complex action space modeling). We open-sourced the code at \url{https://github.com/hijkzzz/pymarl2}.},
+  abstract      = {We study the emergence of cooperative behaviors in reinforcement learning agents by introducing a challenging competitive multi-agent soccer environment with continuous simulated physics. We demonstrate that decentralized, population-based training with co-play can lead to a progression in agents' behaviors: from random, to simple ball chasing, and finally showing evidence of cooperation. Our study highlights several of the challenges encountered in large scale multi-agent training in continuous control. In particular, we demonstrate that the automatic optimization of simple shaping rewards, not themselves conducive to co-operative behavior, can lead to long-horizon team behavior. We further apply an evaluation scheme, grounded by game theoretic principals, that can assess agent performance in the absence of pre-defined evaluation tasks or human baselines.},
   archiveprefix = {arXiv},
-  eprint        = {2102.03479},
-  file          = {:http\://arxiv.org/pdf/2102.03479v2:PDF},
+  eprint        = {1902.07151},
+  file          = {:Liu2019 - Emergent Coordination through Competition.pdf:PDF},
   groups        = {MARL},
-  keywords      = {cs.LG, cs.AI, cs.MA},
-  primaryclass  = {cs.LG},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Miikkulainen2004,
+  author        = {R. Miikkulainen and K. O. Stanley},
+  journal       = {Journal Of Artificial Intelligence Research, Volume 21, pages 63-100, 2004},
+  title         = {Competitive Coevolution through Evolutionary Complexification},
+  year          = {2004},
+  abstract      = {Two major goals in machine learning are the discovery and improvement of solutions to complex problems. In this paper, we argue that complexification, i.e. the incremental elaboration of solutions through adding new structure, achieves both these goals. We demonstrate the power of complexification through the NeuroEvolution of Augmenting Topologies (NEAT) method, which evolves increasingly complex neural network architectures. NEAT is applied to an open-ended coevolutionary robot duel domain where robot controllers compete head to head. Because the robot duel domain supports a wide range of strategies, and because coevolution benefits from an escalating arms race, it serves as a suitable testbed for studying complexification. When compared to the evolution of networks with fixed structure, complexifying evolution discovers significantly more sophisticated strategies. The results suggest that in order to discover and improve complex solutions, evolution, and search in general, should be allowed to complexify as well as optimize.},
+  archiveprefix = {arXiv},
+  comment       = {following NEAT},
+  doi           = {10.1613/jair.1338},
+  eprint        = {1107.0037},
+  file          = {:Miikkulainen2011 - Competitive Coevolution through Evolutionary Complexification.pdf:PDF},
+  groups        = {Multi-agent learning},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Rosin1997,
+  author = {Christopher D. Rosin and Richard K. Belew},
+  title  = {New Methods for Competitive Coevolution},
+  year   = {1997},
+  issn   = {1063-6560},
+  pages  = {1-29},
+  volume = {5},
+  doi    = {10.1162/evco.1997.5.1.1},
+  groups = {Multi-agent learning},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -962,6 +1053,10 @@
 1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent learning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent DRL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
