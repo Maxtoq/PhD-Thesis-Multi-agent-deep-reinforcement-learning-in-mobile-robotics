@@ -894,7 +894,7 @@
   archiveprefix = {arXiv},
   eprint        = {1706.02275},
   file          = {:Lowe2017 - Multi Agent Actor Critic for Mixed Cooperative Competitive Environments.pdf:PDF},
-  groups        = {MARL},
+  groups        = {MARL, Communication},
   keywords      = {cs.LG, cs.AI, cs.NE},
   primaryclass  = {cs.LG},
 }
@@ -1029,6 +1029,80 @@
   groups = {Multi-agent learning},
 }
 
+@Article{Sukhbaatar2016,
+  author        = {Sainbayar Sukhbaatar and Arthur Szlam and Rob Fergus},
+  journal       = {Advances in Neural Information Processing Systems, pp. 2244–2252},
+  title         = {Learning Multiagent Communication with Backpropagation},
+  year          = {2016},
+  month         = may,
+  abstract      = {Many tasks in AI require the collaboration of multiple agents. Typically, the communication protocol between agents is manually specified and not altered during training. In this paper we explore a simple neural model, called CommNet, that uses continuous communication for fully cooperative tasks. The model consists of multiple agents and the communication between them is learned alongside their policy. We apply this model to a diverse set of tasks, demonstrating the ability of the agents to learn to communicate amongst themselves, yielding improved performance over non-communicative agents and baselines. In some cases, it is possible to interpret the language devised by the agents, revealing simple but effective strategies for solving the task at hand.},
+  archiveprefix = {arXiv},
+  eprint        = {1605.07736},
+  file          = {:Sukhbaatar2016 - Learning Multiagent Communication with Backpropagation.pdf:PDF},
+  groups        = {Communication},
+  keywords      = {cs.LG, cs.AI},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Foerster2016,
+  author        = {Jakob N. Foerster and Yannis M. Assael and Nando de Freitas and Shimon Whiteson},
+  journal       = {Advances in Neural Information Processing Systems, pp. 2137–2145},
+  title         = {Learning to Communicate with Deep Multi-Agent Reinforcement Learning},
+  year          = {2016},
+  month         = may,
+  abstract      = {We consider the problem of multiple agents sensing and acting in environments with the goal of maximising their shared utility. In these environments, agents must learn communication protocols in order to share information that is needed to solve the tasks. By embracing deep neural networks, we are able to demonstrate end-to-end learning of protocols in complex environments inspired by communication riddles and multi-agent computer vision problems with partial observability. We propose two approaches for learning in these domains: Reinforced Inter-Agent Learning (RIAL) and Differentiable Inter-Agent Learning (DIAL). The former uses deep Q-learning, while the latter exploits the fact that, during learning, agents can backpropagate error derivatives through (noisy) communication channels. Hence, this approach uses centralised learning but decentralised execution. Our experiments introduce new environments for studying the learning of communication protocols and present a set of engineering innovations that are essential for success in these domains.},
+  archiveprefix = {arXiv},
+  eprint        = {1605.06676},
+  file          = {:Foerster2016 - Learning to Communicate with Deep Multi Agent Reinforcement Learning.pdf:PDF},
+  groups        = {Communication},
+  keywords      = {cs.AI, cs.LG, cs.MA},
+  primaryclass  = {cs.AI},
+}
+
+@InProceedings{Mordatch2018,
+  author    = {Igor Mordatch and Pieter Abbeel},
+  booktitle = {Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence},
+  title     = {Emergence of Grounded Compositional Language in Multi-Agent Populations},
+  year      = {2018},
+  editor    = {Sheila A. McIlraith and Kilian Q. Weinberger},
+  pages     = {1495--1502},
+  publisher = {{AAAI} Press},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/conf/aaai/MordatchA18.bib},
+  file      = {:Mordatch2018 - Emergence of Grounded Compositional Language in Multi Agent Populations.pdf:PDF},
+  groups    = {MARL, Communication},
+  url       = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17007},
+}
+
+@Article{Jaques2019,
+  author        = {Natasha Jaques and Angeliki Lazaridou and Edward Hughes and Caglar Gulcehre and Pedro A. Ortega and DJ Strouse and Joel Z. Leibo and Nando de Freitas},
+  journal       = {Proceedings of the 36th International Conference on Machine Learning, PMLR 97:3040-3049},
+  title         = {Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning},
+  year          = {2019},
+  abstract      = {We propose a unified mechanism for achieving coordination and communication in Multi-Agent Reinforcement Learning (MARL), through rewarding agents for having causal influence over other agents' actions. Causal influence is assessed using counterfactual reasoning. At each timestep, an agent simulates alternate actions that it could have taken, and computes their effect on the behavior of other agents. Actions that lead to bigger changes in other agents' behavior are considered influential and are rewarded. We show that this is equivalent to rewarding agents for having high mutual information between their actions. Empirical results demonstrate that influence leads to enhanced coordination and communication in challenging social dilemma environments, dramatically increasing the learning curves of the deep RL agents, and leading to more meaningful learned communication protocols. The influence rewards for all agents can be computed in a decentralized way by enabling agents to learn a model of other agents using deep neural networks. In contrast, key previous works on emergent communication in the MARL setting were unable to learn diverse policies in a decentralized manner and had to resort to centralized training. Consequently, the influence reward opens up a window of new opportunities for research in this area.},
+  archiveprefix = {arXiv},
+  eprint        = {1810.08647},
+  file          = {:Jaques2018 - Social Influence As Intrinsic Motivation for Multi Agent Deep Reinforcement Learning.pdf:PDF},
+  groups        = {Multi-agent DRL},
+  keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Leibo2019,
+  author        = {Joel Z. Leibo and Julien Perolat and Edward Hughes and Steven Wheelwright and Adam H. Marblestone and Edgar Duéñez-Guzmán and Peter Sunehag and Iain Dunning and Thore Graepel},
+  journal       = {Proceedings of the 18th International Conference on Autonomous Agents and Multi-Agent Systems, pp. 1099–1107.},
+  title         = {Malthusian Reinforcement Learning},
+  year          = {2019},
+  month         = dec,
+  abstract      = {Here we explore a new algorithmic framework for multi-agent reinforcement learning, called Malthusian reinforcement learning, which extends self-play to include fitness-linked population size dynamics that drive ongoing innovation. In Malthusian RL, increases in a subpopulation's average return drive subsequent increases in its size, just as Thomas Malthus argued in 1798 was the relationship between preindustrial income levels and population growth. Malthusian reinforcement learning harnesses the competitive pressures arising from growing and shrinking population size to drive agents to explore regions of state and policy spaces that they could not otherwise reach. Furthermore, in environments where there are potential gains from specialization and division of labor, we show that Malthusian reinforcement learning is better positioned to take advantage of such synergies than algorithms based on self-play.},
+  archiveprefix = {arXiv},
+  eprint        = {1812.07019},
+  file          = {:Leibo2018 - Malthusian Reinforcement Learning.pdf:PDF},
+  groups        = {Multi-agent DRL},
+  keywords      = {cs.NE, cs.MA, q-bio.PE},
+  primaryclass  = {cs.NE},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -1057,6 +1131,7 @@
 2 StaticGroup:Multi-agent learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent DRL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
