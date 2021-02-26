@@ -736,7 +736,6 @@
 
 @Article{Ecoffet2019,
   author        = {Adrien Ecoffet and Joost Huizinga and Joel Lehman and Kenneth O. Stanley and Jeff Clune},
-  journal       = {CoRR},
   title         = {Go-Explore: a New Approach for Hard-Exploration Problems},
   year          = {2019},
   volume        = {abs/1901.10995},
@@ -1083,7 +1082,7 @@
   archiveprefix = {arXiv},
   eprint        = {1810.08647},
   file          = {:Jaques2018 - Social Influence As Intrinsic Motivation for Multi Agent Deep Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-agent DRL},
+  groups        = {Multi-agent RL},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
 }
@@ -1098,9 +1097,129 @@
   archiveprefix = {arXiv},
   eprint        = {1812.07019},
   file          = {:Leibo2018 - Malthusian Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-agent DRL},
+  groups        = {Multi-agent RL},
   keywords      = {cs.NE, cs.MA, q-bio.PE},
   primaryclass  = {cs.NE},
+}
+
+@InProceedings{pmlr-v48-mniha16,
+  author    = {Volodymyr Mnih and Adria Puigdomenech Badia and Mehdi Mirza and Alex Graves and Timothy Lillicrap and Tim Harley and David Silver and Koray Kavukcuoglu},
+  booktitle = {Proceedings of The 33rd International Conference on Machine Learning},
+  title     = {Asynchronous Methods for Deep Reinforcement Learning},
+  year      = {2016},
+  address   = {New York, New York, USA},
+  editor    = {Maria Florina Balcan and Kilian Q. Weinberger},
+  month     = {20--22 Jun},
+  pages     = {1928--1937},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {48},
+  abstract  = {We propose a conceptually simple and lightweight framework for deep reinforcement learning that uses asynchronous gradient descent for optimization of deep neural network controllers. We present asynchronous variants of four standard reinforcement learning algorithms and show that parallel actor-learners have a stabilizing effect on training allowing all four methods to successfully train neural network controllers. The best performing method, an asynchronous variant of actor-critic, surpasses the current state-of-the-art on the Atari domain while training for half the time on a single multi-core CPU instead of a GPU. Furthermore, we show that asynchronous actor-critic succeeds on a wide variety of continuous motor control problems as well as on a new task of navigating random 3D mazes using a visual input.},
+  comment   = {A3C},
+  file      = {:pmlr-v48-mniha16 - Asynchronous Methods for Deep Reinforcement Learning.pdf:PDF},
+  groups    = {Value based},
+  pdf       = {http://proceedings.mlr.press/v48/mniha16.pdf},
+  url       = {http://proceedings.mlr.press/v48/mniha16.html},
+}
+
+@InProceedings{10.5555/3091125.3091194,
+  author    = {Leibo, Joel Z. and Zambaldi, Vinicius and Lanctot, Marc and Marecki, Janusz and Graepel, Thore},
+  booktitle = {Proceedings of the 16th Conference on Autonomous Agents and MultiAgent Systems},
+  title     = {Multi-Agent Reinforcement Learning in Sequential Social Dilemmas},
+  year      = {2017},
+  address   = {Richland, SC},
+  pages     = {464–473},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '17},
+  abstract  = {Matrix games like Prisoner's Dilemma have guided research on social dilemmas for decades. However, they necessarily treat the choice to cooperate or defect as an atomic action. In real-world social dilemmas these choices are temporally extended. Cooperativeness is a property that applies to policies, not elementary actions. We introduce sequential social dilemmas that share the mixed incentive structure of matrix game social dilemmas but also require agents to learn policies that implement their strategic intentions. We analyze the dynamics of policies learned by multiple self-interested independent learning agents, each using its own deep Q-network, on two Markov games we introduce here: 1. a fruit Gathering game and 2. a Wolfpack hunting game. We characterize how learned behavior in each domain changes as a function of environmental factors including resource abundance. Our experiments show how conflict can emerge from competition over shared resources and shed light on how the sequential nature of real world social dilemmas affects cooperation.},
+  file      = {:10.5555_3091125.3091194 - Multi Agent Reinforcement Learning in Sequential Social Dilemmas.pdf:PDF},
+  groups    = {Multi-agent RL},
+  keywords  = {agent-based social simulation, cooperation, markov games, non-cooperative games, social dilemmas},
+  location  = {S\~{a}o Paulo, Brazil},
+  numpages  = {10},
+  url       = {https://arxiv.org/pdf/1702.03037.pdf},
+}
+
+@Article{SHOHAM2007365,
+  author   = {Yoav Shoham and Rob Powers and Trond Grenager},
+  journal  = {Artificial Intelligence},
+  title    = {If multi-agent learning is the answer, what is the question?},
+  year     = {2007},
+  issn     = {0004-3702},
+  note     = {Foundations of Multi-Agent Learning},
+  number   = {7},
+  pages    = {365-377},
+  volume   = {171},
+  abstract = {The area of learning in multi-agent systems is today one of the most fertile grounds for interaction between game theory and artificial intelligence. We focus on the foundational questions in this interdisciplinary area, and identify several distinct agendas that ought to, we argue, be separated. The goal of this article is to start a discussion in the research community that will result in firmer foundations for the area.11This article has a long history and owes many debts. A first version was presented at the NIPS workshop, Multi-Agent Learning: Theory and Practice, in 2002. A later version was presented at the AAAI Fall Symposium in 2004 [Y. Shoham, R. Powers, T. Grenager, On the agenda(s) of research on multi-agent learning, in: AAAI 2004 Symposium on Artificial Multi-Agent Learning (FS-04-02), AAAI Press, 2004]. Over time it has gradually evolved into the current form, as a result of our own work in the area as well as the feedback of many colleagues. We thank them all collectively, with special thanks to members of the multi-agent group at Stanford in the past three years. Rakesh Vohra and Michael Wellman provided detailed comments on the latest draft which resulted in substantive improvements, although we alone are responsible for the views put forward. This work was supported by NSF ITR grant IIS-0205633 and DARPA grant HR0011-05-1.},
+  doi      = {https://doi.org/10.1016/j.artint.2006.02.006},
+  file     = {:SHOHAM2007365 - If Multi Agent Learning Is the Answer, What Is the Question_ (2).pdf:PDF},
+  groups   = {MARL, MAS Reviews},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0004370207000495},
+}
+
+@Article{Ecoffet2020,
+  author        = {Adrien Ecoffet and Joost Huizinga and Joel Lehman and Kenneth O. Stanley and Jeff Clune},
+  journal       = {Nature},
+  title         = {First return then explore},
+  year          = {2021},
+  month         = feb,
+  number        = {590},
+  pages         = {580–586},
+  abstract      = {The promise of reinforcement learning is to solve complex sequential decision problems by specifying a high-level reward function only. However, RL algorithms struggle when, as is often the case, simple and intuitive rewards provide sparse and deceptive feedback. Avoiding these pitfalls requires thoroughly exploring the environment, but despite substantial investments by the community, creating algorithms that can do so remains one of the central challenges of the field. We hypothesize that the main impediment to effective exploration originates from algorithms forgetting how to reach previously visited states ("detachment") and from failing to first return to a state before exploring from it ("derailment"). We introduce Go-Explore, a family of algorithms that addresses these two challenges directly through the simple principles of explicitly remembering promising states and first returning to such states before exploring. Go-Explore solves all heretofore unsolved Atari games (those for which algorithms could not previously outperform humans when evaluated following current community standards) and surpasses the state of the art on all hard-exploration games, with orders of magnitude improvements on the grand challenges Montezuma's Revenge and Pitfall. We also demonstrate the practical potential of Go-Explore on a challenging and extremely sparse-reward robotics task. Additionally, we show that adding a goal-conditioned policy can further improve Go-Explore's exploration efficiency and enable it to handle stochasticity throughout training. The striking contrast between the substantial performance gains from Go-Explore and the simplicity of its mechanisms suggests that remembering promising states, returning to them, and exploring from them is a powerful and general approach to exploration, an insight that may prove critical to the creation of truly intelligent learning agents.},
+  archiveprefix = {arXiv},
+  doi           = {https://doi.org/10.1038/s41586-020-03157-9},
+  eprint        = {2004.12919},
+  file          = {:Ecoffet2020 - First Return Then Explore.pdf:PDF},
+  groups        = {Imitation},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Hester_Vecerik_Pietquin_Lanctot_Schaul_Piot_Horgan_Quan_Sendonaris_Osband_Dulac-Arnold_Agapiou_Leibo_Gruslys_2018,
+  author       = {Hester, Todd and Vecerik, Matej and Pietquin, Olivier and Lanctot, Marc and Schaul, Tom and Piot, Bilal and Horgan, Dan and Quan, John and Sendonaris, Andrew and Osband, Ian and Dulac-Arnold, Gabriel and Agapiou, John and Leibo, Joel and Gruslys, Audrunas},
+  journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title        = {Deep Q-learning From Demonstrations},
+  year         = {2018},
+  month        = {Apr.},
+  number       = {1},
+  volume       = {32},
+  abstractnote = {&lt;p&gt; Deep reinforcement learning (RL) has achieved several high profile successes in difficult decision-making problems. However, these algorithms typically require a huge amount of data before they reach reasonable performance. In fact, their performance during learning can be extremely poor. This may be acceptable for a simulator, but it severely limits the applicability of deep RL to many real-world tasks, where the agent must learn in the real environment. In this paper we study a setting where the agent may access data from previous control of the system. We present an algorithm, Deep Q-learning from Demonstrations (DQfD), that leverages small sets of demonstration data to massively accelerate the learning process even from relatively small amounts of demonstration data and is able to automatically assess the necessary ratio of demonstration data while learning thanks to a prioritized replay mechanism. DQfD works by combining temporal difference updates with supervised classification of the demonstrator’s actions. We show that DQfD has better initial performance than Prioritized Dueling Double Deep Q-Networks (PDD DQN) as it starts with better scores on the first million steps on 41 of 42 games and on average it takes PDD DQN 83 million steps to catch up to DQfD’s performance. DQfD learns to out-perform the best demonstration given in 14 of 42 games. In addition, DQfD leverages human demonstrations to achieve state-of-the-art results for 11 games. Finally, we show that DQfD performs better than three related algorithms for incorporating demonstration data into DQN. &lt;/p&gt;},
+  file         = {:Hester_Vecerik_Pietquin_Lanctot_Schaul_Piot_Horgan_Quan_Sendonaris_Osband_Dulac-Arnold_Agapiou_Leibo_Gruslys_2018 - Deep Q Learning from Demonstrations.pdf:PDF},
+  groups       = {Imitation},
+  url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11757},
+}
+
+@Article{Panait2005,
+  author    = {Liviu Panait and Sean Luke},
+  journal   = {Autonomous Agents and Multi-Agent Systems},
+  title     = {Cooperative Multi-Agent Learning: The State of the Art},
+  year      = {2005},
+  month     = {nov},
+  number    = {3},
+  pages     = {387--434},
+  volume    = {11},
+  doi       = {10.1007/s10458-005-2631-2},
+  file      = {:Panait2005 - Cooperative Multi Agent Learning_ the State of the Art.pdf:PDF},
+  groups    = {MAS Reviews},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@InProceedings{10.5555/3295222.3295385,
+  author    = {Lowe, Ryan and Wu, Yi and Tamar, Aviv and Harb, Jean and Abbeel, Pieter and Mordatch, Igor},
+  booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+  title     = {Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments},
+  year      = {2017},
+  address   = {Red Hook, NY, USA},
+  pages     = {6382–6393},
+  publisher = {Curran Associates Inc.},
+  series    = {NIPS'17},
+  abstract  = {We explore deep reinforcement learning methods for multi-agent domains. We begin by analyzing the difficulty of traditional algorithms in the multi-agent case: Q-learning is challenged by an inherent non-stationarity of the environment, while policy gradient suffers from a variance that increases as the number of agents grows. We then present an adaptation of actor-critic methods that considers action policies of other agents and is able to successfully learn policies that require complex multi-agent coordination. Additionally, we introduce a training regimen utilizing an ensemble of policies for each agent that leads to more robust multi-agent policies. We show the strength of our approach compared to existing methods in cooperative as well as competitive scenarios, where agent populations are able to discover various physical and informational coordination strategies.},
+  file      = {:10.5555_3295222.3295385 - Multi Agent Actor Critic for Mixed Cooperative Competitive Environments.pdf:PDF},
+  groups    = {Multi-agent RL},
+  isbn      = {9781510860964},
+  location  = {Long Beach, California, USA},
+  numpages  = {12},
+  url       = {https://dl.acm.org/doi/abs/10.5555/3295222.3295385},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -1130,8 +1249,8 @@
 2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent DRL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:MAS Reviews\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
