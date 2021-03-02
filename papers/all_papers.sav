@@ -1,0 +1,1258 @@
+% Encoding: UTF-8
+
+@Article{Haarnoja2018,
+  author        = {Tuomas Haarnoja and Aurick Zhou and Pieter Abbeel and Sergey Levine},
+  title         = {Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor},
+  year          = {2018},
+  month         = jan,
+  abstract      = {Model-free deep reinforcement learning (RL) algorithms have been demonstrated on a range of challenging decision making and control tasks. However, these methods typically suffer from two major challenges: very high sample complexity and brittle convergence properties, which necessitate meticulous hyperparameter tuning. Both of these challenges severely limit the applicability of such methods to complex, real-world domains. In this paper, we propose soft actor-critic, an off-policy actor-critic deep RL algorithm based on the maximum entropy reinforcement learning framework. In this framework, the actor aims to maximize expected reward while also maximizing entropy. That is, to succeed at the task while acting as randomly as possible. Prior deep RL methods based on this framework have been formulated as Q-learning methods. By combining off-policy updates with a stable stochastic actor-critic formulation, our method achieves state-of-the-art performance on a range of continuous control benchmark tasks, outperforming prior on-policy and off-policy methods. Furthermore, we demonstrate that, in contrast to other off-policy algorithms, our approach is very stable, achieving very similar performance across different random seeds.},
+  archiveprefix = {arXiv},
+  comment       = {Soft Actor Critic
+- PROBLEM:
+	Model-free DRL algos typically suffer from two major challenges: very high sample complexity and brittle convergence properties (=> meticulous hyperparameter tuning)
+- SOLUTION:
+	Soft Actor-Critic: based on Maximum Entropy RL framework: maximize expected reward while also maximizing entropy = succeed at the task while acting as randomly as possible
+- MODEL:
+	Double DQN to mitigate overestimation of Q values
+	Target network for policy and Q-functions for more stable training
+- RESULTS:
+	Outperforms sota model-free DRL methods (DDPG and PPO)
+	Very stable accross different random seeds},
+  eprint        = {1801.01290},
+  file          = {:Haarnoja2018 - Soft Actor Critic_ off Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor.pdf:PDF},
+  groups        = {Policy based, Actor Critic, Soft Actor Critic},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Fujimoto2018,
+  author        = {Scott Fujimoto and Herke van Hoof and David Meger},
+  title         = {Addressing Function Approximation Error in Actor-Critic Methods},
+  year          = {2018},
+  month         = feb,
+  abstract      = {In value-based reinforcement learning methods such as deep Q-learning, function approximation errors are known to lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance. We evaluate our method on the suite of OpenAI gym tasks, outperforming the state of the art in every environment tested.},
+  archiveprefix = {arXiv},
+  comment       = {- PROBLEM:
+	Overestimation of Q-values estimates leading to suboptimal policies, even in DDPG
+- SOLUTION:
+	TD3: Double DQN and Clipped Double-Q trick
+	Target networks => more stable training
+	Delayed Policy Updates => more stable
+	Target Policy smoothing: add noise to choses action  => mitigates overestimation of Q-values
+- RESULTS:
+	Reduces overestimation of Q-values
+	Outperforms all previous policy-based algorithms},
+  eprint        = {1802.09477},
+  file          = {:Fujimoto2018 - Addressing Function Approximation Error in Actor Critic Methods.pdf:PDF},
+  groups        = {Policy based, Actor Critic, DDPG},
+  keywords      = {cs.AI, cs.LG, stat.ML},
+  primaryclass  = {cs.AI},
+  readstatus    = {read},
+}
+
+@Article{Schulman2017,
+  author        = {John Schulman and Filip Wolski and Prafulla Dhariwal and Alec Radford and Oleg Klimov},
+  title         = {Proximal Policy Optimization Algorithms},
+  year          = {2017},
+  month         = jul,
+  abstract      = {We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a "surrogate" objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates. The new methods, which we call proximal policy optimization (PPO), have some of the benefits of trust region policy optimization (TRPO), but they are much simpler to implement, more general, and have better sample complexity (empirically). Our experiments test PPO on a collection of benchmark tasks, including simulated robotic locomotion and Atari game playing, and we show that PPO outperforms other online policy gradient methods, and overall strikes a favorable balance between sample complexity, simplicity, and wall-time.},
+  archiveprefix = {arXiv},
+  comment       = {PPO},
+  eprint        = {1707.06347},
+  file          = {:Schulman2017 - Proximal Policy Optimization Algorithms.pdf:PDF},
+  groups        = {Policy based, Actor Critic, TRPO},
+  keywords      = {cs.LG},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Schulman2015,
+  author        = {John Schulman and Sergey Levine and Philipp Moritz and Michael I. Jordan and Pieter Abbeel},
+  title         = {Trust Region Policy Optimization},
+  year          = {2015},
+  month         = feb,
+  abstract      = {We describe an iterative procedure for optimizing policies, with guaranteed monotonic improvement. By making several approximations to the theoretically-justified procedure, we develop a practical algorithm, called Trust Region Policy Optimization (TRPO). This algorithm is similar to natural policy gradient methods and is effective for optimizing large nonlinear policies such as neural networks. Our experiments demonstrate its robust performance on a wide variety of tasks: learning simulated robotic swimming, hopping, and walking gaits; and playing Atari games using images of the screen as input. Despite its approximations that deviate from the theory, TRPO tends to give monotonic improvement, with little tuning of hyperparameters.},
+  archiveprefix = {arXiv},
+  comment       = {TRPO},
+  eprint        = {1502.05477},
+  file          = {:Schulman2015 - Trust Region Policy Optimization.pdf:PDF},
+  groups        = {Policy based, Actor Critic, TRPO},
+  keywords      = {cs.LG},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Schrittwieser2019,
+  author        = {Julian Schrittwieser and Ioannis Antonoglou and Thomas Hubert and Karen Simonyan and Laurent Sifre and Simon Schmitt and Arthur Guez and Edward Lockhart and Demis Hassabis and Thore Graepel and Timothy Lillicrap and David Silver},
+  title         = {Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model},
+  year          = {2019},
+  month         = nov,
+  abstract      = {Constructing agents with planning capabilities has long been one of the main challenges in the pursuit of artificial intelligence. Tree-based planning methods have enjoyed huge success in challenging domains, such as chess and Go, where a perfect simulator is available. However, in real-world problems the dynamics governing the environment are often complex and unknown. In this work we present the MuZero algorithm which, by combining a tree-based search with a learned model, achieves superhuman performance in a range of challenging and visually complex domains, without any knowledge of their underlying dynamics. MuZero learns a model that, when applied iteratively, predicts the quantities most directly relevant to planning: the reward, the action-selection policy, and the value function. When evaluated on 57 different Atari games - the canonical video game environment for testing AI techniques, in which model-based planning approaches have historically struggled - our new algorithm achieved a new state of the art. When evaluated on Go, chess and shogi, without any knowledge of the game rules, MuZero matched the superhuman performance of the AlphaZero algorithm that was supplied with the game rules.},
+  archiveprefix = {arXiv},
+  comment       = {Muzero},
+  doi           = {10.1038/s41586-020-03051-4},
+  eprint        = {1911.08265},
+  file          = {:Schrittwieser2019 - Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model.pdf:PDF},
+  groups        = {Model based, Tree-based},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Hafner2019,
+  author        = {Danijar Hafner and Timothy Lillicrap and Jimmy Ba and Mohammad Norouzi},
+  title         = {Dream to Control: Learning Behaviors by Latent Imagination},
+  year          = {2019},
+  month         = dec,
+  abstract      = {Learned world models summarize an agent's experience to facilitate learning complex behaviors. While learning world models from high-dimensional sensory inputs is becoming feasible through deep learning, there are many potential ways for deriving behaviors from them. We present Dreamer, a reinforcement learning agent that solves long-horizon tasks from images purely by latent imagination. We efficiently learn behaviors by propagating analytic gradients of learned state values back through trajectories imagined in the compact state space of a learned world model. On 20 challenging visual control tasks, Dreamer exceeds existing approaches in data-efficiency, computation time, and final performance.},
+  archiveprefix = {arXiv},
+  comment       = {Dreamer},
+  eprint        = {1912.01603},
+  file          = {:Hafner2019 - Dream to Control_ Learning Behaviors by Latent Imagination.pdf:PDF},
+  groups        = {Model based, Latent Dynamics Model},
+  keywords      = {cs.LG, cs.AI, cs.RO},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Pathak2017,
+  author        = {Deepak Pathak and Pulkit Agrawal and Alexei A. Efros and Trevor Darrell},
+  title         = {Curiosity-driven Exploration by Self-supervised Prediction},
+  year          = {2017},
+  month         = may,
+  abstract      = {In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent's ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: VizDoom and Super Mario Bros. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch. Demo video and code available at https://pathak22.github.io/noreward-rl/},
+  archiveprefix = {arXiv},
+  comment       = {Intrinsinc Curiosity Module},
+  eprint        = {1705.05363},
+  file          = {:Pathak2017 - Curiosity Driven Exploration by Self Supervised Prediction.pdf:PDF},
+  groups        = {Intrinsic goals, Curiosity},
+  keywords      = {cs.LG, cs.AI, cs.CV, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Burda2018,
+  author        = {Yuri Burda and Harrison Edwards and Amos Storkey and Oleg Klimov},
+  title         = {Exploration by Random Network Distillation},
+  year          = {2018},
+  month         = oct,
+  abstract      = {We introduce an exploration bonus for deep reinforcement learning methods that is easy to implement and adds minimal overhead to the computation performed. The bonus is the error of a neural network predicting features of the observations given by a fixed randomly initialized neural network. We also introduce a method to flexibly combine intrinsic and extrinsic rewards. We find that the random network distillation (RND) bonus combined with this increased flexibility enables significant progress on several hard exploration Atari games. In particular we establish state of the art performance on Montezuma's Revenge, a game famously difficult for deep reinforcement learning methods. To the best of our knowledge, this is the first method that achieves better than average human performance on this game without using demonstrations or having access to the underlying state of the game, and occasionally completes the first level.},
+  archiveprefix = {arXiv},
+  eprint        = {1810.12894},
+  file          = {:Burda2018 - Exploration by Random Network Distillation.pdf:PDF},
+  groups        = {Intrinsic goals, Curiosity},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Lillicrap2015,
+  author        = {Timothy P. Lillicrap and Jonathan J. Hunt and Alexander Pritzel and Nicolas Heess and Tom Erez and Yuval Tassa and David Silver and Daan Wierstra},
+  title         = {Continuous control with deep reinforcement learning},
+  year          = {2015},
+  month         = sep,
+  abstract      = {We adapt the ideas underlying the success of Deep Q-Learning to the continuous action domain. We present an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. Using the same learning algorithm, network architecture and hyper-parameters, our algorithm robustly solves more than 20 simulated physics tasks, including classic problems such as cartpole swing-up, dexterous manipulation, legged locomotion and car driving. Our algorithm is able to find policies whose performance is competitive with those found by a planning algorithm with full access to the dynamics of the domain and its derivatives. We further demonstrate that for many of the tasks the algorithm can learn policies end-to-end: directly from raw pixel inputs.},
+  archiveprefix = {arXiv},
+  comment       = {- PROBLEM:
+	Adapt DQN to continuous action domain
+- SOLUTION:
+	Combine Actor-Critic with the recent successes of DQN
+	Policy network to compute action that maximizes Q
+	DQN to learn Q
+- RESULTS:
+	Achieves learning policy for continuous actions
+	Struggles to learn from raw pixels somtimes
+	Overestimation of Q values sometimes},
+  eprint        = {1509.02971},
+  file          = {:Lillicrap2015 - Continuous Control with Deep Reinforcement Learning.pdf:PDF},
+  groups        = {Policy based, Actor Critic, DDPG},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Misc{Williams1992,
+  author     = {Ronald J. Williams},
+  title      = {Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning},
+  year       = {1992},
+  comment    = {Reinforce},
+  doi        = {10.1007/978-1-4615-3618-5_2},
+  file       = {:Williams1992_Article_SimpleStatisticalGradient-foll.pdf:PDF},
+  groups     = {Policy based},
+  pages      = {5-32},
+  readstatus = {read},
+}
+
+@Article{Zhang2018,
+  author        = {Marvin Zhang and Sharad Vikram and Laura Smith and Pieter Abbeel and Matthew J. Johnson and Sergey Levine},
+  title         = {SOLAR: Deep Structured Representations for Model-Based Reinforcement Learning},
+  year          = {2018},
+  month         = aug,
+  abstract      = {Model-based reinforcement learning (RL) has proven to be a data efficient approach for learning control tasks but is difficult to utilize in domains with complex observations such as images. In this paper, we present a method for learning representations that are suitable for iterative model-based policy improvement, even when the underlying dynamical system has complex dynamics and image observations, in that these representations are optimized for inferring simple dynamics and cost models given data from the current policy. This enables a model-based RL method based on the linear-quadratic regulator (LQR) to be used for systems with image observations. We evaluate our approach on a range of robotics tasks, including manipulation with a real-world robotic arm directly from images. We find that our method produces substantially better final performance than other model-based RL methods while being significantly more efficient than model-free RL.},
+  archiveprefix = {arXiv},
+  eprint        = {1808.09105},
+  file          = {:Zhang2018 - SOLAR_ Deep Structured Representations for Model Based Reinforcement Learning.pdf:PDF},
+  groups        = {Model based},
+  keywords      = {cs.LG, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {skimmed},
+}
+
+@Article{Sekar2020,
+  author        = {Ramanan Sekar and Oleh Rybkin and Kostas Daniilidis and Pieter Abbeel and Danijar Hafner and Deepak Pathak},
+  title         = {Planning to Explore via Self-Supervised World Models},
+  year          = {2020},
+  month         = may,
+  abstract      = {Reinforcement learning allows solving complex tasks, however, the learning tends to be task-specific and the sample efficiency remains a challenge. We present Plan2Explore, a self-supervised reinforcement learning agent that tackles both these challenges through a new approach to self-supervised exploration and fast adaptation to new tasks, which need not be known during exploration. During exploration, unlike prior methods which retrospectively compute the novelty of observations after the agent has already reached them, our agent acts efficiently by leveraging planning to seek out expected future novelty. After exploration, the agent quickly adapts to multiple downstream tasks in a zero or a few-shot manner. We evaluate on challenging control tasks from high-dimensional image inputs. Without any training supervision or task-specific interaction, Plan2Explore outperforms prior self-supervised exploration methods, and in fact, almost matches the performances oracle which has access to rewards. Videos and code at https://ramanans1.github.io/plan2explore/},
+  archiveprefix = {arXiv},
+  comment       = {- PROBLEM:
+	Find learning algorithms that are sample efficient and not task specific.
+- SOLUTION:
+	Plan2Explore: self-supervised exploration and fast adaptation to new tasks. Instead of maximizing an instinsic reward in retrospect, it learns a world model to plan ahead and seek novelty in future situations.
+- MODEL:
+	Encode images with CNN
+	Learn a world model with PlaNet
+	Learn policy and value with Dreamer
+	Induce exploration by generating an intrinsic reward using ensemble disagreement, like Pathak2019
+	No reward from the environment during learning the model
+	After learning the world model through exploration, adapts on tasks in zero-shot (only imagination) or few-shot (imagination and few iteraction)},
+  eprint        = {2005.05960},
+  file          = {:Sekar2020 - Planning to Explore Via Self Supervised World Models.pdf:PDF},
+  groups        = {Model based, Disagreement, Model-based exploration, Intrinsic goals},
+  keywords      = {cs.LG, cs.AI, cs.CV, cs.NE, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Pathak2019,
+  author        = {Deepak Pathak and Dhiraj Gandhi and Abhinav Gupta},
+  title         = {Self-Supervised Exploration via Disagreement},
+  year          = {2019},
+  month         = jun,
+  abstract      = {Efficient exploration is a long-standing problem in sensorimotor learning. Major advances have been demonstrated in noise-free, non-stochastic domains such as video games and simulation. However, most of these formulations either get stuck in environments with stochastic dynamics or are too inefficient to be scalable to real robotics setups. In this paper, we propose a formulation for exploration inspired by the work in active learning literature. Specifically, we train an ensemble of dynamics models and incentivize the agent to explore such that the disagreement of those ensembles is maximized. This allows the agent to learn skills by exploring in a self-supervised manner without any external reward. Notably, we further leverage the disagreement objective to optimize the agent's policy in a differentiable manner, without using reinforcement learning, which results in a sample-efficient exploration. We demonstrate the efficacy of this formulation across a variety of benchmark environments including stochastic-Atari, Mujoco and Unity. Finally, we implement our differentiable exploration on a real robot which learns to interact with objects completely from scratch. Project videos and code are at https://pathak22.github.io/exploration-by-disagreement/},
+  archiveprefix = {arXiv},
+  eprint        = {1906.04161},
+  file          = {:Pathak2019 - Self Supervised Exploration Via Disagreement.pdf:PDF},
+  groups        = {Disagreement, Intrinsic goals},
+  keywords      = {cs.LG, cs.AI, cs.CV, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Hessel2017,
+  author        = {Matteo Hessel and Joseph Modayil and Hado van Hasselt and Tom Schaul and Georg Ostrovski and Will Dabney and Dan Horgan and Bilal Piot and Mohammad Azar and David Silver},
+  title         = {Rainbow: Combining Improvements in Deep Reinforcement Learning},
+  year          = {2017},
+  month         = oct,
+  abstract      = {The deep reinforcement learning community has made several independent improvements to the DQN algorithm. However, it is unclear which of these extensions are complementary and can be fruitfully combined. This paper examines six extensions to the DQN algorithm and empirically studies their combination. Our experiments show that the combination provides state-of-the-art performance on the Atari 2600 benchmark, both in terms of data efficiency and final performance. We also provide results from a detailed ablation study that shows the contribution of each component to overall performance.},
+  archiveprefix = {arXiv},
+  eprint        = {1710.02298},
+  file          = {:Hessel2017 - Rainbow_ Combining Improvements in Deep Reinforcement Learning.pdf:PDF},
+  groups        = {Value based},
+  keywords      = {cs.AI, cs.LG},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Vecerik2017,
+  author        = {Mel Vecerik and Todd Hester and Jonathan Scholz and Fumin Wang and Olivier Pietquin and Bilal Piot and Nicolas Heess and Thomas Rothörl and Thomas Lampe and Martin Riedmiller},
+  title         = {Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards},
+  year          = {2017},
+  month         = jul,
+  abstract      = {We propose a general and model-free approach for Reinforcement Learning (RL) on real robotics with sparse rewards. We build upon the Deep Deterministic Policy Gradient (DDPG) algorithm to use demonstrations. Both demonstrations and actual interactions are used to fill a replay buffer and the sampling ratio between demonstrations and transitions is automatically tuned via a prioritized replay mechanism. Typically, carefully engineered shaping rewards are required to enable the agents to efficiently explore on high dimensional control problems such as robotics. They are also required for model-based acceleration methods relying on local solvers such as iLQG (e.g. Guided Policy Search and Normalized Advantage Function). The demonstrations replace the need for carefully engineered rewards, and reduce the exploration problem encountered by classical RL approaches in these domains. Demonstrations are collected by a robot kinesthetically force-controlled by a human demonstrator. Results on four simulated insertion tasks show that DDPG from demonstrations out-performs DDPG, and does not require engineered rewards. Finally, we demonstrate the method on a real robotics task consisting of inserting a clip (flexible object) into a rigid object.},
+  archiveprefix = {arXiv},
+  eprint        = {1707.08817},
+  file          = {:Vecerik2017 - Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards.pdf:PDF},
+  groups        = {DDPG, Robotics, Actor Critic, Policy based},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Eysenbach2018,
+  author        = {Benjamin Eysenbach and Abhishek Gupta and Julian Ibarz and Sergey Levine},
+  title         = {Diversity is All You Need: Learning Skills without a Reward Function},
+  year          = {2018},
+  month         = feb,
+  abstract      = {Intelligent creatures can explore their environments and learn useful skills without supervision. In this paper, we propose DIAYN ('Diversity is All You Need'), a method for learning useful skills without a reward function. Our proposed method learns skills by maximizing an information theoretic objective using a maximum entropy policy. On a variety of simulated robotic tasks, we show that this simple objective results in the unsupervised emergence of diverse skills, such as walking and jumping. In a number of reinforcement learning benchmark environments, our method is able to learn a skill that solves the benchmark task despite never receiving the true task reward. We show how pretrained skills can provide a good parameter initialization for downstream tasks, and can be composed hierarchically to solve complex, sparse reward tasks. Our results suggest that unsupervised discovery of skills can serve as an effective pretraining mechanism for overcoming challenges of exploration and data efficiency in reinforcement learning.},
+  archiveprefix = {arXiv},
+  eprint        = {1802.06070},
+  file          = {:Eysenbach2018 - Diversity Is All You Need_ Learning Skills without a Reward Function.pdf:PDF},
+  groups        = {Diversity, Intrinsic goals},
+  keywords      = {cs.AI, cs.RO},
+  primaryclass  = {cs.AI},
+  readstatus    = {skimmed},
+}
+
+@Article{Burda2018a,
+  author        = {Yuri Burda and Harri Edwards and Deepak Pathak and Amos Storkey and Trevor Darrell and Alexei A. Efros},
+  title         = {Large-Scale Study of Curiosity-Driven Learning},
+  year          = {2018},
+  month         = aug,
+  abstract      = {Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups. Game-play videos and code are at https://pathak22.github.io/large-scale-curiosity/},
+  archiveprefix = {arXiv},
+  eprint        = {1808.04355},
+  file          = {:Burda2018a - Large Scale Study of Curiosity Driven Learning.pdf:PDF},
+  groups        = {Curiosity, Intrinsic goals},
+  keywords      = {cs.LG, cs.AI, cs.CV, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Achiam2017,
+  author        = {Joshua Achiam and Shankar Sastry},
+  title         = {Surprise-Based Intrinsic Motivation for Deep Reinforcement Learning},
+  year          = {2017},
+  month         = mar,
+  abstract      = {Exploration in complex domains is a key challenge in reinforcement learning, especially for tasks with very sparse rewards. Recent successes in deep reinforcement learning have been achieved mostly using simple heuristic exploration strategies such as $\epsilon$-greedy action selection or Gaussian control noise, but there are many tasks where these methods are insufficient to make any learning progress. Here, we consider more complex heuristics: efficient and scalable exploration strategies that maximize a notion of an agent's surprise about its experiences via intrinsic motivation. We propose to learn a model of the MDP transition probabilities concurrently with the policy, and to form intrinsic rewards that approximate the KL-divergence of the true transition probabilities from the learned model. One of our approximations results in using surprisal as intrinsic motivation, while the other gives the $k$-step learning progress. We show that our incentives enable agents to succeed in a wide range of environments with high-dimensional state spaces and very sparse rewards, including continuous control tasks and games in the Atari RAM domain, outperforming several other heuristic exploration techniques.},
+  archiveprefix = {arXiv},
+  eprint        = {1703.01732},
+  file          = {:Achiam2017 - Surprise Based Intrinsic Motivation for Deep Reinforcement Learning.pdf:PDF},
+  groups        = {Curiosity, Intrinsic goals},
+  keywords      = {cs.LG},
+  primaryclass  = {cs.LG},
+  readstatus    = {skimmed},
+}
+
+@Article{Ha2018,
+  author        = {David Ha and Jürgen Schmidhuber},
+  title         = {World Models},
+  year          = {2018},
+  month         = mar,
+  abstract      = {We explore building generative neural network models of popular reinforcement learning environments. Our world model can be trained quickly in an unsupervised manner to learn a compressed spatial and temporal representation of the environment. By using features extracted from the world model as inputs to an agent, we can train a very compact and simple policy that can solve the required task. We can even train our agent entirely inside of its own hallucinated dream generated by its world model, and transfer this policy back into the actual environment. An interactive version of this paper is available at https://worldmodels.github.io/},
+  archiveprefix = {arXiv},
+  comment       = {- PROBLEM:
+	Human base their decisions and actions on a mental model of the world, itself based on their senses and predictions of the future.
+	RL algos often use small NNs because they iterate faster to learn a good policy, but they would benefit from large RNNs that learn rich spatial and temporal representations of data
+- SOLUTION:
+	Large RNN to learn a world model in an unsupervised manner
+	Small controller to learn to perform task in this world model
+- MODEL: 
+	VAE to learn abstract, compressed latent representation of obseverd image frame
+	Mixture Density Network-RNN to predict future latent representation: model probability density of next latent state (as a mixture of Gaussian distribution) based on current action, latent state and hidden state of the RNN
+	Very simple controller trained separately in latent imagination: single layer linear model to map latent state and hidden state to action
+- RESULTS:
+	Demonstrate the possibility of training agents entirely inside of its simulated latent space dream world},
+  doi           = {10.5281/zenodo.1207631},
+  eprint        = {1803.10122},
+  file          = {:Ha2018 - World Models.pdf:PDF},
+  groups        = {Model based, Latent Dynamics Model},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Hafner2018,
+  author        = {Danijar Hafner and Timothy Lillicrap and Ian Fischer and Ruben Villegas and David Ha and Honglak Lee and James Davidson},
+  title         = {Learning Latent Dynamics for Planning from Pixels},
+  year          = {2018},
+  month         = nov,
+  abstract      = {Planning has been very successful for control tasks with known environment dynamics. To leverage planning in unknown environments, the agent needs to learn the dynamics from interactions with the world. However, learning dynamics models that are accurate enough for planning has been a long-standing challenge, especially in image-based domains. We propose the Deep Planning Network (PlaNet), a purely model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space. To achieve high performance, the dynamics model must accurately predict the rewards ahead for multiple time steps. We approach this using a latent dynamics model with both deterministic and stochastic transition components. Moreover, we propose a multi-step variational inference objective that we name latent overshooting. Using only pixel observations, our agent solves continuous control tasks with contact dynamics, partial observability, and sparse rewards, which exceed the difficulty of tasks that were previously solved by planning with learned models. PlaNet uses substantially fewer episodes and reaches final performance close to and sometimes higher than strong model-free algorithms.},
+  archiveprefix = {arXiv},
+  comment       = {- MODEL:
+	PlaNet: Deep Planning Network, a model-based agent that learns the environment dynamics from images and chooses actions through fast online planning in latent space
+- RESULTS:
+	Beat A3C and sometimes D4PG
+	Way more sample efficient (200x)},
+  eprint        = {1811.04551},
+  file          = {:Hafner2018 - Learning Latent Dynamics for Planning from Pixels.pdf:PDF},
+  groups        = {Model based, Latent Dynamics Model},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {skimmed},
+}
+
+@Article{Shyam2018,
+  author        = {Pranav Shyam and Wojciech Jaśkowski and Faustino Gomez},
+  title         = {Model-Based Active Exploration},
+  year          = {2018},
+  month         = oct,
+  abstract      = {Efficient exploration is an unsolved problem in Reinforcement Learning which is usually addressed by reactively rewarding the agent for fortuitously encountering novel situations. This paper introduces an efficient active exploration algorithm, Model-Based Active eXploration (MAX), which uses an ensemble of forward models to plan to observe novel events. This is carried out by optimizing agent behaviour with respect to a measure of novelty derived from the Bayesian perspective of exploration, which is estimated using the disagreement between the futures predicted by the ensemble members. We show empirically that in semi-random discrete environments where directed exploration is critical to make progress, MAX is at least an order of magnitude more efficient than strong baselines. MAX scales to high-dimensional continuous environments where it builds task-agnostic models that can be used for any downstream task.},
+  archiveprefix = {arXiv},
+  comment       = {- PROBLEM:
+	Over-commitment: intrinsic exploration bonus have to be unlearned once the novelty of a state's vicinity has worn off, making exploration inefficient
+- SOLUTION:
+	Model-based Active eXploration (MAX): actively seek out novelty in future states by measuring the amount of conflict between predictions of an ensemble of forward models
+- RESULTS:
+	Active exploration prevents from getting stuck in a local optimum
+	Model-based methods suffer from model-bias: bad model in certain regions of the state space leading to bad policy. MAX would explore more difficult aspects of the environment, thereby improving the quality of the models
+	Less computationally efficient than baselines, BUT trading off for data efficiency},
+  eprint        = {1810.12162},
+  file          = {:Shyam2018 - Model Based Active Exploration.pdf:PDF},
+  groups        = {Model-based exploration, Model based, Disagreement},
+  keywords      = {cs.LG, cs.AI, cs.IT, cs.NE, math.IT, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {skimmed},
+}
+
+@Article{Lee2019,
+  author        = {Alex X. Lee and Anusha Nagabandi and Pieter Abbeel and Sergey Levine},
+  title         = {Stochastic Latent Actor-Critic: Deep Reinforcement Learning with a Latent Variable Model},
+  year          = {2019},
+  month         = jul,
+  abstract      = {Deep reinforcement learning (RL) algorithms can use high-capacity deep networks to learn directly from image observations. However, these high-dimensional observation spaces present a number of challenges in practice, since the policy must now solve two problems: representation learning and task learning. In this work, we tackle these two problems separately, by explicitly learning latent representations that can accelerate reinforcement learning from images. We propose the stochastic latent actor-critic (SLAC) algorithm: a sample-efficient and high-performing RL algorithm for learning policies for complex continuous control tasks directly from high-dimensional image inputs. SLAC provides a novel and principled approach for unifying stochastic sequential models and RL into a single method, by learning a compact latent representation and then performing RL in the model's learned latent space. Our experimental evaluation demonstrates that our method outperforms both model-free and model-based alternatives in terms of final performance and sample efficiency, on a range of difficult image-based control tasks. Our code and videos of our results are available at our website.},
+  archiveprefix = {arXiv},
+  comment       = {- PROBLEM:
+	It is difficult to learn directly from high-dimensional image inputs (task learning)
+	It is difficult to extract compact representations of the underlying task-relevant information from which to learn (representation learning)
+- SOLUTION:
+	Treat task learning and representation learning separately: learn a latent representation space with a predictive model, and train a RL agent in that learning latent space
+- MODEL:
+	Maximize ELBO (model objective + maximum entropy RL objective)
+	Sequential latent variable model objective: predict next latent state based on next state, current latent state and current action
+	RL objective: Soft Actor-Critic
+- RESULTS: 
+	Better performance than several sota model-free and model-based approaches
+	More sample-efficient},
+  eprint        = {1907.00953},
+  file          = {:Lee2019 - Stochastic Latent Actor Critic_ Deep Reinforcement Learning with a Latent Variable Model (1).pdf:PDF},
+  groups        = {Model based, POMDP, Soft Actor Critic, Latent Dynamics Model},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+  readstatus    = {read},
+}
+
+@Article{Hausknecht2015,
+  author        = {Matthew Hausknecht and Peter Stone},
+  title         = {Deep Recurrent Q-Learning for Partially Observable MDPs},
+  year          = {2015},
+  month         = jul,
+  abstract      = {Deep Reinforcement Learning has yielded proficient controllers for complex tasks. However, these controllers have limited memory and rely on being able to perceive the complete game screen at each decision point. To address these shortcomings, this article investigates the effects of adding recurrency to a Deep Q-Network (DQN) by replacing the first post-convolutional fully-connected layer with a recurrent LSTM. The resulting \textit{Deep Recurrent Q-Network} (DRQN), although capable of seeing only a single frame at each timestep, successfully integrates information through time and replicates DQN's performance on standard Atari games and partially observed equivalents featuring flickering game screens. Additionally, when trained with partial observations and evaluated with incrementally more complete observations, DRQN's performance scales as a function of observability. Conversely, when trained with full observations and evaluated with partial observations, DRQN's performance degrades less than DQN's. Thus, given the same length of history, recurrency is a viable alternative to stacking a history of frames in the DQN's input layer and while recurrency confers no systematic advantage when learning to play the game, the recurrent net can better adapt at evaluation time if the quality of observations changes.},
+  archiveprefix = {arXiv},
+  eprint        = {1507.06527},
+  file          = {:Hausknecht2015 - Deep Recurrent Q Learning for Partially Observable MDPs.pdf:PDF},
+  groups        = {POMDP},
+  keywords      = {cs.LG},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Zhu2018,
+  author        = {Pengfei Zhu and Xin Li and Pascal Poupart and Guanghui Miao},
+  title         = {On Improving Deep Reinforcement Learning for POMDPs},
+  year          = {2018},
+  month         = apr,
+  abstract      = {Deep Reinforcement Learning (RL) recently emerged as one of the most competitive approaches for learning in sequential decision making problems with fully observable environments, e.g., computer Go. However, very little work has been done in deep RL to handle partially observable environments. We propose a new architecture called Action-specific Deep Recurrent Q-Network (ADRQN) to enhance learning performance in partially observable domains. Actions are encoded by a fully connected layer and coupled with a convolutional observation to form an action-observation pair. The time series of action-observation pairs are then integrated by an LSTM layer that learns latent states based on which a fully connected layer computes Q-values as in conventional Deep Q-Networks (DQNs). We demonstrate the effectiveness of our new architecture in several partially observable domains, including flickering Atari games.},
+  archiveprefix = {arXiv},
+  eprint        = {1804.06309},
+  file          = {:- On Improving Deep Reinforcement Learning for POMDPs.pdf:PDF},
+  groups        = {POMDP},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Bellemare2016,
+  author        = {Marc G. Bellemare and Sriram Srinivasan and Georg Ostrovski and Tom Schaul and David Saxton and Remi Munos},
+  title         = {Unifying Count-Based Exploration and Intrinsic Motivation},
+  year          = {2016},
+  month         = jun,
+  abstract      = {We consider an agent's uncertainty about its environment and the problem of generalizing this uncertainty across observations. Specifically, we focus on the problem of exploration in non-tabular reinforcement learning. Drawing inspiration from the intrinsic motivation literature, we use density models to measure uncertainty, and propose a novel algorithm for deriving a pseudo-count from an arbitrary density model. This technique enables us to generalize count-based exploration algorithms to the non-tabular case. We apply our ideas to Atari 2600 games, providing sensible pseudo-counts from raw pixels. We transform these pseudo-counts into intrinsic rewards and obtain significantly improved exploration in a number of hard games, including the infamously difficult Montezuma's Revenge.},
+  archiveprefix = {arXiv},
+  eprint        = {1606.01868},
+  file          = {:Bellemare2016 - Unifying Count Based Exploration and Intrinsic Motivation.pdf:PDF},
+  groups        = {Visitation count},
+  keywords      = {cs.AI, cs.LG, stat.ML},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Tampuu2015,
+  author        = {Ardi Tampuu and Tambet Matiisen and Dorian Kodelja and Ilya Kuzovkin and Kristjan Korjus and Juhan Aru and Jaan Aru and Raul Vicente},
+  title         = {Multiagent Cooperation and Competition with Deep Reinforcement Learning},
+  year          = {2015},
+  month         = nov,
+  abstract      = {Multiagent systems appear in most social, economical, and political situations. In the present work we extend the Deep Q-Learning Network architecture proposed by Google DeepMind to multiagent environments and investigate how two agents controlled by independent Deep Q-Networks interact in the classic videogame Pong. By manipulating the classical rewarding scheme of Pong we demonstrate how competitive and collaborative behaviors emerge. Competitive agents learn to play and score efficiently. Agents trained under collaborative rewarding schemes find an optimal strategy to keep the ball in the game as long as possible. We also describe the progression from competitive to collaborative behavior. The present work demonstrates that Deep Q-Networks can become a practical tool for studying the decentralized learning of multiagent systems living in highly complex environments.},
+  archiveprefix = {arXiv},
+  eprint        = {1511.08779},
+  file          = {:Tampuu2015 - Multiagent Cooperation and Competition with Deep Reinforcement Learning.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.AI, cs.LG, q-bio.NC},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Wang2019,
+  author        = {Yixiang Wang and Feng Wu},
+  title         = {Multi-Agent Deep Reinforcement Learning with Adaptive Policies},
+  year          = {2019},
+  month         = nov,
+  abstract      = {We propose a novel approach to address one aspect of the non-stationarity problem in multi-agent reinforcement learning (RL), where the other agents may alter their policies due to environment changes during execution. This violates the Markov assumption that governs most single-agent RL methods and is one of the key challenges in multi-agent RL. To tackle this, we propose to train multiple policies for each agent and postpone the selection of the best policy at execution time. Specifically, we model the environment non-stationarity with a finite set of scenarios and train policies fitting each scenario. In addition to multiple policies, each agent also learns a policy predictor to determine which policy is the best with its local information. By doing so, each agent is able to adapt its policy when the environment changes and consequentially the other agents alter their policies during execution. We empirically evaluated our method on a variety of common benchmark problems proposed for multi-agent deep RL in the literature. Our experimental results show that the agents trained by our algorithm have better adaptiveness in changing environments and outperform the state-of-the-art methods in all the tested environments.},
+  archiveprefix = {arXiv},
+  eprint        = {1912.00949},
+  file          = {:Wang2019 - Multi Agent Deep Reinforcement Learning with Adaptive Policies.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Bard2020,
+  author    = {Nolan Bard and Jakob N. Foerster and Sarath Chandar and Neil Burch and Marc Lanctot and H. Francis Song and Emilio Parisotto and Vincent Dumoulin and Subhodeep Moitra and Edward Hughes and Iain Dunning and Shibl Mourad and Hugo Larochelle and Marc G. Bellemare and Michael Bowling},
+  journal   = {Artif. Intell.},
+  title     = {The Hanabi challenge: {A} new frontier for {AI} research},
+  year      = {2020},
+  pages     = {103216},
+  volume    = {280},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/ai/BardFCBLSPDMHDM20.bib},
+  doi       = {10.1016/j.artint.2019.103216},
+  file      = {:Bard2020 - The Hanabi Challenge_ a New Frontier for AI Research.pdf:PDF},
+  groups    = {MARL},
+}
+
+@Article{Long2020,
+  author        = {Qian Long and Zihan Zhou and Abhibav Gupta and Fei Fang and Yi Wu and Xiaolong Wang},
+  title         = {Evolutionary Population Curriculum for Scaling Multi-Agent Reinforcement Learning},
+  year          = {2020},
+  month         = mar,
+  abstract      = {In multi-agent games, the complexity of the environment can grow exponentially as the number of agents increases, so it is particularly challenging to learn good policies when the agent population is large. In this paper, we introduce Evolutionary Population Curriculum (EPC), a curriculum learning paradigm that scales up Multi-Agent Reinforcement Learning (MARL) by progressively increasing the population of training agents in a stage-wise manner. Furthermore, EPC uses an evolutionary approach to fix an objective misalignment issue throughout the curriculum: agents successfully trained in an early stage with a small population are not necessarily the best candidates for adapting to later stages with scaled populations. Concretely, EPC maintains multiple sets of agents in each stage, performs mix-and-match and fine-tuning over these sets and promotes the sets of agents with the best adaptability to the next stage. We implement EPC on a popular MARL algorithm, MADDPG, and empirically show that our approach consistently outperforms baselines by a large margin as the number of agents grows exponentially.},
+  archiveprefix = {arXiv},
+  eprint        = {2003.10423},
+  file          = {:Long2020 - Evolutionary Population Curriculum for Scaling Multi Agent Reinforcement Learning.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.LG, cs.AI, cs.NE, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Li,
+  author  = {Shihui Li and Yi Wu and Xinyue Cui and Honghua Dong and Fei Fang and Stuart Russell},
+  journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title   = {Robust Multi-Agent Reinforcement Learning via Minimax Deep Deterministic Policy Gradient},
+  year    = {2019},
+  issn    = {2374-3468},
+  pages   = {4213-4220},
+  volume  = {33},
+  doi     = {10.1609/aaai.v33i01.33014213},
+  file    = {:Li - Robust Multi Agent Reinforcement Learning Via Minimax Deep Deterministic Policy Gradient.pdf:PDF},
+  groups  = {MARL},
+}
+
+@Article{Hu2021,
+  author        = {Siyi Hu and Fengda Zhu and Xiaojun Chang and Xiaodan Liang},
+  title         = {UPDeT: Universal Multi-agent Reinforcement Learning via Policy Decoupling with Transformers},
+  year          = {2021},
+  month         = jan,
+  abstract      = {Recent advances in multi-agent reinforcement learning have been largely limited in training one model from scratch for every new task. The limitation is due to the restricted model architecture related to fixed input and output dimensions. This hinders the experience accumulation and transfer of the learned agent over tasks with diverse levels of difficulty (e.g. 3 vs 3 or 5 vs 6 multi-agent games). In this paper, we make the first attempt to explore a universal multi-agent reinforcement learning pipeline, designing one single architecture to fit tasks with the requirement of different observation and action configurations. Unlike previous RNN-based models, we utilize a transformer-based model to generate a flexible policy by decoupling the policy distribution from the intertwined input observation with an importance weight measured by the merits of the self-attention mechanism. Compared to a standard transformer block, the proposed model, named as Universal Policy Decoupling Transformer (UPDeT), further relaxes the action restriction and makes the multi-agent task's decision process more explainable. UPDeT is general enough to be plugged into any multi-agent reinforcement learning pipeline and equip them with strong generalization abilities that enables the handling of multiple tasks at a time. Extensive experiments on large-scale SMAC multi-agent competitive games demonstrate that the proposed UPDeT-based multi-agent reinforcement learning achieves significant results relative to state-of-the-art approaches, demonstrating advantageous transfer capability in terms of both performance and training speed (10 times faster).},
+  archiveprefix = {arXiv},
+  eprint        = {2101.08001},
+  file          = {:Hu2021 - UPDeT_ Universal Multi Agent Reinforcement Learning Via Policy Decoupling with Transformers.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.LG, cs.AI},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Rafailov2020,
+  author        = {Rafael Rafailov and Tianhe Yu and Aravind Rajeswaran and Chelsea Finn},
+  title         = {Offline Reinforcement Learning from Images with Latent Space Models},
+  year          = {2020},
+  month         = dec,
+  abstract      = {Offline reinforcement learning (RL) refers to the problem of learning policies from a static dataset of environment interactions. Offline RL enables extensive use and re-use of historical datasets, while also alleviating safety concerns associated with online exploration, thereby expanding the real-world applicability of RL. Most prior work in offline RL has focused on tasks with compact state representations. However, the ability to learn directly from rich observation spaces like images is critical for real-world applications such as robotics. In this work, we build on recent advances in model-based algorithms for offline RL, and extend them to high-dimensional visual observation spaces. Model-based offline RL algorithms have achieved state of the art results in state based tasks and have strong theoretical guarantees. However, they rely crucially on the ability to quantify uncertainty in the model predictions, which is particularly challenging with image observations. To overcome this challenge, we propose to learn a latent-state dynamics model, and represent the uncertainty in the latent space. Our approach is both tractable in practice and corresponds to maximizing a lower bound of the ELBO in the unknown POMDP. In experiments on a range of challenging image-based locomotion and manipulation tasks, we find that our algorithm significantly outperforms previous offline model-free RL methods as well as state-of-the-art online visual model-based RL methods. Moreover, we also find that our approach excels on an image-based drawer closing task on a real robot using a pre-existing dataset. All results including videos can be found online at https://sites.google.com/view/lompo/ .},
+  archiveprefix = {arXiv},
+  eprint        = {2012.11547},
+  file          = {:Rafailov2020 - Offline Reinforcement Learning from Images with Latent Space Models.pdf:PDF},
+  groups        = {Latent Dynamics Model, Offline RL},
+  keywords      = {cs.LG, cs.AI, cs.RO},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Laskin2020,
+  author        = {Michael Laskin and Kimin Lee and Adam Stooke and Lerrel Pinto and Pieter Abbeel and Aravind Srinivas},
+  title         = {Reinforcement Learning with Augmented Data},
+  year          = {2020},
+  month         = apr,
+  abstract      = {Learning from visual observations is a fundamental yet challenging problem in Reinforcement Learning (RL). Although algorithmic advances combined with convolutional neural networks have proved to be a recipe for success, current methods are still lacking on two fronts: (a) data-efficiency of learning and (b) generalization to new environments. To this end, we present Reinforcement Learning with Augmented Data (RAD), a simple plug-and-play module that can enhance most RL algorithms. We perform the first extensive study of general data augmentations for RL on both pixel-based and state-based inputs, and introduce two new data augmentations - random translate and random amplitude scale. We show that augmentations such as random translate, crop, color jitter, patch cutout, random convolutions, and amplitude scale can enable simple RL algorithms to outperform complex state-of-the-art methods across common benchmarks. RAD sets a new state-of-the-art in terms of data-efficiency and final performance on the DeepMind Control Suite benchmark for pixel-based control as well as OpenAI Gym benchmark for state-based control. We further demonstrate that RAD significantly improves test-time generalization over existing methods on several OpenAI ProcGen benchmarks. Our RAD module and training code are available at https://www.github.com/MishaLaskin/rad.},
+  archiveprefix = {arXiv},
+  eprint        = {2004.14990},
+  file          = {:Laskin2020 - Reinforcement Learning with Augmented Data.pdf:PDF},
+  groups        = {Data Augmentation},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Kostrikov2020,
+  author        = {Ilya Kostrikov and Denis Yarats and Rob Fergus},
+  title         = {Image Augmentation Is All You Need: Regularizing Deep Reinforcement Learning from Pixels},
+  year          = {2020},
+  month         = apr,
+  abstract      = {We propose a simple data augmentation technique that can be applied to standard model-free reinforcement learning algorithms, enabling robust learning directly from pixels without the need for auxiliary losses or pre-training. The approach leverages input perturbations commonly used in computer vision tasks to regularize the value function. Existing model-free approaches, such as Soft Actor-Critic (SAC), are not able to train deep networks effectively from image pixels. However, the addition of our augmentation method dramatically improves SAC's performance, enabling it to reach state-of-the-art performance on the DeepMind control suite, surpassing model-based (Dreamer, PlaNet, and SLAC) methods and recently proposed contrastive learning (CURL). Our approach can be combined with any model-free reinforcement learning algorithm, requiring only minor modifications. An implementation can be found at https://sites.google.com/view/data-regularized-q.},
+  archiveprefix = {arXiv},
+  eprint        = {2004.13649},
+  file          = {:Kostrikov2020 - Image Augmentation Is All You Need_ Regularizing Deep Reinforcement Learning from Pixels.pdf:PDF},
+  groups        = {Data Augmentation},
+  keywords      = {cs.LG, cs.CV, eess.IV, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Kidambi2020,
+  author        = {Rahul Kidambi and Aravind Rajeswaran and Praneeth Netrapalli and Thorsten Joachims},
+  title         = {MOReL : Model-Based Offline Reinforcement Learning},
+  year          = {2020},
+  month         = may,
+  abstract      = {In offline reinforcement learning (RL), the goal is to learn a highly rewarding policy based solely on a dataset of historical interactions with the environment. The ability to train RL policies offline can greatly expand the applicability of RL, its data efficiency, and its experimental velocity. Prior work in offline RL has been confined almost exclusively to model-free RL approaches. In this work, we present MOReL, an algorithmic framework for model-based offline RL. This framework consists of two steps: (a) learning a pessimistic MDP (P-MDP) using the offline dataset; and (b) learning a near-optimal policy in this P-MDP. The learned P-MDP has the property that for any policy, the performance in the real environment is approximately lower-bounded by the performance in the P-MDP. This enables it to serve as a good surrogate for purposes of policy evaluation and learning, and overcome common pitfalls of model-based RL like model exploitation. Theoretically, we show that MOReL is minimax optimal (up to log factors) for offline RL. Through experiments, we show that MOReL matches or exceeds state-of-the-art results in widely studied offline RL benchmarks. Moreover, the modular design of MOReL enables future advances in its components (e.g. generative modeling, uncertainty estimation, planning etc.) to directly translate into advances for offline RL.},
+  archiveprefix = {arXiv},
+  eprint        = {2005.05951},
+  file          = {:Kidambi2020 - MOReL _ Model Based Offline Reinforcement Learning.pdf:PDF},
+  groups        = {Model based, Offline RL},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Yu2020,
+  author        = {Tianhe Yu and Garrett Thomas and Lantao Yu and Stefano Ermon and James Zou and Sergey Levine and Chelsea Finn and Tengyu Ma},
+  title         = {MOPO: Model-based Offline Policy Optimization},
+  year          = {2020},
+  month         = may,
+  abstract      = {Offline reinforcement learning (RL) refers to the problem of learning policies entirely from a large batch of previously collected data. This problem setting offers the promise of utilizing such datasets to acquire policies without any costly or dangerous active exploration. However, it is also challenging, due to the distributional shift between the offline training data and those states visited by the learned policy. Despite significant recent progress, the most successful prior methods are model-free and constrain the policy to the support of data, precluding generalization to unseen states. In this paper, we first observe that an existing model-based RL algorithm already produces significant gains in the offline setting compared to model-free approaches. However, standard model-based RL methods, designed for the online setting, do not provide an explicit mechanism to avoid the offline setting's distributional shift issue. Instead, we propose to modify the existing model-based RL methods by applying them with rewards artificially penalized by the uncertainty of the dynamics. We theoretically show that the algorithm maximizes a lower bound of the policy's return under the true MDP. We also characterize the trade-off between the gain and risk of leaving the support of the batch data. Our algorithm, Model-based Offline Policy Optimization (MOPO), outperforms standard model-based RL algorithms and prior state-of-the-art model-free offline RL algorithms on existing offline RL benchmarks and two challenging continuous control tasks that require generalizing from data collected for a different task. The code is available at https://github.com/tianheyu927/mopo.},
+  archiveprefix = {arXiv},
+  eprint        = {2005.13239},
+  file          = {:Yu2020 - MOPO_ Model Based Offline Policy Optimization.pdf:PDF},
+  groups        = {Model based, Offline RL},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Janner2019,
+  author        = {Michael Janner and Justin Fu and Marvin Zhang and Sergey Levine},
+  title         = {When to Trust Your Model: Model-Based Policy Optimization},
+  year          = {2019},
+  month         = jun,
+  abstract      = {Designing effective model-based reinforcement learning algorithms is difficult because the ease of data generation must be weighed against the bias of model-generated data. In this paper, we study the role of model usage in policy optimization both theoretically and empirically. We first formulate and analyze a model-based reinforcement learning algorithm with a guarantee of monotonic improvement at each step. In practice, this analysis is overly pessimistic and suggests that real off-policy data is always preferable to model-generated on-policy data, but we show that an empirical estimate of model generalization can be incorporated into such analysis to justify model usage. Motivated by this analysis, we then demonstrate that a simple procedure of using short model-generated rollouts branched from real data has the benefits of more complicated model-based algorithms without the usual pitfalls. In particular, this approach surpasses the sample efficiency of prior model-based methods, matches the asymptotic performance of the best model-free algorithms, and scales to horizons that cause other model-based methods to fail entirely.},
+  archiveprefix = {arXiv},
+  eprint        = {1906.08253},
+  file          = {:Janner2019 - When to Trust Your Model_ Model Based Policy Optimization.pdf:PDF},
+  groups        = {Model based},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Rajeswaran2020,
+  author        = {Aravind Rajeswaran and Igor Mordatch and Vikash Kumar},
+  title         = {A Game Theoretic Framework for Model Based Reinforcement Learning},
+  year          = {2020},
+  month         = apr,
+  abstract      = {Model-based reinforcement learning (MBRL) has recently gained immense interest due to its potential for sample efficiency and ability to incorporate off-policy data. However, designing stable and efficient MBRL algorithms using rich function approximators have remained challenging. To help expose the practical challenges in MBRL and simplify algorithm design from the lens of abstraction, we develop a new framework that casts MBRL as a game between: (1) a policy player, which attempts to maximize rewards under the learned model; (2) a model player, which attempts to fit the real-world data collected by the policy player. For algorithm development, we construct a Stackelberg game between the two players, and show that it can be solved with approximate bi-level optimization. This gives rise to two natural families of algorithms for MBRL based on which player is chosen as the leader in the Stackelberg game. Together, they encapsulate, unify, and generalize many previous MBRL algorithms. Furthermore, our framework is consistent with and provides a clear basis for heuristics known to be important in practice from prior works. Finally, through experiments we validate that our proposed algorithms are highly sample efficient, match the asymptotic performance of model-free policy gradient, and scale gracefully to high-dimensional tasks like dexterous hand manipulation.},
+  archiveprefix = {arXiv},
+  eprint        = {2004.07804},
+  file          = {:Rajeswaran2020 - A Game Theoretic Framework for Model Based Reinforcement Learning.pdf:PDF},
+  groups        = {Model based},
+  keywords      = {cs.LG, cs.AI, cs.RO, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Duan2016,
+  author        = {Yan Duan and John Schulman and Xi Chen and Peter L. Bartlett and Ilya Sutskever and Pieter Abbeel},
+  title         = {RL$^2$: Fast Reinforcement Learning via Slow Reinforcement Learning},
+  year          = {2016},
+  month         = nov,
+  abstract      = {Deep reinforcement learning (deep RL) has been successful in learning sophisticated behaviors automatically; however, the learning process requires a huge number of trials. In contrast, animals can learn new tasks in just a few trials, benefiting from their prior knowledge about the world. This paper seeks to bridge this gap. Rather than designing a "fast" reinforcement learning algorithm, we propose to represent it as a recurrent neural network (RNN) and learn it from data. In our proposed method, RL$^2$, the algorithm is encoded in the weights of the RNN, which are learned slowly through a general-purpose ("slow") RL algorithm. The RNN receives all information a typical RL algorithm would receive, including observations, actions, rewards, and termination flags; and it retains its state across episodes in a given Markov Decision Process (MDP). The activations of the RNN store the state of the "fast" RL algorithm on the current (previously unseen) MDP. We evaluate RL$^2$ experimentally on both small-scale and large-scale problems. On the small-scale side, we train it to solve randomly generated multi-arm bandit problems and finite MDPs. After RL$^2$ is trained, its performance on new MDPs is close to human-designed algorithms with optimality guarantees. On the large-scale side, we test RL$^2$ on a vision-based navigation task and show that it scales up to high-dimensional problems.},
+  archiveprefix = {arXiv},
+  eprint        = {1611.02779},
+  file          = {:Duan2016 - RL$^2$_ Fast Reinforcement Learning Via Slow Reinforcement Learning.pdf:PDF},
+  groups        = {Meta-Learning},
+  keywords      = {cs.AI, cs.LG, cs.NE, stat.ML},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Mnih2013,
+  author        = {Volodymyr Mnih and Koray Kavukcuoglu and David Silver and Alex Graves and Ioannis Antonoglou and Daan Wierstra and Martin Riedmiller},
+  title         = {Playing Atari with Deep Reinforcement Learning},
+  year          = {2013},
+  month         = dec,
+  abstract      = {We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.},
+  archiveprefix = {arXiv},
+  eprint        = {1312.5602},
+  file          = {:Mnih2013 - Playing Atari with Deep Reinforcement Learning.pdf:PDF},
+  groups        = {Deep Q-Network, Value based},
+  keywords      = {cs.LG},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Mnih2015,
+  author    = {Volodymyr Mnih and Koray Kavukcuoglu and David Silver and Andrei A. Rusu and Joel Veness and Marc G. Bellemare and Alex Graves and Martin A. Riedmiller and Andreas Fidjeland and Georg Ostrovski and Stig Petersen and Charles Beattie and Amir Sadik and Ioannis Antonoglou and Helen King and Dharshan Kumaran and Daan Wierstra and Shane Legg and Demis Hassabis},
+  journal   = {Nat.},
+  title     = {Human-level control through deep reinforcement learning},
+  year      = {2015},
+  number    = {7540},
+  pages     = {529--533},
+  volume    = {518},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/nature/MnihKSRVBGRFOPB15.bib},
+  comment   = {DQN},
+  doi       = {10.1038/nature14236},
+  groups    = {Deep Q-Network, Value based},
+}
+
+@InProceedings{Hasselt2016,
+  author    = {Hado van Hasselt and Arthur Guez and David Silver},
+  booktitle = {Proceedings of the Thirtieth {AAAI} Conference on Artificial Intelligence, February 12-17, 2016, Phoenix, Arizona, {USA}},
+  title     = {Deep Reinforcement Learning with Double Q-Learning},
+  year      = {2016},
+  editor    = {Dale Schuurmans and Michael P. Wellman},
+  pages     = {2094--2100},
+  publisher = {{AAAI} Press},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/conf/aaai/HasseltGS16.bib},
+  comment   = {Double DQN},
+  groups    = {Value based},
+  url       = {http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12389},
+}
+
+@InProceedings{Schaul2016,
+  author    = {Tom Schaul and John Quan and Ioannis Antonoglou and David Silver},
+  booktitle = {4th International Conference on Learning Representations, {ICLR} 2016, San Juan, Puerto Rico, May 2-4, 2016, Conference Track Proceedings},
+  title     = {Prioritized Experience Replay},
+  year      = {2016},
+  editor    = {Yoshua Bengio and Yann LeCun},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/corr/SchaulQAS15.bib},
+  groups    = {PER, Value based},
+  url       = {http://arxiv.org/abs/1511.05952},
+}
+
+@InProceedings{Wang2016,
+  author    = {Ziyu Wang and Tom Schaul and Matteo Hessel and Hado van Hasselt and Marc Lanctot and Nando de Freitas},
+  booktitle = {Proceedings of the 33nd International Conference on Machine Learning, {ICML} 2016, New York City, NY, USA, June 19-24, 2016},
+  title     = {Dueling Network Architectures for Deep Reinforcement Learning},
+  year      = {2016},
+  editor    = {Maria{-}Florina Balcan and Kilian Q. Weinberger},
+  pages     = {1995--2003},
+  publisher = {JMLR.org},
+  series    = {{JMLR} Workshop and Conference Proceedings},
+  volume    = {48},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/conf/icml/WangSHHLF16.bib},
+  groups    = {Dueling DQN, Value based},
+  url       = {http://proceedings.mlr.press/v48/wangf16.html},
+}
+
+@Article{Conti2017,
+  author        = {Edoardo Conti and Vashisht Madhavan and Felipe Petroski Such and Joel Lehman and Kenneth O. Stanley and Jeff Clune},
+  title         = {Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents},
+  year          = {2017},
+  month         = dec,
+  abstract      = {Evolution strategies (ES) are a family of black-box optimization algorithms able to train deep neural networks roughly as well as Q-learning and policy gradient methods on challenging deep reinforcement learning (RL) problems, but are much faster (e.g. hours vs. days) because they parallelize better. However, many RL problems require directed exploration because they have reward functions that are sparse or deceptive (i.e. contain local optima), and it is unknown how to encourage such exploration with ES. Here we show that algorithms that have been invented to promote directed exploration in small-scale evolved neural networks via populations of exploring agents, specifically novelty search (NS) and quality diversity (QD) algorithms, can be hybridized with ES to improve its performance on sparse or deceptive deep RL tasks, while retaining scalability. Our experiments confirm that the resultant new algorithms, NS-ES and two QD algorithms, NSR-ES and NSRA-ES, avoid local optima encountered by ES to achieve higher performance on Atari and simulated robots learning to walk around a deceptive trap. This paper thus introduces a family of fast, scalable algorithms for reinforcement learning that are capable of directed exploration. It also adds this new family of exploration algorithms to the RL toolbox and raises the interesting possibility that analogous algorithms with multiple simultaneous paths of exploration might also combine well with existing RL algorithms outside ES.},
+  archiveprefix = {arXiv},
+  eprint        = {1712.06560},
+  file          = {:Conti2017 - Improving Exploration in Evolution Strategies for Deep Reinforcement Learning Via a Population of Novelty Seeking Agents.pdf:PDF},
+  groups        = {Diversity},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Ecoffet2019,
+  author        = {Adrien Ecoffet and Joost Huizinga and Joel Lehman and Kenneth O. Stanley and Jeff Clune},
+  title         = {Go-Explore: a New Approach for Hard-Exploration Problems},
+  year          = {2019},
+  volume        = {abs/1901.10995},
+  archiveprefix = {arXiv},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-1901-10995.bib},
+  eprint        = {1901.10995},
+  groups        = {Random Exploration, Imitation},
+  url           = {http://arxiv.org/abs/1901.10995},
+}
+
+@Article{Ostrovski2017,
+  author        = {Georg Ostrovski and Marc G. Bellemare and A{\"{a}}ron van den Oord and R{\'{e}}mi Munos},
+  journal       = {CoRR},
+  title         = {Count-Based Exploration with Neural Density Models},
+  year          = {2017},
+  volume        = {abs/1703.01310},
+  archiveprefix = {arXiv},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/OstrovskiBOM17.bib},
+  eprint        = {1703.01310},
+  groups        = {Visitation count},
+  url           = {http://arxiv.org/abs/1703.01310},
+}
+
+@InProceedings{Bellemare2017,
+  author    = {Marc G. Bellemare and Will Dabney and R{\'e}mi Munos},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning},
+  title     = {A Distributional Perspective on Reinforcement Learning},
+  year      = {2017},
+  address   = {International Convention Centre, Sydney, Australia},
+  editor    = {Doina Precup and Yee Whye Teh},
+  month     = {06--11 Aug},
+  pages     = {449--458},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {70},
+  abstract  = {In this paper we argue for the fundamental importance of the value distribution: the distribution of the random return received by a reinforcement learning agent. This is in contrast to the common approach to reinforcement learning which models the expectation of this return, or value. Although there is an established body of literature studying the value distribution, thus far it has always been used for a specific purpose such as implementing risk-aware behaviour. We begin with theoretical results in both the policy evaluation and control settings, exposing a significant distributional instability in the latter. We then use the distributional perspective to design a new algorithm which applies Bellman’s equation to the learning of approximate value distributions. We evaluate our algorithm using the suite of games from the Arcade Learning Environment. We obtain both state-of-the-art results and anecdotal evidence demonstrating the importance of the value distribution in approximate reinforcement learning. Finally, we combine theoretical and empirical evidence to highlight the ways in which the value distribution impacts learning in the approximate setting.},
+  groups    = {Value based},
+  pdf       = {http://proceedings.mlr.press/v70/bellemare17a/bellemare17a.pdf},
+  url       = {http://proceedings.mlr.press/v70/bellemare17a.html},
+}
+
+@Article{Fortunato2017,
+  author        = {Meire Fortunato and Mohammad Gheshlaghi Azar and Bilal Piot and Jacob Menick and Ian Osband and Alex Graves and Vlad Mnih and Remi Munos and Demis Hassabis and Olivier Pietquin and Charles Blundell and Shane Legg},
+  title         = {Noisy Networks for Exploration},
+  year          = {2017},
+  month         = jun,
+  abstract      = {We introduce NoisyNet, a deep reinforcement learning agent with parametric noise added to its weights, and show that the induced stochasticity of the agent's policy can be used to aid efficient exploration. The parameters of the noise are learned with gradient descent along with the remaining network weights. NoisyNet is straightforward to implement and adds little computational overhead. We find that replacing the conventional exploration heuristics for A3C, DQN and dueling agents (entropy reward and $\epsilon$-greedy respectively) with NoisyNet yields substantially higher scores for a wide range of Atari games, in some cases advancing the agent from sub to super-human performance.},
+  archiveprefix = {arXiv},
+  eprint        = {1706.10295},
+  file          = {:- Noisy Networks for Exploration.pdf:PDF},
+  groups        = {Value based},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{FletBerliac2021,
+  author        = {Yannis Flet-Berliac and Johan Ferret and Olivier Pietquin and Philippe Preux and Matthieu Geist},
+  title         = {Adversarially Guided Actor-Critic},
+  year          = {2021},
+  month         = feb,
+  abstract      = {Despite definite success in deep reinforcement learning problems, actor-critic algorithms are still confronted with sample inefficiency in complex environments, particularly in tasks where efficient exploration is a bottleneck. These methods consider a policy (the actor) and a value function (the critic) whose respective losses are built using different motivations and approaches. This paper introduces a third protagonist: the adversary. While the adversary mimics the actor by minimizing the KL-divergence between their respective action distributions, the actor, in addition to learning to solve the task, tries to differentiate itself from the adversary predictions. This novel objective stimulates the actor to follow strategies that could not have been correctly predicted from previous trajectories, making its behavior innovative in tasks where the reward is extremely rare. Our experimental analysis shows that the resulting Adversarially Guided Actor-Critic (AGAC) algorithm leads to more exhaustive exploration. Notably, AGAC outperforms current state-of-the-art methods on a set of various hard-exploration and procedurally-generated tasks.},
+  archiveprefix = {arXiv},
+  eprint        = {2102.04376},
+  file          = {:FletBerliac2021 - Adversarially Guided Actor Critic.pdf:PDF},
+  groups        = {Adversary Guidance},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Yu2021,
+  author        = {Tianhe Yu and Aviral Kumar and Rafael Rafailov and Aravind Rajeswaran and Sergey Levine and Chelsea Finn},
+  title         = {COMBO: Conservative Offline Model-Based Policy Optimization},
+  year          = {2021},
+  month         = feb,
+  abstract      = {Model-based algorithms, which learn a dynamics model from logged experience and perform some sort of pessimistic planning under the learned model, have emerged as a promising paradigm for offline reinforcement learning (offline RL). However, practical variants of such model-based algorithms rely on explicit uncertainty quantification for incorporating pessimism. Uncertainty estimation with complex models, such as deep neural networks, can be difficult and unreliable. We overcome this limitation by developing a new model-based offline RL algorithm, COMBO, that regularizes the value function on out-of-support state-action tuples generated via rollouts under the learned model. This results in a conservative estimate of the value function for out-of-support state-action tuples, without requiring explicit uncertainty estimation. We theoretically show that our method optimizes a lower bound on the true policy value, that this bound is tighter than that of prior methods, and our approach satisfies a policy improvement guarantee in the offline setting. Through experiments, we find that COMBO consistently performs as well or better as compared to prior offline model-free and model-based methods on widely studied offline RL benchmarks, including image-based tasks.},
+  archiveprefix = {arXiv},
+  eprint        = {2102.08363},
+  file          = {:Yu2021 - COMBO_ Conservative Offline Model Based Policy Optimization.pdf:PDF},
+  groups        = {Offline RL},
+  keywords      = {cs.LG, cs.AI, cs.RO},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Kumar2020,
+  author        = {Aviral Kumar and Aurick Zhou and George Tucker and Sergey Levine},
+  title         = {Conservative Q-Learning for Offline Reinforcement Learning},
+  year          = {2020},
+  month         = jun,
+  abstract      = {Effectively leveraging large, previously collected datasets in reinforcement learning (RL) is a key challenge for large-scale real-world applications. Offline RL algorithms promise to learn effective policies from previously-collected, static datasets without further interaction. However, in practice, offline RL presents a major challenge, and standard off-policy RL methods can fail due to overestimation of values induced by the distributional shift between the dataset and the learned policy, especially when training on complex and multi-modal data distributions. In this paper, we propose conservative Q-learning (CQL), which aims to address these limitations by learning a conservative Q-function such that the expected value of a policy under this Q-function lower-bounds its true value. We theoretically show that CQL produces a lower bound on the value of the current policy and that it can be incorporated into a policy learning procedure with theoretical improvement guarantees. In practice, CQL augments the standard Bellman error objective with a simple Q-value regularizer which is straightforward to implement on top of existing deep Q-learning and actor-critic implementations. On both discrete and continuous control domains, we show that CQL substantially outperforms existing offline RL methods, often learning policies that attain 2-5 times higher final return, especially when learning from complex and multi-modal data distributions.},
+  archiveprefix = {arXiv},
+  eprint        = {2006.04779},
+  file          = {:Kumar2020 - Conservative Q Learning for Offline Reinforcement Learning.pdf:PDF},
+  groups        = {Offline RL},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Silver2016,
+  author    = {David Silver and Aja Huang and Chris J. Maddison and Arthur Guez and Laurent Sifre and George van den Driessche and Julian Schrittwieser and Ioannis Antonoglou and Vedavyas Panneershelvam and Marc Lanctot and Sander Dieleman and Dominik Grewe and John Nham and Nal Kalchbrenner and Ilya Sutskever and Timothy P. Lillicrap and Madeleine Leach and Koray Kavukcuoglu and Thore Graepel and Demis Hassabis},
+  journal   = {Nat.},
+  title     = {Mastering the game of Go with deep neural networks and tree search},
+  year      = {2016},
+  number    = {7587},
+  pages     = {484--489},
+  volume    = {529},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/nature/SilverHMGSDSAPL16.bib},
+  comment   = {AlphaGo},
+  doi       = {10.1038/nature16961},
+  file      = {:Silver2016 - Mastering the Game of Go with Deep Neural Networks and Tree Search.pdf:PDF},
+  groups    = {Model based},
+}
+
+@Article{Silver2017,
+  author    = {David Silver and Julian Schrittwieser and Karen Simonyan and Ioannis Antonoglou and Aja Huang and Arthur Guez and Thomas Hubert and Lucas Baker and Matthew Lai and Adrian Bolton and Yutian Chen and Timothy P. Lillicrap and Fan Hui and Laurent Sifre and George van den Driessche and Thore Graepel and Demis Hassabis},
+  journal   = {Nat.},
+  title     = {Mastering the game of Go without human knowledge},
+  year      = {2017},
+  number    = {7676},
+  pages     = {354--359},
+  volume    = {550},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/nature/SilverSSAHGHBLB17.bib},
+  comment   = {AlphaGo Zero},
+  doi       = {10.1038/nature24270},
+  file      = {:Silver2017 - Mastering the Game of Go without Human Knowledge.pdf:PDF},
+  groups    = {Model based},
+}
+
+@Article{Silver2017a,
+  author        = {David Silver and Thomas Hubert and Julian Schrittwieser and Ioannis Antonoglou and Matthew Lai and Arthur Guez and Marc Lanctot and Laurent Sifre and Dharshan Kumaran and Thore Graepel and Timothy P. Lillicrap and Karen Simonyan and Demis Hassabis},
+  journal       = {CoRR},
+  title         = {Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm},
+  year          = {2017},
+  volume        = {abs/1712.01815},
+  archiveprefix = {arXiv},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-1712-01815.bib},
+  comment       = {AlphaZero},
+  eprint        = {1712.01815},
+  file          = {:Silver2017a - Mastering Chess and Shogi by Self Play with a General Reinforcement Learning Algorithm.pdf:PDF},
+  groups        = {Model based},
+  url           = {http://arxiv.org/abs/1712.01815},
+}
+
+@Article{Lowe2017,
+  author        = {Ryan Lowe and Yi Wu and Aviv Tamar and Jean Harb and Pieter Abbeel and Igor Mordatch},
+  journal       = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+  title         = {Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments},
+  year          = {2017},
+  month         = jun,
+  abstract      = {We explore deep reinforcement learning methods for multi-agent domains. We begin by analyzing the difficulty of traditional algorithms in the multi-agent case: Q-learning is challenged by an inherent non-stationarity of the environment, while policy gradient suffers from a variance that increases as the number of agents grows. We then present an adaptation of actor-critic methods that considers action policies of other agents and is able to successfully learn policies that require complex multi-agent coordination. Additionally, we introduce a training regimen utilizing an ensemble of policies for each agent that leads to more robust multi-agent policies. We show the strength of our approach compared to existing methods in cooperative as well as competitive scenarios, where agent populations are able to discover various physical and informational coordination strategies.},
+  archiveprefix = {arXiv},
+  eprint        = {1706.02275},
+  file          = {:Lowe2017 - Multi Agent Actor Critic for Mixed Cooperative Competitive Environments.pdf:PDF},
+  groups        = {MARL, Communication},
+  keywords      = {cs.LG, cs.AI, cs.NE},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Schulman2015a,
+  author        = {John Schulman and Philipp Moritz and Sergey Levine and Michael Jordan and Pieter Abbeel},
+  journal       = {ICLR 2016},
+  title         = {High-Dimensional Continuous Control Using Generalized Advantage Estimation},
+  year          = {2015},
+  month         = jun,
+  abstract      = {Policy gradient methods are an appealing approach in reinforcement learning because they directly optimize the cumulative reward and can straightforwardly be used with nonlinear function approximators such as neural networks. The two main challenges are the large number of samples typically required, and the difficulty of obtaining stable and steady improvement despite the nonstationarity of the incoming data. We address the first challenge by using value functions to substantially reduce the variance of policy gradient estimates at the cost of some bias, with an exponentially-weighted estimator of the advantage function that is analogous to TD(lambda). We address the second challenge by using trust region optimization procedure for both the policy and the value function, which are represented by neural networks. Our approach yields strong empirical results on highly challenging 3D locomotion tasks, learning running gaits for bipedal and quadrupedal simulated robots, and learning a policy for getting the biped to stand up from starting out lying on the ground. In contrast to a body of prior work that uses hand-crafted policy representations, our neural network policies map directly from raw kinematics to joint torques. Our algorithm is fully model-free, and the amount of simulated experience required for the learning tasks on 3D bipeds corresponds to 1-2 weeks of real time.},
+  archiveprefix = {arXiv},
+  comment       = {General Advantage Estimator},
+  eprint        = {1506.02438},
+  file          = {:Schulman2015a - High Dimensional Continuous Control Using Generalized Advantage Estimation.pdf:PDF},
+  groups        = {TRPO},
+  keywords      = {cs.LG, cs.RO, cs.SY},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Heess2017,
+  author        = {Nicolas Heess and Dhruva TB and Srinivasan Sriram and Jay Lemmon and Josh Merel and Greg Wayne and Yuval Tassa and Tom Erez and Ziyu Wang and S. M. Ali Eslami and Martin Riedmiller and David Silver},
+  title         = {Emergence of Locomotion Behaviours in Rich Environments},
+  year          = {2017},
+  month         = jul,
+  abstract      = {The reinforcement learning paradigm allows, in principle, for complex behaviours to be learned directly from simple reward signals. In practice, however, it is common to carefully hand-design the reward function to encourage a particular solution, or to derive it from demonstration data. In this paper explore how a rich environment can help to promote the learning of complex behavior. Specifically, we train agents in diverse environmental contexts, and find that this encourages the emergence of robust behaviours that perform well across a suite of tasks. We demonstrate this principle for locomotion -- behaviours that are known for their sensitivity to the choice of reward. We train several simulated bodies on a diverse set of challenging terrains and obstacles, using a simple reward function based on forward progress. Using a novel scalable variant of policy gradient reinforcement learning, our agents learn to run, jump, crouch and turn as required by the environment without explicit reward-based guidance. A visual depiction of highlights of the learned behavior can be viewed following https://youtu.be/hx_bgoTF7bs .},
+  archiveprefix = {arXiv},
+  eprint        = {1707.02286},
+  file          = {:Heess2017 - Emergence of Locomotion Behaviours in Rich Environments.pdf:PDF},
+  groups        = {TRPO},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Leibo2019,
+  author        = {Joel Z. Leibo and Edward Hughes and Marc Lanctot and Thore Graepel},
+  title         = {Autocurricula and the Emergence of Innovation from Social Interaction: A Manifesto for Multi-Agent Intelligence Research},
+  year          = {2019},
+  month         = mar,
+  abstract      = {Evolution has produced a multi-scale mosaic of interacting adaptive units. Innovations arise when perturbations push parts of the system away from stable equilibria into new regimes where previously well-adapted solutions no longer work. Here we explore the hypothesis that multi-agent systems sometimes display intrinsic dynamics arising from competition and cooperation that provide a naturally emergent curriculum, which we term an autocurriculum. The solution of one social task often begets new social tasks, continually generating novel challenges, and thereby promoting innovation. Under certain conditions these challenges may become increasingly complex over time, demanding that agents accumulate ever more innovations.},
+  archiveprefix = {arXiv},
+  eprint        = {1903.00742},
+  file          = {:Leibo2019 - Autocurricula and the Emergence of Innovation from Social Interaction_ a Manifesto for Multi Agent Intelligence Research.pdf:PDF},
+  groups        = {Multi-agent Systems},
+  keywords      = {cs.AI, cs.GT, cs.MA, cs.NE, q-bio.NC},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Baker2019,
+  author        = {Bowen Baker and Ingmar Kanitscheider and Todor Markov and Yi Wu and Glenn Powell and Bob McGrew and Igor Mordatch},
+  title         = {Emergent Tool Use From Multi-Agent Autocurricula},
+  year          = {2019},
+  month         = sep,
+  abstract      = {Through multi-agent competition, the simple objective of hide-and-seek, and standard reinforcement learning algorithms at scale, we find that agents create a self-supervised autocurriculum inducing multiple distinct rounds of emergent strategy, many of which require sophisticated tool use and coordination. We find clear evidence of six emergent phases in agent strategy in our environment, each of which creates a new pressure for the opposing team to adapt; for instance, agents learn to build multi-object shelters using moveable boxes which in turn leads to agents discovering that they can overcome obstacles using ramps. We further provide evidence that multi-agent competition may scale better with increasing environment complexity and leads to behavior that centers around far more human-relevant skills than other self-supervised reinforcement learning methods such as intrinsic motivation. Finally, we propose transfer and fine-tuning as a way to quantitatively evaluate targeted capabilities, and we compare hide-and-seek agents to both intrinsic motivation and random initialization baselines in a suite of domain-specific intelligence tests.},
+  archiveprefix = {arXiv},
+  eprint        = {1909.07528},
+  file          = {:Baker2019 - Emergent Tool Use from Multi Agent Autocurricula.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Bansal2017,
+  author        = {Trapit Bansal and Jakub Pachocki and Szymon Sidor and Ilya Sutskever and Igor Mordatch},
+  journal       = {ICLR 2018},
+  title         = {Emergent Complexity via Multi-Agent Competition},
+  year          = {2017},
+  month         = oct,
+  abstract      = {Reinforcement learning algorithms can train agents that solve problems in complex, interesting environments. Normally, the complexity of the trained agent is closely related to the complexity of the environment. This suggests that a highly capable agent requires a complex environment for training. In this paper, we point out that a competitive multi-agent environment trained with self-play can produce behaviors that are far more complex than the environment itself. We also point out that such environments come with a natural curriculum, because for any skill level, an environment full of agents of this level will have the right level of difficulty. This work introduces several competitive multi-agent environments where agents compete in a 3D world with simulated physics. The trained agents learn a wide variety of complex and interesting skills, even though the environment themselves are relatively simple. The skills include behaviors such as running, blocking, ducking, tackling, fooling opponents, kicking, and defending using both arms and legs. A highlight of the learned behaviors can be found here: https://goo.gl/eR7fbX},
+  archiveprefix = {arXiv},
+  eprint        = {1710.03748},
+  file          = {:Bansal2017 - Emergent Complexity Via Multi Agent Competition.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Jaderberg2018,
+  author        = {Max Jaderberg and Wojciech M. Czarnecki and Iain Dunning and Luke Marris and Guy Lever and Antonio Garcia Castaneda and Charles Beattie and Neil C. Rabinowitz and Ari S. Morcos and Avraham Ruderman and Nicolas Sonnerat and Tim Green and Louise Deason and Joel Z. Leibo and David Silver and Demis Hassabis and Koray Kavukcuoglu and Thore Graepel},
+  journal       = {Science, 364(6443):859–865, 2019},
+  title         = {Human-level performance in first-person multiplayer games with population-based deep reinforcement learning},
+  year          = {2018},
+  month         = jul,
+  abstract      = {Recent progress in artificial intelligence through reinforcement learning (RL) has shown great success on increasingly complex single-agent environments and two-player turn-based games. However, the real-world contains multiple agents, each learning and acting independently to cooperate and compete with other agents, and environments reflecting this degree of complexity remain an open challenge. In this work, we demonstrate for the first time that an agent can achieve human-level in a popular 3D multiplayer first-person video game, Quake III Arena Capture the Flag, using only pixels and game points as input. These results were achieved by a novel two-tier optimisation process in which a population of independent RL agents are trained concurrently from thousands of parallel matches with agents playing in teams together and against each other on randomly generated environments. Each agent in the population learns its own internal reward signal to complement the sparse delayed reward from winning, and selects actions using a novel temporally hierarchical representation that enables the agent to reason at multiple timescales. During game-play, these agents display human-like behaviours such as navigating, following, and defending based on a rich learned representation that is shown to encode high-level game knowledge. In an extensive tournament-style evaluation the trained agents exceeded the win-rate of strong human players both as teammates and opponents, and proved far stronger than existing state-of-the-art agents. These results demonstrate a significant jump in the capabilities of artificial agents, bringing us closer to the goal of human-level intelligence.},
+  archiveprefix = {arXiv},
+  doi           = {10.1126/science.aau6249},
+  eprint        = {1807.01281},
+  file          = {:Jaderberg2018 - Human Level Performance in First Person Multiplayer Games with Population Based Deep Reinforcement Learning.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.LG, cs.AI, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Liu2019,
+  author        = {Siqi Liu and Guy Lever and Josh Merel and Saran Tunyasuvunakool and Nicolas Heess and Thore Graepel},
+  title         = {Emergent Coordination Through Competition},
+  year          = {2019},
+  month         = feb,
+  abstract      = {We study the emergence of cooperative behaviors in reinforcement learning agents by introducing a challenging competitive multi-agent soccer environment with continuous simulated physics. We demonstrate that decentralized, population-based training with co-play can lead to a progression in agents' behaviors: from random, to simple ball chasing, and finally showing evidence of cooperation. Our study highlights several of the challenges encountered in large scale multi-agent training in continuous control. In particular, we demonstrate that the automatic optimization of simple shaping rewards, not themselves conducive to co-operative behavior, can lead to long-horizon team behavior. We further apply an evaluation scheme, grounded by game theoretic principals, that can assess agent performance in the absence of pre-defined evaluation tasks or human baselines.},
+  archiveprefix = {arXiv},
+  eprint        = {1902.07151},
+  file          = {:Liu2019 - Emergent Coordination through Competition.pdf:PDF},
+  groups        = {MARL},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Miikkulainen2004,
+  author        = {R. Miikkulainen and K. O. Stanley},
+  journal       = {Journal Of Artificial Intelligence Research, Volume 21, pages 63-100, 2004},
+  title         = {Competitive Coevolution through Evolutionary Complexification},
+  year          = {2004},
+  abstract      = {Two major goals in machine learning are the discovery and improvement of solutions to complex problems. In this paper, we argue that complexification, i.e. the incremental elaboration of solutions through adding new structure, achieves both these goals. We demonstrate the power of complexification through the NeuroEvolution of Augmenting Topologies (NEAT) method, which evolves increasingly complex neural network architectures. NEAT is applied to an open-ended coevolutionary robot duel domain where robot controllers compete head to head. Because the robot duel domain supports a wide range of strategies, and because coevolution benefits from an escalating arms race, it serves as a suitable testbed for studying complexification. When compared to the evolution of networks with fixed structure, complexifying evolution discovers significantly more sophisticated strategies. The results suggest that in order to discover and improve complex solutions, evolution, and search in general, should be allowed to complexify as well as optimize.},
+  archiveprefix = {arXiv},
+  comment       = {following NEAT},
+  doi           = {10.1613/jair.1338},
+  eprint        = {1107.0037},
+  file          = {:Miikkulainen2011 - Competitive Coevolution through Evolutionary Complexification.pdf:PDF},
+  groups        = {Multi-agent learning},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Rosin1997,
+  author = {Christopher D. Rosin and Richard K. Belew},
+  title  = {New Methods for Competitive Coevolution},
+  year   = {1997},
+  issn   = {1063-6560},
+  pages  = {1-29},
+  volume = {5},
+  doi    = {10.1162/evco.1997.5.1.1},
+  groups = {Multi-agent learning},
+}
+
+@Article{Sukhbaatar2016,
+  author        = {Sainbayar Sukhbaatar and Arthur Szlam and Rob Fergus},
+  journal       = {Advances in Neural Information Processing Systems, pp. 2244–2252},
+  title         = {Learning Multiagent Communication with Backpropagation},
+  year          = {2016},
+  month         = may,
+  abstract      = {Many tasks in AI require the collaboration of multiple agents. Typically, the communication protocol between agents is manually specified and not altered during training. In this paper we explore a simple neural model, called CommNet, that uses continuous communication for fully cooperative tasks. The model consists of multiple agents and the communication between them is learned alongside their policy. We apply this model to a diverse set of tasks, demonstrating the ability of the agents to learn to communicate amongst themselves, yielding improved performance over non-communicative agents and baselines. In some cases, it is possible to interpret the language devised by the agents, revealing simple but effective strategies for solving the task at hand.},
+  archiveprefix = {arXiv},
+  eprint        = {1605.07736},
+  file          = {:Sukhbaatar2016 - Learning Multiagent Communication with Backpropagation.pdf:PDF},
+  groups        = {Communication},
+  keywords      = {cs.LG, cs.AI},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Foerster2016,
+  author        = {Jakob N. Foerster and Yannis M. Assael and Nando de Freitas and Shimon Whiteson},
+  journal       = {Advances in Neural Information Processing Systems, pp. 2137–2145},
+  title         = {Learning to Communicate with Deep Multi-Agent Reinforcement Learning},
+  year          = {2016},
+  month         = may,
+  abstract      = {We consider the problem of multiple agents sensing and acting in environments with the goal of maximising their shared utility. In these environments, agents must learn communication protocols in order to share information that is needed to solve the tasks. By embracing deep neural networks, we are able to demonstrate end-to-end learning of protocols in complex environments inspired by communication riddles and multi-agent computer vision problems with partial observability. We propose two approaches for learning in these domains: Reinforced Inter-Agent Learning (RIAL) and Differentiable Inter-Agent Learning (DIAL). The former uses deep Q-learning, while the latter exploits the fact that, during learning, agents can backpropagate error derivatives through (noisy) communication channels. Hence, this approach uses centralised learning but decentralised execution. Our experiments introduce new environments for studying the learning of communication protocols and present a set of engineering innovations that are essential for success in these domains.},
+  archiveprefix = {arXiv},
+  eprint        = {1605.06676},
+  file          = {:Foerster2016 - Learning to Communicate with Deep Multi Agent Reinforcement Learning.pdf:PDF},
+  groups        = {Communication},
+  keywords      = {cs.AI, cs.LG, cs.MA},
+  primaryclass  = {cs.AI},
+}
+
+@InProceedings{Mordatch2018,
+  author    = {Igor Mordatch and Pieter Abbeel},
+  booktitle = {Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence},
+  title     = {Emergence of Grounded Compositional Language in Multi-Agent Populations},
+  year      = {2018},
+  editor    = {Sheila A. McIlraith and Kilian Q. Weinberger},
+  pages     = {1495--1502},
+  publisher = {{AAAI} Press},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/conf/aaai/MordatchA18.bib},
+  file      = {:Mordatch2018 - Emergence of Grounded Compositional Language in Multi Agent Populations.pdf:PDF},
+  groups    = {MARL, Communication},
+  url       = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17007},
+}
+
+@Article{Jaques2019,
+  author        = {Natasha Jaques and Angeliki Lazaridou and Edward Hughes and Caglar Gulcehre and Pedro A. Ortega and DJ Strouse and Joel Z. Leibo and Nando de Freitas},
+  journal       = {Proceedings of the 36th International Conference on Machine Learning, PMLR 97:3040-3049},
+  title         = {Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning},
+  year          = {2019},
+  abstract      = {We propose a unified mechanism for achieving coordination and communication in Multi-Agent Reinforcement Learning (MARL), through rewarding agents for having causal influence over other agents' actions. Causal influence is assessed using counterfactual reasoning. At each timestep, an agent simulates alternate actions that it could have taken, and computes their effect on the behavior of other agents. Actions that lead to bigger changes in other agents' behavior are considered influential and are rewarded. We show that this is equivalent to rewarding agents for having high mutual information between their actions. Empirical results demonstrate that influence leads to enhanced coordination and communication in challenging social dilemma environments, dramatically increasing the learning curves of the deep RL agents, and leading to more meaningful learned communication protocols. The influence rewards for all agents can be computed in a decentralized way by enabling agents to learn a model of other agents using deep neural networks. In contrast, key previous works on emergent communication in the MARL setting were unable to learn diverse policies in a decentralized manner and had to resort to centralized training. Consequently, the influence reward opens up a window of new opportunities for research in this area.},
+  archiveprefix = {arXiv},
+  eprint        = {1810.08647},
+  file          = {:Jaques2018 - Social Influence As Intrinsic Motivation for Multi Agent Deep Reinforcement Learning.pdf:PDF},
+  groups        = {Multi-agent RL},
+  keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Leibo2019,
+  author        = {Joel Z. Leibo and Julien Perolat and Edward Hughes and Steven Wheelwright and Adam H. Marblestone and Edgar Duéñez-Guzmán and Peter Sunehag and Iain Dunning and Thore Graepel},
+  journal       = {Proceedings of the 18th International Conference on Autonomous Agents and Multi-Agent Systems, pp. 1099–1107.},
+  title         = {Malthusian Reinforcement Learning},
+  year          = {2019},
+  month         = dec,
+  abstract      = {Here we explore a new algorithmic framework for multi-agent reinforcement learning, called Malthusian reinforcement learning, which extends self-play to include fitness-linked population size dynamics that drive ongoing innovation. In Malthusian RL, increases in a subpopulation's average return drive subsequent increases in its size, just as Thomas Malthus argued in 1798 was the relationship between preindustrial income levels and population growth. Malthusian reinforcement learning harnesses the competitive pressures arising from growing and shrinking population size to drive agents to explore regions of state and policy spaces that they could not otherwise reach. Furthermore, in environments where there are potential gains from specialization and division of labor, we show that Malthusian reinforcement learning is better positioned to take advantage of such synergies than algorithms based on self-play.},
+  archiveprefix = {arXiv},
+  eprint        = {1812.07019},
+  file          = {:Leibo2018 - Malthusian Reinforcement Learning.pdf:PDF},
+  groups        = {Multi-agent RL},
+  keywords      = {cs.NE, cs.MA, q-bio.PE},
+  primaryclass  = {cs.NE},
+}
+
+@InProceedings{pmlr-v48-mniha16,
+  author    = {Volodymyr Mnih and Adria Puigdomenech Badia and Mehdi Mirza and Alex Graves and Timothy Lillicrap and Tim Harley and David Silver and Koray Kavukcuoglu},
+  booktitle = {Proceedings of The 33rd International Conference on Machine Learning},
+  title     = {Asynchronous Methods for Deep Reinforcement Learning},
+  year      = {2016},
+  address   = {New York, New York, USA},
+  editor    = {Maria Florina Balcan and Kilian Q. Weinberger},
+  month     = {20--22 Jun},
+  pages     = {1928--1937},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {48},
+  abstract  = {We propose a conceptually simple and lightweight framework for deep reinforcement learning that uses asynchronous gradient descent for optimization of deep neural network controllers. We present asynchronous variants of four standard reinforcement learning algorithms and show that parallel actor-learners have a stabilizing effect on training allowing all four methods to successfully train neural network controllers. The best performing method, an asynchronous variant of actor-critic, surpasses the current state-of-the-art on the Atari domain while training for half the time on a single multi-core CPU instead of a GPU. Furthermore, we show that asynchronous actor-critic succeeds on a wide variety of continuous motor control problems as well as on a new task of navigating random 3D mazes using a visual input.},
+  comment   = {A3C},
+  file      = {:pmlr-v48-mniha16 - Asynchronous Methods for Deep Reinforcement Learning.pdf:PDF},
+  groups    = {Value based},
+  pdf       = {http://proceedings.mlr.press/v48/mniha16.pdf},
+  url       = {http://proceedings.mlr.press/v48/mniha16.html},
+}
+
+@InProceedings{10.5555/3091125.3091194,
+  author    = {Leibo, Joel Z. and Zambaldi, Vinicius and Lanctot, Marc and Marecki, Janusz and Graepel, Thore},
+  booktitle = {Proceedings of the 16th Conference on Autonomous Agents and MultiAgent Systems},
+  title     = {Multi-Agent Reinforcement Learning in Sequential Social Dilemmas},
+  year      = {2017},
+  address   = {Richland, SC},
+  pages     = {464–473},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '17},
+  abstract  = {Matrix games like Prisoner's Dilemma have guided research on social dilemmas for decades. However, they necessarily treat the choice to cooperate or defect as an atomic action. In real-world social dilemmas these choices are temporally extended. Cooperativeness is a property that applies to policies, not elementary actions. We introduce sequential social dilemmas that share the mixed incentive structure of matrix game social dilemmas but also require agents to learn policies that implement their strategic intentions. We analyze the dynamics of policies learned by multiple self-interested independent learning agents, each using its own deep Q-network, on two Markov games we introduce here: 1. a fruit Gathering game and 2. a Wolfpack hunting game. We characterize how learned behavior in each domain changes as a function of environmental factors including resource abundance. Our experiments show how conflict can emerge from competition over shared resources and shed light on how the sequential nature of real world social dilemmas affects cooperation.},
+  file      = {:10.5555_3091125.3091194 - Multi Agent Reinforcement Learning in Sequential Social Dilemmas.pdf:PDF},
+  groups    = {Multi-agent RL},
+  keywords  = {agent-based social simulation, cooperation, markov games, non-cooperative games, social dilemmas},
+  location  = {S\~{a}o Paulo, Brazil},
+  numpages  = {10},
+  url       = {https://arxiv.org/pdf/1702.03037.pdf},
+}
+
+@Article{SHOHAM2007365,
+  author   = {Yoav Shoham and Rob Powers and Trond Grenager},
+  journal  = {Artificial Intelligence},
+  title    = {If multi-agent learning is the answer, what is the question?},
+  year     = {2007},
+  issn     = {0004-3702},
+  note     = {Foundations of Multi-Agent Learning},
+  number   = {7},
+  pages    = {365-377},
+  volume   = {171},
+  abstract = {The area of learning in multi-agent systems is today one of the most fertile grounds for interaction between game theory and artificial intelligence. We focus on the foundational questions in this interdisciplinary area, and identify several distinct agendas that ought to, we argue, be separated. The goal of this article is to start a discussion in the research community that will result in firmer foundations for the area.11This article has a long history and owes many debts. A first version was presented at the NIPS workshop, Multi-Agent Learning: Theory and Practice, in 2002. A later version was presented at the AAAI Fall Symposium in 2004 [Y. Shoham, R. Powers, T. Grenager, On the agenda(s) of research on multi-agent learning, in: AAAI 2004 Symposium on Artificial Multi-Agent Learning (FS-04-02), AAAI Press, 2004]. Over time it has gradually evolved into the current form, as a result of our own work in the area as well as the feedback of many colleagues. We thank them all collectively, with special thanks to members of the multi-agent group at Stanford in the past three years. Rakesh Vohra and Michael Wellman provided detailed comments on the latest draft which resulted in substantive improvements, although we alone are responsible for the views put forward. This work was supported by NSF ITR grant IIS-0205633 and DARPA grant HR0011-05-1.},
+  doi      = {https://doi.org/10.1016/j.artint.2006.02.006},
+  file     = {:SHOHAM2007365 - If Multi Agent Learning Is the Answer, What Is the Question_ (2).pdf:PDF},
+  groups   = {MARL, MAS Reviews},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0004370207000495},
+}
+
+@Article{Ecoffet2020,
+  author        = {Adrien Ecoffet and Joost Huizinga and Joel Lehman and Kenneth O. Stanley and Jeff Clune},
+  journal       = {Nature},
+  title         = {First return then explore},
+  year          = {2021},
+  month         = feb,
+  number        = {590},
+  pages         = {580–586},
+  abstract      = {The promise of reinforcement learning is to solve complex sequential decision problems by specifying a high-level reward function only. However, RL algorithms struggle when, as is often the case, simple and intuitive rewards provide sparse and deceptive feedback. Avoiding these pitfalls requires thoroughly exploring the environment, but despite substantial investments by the community, creating algorithms that can do so remains one of the central challenges of the field. We hypothesize that the main impediment to effective exploration originates from algorithms forgetting how to reach previously visited states ("detachment") and from failing to first return to a state before exploring from it ("derailment"). We introduce Go-Explore, a family of algorithms that addresses these two challenges directly through the simple principles of explicitly remembering promising states and first returning to such states before exploring. Go-Explore solves all heretofore unsolved Atari games (those for which algorithms could not previously outperform humans when evaluated following current community standards) and surpasses the state of the art on all hard-exploration games, with orders of magnitude improvements on the grand challenges Montezuma's Revenge and Pitfall. We also demonstrate the practical potential of Go-Explore on a challenging and extremely sparse-reward robotics task. Additionally, we show that adding a goal-conditioned policy can further improve Go-Explore's exploration efficiency and enable it to handle stochasticity throughout training. The striking contrast between the substantial performance gains from Go-Explore and the simplicity of its mechanisms suggests that remembering promising states, returning to them, and exploring from them is a powerful and general approach to exploration, an insight that may prove critical to the creation of truly intelligent learning agents.},
+  archiveprefix = {arXiv},
+  doi           = {https://doi.org/10.1038/s41586-020-03157-9},
+  eprint        = {2004.12919},
+  file          = {:Ecoffet2020 - First Return Then Explore.pdf:PDF},
+  groups        = {Imitation},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Hester_Vecerik_Pietquin_Lanctot_Schaul_Piot_Horgan_Quan_Sendonaris_Osband_Dulac-Arnold_Agapiou_Leibo_Gruslys_2018,
+  author       = {Hester, Todd and Vecerik, Matej and Pietquin, Olivier and Lanctot, Marc and Schaul, Tom and Piot, Bilal and Horgan, Dan and Quan, John and Sendonaris, Andrew and Osband, Ian and Dulac-Arnold, Gabriel and Agapiou, John and Leibo, Joel and Gruslys, Audrunas},
+  journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title        = {Deep Q-learning From Demonstrations},
+  year         = {2018},
+  month        = {Apr.},
+  number       = {1},
+  volume       = {32},
+  abstractnote = {&lt;p&gt; Deep reinforcement learning (RL) has achieved several high profile successes in difficult decision-making problems. However, these algorithms typically require a huge amount of data before they reach reasonable performance. In fact, their performance during learning can be extremely poor. This may be acceptable for a simulator, but it severely limits the applicability of deep RL to many real-world tasks, where the agent must learn in the real environment. In this paper we study a setting where the agent may access data from previous control of the system. We present an algorithm, Deep Q-learning from Demonstrations (DQfD), that leverages small sets of demonstration data to massively accelerate the learning process even from relatively small amounts of demonstration data and is able to automatically assess the necessary ratio of demonstration data while learning thanks to a prioritized replay mechanism. DQfD works by combining temporal difference updates with supervised classification of the demonstrator’s actions. We show that DQfD has better initial performance than Prioritized Dueling Double Deep Q-Networks (PDD DQN) as it starts with better scores on the first million steps on 41 of 42 games and on average it takes PDD DQN 83 million steps to catch up to DQfD’s performance. DQfD learns to out-perform the best demonstration given in 14 of 42 games. In addition, DQfD leverages human demonstrations to achieve state-of-the-art results for 11 games. Finally, we show that DQfD performs better than three related algorithms for incorporating demonstration data into DQN. &lt;/p&gt;},
+  file         = {:Hester_Vecerik_Pietquin_Lanctot_Schaul_Piot_Horgan_Quan_Sendonaris_Osband_Dulac-Arnold_Agapiou_Leibo_Gruslys_2018 - Deep Q Learning from Demonstrations.pdf:PDF},
+  groups       = {Imitation},
+  url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11757},
+}
+
+@Article{Panait2005,
+  author    = {Liviu Panait and Sean Luke},
+  journal   = {Autonomous Agents and Multi-Agent Systems},
+  title     = {Cooperative Multi-Agent Learning: The State of the Art},
+  year      = {2005},
+  month     = {nov},
+  number    = {3},
+  pages     = {387--434},
+  volume    = {11},
+  doi       = {10.1007/s10458-005-2631-2},
+  file      = {:Panait2005 - Cooperative Multi Agent Learning_ the State of the Art.pdf:PDF},
+  groups    = {MAS Reviews},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@InProceedings{10.5555/3295222.3295385,
+  author    = {Lowe, Ryan and Wu, Yi and Tamar, Aviv and Harb, Jean and Abbeel, Pieter and Mordatch, Igor},
+  booktitle = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+  title     = {Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments},
+  year      = {2017},
+  address   = {Red Hook, NY, USA},
+  pages     = {6382–6393},
+  publisher = {Curran Associates Inc.},
+  series    = {NIPS'17},
+  abstract  = {We explore deep reinforcement learning methods for multi-agent domains. We begin by analyzing the difficulty of traditional algorithms in the multi-agent case: Q-learning is challenged by an inherent non-stationarity of the environment, while policy gradient suffers from a variance that increases as the number of agents grows. We then present an adaptation of actor-critic methods that considers action policies of other agents and is able to successfully learn policies that require complex multi-agent coordination. Additionally, we introduce a training regimen utilizing an ensemble of policies for each agent that leads to more robust multi-agent policies. We show the strength of our approach compared to existing methods in cooperative as well as competitive scenarios, where agent populations are able to discover various physical and informational coordination strategies.},
+  file      = {:10.5555_3295222.3295385 - Multi Agent Actor Critic for Mixed Cooperative Competitive Environments.pdf:PDF},
+  groups    = {Multi-agent RL},
+  isbn      = {9781510860964},
+  location  = {Long Beach, California, USA},
+  numpages  = {12},
+  url       = {https://dl.acm.org/doi/abs/10.5555/3295222.3295385},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Tree-based\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent learning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:MAS Reviews\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
+}
