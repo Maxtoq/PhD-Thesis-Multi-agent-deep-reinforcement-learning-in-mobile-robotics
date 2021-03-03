@@ -20,7 +20,7 @@
 	Very stable accross different random seeds},
   eprint        = {1801.01290},
   file          = {:Haarnoja2018 - Soft Actor Critic_ off Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor.pdf:PDF},
-  groups        = {Policy based, Actor Critic, Soft Actor Critic},
+  groups        = {Policy based, Soft Actor Critic, Actor Critic},
   keywords      = {cs.LG, cs.AI, stat.ML},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -45,7 +45,7 @@
 	Outperforms all previous policy-based algorithms},
   eprint        = {1802.09477},
   file          = {:Fujimoto2018 - Addressing Function Approximation Error in Actor Critic Methods.pdf:PDF},
-  groups        = {Policy based, Actor Critic, DDPG},
+  groups        = {Policy based, DDPG, Actor Critic},
   keywords      = {cs.AI, cs.LG, stat.ML},
   primaryclass  = {cs.AI},
   readstatus    = {read},
@@ -61,7 +61,7 @@
   comment       = {PPO},
   eprint        = {1707.06347},
   file          = {:Schulman2017 - Proximal Policy Optimization Algorithms.pdf:PDF},
-  groups        = {Policy based, Actor Critic, TRPO},
+  groups        = {Policy based, TRPO, Actor Critic},
   keywords      = {cs.LG},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -77,7 +77,7 @@
   comment       = {TRPO},
   eprint        = {1502.05477},
   file          = {:Schulman2015 - Trust Region Policy Optimization.pdf:PDF},
-  groups        = {Policy based, Actor Critic, TRPO},
+  groups        = {Policy based, TRPO, Actor Critic},
   keywords      = {cs.LG},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -166,7 +166,7 @@
 	Overestimation of Q values sometimes},
   eprint        = {1509.02971},
   file          = {:Lillicrap2015 - Continuous Control with Deep Reinforcement Learning.pdf:PDF},
-  groups        = {Policy based, Actor Critic, DDPG},
+  groups        = {Policy based, DDPG, Actor Critic},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -263,7 +263,7 @@
   archiveprefix = {arXiv},
   eprint        = {1707.08817},
   file          = {:Vecerik2017 - Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards.pdf:PDF},
-  groups        = {DDPG, Robotics, Actor Critic, Policy based},
+  groups        = {DDPG, Robotics, Policy based, Actor Critic},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
 }
@@ -1222,12 +1222,88 @@
   url       = {https://dl.acm.org/doi/abs/10.5555/3295222.3295385},
 }
 
+@InBook{doi:10.1142/9789812777263_0020,
+  author    = {David H. Wolpert and Kagan Tumer},
+  pages     = {355-369},
+  title     = {Optimal Payoff Functions for Members of Collectives},
+  year      = {2002},
+  abstract  = {Abstract We consider the problem of designing (perhaps massively distributed) collectives of computational processes to maximize a provided “world utility” function. We consider this problem when the behavior of each process in the collective can be cast as striving to maximize its own payoff utility function. For such cases the central design issue is how to initialize/update those payoff utility functions of the individual processes so as to induce behavior of the entire collective having good values of the world utility. Traditional “team game” approaches to this problem simply assign to each process the world utility as its payoff utility function. In previous work we used the “Collective Intelligence” (COIN) framework to derive a better choice of payoff utility functions, one that results in world utility performance up to orders of magnitude superior to that ensuing from the use of the team game utility. In this paper, we extend these results using a novel mathematical framework. Under that new framework we review the derivation of the general class of payoff utility functions that both (i) are easy for the individual processes to try to maximize, and (ii) have the property that if good values of them are achieved, then we are assured a high value of world utility. These are the “Aristocrat Utility” and a new variant of the “Wonderful Life Utility” that was introduced in the previous COIN work. We demonstrate experimentally that using these new utility functions can result in significantly improved performance over that of previously investigated COIN payoff utilities, over and above those previous utilities’ superiority to the conventional team game utility. These results also illustrate the substantial superiority of these payoff functions to perhaps the most natural version of the economics technique of “endogenizing externalities.”},
+  booktitle = {Modeling Complexity in Economic and Social Systems},
+  doi       = {10.1142/9789812777263_0020},
+  eprint    = {https://www.worldscientific.com/doi/pdf/10.1142/9789812777263_0020},
+  file      = {:doi_10.1142_9789812777263_0020 - Optimal Payoff Functions for Members of Collectives.pdf:PDF},
+  groups    = {Multi-agent learning, Wonderful Life Utility},
+  url       = {https://www.worldscientific.com/doi/abs/10.1142/9789812777263_0020},
+}
+
+@Article{Michalak2014,
+  author        = {Tomasz Pawel Michalak and Karthik V Aadithya and Piotr L. Szczepanski and Balaraman Ravindran and Nicholas R. Jennings},
+  journal       = {Journal Of Artificial Intelligence Research, Volume 46, pages 607-650, 2013},
+  title         = {Efficient Computation of the Shapley Value for Game-Theoretic Network Centrality},
+  year          = {2014},
+  month         = feb,
+  abstract      = {The Shapley value---probably the most important normative payoff division scheme in coalitional games---has recently been advocated as a useful measure of centrality in networks. However, although this approach has a variety of real-world applications (including social and organisational networks, biological networks and communication networks), its computational properties have not been widely studied. To date, the only practicable approach to compute Shapley value-based centrality has been via Monte Carlo simulations which are computationally expensive and not guaranteed to give an exact answer. Against this background, this paper presents the first study of the computational aspects of the Shapley value for network centralities. Specifically, we develop exact analytical formulae for Shapley value-based centrality in both weighted and unweighted networks and develop efficient (polynomial time) and exact algorithms based on them. We empirically evaluate these algorithms on two real-life examples (an infrastructure network representing the topology of the Western States Power Grid and a collaboration network from the field of astrophysics) and demonstrate that they deliver significant speedups over the Monte Carlo approach. For instance, in the case of unweighted networks our algorithms are able to return the exact solution about 1600 times faster than the Monte Carlo approximation, even if we allow for a generous 10% error margin for the latter method.},
+  archiveprefix = {arXiv},
+  doi           = {10.1613/jair.3806},
+  eprint        = {1402.0567},
+  file          = {:Michalak2014 - Efficient Computation of the Shapley Value for Game Theoretic Network Centrality (2).pdf:PDF},
+  groups        = {Shapley value},
+  keywords      = {cs.GT},
+  primaryclass  = {cs.GT},
+}
+
+@Article{Anshelevich2008,
+  author     = {Elliot Anshelevich and Anirban Dasgupta and Jon Kleinberg and {\'{E}}va Tardos and Tom Wexler and Tim Roughgarden},
+  journal    = {{SIAM} Journal on Computing},
+  title      = {The Price of Stability for Network Design with Fair Cost Allocation},
+  year       = {2008},
+  month      = {jan},
+  number     = {4},
+  pages      = {1602--1623},
+  volume     = {38},
+  comment    = {Use Shapley value in potential games for allocating network cost to users.},
+  doi        = {10.1137/070680096},
+  file       = {:Anshelevich2008 - The Price of Stability for Network Design with Fair Cost Allocation.pdf:PDF},
+  groups     = {Shapley value},
+  publisher  = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+  readstatus = {skimmed},
+}
+
+@Article{10013542751,
+  author    = {Shapley, L. S.},
+  journal   = {Contributions to the Theory of Games},
+  title     = {A value for n-person games},
+  year      = {1953},
+  number    = {28},
+  pages     = {307-317},
+  volume    = {II},
+  file      = {:10013542751 - A Value for N Person Games.pdf:PDF},
+  groups    = {Shapley value},
+  publisher = {Princeton University Press},
+  url       = {https://ci.nii.ac.jp/naid/10013542751/en/},
+}
+
+@Article{Wang2020,
+  author    = {Jianhong Wang and Yuan Zhang and Tae-Kyun Kim and Yunjie Gu},
+  journal   = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
+  title     = {Shapley Q-Value: A Local Reward Approach to Solve Global Reward Games},
+  year      = {2020},
+  month     = {apr},
+  number    = {05},
+  pages     = {7285--7292},
+  volume    = {34},
+  doi       = {10.1609/aaai.v34i05.6220},
+  file      = {:Wang2020 - Shapley Q Value_ a Local Reward Approach to Solve Global Reward Games.pdf:PDF},
+  groups    = {Shapley value},
+  publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
@@ -1247,10 +1323,13 @@
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent learning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent learning\;2\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:MAS Reviews\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
