@@ -1434,6 +1434,104 @@
   url      = {https://www.sciencedirect.com/science/article/pii/S0004370220301077},
 }
 
+@Book{wooldridge2009introduction,
+  author    = {Wooldridge, Michael},
+  publisher = {John wiley \& sons},
+  title     = {An introduction to multiagent systems},
+  year      = {2009},
+  groups    = {Multi-agent Systems},
+}
+
+@TechReport{wolpert99a,
+  author      = {David H. Wolpert and Kagan Tumer},
+  institution = {NASA},
+  title       = {An Introduction to Collective Intelligence},
+  year        = {1999},
+  note        = {NASA-ARC-IC-99-63},
+  abstract    = {This paper surveys the emerging science of how to
+                  design a ``COllective INtelligence'' (COIN). A COIN
+                  is a large multi-agent system where: (i) There is
+                  little to no centralized communication or control;
+                  and (ii) There is a provided world utility function
+                  that rates the possible histories of the full
+                  system. In particular, we are interested in COINs in
+                  which each agent runs a reinforcement learning (RL)
+                  algorithm. Rather than use a conventional modeling
+                  approach (e.g., model the system dynamics, and
+                  hand-tune agents to cooperate), we aim to solve the
+                  COIN design problem implicitly, via the ``adaptive''
+                  character of the RL algorithms of each of the
+                  agents. This approach introduces an entirely new,
+                  profound design problem: Assuming the RL algorithms
+                  are able to achieve high rewards, what reward
+                  functions for the individual agents will, when
+                  pursued by those agents, result in high world
+                  utility? In other words, what reward functions will
+                  best ensure that we do not have phenomena like the
+                  tragedy of the commons, Braess's paradox, or the
+                  liquidity trap? Although still very young, research
+                  specifically concentrating on the COIN design
+                  problem has already resulted in successes in
+                  artificial domains, in particular in packet-routing,
+                  the leader-follower problem, and in variants of
+                  Arthur's El Farol bar problem. It is expected that
+                  as it matures and draws upon other disciplines
+                  related to COINs, this research will greatly expand
+                  the range of tasks addressable by human
+                  engineers. Moreover, in addition to drawing on them,
+                  such a fully developed science of COIN design may
+                  provide much insight into other already established
+                  scientific fields, such as economics, game theory,
+                  and population biology},
+  arxiv       = {cs.LG/9908014},
+  comment     = {Shows how to set the agents' reward functions (using the "wonderful life" reward) so that the global utility is maximized. Extensive related work section.},
+  file        = {:wolpert99a - An Introduction to Collective Intelligence.pdf:PDF},
+  googleid    = {89pRsJDcBLUJ:scholar.google.com/},
+  groups      = {Wonderful Life Utility},
+  keywords    = {multiagent learning},
+  url         = {http://jmvidal.cse.sc.edu/library/wolpert99a.pdf},
+}
+
+@Article{HernandezLeal2019,
+  author    = {Pablo Hernandez-Leal and Bilal Kartal and Matthew E. Taylor},
+  journal   = {Autonomous Agents and Multi-Agent Systems},
+  title     = {A survey and critique of multiagent deep reinforcement learning},
+  year      = {2019},
+  month     = {oct},
+  number    = {6},
+  pages     = {750--797},
+  volume    = {33},
+  doi       = {10.1007/s10458-019-09421-1},
+  file      = {:HernandezLeal2019 - A Survey and Critique of Multiagent Deep Reinforcement Learning.pdf:PDF},
+  groups    = {MAS Reviews},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Misc{Vidal06,
+  author = {José M Vidal and José M. Vidal},
+  title  = {Fundamentals of Multiagent Systems},
+  year   = {2006},
+  file   = {:Vidal06 - Fundamentals of Multiagent Systems.pdf:PDF},
+  groups = {MAS Reviews},
+}
+
+@InBook{Nowé2012,
+  author    = {Now{\'e}, Ann and Vrancx, Peter and De Hauwere, Yann-Micha{\"e}l},
+  editor    = {Wiering, Marco and van Otterlo, Martijn},
+  pages     = {441--470},
+  publisher = {Springer Berlin Heidelberg},
+  title     = {Game Theory and Multi-agent Reinforcement Learning},
+  year      = {2012},
+  address   = {Berlin, Heidelberg},
+  isbn      = {978-3-642-27645-3},
+  abstract  = {Reinforcement Learning was originally developed for Markov Decision Processes (MDPs). It allows a single agent to learn a policy that maximizes a possibly delayed reward signal in a stochastic stationary environment. It guarantees convergence to the optimal policy, provided that the agent can sufficiently experiment and the environment in which it is operating is Markovian. However, when multiple agents apply reinforcement learning in a shared environment, this might be beyond the MDP model. In such systems, the optimal policy of an agent depends not only on the environment, but on the policies of the other agents as well. These situations arise naturally in a variety of domains, such as: robotics, telecommunications, economics, distributed control, auctions, traffic light control, etc. In these domains multi-agent learning is used, either because of the complexity of the domain or because control is inherently decentralized. In such systems it is important that agents are capable of discovering good solutions to the problem at hand either by coordinating with other learners or by competing with them. This chapter focuses on the application reinforcement learning techniques in multi-agent systems. We describe a basic learning framework based on the economic research into game theory, and illustrate the additional complexity that arises in such systems. We also described a representative selection of algorithms for the different areas of multi-agent reinforcement learning research.},
+  booktitle = {Reinforcement Learning: State-of-the-Art},
+  doi       = {10.1007/978-3-642-27645-3_14},
+  file      = {:Nowé2012 - Game Theory and Multi Agent Reinforcement Learning.pdf:PDF},
+  groups    = {MAS Reviews},
+  url       = {https://doi.org/10.1007/978-3-642-27645-3_14},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
