@@ -165,6 +165,8 @@ Error message and password prompt
 
 <li>$:/config/Whitespace/Spacious</li>
 
+<li>$:/config/WikiParserRules/Inline/wikilink</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -241,8 +243,6 @@ Error message and password prompt
 
 <li>Credit Assignment</li>
 
-<li>Draft of 'COMA'</li>
-
 <li>Tags</li>
 
 <li>TO DO</li>
@@ -296,6 +296,9 @@ Error message and password prompt
 </div>
 <div created="20210312134058096" modified="20210312134058096" title="$:/config/Whitespace/Spacious">
 <pre>no</pre>
+</div>
+<div created="20210312151021069" modified="20210312151021069" title="$:/config/WikiParserRules/Inline/wikilink">
+<pre>disable</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.23">
 <pre>{
@@ -10237,17 +10240,17 @@ Tags
 <div created="20210312132413081" modified="20210312132440830" title="$:/state/folded/$:/ControlPanel">
 <pre>show</pre>
 </div>
-<div created="20210312134226342" modified="20210312144319354" title="$:/state/showeditpreview">
+<div created="20210312134226342" modified="20210312144742075" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20210312133055151" modified="20210312134541847" title="$:/state/sidebar">
+<div created="20210312133055151" modified="20210312145955540" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210312134906382" modified="20210312134937443" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Standard</pre>
 </div>
-<div created="20210312132319740" modified="20210312133918371" title="$:/state/tab--1963855381">
-<pre>$:/themes/jd/Whitespace/config</pre>
+<div created="20210312132319740" modified="20210312145922554" title="$:/state/tab--1963855381">
+<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
 <div created="20210312103349379" modified="20210312134622660" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
@@ -10255,7 +10258,7 @@ Tags
 <div created="20210312133905887" modified="20210312133911968" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
-<div created="20210312132206794" modified="20210312140149574" title="$:/state/tab-1749438307">
+<div created="20210312132206794" modified="20210312151027604" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20210312134344906" modified="20210312134618816" title="$:/state/tab-2065006209">
@@ -10273,7 +10276,7 @@ Tags
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210312140135241" list="[[TO DO]] [[Draft of 'COMA']] [[Credit Assignment]]" modified="20210312143354805" title="$:/StoryList">
+<div created="20210312140135241" list="[[TO DO]] COMA [[Credit Assignment]]" modified="20210312151010700" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -10756,26 +10759,41 @@ Tags
 <div created="20210312132957283" modified="20210312132959995" title="$:/themes/tiddlywiki/vanilla/metrics/storywidth">
 <pre>800px</pre>
 </div>
-<div created="20210312133012340" modified="20210312134119461" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
-<pre>95%</pre>
+<div created="20210312133012340" modified="20210312145930495" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
+<pre>100%</pre>
 </div>
 <div created="20210312132912969" modified="20210312132914337" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fixed-fluid</pre>
 </div>
-<div created="20210312143044612" modified="20210312143422609" tags="MAS model MADRL paper" title="COMA">
+<div created="20210312143044612" modified="20210312154136165" tags="MAS model MADRL paper" title="COMA">
 <pre>!! Paper
-//Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018
+//Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. 32nd AAAI Conference on Artificial Intelligence.
 
 !! Problem
+RL methods designed for single agents work poorly when used with multiple agents.
+
+&lt;&lt;&lt;
+There is a great need for new RL methods that can efficiently learn decentralised policies for [cooperative multi-agent systems].
+&lt;&lt;&lt;
 
 
 !! Solution
+''Multi-agent [[actor-critic|Actor-Critic]] ''method called //counterfactual multi-agent// (COMA) policy gradient:
 
+* ''Centralised critic'' to estimate the Q-function,
+* ''Decentralised actors'' to optimise the agents' policies
+* ''Counterfactual baseline'' [[credit assignment|Credit Assignment]]
+* ''Critic representation'' for efficient counterfactual baseline computation
 
 !! Model
 
 
 !! Results
+Evaluated in StarCraft unit micromanagement.
+
+&lt;&lt;&lt;
+COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state.
+&lt;&lt;&lt;
 </pre>
 </div>
 <div created="20210312134131655" modified="20210312134246410" tags="concept MAS [[MA Learning]]" title="Credit Assignment">
@@ -10798,22 +10816,6 @@ How to distribute the reward obtained at a team level to the individual learners
 !!Resources
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
-</div>
-<div created="20210312143044612" draft.of="COMA" draft.title="COMA" modified="20210312144459319" tags="MAS model MADRL paper" title="Draft of 'COMA'">
-<pre>!! Paper
-//Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018
-
-!! Problem
-&quot;There is a great need for new RL methods that can efficiently learn decentralised policie for [cooperative multi-agent systems].&quot;
-
-!! Solution
-Multi-agent [[actor-critic|Actor-Critic]]
-
-!! Model
-
-
-!! Results
-</pre>
 </div>
 <div created="20210312133529609" modified="20210312134652358" tags="concept [[MA Learning]] MAS" title="Tags">
 <pre></pre>
