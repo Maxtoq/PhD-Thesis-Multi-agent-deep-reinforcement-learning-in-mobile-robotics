@@ -1069,6 +1069,7 @@
   groups        = {Communication},
   keywords      = {cs.AI, cs.LG, cs.MA},
   primaryclass  = {cs.AI},
+  ranking       = {rank5},
 }
 
 @InProceedings{Mordatch2018,
@@ -1325,6 +1326,7 @@
   comment      = {COMA},
   file         = {:Foerster_Farquhar_Afouras_Nardelli_Whiteson_2018 - Counterfactual Multi Agent Policy Gradients.pdf:PDF},
   groups       = {Multi-agent RL},
+  ranking      = {rank5},
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11794},
 }
 
@@ -1530,6 +1532,67 @@
   file      = {:Nowé2012 - Game Theory and Multi Agent Reinforcement Learning.pdf:PDF},
   groups    = {MAS Reviews},
   url       = {https://doi.org/10.1007/978-3-642-27645-3_14},
+}
+
+@Article{6303906,
+  author   = {Y. {Cao} and W. {Yu} and W. {Ren} and G. {Chen}},
+  journal  = {IEEE Transactions on Industrial Informatics},
+  title    = {An Overview of Recent Progress in the Study of Distributed Multi-Agent Coordination},
+  year     = {2013},
+  issn     = {1941-0050},
+  month    = {Feb},
+  number   = {1},
+  pages    = {427-438},
+  volume   = {9},
+  abstract = {This paper reviews some main results and progress in distributed multi-agent coordination, focusing on papers published in major control systems and robotics journals since 2006. Distributed coordination of multiple vehicles, including unmanned aerial vehicles, unmanned ground vehicles, and unmanned underwater vehicles, has been a very active research subject studied extensively by the systems and control community. The recent results in this area are categorized into several directions, such as consensus, formation control, optimization, and estimation. After the review, a short discussion section is included to summarize the existing research and to propose several promising research directions along with some open problems that are deemed important for further investigations.},
+  doi      = {10.1109/TII.2012.2219061},
+  file     = {:6303906 - An Overview of Recent Progress in the Study of Distributed Multi Agent Coordination.pdf:PDF},
+  groups   = {MAS Reviews},
+  keywords = {distributed control;multi-robot systems;distributed multiagent coordination;control systems;robotics journals;distributed coordination;multiple vehicles;unmanned aerial vehicles;unmanned ground vehicles;unmanned underwater vehicles;systems and control community;Delay effects;Network topology;Heuristic algorithms;Vehicle dynamics;Vehicles;Algorithm design and analysis;Delay;Distributed coordination;formation control;multi-agent system;sensor network},
+}
+
+@Article{Oliehoek2008,
+  author    = {F. A. Oliehoek and M. T. J. Spaan and N. Vlassis},
+  journal   = {Journal of Artificial Intelligence Research},
+  title     = {Optimal and Approximate Q-value Functions for Decentralized {POMDPs}},
+  year      = {2008},
+  month     = {may},
+  pages     = {289--353},
+  volume    = {32},
+  doi       = {10.1613/jair.2447},
+  file      = {:Oliehoek2008 - Optimal and Approximate Q Value Functions for Decentralized POMDPs (2).pdf:PDF},
+  groups    = {Multi-agent RL},
+  publisher = {{AI} Access Foundation},
+}
+
+@Article{KRAEMER201682,
+  author   = {Landon Kraemer and Bikramjit Banerjee},
+  journal  = {Neurocomputing},
+  title    = {Multi-agent reinforcement learning as a rehearsal for decentralized planning},
+  year     = {2016},
+  issn     = {0925-2312},
+  pages    = {82-94},
+  volume   = {190},
+  abstract = {Decentralized partially observable Markov decision processes (Dec-POMDPs) are a powerful tool for modeling multi-agent planning and decision-making under uncertainty. Prevalent Dec-POMDP solution techniques require centralized computation given full knowledge of the underlying model. Multi-agent reinforcement learning (MARL) based approaches have been recently proposed for distributed solution of Dec-POMDPs without full prior knowledge of the model, but these methods assume that conditions during learning and policy execution are identical. In some practical scenarios this may not be the case. We propose a novel MARL approach in which agents are allowed to rehearse with information that will not be available during policy execution. The key is for the agents to learn policies that do not explicitly rely on these rehearsal features. We also establish a weak convergence result for our algorithm, RLaR, demonstrating that RLaR converges in probability when certain conditions are met. We show experimentally that incorporating rehearsal features can enhance the learning rate compared to non-rehearsal-based learners, and demonstrate fast, (near) optimal performance on many existing benchmark Dec-POMDP problems. We also compare RLaR against an existing approximate Dec-POMDP solver which, like RLaR, does not assume a priori knowledge of the model. While RLaR׳s policy representation is not as scalable, we show that RLaR produces higher quality policies for most problems and horizons studied.},
+  doi      = {https://doi.org/10.1016/j.neucom.2016.01.031},
+  file     = {:KRAEMER201682 - Multi Agent Reinforcement Learning As a Rehearsal for Decentralized Planning.pdf:PDF},
+  groups   = {Multi-agent RL},
+  keywords = {Multi-agent reinforcement learning, Decentralized planning},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0925231216000783},
+}
+
+@Article{Jorge2016,
+  author        = {Emilio Jorge and Mikael Kågebäck and Fredrik D. Johansson and Emil Gustavsson},
+  title         = {Learning to Play Guess Who? and Inventing a Grounded Language as a Consequence},
+  year          = {2016},
+  month         = nov,
+  abstract      = {Acquiring your first language is an incredible feat and not easily duplicated. Learning to communicate using nothing but a few pictureless books, a corpus, would likely be impossible even for humans. Nevertheless, this is the dominating approach in most natural language processing today. As an alternative, we propose the use of situated interactions between agents as a driving force for communication, and the framework of Deep Recurrent Q-Networks for evolving a shared language grounded in the provided environment. We task the agents with interactive image search in the form of the game Guess Who?. The images from the game provide a non trivial environment for the agents to discuss and a natural grounding for the concepts they decide to encode in their communication. Our experiments show that the agents learn not only to encode physical concepts in their words, i.e. grounding, but also that the agents learn to hold a multi-step dialogue remembering the state of the dialogue from step to step.},
+  archiveprefix = {arXiv},
+  eprint        = {1611.03218},
+  file          = {:Jorge2016 - Learning to Play Guess Who_ and Inventing a Grounded Language As a Consequence.pdf:PDF},
+  groups        = {Communication},
+  keywords      = {cs.AI, cs.CL, cs.LG, cs.MA},
+  primaryclass  = {cs.AI},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
