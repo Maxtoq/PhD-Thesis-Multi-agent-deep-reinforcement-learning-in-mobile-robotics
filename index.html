@@ -243,6 +243,8 @@ Error message and password prompt
 
 <li>Credit Assignment</li>
 
+<li>Draft of 'COMA'</li>
+
 <li>Tags</li>
 
 <li>TO DO</li>
@@ -10276,7 +10278,7 @@ Tags
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210315133402006" list="[[TO DO]] Tags COMA" modified="20210315133402006" title="$:/StoryList">
+<div created="20210315133402006" list="[[TO DO]] Tags [[Draft of 'COMA']]" modified="20210315133402006" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -10819,11 +10821,45 @@ How to distribute the reward obtained at a team level to the individual learners
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
 </div>
+<div created="20210312143044612" draft.of="COMA" draft.title="COMA" modified="20210315134116856" tags="MAS model MADRL paper" title="Draft of 'COMA'">
+<pre>!! Paper
+//Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. 32nd AAAI Conference on Artificial Intelligence.
+
+!! Problem
+* ''Single agent to Multiple agents:'' RL methods designed for single agents work poorly when used with multiple agents.
+* ''Decentralised/Centralised learning:''
+
+&lt;&lt;&lt;
+There is a great need for new RL methods that can efficiently learn decentralised policies for [cooperative multi-agent systems].
+&lt;&lt;&lt;
+
+* ''Multi-agent Credit Assignment:'' Individual reward functions aren't always available and often fail to encourage cooperative behavior. There is a need for efficient [[credit assignment|Credit Assignment]].
+
+!! Solution
+''Multi-agent [[actor-critic|Actor-Critic]] ''method called //counterfactual multi-agent// (COMA) policy gradient:
+
+* ''Centralised critic'' to estimate the Q-function, only used during learning, conditioned on the joint action and all available state information.
+* ''Decentralised actors'' to optimise the agents' policies, conditioned on their own action-observation history.
+* ''Counterfactual baseline'' [[credit assignment|Credit Assignment]], inspired by the [[Aristocrat Utility]].
+* ''Critic representation'' for efficient counterfactual baseline computation.
+
+!! Model
+
+
+!! Results
+Evaluated in StarCraft unit micromanagement.
+
+&lt;&lt;&lt;
+COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state.
+&lt;&lt;&lt;
+</pre>
+</div>
 <div created="20210312133529609" modified="20210315133425691" tags="concept [[MA Learning]] MAS MADRL model paper" title="Tags">
 <pre></pre>
 </div>
-<div created="20210312143343407" modified="20210312144625009" tags="" title="TO DO">
-<pre>[[Actor-Critic]]</pre>
+<div created="20210312143343407" modified="20210315134143601" tags="" title="TO DO">
+<pre>[[Actor-Critic]]
+[[Aristocrat Utility]]</pre>
 </div>
 
 
