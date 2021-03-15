@@ -10240,11 +10240,11 @@ Tags
 <div created="20210312132413081" modified="20210312132440830" title="$:/state/folded/$:/ControlPanel">
 <pre>show</pre>
 </div>
-<div created="20210312134226342" modified="20210312144742075" title="$:/state/showeditpreview">
-<pre>yes</pre>
+<div created="20210312134226342" modified="20210315124719247" title="$:/state/showeditpreview">
+<pre>no</pre>
 </div>
-<div created="20210312133055151" modified="20210312145955540" title="$:/state/sidebar">
-<pre>yes</pre>
+<div created="20210312133055151" modified="20210315124658541" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div created="20210312134906382" modified="20210312134937443" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Standard</pre>
@@ -10267,8 +10267,8 @@ Tags
 <div created="20210312134714286" modified="20210312134716559" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20210312102021265" modified="20210312102053959" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Tools</pre>
+<div created="20210312102021265" modified="20210315124651370" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20210312132331715" modified="20210312133421711" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -10276,7 +10276,7 @@ Tags
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210313203748418" list="[[TO DO]] Tags COMA" modified="20210313203748418" title="$:/StoryList">
+<div created="20210315124703172" list="[[TO DO]] Tags COMA" modified="20210315124703172" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -10765,17 +10765,19 @@ Tags
 <div created="20210312132912969" modified="20210312132914337" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fixed-fluid</pre>
 </div>
-<div created="20210312143044612" modified="20210312154136165" tags="MAS model MADRL paper" title="COMA">
+<div created="20210312143044612" modified="20210315125338505" tags="MAS model MADRL paper" title="COMA">
 <pre>!! Paper
 //Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. 32nd AAAI Conference on Artificial Intelligence.
 
 !! Problem
-RL methods designed for single agents work poorly when used with multiple agents.
+* ''Single agent to Multiple agents:'' RL methods designed for single agents work poorly when used with multiple agents.
+* ''Decentralised/Centralised learning:''
 
 &lt;&lt;&lt;
 There is a great need for new RL methods that can efficiently learn decentralised policies for [cooperative multi-agent systems].
 &lt;&lt;&lt;
 
+* ''Multi-agent Credit Assignment:'' Individual reward functions aren't always availvable and often fail to encourage cooperative behavior. There is a need for efficient credit assignment.
 
 !! Solution
 ''Multi-agent [[actor-critic|Actor-Critic]] ''method called //counterfactual multi-agent// (COMA) policy gradient:
