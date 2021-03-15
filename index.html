@@ -10765,7 +10765,7 @@ Tags
 <div created="20210312132912969" modified="20210312132914337" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fixed-fluid</pre>
 </div>
-<div created="20210312143044612" modified="20210315125338505" tags="MAS model MADRL paper" title="COMA">
+<div created="20210312143044612" modified="20210315133219728" tags="MAS model MADRL paper" title="COMA">
 <pre>!! Paper
 //Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. 32nd AAAI Conference on Artificial Intelligence.
 
@@ -10777,15 +10777,15 @@ Tags
 There is a great need for new RL methods that can efficiently learn decentralised policies for [cooperative multi-agent systems].
 &lt;&lt;&lt;
 
-* ''Multi-agent Credit Assignment:'' Individual reward functions aren't always availvable and often fail to encourage cooperative behavior. There is a need for efficient credit assignment.
+* ''Multi-agent Credit Assignment:'' Individual reward functions aren't always availvable and often fail to encourage cooperative behavior. There is a need for efficient [[credit assignment|Credit Assignment]].
 
 !! Solution
 ''Multi-agent [[actor-critic|Actor-Critic]] ''method called //counterfactual multi-agent// (COMA) policy gradient:
 
-* ''Centralised critic'' to estimate the Q-function,
-* ''Decentralised actors'' to optimise the agents' policies
-* ''Counterfactual baseline'' [[credit assignment|Credit Assignment]]
-* ''Critic representation'' for efficient counterfactual baseline computation
+* ''Centralised critic'' to estimate the Q-function, only used during learning, conditioned .
+* ''Decentralised actors'' to optimise the agents' policies.
+* ''Counterfactual baseline'' [[credit assignment|Credit Assignment]].
+* ''Critic representation'' for efficient counterfactual baseline computation.
 
 !! Model
 
