@@ -10427,7 +10427,7 @@ Tags
 <div created="20210316113055690" modified="20210316113057365" title="$:/state/image-picker/system-1424061023">
 <pre>hide</pre>
 </div>
-<div created="20210312134226342" modified="20210316111613960" title="$:/state/showeditpreview">
+<div created="20210312134226342" modified="20210316134431172" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
 <div created="20210312133055151" modified="20210315124658541" title="$:/state/sidebar">
@@ -10463,7 +10463,7 @@ Tags
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210316083058090" list="[[TO DO]] [[Independent Q-learning]] Tags [[Aristocrat Utility]] COMA" modified="20210316110612708" title="$:/StoryList">
+<div created="20210316083058090" list="[[TO DO]] [[Independent Q-learning]] Tags [[Aristocrat Utility]] COMA" modified="20210316140228769" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -10969,7 +10969,7 @@ $$
 * $$Pr[\overrightarrow{a}']$$:  probability that $$\overrightarrow{a}'$$ happens.
 </pre>
 </div>
-<div created="20210312143044612" modified="20210316113426870" tags="MAS model MADRL paper" title="COMA">
+<div created="20210312143044612" modified="20210316150431712" tags="MAS model MADRL paper" title="COMA">
 <pre>!! Paper
 //Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. 32nd AAAI Conference on Artificial Intelligence.
 
@@ -10992,14 +10992,20 @@ There is a great need for new RL methods that can efficiently learn decentralise
 
 !! Model
 [img[coma.png]]
+Figure 1: (a) information flow in COMA (red arrows and components are only required during learning), (b) actor, (c) critic.
 
-* ''Centralised critic'', used only during training, that conditions on the true global state $$s$$ or the joint action-observation histories $$\tau$$ otherwise. It estimates $$Q(s,\mathbf{u})$$ the Q-values for the joint action $$\mathbf{u}$$.
-* ''Decentralised actors'' to optimise the agents' policies, conditioned on their own action-observation history. The actors' parameters are shared (i.e. one model for all actors), but the agents can still behave differently as they receive different observations and thus evolve different hidden states.
+* ''Centralised critic'' (Figure 1c), used only during training, that conditions on the true global state $$s$$ or the joint action-observation histories $$\tau$$ otherwise. It estimates $$Q(s,\mathbf{u})$$ the Q-values for the joint action $$\mathbf{u}$$.
+* ''Decentralised actors'' (Figure 1b) to optimise the agents' policies, consisting of GRUs conditioned on their own action-observation history. The actors' parameters are shared (i.e. one model for all actors), but the agents can still behave differently as they receive different observations and thus evolve different hidden states.
 * Following the TD Error estimated by the critic to optimise the actors would not be fair to each one of them, as the TD Error considers only the global reward and not the agents' actual contributions. Instead, COMA uses a ''counterfactual baseline'' for credit assignment, inspired by the [[Aristocrat Utility]]. For each agent $$a$$, an advantage function is computed to compare the Q-value for the current action $$u^a$$ to a counterfactual baseline that marginalises out $$u^a$$ while keeping the other agents' actions fixed:&lt;br /&gt;$$
 A^a(s,\mathbf{u})=Q(s,\mathbf{u})-\sum_{u'^a}\pi^a(u'^a|\tau^a)Q(s,(\mathbf{u}^{-a},u'^a)).$$$$A^a(s,\mathbf{u})$$ computes a separate baseline for each agent using the centralised critic to reason about counterfactuals in which only $$a$$'s action changes.
+* The numerous evaluations done by the critic to compute the counterfactual baseline can be computationally expensive. To address this, COMA uses a ''critic representation'' for more efficient evaluation of the baseline. As shown in Figure 1c, the actions of the other agents, $$\mathbf{u}_t^{-a}$$, are part of the input to the network, which outputs Q-values for each of agent $$a$$'s actions. The counterfactual baseline can then easily be calculated for each agent.
 
 !! Results
-Evaluated in StarCraft unit micromanagement.
+Evaluation is done in StarCraft unit micromanagement scenarios.
+
+COMA is shown to be superior to different versions of the Independent Actor-Critic model. The counterfactual baseline is a key element of this performance, as COMA dominates variants that don't use it. 
+
+The authors show that there is a clear improvement when conditioning on the global state.
 
 &lt;&lt;&lt;
 COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state.
