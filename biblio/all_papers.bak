@@ -436,6 +436,7 @@
   groups        = {POMDP},
   keywords      = {cs.LG},
   primaryclass  = {cs.LG},
+  ranking       = {rank5},
 }
 
 @Article{Zhu2018,
@@ -1237,6 +1238,7 @@
   isbn      = {9781510860964},
   location  = {Long Beach, California, USA},
   numpages  = {12},
+  ranking   = {rank5},
   url       = {https://dl.acm.org/doi/abs/10.5555/3295222.3295385},
 }
 
@@ -1330,6 +1332,7 @@
   file         = {:Foerster_Farquhar_Afouras_Nardelli_Whiteson_2018 - Counterfactual Multi Agent Policy Gradients.pdf:PDF},
   groups       = {Multi-agent RL},
   ranking      = {rank5},
+  readstatus   = {read},
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11794},
 }
 
@@ -1617,14 +1620,14 @@
 
 @InProceedings{10.5555/3091529.3091572,
   author    = {Tan, Ming},
-  booktitle = {Proceedings of the Tenth International Conference on International Conference on Machine Learning},
+  booktitle = {Proceedings of the Tenth International Conference on Machine Learning},
   title     = {Multi-Agent Reinforcement Learning: Independent versus Cooperative Agents},
   year      = {1993},
   address   = {San Francisco, CA, USA},
   pages     = {330–337},
   publisher = {Morgan Kaufmann Publishers Inc.},
   series    = {ICML'93},
-  file      = {:10.5555_3091529.3091572 - Multi Agent Reinforcement Learning_ Independent Versus Cooperative Agents.pdf:PDF},
+  file      = {:tan1993.pdf:PDF},
   groups    = {Multi-agent RL},
   isbn      = {1558603077},
   location  = {Amherst, MA, USA},
@@ -1729,6 +1732,37 @@
   pdf       = {http://proceedings.mlr.press/v70/omidshafiei17a/omidshafiei17a.pdf},
   ranking   = {rank2},
   url       = {http://proceedings.mlr.press/v70/omidshafiei17a.html},
+}
+
+@Article{Usunier2016,
+  author        = {Nicolas Usunier and Gabriel Synnaeve and Zeming Lin and Soumith Chintala},
+  title         = {Episodic Exploration for Deep Deterministic Policies: An Application to StarCraft Micromanagement Tasks},
+  year          = {2016},
+  month         = sep,
+  abstract      = {We consider scenarios from the real-time strategy game StarCraft as new benchmarks for reinforcement learning algorithms. We propose micromanagement tasks, which present the problem of the short-term, low-level control of army members during a battle. From a reinforcement learning point of view, these scenarios are challenging because the state-action space is very large, and because there is no obvious feature representation for the state-action evaluation function. We describe our approach to tackle the micromanagement scenarios with deep neural network controllers from raw state features given by the game engine. In addition, we present a heuristic reinforcement learning algorithm which combines direct exploration in the policy space and backpropagation. This algorithm allows for the collection of traces for learning using deterministic policies, which appears much more efficient than, for example, {\epsilon}-greedy exploration. Experiments show that with this algorithm, we successfully learn non-trivial strategies for scenarios with armies of up to 15 agents, where both Q-learning and REINFORCE struggle.},
+  archiveprefix = {arXiv},
+  eprint        = {1609.02993},
+  file          = {:Usunier2016 - Episodic Exploration for Deep Deterministic Policies_ an Application to StarCraft Micromanagement Tasks.pdf:PDF},
+  groups        = {Multi-agent RL},
+  keywords      = {cs.AI, cs.LG, I.2.1; I.2.6},
+  primaryclass  = {cs.AI},
+  ranking       = {rank2},
+}
+
+@InProceedings{10.5555/1865756.1865771,
+  author    = {Whitehead, Steven D.},
+  booktitle = {Proceedings of the Ninth National Conference on Artificial Intelligence - Volume 2},
+  title     = {A Complexity Analysis of Cooperative Mechanisms in Reinforcement Learning},
+  year      = {1991},
+  address   = {Anaheim, California},
+  pages     = {607–613},
+  publisher = {AAAI Press},
+  series    = {AAAI'91},
+  abstract  = {Reinforcement learning algorithms, when used to solve multi-stage decision problems, perform a kind of online (incremental) search to find an optimal decision policy. The time complexity of this search strongly depends upon the size and structure of the state space and upon a priori knowledge encoded in the learners initial parameter values. When a priori knowledge is not available, search is unbiased and can be excessive.Cooperative mechanisms help reduce search by providing the learner with shorter latency feedback and auxiliary sources of experience. These mechanisms are based on the observation that in nature, intelligent agents exist in a cooperative social environment that helps structure and guide learning. Within this context, learning involves information transfer as much as it does discovery by trial-and-error.Two cooperative mechanisms are described: Learning with an External Critic (or LEC) and Learning By Watching (or LBW). The search time complexity of these algorithms, along with unbiased Q-learning, are analyzed for problem solving tasks on a restricted class of state spaces. The results indicate that while unbiased search can be expected to require time moderately exponential in the size of the state space, the LEC and LBW algorithms require at most time linear in the size of the state space and under appropriate conditions, are independent of the state space size altogether; requiring time proportional to the length of the optimal solution path. While these analytic results apply only to a restricted class of tasks, they shed light on the complexity of search in reinforcement learning in general and the utility of cooperative mechanisms for reducing search.},
+  file      = {:https\://www.aaai.org/Papers/AAAI/1991/AAAI91-095.pdf:PDF},
+  groups    = {Multi-agent RL},
+  isbn      = {0262510596},
+  numpages  = {7},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
