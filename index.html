@@ -10422,7 +10422,7 @@ Tags
 <div created="20210312132413081" modified="20210312132440830" title="$:/state/folded/$:/ControlPanel">
 <pre>show</pre>
 </div>
-<div created="20210312134226342" modified="20210316092027843" title="$:/state/showeditpreview">
+<div created="20210312134226342" modified="20210316111613960" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
 <div created="20210312133055151" modified="20210315124658541" title="$:/state/sidebar">
@@ -10964,7 +10964,7 @@ $$
 * $$Pr[\overrightarrow{a}']$$:  probability that $$\overrightarrow{a}'$$ happens.
 </pre>
 </div>
-<div created="20210312143044612" modified="20210316110925684" tags="MAS model MADRL paper" title="COMA">
+<div created="20210312143044612" modified="20210316111923778" tags="MAS model MADRL paper" title="COMA">
 <pre>!! Paper
 //Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. 32nd AAAI Conference on Artificial Intelligence.
 
@@ -10988,10 +10988,8 @@ There is a great need for new RL methods that can efficiently learn decentralise
 !! Model
 * ''Centralised critic'', used only during training, that conditions on the true global state $$s$$ or the joint action-observation histories $$\tau$$ otherwise. It estimates $$Q(s,\mathbf{u})$$ the Q-values for the joint action $$\mathbf{u}$$.
 * ''Decentralised actors'' to optimise the agents' policies, conditioned on their own action-observation history. The actors' parameters are shared (i.e. one model for all actors), but the agents can still behave differently as they receive different observations and thus evolve different hidden states.
-* Following the TD Error estimated by the critic to optimise the actors would not be fair to each one of them, as the TD Error considers only the global reward and not the agents' actual contributions. Instead, COMA uses a ''counterfactual baseline'' for credit assignment, inspired by the [[Aristocrat Utility]]. For each agent $$a$$, an advantage function is computed to compare the Q-value for the current action $$u^a$$ to a counterfactual baseline that marginalises out $$u^a$$ while keeping the other agents' actions fixed:
-$$
-A^a(s,\mathbf{u})=Q(s,\mathbf{u})-\sum_{u'^a}\pi^a(u'^a|\tau^a)Q(s,(\mathbf{u}^{-a},u'^a)).
-$$
+* Following the TD Error estimated by the critic to optimise the actors would not be fair to each one of them, as the TD Error considers only the global reward and not the agents' actual contributions. Instead, COMA uses a ''counterfactual baseline'' for credit assignment, inspired by the [[Aristocrat Utility]]. For each agent $$a$$, an advantage function is computed to compare the Q-value for the current action $$u^a$$ to a counterfactual baseline that marginalises out $$u^a$$ while keeping the other agents' actions fixed:&lt;br /&gt;$$
+A^a(s,\mathbf{u})=Q(s,\mathbf{u})-\sum_{u'^a}\pi^a(u'^a|\tau^a)Q(s,(\mathbf{u}^{-a},u'^a)).$$$$A^a(s,\mathbf{u})$$ computes a separate baseline for each agent using the centralised critic to reason about counterfactuals in which only $$a$$'s action changes.
 
 !! Results
 Evaluated in StarCraft unit micromanagement.
