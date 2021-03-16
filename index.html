@@ -10945,17 +10945,21 @@ Tags
 <div created="20210312132912969" modified="20210312132914337" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fixed-fluid</pre>
 </div>
-<div created="20210315180109329" modified="20210315185327838" tags="concept [[MA Learning]] MAS" title="Aristocrat Utility">
+<div created="20210315180109329" modified="20210316081550080" tags="concept [[MA Learning]] MAS" title="Aristocrat Utility">
 <pre>!!Paper
 //Optimal Payoff Functions for Members of Collectives//, Wolpert and Tumer, 2002.
 
 !!Definition
 The aristocrat utility is a [[distribution rule|Credit Assignment]] allowing to split a global reward obtained by a team of agents to each agents. It is defined by the difference, in world utility, between the agent's action and the average action:
-
 $$
 u_i(s,\overrightarrow{a})=U(s,\overrightarrow{a})-\sum_{\overrightarrow{a}'\in \overrightarrow{A}}Pr[\overrightarrow{a}']U(s, \overrightarrow{a}_{-i},\overrightarrow{a}_i')
 $$
 
+* with $$u_i(s,\overrightarrow{a})$$ agent $$i$$’s reward in state $$s$$,
+* U: the world utility (i.e.  global reward),
+* $$\overrightarrow{a}$$:  joint action of all agents in the MAS,
+* $$\overrightarrow{a}_{-i}$$:  joint action of all agents except $$i$$,
+* $$Pr[\overrightarrow{a}']$$:  probability that $$\overrightarrow{a}'$$ happens.
 </pre>
 </div>
 <div created="20210312143044612" modified="20210315183204613" tags="MAS model MADRL paper" title="COMA">
