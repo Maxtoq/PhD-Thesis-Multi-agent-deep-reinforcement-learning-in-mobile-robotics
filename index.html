@@ -10964,7 +10964,7 @@ $$
 * $$Pr[\overrightarrow{a}']$$:  probability that $$\overrightarrow{a}'$$ happens.
 </pre>
 </div>
-<div created="20210312143044612" modified="20210315183204613" tags="MAS model MADRL paper" title="COMA">
+<div created="20210312143044612" modified="20210316104601859" tags="MAS model MADRL paper" title="COMA">
 <pre>!! Paper
 //Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. 32nd AAAI Conference on Artificial Intelligence.
 
@@ -10979,15 +10979,16 @@ There is a great need for new RL methods that can efficiently learn decentralise
 * ''Multi-agent Credit Assignment:'' Individual reward functions aren't always available and often fail to encourage cooperative behavior. There is a need for efficient [[credit assignment|Credit Assignment]].
 
 !! Solution
-''Multi-agent [[actor-critic|Actor-Critic]] ''method called //counterfactual multi-agent// (COMA) policy gradient:
+''Multi-agent [[actor-critic|Actor-Critic]] ''method called //counterfactual multi-agent// (COMA) policy gradient, based on three main ideas:
 
-* ''Centralised critic'' to estimate the Q-function, only used during learning, conditioned on the joint action and all available state information.
-* ''Decentralised actors'' to optimise the agents' policies, conditioned on their own action-observation history.
-* ''Counterfactual baseline'' [[credit assignment|Credit Assignment]], inspired by the [[Aristocrat Utility]].
+* ''Centralised critic'' to estimate the Q-function.
+* ''Counterfactual baseline'' [[credit assignment|Credit Assignment]].
 * ''Critic representation'' for efficient counterfactual baseline computation.
 
 !! Model
-
+* ''Centralised critic'', used only during training, that conditions on the true global state $$s$$ or the joint action-observation histories $$\tau$$ otherwise. It estimates $$Q(s,\pmb{u})$$ the Q-values for the joint action $$\pmb{u}$$.
+* ''Decentralised actors'' to optimise the agents' policies, conditioned on their own action-observation history. The actors' parameters are shared (i.e. one model for all actors), but the agents can still behave differently as they receive different observations and thus evolve different hidden states.
+* Following the TD Error estimated by the critic to optimise the actors would not be fair to each one of them, as the TD Error considers only the global reward and not the agents' actual contributions. Instead, COMA uses a ''counterfactual baseline'' for credit assignment, inspired by the [[Aristocrat Utility]]. 
 
 !! Results
 Evaluated in StarCraft unit micromanagement.
