@@ -253,6 +253,8 @@ Error message and password prompt
 
 <li>Credit Assignment</li>
 
+<li>Draft of 'Independent Q-learning'</li>
+
 <li>Independent Q-learning</li>
 
 <li>Tags</li>
@@ -10432,8 +10434,8 @@ Tags
 <div created="20210316113055690" modified="20210316113057365" title="$:/state/image-picker/system-1424061023">
 <pre>hide</pre>
 </div>
-<div created="20210312134226342" modified="20210316134431172" title="$:/state/showeditpreview">
-<pre>no</pre>
+<div created="20210312134226342" modified="20210317093629922" title="$:/state/showeditpreview">
+<pre>yes</pre>
 </div>
 <div created="20210312133055151" modified="20210315124658541" title="$:/state/sidebar">
 <pre>no</pre>
@@ -10468,7 +10470,7 @@ Tags
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210317082905331" list="[[TO DO]] [[Independent Q-learning]] Tags" modified="20210317083149529" title="$:/StoryList">
+<div created="20210317082905331" list="[[TO DO]] [[Draft of 'Independent Q-learning']] Tags COMA" modified="20210317103023857" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -10974,7 +10976,7 @@ $$
 * $$Pr[\overrightarrow{a}']$$:  probability that $$\overrightarrow{a}'$$ happens.
 </pre>
 </div>
-<div created="20210312143044612" modified="20210316190756194" tags="MAS model MADRL paper" title="COMA">
+<div created="20210312143044612" modified="20210317103102657" tags="MAS model MADRL paper" title="COMA">
 <pre>!! Paper
 //Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. AAAI Conference on Artificial Intelligence.
 
@@ -10996,7 +10998,7 @@ There is a great need for new RL methods that can efficiently learn decentralise
 * ''Critic representation'' for efficient counterfactual baseline computation.
 
 !! Model
-[img[coma.png]]
+[img[img/coma.png]]
 
 Figure 1: (a) information flow in COMA (red arrows and components are only required during learning), (b) actor, (c) critic.
 
@@ -11038,6 +11040,31 @@ How to distribute the reward obtained at a team level to the individual learners
 !!Resources
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
+</div>
+<div created="20210316092033293" draft.of="Independent Q-learning" draft.title="Independent Q-learning" modified="20210317103039268" tags="MAS model paper MARL" title="Draft of 'Independent Q-learning'">
+<pre>!!Paper
+//Multi-Agent Reinforcement Learning: Independent versus Cooperative Agents//, Tan, 1993. Proceedings of ICM.
+
+!!Problem
+Humans learn not only by themselves, but also by exchanging information and knowledge with each other and by learning from their peers. 
+
+Also, sometimes a task is too big for a single agent and multiple agents may need to cooperate to accomplish it. So far, no study had been done on the performance of independent agents compared to cooperative ones.
+
+By that time, most work on RL had focused on single agent environments.
+
+!!Study
+The paper treats three cases of study on multi-agent RL involving cooperation. All tasks considered are variations of the Hunter-Prey scenario.
+
+!!! 1. Sharing sensation
+''Task:'' one-prey/one-hunter task, with the addition of a scouting agent that cannot capture the prey. The scout makes random moves and communicates his sensations and actions to the hunter. Then this is extended to multiple hunters able to scout and hunt.
+
+!!! 2. Sharing policies and episodes
+
+
+!!! 3. Joint tasks
+
+
+!!Result</pre>
 </div>
 <div created="20210316092033293" modified="20210317083159643" tags="MADRL MAS model paper" title="Independent Q-learning">
 <pre>!!Paper
