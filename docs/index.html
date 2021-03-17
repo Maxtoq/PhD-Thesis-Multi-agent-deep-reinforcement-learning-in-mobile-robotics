@@ -255,6 +255,8 @@ Error message and password prompt
 
 <li>Credit Assignment</li>
 
+<li>Draft of 'Independent Q-learning'</li>
+
 <li>Independent Q-learning</li>
 
 <li>Tags</li>
@@ -10455,11 +10457,11 @@ Tags
 <div created="20210312133905887" modified="20210312133911968" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
-<div created="20210312132206794" modified="20210317103215142" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Settings</pre>
+<div created="20210312132206794" modified="20210317121836219" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20210312134344906" modified="20210317103210767" title="$:/state/tab-2065006209">
-<pre>$:/core/ui/ControlPanel/Saving/General</pre>
+<div created="20210312134344906" modified="20210317121837288" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20210312134714286" modified="20210312134716559" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
@@ -10473,7 +10475,7 @@ Tags
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210317082905331" list="[[TO DO]] [[Independent Q-learning]] Tags COMA" modified="20210317103209129" title="$:/StoryList">
+<div created="20210317082905331" list="$:/ControlPanel [[TO DO]] [[Draft of 'Independent Q-learning']] Tags COMA" modified="20210317121834120" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11043,6 +11045,35 @@ How to distribute the reward obtained at a team level to the individual learners
 !!Resources
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
+</div>
+<div created="20210316092033293" draft.of="Independent Q-learning" draft.title="Independent Q-learning" modified="20210317121825135" tags="MAS model paper MARL" title="Draft of 'Independent Q-learning'">
+<pre>!!Paper
+//Multi-Agent Reinforcement Learning: Independent versus Cooperative Agents//, Tan, 1993. Proceedings of ICM.
+
+!!Problem
+Humans learn not only by themselves, but also by exchanging information and knowledge with each other and by learning from their peers. 
+
+Also, sometimes a task is too big for a single agent and multiple agents may need to cooperate to accomplish it. So far, no study had been done on the performance of independent agents compared to cooperative ones.
+
+By that time, most work on RL had focused on single agent environments.
+
+!!Study
+The paper treats three cases of study on multi-agent RL involving cooperation. All RL agents use one-step Q-learning. All tasks considered are variations of the Hunter-Prey scenario.
+
+!!! 1. Sharing sensation
+''Setting:'' one-prey/one-hunter scenario, with the addition of a scouting agent that cannot capture the prey. The scout makes random moves and communicates his sensations and actions to the hunter. Then this is extended to multiple hunters able to scout and hunt.
+
+''Results:'' The presence of a scout increases the performance of the hunter. As the scout's visual-field depth increases, the hunter improves his performance. When comparing two communicating hunters (scout and hunt) to two independent agents, the authors see that when the visual-field depth is small, sharing sensation makes agents a bit worse. The training was hindered due to the increased complexity induced by sharing information and the communication cost. However, when the visual-field depth is bigger, communicating agents gradually outperform independent ones. This suggests that ''communicating sensory information must be done prudently and only when the extra information is relevant''.
+
+!!! 2. Sharing policies and episodes
+''Setting:'' one-prey/two-hunters scenario. Hunter share policy either by using the same policy or by periodically exchanging their individual policies (i.e. averaging their policies). Episodes are exchanged either among peer hunters or between peer and expert hunters (i.e. shortest path following agents). In particular, when agents captured a prey, the episode is sent to the other agents for them to train on it. These settings lay the foundation of centralised learning.
+
+''Results:'' Sharing policies and episodes is shown to ''speed up learning (especially when learning from experts' experience), but doesn't improve final performance''. 
+
+!!! 3. Joint tasks
+
+
+!!Result</pre>
 </div>
 <div created="20210316092033293" modified="20210317121817942" tags="MAS model paper MARL" title="Independent Q-learning">
 <pre>!!Paper
