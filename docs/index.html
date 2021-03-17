@@ -10460,7 +10460,7 @@ Tags
 <div created="20210312132206794" modified="20210317121836219" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20210312134344906" modified="20210317121837288" title="$:/state/tab-2065006209">
+<div created="20210312134344906" modified="20210317155222925" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20210312134714286" modified="20210317155038483" title="$:/state/tab/moresidebar-1850697562">
@@ -10475,7 +10475,7 @@ Tags
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210317082905331" list="[[Markov Games]] [[TO DO]] [[Credit Assignment]] [[Independent Q-learning]] Tags COMA" modified="20210317154320718" title="$:/StoryList">
+<div created="20210317082905331" list="[[Markov Games]] [[TO DO]] [[Credit Assignment]] [[Independent Q-learning]] Tags COMA" modified="20210317155207263" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11082,22 +11082,23 @@ The paper raises important issues on cooperation in multi-agent systems:
 * Learning opportunities are rare in non-trivial cooperative tasks, so learning needs to be more focused on these. The author gives the example of learning from a teacher. Another approach would be [[prioritized experience replay|Experience Replay]].
 * There are lots of other possible cooperative methods to be explored (e.g. sharing action intentions, [[credit assignment|Credit Assignment]]).</pre>
 </div>
-<div created="20210317150735023" modified="20210317155148990" tags="concept [[MA Learning]] MARL MAS" title="Markov Games">
+<div created="20210317150735023" modified="20210317162736112" tags="concept [[MA Learning]] MARL MAS" title="Markov Games">
 <pre>!!Definition
 ''Markov games'', also called ''stochastic games'', can be defined as an extension of the [[Markov Decision Process]] (MDP) to the multi-agent case. In Markov games, both transition probabilities and expected rewards depend on the joint action of all agents. 
 
-Formally, a Markov game is a tuple $$(n,S,A_{1...n},R_{1...n},T)$$:
+Formally, a Markov game is a tuple $$(N,S,A,R,T)$$:
 
-* $$n$$ the number of agents in the system,
-* $$S$$ the set of states,
-* $$A_i$$ the action set of agent $$i$$,
-* $$R_i:S\times A_1\times ...\times A_n \rightarrow \mathbb{R}$$, the reward function of agent $$i$$,
-* $$T:S\times A_1\times ...\times A_n \rightarrow Pr(S)$$, the state transition function.
+* $$N$$ is the set of $$n$$ agents,
+* $$S$$ is the set of states,
+* $$A=\{A_1,...,A_n\}$$ is the collection of action sets, where $$A_i$$ is the set of actions available to agent $$i$$,
+* $$R=\{R_1,...R_n\}$$ where $$R_i:S\times A \rightarrow \mathbb{R}$$ is the reward function of agent $$i$$,
+* $$T:S\times A\times S \rightarrow [0, 1]$$, the state transition function: $$T(s,\mathbf{a},s')$$ is the probability of transitioning from state $$s$$ to state $$s'$$ after taking the joint action $$\mathbf{a}$$.
 
 
 
 !!Resources
-Nowé, Vrancx and De Hauwere, //Game Theory and Multi-agent Reinforcement Learning//, 2012.</pre>
+* Littman, //Markov games as a framework for multi-agent reinforcement learning//, 1994.
+* https://www.cs.ubc.ca/~kevinlb/teaching/cs532l%20-%202011-12/lectures/lect10.pdf</pre>
 </div>
 <div created="20210312133529609" modified="20210315133425691" tags="concept [[MA Learning]] MAS MADRL model paper" title="Tags">
 <pre></pre>
