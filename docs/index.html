@@ -255,9 +255,9 @@ Error message and password prompt
 
 <li>Credit Assignment</li>
 
-<li>Draft of 'New Tiddler'</li>
-
 <li>Independent Q-learning</li>
+
+<li>Markov Games</li>
 
 <li>Tags</li>
 
@@ -10475,7 +10475,7 @@ Tags
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210317082905331" list="[[Draft of 'New Tiddler']] [[TO DO]] [[Credit Assignment]] [[Independent Q-learning]] Tags COMA" modified="20210317150721948" title="$:/StoryList">
+<div created="20210317082905331" list="[[Markov Games]] [[TO DO]] [[Credit Assignment]] [[Independent Q-learning]] Tags COMA" modified="20210317154320718" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11046,14 +11046,6 @@ How to distribute the reward obtained at a team level to the individual learners
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
 </div>
-<div created="20210317150735023" draft.of="New Tiddler" draft.title="Markov Games" modified="20210317151158102" tags="concept [[MA Learning]] MARL MAS" title="Draft of 'New Tiddler'">
-<pre>!!Definition
-''Markov Games'' can be defined as an extension of the [[Markov Decision Process]] (MDP) 
-
-
-!!Resources
-Nowé, Vrancx and De Hauwere, //Game Tehory and Multi-agent Reinforcement Learning//, 2012.</pre>
-</div>
 <div created="20210316092033293" modified="20210317130809769" tags="MAS model paper MARL" title="Independent Q-learning">
 <pre>!!Paper
 //Multi-Agent Reinforcement Learning: Independent versus Cooperative Agents//, Tan, 1993. Proceedings of ICM.
@@ -11089,6 +11081,23 @@ The paper raises important issues on cooperation in multi-agent systems:
 * Communicated sensations must be selective as the size of the state space can increase exponentially with the number of agents. Also, sharing information comes with a communication cost. Can agents learn to communicate ?
 * Learning opportunities are rare in non-trivial cooperative tasks, so learning needs to be more focused on these. The author gives the example of learning from a teacher. Another approach would be [[prioritized experience replay|Experience Replay]].
 * There are lots of other possible cooperative methods to be explored (e.g. sharing action intentions, [[credit assignment|Credit Assignment]]).</pre>
+</div>
+<div created="20210317150735023" modified="20210317154934414" tags="concept [[MA Learning]] MARL MAS" title="Markov Games">
+<pre>!!Definition
+''Markov games'', also called ''stochastic games'', can be defined as an extension of the [[Markov Decision Process]] (MDP) to the multi-agent case. In Markov games, both transition probabilities and expected rewards depend on the joint action of all agents. 
+
+Formally, a Markov game is a tuple $$(n,S,A_{1...n},R_{1...n},T)$$:
+
+* $$n$$ the number of agents in the system,
+* $$S$$ the set of states,
+* $$A_i$$ the action set of agent $$i$$,
+* $$R_i:S\times A_1\times ...\times A_n \rightarrow \mathbb{R}$$, the reward function of agent $$i$$,
+* $$T:S\times A_1\times ...\times A_n \rightarrow Pr(S)$$, the state transition function.
+
+
+
+!!Resources
+Nowé, Vrancx and De Hauwere, //Game Tehory and Multi-agent Reinforcement Learning//, 2012.</pre>
 </div>
 <div created="20210312133529609" modified="20210315133425691" tags="concept [[MA Learning]] MAS MADRL model paper" title="Tags">
 <pre></pre>
