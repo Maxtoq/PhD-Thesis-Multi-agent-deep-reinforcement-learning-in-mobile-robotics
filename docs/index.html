@@ -229,6 +229,8 @@ Error message and password prompt
 
 <li>$:/state/toc/Multi-agent Systems-Multi-agent Learning--2113121511</li>
 
+<li>$:/state/toc/Multi-agent Systems-Multi-agent Learning--905582679</li>
+
 <li>$:/state/toc/Multi-agent Systems-Multi-agent Learning-1747486595</li>
 
 <li>$:/state/toc/Multi-agent Systems/Multi-agent Learning-Aristocrat Utility-1747486595</li>
@@ -236,6 +238,8 @@ Error message and password prompt
 <li>$:/state/toc/Multi-agent Systems/Multi-agent Learning-Credit Assignment-1747486595</li>
 
 <li>$:/state/toc/Multi-agent Systems/Multi-agent Learning-Multi-agent Reinforcement Learning--2113121511</li>
+
+<li>$:/state/toc/Multi-agent Systems/Multi-agent Learning-Multi-agent Reinforcement Learning--905582679</li>
 
 <li>$:/state/toc/Multi-agent Systems/Multi-agent Learning-Multi-agent Reinforcement Learning-1747486595</li>
 
@@ -10479,8 +10483,8 @@ Error message and password prompt
 <div created="20210312133905887" modified="20210312133911968" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
-<div created="20210312132206794" modified="20210317174749233" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20210312132206794" modified="20210318110635668" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
 <div created="20210312134344906" modified="20210317155222925" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -10497,6 +10501,9 @@ Error message and password prompt
 <div created="20210317195726000" modified="20210317195726001" title="$:/state/toc/Multi-agent Systems-Multi-agent Learning--2113121511">
 <pre>open</pre>
 </div>
+<div created="20210318084816661" modified="20210318084816661" title="$:/state/toc/Multi-agent Systems-Multi-agent Learning--905582679">
+<pre>open</pre>
+</div>
 <div created="20210317194948582" modified="20210317194948582" title="$:/state/toc/Multi-agent Systems-Multi-agent Learning-1747486595">
 <pre>open</pre>
 </div>
@@ -10509,6 +10516,9 @@ Error message and password prompt
 <div created="20210317195730975" modified="20210317195730975" title="$:/state/toc/Multi-agent Systems/Multi-agent Learning-Multi-agent Reinforcement Learning--2113121511">
 <pre>open</pre>
 </div>
+<div created="20210318084825882" modified="20210318084825883" title="$:/state/toc/Multi-agent Systems/Multi-agent Learning-Multi-agent Reinforcement Learning--905582679">
+<pre>open</pre>
+</div>
 <div created="20210317194958178" modified="20210317195109165" title="$:/state/toc/Multi-agent Systems/Multi-agent Learning-Multi-agent Reinforcement Learning-1747486595">
 <pre>open</pre>
 </div>
@@ -10518,7 +10528,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210317082905331" list="Home [[Multi-agent Reinforcement Learning]] [[Multi-agent Deep Reinforcement Learning]] [[TO DO]]" modified="20210317195906429" title="$:/StoryList">
+<div created="20210318084817842" list="$:/ControlPanel [[Markov Games]] Home [[TO DO]]" modified="20210318110633379" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11151,7 +11161,7 @@ The paper raises important issues on cooperation in multi-agent systems:
 * Learning opportunities are rare in non-trivial cooperative tasks, so learning needs to be more focused on these. The author gives the example of learning from a teacher. Another approach would be [[prioritized experience replay|Experience Replay]].
 * There are lots of other possible cooperative methods to be explored (e.g. sharing action intentions, [[credit assignment|Credit Assignment]]).</pre>
 </div>
-<div created="20210317150735023" modified="20210317194838011" tags="concept [[Multi-agent Reinforcement Learning]]" title="Markov Games">
+<div created="20210317150735023" modified="20210318105755357" tags="concept [[Multi-agent Learning]]" title="Markov Games">
 <pre>!!Definition
 ''Markov games'', also called ''stochastic games'', can be defined as an extension of the [[Markov Decision Process]] (MDP) to the multi-agent case. In Markov games, both transition probabilities and expected rewards depend on the joint action of all agents. 
 
@@ -11163,11 +11173,16 @@ Formally, a Markov game is a tuple $$(N,S,A,R,T)$$:
 * $$R=\{R_1,...R_n\}$$ where $$R_i:S\times A \rightarrow \mathbb{R}$$ is the reward function of agent $$i$$,
 * $$T:S\times A\times S \rightarrow [0, 1]$$, the state transition function: $$T(s,\mathbf{a},s')$$ is the probability of transitioning from state $$s$$ to state $$s'$$ after taking the joint action $$\mathbf{a}$$.
 
-
+As in a MDP, agents try to maximize their expected future discounted reward, but now it depends not only on their own policy, but also on the other agents' policies. With the joint policy $$\pi=(\pi_1,...,\pi_n)$$, the state-value of a state $$s$$, for an agent $$i$$ will be:
+$$
+V_i^\pi(s)=\mathbb{E}_{\pi}\left[\sum_{t=0}^\infty \gamma^tr_i(t+1)|s(0)=s\right]
+$$
+If agents have conflicting goals, it will be impossible for all of them to maximize their expected return. Therefore, the solution for these problems will typically be a [[Nash equilibrium]].
 
 !!Resources
 * Littman, //Markov games as a framework for multi-agent reinforcement learning//, 1994.
-* https://www.cs.ubc.ca/~kevinlb/teaching/cs532l%20-%202011-12/lectures/lect10.pdf</pre>
+* https://www.cs.ubc.ca/~kevinlb/teaching/cs532l%20-%202011-12/lectures/lect10.pdf
+* Nowé et al., //Game Theory and Multi-agent Reinforcement Learning//, 2012.</pre>
 </div>
 <div created="20210317194500660" modified="20210317195434815" tags="[[Multi-agent Reinforcement Learning]]" title="Multi-agent Deep Reinforcement Learning">
 <pre>!!Table of content
@@ -11193,7 +11208,7 @@ Formally, a Markov game is a tuple $$(N,S,A,R,T)$$:
 &lt;&lt;toc-selective-expandable &quot;Multi-agent Systems&quot;&gt;&gt;
 &lt;/div&gt;</pre>
 </div>
-<div created="20210312143343407" modified="20210317195911554" tags="" title="TO DO">
+<div created="20210312143343407" modified="20210318093319474" tags="" title="TO DO">
 <pre>[[Actor-Critic]]
 
 [[Wondeful Life Utility]]
@@ -11212,7 +11227,9 @@ Formally, a Markov game is a tuple $$(N,S,A,R,T)$$:
 
 [[Multi-agent Reinforcement Learning]]
 
-[[Multi-agent Deep Reinforcement Learning]]</pre>
+[[Multi-agent Deep Reinforcement Learning]]
+
+[[Nash equilibrium]]</pre>
 </div>
 
 
