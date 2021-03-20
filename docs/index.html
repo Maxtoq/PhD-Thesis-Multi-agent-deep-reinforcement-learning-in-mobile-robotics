@@ -10541,7 +10541,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210320144519463" list="Home [[Reinforcement Learning]] [[Policy-based method]] [[Draft of 'Actor-Critic']] [[TO DO]]" modified="20210320144632326" title="$:/StoryList">
+<div created="20210320144519463" list="COMA [[Credit Assignment]] Home [[Reinforcement Learning]] [[Policy-based method]] [[Draft of 'Actor-Critic']] [[TO DO]]" modified="20210320153000086" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11115,8 +11115,35 @@ How to distribute the reward obtained at a team level to the individual learners
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
 </div>
-<div created="20210320144533798" draft.of="Actor-Critic" draft.title="Actor-Critic" modified="20210320145006214" tags="[[Policy-based method]]" title="Draft of 'Actor-Critic'">
-<pre></pre>
+<div created="20210320144533798" draft.of="Actor-Critic" draft.title="Actor-Critic" modified="20210320153106062" tags="[[Policy-based method]]" title="Draft of 'Actor-Critic'">
+<pre>!!Definition
+[[Policy gradient]] method that uses an estimate of the [[value function|Reinforcement Learning]] to help direct the optimisation of the policy. Therefore, we learn two different functions:
+
+* A //policy function// $$\pi_\theta(a|s)$$: the ''actor'' which controls how the agent behaves (i.e. selects actions),
+* A //state-value function// $$V_w(s)$$ or //action-value function// $$Q_w(a|s)$$: the ''critic'' which measures how good the action taken is.
+
+The use of the value function to optimise the policy helps reducing gradient variance in vanilla policy gradient.
+
+!!Algorithm
+Here's a simple action-value actor-critic algorithm, with two learning rates $$\alpha_\theta$$ and $$\alpha_w$$, one for each learned function:
+
+# Initialize $$s$$, $$\theta$$, $$w$$ randomly; sample $$a\sim\pi_\theta(a|s)$$.
+# For $$t=1...T$$:
+## Sample reward $$r_t\sim R(s,a)$$ and next state $$s'\sim P(s'|s,a)$$;
+## Sample the next action $$a'\sim\pi_\theta(a'|s')$$;
+## Update the policy function parameters: $$\theta\leftarrow \theta + \alpha_\theta Q_w(s,a)\nabla_\theta ln\pi_\theta(a|s)$$;
+## Compute the [[TD Error|Q-learning]] of the action-value function at time $$t$$:&lt;br \&gt;$$\delta_t=r_t+\gamma Q_w(s',a')-Q_w(s,a)$$&lt;br \&gt;and use it to update the parameters of the action-value function:&lt;br \&gt;$$w\leftarrow w+\alpha_w\delta_t\nabla_w Q_w(s,a)$$
+## Update $$a\leftarrow a'$$ and $$s\leftarrow s'$$.
+
+!!Asynchronous Advantage Actor-Critic (A3C)
+
+
+!!Advantage Actor-Critic (A2C)
+
+
+!!Resources
+* https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html#actor-critic
+* Mnih et al., //Asynchronous Methods for Deep Reinforcement Learning//, 2016.</pre>
 </div>
 <div created="20210317173823342" modified="20210320144810660" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
@@ -11238,7 +11265,7 @@ If agents have conflicting goals, it will be impossible for all of them to maxim
 <div created="20210320144605660" modified="20210320144605660" title="Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210312143343407" modified="20210320144710941" tags="" title="TO DO">
+<div created="20210312143343407" modified="20210320155117030" tags="" title="TO DO">
 <pre>[[Actor-Critic]]
 
 [[Wondeful Life Utility]]
@@ -11263,7 +11290,11 @@ If agents have conflicting goals, it will be impossible for all of them to maxim
 
 [[Reinforcement Learning]]
 
-[[Policy-based]]</pre>
+[[Policy-based method]]
+
+[[Policy gradient]]
+
+[[Q-learning]]</pre>
 </div>
 
 
