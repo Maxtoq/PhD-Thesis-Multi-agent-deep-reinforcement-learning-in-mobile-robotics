@@ -1099,7 +1099,7 @@
   publisher = {{AAAI} Press},
   bibsource = {dblp computer science bibliography, https://dblp.org},
   biburl    = {https://dblp.org/rec/conf/aaai/MordatchA18.bib},
-  file      = {:Mordatch2018 - Emergence of Grounded Compositional Language in Multi Agent Populations.pdf:PDF},
+  file      = {:Mordatch2017 - Emergence of Grounded Compositional Language in Multi Agent Populations.pdf:PDF},
   groups    = {MARL, Communication},
   ranking   = {rank3},
   url       = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17007},
@@ -1583,7 +1583,7 @@
   pages     = {289--353},
   volume    = {32},
   doi       = {10.1613/jair.2447},
-  file      = {:Oliehoek2008 - Optimal and Approximate Q Value Functions for Decentralized POMDPs (2).pdf:PDF},
+  file      = {:Oliehoek2008 - Optimal and Approximate Q Value Functions for Decentralized POMDPs.pdf:PDF},
   groups    = {Multi-agent RL},
   publisher = {{AI} Access Foundation},
 }
@@ -2076,6 +2076,7 @@
   abstract = {Markov games are a model of multiagent environments that are convenient for studying multiagent reinforcement learning. This paper describes a set of reinforcement-learning algorithms based on estimating value functions and presents convergence theorems for these algorithms. The main contribution of this paper is that it presents the convergence theorems in a way that makes it easy to reason about the behavior of simultaneous learners in a shared environment.},
   comment  = {Team Q-learning},
   doi      = {https://doi.org/10.1016/S1389-0417(01)00015-8},
+  file     = {:LITTMAN200155 - Value Function Reinforcement Learning in Markov Games.pdf:PDF},
   groups   = {Multi-agent RL},
   keywords = {Reinforcement learning, Temporal difference learning, Value functions, Game theory, Markov games, -learning, Nash equilibria},
   url      = {https://www.sciencedirect.com/science/article/pii/S1389041701000158},
@@ -2088,7 +2089,87 @@
   year      = {2000},
   pages     = {535--542},
   publisher = {Morgan Kaufmann},
+  comment   = {Distributed Q-learning},
   groups    = {Multi-agent RL},
+}
+
+@InBook{Matarić1997,
+  author    = {Matari{\'{c}}, Maja J.},
+  editor    = {Arkin, Ronald C. and Bekey, George A.},
+  pages     = {73--83},
+  publisher = {Springer US},
+  title     = {Reinforcement Learning in the Multi-Robot Domain},
+  year      = {1997},
+  address   = {Boston, MA},
+  isbn      = {978-1-4757-6451-2},
+  abstract  = {This paper describes a formulation of reinforcement learning that enables learning in noisy, dynamic environments such as in the complex concurrent multi-robot learning domain. The methodology involves minimizing the learning space through the use of behaviors and conditions, and dealing with the credit assignment problem through shaped reinforcement in the form of heterogeneous reinforcement functions and progress estimators. We experimentally validate the approach on a group of four mobile robots learning a foraging task.},
+  booktitle = {Robot Colonies},
+  doi       = {10.1007/978-1-4757-6451-2_4},
+  file      = {:Matarić1997 - Reinforcement Learning in the Multi Robot Domain.pdf:PDF},
+  groups    = {Multi-robot},
+  url       = {https://doi.org/10.1007/978-1-4757-6451-2_4},
+}
+
+@InProceedings{hu1998multiagent,
+  author       = {Hu, Junling and Wellman, Michael P},
+  booktitle    = {ICML},
+  title        = {Multiagent reinforcement learning: theoretical framework and an algorithm},
+  year         = {1998},
+  organization = {Citeseer},
+  pages        = {242--250},
+  volume       = {98},
+  comment      = {Nash Q learning},
+  file         = {:hu1998multiagent - Multiagent Reinforcement Learning_ Theoretical Framework and an Algorithm (2).pdf:PDF},
+  groups       = {Multi-agent RL},
+  ranking      = {rank3},
+}
+
+@Article{Gmytrasiewicz2005,
+  author    = {P. J. Gmytrasiewicz and P. Doshi},
+  journal   = {Journal of Artificial Intelligence Research},
+  title     = {A Framework for Sequential Planning in Multi-Agent Settings},
+  year      = {2005},
+  month     = {jul},
+  pages     = {49--79},
+  volume    = {24},
+  doi       = {10.1613/jair.1579},
+  file      = {:Gmytrasiewicz2005 - A Framework for Sequential Planning in Multi Agent Settings.pdf:PDF},
+  groups    = {Multi-agent RL},
+  publisher = {{AI} Access Foundation},
+  ranking   = {rank2},
+}
+
+@InProceedings{zinkevich2003online,
+  author    = {Zinkevich, Martin},
+  booktitle = {Proceedings of the 20th international conference on machine learning (icml-03)},
+  title     = {Online convex programming and generalized infinitesimal gradient ascent},
+  year      = {2003},
+  pages     = {928--936},
+  comment   = {GIGA},
+  file      = {:zinkevich2003online - Online Convex Programming and Generalized Infinitesimal Gradient Ascent.pdf:PDF},
+  groups    = {Multi-agent RL},
+}
+
+@Article{conitzer2007awesome,
+  author    = {Conitzer, Vincent and Sandholm, Tuomas},
+  journal   = {Machine Learning},
+  title     = {AWESOME: A general multiagent learning algorithm that converges in self-play and learns a best response against stationary opponents},
+  year      = {2007},
+  number    = {1-2},
+  pages     = {23--43},
+  volume    = {67},
+  file      = {:conitzer2007awesome - AWESOME_ a General Multiagent Learning Algorithm That Converges in Self Play and Learns a Best Response against Stationary Opponents.pdf:PDF},
+  groups    = {Multi-agent RL},
+  publisher = {Springer},
+  ranking   = {rank1},
+}
+
+@Article{foerster2017learning,
+  author  = {Foerster, Jakob N and Chen, Richard Y and Al-Shedivat, Maruan and Whiteson, Shimon and Abbeel, Pieter and Mordatch, Igor},
+  journal = {arXiv preprint arXiv:1709.04326},
+  title   = {Learning with opponent-learning awareness},
+  year    = {2017},
+  groups  = {Multi-agent RL},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -2113,6 +2194,7 @@
 2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
