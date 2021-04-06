@@ -2214,10 +2214,27 @@
   abstract      = {Autonomous driving is a multi-agent setting where the host vehicle must apply sophisticated negotiation skills with other road users when overtaking, giving way, merging, taking left and right turns and while pushing ahead in unstructured urban roadways. Since there are many possible scenarios, manually tackling all possible cases will likely yield a too simplistic policy. Moreover, one must balance between unexpected behavior of other drivers/pedestrians and at the same time not to be too defensive so that normal traffic flow is maintained. In this paper we apply deep reinforcement learning to the problem of forming long term driving strategies. We note that there are two major challenges that make autonomous driving different from other robotic tasks. First, is the necessity for ensuring functional safety - something that machine learning has difficulty with given that performance is optimized at the level of an expectation over many instances. Second, the Markov Decision Process model often used in robotics is problematic in our case because of unpredictable behavior of other agents in this multi-agent scenario. We make three contributions in our work. First, we show how policy gradient iterations can be used without Markovian assumptions. Second, we decompose the problem into a composition of a Policy for Desires (which is to be learned) and trajectory planning with hard constraints (which is not learned). The goal of Desires is to enable comfort of driving, while hard constraints guarantees the safety of driving. Third, we introduce a hierarchical temporal abstraction we call an "Option Graph" with a gating mechanism that significantly reduces the effective horizon and thereby reducing the variance of the gradient estimation even further.},
   archiveprefix = {arXiv},
   eprint        = {1610.03295},
-  file          = {:http\://arxiv.org/pdf/1610.03295v1:PDF},
+  file          = {:ShalevShwartz2016 - Safe, Multi Agent, Reinforcement Learning for Autonomous Driving.pdf:PDF},
   groups        = {Multi-agent RL},
   keywords      = {cs.AI, cs.LG, stat.ML},
   primaryclass  = {cs.AI},
+}
+
+@Article{doi:10.1177/0278364913495721,
+  author   = {Jens Kober and J. Andrew Bagnell and Jan Peters},
+  journal  = {The International Journal of Robotics Research},
+  title    = {Reinforcement learning in robotics: A survey},
+  year     = {2013},
+  number   = {11},
+  pages    = {1238-1274},
+  volume   = {32},
+  abstract = {Reinforcement learning offers to robotics a framework and set of tools for the design of sophisticated and hard-to-engineer behaviors. Conversely, the challenges of robotic problems provide both inspiration, impact, and validation for developments in reinforcement learning. The relationship between disciplines has sufficient promise to be likened to that between physics and mathematics. In this article, we attempt to strengthen the links between the two research communities by providing a survey of work in reinforcement learning for behavior generation in robots. We highlight both key challenges in robot reinforcement learning as well as notable successes. We discuss how contributions tamed the complexity of the domain and study the role of algorithms, representations, and prior knowledge in achieving these successes. As a result, a particular focus of our paper lies on the choice between model-based and model-free as well as between value-function-based and policy-search methods. By analyzing a simple problem in some detail we demonstrate how reinforcement learning approaches may be profitably applied, and we note throughout open questions and the tremendous potential for future research.},
+  doi      = {10.1177/0278364913495721},
+  eprint   = {https://doi.org/10.1177/0278364913495721},
+  file     = {:https\://www.cs.utexas.edu/users/sniekum/classes/RLFD-F16/papers/Kober13.pdf:PDF},
+  groups   = {Robotics},
+  ranking  = {rank5},
+  url      = {https://doi.org/10.1177/0278364913495721},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
