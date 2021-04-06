@@ -10549,7 +10549,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210323094351146" list="[[Markov Games]] [[Independent Q-learning]] Home [[TO DO]]" modified="20210323140736628" title="$:/StoryList">
+<div created="20210406085352213" list="COMA Home [[TO DO]]" modified="20210406085352213" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11085,7 +11085,7 @@ $$
 * $$Pr[\overrightarrow{a}']$$:  probability that $$\overrightarrow{a}'$$ happens.
 </pre>
 </div>
-<div created="20210312143044612" modified="20210317194737218" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="COMA">
+<div created="20210312143044612" modified="20210406085719568" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="COMA">
 <pre>!! Paper
 //Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. AAAI Conference on Artificial Intelligence.
 
@@ -11126,8 +11126,13 @@ The authors show that there is a clear improvement when conditioning on the glob
 
 The best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state (from Usinier et al., 2016).
 
+!! Downs
+* Requires on-policy learning, which can be sample-inefficient (Rashid et al., 2018).
+* Training the fully centralised critic becomes impractical when there are more than a handful of agents (Rashid et al., 2018).
+
 !!Resources
-Usinier et al., //Episodic exploration for deep deterministic policies: An application to starcraft micromanagement tasks.//, 2016.</pre>
+* Usinier et al., //Episodic exploration for deep deterministic policies: An application to starcraft micromanagement tasks//, 2016.
+* Rashid et al., //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, 2018.</pre>
 </div>
 <div created="20210312134131655" modified="20210317194757103" tags="concept [[Multi-agent Learning]]" title="Credit Assignment">
 <pre>!!Definiton
