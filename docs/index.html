@@ -11087,7 +11087,7 @@ $$
 * $$Pr[\overrightarrow{a}']$$:  probability that $$\overrightarrow{a}'$$ happens.
 </pre>
 </div>
-<div created="20210312143044612" modified="20210407170940524" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="COMA">
+<div created="20210312143044612" modified="20210407172509358" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="COMA">
 <pre>!! Paper
 //Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. AAAI Conference on Artificial Intelligence.
 
@@ -11111,7 +11111,7 @@ They exploit the setting of centralised learning with fully decentralised execut
 !! Model
 [img[img/coma.png]]
 
-Figure 1: (a) information flow in COMA (red arrows and components are only required during learning), (b) actor, (c) critic.
+//Figure 1: (a) information flow in COMA (red arrows and components are only required during learning), (b) actor, (c) critic.//
 
 * ''Centralised critic'' (Figure 1c), used only during training, that conditions on the true global state $$s$$ or the joint action-observation histories $$\tau$$ otherwise. It estimates $$Q(s,\mathbf{u})$$ the Q-values for the joint action $$\mathbf{u}$$.
 * ''Decentralised actors'' (Figure 1b) to optimise the agents' policies, consisting of GRUs conditioned on their own action-observation history. The actors' parameters are shared (i.e. one model for all actors), but the agents can still behave differently as they receive different observations and thus evolve different hidden states.
