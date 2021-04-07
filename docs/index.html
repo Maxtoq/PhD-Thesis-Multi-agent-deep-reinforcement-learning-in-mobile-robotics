@@ -11089,7 +11089,7 @@ $$
 * $$Pr[\overrightarrow{a}']$$:  probability that $$\overrightarrow{a}'$$ happens.
 </pre>
 </div>
-<div created="20210312143044612" modified="20210407133027752" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="COMA">
+<div created="20210312143044612" modified="20210407133841870" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="COMA">
 <pre>!! Paper
 //Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. AAAI Conference on Artificial Intelligence.
 
@@ -11118,7 +11118,7 @@ Figure 1: (a) information flow in COMA (red arrows and components are only requi
 * ''Centralised critic'' (Figure 1c), used only during training, that conditions on the true global state $$s$$ or the joint action-observation histories $$\tau$$ otherwise. It estimates $$Q(s,\mathbf{u})$$ the Q-values for the joint action $$\mathbf{u}$$.
 * ''Decentralised actors'' (Figure 1b) to optimise the agents' policies, consisting of GRUs conditioned on their own action-observation history. The actors' parameters are shared (i.e. one model for all actors), but the agents can still behave differently as they receive different observations and thus evolve different hidden states.
 * Following the TD Error estimated by the critic to optimise the actors would not be fair to each one of them, as the TD Error considers only the global reward and not the agents' actual contributions. Instead, COMA uses a ''counterfactual baseline'' for credit assignment, inspired by the [[Aristocrat Utility]]. For each agent $$a$$, an advantage function is computed to compare the Q-value for the current action $$u^a$$ to a counterfactual baseline that marginalises out $$u^a$$ while keeping the other agents' actions fixed:&lt;br /&gt;$$
-A^a(s,\mathbf{u})=Q(s,\mathbf{u})-\sum_{u'^a}\pi^a(u'^a|\tau^a)Q(s,(\mathbf{u}^{-a},u'^a)).$$$$A^a(s,\mathbf{u})$$ computes a separate baseline for each agent using the centralised critic to reason about counterfactuals in which only $$a$$'s action changes.
+A^a(s,\mathbf{u})=Q(s,\mathbf{u})-\sum_{u'^a}\pi^a(u'^a|\tau^a)Q(s,(\mathbf{u}^{-a},u'^a)),$$with $$\tau^a$$ being agent $$a$$'s action-observation history. $$A^a(s,\mathbf{u})$$ computes a separate baseline for each agent using the centralised critic to reason about counterfactuals in which only $$a$$'s action changes.
 * The numerous evaluations done by the critic to compute the counterfactual baseline can be computationally expensive. To address this, COMA uses a ''critic representation'' for more efficient evaluation of the baseline. As shown in Figure 1c, the actions of the other agents, $$\mathbf{u}_t^{-a}$$, are part of the input to the network, which outputs Q-values for each of agent $$a$$'s actions. The counterfactual baseline can then easily be calculated for each agent.
 
 !! Results
