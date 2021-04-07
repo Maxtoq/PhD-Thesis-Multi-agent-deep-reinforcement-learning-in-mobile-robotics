@@ -281,6 +281,8 @@ Error message and password prompt
 
 <li>Credit Assignment</li>
 
+<li>Draft of 'QMIX'</li>
+
 <li>Home</li>
 
 <li>Independent Q-learning</li>
@@ -10551,7 +10553,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210407080556266" list="QMIX [[Independent Q-learning]] Home [[TO DO]]" modified="20210407081217072" title="$:/StoryList">
+<div created="20210407080556266" list="[[Draft of 'QMIX']] [[Independent Q-learning]] COMA Home [[TO DO]]" modified="20210407083829324" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11087,7 +11089,7 @@ $$
 * $$Pr[\overrightarrow{a}']$$:  probability that $$\overrightarrow{a}'$$ happens.
 </pre>
 </div>
-<div created="20210312143044612" modified="20210406085843181" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="COMA">
+<div created="20210312143044612" modified="20210407084022908" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="COMA">
 <pre>!! Paper
 //Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. AAAI Conference on Artificial Intelligence.
 
@@ -11102,7 +11104,7 @@ There is a great need for new RL methods that can efficiently learn decentralise
 * ''Multi-agent Credit Assignment:'' Individual reward functions aren't always available and often fail to encourage cooperative behavior. There is a need for efficient [[credit assignment|Credit Assignment]].
 
 !! Solution
-''Multi-agent [[actor-critic|Actor-Critic]] ''method called //counterfactual multi-agent// (COMA) policy gradient, based on three main ideas:
+They exploit the setting of centralised learning with fully decentralised execution with a ''multi-agent [[actor-critic|Actor-Critic]] ''method called //counterfactual multi-agent// (COMA) policy gradient, based on three main ideas:
 
 * ''Centralised critic'' to estimate the Q-function.
 * ''Counterfactual baseline'' [[credit assignment|Credit Assignment]].
@@ -11156,6 +11158,29 @@ How to distribute the reward obtained at a team level to the individual learners
 !!Resources
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
+</div>
+<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210407082825430" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
+<pre>!! Paper
+//QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, Rashid et al., 2018. University of Oxford. ICML.
+
+!! Problem
+* Instability arises from the non-stationarity of the environment induced by simultaneously learning and exploring agents.
+* Centralised learning of joint actions is hard to scale as the joint action space grows exponentially with the number of agents.
+
+!! Solution
+
+
+!! Model
+
+
+!! Results
+
+
+!! Downs
+
+
+!!Resources
+</pre>
 </div>
 <div created="20210317173823342" modified="20210320144810660" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
