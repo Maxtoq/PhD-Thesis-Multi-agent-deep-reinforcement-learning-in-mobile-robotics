@@ -20,7 +20,8 @@
   year      = {2018},
   pages     = {2085-2087},
   cdate     = {1514764800000},
-  comment   = {VDN},
+  comment   = {VDN
+centralised value-function learning with decentralised execution},
   crossref  = {conf/atal/2018},
   file      = {:SunehagLGCZJLSL18 - Value Decomposition Networks for Cooperative Multi Agent Learning Based on Team Reward.pdf:PDF},
   groups    = {Multi-agent RL},
@@ -1070,7 +1071,7 @@
   groups        = {Communication},
   keywords      = {cs.LG, cs.AI},
   primaryclass  = {cs.LG},
-  ranking       = {rank3},
+  ranking       = {rank4},
 }
 
 @Article{Foerster2016,
@@ -1572,6 +1573,7 @@
   file     = {:6303906 - An Overview of Recent Progress in the Study of Distributed Multi Agent Coordination.pdf:PDF},
   groups   = {MAS Reviews},
   keywords = {distributed control;multi-robot systems;distributed multiagent coordination;control systems;robotics journals;distributed coordination;multiple vehicles;unmanned aerial vehicles;unmanned ground vehicles;unmanned underwater vehicles;systems and control community;Delay effects;Network topology;Heuristic algorithms;Vehicle dynamics;Vehicles;Algorithm design and analysis;Delay;Distributed coordination;formation control;multi-agent system;sensor network},
+  ranking  = {rank4},
 }
 
 @Article{Oliehoek2008,
@@ -1586,6 +1588,7 @@
   file      = {:Oliehoek2008 - Optimal and Approximate Q Value Functions for Decentralized POMDPs.pdf:PDF},
   groups    = {Multi-agent RL},
   publisher = {{AI} Access Foundation},
+  ranking   = {rank2},
 }
 
 @Article{KRAEMER201682,
@@ -1616,6 +1619,7 @@
   groups        = {Communication},
   keywords      = {cs.AI, cs.CL, cs.LG, cs.MA},
   primaryclass  = {cs.AI},
+  ranking       = {rank1},
 }
 
 @Article{10.1371/journal.pone.0172395,
@@ -1628,10 +1632,12 @@
   pages     = {1-15},
   volume    = {12},
   abstract  = {Evolution of cooperation and competition can appear when multiple adaptive agents share a biological, social, or technological niche. In the present work we study how cooperation and competition emerge between autonomous agents that learn by reinforcement while using only their raw visual input as the state representation. In particular, we extend the Deep Q-Learning framework to multiagent environments to investigate the interaction between two learning agents in the well-known video game Pong. By manipulating the classical rewarding scheme of Pong we show how competitive and collaborative behaviors emerge. We also describe the progression from competitive to collaborative behavior when the incentive to cooperate is increased. Finally we show how learning by playing against another adaptive agent, instead of against a hard-wired algorithm, results in more robust strategies. The present work shows that Deep Q-Networks can become a useful tool for studying decentralized learning of multiagent systems coping with high-dimensional environments.},
+  comment   = {Independent Deep-Q-learning},
   doi       = {10.1371/journal.pone.0172395},
   file      = {:10.1371_journal.pone.0172395 - Multiagent Cooperation and Competition with Deep Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL},
   publisher = {Public Library of Science},
+  ranking   = {rank3},
   url       = {https://doi.org/10.1371/journal.pone.0172395},
 }
 
@@ -1686,10 +1692,11 @@
   title     = {Cooperative Multi-agent Control Using Deep Reinforcement Learning},
   year      = {2017},
   pages     = {66--83},
+  comment   = {centralised actor-critic algorithm with per-agent critics},
   doi       = {10.1007/978-3-319-71682-4_5},
   file      = {:Gupta2017 - Cooperative Multi Agent Control Using Deep Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL},
-  ranking   = {rank2},
+  ranking   = {rank3},
 }
 
 @InProceedings{foerster17b,
@@ -1705,6 +1712,7 @@
   series    = {Proceedings of Machine Learning Research},
   volume    = {70},
   abstract  = {Many real-world problems, such as network packet routing and urban traffic control, are naturally modeled as multi-agent reinforcement learning (RL) problems. However, existing multi-agent RL methods typically scale poorly in the problem size. Therefore, a key challenge is to translate the success of deep learning on single-agent RL to the multi-agent setting. A major stumbling block is that independent Q-learning, the most popular multi-agent RL method, introduces nonstationarity that makes it incompatible with the experience replay memory on which deep Q-learning relies. This paper proposes two methods that address this problem: 1) using a multi-agent variant of importance sampling to naturally decay obsolete data and 2) conditioning each agent’s value function on a fingerprint that disambiguates the age of the data sampled from the replay memory. Results on a challenging decentralised variant of StarCraft unit micromanagement confirm that these methods enable the successful combination of experience replay with multi-agent RL.},
+  comment   = {Replay stabilisation for Independent Q-learning},
   file      = {:foerster17b - Stabilising Experience Replay for Deep Multi Agent Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v70/foerster17b/foerster17b.pdf},
@@ -1748,7 +1756,7 @@
   file      = {:omidshafiei17a - Deep Decentralized Multi Task Multi Agent Reinforcement Learning under Partial Observability.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v70/omidshafiei17a/omidshafiei17a.pdf},
-  ranking   = {rank2},
+  ranking   = {rank3},
   url       = {http://proceedings.mlr.press/v70/omidshafiei17a.html},
 }
 
@@ -2231,10 +2239,65 @@
   abstract = {Reinforcement learning offers to robotics a framework and set of tools for the design of sophisticated and hard-to-engineer behaviors. Conversely, the challenges of robotic problems provide both inspiration, impact, and validation for developments in reinforcement learning. The relationship between disciplines has sufficient promise to be likened to that between physics and mathematics. In this article, we attempt to strengthen the links between the two research communities by providing a survey of work in reinforcement learning for behavior generation in robots. We highlight both key challenges in robot reinforcement learning as well as notable successes. We discuss how contributions tamed the complexity of the domain and study the role of algorithms, representations, and prior knowledge in achieving these successes. As a result, a particular focus of our paper lies on the choice between model-based and model-free as well as between value-function-based and policy-search methods. By analyzing a simple problem in some detail we demonstrate how reinforcement learning approaches may be profitably applied, and we note throughout open questions and the tremendous potential for future research.},
   doi      = {10.1177/0278364913495721},
   eprint   = {https://doi.org/10.1177/0278364913495721},
-  file     = {:https\://www.cs.utexas.edu/users/sniekum/classes/RLFD-F16/papers/Kober13.pdf:PDF},
+  file     = {:doi_10.1177_0278364913495721 - Reinforcement Learning in Robotics_ a Survey.pdf:PDF},
   groups   = {Robotics},
   ranking  = {rank5},
   url      = {https://doi.org/10.1177/0278364913495721},
+}
+
+@InProceedings{10.5555/3237383.3238080,
+  author    = {Sunehag, Peter and Lever, Guy and Gruslys, Audrunas and Czarnecki, Wojciech Marian and Zambaldi, Vinicius and Jaderberg, Max and Lanctot, Marc and Sonnerat, Nicolas and Leibo, Joel Z. and Tuyls, Karl and Graepel, Thore},
+  booktitle = {Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems},
+  title     = {Value-Decomposition Networks For Cooperative Multi-Agent Learning Based On Team Reward},
+  year      = {2018},
+  address   = {Richland, SC},
+  pages     = {2085–2087},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '18},
+  abstract  = {We study the problem of cooperative multi-agent reinforcement learning with a single joint reward signal. This class of learning problems is difficult because of the often large combined action and observation spaces. In the fully centralized and decentralized approaches, we find the problem of spurious rewards and a phenomenon we call the "lazy agent'' problem, which arises due to partial observability. We address these problems by training individual agents with a novel value-decomposition network architecture, which learns to decompose the team value function into agent-wise value functions.},
+  file      = {:10.5555_3237383.3238080 - Value Decomposition Networks for Cooperative Multi Agent Learning Based on Team Reward.pdf:PDF},
+  groups    = {Multi-agent RL},
+  keywords  = {reinforcement learning, collaborative, multi-agent, q-learning, neural networks, value-decomposition, dqn},
+  location  = {Stockholm, Sweden},
+  numpages  = {3},
+  ranking   = {rank3},
+}
+
+@TechReport{yang2004multiagent,
+  author      = {Yang, Erfu and Gu, Dongbing},
+  institution = {tech. rep},
+  title       = {Multiagent reinforcement learning for multi-robot systems: A survey},
+  year        = {2004},
+  file        = {:yang2004multiagent - Multiagent Reinforcement Learning for Multi Robot Systems_ a Survey.pdf:PDF},
+  groups      = {Multi-robot},
+}
+
+@Article{Peng2017,
+  author        = {Peng Peng and Ying Wen and Yaodong Yang and Quan Yuan and Zhenkun Tang and Haitao Long and Jun Wang},
+  title         = {Multiagent Bidirectionally-Coordinated Nets: Emergence of Human-level Coordination in Learning to Play StarCraft Combat Games},
+  year          = {2017},
+  month         = mar,
+  abstract      = {Many artificial intelligence (AI) applications often require multiple intelligent agents to work in a collaborative effort. Efficient learning for intra-agent communication and coordination is an indispensable step towards general AI. In this paper, we take StarCraft combat game as a case study, where the task is to coordinate multiple agents as a team to defeat their enemies. To maintain a scalable yet effective communication protocol, we introduce a Multiagent Bidirectionally-Coordinated Network (BiCNet ['bIknet]) with a vectorised extension of actor-critic formulation. We show that BiCNet can handle different types of combats with arbitrary numbers of AI agents for both sides. Our analysis demonstrates that without any supervisions such as human demonstrations or labelled data, BiCNet could learn various types of advanced coordination strategies that have been commonly used by experienced game players. In our experiments, we evaluate our approach against multiple baselines under different scenarios; it shows state-of-the-art performance, and possesses potential values for large-scale real-world applications.},
+  archiveprefix = {arXiv},
+  eprint        = {1703.10069},
+  file          = {:Peng2017 - Multiagent Bidirectionally Coordinated Nets_ Emergence of Human Level Coordination in Learning to Play StarCraft Combat Games.pdf:PDF},
+  groups        = {Communication},
+  keywords      = {cs.AI, cs.LG},
+  primaryclass  = {cs.AI},
+  ranking       = {rank1},
+}
+
+@InProceedings{FSS1511673,
+  author     = {Matthew Hausknecht and Peter Stone},
+  booktitle  = {Sequential Decision Making for Intelligent Agents Papers from the AAAI 2015 Fall Symposium},
+  title      = {Deep Recurrent Q-Learning for Partially Observable MDPs},
+  year       = {2015},
+  abstract   = {Deep Reinforcement Learning has yielded proficient controllers for complex tasks. However, these controllers have limited memory and rely on being able to perceive the complete game screen at each decision point. To address these shortcomings, this article investigates the effects of adding recurrency to a Deep Q-Network (DQN) by replacing the first post-convolutional fully-connected layer with a recurrent LSTM. The resulting Deep Recurrent Q-Network (DRQN), although capable of seeing only a single frame at each timestep, successfully integrates information through time and replicates DQN's performance on standard Atari games and partially observed equivalents featuring flickering game screens. Additionally, when trained with partial observations and evaluated with incrementally more complete observations, DRQN's performance scales as a function of observability. Conversely, when trained with full observations and evaluated with partial observations, DRQN's performance degrades less than DQN's. Thus, given the same length of history, recurrency is a viable alternative to stacking a history of frames in the DQN's input layer and while recurrency confers no systematic advantage when learning to play the game, the recurrent net can better adapt at evaluation time if the quality of observations changes.},
+  conference = {AAAI Fall Symposium Series},
+  file       = {:FSS1511673 - Deep Recurrent Q Learning for Partially Observable MDPs.pdf:PDF},
+  groups     = {Multi-agent RL},
+  keywords   = {Deep Reinforcement Learning; LSTM; Deep Networks; Reinforcement Learning; Atari; Deep Q-Learning},
+  url        = {https://www.aaai.org/ocs/index.php/FSS/FSS15/paper/view/11673},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
