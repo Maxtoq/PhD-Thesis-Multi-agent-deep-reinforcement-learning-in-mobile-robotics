@@ -2301,6 +2301,15 @@ centralised value-function learning with decentralised execution},
   url        = {https://www.aaai.org/ocs/index.php/FSS/FSS15/paper/view/11673},
 }
 
+@InProceedings{45823,
+  author  = {David Ha and Andrew Dai and Quoc V. Le},
+  title   = {HyperNetworks},
+  year    = {2017},
+  file    = {:45823 - HyperNetworks.pdf:PDF},
+  ranking = {rank3},
+  url     = {https://openreview.net/pdf?id=rkpACe1lx},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
