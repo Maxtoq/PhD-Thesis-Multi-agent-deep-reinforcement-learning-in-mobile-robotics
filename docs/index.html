@@ -281,6 +281,8 @@ Error message and password prompt
 
 <li>Credit Assignment</li>
 
+<li>Deep Recurrent Q-Learning</li>
+
 <li>Draft of 'QMIX'</li>
 
 <li>Home</li>
@@ -10553,7 +10555,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210409140122632" list="[[Draft of 'QMIX']] COMA [[Independent Q-learning]] Home [[TO DO]]" modified="20210409141914024" title="$:/StoryList">
+<div created="20210409140122632" list="[[Deep Recurrent Q-Learning]] [[Draft of 'QMIX']] Home [[TO DO]]" modified="20210409143050473" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11159,7 +11161,11 @@ How to distribute the reward obtained at a team level to the individual learners
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
 </div>
-<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409142138051" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
+<div created="20210409143059783" modified="20210409143323306" tags="algorithm paper [[Deep Reinforcement Learning]]" title="Deep Recurrent Q-Learning">
+<pre>!! Paper
+//Deep Recurrent Q-Learning for Partially Observable MDPs//, Hausknecht and Stone, 2015.</pre>
+</div>
+<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409142436420" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
 <pre>!! Paper
 //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, Rashid et al., 2018. University of Oxford. ICML.
 
@@ -11188,7 +11194,7 @@ $$
 The goal of the architecture of QMIX, presented in Figure 1, is to enforce (2). 
 
 !!! Agent networks
-Each agent $$a$$ has an agent network to represent its value function $$Q_a(\tau^a,u^a)$$. To condition on the action-observation history $$\tau^a$$
+Each agent $$a$$ has an agent network to represent its value function $$Q_a(\tau^a,u^a)$$. To condition on the action-observation history $$\tau^a$$, the agent network uses a [[Deep Recurrent Q-Network|Deep Recurrent Q-Learning]]
 
 !! Results
 
