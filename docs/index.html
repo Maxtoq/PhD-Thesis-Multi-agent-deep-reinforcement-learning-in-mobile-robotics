@@ -289,8 +289,6 @@ Error message and password prompt
 
 <li>Deep Reinforcement Learning</li>
 
-<li>Draft of 'QMIX'</li>
-
 <li>Home</li>
 
 <li>Hypernetworks</li>
@@ -10566,7 +10564,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210409140122632" list="Hypernetworks [[Draft of 'QMIX']] Actor-Critic [[Independent Q-Learning]] Home [[TO DO]]" modified="20210409164738929" title="$:/StoryList">
+<div created="20210409140122632" list="Hypernetworks QMIX Actor-Critic [[Independent Q-Learning]] Home [[TO DO]]" modified="20210409164738929" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11182,63 +11180,6 @@ How to distribute the reward obtained at a team level to the individual learners
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409164730778" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
-<pre>!! Paper
-//QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, Rashid et al., 2018. University of Oxford. ICML.
-
-!! Problem
-* Instability arises from the non-stationarity of the environment induced by simultaneously learning and exploring agents.
-* Centralised learning of joint actions is hard to scale as the joint action space grows exponentially with the number of agents.
-* Decentralised policies are needed to solve many settings such as partial observability or communication constraints. They also help attenuate the problem that joint action spaces grow exponentially with the number of agents.
-
-!! Solution
-''QMIX'': a value-based algorithm that trains decentralised policies in a centralised end-to-end way. It estimates joint action-values with a non-linear combination of per-agent values conditioned only on local observation. The idea is to ensure that a global $$\argmax$$ on $$Q_{tot}$$ yields the same result as the individual $$\argmax$$ operations on each $$Q_a$$:
-$$
-\argmax_{\mathbf{u}}Q_{tot}(\pmb{\tau},\mathbf{u})=\begin{pmatrix}\argmax_{u^1}Q_1(\tau^1,u^1)\\...\\\argmax_{u^n}Q_n(\tau^n,u^n)\end{pmatrix},\quad\quad(1)
-$$
-with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a joint action. This allows for the computation of the $$\argmax$$ of $$Q_{tot}$$ to be tractable, even when the number of agents increases. The execution is therefore completely decentralised, with each agent simply choosing greedy actions with respect to their value function, maximizing $$Q_{tot}$$ at the same time.
-
-To satisfy (1), QMIX enforce $$Q_{tot}$$ to be ''monotonic'' through a constraint on the relationship between $$Q_{tot}$$ and each $$Q_a$$:
-$$
-\frac{\partial Q_{tot}}{\partial Q_a}\geq 0,\forall a\in A.\quad\quad(2)
-$$
-
-!! Model
-[img[img/qmix.PNG]]
-
-//Figure 1: (a) Mixing network structure, with the [[hypernetworks|Hypernetworks]] (Ha et al., 2017) that produce the weights and biases for mixing networks layers shown in blue. (b) QMIX architecture. (c) Agent network structure.//
-
-The goal of the architecture of QMIX, presented in Figure 1, is to enforce (2). 
-
-!!! Agent networks
-Each agent $$a$$ has an agent network (Figure 1.c) to represent its value function $$Q_a(\tau^a,u^a)$$. To condition on the action-observation history $$\tau^a$$, the agent network uses a [[Deep Recurrent Q-Network|Deep Recurrent Q-Learning]] with [[Gated Recurrent Units]] (GRU). It conditions on the current individual observation $$o_t^a$$ and the last action $$u^a_{t-1}$$ and outputs the value function.
-
-!!! Mixing network
-The mixing network (Figure 1.a) takes the agent networks' outputs $$Q_a$$ values and mix them into $$Q_{tot}$$. It's composed of a [[feed-forward neural network|Feed-Forward Neural Network]] whose weights are produced by [[hypernetworks|Hypernetworks]]. Each hypernetwork takes the state $$s_t$$ as input and generates the weights of one layer or the biases of the mixing network. The weights are restricted to be positive (not the biases) in order to enforce the monotonicity constraint of (2). 
-
-The state is used in the mixing network to allow the joint action-value estimates $$Q_{tot}$$ to be'' conditioned on extra state information''. However, if the state was passed as input of the monotonic network, it would constrain the integration of state information. Instead, the [[hypernetworks|Hypernetworks]] allow us to condition the weights of the monotonic network on the full state in an arbitrary way. 
-
-!!! Training
-QMIX is trained end-to-end off-policy to minimize the Mean-Squared Bellman Error as in [[Deep Q-Learning]]:
-$$
-\mathcal{L}(\theta)=\sum_{i=1}^{b}\left[\left(y^i_{tot}-Q^i_{tot}(\pmb{\tau},\mathbf{u},s;\theta)\right)^2\right],
-$$
-$$
-y_{tot}=r+\gamma \max_{\mathbf{u}'}Q_{tot}(\pmb{\tau}',\mathbf{u}',s';\theta^{-}),
-$$ 
-with $$b$$ the batch size of transitions sampled from the [[replay memory|Experience Replay]] and $$\theta^{-}$$ the parameters of the target network as in a [[Deep Q-Network|Deep Q-Learning]]. 
-
-!! Results
-The authors test the performance of QMIX in the StarCraft II Learning Environment (SC2LE) (Vinyals et al., 2017). 
-
-QMIX clearly outperforms [[Value-Decomposition Networks]] and [[Independent Q-Learning]]
-
-!! Downs
-* QMIX can't represent perfectly agent value functions that depend on the actions of the other agents at the same time step. However, it does it better than (VDN).
-
-!!Resources
-* Vinyals et al., //StarCraft II: A New Challenge for Reinforcement Learning//, 2017.</pre>
-</div>
 <div created="20210317173823342" modified="20210409144342918" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
 
@@ -11370,7 +11311,7 @@ If agents have conflicting goals, it will be impossible for all of them to maxim
 <div created="20210320144640874" modified="20210320155150684" tags="[[Reinforcement Learning]]" title="Policy-based methods">
 <pre></pre>
 </div>
-<div created="20210406085805229" modified="20210408113915208" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="QMIX">
+<div created="20210406085805229" modified="20210409170500102" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="QMIX">
 <pre>!! Paper
 //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, Rashid et al., 2018. University of Oxford. ICML.
 
@@ -11384,21 +11325,52 @@ If agents have conflicting goals, it will be impossible for all of them to maxim
 $$
 \argmax_{\mathbf{u}}Q_{tot}(\pmb{\tau},\mathbf{u})=\begin{pmatrix}\argmax_{u^1}Q_1(\tau^1,u^1)\\...\\\argmax_{u^n}Q_n(\tau^n,u^n)\end{pmatrix},\quad\quad(1)
 $$
-with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a joint action. This allows for the computation of the $$\argmax$$ of $$Q_{tot}$$ to be tractable, even when the number of agents increases.
+with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a joint action. This allows for the computation of the $$\argmax$$ of $$Q_{tot}$$ to be tractable, even when the number of agents increases. The execution is therefore completely decentralised, with each agent simply choosing greedy actions with respect to their value function, maximizing $$Q_{tot}$$ at the same time.
+
+To satisfy (1), QMIX enforce $$Q_{tot}$$ to be ''monotonic'' through a constraint on the relationship between $$Q_{tot}$$ and each $$Q_a$$:
+$$
+\frac{\partial Q_{tot}}{\partial Q_a}\geq 0,\forall a\in A.\quad\quad(2)
+$$
 
 !! Model
 [img[img/qmix.PNG]]
 
-//Figure 1: (a) Mixing network structure, with the [[hypernetworks|Hypernetwork]] (Ha et al., 2017) that produce the weights and biases for mixing networks layers shown in blue. (b) QMIX architecture. (c) Agent network structure.//
+//Figure 1: (a) Mixing network structure, with the [[hypernetworks|Hypernetworks]] (Ha et al., 2017) that produce the weights and biases for mixing networks layers shown in blue. (b) QMIX architecture. (c) Agent network structure.//
+
+The goal of the architecture of QMIX, presented in Figure 1, is to enforce (2). 
+
+!!! Agent networks
+Each agent $$a$$ has an agent network (Figure 1.c) to represent its value function $$Q_a(\tau^a,u^a)$$. To condition on the action-observation history $$\tau^a$$, the agent network uses a [[Deep Recurrent Q-Network|Deep Recurrent Q-Learning]] with [[Gated Recurrent Units]] (GRU). It conditions on the current individual observation $$o_t^a$$ and the last action $$u^a_{t-1}$$ and outputs the value function.
+
+!!! Mixing network
+The mixing network (Figure 1.a) takes the agent networks' outputs $$Q_a$$ values and mix them into $$Q_{tot}$$. It's composed of a [[feed-forward neural network|Feed-Forward Neural Network]] whose weights are produced by [[hypernetworks|Hypernetworks]]. Each hypernetwork takes the state $$s_t$$ as input and generates the weights of one layer or the biases of the mixing network. The weights are restricted to be positive (not the biases) in order to enforce the monotonicity constraint of (2). 
+
+The state is used in the mixing network to allow the joint action-value estimates $$Q_{tot}$$ to be'' conditioned on extra state information''. However, if the state was passed as input of the monotonic network, it would constrain the integration of state information. Instead, the [[hypernetworks|Hypernetworks]] allow us to condition the weights of the monotonic network on the full state in an arbitrary way. 
+
+!!! Training
+QMIX is trained end-to-end off-policy to minimize the Mean-Squared Bellman Error as in [[Deep Q-Learning]]:
+$$
+\mathcal{L}(\theta)=\sum_{i=1}^{b}\left[\left(y^i_{tot}-Q^i_{tot}(\pmb{\tau},\mathbf{u},s;\theta)\right)^2\right],
+$$
+$$
+y_{tot}=r+\gamma \max_{\mathbf{u}'}Q_{tot}(\pmb{\tau}',\mathbf{u}',s';\theta^{-}),
+$$ 
+with $$b$$ the batch size of transitions sampled from the [[replay memory|Experience Replay]] and $$\theta^{-}$$ the parameters of the target network as in a [[Deep Q-Network|Deep Q-Learning]]. 
 
 !! Results
+The authors test the performance of QMIX in the StarCraft II Learning Environment (SC2LE) (Vinyals et al., 2017). A team of units controlled by agents are tasked to kill units controlled by the StarCraft II medium level AI. Different scenarios with different team compositions are used for studying QMIX's performance, including teams with heterogeneous agent types. 
 
+QMIX clearly outperforms [[Value-Decomposition Networks]] (VDN) and [[Independent Q-Learning]] on all scenarios. Learning a joint action-value function is shown to improve performance a lot. It allows for coordinated behavior such as focus firing.
+
+Ablation studies show that non-linear value function factorization is not always needed with homogeneous agents. However, with heterogeneous agents, both central state information and non-linear value function factorization are required to achieve good performance. Non-linear mixing is shown to be useful to fully leverage central state information. 
+
+Both QMIX and VDN develop sophisticated strategies to win quicker. QMIX's behavior is even more complex, showing strongly coordinated strategies. 
 
 !! Downs
-
+* QMIX can't represent perfectly agent value functions that depend on the actions of the other agents at the same time step. However, it does it better than (VDN).
 
 !!Resources
-* Ha et al., //HyperNetworks//, 2017.</pre>
+* Vinyals et al., //StarCraft II: A New Challenge for Reinforcement Learning//, 2017.</pre>
 </div>
 <div created="20210320144605660" modified="20210320144605660" title="Reinforcement Learning">
 <pre></pre>
