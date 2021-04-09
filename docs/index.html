@@ -11159,7 +11159,7 @@ How to distribute the reward obtained at a team level to the individual learners
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
 </div>
-<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409141844104" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
+<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409142138051" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
 <pre>!! Paper
 //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, Rashid et al., 2018. University of Oxford. ICML.
 
@@ -11186,6 +11186,9 @@ $$
 //Figure 1: (a) Mixing network structure, with the [[hypernetworks|Hypernetwork]] (Ha et al., 2017) that produce the weights and biases for mixing networks layers shown in blue. (b) QMIX architecture. (c) Agent network structure.//
 
 The goal of the architecture of QMIX, presented in Figure 1, is to enforce (2). 
+
+!!! Agent networks
+Each agent $$a$$ has an agent network to represent its value function $$Q_a(\tau^a,u^a)$$. To condition on the action-observation history $$\tau^a$$
 
 !! Results
 
@@ -11351,8 +11354,8 @@ with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a jo
 <div created="20210320144605660" modified="20210320144605660" title="Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210312143343407" modified="20210320155117030" tags="" title="TO DO">
-<pre>[[Actor-Critic]]
+<div created="20210312143343407" modified="20210409142310339" tags="" title="TO DO">
+<pre>[[Actor-Critic]] to finish
 
 [[Wondeful Life Utility]]
 
@@ -11380,7 +11383,11 @@ with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a jo
 
 [[Policy gradient]]
 
-[[Q-learning]]</pre>
+[[Q-learning]]
+
+[[Hypernetworks]]
+
+[[Deep Recurrent Q-Learning]]</pre>
 </div>
 
 
