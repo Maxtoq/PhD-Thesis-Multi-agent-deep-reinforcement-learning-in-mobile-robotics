@@ -11182,7 +11182,7 @@ How to distribute the reward obtained at a team level to the individual learners
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409143833831" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
+<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409152323990" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
 <pre>!! Paper
 //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, Rashid et al., 2018. University of Oxford. ICML.
 
@@ -11211,7 +11211,10 @@ $$
 The goal of the architecture of QMIX, presented in Figure 1, is to enforce (2). 
 
 !!! Agent networks
-Each agent $$a$$ has an agent network to represent its value function $$Q_a(\tau^a,u^a)$$. To condition on the action-observation history $$\tau^a$$, the agent network uses a [[Deep Recurrent Q-Network|Deep Recurrent Q-Learning]]
+Each agent $$a$$ has an agent network (Figure 1.c) to represent its value function $$Q_a(\tau^a,u^a)$$. To condition on the action-observation history $$\tau^a$$, the agent network uses a [[Deep Recurrent Q-Network|Deep Recurrent Q-Learning]] with [[Gated Recurrent Units]] (GRU). It conditions on the current individual observation $$o_t^a$$ and the last action $$u^a_{t-1}$$ and outputs the value function.
+
+!!! Mixing network
+The mixing network (Figure 1.a) takes the agent networks' outputs $$Q_a$$ values and mix them into $$Q_{tot}$$. It's composed of a [[feed-forward neural network|Feed-Forward Neural Network]] whose weights are produced by [[hypernetworks|Hypernetworks]]. 
 
 !! Results
 
@@ -11386,7 +11389,7 @@ with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a jo
 <div created="20210320144605660" modified="20210320144605660" title="Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210312143343407" modified="20210409143842069" tags="" title="TO DO">
+<div created="20210312143343407" modified="20210409152345270" tags="" title="TO DO">
 <pre>[[Actor-Critic]] to finish
 
 [[Wondeful Life Utility]]
@@ -11419,7 +11422,9 @@ with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a jo
 
 [[Hypernetworks]]
 
-[[Deep Recurrent Q-Learning]]</pre>
+[[Deep Recurrent Q-Learning]]
+
+[[Feed-Forward Neural Network]]</pre>
 </div>
 
 
