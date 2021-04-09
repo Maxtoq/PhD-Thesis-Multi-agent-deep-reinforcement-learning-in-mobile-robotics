@@ -281,6 +281,8 @@ Error message and password prompt
 
 <li>Credit Assignment</li>
 
+<li>Draft of 'QMIX'</li>
+
 <li>Home</li>
 
 <li>Independent Q-learning</li>
@@ -10551,7 +10553,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210408083109383" list="QMIX Home [[TO DO]]" modified="20210408083109383" title="$:/StoryList">
+<div created="20210409140122632" list="[[Draft of 'QMIX']] COMA [[Independent Q-learning]] Home [[TO DO]]" modified="20210409141914024" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11157,6 +11159,43 @@ How to distribute the reward obtained at a team level to the individual learners
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
 </div>
+<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409141844104" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
+<pre>!! Paper
+//QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, Rashid et al., 2018. University of Oxford. ICML.
+
+!! Problem
+* Instability arises from the non-stationarity of the environment induced by simultaneously learning and exploring agents.
+* Centralised learning of joint actions is hard to scale as the joint action space grows exponentially with the number of agents.
+* Decentralised policies are needed to solve many settings such as partial observability or communication constraints. They also help attenuate the problem that joint action spaces grow exponentially with the number of agents.
+
+!! Solution
+''QMIX'': a value-based algorithm that trains decentralised policies in a centralised end-to-end way. It estimates joint action-values with a non-linear combination of per-agent values conditioned only on local observation. The idea is to ensure that a global $$\argmax$$ on $$Q_{tot}$$ yields the same result as the individual $$\argmax$$ operations on each $$Q_a$$:
+$$
+\argmax_{\mathbf{u}}Q_{tot}(\pmb{\tau},\mathbf{u})=\begin{pmatrix}\argmax_{u^1}Q_1(\tau^1,u^1)\\...\\\argmax_{u^n}Q_n(\tau^n,u^n)\end{pmatrix},\quad\quad(1)
+$$
+with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a joint action. This allows for the computation of the $$\argmax$$ of $$Q_{tot}$$ to be tractable, even when the number of agents increases. The execution is therefore completely decentralised, with each agent simply choosing greedy actions with respect to their value function, maximizing $$Q_{tot}$$ at the same time.
+
+To satisfy (1), QMIX enforce $$Q_{tot}$$ to be ''monotonic'' through a constraint on the relationship between $$Q_{tot}$$ and each $$Q_a$$:
+$$
+\frac{\partial Q_{tot}}{\partial Q_a}\geq 0,\forall a\in A.\quad\quad(2)
+$$
+
+!! Model
+[img[img/qmix.PNG]]
+
+//Figure 1: (a) Mixing network structure, with the [[hypernetworks|Hypernetwork]] (Ha et al., 2017) that produce the weights and biases for mixing networks layers shown in blue. (b) QMIX architecture. (c) Agent network structure.//
+
+The goal of the architecture of QMIX, presented in Figure 1, is to enforce (2). 
+
+!! Results
+
+
+!! Downs
+
+
+!!Resources
+* Ha et al., //HyperNetworks//, 2017.</pre>
+</div>
 <div created="20210317173823342" modified="20210320144810660" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
 
@@ -11188,7 +11227,7 @@ Feel free to look up the subjects I have treated, or even add your own pages and
 &lt;&lt;toc-selective-expandable &quot;paper&quot;&gt;&gt;
 &lt;/div&gt;</pre>
 </div>
-<div created="20210316092033293" modified="20210407093728365" tags="model paper [[Multi-agent Reinforcement Learning]]" title="Independent Q-learning">
+<div created="20210316092033293" modified="20210409141924912" tags="model paper [[Multi-agent Reinforcement Learning]]" title="Independent Q-learning">
 <pre>!!Paper
 //Multi-Agent Reinforcement Learning: Independent versus Cooperative Agents//, Tan, 1993. Proceedings of ICM.
 
