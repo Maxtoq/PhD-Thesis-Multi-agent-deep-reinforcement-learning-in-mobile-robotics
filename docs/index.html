@@ -10566,7 +10566,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210409140122632" list="Hypernetworks [[Draft of 'QMIX']] Actor-Critic Home [[TO DO]]" modified="20210409143908920" title="$:/StoryList">
+<div created="20210409140122632" list="Hypernetworks [[Draft of 'QMIX']] Actor-Critic Home [[TO DO]]" modified="20210409152414303" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11182,7 +11182,7 @@ How to distribute the reward obtained at a team level to the individual learners
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409152323990" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
+<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409155711159" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
 <pre>!! Paper
 //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, Rashid et al., 2018. University of Oxford. ICML.
 
@@ -11214,7 +11214,19 @@ The goal of the architecture of QMIX, presented in Figure 1, is to enforce (2).
 Each agent $$a$$ has an agent network (Figure 1.c) to represent its value function $$Q_a(\tau^a,u^a)$$. To condition on the action-observation history $$\tau^a$$, the agent network uses a [[Deep Recurrent Q-Network|Deep Recurrent Q-Learning]] with [[Gated Recurrent Units]] (GRU). It conditions on the current individual observation $$o_t^a$$ and the last action $$u^a_{t-1}$$ and outputs the value function.
 
 !!! Mixing network
-The mixing network (Figure 1.a) takes the agent networks' outputs $$Q_a$$ values and mix them into $$Q_{tot}$$. It's composed of a [[feed-forward neural network|Feed-Forward Neural Network]] whose weights are produced by [[hypernetworks|Hypernetworks]]. 
+The mixing network (Figure 1.a) takes the agent networks' outputs $$Q_a$$ values and mix them into $$Q_{tot}$$. It's composed of a [[feed-forward neural network|Feed-Forward Neural Network]] whose weights are produced by [[hypernetworks|Hypernetworks]]. Each hypernetwork takes the state $$s_t$$ as input and generates the weights of one layer or the biases of the mixing network. The weights are restricted to be positive (not the biases) in order to enforce the monotonicity constraint of (2). 
+
+The state is used in the mixing network to allow the joint action-value estimates $$Q_{tot}$$ to be'' conditioned on extra state information''. However, if the state was passed as input of the monotonic network, it would constrain the integration of state information. Instead, the [[hypernetworks|Hypernetworks]] allow us to condition the weights of the monotonic network on the full state in an arbitrary way. 
+
+!!! Training
+QMIX is trained end-to-end off-policy to minimize the following loss:
+$$
+\mathcal{L}(\theta)=\sum_{i=1}^{b}\left[\left(y^i_{tot}-Q^i_{tot}(\pmb{\tau},\mathbf{u},s;\theta)\right)^2\right],
+$$
+$$
+y_{tot}=r+\gamma \max_{\mathbf{u}'}Q_{tot}(\pmb{\tau}',\mathbf{u}',s';\theta^{-}),
+$$ 
+with $$b$$ the batch size of transitions sampled from the [[replay memory|Experience Replay]] and $$\theta^{-}$$ the parameters of the target network as in a [[Deep Q-Network|Deep Q-Learning]]
 
 !! Results
 
@@ -11389,7 +11401,7 @@ with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a jo
 <div created="20210320144605660" modified="20210320144605660" title="Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210312143343407" modified="20210409152345270" tags="" title="TO DO">
+<div created="20210312143343407" modified="20210409155730521" tags="" title="TO DO">
 <pre>[[Actor-Critic]] to finish
 
 [[Wondeful Life Utility]]
@@ -11424,7 +11436,9 @@ with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a jo
 
 [[Deep Recurrent Q-Learning]]
 
-[[Feed-Forward Neural Network]]</pre>
+[[Feed-Forward Neural Network]]
+
+[[Deep Q-Learning]]</pre>
 </div>
 
 
