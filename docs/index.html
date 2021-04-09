@@ -11182,7 +11182,7 @@ How to distribute the reward obtained at a team level to the individual learners
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409155711159" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
+<div created="20210406085805229" draft.of="QMIX" draft.title="QMIX" modified="20210409161605408" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX'">
 <pre>!! Paper
 //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, Rashid et al., 2018. University of Oxford. ICML.
 
@@ -11219,23 +11219,23 @@ The mixing network (Figure 1.a) takes the agent networks' outputs $$Q_a$$ values
 The state is used in the mixing network to allow the joint action-value estimates $$Q_{tot}$$ to be'' conditioned on extra state information''. However, if the state was passed as input of the monotonic network, it would constrain the integration of state information. Instead, the [[hypernetworks|Hypernetworks]] allow us to condition the weights of the monotonic network on the full state in an arbitrary way. 
 
 !!! Training
-QMIX is trained end-to-end off-policy to minimize the following loss:
+QMIX is trained end-to-end off-policy to minimize the Mean-Squared Bellman Error as in [[Deep Q-Learning]]:
 $$
 \mathcal{L}(\theta)=\sum_{i=1}^{b}\left[\left(y^i_{tot}-Q^i_{tot}(\pmb{\tau},\mathbf{u},s;\theta)\right)^2\right],
 $$
 $$
 y_{tot}=r+\gamma \max_{\mathbf{u}'}Q_{tot}(\pmb{\tau}',\mathbf{u}',s';\theta^{-}),
 $$ 
-with $$b$$ the batch size of transitions sampled from the [[replay memory|Experience Replay]] and $$\theta^{-}$$ the parameters of the target network as in a [[Deep Q-Network|Deep Q-Learning]]
+with $$b$$ the batch size of transitions sampled from the [[replay memory|Experience Replay]] and $$\theta^{-}$$ the parameters of the target network as in a [[Deep Q-Network|Deep Q-Learning]]. 
 
 !! Results
-
+The authors test the performance of QMIX in the StarCraft II Learning Environment (SC2LE) (Vinyals et al., 2017). 
 
 !! Downs
-
+* QMIX can't represent perfectly agent value functions that depend on the actions of the other agents at the same time step. However it does it better than [[Value-Decomposition Networks]].
 
 !!Resources
-* Ha et al., //HyperNetworks//, 2017.</pre>
+* Vinyals et al., //StarCraft II: A New Challenge for Reinforcement Learning//, 2017.</pre>
 </div>
 <div created="20210317173823342" modified="20210409144342918" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
@@ -11401,7 +11401,7 @@ with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a jo
 <div created="20210320144605660" modified="20210320144605660" title="Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210312143343407" modified="20210409155730521" tags="" title="TO DO">
+<div created="20210312143343407" modified="20210409161621385" tags="" title="TO DO">
 <pre>[[Actor-Critic]] to finish
 
 [[Wondeful Life Utility]]
@@ -11438,7 +11438,9 @@ with $$\pmb{\tau}$$ the joint action-observation history and $$\mathbf{u}$$ a jo
 
 [[Feed-Forward Neural Network]]
 
-[[Deep Q-Learning]]</pre>
+[[Deep Q-Learning]]
+
+[[Value-Decomposition Networks]]</pre>
 </div>
 
 
