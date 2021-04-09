@@ -2302,11 +2302,26 @@ centralised value-function learning with decentralised execution},
 }
 
 @InProceedings{45823,
-  author = {David Ha and Andrew Dai and Quoc V. Le},
-  title  = {HyperNetworks},
-  year   = {2017},
-  file   = {:45823 - HyperNetworks.pdf:PDF},
-  url    = {https://openreview.net/pdf?id=rkpACe1lx},
+  author    = {David Ha and Andrew Dai and Quoc V. Le},
+  booktitle = {ICLR 2017},
+  title     = {HyperNetworks},
+  year      = {2017},
+  file      = {:45823 - HyperNetworks.pdf:PDF},
+  ranking   = {rank3},
+  url       = {https://openreview.net/pdf?id=rkpACe1lx},
+}
+
+@Article{rizk2019cooperative,
+  author    = {Rizk, Yara and Awad, Mariette and Tunstel, Edward W},
+  journal   = {ACM Computing Surveys (CSUR)},
+  title     = {Cooperative heterogeneous multi-robot systems: A survey},
+  year      = {2019},
+  number    = {2},
+  pages     = {1--31},
+  volume    = {52},
+  file      = {:rizk2019cooperative - Cooperative Heterogeneous Multi Robot Systems_ a Survey.pdf:PDF},
+  groups    = {Multi-robot},
+  publisher = {ACM New York, NY, USA},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
