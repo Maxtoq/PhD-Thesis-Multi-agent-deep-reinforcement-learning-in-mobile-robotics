@@ -11184,7 +11184,7 @@ How to distribute the reward obtained at a team level to the individual learners
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210412114350376" draft.of="Value-Decomposition Networks" draft.title="Value-Decomposition Networks" modified="20210412124249341" tags="[[Multi-agent Deep Reinforcement Learning]] model paper" title="Draft of 'Value-Decomposition Networks'">
+<div created="20210412114350376" draft.of="Value-Decomposition Networks" draft.title="Value-Decomposition Networks" modified="20210412142245088" tags="[[Multi-agent Deep Reinforcement Learning]] model paper" title="Draft of 'Value-Decomposition Networks'">
 <pre>!! Paper
 //Value-Decomposition Networks For Cooperative Multi-Agent Learning//, Sunehag et al., 2018. DeepMind. AAMAS.
 
@@ -11201,10 +11201,18 @@ In this setting, several issues appear:
 !! Solution
 The value decomposition network learns a ''linear decomposition of the team value'' from the team reward signal. Each agent learn an implicit value function based only on their local observation.
 
-Additional techniques can be used to improve even more multi-agent systems. The authors investigate ''weight sharing'', ''role information'' and ''communication''. These approaches have been shown to improve sample complexity and memory requirements. 
+Additional techniques can be used to improve even more multi-agent systems. The authors investigate ''weight sharing'', ''role information'' and ''information channels''. These approaches have been shown to improve sample complexity and memory requirements. 
 
 !! Model
+a) [img[img/vdn.PNG]] b) [img[img/vdn-arch.PNG]]
 
+//Figure 1: a) Value-decomposition network structure; b) Value-decomposition network architecture with two agents.//
+
+Value-decomposition is based on the assumption that the joint action-value function can be decomposed as the sum of individual value functions of the agents:
+$$
+Q\left((h^1,...,h^n),(a^1,...,a^n)\right)\approx\sum_{i=1}^{n}\tilde{Q}_i(h^i,a^i),
+$$
+with $$h^i$$ and $$a^i$$ agent $$i$$'s history and action. Learning can be done in a centralized way by backpropagating gradients from the [[Q-learning]] rule
 
 !! Results
 
@@ -11409,7 +11417,7 @@ Both QMIX and VDN develop sophisticated strategies to win quicker. QMIX's behavi
 <div created="20210320144605660" modified="20210320144605660" title="Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210312143343407" modified="20210409161621385" tags="" title="TO DO">
+<div created="20210312143343407" modified="20210412142304616" tags="" title="TO DO">
 <pre>[[Actor-Critic]] to finish
 
 [[Wondeful Life Utility]]
@@ -11438,7 +11446,7 @@ Both QMIX and VDN develop sophisticated strategies to win quicker. QMIX's behavi
 
 [[Policy gradient]]
 
-[[Q-learning]]
+[[Q-Learning]]
 
 [[Hypernetworks]]
 
