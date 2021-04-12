@@ -2181,6 +2181,7 @@
   groups        = {Multi-agent RL},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
+  ranking       = {rank2},
 }
 
 @InProceedings{10.5555/3237383.3237451,
@@ -2232,23 +2233,24 @@
 }
 
 @InProceedings{10.5555/3237383.3238080,
-  author    = {Sunehag, Peter and Lever, Guy and Gruslys, Audrunas and Czarnecki, Wojciech Marian and Zambaldi, Vinicius and Jaderberg, Max and Lanctot, Marc and Sonnerat, Nicolas and Leibo, Joel Z. and Tuyls, Karl and Graepel, Thore},
-  booktitle = {Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems},
-  title     = {Value-Decomposition Networks For Cooperative Multi-Agent Learning Based On Team Reward},
-  year      = {2018},
-  address   = {Richland, SC},
-  pages     = {2085–2087},
-  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
-  series    = {AAMAS '18},
-  abstract  = {We study the problem of cooperative multi-agent reinforcement learning with a single joint reward signal. This class of learning problems is difficult because of the often large combined action and observation spaces. In the fully centralized and decentralized approaches, we find the problem of spurious rewards and a phenomenon we call the "lazy agent'' problem, which arises due to partial observability. We address these problems by training individual agents with a novel value-decomposition network architecture, which learns to decompose the team value function into agent-wise value functions.},
-  comment   = {VDN
+  author     = {Sunehag, Peter and Lever, Guy and Gruslys, Audrunas and Czarnecki, Wojciech Marian and Zambaldi, Vinicius and Jaderberg, Max and Lanctot, Marc and Sonnerat, Nicolas and Leibo, Joel Z. and Tuyls, Karl and Graepel, Thore},
+  booktitle  = {Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems},
+  title      = {Value-Decomposition Networks For Cooperative Multi-Agent Learning Based On Team Reward},
+  year       = {2018},
+  address    = {Richland, SC},
+  pages      = {2085–2087},
+  publisher  = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series     = {AAMAS '18},
+  abstract   = {We study the problem of cooperative multi-agent reinforcement learning with a single joint reward signal. This class of learning problems is difficult because of the often large combined action and observation spaces. In the fully centralized and decentralized approaches, we find the problem of spurious rewards and a phenomenon we call the "lazy agent'' problem, which arises due to partial observability. We address these problems by training individual agents with a novel value-decomposition network architecture, which learns to decompose the team value function into agent-wise value functions.},
+  comment    = {VDN
 centralised value-function learning with decentralised execution},
-  file      = {:10.5555_3237383.3238080 - Value Decomposition Networks for Cooperative Multi Agent Learning Based on Team Reward.pdf:PDF},
-  groups    = {Multi-agent RL},
-  keywords  = {reinforcement learning, collaborative, multi-agent, q-learning, neural networks, value-decomposition, dqn},
-  location  = {Stockholm, Sweden},
-  numpages  = {3},
-  ranking   = {rank3},
+  file       = {:10.5555_3237383.3238080 - Value Decomposition Networks for Cooperative Multi Agent Learning Based on Team Reward.pdf:PDF},
+  groups     = {Multi-agent RL},
+  keywords   = {reinforcement learning, collaborative, multi-agent, q-learning, neural networks, value-decomposition, dqn},
+  location   = {Stockholm, Sweden},
+  numpages   = {3},
+  ranking    = {rank3},
+  readstatus = {read},
 }
 
 @TechReport{yang2004multiagent,
@@ -2328,6 +2330,17 @@ centralised value-function learning with decentralised execution},
   year   = {2016},
   file   = {:HAUSKNECHT-DISSERTATION-2016.pdf:PDF},
   groups = {Communication},
+}
+
+@InProceedings{son2019qtran,
+  author       = {Son, Kyunghwan and Kim, Daewoo and Kang, Wan Ju and Hostallero, David Earl and Yi, Yung},
+  booktitle    = {International Conference on Machine Learning},
+  title        = {Qtran: Learning to factorize with transformation for cooperative multi-agent reinforcement learning},
+  year         = {2019},
+  organization = {PMLR},
+  pages        = {5887--5896},
+  file         = {:son2019qtran - Qtran_ Learning to Factorize with Transformation for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
+  groups       = {Multi-agent RL},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
