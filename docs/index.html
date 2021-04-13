@@ -289,8 +289,6 @@ Error message and password prompt
 
 <li>Deep Reinforcement Learning</li>
 
-<li>Draft of 'Deep Recurrent Q-Learning'</li>
-
 <li>Home</li>
 
 <li>Hypernetworks</li>
@@ -10568,7 +10566,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210413083500971" list="[[Draft of 'Deep Recurrent Q-Learning']] QMIX Home [[TO DO]]" modified="20210413114407302" title="$:/StoryList">
+<div created="20210413083500971" list="[[Deep Recurrent Q-Learning]] QMIX Home [[TO DO]]" modified="20210413114407302" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11177,16 +11175,21 @@ How to distribute the reward obtained at a team level to the individual learners
 <div created="20210409143915814" modified="20210409143915814" title="Deep Learning">
 <pre></pre>
 </div>
-<div created="20210409143059783" modified="20210409143323306" tags="algorithm paper [[Deep Reinforcement Learning]]" title="Deep Recurrent Q-Learning">
+<div created="20210409143059783" modified="20210413120127583" tags="algorithm paper [[Deep Reinforcement Learning]]" title="Deep Recurrent Q-Learning">
 <pre>!! Paper
-//Deep Recurrent Q-Learning for Partially Observable MDPs//, Hausknecht and Stone, 2015.</pre>
+//Deep Recurrent Q-Learning for Partially Observable MDPs//, Hausknecht and Stone, 2015.
+
+!! Problem
+[[Deep Q-Learning]] (DQN) achieves great results but has limited memory and struggles in partially observable environments. 
+
+!! Solution
+Add a recurrent layer after the convolutional layers of DQN.
+
+!! Results
+While using a single frame at each time-step, the ''DRQN manages to integrate temporal information'' and achieves similar performance to DQN on the Atari games. It also behaves a lot better than DQN with partial observability. While recurrency doesn't help learning in a completely observable environment (same as DQN), the ''DRQN adapts better at evaluation time'' when the quality of observations deteriorates. </pre>
 </div>
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
-</div>
-<div created="20210409143059783" draft.of="Deep Recurrent Q-Learning" draft.title="Deep Recurrent Q-Learning" modified="20210413114422732" tags="algorithm paper [[Deep Reinforcement Learning]]" title="Draft of 'Deep Recurrent Q-Learning'">
-<pre>!! Paper
-//Deep Recurrent Q-Learning for Partially Observable MDPs//, Hausknecht and Stone, 2015.</pre>
 </div>
 <div created="20210317173823342" modified="20210409144342918" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
