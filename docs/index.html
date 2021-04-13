@@ -301,6 +301,8 @@ Error message and password prompt
 
 <li>Independent Q-Learning</li>
 
+<li>MADDPG</li>
+
 <li>Markov Games</li>
 
 <li>Multi-agent Deep Reinforcement Learning</li>
@@ -10575,7 +10577,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210413083500971" list="DIAL QMIX Home [[TO DO]]" modified="20210413121335159" title="$:/StoryList">
+<div created="20210413083500971" list="MADDPG DIAL QMIX Home [[TO DO]]" modified="20210413121335159" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11305,6 +11307,38 @@ The paper raises important issues on cooperation in multi-agent systems:
 
 !!Resources
 * Rashid et al., //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, 2018.</pre>
+</div>
+<div created="20210413121522842" modified="20210413230319049" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="MADDPG">
+<pre>!! Paper
+//Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments//, Lowe et al., 2017. McGill, UC Berkeley, OpenAI. NIPS.
+
+!! Problem
+Traditional RL algorithms struggle in the multi-agent case:
+
+* [[Q-Learning]] has issues with the non-stationarity brought by multiple learning agents in the environment, which also prevents the use of experience replay that was crucial for stabilizing [[Deep Q-Learning]]. Also, using Q-Learning with centralised training and decentralised execution requires doing assumptions about the environment or task.
+* [[Policy gradient]] has high variance, increasing with the number of agents.
+* Model-based methods require a model of the environment including assumptions about the interactions between agents. 
+
+!! Solution
+The authors propose a general-purpose algorithm:
+
+* for ''cooperative, competitive or mixed'' interactions; 
+* with'' centralised training'' of continuous policies and ''decentralized execution'': the use of extra information during training is allowed, but the learned policies condition only on local observations during execution; 
+* without any model of the environment or necessarily a pre-defined communication protocol. 
+
+The ''Multi-agent Deep Deterministic Policy Gradient'' (MADDPG) is therefore an extension of actor-critic where the critic has extra information about the policies of other agents, while the actor conditions only on local observations. Only the actor is used during the execution.
+
+!! Model
+
+
+!! Results
+
+
+!! Downs
+
+
+!!Resources
+</pre>
 </div>
 <div created="20210317150735023" modified="20210325093025380" tags="concept [[Multi-agent Learning]]" title="Markov Games">
 <pre>!!Definition
