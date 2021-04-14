@@ -253,6 +253,8 @@ Error message and password prompt
 
 <li>$:/state/toc/Reinforcement Learning-Policy-based methods--905582679</li>
 
+<li>$:/state/toc/Reinforcement Learning/Policy-based methods-Actor-Critic--905582679</li>
+
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
 <li>$:/StoryList</li>
@@ -10565,10 +10567,13 @@ Error message and password prompt
 <div created="20210321084343837" modified="20210321084343837" title="$:/state/toc/Reinforcement Learning-Policy-based methods--905582679">
 <pre>open</pre>
 </div>
+<div created="20210414081008229" modified="20210414081008229" title="$:/state/toc/Reinforcement Learning/Policy-based methods-Actor-Critic--905582679">
+<pre>open</pre>
+</div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[Deep Deterministic Policy Gradient]] Home [[TO DO]]" title="$:/StoryList">
+<div created="20210414081000573" list="Actor-Critic [[Deep Deterministic Policy Gradient]] Home [[TO DO]]" modified="20210414081000573" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11057,9 +11062,9 @@ Error message and password prompt
 <div created="20210312132912969" modified="20210312132914337" title="$:/themes/tiddlywiki/vanilla/options/sidebarlayout">
 <pre>fixed-fluid</pre>
 </div>
-<div created="20210320144533798" modified="20210321152629542" tags="[[Policy-based methods]] algorithm" title="Actor-Critic">
+<div created="20210320144533798" modified="20210414081104806" tags="[[Policy-based methods]] algorithm" title="Actor-Critic">
 <pre>!!Definition
-[[Policy gradient]] method that uses an estimate of the [[value function|Reinforcement Learning]] to help direct the optimisation of the policy. Therefore, we learn two different functions:
+Actor-Critic is a family of [[Policy gradient]] methods that use an estimate of the [[value function|Reinforcement Learning]] to help direct the optimisation of the policy. Therefore, two different functions are learned:
 
 * A //policy function// $$\pi_\theta(a|s)$$: the ''actor'' which controls how the agent behaves (i.e. selects actions),
 * A //state-value function// $$V_w(s)$$ or //action-value function// $$Q_w(a|s)$$: the ''critic'' which measures how good the action taken is.
