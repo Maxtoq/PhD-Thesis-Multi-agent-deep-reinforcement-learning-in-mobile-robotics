@@ -293,8 +293,6 @@ Error message and password prompt
 
 <li>Deep Reinforcement Learning</li>
 
-<li>Draft of 'MADDPG'</li>
-
 <li>Home</li>
 
 <li>Hypernetworks</li>
@@ -10577,7 +10575,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210414081734042" list="[[Draft of 'MADDPG']] COMA [[Deep Deterministic Policy Gradient]] Home [[TO DO]]" modified="20210414102229022" title="$:/StoryList">
+<div created="20210414081734042" list="MADDPG COMA [[Deep Deterministic Policy Gradient]] Home [[TO DO]]" modified="20210414102229022" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11236,36 +11234,6 @@ with $$\epsilon\sim\mathcal{N}$$.
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210414102232717" draft.of="MADDPG" draft.title="MADDPG" modified="20210414133214955" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="Draft of 'MADDPG'">
-<pre>!! Paper
-//Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments//, Lowe et al., 2017. McGill, UC Berkeley, OpenAI. NIPS.
-
-!! Problem
-Traditional RL approaches struggle in he multi-agent setting:
-
-* The non-stationarity of the environment prevents the use of simple [[Experience Replay]] that is crucial for stabilizing [[Deep Q-Learning]].
-* [[Policy Gradient]] usually have very high variance, even more when multiple agents are involved. 
-* Model-based approaches require a model of the environment including assumptions about the interactions between agents. 
-
-!! Solution
-''Multi-Agent Deep Deterministic Policy Gradient'' (MADDPG) is an adaptation of [[DDPG|Deep Deterministic Policy Gradient]] to the multi-agent case. It is aimed to be general-purposed: 
-
-* It adopts the framework of ''centralized training and decentralized execution''. The learned policies will therefore only condition on local observations. However, during training, extra information about other agents' strategies is used. 
-* ''Explicit communication'' between agents is performed, but no particular communication structure is assumed.
-* It is meant for ''cooperative, competitive or mixed'' settings.
-
-!! Model
-
-
-!! Results
-
-
-!! Downs
-
-
-!!Resources
-</pre>
-</div>
 <div created="20210317173823342" modified="20210409144342918" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
 
@@ -11347,28 +11315,48 @@ The paper raises important issues on cooperation in multi-agent systems:
 !!Resources
 * Rashid et al., //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, 2018.</pre>
 </div>
-<div created="20210414102232717" modified="20210414102941527" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="MADDPG">
+<div created="20210414102232717" modified="20210414150222064" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="MADDPG">
 <pre>!! Paper
 //Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments//, Lowe et al., 2017. McGill, UC Berkeley, OpenAI. NIPS.
 
 !! Problem
 Traditional RL approaches struggle in he multi-agent setting:
 
-* [[Q-Learning]] 
+* The non-stationarity of the environment prevents the use of simple [[Experience Replay]] that is crucial for stabilizing [[Deep Q-Learning]].
+* [[Policy Gradient]] usually have very high variance, even more when multiple agents are involved. 
+* Model-based approaches require a model of the environment including assumptions about the interactions between agents. 
 
 !! Solution
+''Multi-Agent Deep Deterministic Policy Gradient'' (MADDPG) is an adaptation of [[DDPG|Deep Deterministic Policy Gradient]] to the multi-agent case. It is aimed to be general-purposed: 
 
+* It adopts the framework of ''centralised training and decentralised execution''. The learned policies will therefore only condition on local observations. However, during training, extra information about other agents' strategies is used. 
+* ''Explicit communication'' between agents is performed.
+* It is meant for ''cooperative, competitive or mixed'' settings.
 
 !! Model
+[img[img/maddpg.PNG]]
 
+//Figure 1: overall structure of MADDPG.//
+
+MADDPG is an [[actor-critic|Actor-Critic]] model with decentralised actors and one centralised critic for each agent. The centralised critics condition on the policies of all agents in order to induce cooperation. Since there is one critic for each agent, agents can have different reward functions, and thus have conflicting goals. 
+
+Training is done similarly to [[DDPG|Deep Deterministic Policy Gradient]]. The centralised action-value functions $$Q_i^\pi(\mathbf{x},a_1,...,a_n)$$ depend on some state information $$\mathbf{x}$$ which can simply be the observations of all agents or can include additional state information if needed; and on the actions of all agents $$a_1,...,a_n$$. 
+
+!!! Policy Ensembles
+In order to cope with the non-stationarity of the environment, the authors try to train an ensemble of policies for each agent instead of one. Each policy has its own set of parameters and its replay buffer. At each episode, one policy is randomly selected to be used by the agent. This ensures that agents' strategies don't overfit to a certain state of the environment. 
 
 !! Results
+Experiments are done in the Multi-Agent Particle environment [1] with different cooperative or competitive tasks that may require explicit communication. 
 
+MADDPG is compared to independent agents using various [[Deep Reinforcement Learning]] algorithms including vanilla DDPG. It's the only one to develop coordinated behavior. Overall it's more performant in all the tasks. 
+
+The agents trained with an ensemble of policies are observed to be stronger than those with a single policy.
 
 !! Downs
-
+* The input space of the action-value function grows linearly with the number of agents.
 
 !!Resources
+* [1] Multi-Agent Particle environment: https://github.com/openai/multiagent-particle-envs
 </pre>
 </div>
 <div created="20210317150735023" modified="20210325093025380" tags="concept [[Multi-agent Learning]]" title="Markov Games">
