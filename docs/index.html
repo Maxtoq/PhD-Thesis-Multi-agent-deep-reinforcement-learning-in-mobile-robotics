@@ -229,8 +229,6 @@ Error message and password prompt
 
 <li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
-<li>$:/state/toc/Multi-agent Systems-Communication--905582679</li>
-
 <li>$:/state/toc/Multi-agent Systems-Multi-agent Learning--2113121511</li>
 
 <li>$:/state/toc/Multi-agent Systems-Multi-agent Learning--905582679</li>
@@ -283,9 +281,9 @@ Error message and password prompt
 
 <li>COMA</li>
 
-<li>Communication</li>
-
 <li>Credit Assignment</li>
+
+<li>Deep Deterministic Policy Gradient</li>
 
 <li>Deep Learning</li>
 
@@ -293,15 +291,11 @@ Error message and password prompt
 
 <li>Deep Reinforcement Learning</li>
 
-<li>DIAL</li>
-
 <li>Home</li>
 
 <li>Hypernetworks</li>
 
 <li>Independent Q-Learning</li>
-
-<li>MADDPG</li>
 
 <li>Markov Games</li>
 
@@ -10535,9 +10529,6 @@ Error message and password prompt
 <div created="20210312132331715" modified="20210312133421711" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
-<div created="20210413121406823" modified="20210413121406823" title="$:/state/toc/Multi-agent Systems-Communication--905582679">
-<pre>open</pre>
-</div>
 <div created="20210317195726000" modified="20210317195726001" title="$:/state/toc/Multi-agent Systems-Multi-agent Learning--2113121511">
 <pre>open</pre>
 </div>
@@ -10577,7 +10568,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210413083500971" list="MADDPG DIAL QMIX Home [[TO DO]]" modified="20210413121335159" title="$:/StoryList">
+<div list="[[Deep Deterministic Policy Gradient]] Home [[TO DO]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11162,9 +11153,6 @@ The best performing agents are competitive with state-of-the-art centralised con
 * Usinier et al., //Episodic exploration for deep deterministic policies: An application to starcraft micromanagement tasks//, 2016.
 * Rashid et al., //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, 2018.</pre>
 </div>
-<div created="20210413121223199" modified="20210413121356612" tags="[[Multi-agent Systems]]" title="Communication">
-<pre></pre>
-</div>
 <div created="20210312134131655" modified="20210317194757103" tags="concept [[Multi-agent Learning]]" title="Credit Assignment">
 <pre>!!Definiton
 How to distribute the reward obtained at a team level to the individual learners.
@@ -11186,48 +11174,20 @@ How to distribute the reward obtained at a team level to the individual learners
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
 </div>
+<div created="20210414080825445" modified="20210414080954694" tags="[[Deep Reinforcement Learning]] model Actor-Critic" title="Deep Deterministic Policy Gradient">
+<pre></pre>
+</div>
 <div created="20210409143915814" modified="20210409143915814" title="Deep Learning">
 <pre></pre>
 </div>
-<div created="20210409143059783" modified="20210413120127583" tags="algorithm paper [[Deep Reinforcement Learning]]" title="Deep Recurrent Q-Learning">
+<div created="20210409143059783" modified="20210409143323306" tags="algorithm paper [[Deep Reinforcement Learning]]" title="Deep Recurrent Q-Learning">
 <pre>!! Paper
-//Deep Recurrent Q-Learning for Partially Observable MDPs//, Hausknecht and Stone, 2015.
-
-!! Problem
-[[Deep Q-Learning]] (DQN) achieves great results but has limited memory and struggles in partially observable environments. 
-
-!! Solution
-Add a recurrent layer after the convolutional layers of DQN.
-
-!! Results
-While using a single frame at each time-step, the ''DRQN manages to integrate temporal information'' and achieves similar performance to DQN on the Atari games. It also behaves a lot better than DQN with partial observability. While recurrency doesn't help learning in a completely observable environment (same as DQN), the ''DRQN adapts better at evaluation time'' when the quality of observations deteriorates. </pre>
+//Deep Recurrent Q-Learning for Partially Observable MDPs//, Hausknecht and Stone, 2015.</pre>
 </div>
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210413120306284" modified="20210413121205410" tags="model [[Multi-agent Deep Reinforcement Learning]] paper Communication" title="DIAL">
-<pre>!! Paper
-//Learning to Communicate with Deep Multi-Agent Reinforcement Learning//, Foerster et al., 2015. University of Oxford, DeepMind. NIPS.
-
-!! Problem
-
-
-!! Solution
-
-
-!! Model
-
-
-!! Results
-
-
-!! Downs
-
-
-!!Resources
-</pre>
-</div>
-<div created="20210317173823342" modified="20210413121331035" tags="" title="Home">
+<div created="20210317173823342" modified="20210409144342918" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
 
 Feel free to look up the subjects I have treated, or even add your own pages and make your own wiki from this one.
@@ -11308,38 +11268,6 @@ The paper raises important issues on cooperation in multi-agent systems:
 !!Resources
 * Rashid et al., //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, 2018.</pre>
 </div>
-<div created="20210413121522842" modified="20210413230319049" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="MADDPG">
-<pre>!! Paper
-//Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments//, Lowe et al., 2017. McGill, UC Berkeley, OpenAI. NIPS.
-
-!! Problem
-Traditional RL algorithms struggle in the multi-agent case:
-
-* [[Q-Learning]] has issues with the non-stationarity brought by multiple learning agents in the environment, which also prevents the use of experience replay that was crucial for stabilizing [[Deep Q-Learning]]. Also, using Q-Learning with centralised training and decentralised execution requires doing assumptions about the environment or task.
-* [[Policy gradient]] has high variance, increasing with the number of agents.
-* Model-based methods require a model of the environment including assumptions about the interactions between agents. 
-
-!! Solution
-The authors propose a general-purpose algorithm:
-
-* for ''cooperative, competitive or mixed'' interactions; 
-* with'' centralised training'' of continuous policies and ''decentralized execution'': the use of extra information during training is allowed, but the learned policies condition only on local observations during execution; 
-* without any model of the environment or necessarily a pre-defined communication protocol. 
-
-The ''Multi-agent Deep Deterministic Policy Gradient'' (MADDPG) is therefore an extension of actor-critic where the critic has extra information about the policies of other agents, while the actor conditions only on local observations. Only the actor is used during the execution.
-
-!! Model
-
-
-!! Results
-
-
-!! Downs
-
-
-!!Resources
-</pre>
-</div>
 <div created="20210317150735023" modified="20210325093025380" tags="concept [[Multi-agent Learning]]" title="Markov Games">
 <pre>!!Definition
 ''Markov games'', also called ''stochastic games'', can be defined as an extension of the [[Markov Decision Process]] (MDP) to the multi-agent case. In Markov games, both transition probabilities and expected rewards depend on the joint action of all agents. 
@@ -11390,7 +11318,7 @@ If agents have conflicting goals, it will be impossible for all of them to maxim
 <div created="20210320144640874" modified="20210320155150684" tags="[[Reinforcement Learning]]" title="Policy-based methods">
 <pre></pre>
 </div>
-<div created="20210406085805229" modified="20210413120251786" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="QMIX">
+<div created="20210406085805229" modified="20210409170500102" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="QMIX">
 <pre>!! Paper
 //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, Rashid et al., 2018. University of Oxford. ICML.
 
@@ -11441,7 +11369,7 @@ The authors test the performance of QMIX in the StarCraft II Learning Environmen
 
 QMIX clearly outperforms [[Value-Decomposition Networks]] (VDN) and [[Independent Q-Learning]] on all scenarios. Learning a joint action-value function is shown to improve performance a lot. It allows for coordinated behavior such as focus firing.
 
-Ablation studies show that non-linear value function factorization is not always needed with homogeneous agents. However, with heterogeneous agents, both central state information and non-linear value function factorization are required to achieve good performance. Non-linear mixing is shown to be useful but not crucial, at least on these tasks. 
+Ablation studies show that non-linear value function factorization is not always needed with homogeneous agents. However, with heterogeneous agents, both central state information and non-linear value function factorization are required to achieve good performance. Non-linear mixing is shown to be useful to fully leverage central state information. 
 
 Both QMIX and VDN develop sophisticated strategies to win quicker. QMIX's behavior is even more complex, showing strongly coordinated strategies. 
 
@@ -11454,7 +11382,7 @@ Both QMIX and VDN develop sophisticated strategies to win quicker. QMIX's behavi
 <div created="20210320144605660" modified="20210320144605660" title="Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210312143343407" modified="20210413121419769" tags="" title="TO DO">
+<div created="20210312143343407" modified="20210412184745687" tags="" title="TO DO">
 <pre>[[Actor-Critic]] to finish
 
 [[Wondeful Life Utility]]
@@ -11491,9 +11419,7 @@ Both QMIX and VDN develop sophisticated strategies to win quicker. QMIX's behavi
 
 [[Feed-Forward Neural Network]]
 
-[[Deep Q-Learning]]
-
-[[DIAL]]</pre>
+[[Deep Q-Learning]]</pre>
 </div>
 <div created="20210412114350376" modified="20210412150551152" tags="[[Multi-agent Deep Reinforcement Learning]] model paper" title="Value-Decomposition Networks">
 <pre>!! Paper
