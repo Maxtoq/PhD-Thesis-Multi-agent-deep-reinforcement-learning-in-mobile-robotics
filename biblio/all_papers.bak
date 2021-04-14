@@ -1648,7 +1648,8 @@
   title     = {Cooperative Multi-agent Control Using Deep Reinforcement Learning},
   year      = {2017},
   pages     = {66--83},
-  comment   = {centralised actor-critic algorithm with per-agent critics},
+  comment   = {centralised actor-critic algorithm with per-agent critics
+sharing of policy parameters},
   doi       = {10.1007/978-3-319-71682-4_5},
   file      = {:Gupta2017 - Cooperative Multi Agent Control Using Deep Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL},
