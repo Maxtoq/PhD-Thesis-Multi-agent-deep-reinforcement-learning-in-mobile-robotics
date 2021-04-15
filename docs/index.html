@@ -10579,7 +10579,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210415122357326" list="MADDPG [[Draft of 'Reinforcement Learning']] [[Decentralized POMDP]] Home [[TO DO]]" modified="20210415123008013" title="$:/StoryList">
+<div created="20210415122357326" list="[[Deep Deterministic Policy Gradient]] [[Draft of 'Reinforcement Learning']] [[Decentralized POMDP]] Home [[TO DO]]" modified="20210415130551407" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11192,7 +11192,7 @@ Decentralized Partially Observable [[Markov Decision Process|Reinforcement Learn
 !! Resources
 * Oliehoek and Amato, //A Concise Introduction to Decentralized POMDPs//, 2016: http://www.ccs.neu.edu/home/camato/publications/OliehoekAmato16book.pdf</pre>
 </div>
-<div created="20210414080825445" modified="20210414093540577" tags="[[Deep Reinforcement Learning]] model Actor-Critic" title="Deep Deterministic Policy Gradient">
+<div created="20210414080825445" modified="20210415130558861" tags="[[Deep Reinforcement Learning]] model Actor-Critic" title="Deep Deterministic Policy Gradient">
 <pre>!! Paper
 //Continuous control with deep reinforcement learning//, Lillicrap et al., 2015. DeepMind. ICLR.
 
@@ -11245,9 +11245,22 @@ with $$\epsilon\sim\mathcal{N}$$.
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210320144605660" draft.of="Reinforcement Learning" draft.title="Reinforcement Learning" modified="20210415123000106" tags="concept" title="Draft of 'Reinforcement Learning'">
+<div created="20210320144605660" draft.of="Reinforcement Learning" draft.title="Reinforcement Learning" modified="20210415130545463" tags="concept" title="Draft of 'Reinforcement Learning'">
 <pre>!! Definition
-[img[]]</pre>
+[img[img/rl.jpg]]
+
+Reinforcement Learning (RL) aims to learn how to map situations to actions in order to maximize a numerical reward signal. All agents have ''explicit goals'', can ''sense'' aspects of their environment and can influence it by ''choosing action''.
+
+The ''reward'' corresponds to the goal of a RL problem. It defines what is good or bad to do. It is //immediate//: it's sent to the agents at each time step. The agent's goal is to maximize the total reward it receives over the long run.
+
+The ''state'' corresponds to whatever information is available to the agent about its environment.
+
+!! Markov Decision Process
+The Markov Decision Process (MDP) is a classical formalization of the RL problem. It is based on the ''Markov property'' which states that &quot;all information needed to predict the future is contained in the current state&quot;:
+$$
+P(x_{t+1}=x|x_0,...,x_{t-1},x_t)=P(x_{t+1}=x|x_t)
+$$
+__Definition:__ A MDP is defined as a tuple \math</pre>
 </div>
 <div created="20210317173823342" modified="20210409144342918" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
