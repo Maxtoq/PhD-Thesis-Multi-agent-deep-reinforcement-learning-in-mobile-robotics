@@ -10579,7 +10579,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210415122357326" list="[[Deep Deterministic Policy Gradient]] [[Draft of 'Reinforcement Learning']] [[Decentralized POMDP]] Home [[TO DO]]" modified="20210415130551407" title="$:/StoryList">
+<div created="20210415122357326" list="COMA [[Deep Deterministic Policy Gradient]] [[Draft of 'Reinforcement Learning']] [[Decentralized POMDP]] Home [[TO DO]]" modified="20210415131520697" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11115,7 +11115,7 @@ $$
 * $$Pr[\overrightarrow{a}']$$:  probability that $$\overrightarrow{a}'$$ happens.
 </pre>
 </div>
-<div created="20210312143044612" modified="20210414133416363" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="COMA">
+<div created="20210312143044612" modified="20210415131553568" tags="model paper [[Multi-agent Deep Reinforcement Learning]]" title="COMA">
 <pre>!! Paper
 //Counterfactual Multi-Agent Policy Gradient//, Foerster et al., 2018. University of Oxford. AAAI Conference on Artificial Intelligence.
 
@@ -11245,7 +11245,7 @@ with $$\epsilon\sim\mathcal{N}$$.
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210320144605660" draft.of="Reinforcement Learning" draft.title="Reinforcement Learning" modified="20210415130545463" tags="concept" title="Draft of 'Reinforcement Learning'">
+<div created="20210320144605660" draft.of="Reinforcement Learning" draft.title="Reinforcement Learning" modified="20210415131514824" tags="concept" title="Draft of 'Reinforcement Learning'">
 <pre>!! Definition
 [img[img/rl.jpg]]
 
@@ -11260,7 +11260,11 @@ The Markov Decision Process (MDP) is a classical formalization of the RL problem
 $$
 P(x_{t+1}=x|x_0,...,x_{t-1},x_t)=P(x_{t+1}=x|x_t)
 $$
-__Definition:__ A MDP is defined as a tuple \math</pre>
+__Definition:__ A MDP is defined as a tuple $$\mathcal{M}=\langle\mathcal{X},\mathcal{A},p,r\rangle$$ where: 
+
+* $$\mathcal{X}$$ is the ''state space'', i.e. all the states that the environment can be in,
+* $$\mathcal{A}$$ is the ''action space'', i.e. all the action the agent can take,
+* $$p$$ is the ''transition probability'' such that for any $$x,y\in\mathcal{X},a\in\mathcal{A}$$, the probability of transitioning to state $$y$$ from state $$x$$ when taking action $$a$$:</pre>
 </div>
 <div created="20210317173823342" modified="20210409144342918" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
