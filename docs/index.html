@@ -295,8 +295,6 @@ Error message and password prompt
 
 <li>Deep Reinforcement Learning</li>
 
-<li>Draft of 'Reinforcement Learning'</li>
-
 <li>Home</li>
 
 <li>Hypernetworks</li>
@@ -10579,7 +10577,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210415122357326" list="COMA [[Deep Deterministic Policy Gradient]] [[Draft of 'Reinforcement Learning']] [[Decentralized POMDP]] Home [[TO DO]]" modified="20210415131520697" title="$:/StoryList">
+<div created="20210415122357326" list="COMA [[Deep Deterministic Policy Gradient]] [[Reinforcement Learning]] [[Decentralized POMDP]] Home [[TO DO]]" modified="20210415131520697" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11245,27 +11243,6 @@ with $$\epsilon\sim\mathcal{N}$$.
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210320144605660" draft.of="Reinforcement Learning" draft.title="Reinforcement Learning" modified="20210415131514824" tags="concept" title="Draft of 'Reinforcement Learning'">
-<pre>!! Definition
-[img[img/rl.jpg]]
-
-Reinforcement Learning (RL) aims to learn how to map situations to actions in order to maximize a numerical reward signal. All agents have ''explicit goals'', can ''sense'' aspects of their environment and can influence it by ''choosing action''.
-
-The ''reward'' corresponds to the goal of a RL problem. It defines what is good or bad to do. It is //immediate//: it's sent to the agents at each time step. The agent's goal is to maximize the total reward it receives over the long run.
-
-The ''state'' corresponds to whatever information is available to the agent about its environment.
-
-!! Markov Decision Process
-The Markov Decision Process (MDP) is a classical formalization of the RL problem. It is based on the ''Markov property'' which states that &quot;all information needed to predict the future is contained in the current state&quot;:
-$$
-P(x_{t+1}=x|x_0,...,x_{t-1},x_t)=P(x_{t+1}=x|x_t)
-$$
-__Definition:__ A MDP is defined as a tuple $$\mathcal{M}=\langle\mathcal{X},\mathcal{A},p,r\rangle$$ where: 
-
-* $$\mathcal{X}$$ is the ''state space'', i.e. all the states that the environment can be in,
-* $$\mathcal{A}$$ is the ''action space'', i.e. all the action the agent can take,
-* $$p$$ is the ''transition probability'' such that for any $$x,y\in\mathcal{X},a\in\mathcal{A}$$, the probability of transitioning to state $$y$$ from state $$x$$ when taking action $$a$$:</pre>
-</div>
 <div created="20210317173823342" modified="20210409144342918" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
 
@@ -11502,8 +11479,42 @@ Both QMIX and VDN develop sophisticated strategies to win quicker. QMIX's behavi
 !!Resources
 * Vinyals et al., //StarCraft II: A New Challenge for Reinforcement Learning//, 2017.</pre>
 </div>
-<div created="20210320144605660" modified="20210320144605660" title="Reinforcement Learning">
-<pre></pre>
+<div created="20210320144605660" modified="20210415173401613" tags="concept" title="Reinforcement Learning">
+<pre>!! Definition
+[img[img/rl.jpg]]
+
+Reinforcement Learning (RL) aims to learn how to map situations to actions in order to maximize a numerical reward signal. All agents have ''explicit goals'', can ''sense'' aspects of their environment and can influence it by ''choosing action''.
+
+The ''reward'' corresponds to the goal of a RL problem. It defines what is good or bad to do. It is //immediate//: it's sent to the agents at each time step. The agent's goal is to maximize the total reward it receives over the long run.
+
+The ''state'' corresponds to whatever information is available to the agent about its environment.
+
+!! Markov Decision Process
+The Markov Decision Process (MDP) is a classical formalization of the RL problem. It is based on the ''Markov property'' which states that &quot;all information needed to predict the future is contained in the current state&quot;:
+$$
+P(x_{t+1}=x|x_0,...,x_{t-1},x_t)=P(x_{t+1}=x|x_t)
+$$
+__Definition:__ A MDP is defined as a tuple $$\mathcal{M}=\langle\mathcal{X},\mathcal{A},p,r\rangle$$ where: 
+
+* $$\mathcal{X}$$ is the ''state space'', i.e. all the states that the environment can be in,
+* $$\mathcal{A}$$ is the ''action space'', i.e. all the action the agent can take,
+* $$p$$ is the ''transition probability'' such that for any $$x,y\in\mathcal{X},a\in\mathcal{A}$$, the probability of transitioning to state $$y$$ from state $$x$$ when taking action $$a$$ is:&lt;br /&gt;$$
+p(y|x,a)=\mathbb{P}(x_{t+1}=y|x_t=x,a_t=a),$$
+* $$r$$ is the ''reward function''.
+
+!! Policy
+The policy defines the agent's ''way of behaving'' at any given time. It's a decision rule that maps states to actions. It can be of two kinds:
+
+* ''Deterministic'': $$\pi_t:\mathcal{X}\rightarrow\mathcal{A}, \pi_t(x)=a$$ is the action chosen in state $$x$$ at time $$t$$,
+* ''Stochastic'': $$\pi_t:\mathcal{X},\mathcal{A}\rightarrow[0,1], \pi_t(x,a)=\mathbb{P}(a_t=a|x_t=x)$$ is the probability of taking action $$a$$ in state $$x$$ at time $$t$$.
+
+!! Value
+The value is a measure of the quality of a state or a state-action couple. The value of a state is defined as ''the total discounted return an agent can expect to accumulate starting from that state and following its policy''.
+
+The ''return'' $$G_t$$ is the ''total sum of discounted rewards'' starting from time $$t$$:
+$$
+G_t=R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+...=\sum
+$$</pre>
 </div>
 <div created="20210312143343407" modified="20210412184745687" tags="" title="TO DO">
 <pre>[[Actor-Critic]] to finish
