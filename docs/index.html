@@ -11558,7 +11558,7 @@ $$
 G_t=R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+...=\sum
 $$</pre>
 </div>
-<div created="20210416111423085" modified="20210416123528277" tags="[[Multi-agent Deep Reinforcement Learning]] model paper" title="Stabilising Experience Replay for MADRL">
+<div created="20210416111423085" modified="20210416130658568" tags="[[Multi-agent Deep Reinforcement Learning]] model paper" title="Stabilising Experience Replay for MADRL">
 <pre>!! Paper
 //Stabilising Experience Replay for Depp Multi-Agent Reinforcement Learning//, Foerster et al., 2017. University of Oxford, Microsoft Research. ICML.
 
@@ -11571,7 +11571,7 @@ Having multiple learning agents makes the environment non-stationary, which make
 Aiming at reducing non-stationarity by making [[experience replay|Experience Replay]] work with multi-agent RL, the authors propose two methods:
 
 # ''Multi-Agent Importance Sampling'': modifying importance sampling to include the multi-agent factor and decay obsolete data more efficiently.
-# ''Multi-Agent Fingerprints'': Include the age of the data sampled from the replay memory in the value computation through a fingerprint.
+# ''Multi-Agent Fingerprints'': including the age of the data sampled from the replay memory in the value computation through a fingerprint.
 
 !!! Multi-Agent Importance Sampling
 In order to train on ''off-environment'' data, we need to take in consideration what's changing in the environment. The policies are the non-stationary component of the system. Since we know the policies of all agents at each stage, we know exactly how the environment has changed between two stages. Therefore, we can use this knowledge to correct the weighting of each sample from the replay memory.
@@ -11583,12 +11583,18 @@ $$
 \mathcal{L}(\theta)=\sum_{i=1}^b\frac{\pi_{-a}^{t_r}(\mathbf{u}_{-a}|s)}{\pi_{-a}^{t_i}(\mathbf{u}_{-a}|s)}\left[\big(y^{DQN}_i-Q(s,u;\theta)\big)^2\right]
 $$
 
+!!! Multi-Agent Fingerprints
+To stabilise experience replay, agents should have an idea of when a particular sample has been experienced. The authors therefore add a simple fingerprint to the observation containing the training iteration number $$e$$ and the rate of observation $$\epsilon$$: $$O'(s)=\{O(s),\epsilon,e\}$$.
 
 !! Model
-
+The model used is a [[Deep Recurrent Q-Network|Deep Recurrent Q-Learning]] with no communication.
 
 !! Results
+Experimentation is done in the StarCraft Micromanagement environment, with homogeneous teams of agents tasked with cooperation to kill enemy units. 
 
+Importance sampling is slightly better than vanilla experience replay.
+
+The real improvement is brought by the fingerprints. The performance of the agents are dramatically improved. This shows that a simple fingerprint about the age of an observation can help the model track the quality of the other agents' policies and make a proper use of the experience buffer.
 
 !! Downs
 
