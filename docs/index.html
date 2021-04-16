@@ -327,6 +327,8 @@ Error message and password prompt
 
 <li>Reinforcement Learning</li>
 
+<li>Stabilising Experience Replay for MADRL</li>
+
 <li>TO DO</li>
 
 <li>Value-Decomposition Networks</li>
@@ -10597,7 +10599,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210416072450856" list="[[Value-Decomposition Networks]] [[Decentralized POMDP]] [[Reinforcement Learning]] Home [[TO DO]]" modified="20210416111327069" title="$:/StoryList">
+<div created="20210416072450856" list="[[Stabilising Experience Replay for MADRL]] [[Value-Decomposition Networks]] [[Decentralized POMDP]] [[Reinforcement Learning]] Home [[TO DO]]" modified="20210416111327069" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11555,6 +11557,44 @@ The ''return'' $$G_t$$ is the ''total sum of discounted rewards'' starting from 
 $$
 G_t=R_{t+1}+\gamma R_{t+2}+\gamma^2R_{t+3}+...=\sum
 $$</pre>
+</div>
+<div created="20210416111423085" modified="20210416123528277" tags="[[Multi-agent Deep Reinforcement Learning]] model paper" title="Stabilising Experience Replay for MADRL">
+<pre>!! Paper
+//Stabilising Experience Replay for Depp Multi-Agent Reinforcement Learning//, Foerster et al., 2017. University of Oxford, Microsoft Research. ICML.
+
+!! Problem
+Multi-agent RL methods typically scale poorly with the problem size.
+
+Having multiple learning agents makes the environment non-stationary, which makes [[experience replay|Experience Replay]] unusable. Indeed, in an non-stationary environment, past experiences become ''off-envrionment'' data. But [[Deep Q-Learning]] (DQL) relies on experience replay to work well. Experience replay was a crucial tool in DQL, allowing for more stable training and greatly increased sample efficiency. Thus, vanilla DQL struggles in the multi-agent setting.
+
+!! Solution
+Aiming at reducing non-stationarity by making [[experience replay|Experience Replay]] work with multi-agent RL, the authors propose two methods:
+
+# ''Multi-Agent Importance Sampling'': modifying importance sampling to include the multi-agent factor and decay obsolete data more efficiently.
+# ''Multi-Agent Fingerprints'': Include the age of the data sampled from the replay memory in the value computation through a fingerprint.
+
+!!! Multi-Agent Importance Sampling
+In order to train on ''off-environment'' data, we need to take in consideration what's changing in the environment. The policies are the non-stationary component of the system. Since we know the policies of all agents at each stage, we know exactly how the environment has changed between two stages. Therefore, we can use this knowledge to correct the weighting of each sample from the replay memory.
+
+When collecting an experience in the replay memory at time $$t_c$$, we record also the policies of other agents $$\pi_{-a}^{t_c}(\mathbf{u}_{-a}|s)$$, forming an augmented transition tuple $$\langle s,u_a,r,\pi_{-a}^{t_c}(\mathbf{u}_{-a}|s)\rangle^{t_c}$$. 
+
+At the time of replay, we train off-environment by minimizing an importance weighted Mean Squared Bellman Error:
+$$
+\mathcal{L}(\theta)=\sum_{i=1}^b\frac{\pi_{-a}^{t_r}(\mathbf{u}_{-a}|s)}{\pi_{-a}^{t_i}(\mathbf{u}_{-a}|s)}\left[\big(y^{DQN}_i-Q(s,u;\theta)\big)^2\right]
+$$
+
+
+!! Model
+
+
+!! Results
+
+
+!! Downs
+
+
+!!Resources
+</pre>
 </div>
 <div created="20210312143343407" modified="20210412184745687" tags="" title="TO DO">
 <pre>[[Actor-Critic]] to finish
