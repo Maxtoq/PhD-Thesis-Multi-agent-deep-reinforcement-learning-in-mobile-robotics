@@ -229,6 +229,14 @@ Error message and password prompt
 
 <li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
+<li>$:/state/toc/concept-Reinforcement Learning--905582679</li>
+
+<li>$:/state/toc/concept/Reinforcement Learning-Deep Reinforcement Learning--905582679</li>
+
+<li>$:/state/toc/concept/Reinforcement Learning-Policy-based methods--905582679</li>
+
+<li>$:/state/toc/concept/Reinforcement Learning/Policy-based methods-Actor-Critic--905582679</li>
+
 <li>$:/state/toc/Multi-agent Systems-Multi-agent Learning--2113121511</li>
 
 <li>$:/state/toc/Multi-agent Systems-Multi-agent Learning--905582679</li>
@@ -10535,6 +10543,18 @@ Error message and password prompt
 <div created="20210312132331715" modified="20210312133421711" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
 </div>
+<div created="20210416072432218" modified="20210416072432218" title="$:/state/toc/concept-Reinforcement Learning--905582679">
+<pre>open</pre>
+</div>
+<div created="20210416072434771" modified="20210416072434771" title="$:/state/toc/concept/Reinforcement Learning-Deep Reinforcement Learning--905582679">
+<pre>open</pre>
+</div>
+<div created="20210416072435827" modified="20210416072435827" title="$:/state/toc/concept/Reinforcement Learning-Policy-based methods--905582679">
+<pre>open</pre>
+</div>
+<div created="20210416072446387" modified="20210416072446387" title="$:/state/toc/concept/Reinforcement Learning/Policy-based methods-Actor-Critic--905582679">
+<pre>open</pre>
+</div>
 <div created="20210317195726000" modified="20210317195726001" title="$:/state/toc/Multi-agent Systems-Multi-agent Learning--2113121511">
 <pre>open</pre>
 </div>
@@ -10577,7 +10597,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210415122357326" list="COMA [[Deep Deterministic Policy Gradient]] [[Reinforcement Learning]] [[Decentralized POMDP]] Home [[TO DO]]" modified="20210415131520697" title="$:/StoryList">
+<div created="20210416072450856" list="[[Decentralized POMDP]] [[Reinforcement Learning]] Home [[TO DO]]" modified="20210416075244332" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11183,9 +11203,29 @@ How to distribute the reward obtained at a team level to the individual learners
 * Mataric, //Learning to behave socially//, 1994
 * Panait and Luke, //Cooperative Multi-Agent Learning: The State of the Art//, 2005</pre>
 </div>
-<div created="20210414151649375" modified="20210414215813564" tags="[[Multi-agent Learning]] concept" title="Decentralized POMDP">
+<div created="20210414151649375" modified="20210416111319505" tags="[[Multi-agent Learning]] concept" title="Decentralized POMDP">
 <pre>!! Definition
-Decentralized Partially Observable [[Markov Decision Process|Reinforcement Learning]] (Dec-POMDP) is a formal framework that represents a probabilistic generalization of a multi-agent environment and its interaction. It can be used for decision making in a team of cooperative agents, considering the uncertainty of the environment and communication between agents. 
+[img[img/dec-pomdp.PNG]]
+
+Decentralized Partially Observable [[Markov Decision Process|Reinforcement Learning]] (Dec-POMDP) is a formal framework that represents a probabilistic generalization of a multi-agent environment and its interaction. [[Partially Observable MDP]]s (POMDP) provide a framework for the RL problem when dealing with uncertainty, but only in the single agent case. Dec-POMDP therefore extends this framework to the multi-agent case, as described in the figure above. It can be used for decision making in a team of cooperative agents, considering the uncertainty of the environment and, potentially, communication between agents. 
+
+''Definition (Dec-POMDP).'' A //decentralized partially observable Markov decision process// is defined as a tuple $$\mathcal{M}=\langle\mathbb{D},\mathbb{S},\mathbb{A},T,\mathbb{O},O,R,h,b_0\rangle$$, where
+
+* $$\mathbb{D}={1,..,n}$$, is the set of $$n$$ agents,
+* $$\mathbb{S}$$ is a (finite) set of states,
+* $$\mathbb{A}=\times_{i\in\mathbb{D}}\mathbb{A}_i$$, is the set of joint actions, $$\mathbb{A}_i$$ is the set of actions available to agent $$i$$,
+* $$T$$ is the transition probability function,
+* $$\mathbb{O}=\times_{i\in\mathbb{D}}\mathbb{O}_i$$, is the set of joint observations,
+* $$O$$ is the observation probability function,
+* $$R:\mathbb{S}\times \mathbb{A}\rightarrow\mathbb{R}$$, is the immediate reward function mapping states and joint actions to real numbers,
+* $$h$$ is the horizon of the problem, i.e. the number of steps during which the agents will interact with their environment,
+* $$b_0\in\Delta(\mathbb{S})$$, is the initial state distribution at time $$t=0$$.
+
+At every stage $$t$$, each agent $$i$$ takes an action $$a_{i,t}$$, leading to one joint action $$a_t=\langle a_{1,t},...,a_{n,t}\rangle$$. In the same way, at every stage $$t$$, the environment emits one joint observation $$o_t=\langle o_{1,t},...,o_{n,t}\rangle$$ from which each agent $$i$$ only observes its own component $$o_{i,t}$$. The observation function $$O$$ specifies the probabilities $$Pr(o|a,s')$$ of joint observations.
+
+The goal is to optimize the behavior of the team of agents over all $$h$$ stages, in order to maximize an optimality criterion based on a combination of all the immediate rewards (e.g. the discounted expected cumulative reward). The planning problem amounts to finding a tuple of policies (one for each agent), called a ''joint policy'', that maximizes this optimality criterion.
+
+The setting of ''decentralized execution'' is assumed: the agents must act based only on their observed behavior. However, a communication mechanism can be modeled implicitly through the observations and actions. 
 
 !! Resources
 * Oliehoek and Amato, //A Concise Introduction to Decentralized POMDPs//, 2016: http://www.ccs.neu.edu/home/camato/publications/OliehoekAmato16book.pdf</pre>
