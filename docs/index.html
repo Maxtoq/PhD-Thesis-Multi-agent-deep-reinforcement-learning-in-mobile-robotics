@@ -10601,7 +10601,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210416072450856" list="LOLA [[Stabilising Experience Replay for MADRL]] [[Value-Decomposition Networks]] [[Decentralized POMDP]] [[Reinforcement Learning]] Home [[TO DO]]" modified="20210416111327069" title="$:/StoryList">
+<div created="20210416072450856" list="LOLA [[Stabilising Experience Replay for MADRL]] [[Value-Decomposition Networks]] [[Decentralized POMDP]] [[Reinforcement Learning]] Home [[TO DO]]" modified="20210416144551454" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11368,24 +11368,22 @@ The paper raises important issues on cooperation in multi-agent systems:
 !!Resources
 * Rashid et al., //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, 2018.</pre>
 </div>
-<div created="20210416131208509" modified="20210416131511085" tags="[[Multi-agent Deep Reinforcement Learning]] model paper" title="LOLA">
+<div created="20210416131208509" modified="20210416153906551" tags="model paper [[Multi-agent Reinforcement Learning]]" title="LOLA">
 <pre>!! Paper
 //Learning with Opponent-Learning Awareness//, Foerster et al., 2017. University of Oxford, OpenAI. AAMAS.
 
 !! Problem
-
+Multiple learners induces non-stationarity of the environment, which leads to unstable training and bad performance. 
 
 !! Solution
-
-
-!! Model
-
+''Learning with Opponent-Learning Awareness'' (LOLA) is a method in which agents model the learning properties of other agents. It introduces a learning rule that takes into account the future learning step of the opponent, thus optimizing $$V^1(\theta^1, \theta^2+\Delta\theta^2)$$, with $$V^1$$ being the value for agent 1 and $$\theta^1$$ and $$\theta^2$$ the parameters of each agent's policy. This learning rule is adapted to be used in Deep RL.
 
 !! Results
-
+LOLA proves to improve performance and induce cooperation in sequential social games and a very simple grid world environment, with two players. 
 
 !! Downs
-
+* The learning rule is studied in two-player very simple games. With more agents, it will become very hard to compute.
+* The authors say that LOLA could be exploited in the same way it exploits naïve learners. 
 
 !!Resources
 </pre>
