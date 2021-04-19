@@ -303,13 +303,13 @@ Error message and password prompt
 
 <li>Deep Reinforcement Learning</li>
 
-<li>Draft of 'MAVEN 1'</li>
-
 <li>Home</li>
 
 <li>Hypernetworks</li>
 
 <li>Independent Q-Learning</li>
+
+<li>IPPO</li>
 
 <li>LOLA</li>
 
@@ -10605,7 +10605,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210419080356052" list="[[Draft of 'MAVEN 1']] MAVEN QMIX Home [[TO DO]]" modified="20210419093948309" title="$:/StoryList">
+<div created="20210419080356052" list="IPPO MAVEN QMIX Home [[TO DO]]" modified="20210419093948309" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11291,30 +11291,6 @@ with $$\epsilon\sim\mathcal{N}$$.
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210419165817721" draft.of="MAVEN 1" draft.title="IPPO" modified="20210419173249804" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'MAVEN 1'">
-<pre>!! Paper
-//Is Independent Learning All You Need in the StarCraft Multi-Agent Challenge?//, Schroeder de Witt et al., 2020. University of Oxford, NVIDIA.
-
-!! Problem
-Independent learning (IL) shows surprisingly good results in some tasks that should require complex coordination strategies. However, previous IL methods suffer from theoretical limitations resulting in learning instabilities and suboptimal performance. 
-
-While methods that use centralized learning of joint action-value or policy reduce issues brought by partial observability and non-stationarity, they must cope with joint action spaces that grow exponentially with respect to the number of agents. Typically, value factorization ([[Value-Decomposition Networks]], [[QMIX]]) is prone to ''relative overgeneralization'', a learning pathology leading to suboptimal joint policies arising when multiple agents must coordinate but receive negative rewards if only a subset of them do so. 
-
-!! Solution
-Independent [[Proximal Policy Optimization]] (IPPO) is a multi-agent version of PPO that learns decentralised policies based only on local observations. Centralised training is exploited solely through sharing network parameters between agents. No additional data is used during training and the method doesn't compute any joint action-value. 
-
-!! Model
-PPO is used to learn decentralised policies. Both critics and actors condition only on local observations and share parameters across agents. Both the policy and value are clipped. 
-
-!! Results
-IPPO is evaluated on the StarCraft Multi-Agent Challenge
-
-!! Downs
-
-
-!!Resources
-</pre>
-</div>
 <div created="20210317173823342" modified="20210419165808839" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
 
@@ -11395,6 +11371,38 @@ The paper raises important issues on cooperation in multi-agent systems:
 
 !!Resources
 * Rashid et al., //QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, 2018.</pre>
+</div>
+<div created="20210419165817721" modified="20210419180606574" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="IPPO">
+<pre>!! Paper
+//Is Independent Learning All You Need in the StarCraft Multi-Agent Challenge?//, Schroeder de Witt et al., 2020. University of Oxford, NVIDIA.
+
+!! Problem
+Independent learning (IL) shows surprisingly good results in some tasks that should require complex coordination strategies. However, previous IL methods suffer from theoretical limitations resulting in learning instabilities and suboptimal performance. 
+
+While methods that use centralized learning of joint action-value or policy reduce issues brought by partial observability and non-stationarity, they must cope with joint action spaces that grow exponentially with respect to the number of agents. Typically, value factorization ([[Value-Decomposition Networks]], [[QMIX]]) is prone to ''relative overgeneralization'', a learning pathology leading to suboptimal joint policies arising when multiple agents must coordinate but receive negative rewards if only a subset of them do so. 
+
+!! Solution
+Independent [[Proximal Policy Optimization]] (IPPO) is a multi-agent version of PPO that learns decentralised policies based only on local observations. Centralised training is exploited solely through sharing network parameters between agents. No additional state data is used during training and the method doesn't compute any joint action-value. 
+
+!! Model
+PPO is used to learn decentralised policies. Both critics and actors condition only on local observations and share parameters across agents. Both the policy and value are clipped. 
+
+!! Results
+IPPO is evaluated on the StarCraft Multi-Agent Challenge (SMAC; Samvelyan et al., 2019) and compared with previous value-based approaches, previous IL methods and MAPPO, another multi-agent variant of [[PPO|Proximal Policy Optimization]] that uses centralised state information during training.
+
+IPPO is superior to previous IL methods. It outperforms MAPPO and [[QMIX]] on several maps and achieves good results on very hard maps, even beating [[MAVEN]] on one of them. This implies that centralised learning of joint action-value based on centralised state information may not be necessary to learn coordinated strategies.
+
+The authors show that policy clipping is essential to performance, and that value clipping improves performance on some maps. 
+
+Overall, PPO's optimisation objective seems very efficient for cooperative multi-agent reinforcement learning. 
+
+Experiments also show that SMAC doesn't necessarily requires neither joint nor centralised value functions learning, which shows that SMAC is free of some obstacles to IL that arise in some matrix games. 
+
+!! Downs
+
+
+!!Resources
+* Samvelyan et al., //The StarCraft Multi-Agent Challenge//, 2019.</pre>
 </div>
 <div created="20210416131208509" modified="20210416153906551" tags="model paper [[Multi-agent Reinforcement Learning]]" title="LOLA">
 <pre>!! Paper
