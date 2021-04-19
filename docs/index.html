@@ -303,8 +303,6 @@ Error message and password prompt
 
 <li>Deep Reinforcement Learning</li>
 
-<li>Draft of 'QMIX 1'</li>
-
 <li>Home</li>
 
 <li>Hypernetworks</li>
@@ -316,6 +314,8 @@ Error message and password prompt
 <li>MADDPG</li>
 
 <li>Markov Games</li>
+
+<li>MAVEN</li>
 
 <li>Multi-agent Deep Reinforcement Learning</li>
 
@@ -10603,7 +10603,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210419080356052" list="[[Draft of 'QMIX 1']] QMIX Home [[TO DO]]" modified="20210419093948309" title="$:/StoryList">
+<div created="20210419080356052" list="MAVEN QMIX Home [[TO DO]]" modified="20210419093948309" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11289,28 +11289,6 @@ with $$\epsilon\sim\mathcal{N}$$.
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210419094217480" draft.of="QMIX 1" draft.title="MAVEN" modified="20210419094332635" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX 1'">
-<pre>!! Paper
-//MAVEN: Multi-Agent Variational Exploration//, Mahajan et al., 2020. University of Oxford. NIPS.
-
-!! Problem
-
-
-!! Solution
-
-
-!! Model
-
-
-!! Results
-
-
-!! Downs
-
-
-!!Resources
-</pre>
-</div>
 <div created="20210317173823342" modified="20210409144342918" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
 
@@ -11478,6 +11456,49 @@ If agents have conflicting goals, it will be impossible for all of them to maxim
 * Littman, //Markov games as a framework for multi-agent reinforcement learning//, 1994.
 * https://www.cs.ubc.ca/~kevinlb/teaching/cs532l%20-%202011-12/lectures/lect10.pdf
 * Nowé et al., //Game Theory and Multi-agent Reinforcement Learning//, 2012.</pre>
+</div>
+<div created="20210419094217480" modified="20210419140841648" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="MAVEN">
+<pre>!! Paper
+//MAVEN: Multi-Agent Variational Exploration//, Mahajan et al., 2020. University of Oxford. NIPS.
+
+!! Problem
+''Inefficient exploration'' hurts decentralised MARL by increasing sample inefficiency and by interacting with the representational constraints that guarantee previous methods to converge toward suboptimal policies. State-of-the-art approaches all use naïve exploration techniques (e.g. $$\epsilon$$-greedy) that are don't work in decentralised MARL. This prevents them to find optimal policies, especially when dealing with very hard cooperative tasks that need smart exploration to find efficient strategies [1]. 
+
+!! Solution
+''Multi-agent variational exploration'' (MAVEN) hybridises value and policy-based methods by introducing a latent space for hierarchical control. It uses ''committed exploration'' to make coordinated exploratory trajectories and learn complex coordinated behavior. 
+
+!! Model
+[img[img/maven.PNG]]
+
+//Figure 1: Architecture of MAVEN.//
+
+MAVEN takes ideas of [[QMIX]] and tries to overcome its limitations with the ''hierarchical policy'' that controls the exploration strategy with the latent variable $$z$$, and an additional ''mutual information'' (MI) loss to encourage diverse behaviors. 
+
+At the beginning of each training episode, $$z$$ is obtained with the hierarchical policy $$g_\theta$$, based on a random variable $$x$$ and the initial state $$s_0$$. 
+
+Fixing $$z$$, the joint action-value function made of the utility network $$g_\eta$$, the hyper-net $$g_\phi$$ and the mixing network $$g_\psi$$ are trained following a greedy policy. 
+
+Next, fixing $$\phi, \eta, \psi$$, the hierarchical policy is trained on the cumulative reward gained through the experienced trajectory, with a classical [[policy gradient|Policy Gradient]] objective:
+$$
+\mathcal{J}_{RL}(\theta)=\int\mathcal{R}(\tau_\mathcal{A}|z)p_\theta(z|s_0)\rho(s_0)dzds_0,
+$$
+with $$\rho$$ the probability distribution of initial states: $$s_0\sim\rho(s_0)$$.
+
+In order to encourage diverse behavior, values of $$z$$ need to correspond to different exploration behavior. The MI objective is added to maximize the mutual information between the observed trajectories $$\tau$$ and the latent variable $$z$$. The trajectory is encoded by a RNN and the MI objective is computed. 
+
+At test time, $$z$$ is sampled at the start of the episode and a decentralised argmax is then performed on the Q-functions. 
+
+!! Results
+MAVEN is evaluated on matrix games and the StarCraft Multi-Agent Challenge (Samvelyan et al., 2019).
+
+MAVEN performs better than QMIX and other methods, especially on very hard task. As difficulty increases, MAVEN still finds good strategies via committed exploration.
+
+!! Downs
+
+
+!!Resources
+* [1] Shimon Whiteson's conference on QMIX and MAVEN: https://www.youtube.com/watch?v=W_9kcQmaWjo
+* Samvelyan et al., //The StarCraft Multi-Agent Challenge//, 2019.</pre>
 </div>
 <div created="20210317194500660" modified="20210317195434815" tags="[[Multi-agent Reinforcement Learning]]" title="Multi-agent Deep Reinforcement Learning">
 <pre>!!Table of content
