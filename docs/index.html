@@ -331,6 +331,8 @@ Error message and password prompt
 
 <li>QMIX</li>
 
+<li>QTRAN</li>
+
 <li>Reinforcement Learning</li>
 
 <li>Stabilising Experience Replay for MADRL</li>
@@ -10518,7 +10520,7 @@ Error message and password prompt
 <div created="20210316113055690" modified="20210316113057365" title="$:/state/image-picker/system-1424061023">
 <pre>hide</pre>
 </div>
-<div created="20210312134226342" modified="20210317093629922" title="$:/state/showeditpreview">
+<div created="20210312134226342" modified="20210420090602158" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
 <div created="20210312133055151" modified="20210321152855111" title="$:/state/sidebar">
@@ -10599,13 +10601,13 @@ Error message and password prompt
 <div created="20210321084343837" modified="20210321084343837" title="$:/state/toc/Reinforcement Learning-Policy-based methods--905582679">
 <pre>open</pre>
 </div>
-<div created="20210414081008229" modified="20210414081008229" title="$:/state/toc/Reinforcement Learning/Policy-based methods-Actor-Critic--905582679">
+<div created="20210414081008229" modified="20210420091301888" title="$:/state/toc/Reinforcement Learning/Policy-based methods-Actor-Critic--905582679">
 <pre>open</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210419080356052" list="IPPO MAVEN QMIX Home [[TO DO]]" modified="20210419093948309" title="$:/StoryList">
+<div created="20210420075239196" list="QMIX QTRAN IPPO Home [[TO DO]]" modified="20210420092352080" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11627,6 +11629,37 @@ QMIX is the current state-of-the-art of multi-agent cooperative methods on the S
 * Mahajan et al., //[[MAVEN]]: Multi-Agent Variational Exploration//, 2020.
 * Samvelyan et al., //The StarCraft Multi-Agent Challenge//, 2019.
 * Vinyals et al., //StarCraft II: A New Challenge for Reinforcement Learning//, 2017.</pre>
+</div>
+<div created="20210420075242897" modified="20210420101419660" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="QTRAN">
+<pre>!! Paper
+//QTRAN: Learning to Factorize with Transformation for Cooperative Multi-Agent Reinforcement Learning//, Son et al., 2019. PMLR.
+
+!! Problem
+[[Value factorization|Value function factorization]] methods, namely [[Value-Decomposition Networks]] (VDN) and [[QMIX]], suffer from structural constraints that prevent them from treating efficiently some factorizable tasks. 
+
+!! Solution
+QTRAN is a new, more general [[value function factorization|Value function factorization]] method able to treat any factorizable task. It does so by learning a state-value function, which corrects the partial observability issue. 
+
+!! Model
+[img[img/qtran.PNG]]
+
+//Figure 1: Architectures of QTRAN-base and QTRAN-alt.//
+
+The QTRAN architecture is based on three inter-connected deep neural networks that learn three functions, as seen on figure 1:
+
+* individual action-value functions $$Q_i(\tau_i,u_i)$$ for each agent $$i$$,
+* a joint action-value function $$Q_{jt}(\pmb{\tau},\mathbf{u})$$,
+* a joint state-value function $$V_{jt}(\pmb{\tau})$$,
+with $$\pmb{\tau}$$ the joint action-observation histories and $$\mathbf{u}$$ the joint actions. 
+
+!! Results
+
+
+!! Downs
+
+
+!!Resources
+</pre>
 </div>
 <div created="20210320144605660" modified="20210415173401613" tags="concept" title="Reinforcement Learning">
 <pre>!! Definition
