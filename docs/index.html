@@ -10607,7 +10607,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210420075239196" list="QMIX QTRAN IPPO Home [[TO DO]]" modified="20210420092352080" title="$:/StoryList">
+<div created="20210420075239196" list="QTRAN IPPO Home [[TO DO]]" modified="20210420135931115" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11630,7 +11630,7 @@ QMIX is the current state-of-the-art of multi-agent cooperative methods on the S
 * Samvelyan et al., //The StarCraft Multi-Agent Challenge//, 2019.
 * Vinyals et al., //StarCraft II: A New Challenge for Reinforcement Learning//, 2017.</pre>
 </div>
-<div created="20210420075242897" modified="20210420101419660" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="QTRAN">
+<div created="20210420075242897" modified="20210420220135006" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="QTRAN">
 <pre>!! Paper
 //QTRAN: Learning to Factorize with Transformation for Cooperative Multi-Agent Reinforcement Learning//, Son et al., 2019. PMLR.
 
@@ -11651,6 +11651,14 @@ The QTRAN architecture is based on three inter-connected deep neural networks th
 * a joint action-value function $$Q_{jt}(\pmb{\tau},\mathbf{u})$$,
 * a joint state-value function $$V_{jt}(\pmb{\tau})$$,
 with $$\pmb{\tau}$$ the joint action-observation histories and $$\mathbf{u}$$ the joint actions. 
+
+The ultimate goal is to factorize any factorizable joint action-value function $$Q_{jt}$$ into individual action-value functions $$Q_i$$. Rather than factorizing directly $$Q_{jt}$$, we factorize another joint action-value function $$Q_{jt}'$$ simply by summing the individual action-values functions:
+$$
+Q_{jt}'=\sum_{i=1}^N Q_i(\tau_i,u_i).
+$$
+Then, the joint state-value function $$V_{jt}$$ corrects the error between $$Q_{jt}$$ and $$Q_{jt}'$$ that arises from the partial observability of the agents. 
+
+The three neural networks are trained in centralised way. At execution time, the agents use their own individual action-value function to take actions. 
 
 !! Results
 
