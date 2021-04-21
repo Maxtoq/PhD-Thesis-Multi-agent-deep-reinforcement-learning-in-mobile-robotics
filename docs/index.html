@@ -10607,7 +10607,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210420075239196" list="QTRAN IPPO Home [[TO DO]]" modified="20210420135931115" title="$:/StoryList">
+<div created="20210421082445925" list="QTRAN Home [[TO DO]]" modified="20210421082445925" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11630,7 +11630,7 @@ QMIX is the current state-of-the-art of multi-agent cooperative methods on the S
 * Samvelyan et al., //The StarCraft Multi-Agent Challenge//, 2019.
 * Vinyals et al., //StarCraft II: A New Challenge for Reinforcement Learning//, 2017.</pre>
 </div>
-<div created="20210420075242897" modified="20210420220135006" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="QTRAN">
+<div created="20210420075242897" modified="20210421101940925" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="QTRAN">
 <pre>!! Paper
 //QTRAN: Learning to Factorize with Transformation for Cooperative Multi-Agent Reinforcement Learning//, Son et al., 2019. PMLR.
 
@@ -11658,16 +11658,52 @@ Q_{jt}'=\sum_{i=1}^N Q_i(\tau_i,u_i).
 $$
 Then, the joint state-value function $$V_{jt}$$ corrects the error between $$Q_{jt}$$ and $$Q_{jt}'$$ that arises from the partial observability of the agents. 
 
-The three neural networks are trained in centralised way. At execution time, the agents use their own individual action-value function to take actions. 
+!!! QTRAN-base
+This approach is based on the first theorem of the paper that defines a general way of factorizing a joint action-value function, if possible:
+
+''Theorem 1.'' //A factorizable joint action-value function $$Q_{jt}(\pmb{\tau},\mathbf{u})$$ is factorized by $$[Q_i(\tau_i,u_i)]$$ if
+$$
+\sum_{i=1}^N Q_i(\tau_i,u_i)-Q_{jt}(\pmb{\tau},\mathbf{u})+V_{jt}(\pmb{\tau})=\begin{cases}0&amp;\mathbf{u}=\bar{\mathbf{u}},&amp;(1a)\\\geq0&amp;\mathbf{u}\neq\bar{\mathbf{u}},&amp;(1b)\end{cases}
+$$
+where
+$$
+V_{jt}(\pmb{\tau})=\max_\mathbf{u}Q_{jt}(\pmb{\tau},\mathbf{u})-\sum_{i=1}^N Q_i(\tau_i,\bar{u}_i),
+$$
+with the optimal local action $$\bar{u}_i=\argmax_{u_i}Q_i(\tau_i,u_i)$$ and $$\bar{\mathbf{u}}=[\bar{u}_i]_{i=1}^N$$.//
+
+By ensuring the two conditions of this theorem hold, the factorization is guaranteed to be efficient. 
+
+The three neural networks are trained in centralised way. Three losses are computed and combined in the global loss function of QTRAN. $$L_{td}$$ is the loss function for estimating the true action-value, i.e. the classic MSBE loss of DQN. $$L_{opt}$$ and $$L_{nopt}$$ are losses for ensuring good factorization of $$Q_{jt}$$ by $$[Q_i]$$, satisfying (1a) and (1b) respectively. 
+
+At execution time, the agents use their own individual action-value function to take actions. 
+
+!!! QTRAN-alt
+The authors found that condition (1b) is not strict enough to construct a good factorization of $$Q_{jt}$$. Thus they define a stronger condition:
+
+''Theorem 2.'' //The statement in Theorem 1 and its necessary condition holds by replacing (1b) by: if $$\mathbf{u}\neq\bar{\mathbf{u}}$$,
+$$
+\min_{u_i\in\mathcal{U}}\left[Q_{jt}'(\pmb{\tau},u_i,\mathbf{u}_{-i})-Q_{jt}(\pmb{\tau},u_i,\mathbf{u}_{-i})+V_{jt}(\pmb{\tau})\right]=0,\forall i=1,...,N,\quad(2)
+$$
+where $$\mathbf{u}_{-i}$$ is the action vector except for $$i$$'s action.//
+
+Condition (2) is stronger than (1b). It makes the algorithm more stable as well as allowing smart exploration in complex environments, thus better sample efficiency. In order to make use of this condition, each agent $$i$$ has a counterfactual joint network that outputs $$Q_{jt}(\pmb{\tau},\cdot,\mathbf{u}_{-i})$$, and $$Q_{jt}'(\pmb{\tau},\cdot,\mathbf{u}_{-i})$$ is calculated as $$Q_i(\tau_i,\cdot)+\sum_{j\neq i}Q_j(\tau_j,u_j)$$. A new loss function $$L_{nopt-min}$$ is computed to ensure condition (2).
 
 !! Results
+The effective factorization of QTRAN is shown first on a single-state matrix game where QTRAN learns the correct joint action-value function, satisfying conditions of Theorem 1. [[VDN|Value-Decomposition Networks]] and [[QMIX]] finds erroneous values due to their structural constraints of additivity and monotonicity, respectively. 
 
+The performance of QTRAN is then evaluated in two environments: 
+
+* Multi-domain Gaussian Squeeze, a non-monotonic multi-agent resource allocation problem.
+* A modified version of predator-prey where two or more agents need to catch the prey simultaneously to win and get a positive team reward, while getting a negative reward when only one predator catches the prey. This ensure non-monotonicity. 
+Overall, QTRAN performs way better than VDN and QMIX. The two previous methods learn sub-optimal policies. QTRAN achieves higher rewards. The less monotonic the task is, the larger the performance gap is between QTRAN and the two other algorithms. When the penalty for &quot;solo-catching&quot; increases, QTRAN still cooperate well to catch the prey, whereas VDN and QMIX instead attempt to minimize their penalty-receiving risk. QTRAN also learns good policies faster than VDN and QMIX. QTRAN-alt is more stable than QTRAN-base, as expected. 
 
 !! Downs
-
+* QTRAN is only tested on quite simple environments in order to show the limitations of QMIX and VDN.
+* In fact, ([[MAVEN]]; Mahajan et al., 2019) show that QTRAN performs poorly in practice in complex MARL domains, such as the StarCraft Multi-Agent Challenge.
+* The computational complexity of QTRAN makes it intractable in continuous state-action spaces ([[MAVEN]]; Mahajan et al., 2019).
 
 !!Resources
-</pre>
+* Mahajan et al., //[[MAVEN]]: Multi-Agent Variational Exploration//, 2019.</pre>
 </div>
 <div created="20210320144605660" modified="20210415173401613" tags="concept" title="Reinforcement Learning">
 <pre>!! Definition
