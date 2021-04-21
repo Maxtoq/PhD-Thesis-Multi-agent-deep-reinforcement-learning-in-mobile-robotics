@@ -303,6 +303,8 @@ Error message and password prompt
 
 <li>Deep Reinforcement Learning</li>
 
+<li>Draft of 'QMIX 1'</li>
+
 <li>Home</li>
 
 <li>Hypernetworks</li>
@@ -10607,7 +10609,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210421082445925" list="QTRAN Home [[TO DO]]" modified="20210421082445925" title="$:/StoryList">
+<div created="20210421082445925" list="[[Draft of 'QMIX 1']] QMIX QTRAN Home [[TO DO]]" modified="20210421115632187" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11293,6 +11295,42 @@ with $$\epsilon\sim\mathcal{N}$$.
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
+<div created="20210421115653373" draft.of="QMIX 1" draft.title="Weighted QMIX" modified="20210421170115721" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="Draft of 'QMIX 1'">
+<pre>!! Paper
+//Weighted QMIX: Expanding Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning//, Rashid et al., 2020. University of Oxford. NIPS.
+
+!! Problem
+[[QMIX]], the current state-of-the-art technique in MADRL, is unable to represent joint action-value functions that are characterised as non-monotonic. This means that it fails to learn joint action-value functions when an agent's ordering over its actions depends on other agents' actions. 
+
+Based on a theoretical study of this representational limitation, the authors state that this failure is due to the fact that QMIX places equal importance on approximating the Q-values for all joint actions. One could instead focus accurately representing the value of the optimal joint action.
+
+!! Solution
+Weighted QMIX introduces a ''weighting function'' in the optimisation of the joint action-value function $$Q_{tot}$$. The idea is to focus the monotonic approximation of the optimal joint action-value function $$Q^*$$ on the important joint actions, by weighting more the state-action pairs of the replay buffer where the joint action-value is underestimated. An estimate of the optimal joint action value function $$\hat{Q}^*$$, not restricted to be monotonic, is also learnt to improve convergence.
+
+[img[img/wqmix.PNG]]
+
+//Figure 1: The architecture of $$\hat{Q}^*$$ and how the target $$y_i$$ is computed.//
+
+[[QMIX]]'s architecture is used as is to learn the monotonic factorisation $$Q_{tot}$$ of all individual action-value functions $$Q_i$$, and two elements are added: 
+
+* ''The centralised optimal joint action-value estimate'' $$\hat{Q}^*$$ is learnt (see figure 1), conditioned on the global state $$s$$ and the action-observation histories of all agents $$\pmb{\tau}$$. The agent networks have the same architecture as QMIX, but do not share parameters with the agents representing $$Q_{tot}$$. The mixing network is a feed-forward network whose network aren't restricted to be positive, as the network is not constrained to be monotonic. $$\hat{Q}^*$$ is trained with the [[Deep Q-Learning]] objective:&lt;br \&gt;$$
+\sum_{i=1}^{b}\left(\hat{Q}^*(s,\pmb{\tau},\mathbf{u})-y_i\right)^2,$$with $$b$$ the size of the minibatch sampled from the replay buffer and $$y_i$$ computed as in figure 1. 
+* The ''weighting function'' that changes the loss of $$Q_{tot}$$. Two weighting functions are studied: ''Centrally-Weighted QMIX'':&lt;br \&gt;$$
+
+,$$with $$b$$ the size of the minibatch sampled from the replay buffer and $$y_i$$ computed as in figure 1. 
+
+!! Model
+
+
+!! Results
+
+
+!! Downs
+
+
+!!Resources
+* Samvelyan et al., //The StarCraft Multi-Agent Challenge//, 2019.</pre>
+</div>
 <div created="20210317173823342" modified="20210419165808839" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
 
@@ -11630,7 +11668,7 @@ QMIX is the current state-of-the-art of multi-agent cooperative methods on the S
 * Samvelyan et al., //The StarCraft Multi-Agent Challenge//, 2019.
 * Vinyals et al., //StarCraft II: A New Challenge for Reinforcement Learning//, 2017.</pre>
 </div>
-<div created="20210420075242897" modified="20210421101940925" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="QTRAN">
+<div created="20210420075242897" modified="20210421170150673" tags="model [[Multi-agent Deep Reinforcement Learning]] paper" title="QTRAN">
 <pre>!! Paper
 //QTRAN: Learning to Factorize with Transformation for Cooperative Multi-Agent Reinforcement Learning//, Son et al., 2019. PMLR.
 
