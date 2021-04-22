@@ -11410,7 +11410,7 @@ Experiments also show that SMAC doesn't necessarily requires neither joint nor c
 !!Resources
 * Samvelyan et al., //The StarCraft Multi-Agent Challenge//, 2019.</pre>
 </div>
-<div created="20210416131208509" modified="20210416153906551" tags="model paper [[Multi-agent Reinforcement Learning]]" title="LOLA">
+<div created="20210416131208509" modified="20210422084903177" tags="model paper [[Multi-agent Reinforcement Learning]]" title="LOLA">
 <pre>!! Paper
 //Learning with Opponent-Learning Awareness//, Foerster et al., 2017. University of Oxford, OpenAI. AAMAS.
 
@@ -11418,7 +11418,7 @@ Experiments also show that SMAC doesn't necessarily requires neither joint nor c
 Multiple learners induces non-stationarity of the environment, which leads to unstable training and bad performance. 
 
 !! Solution
-''Learning with Opponent-Learning Awareness'' (LOLA) is a method in which agents model the learning properties of other agents. It introduces a learning rule that takes into account the future learning step of the opponent, thus optimizing $$V^1(\theta^1, \theta^2+\Delta\theta^2)$$, with $$V^1$$ being the value for agent 1 and $$\theta^1$$ and $$\theta^2$$ the parameters of each agent's policy. This learning rule is adapted to be used in Deep RL.
+''Learning with Opponent-Learning Awareness'' (LOLA) is a method in which agents model the learning properties of other agents. It introduces a learning rule that takes into account the future learning step of the opponent, thus optimizing $$V^1(\theta^1, \theta^2+\Delta\theta^2)$$, with $$V^1$$ being the value for agent 1 and $$\theta^1$$ and $$\theta^2$$ the parameters of each agent's policy. This learning rule is use in an [[actor-critic|Actor-Critic]] algorithm, and is then adapted to be used in Deep RL.
 
 !! Results
 LOLA proves to improve performance and induce cooperation in sequential social games and a very simple grid world environment, with two players. 
