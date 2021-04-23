@@ -2540,6 +2540,72 @@ FacMADDPG},
   url      = {https://doi.org/10.1177/0278364917719333},
 }
 
+@InProceedings{pmlr-v100-lin20a,
+  author    = {Lin, Juntong and Yang, Xuyun and Zheng, Peiwei and Cheng, Hui},
+  booktitle = {Proceedings of the Conference on Robot Learning},
+  title     = {Connectivity Guaranteed Multi-robot Navigation via Deep Reinforcement Learning},
+  year      = {2020},
+  editor    = {Leslie Pack Kaelbling and Danica Kragic and Komei Sugiura},
+  month     = {30 Oct--01 Nov},
+  pages     = {661--670},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {100},
+  abstract  = {This paper considers the multi-robot navigation problem where the geometric center of a multi-robot team aims to efficiently reach the waypoint without collisions in unknown complex environments while maintaining connectivity during the navigation. A novel Deep Reinforcement Learning (DRL)-based approach is proposed to derive end-to-end policies for the multi-robot navigation problem. In order to guarantee the connectivity during the navigation, a constraint satisfying parametric function (CSPF) is proposed to represent the navigation policy. Virtual policy extended environment (VP2E), an implementation framework of the CSPF is accompanied so as to make CSPF compatible with existing DRL techniques which rely on differentiable parametric functions. Both simulations and real-world experiments of a team of 3 holonomic robots are conducted to verify the effectiveness of the proposed DRL-based navigation method.},
+  file      = {:pmlr-v100-lin20a - Connectivity Guaranteed Multi Robot Navigation Via Deep Reinforcement Learning.pdf:PDF},
+  groups    = {Multi-robot},
+  pdf       = {http://proceedings.mlr.press/v100/lin20a/lin20a.pdf},
+  url       = {http://proceedings.mlr.press/v100/lin20a.html},
+}
+
+@InProceedings{8461113,
+  author    = {Long, Pinxin and Fan, Tingxiang and Liao, Xinyi and Liu, Wenxi and Zhang, Hao and Pan, Jia},
+  booktitle = {2018 IEEE International Conference on Robotics and Automation (ICRA)},
+  title     = {Towards Optimally Decentralized Multi-Robot Collision Avoidance via Deep Reinforcement Learning},
+  year      = {2018},
+  pages     = {6252-6259},
+  doi       = {10.1109/ICRA.2018.8461113},
+  file      = {:8461113 - Towards Optimally Decentralized Multi Robot Collision Avoidance Via Deep Reinforcement Learning.pdf:PDF},
+  groups    = {Multi-robot},
+  ranking   = {rank4},
+}
+
+@Article{8744599,
+  author  = {Viseras, Alberto and Garcia, Ricardo},
+  journal = {IEEE Robotics and Automation Letters},
+  title   = {DeepIG: Multi-Robot Information Gathering With Deep Reinforcement Learning},
+  year    = {2019},
+  number  = {3},
+  pages   = {3059-3066},
+  volume  = {4},
+  doi     = {10.1109/LRA.2019.2924839},
+  file    = {:8744599 - DeepIG_ Multi Robot Information Gathering with Deep Reinforcement Learning.pdf:PDF},
+  groups  = {Multi-robot},
+}
+
+@InProceedings{9288300,
+  author    = {Yao, Shunyi and Chen, Guangda and Pan, Lifan and Ma, Jun and Ji, Jianmin and Chen, Xiaoping},
+  booktitle = {2020 IEEE 32nd International Conference on Tools with Artificial Intelligence (ICTAI)},
+  title     = {Multi-Robot Collision Avoidance with Map-based Deep Reinforcement Learning},
+  year      = {2020},
+  pages     = {532-539},
+  doi       = {10.1109/ICTAI50040.2020.00088},
+  file      = {:9288300 - Multi Robot Collision Avoidance with Map Based Deep Reinforcement Learning.pdf:PDF},
+  groups    = {Multi-robot},
+}
+
+@Article{Ma2020,
+  author  = {Ma, Junchong and Lu, Huimin and Xiao, Junhao and Zeng, Zhiwen and Zheng, Zhiqiang},
+  journal = {Journal of Intelligent & Robotic Systems},
+  title   = {Multi-robot Target Encirclement Control with Collision Avoidance via Deep Reinforcement Learning},
+  year    = {2020},
+  month   = {08},
+  volume  = {99},
+  doi     = {10.1007/s10846-019-01106-x},
+  file    = {:Ma2020 - Multi Robot Target Encirclement Control with Collision Avoidance Via Deep Reinforcement Learning.pdf:PDF},
+  groups  = {Multi-robot},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
