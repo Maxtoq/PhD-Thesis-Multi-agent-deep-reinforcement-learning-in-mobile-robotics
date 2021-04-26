@@ -2602,6 +2602,7 @@ FacMADDPG},
   month   = {08},
   volume  = {99},
   doi     = {10.1007/s10846-019-01106-x},
+  file    = {:Ma2020 - Multi Robot Target Encirclement Control with Collision Avoidance Via Deep Reinforcement Learning.pdf:PDF},
   groups  = {Multi-robot},
 }
 
