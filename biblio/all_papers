@@ -3355,20 +3355,6 @@ FacMADDPG},
   url          = {https://www.journal.iberamia.org/index.php/intartif/article/view/216},
 }
 
-@Article{Roehr2013,
-  author    = {Thomas M. Roehr and Florian Cordes and Frank Kirchner},
-  journal   = {Journal of Field Robotics},
-  title     = {Reconfigurable Integrated Multirobot Exploration System ({RIMRES}): Heterogeneous Modular Reconfigurable Robots for Space Exploration},
-  year      = {2013},
-  month     = {aug},
-  number    = {1},
-  pages     = {3--34},
-  volume    = {31},
-  doi       = {10.1002/rob.21477},
-  groups    = {Space Exploration},
-  publisher = {Wiley},
-}
-
 @InProceedings{govindaraj2019pro,
   author    = {Govindaraj, Shashank and Gancet, Jeremi and Urbina, Diego and Brinkmann, Wiebke and Aouf, Nabil and Lacroix, Simon and Wolski, Mateusz and Colmenero, Francisco and Walshe, Michael and Ortega, Cristina and others},
   booktitle = {Proceedings of the 15th Symposium on Advanced Space Technologies in Robotics and Automation (ASTRA-2019)},
@@ -3396,6 +3382,204 @@ FacMADDPG},
   groups    = {Space Exploration},
 }
 
+@Article{fabisch2020bolero,
+  author    = {Fabisch, Alexander and Langosz, Malte and Kirchner, Frank},
+  journal   = {International Journal of Advanced Robotic Systems},
+  title     = {BOLeRo: Behavior optimization and learning for robots},
+  year      = {2020},
+  number    = {3},
+  pages     = {1729881420913741},
+  volume    = {17},
+  file      = {:fabisch2020bolero - BOLeRo_ Behavior Optimization and Learning for Robots.pdf:PDF},
+  groups    = {Robotics},
+  priority  = {prio2},
+  publisher = {SAGE Publications Sage UK: London, England},
+}
+
+@InProceedings{waldmann2018europa,
+  author    = {Waldmann, C and Winebrenner, D and Bachmayer, R and Hanff, H and Funke, O},
+  booktitle = {Lunar and Planetary Science Conference},
+  title     = {EUROPA Calling--A comprehensive technical concept for exploring ocean worlds},
+  year      = {2018},
+  number    = {2083},
+  pages     = {2162},
+  groups    = {Space Exploration},
+}
+
+@Article{8633953,
+  author   = {Corah, Micah and O’Meadhra, Cormac and Goel, Kshitij and Michael, Nathan},
+  journal  = {IEEE Robotics and Automation Letters},
+  title    = {Communication-Efficient Planning and Mapping for Multi-Robot Exploration in Large Environments},
+  year     = {2019},
+  issn     = {2377-3766},
+  month    = {April},
+  number   = {2},
+  pages    = {1715-1721},
+  volume   = {4},
+  abstract = {This letter presents a framework for planning and perception for multi-robot exploration in large and unstructured three-dimensional environments. We employ a Gaussian mixture model for global mapping to model complex environment geometries while maintaining a small memory footprint which enables distributed operation with a low volume of communication. We then generate a local occupancy grid for use in planning from the Gaussian mixture model using Monte Carlo ray tracing. Then, a finite-horizon, information-based planner uses this local map and optimizes sequences of observations locally while accounting for the global distribution of information in the robot state space which we model using a library of informative views. Simulation results demonstrate that the proposed system is able to maintain efficiency and completeness in exploration while only requiring a low rate of communication.},
+  doi      = {10.1109/LRA.2019.2897368},
+  file     = {:8633953 - Communication Efficient Planning and Mapping for Multi Robot Exploration in Large Environments.pdf:PDF},
+  groups   = {Information gathering, Multi-robot},
+}
+
+@Article{9152817,
+  author   = {Ni, Jianjun and Wang, Xiaotian and Tang, Min and Cao, Weidong and Shi, Pengfei and Yang, Simon X.},
+  journal  = {IEEE Access},
+  title    = {An Improved Real-Time Path Planning Method Based on Dragonfly Algorithm for Heterogeneous Multi-Robot System},
+  year     = {2020},
+  issn     = {2169-3536},
+  pages    = {140558-140568},
+  volume   = {8},
+  abstract = {Heterogeneous multi-robot system is one of the most important research directions in the robotic field. Real-time path planning for heterogeneous multi-robot system under unknown 3D environment is a new challenging research and a hot spot in this field. In this paper, an improved real-time path planning method is proposed for a heterogeneous multi-robot system, which is composed of many unmanned aerial vehicles (UAVs) and unmanned ground vehicles (UGVs). In the proposed method, the 3D environment is modelled as a neuron topology map, based on the grid method combined with the bio-inspired neural network. Then a new 3D dynamic movement model for multi-robots is established based on an improved Dragonfly Algorithm (DA). Thus, the movements of the robots are optimized according to the activities of the neurons in the bio-inspired neural network to realize the real-time path planning. Furthermore, some simulations have been carried out. The results show that the proposed method can effectively guide the heterogeneous UAV/UGV system to the target, and has better performance than traditional methods in the real-time path planning tasks.},
+  doi      = {10.1109/ACCESS.2020.3012886},
+  file     = {:9152817 - An Improved Real Time Path Planning Method Based on Dragonfly Algorithm for Heterogeneous Multi Robot System.pdf:PDF},
+  groups   = {Heterogeneous},
+}
+
+@Article{fabisch2020bolero,
+  author    = {Fabisch, Alexander and Langosz, Malte and Kirchner, Frank},
+  journal   = {International Journal of Advanced Robotic Systems},
+  title     = {BOLeRo: Behavior optimization and learning for robots},
+  year      = {2020},
+  number    = {3},
+  pages     = {1729881420913741},
+  volume    = {17},
+  file      = {:fabisch2020bolero - BOLeRo_ Behavior Optimization and Learning for Robots.pdf:PDF},
+  groups    = {Robotics, Platforms},
+  priority  = {prio2},
+  publisher = {SAGE Publications Sage UK: London, England},
+}
+
+@PhdThesis{hidalgo2018adaptive,
+  author = {Hidalgo-Carri{\'o}, Javier},
+  school = {Universit{\"a}t Bremen},
+  title  = {Adaptive Localization and Mapping for Planetary Rovers},
+  year   = {2018},
+  file   = {:hidalgo2018adaptive - Adaptive Localization and Mapping for Planetary Rovers.pdf:PDF},
+  groups = {Space Exploration},
+}
+
+@InProceedings{schwendnerentern,
+  author    = {Schwendner, Jakob and Hidalgo-Carrio, Javier and Dom{\i}nguez, Ra{\'u}l and Planthaber, Steffen and Yoo, Yong-Ho and Asadi, Behnam and Machowinski, Janosch and Rauch, Christian and Kirchner, Frank},
+  booktitle = {Symposium on Advanced Space Technologies in Robotics and Automation (ASTRA). ESA/Estec Symposium on Advanced Space Technologies in Robotics and Automation (ASTRA), 13th, May},
+  title     = {Entern--environment modelling and navigation for robotic space-exploration},
+  pages     = {11--13},
+  file      = {:schwendnerentern - Entern Environment Modelling and Navigation for Robotic Space Exploration.pdf:PDF},
+  groups    = {Space Exploration},
+}
+
+@InProceedings{carrio2016envire,
+  author    = {Carri{\'o}, Javier Hidalgo and Arnold, Sascha and B{\"o}ckmann, Arne and Born, Anna and Dom{\'\i}nguez, Ra{\'u}l and Kirchner, F},
+  booktitle = {AI for Long-term Autonomy Workshop of the Int. Conf. on Robotics and Automation (ICRA)},
+  title     = {EnviRe-Environment Representation for Long-term Autonomy},
+  year      = {2016},
+  file      = {:carrio2016envire - EnviRe Environment Representation for Long Term Autonomy.pdf:PDF},
+  groups    = {Space Exploration},
+}
+
+@InBook{Starek2016,
+  author    = {Starek, Joseph A. and A{\c{c}}{\i}kme{\c{s}}e, Beh{\c{c}}et and Nesnas, Issa A. and Pavone, Marco},
+  editor    = {Feron, Eric},
+  pages     = {1--48},
+  publisher = {Springer Berlin Heidelberg},
+  title     = {Spacecraft Autonomy Challenges for Next-Generation Space Missions},
+  year      = {2016},
+  address   = {Berlin, Heidelberg},
+  isbn      = {978-3-662-47694-9},
+  abstract  = {In early 2011, NASA's Office of the Chief Technologist (OCT) released a set of technology roadmaps with the aim of fostering the development of concepts and cross-cutting technologies addressing NASA's needs for the 2011--2021 decade and beyond. In an attempt to engage the external technical community and enhance the development program in light of scarce resources, NASA reached out to the National Research Council (NRC) to review the program's objectives and prioritize its list of technologies. In January 2012, the NRC released its report entitled ``Restoring NASA's Technological Edge and Paving the Way for a New Era in Space.'' While the NRC report provides a systematic and thorough ranking of the future technology needs for NASA, it does not discuss in detail the technical aspects of the prioritized technologies (which clearly lie beyond its scope). This chapter, building upon the NRC report and an earlier assessment of NASA's needs in terms of guidance, navigation, and control technologies, aims at providing such technical details for a selected number of high-priority technologies in the autonomous systems area. Specifically, this chapter focuses on technology area TA04 ``Robotics, Tele-Robotics, and Autonomous Systems'' and discusses in some detail the technical aspects and challenges associated with three high-priority TA04 technologies: ``Relative Guidance Algorithms,'' ``Extreme Terrain Mobility,'' and ``Small Body/Microgravity Mobility.'' The result is a unified presentation of key autonomy challenges for next-generation space missions.},
+  booktitle = {Advances in Control System Technology for Aerospace Applications},
+  doi       = {10.1007/978-3-662-47694-9_1},
+  file      = {:Starek2016 - Spacecraft Autonomy Challenges for Next Generation Space Missions.pdf:PDF},
+  groups    = {Space Exploration},
+  priority  = {prio2},
+  ranking   = {rank4},
+  url       = {https://doi.org/10.1007/978-3-662-47694-9_1},
+}
+
+@InProceedings{Dominguez2014,
+  author    = {Raúl Domínguez, Jakob Schwendner, Frank Kirchner},
+  booktitle = {Symposium on Advanced Space Technologies in Robotics and Automation (ASTRA)},
+  title     = {On-Board Simulator for Autonomy Enhancement in Robotic Space Missions},
+  year      = {2015},
+  file      = {:Dominguez2014 - On Board Simulator for Autonomy Enhancement in Robotic Space Missions.pdf:PDF},
+  groups    = {Space Exploration},
+}
+
+@Article{Corah_2018,
+  author    = {Micah Corah and Nathan Michael},
+  journal   = {Autonomous Robots},
+  title     = {Distributed matroid-constrained submodular maximization for multi-robot exploration: theory and practice},
+  year      = {2018},
+  month     = {jul},
+  number    = {2},
+  pages     = {485--501},
+  volume    = {43},
+  doi       = {10.1007/s10514-018-9778-6},
+  file      = {:corah2018.pdf:PDF},
+  groups    = {Information gathering},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Corah_2018,
+  author    = {Micah Corah and Nathan Michael},
+  journal   = {Autonomous Robots},
+  title     = {Distributed matroid-constrained submodular maximization for multi-robot exploration: theory and practice},
+  year      = {2018},
+  month     = {jul},
+  number    = {2},
+  pages     = {485--501},
+  volume    = {43},
+  doi       = {10.1007/s10514-018-9778-6},
+  file      = {:corah2018.pdf:PDF},
+  groups    = {Information gathering, Multi-robot},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Wang2019a,
+  author    = {Chaoqun Wang and Wenzheng Chi and Yuxiang Sun and Max Q.-H. Meng},
+  journal   = {{IEEE} Transactions on Automation Science and Engineering},
+  title     = {Autonomous Robotic Exploration by Incremental Road Map Construction},
+  year      = {2019},
+  month     = {oct},
+  number    = {4},
+  pages     = {1720--1731},
+  volume    = {16},
+  doi       = {10.1109/tase.2019.2894748},
+  file      = {:wang2019.pdf:PDF},
+  groups    = {Information gathering},
+  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
+@Article{Pergola2016,
+  author    = {Pierpaolo Pergola and Vittorio Cipolla},
+  journal   = {International Journal of Intelligent Unmanned Systems},
+  title     = {Mission architecture for Mars exploration based on small satellites and planetary drones},
+  year      = {2016},
+  month     = {jul},
+  number    = {3},
+  pages     = {142--162},
+  volume    = {4},
+  doi       = {10.1108/ijius-12-2015-0014},
+  file      = {:pergola2016.pdf:PDF},
+  groups    = {Space Exploration},
+  publisher = {Emerald},
+}
+
+@Article{Roehr2013,
+  author    = {Thomas M. Roehr and Florian Cordes and Frank Kirchner},
+  journal   = {Journal of Field Robotics},
+  title     = {Reconfigurable Integrated Multirobot Exploration System ({RIMRES}): Heterogeneous Modular Reconfigurable Robots for Space Exploration},
+  year      = {2013},
+  month     = {aug},
+  number    = {1},
+  pages     = {3--34},
+  volume    = {31},
+  doi       = {10.1002/rob.21477},
+  file      = {:roehr2013.pdf:PDF},
+  groups    = {Space Exploration, Heterogeneous},
+  publisher = {Wiley},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -3419,6 +3603,7 @@ FacMADDPG},
 1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Heterogeneous\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Navigation\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-task\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Information gathering\;0\;1\;0x8a8a8aff\;\;\;;
