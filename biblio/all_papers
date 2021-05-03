@@ -2507,22 +2507,6 @@ FacMADDPG},
   url      = {https://www.sciencedirect.com/science/article/pii/S0925231220305932},
 }
 
-@Article{doi:10.1177/0278364920916531,
-  author   = {Tingxiang Fan and Pinxin Long and Wenxi Liu and Jia Pan},
-  journal  = {The International Journal of Robotics Research},
-  title    = {Distributed multi-robot collision avoidance via deep reinforcement learning for navigation in complex scenarios},
-  year     = {2020},
-  number   = {7},
-  pages    = {856-892},
-  volume   = {39},
-  abstract = {Developing a safe and efficient collision-avoidance policy for multiple robots is challenging in the decentralized scenarios where each robot generates its paths with limited observation of other robots’ states and intentions. Prior distributed multi-robot collision-avoidance systems often require frequent inter-robot communication or agent-level features to plan a local collision-free action, which is not robust and computationally prohibitive. In addition, the performance of these methods is not comparable with their centralized counterparts in practice. In this article, we present a decentralized sensor-level collision-avoidance policy for multi-robot systems, which shows promising results in practical applications. In particular, our policy directly maps raw sensor measurements to an agent’s steering commands in terms of the movement velocity. As a first step toward reducing the performance gap between decentralized and centralized methods, we present a multi-scenario multi-stage training framework to learn an optimal policy. The policy is trained over a large number of robots in rich, complex environments simultaneously using a policy-gradient-based reinforcement-learning algorithm. The learning algorithm is also integrated into a hybrid control framework to further improve the policy’s robustness and effectiveness. We validate the learned sensor-level collision-3avoidance policy in a variety of simulated and real-world scenarios with thorough performance evaluations for large-scale multi-robot systems. The generalization of the learned policy is verified in a set of unseen scenarios including the navigation of a group of heterogeneous robots and a large-scale scenario with 100 robots. Although the policy is trained using simulation data only, we have successfully deployed it on physical robots with shapes and dynamics characteristics that are different from the simulated agents, in order to demonstrate the controller’s robustness against the simulation-to-real modeling error. Finally, we show that the collision-avoidance policy learned from multi-robot navigation tasks provides an excellent solution for safe and effective autonomous navigation for a single robot working in a dense real human crowd. Our learned policy enables a robot to make effective progress in a crowd without getting stuck. More importantly, the policy has been successfully deployed on different types of physical robot platforms without tedious parameter tuning. Videos are available at https://sites.google.com/view/hybridmrca.},
-  doi      = {10.1177/0278364920916531},
-  eprint   = {https://doi.org/10.1177/0278364920916531},
-  file     = {:doi_10.1177_0278364920916531 - Distributed Multi Robot Collision Avoidance Via Deep Reinforcement Learning for Navigation in Complex Scenarios.pdf:PDF},
-  groups   = {Multi-robot},
-  url      = {https://doi.org/10.1177/0278364920916531},
-}
-
 @Article{doi:10.1177/0278364917719333,
   author   = {Javier Alonso-Mora and Stuart Baker and Daniela Rus},
   journal  = {The International Journal of Robotics Research},
@@ -2579,7 +2563,7 @@ FacMADDPG},
   volume  = {4},
   doi     = {10.1109/LRA.2019.2924839},
   file    = {:8744599 - DeepIG_ Multi Robot Information Gathering with Deep Reinforcement Learning.pdf:PDF},
-  groups  = {Multi-robot},
+  groups  = {Multi-robot, Information gathering},
 }
 
 @InProceedings{9288300,
@@ -2652,7 +2636,8 @@ FacMADDPG},
   pages     = {2169-2176},
   doi       = {10.1109/ICRA.2017.7989250},
   file      = {:7989250 - Learning Modular Neural Network Policies for Multi Task and Multi Robot Transfer.pdf:PDF},
-  groups    = {Multi-robot},
+  groups    = {Multi-robot, Multi-task},
+  ranking   = {rank2},
 }
 
 @InProceedings{8460655,
@@ -2775,6 +2760,7 @@ FacMADDPG},
   doi       = {10.1109/ICRA.2016.7487175},
   file      = {:7487175 - Learning Deep Control Policies for Autonomous Aerial Vehicles with MPC Guided Policy Search.pdf:PDF},
   groups    = {Navigation},
+  ranking   = {rank4},
 }
 
 @InProceedings{charrow2015information,
@@ -2812,8 +2798,9 @@ FacMADDPG},
   abstract  = {Deep reinforcement learning provides a promising approach for vision-based control of real-world robots. However, the generalization of such models depends critically on the quantity and variety of data available for training. This data can be difficult to obtain for some types of robotic systems, such as fragile, small-scale quadrotors. Simulated rendering and physics can provide for much larger datasets, but such data is inherently of lower quality: many of the phenomena that make the real-world autonomous flight problem challenging, such as complex physics and air currents, are modeled poorly or not at all, and the systematic differences between simulation and the real world are typically impossible to eliminate. In this work, we investigate how data from both simulation and the real world can be combined in a hybrid deep reinforcement learning algorithm. Our method uses real-world data to learn about the dynamics of the system, and simulated data to learn a generalizable perception system that can enable the robot to avoid collisions using only a monocular camera. We demonstrate our approach on a real-world nano aerial vehicle collision avoidance task, showing that with only an hour of real-world data, the quadrotor can avoid collisions in new environments with various lighting conditions and geometry. Code, instructions for building the aerial vehicles, and videos of the experiments can be found at github.com/gkahn13/GtS.},
   doi       = {10.1109/ICRA.2019.8793735},
   file      = {:8793735 - Generalization through Simulation_ Integrating Simulated and Real Data into Deep Reinforcement Learning for Vision Based Autonomous Flight.pdf:PDF},
-  groups    = {Navigation},
+  groups    = {Navigation, Sim to Real},
   issn      = {2577-087X},
+  ranking   = {rank1},
 }
 
 @Article{9345970,
@@ -2900,19 +2887,6 @@ FacMADDPG},
   abstract  = {Finding feasible, collision-free paths for multiagent systems can be challenging, particularly in non-communicating scenarios where each agent's intent (e.g. goal) is unobservable to the others. In particular, finding time efficient paths often requires anticipating interaction with neighboring agents, the process of which can be computationally prohibitive. This work presents a decentralized multiagent collision avoidance algorithm based on a novel application of deep reinforcement learning, which effectively offloads the online computation (for predicting interaction patterns) to an offline learning procedure. Specifically, the proposed approach develops a value network that encodes the estimated time to the goal given an agent's joint configuration (positions and velocities) with its neighbors. Use of the value network not only admits efficient (i.e., real-time implementable) queries for finding a collision-free velocity vector, but also considers the uncertainty in the other agents' motion. Simulation results show more than 26% improvement in paths quality (i.e., time to reach the goal) when compared with optimal reciprocal collision avoidance (ORCA), a state-of-the-art collision avoidance strategy.},
   doi       = {10.1109/ICRA.2017.7989037},
   file      = {:7989037 - Decentralized Non Communicating Multiagent Collision Avoidance with Deep Reinforcement Learning.pdf:PDF},
-  groups    = {Navigation},
-}
-
-@InProceedings{7989037,
-  author    = {Chen, Yu Fan and Liu, Miao and Everett, Michael and How, Jonathan P.},
-  booktitle = {2017 IEEE International Conference on Robotics and Automation (ICRA)},
-  title     = {Decentralized non-communicating multiagent collision avoidance with deep reinforcement learning},
-  year      = {2017},
-  month     = {May},
-  pages     = {285-292},
-  abstract  = {Finding feasible, collision-free paths for multiagent systems can be challenging, particularly in non-communicating scenarios where each agent's intent (e.g. goal) is unobservable to the others. In particular, finding time efficient paths often requires anticipating interaction with neighboring agents, the process of which can be computationally prohibitive. This work presents a decentralized multiagent collision avoidance algorithm based on a novel application of deep reinforcement learning, which effectively offloads the online computation (for predicting interaction patterns) to an offline learning procedure. Specifically, the proposed approach develops a value network that encodes the estimated time to the goal given an agent's joint configuration (positions and velocities) with its neighbors. Use of the value network not only admits efficient (i.e., real-time implementable) queries for finding a collision-free velocity vector, but also considers the uncertainty in the other agents' motion. Simulation results show more than 26% improvement in paths quality (i.e., time to reach the goal) when compared with optimal reciprocal collision avoidance (ORCA), a state-of-the-art collision avoidance strategy.},
-  doi       = {10.1109/ICRA.2017.7989037},
-  file      = {:7989037 - Decentralized Non Communicating Multiagent Collision Avoidance with Deep Reinforcement Learning.pdf:PDF},
   groups    = {Navigation, Multi-robot},
 }
 
@@ -2983,6 +2957,7 @@ FacMADDPG},
   doi      = {10.1109/LRA.2020.2974695},
   file     = {:9001226 - Multi Agent Motion Planning for Dense and Dynamic Environments Via Deep Reinforcement Learning.pdf:PDF},
   groups   = {Multi-robot},
+  ranking  = {rank3},
 }
 
 @InProceedings{8593871,
@@ -3025,20 +3000,6 @@ FacMADDPG},
   groups        = {Navigation},
   keywords      = {cs.LG, cs.RO},
   primaryclass  = {cs.LG},
-}
-
-@InProceedings{8202134,
-  author    = {Tai, Lei and Paolo, Giuseppe and Liu, Ming},
-  booktitle = {2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  title     = {Virtual-to-real deep reinforcement learning: Continuous control of mobile robots for mapless navigation},
-  year      = {2017},
-  month     = {Sep.},
-  pages     = {31-36},
-  abstract  = {We present a learning-based mapless motion planner by taking the sparse 10-dimensional range findings and the target position with respect to the mobile robot coordinate frame as input and the continuous steering commands as output. Traditional motion planners for mobile ground robots with a laser range sensor mostly depend on the obstacle map of the navigation environment where both the highly precise laser sensor and the obstacle map building work of the environment are indispensable. We show that, through an asynchronous deep reinforcement learning method, a mapless motion planner can be trained end-to-end without any manually designed features and prior demonstrations. The trained planner can be directly applied in unseen virtual and real environments. The experiments show that the proposed mapless motion planner can navigate the nonholonomic mobile robot to the desired targets without colliding with any obstacles.},
-  doi       = {10.1109/IROS.2017.8202134},
-  file      = {:8202134 - Virtual to Real Deep Reinforcement Learning_ Continuous Control of Mobile Robots for Mapless Navigation.pdf:PDF},
-  groups    = {Navigation},
-  issn      = {2153-0866},
 }
 
 @InProceedings{8202134,
@@ -3516,21 +3477,6 @@ FacMADDPG},
   volume    = {43},
   doi       = {10.1007/s10514-018-9778-6},
   file      = {:corah2018.pdf:PDF},
-  groups    = {Information gathering},
-  publisher = {Springer Science and Business Media {LLC}},
-}
-
-@Article{Corah_2018,
-  author    = {Micah Corah and Nathan Michael},
-  journal   = {Autonomous Robots},
-  title     = {Distributed matroid-constrained submodular maximization for multi-robot exploration: theory and practice},
-  year      = {2018},
-  month     = {jul},
-  number    = {2},
-  pages     = {485--501},
-  volume    = {43},
-  doi       = {10.1007/s10514-018-9778-6},
-  file      = {:corah2018.pdf:PDF},
   groups    = {Information gathering, Multi-robot},
   publisher = {Springer Science and Business Media {LLC}},
 }
@@ -3606,7 +3552,7 @@ FacMADDPG},
 3 StaticGroup:Heterogeneous\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Navigation\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-task\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Information gathering\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Sim to Real\;0\;1\;0x8a8a8aff\;\;\;;
