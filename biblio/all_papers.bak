@@ -4020,6 +4020,46 @@ FacMADDPG},
   priority = {prio1},
 }
 
+@Article{Lamarre2020,
+  author    = {Lamarre, Olivier and Asghar, Ahmad Bila and Kelly, Jonathan},
+  title     = {Impact of Traversability Uncertainty on Global Navigation Planning in Planetary Environments},
+  year      = {2020},
+  copyright = {http://rightsstatements.org/page/InC-NC/1.0/},
+  doi       = {10.3929/ETHZ-B-000450119},
+  file      = {:Lamarre2020 - Impact of Traversability Uncertainty on Global Navigation Planning in Planetary Environments.pdf:PDF},
+  groups    = {Space Exploration},
+  keywords  = {Space robotics},
+  language  = {en},
+  publisher = {ETH Zurich},
+}
+
+@Article{Seewald2020,
+  author    = {Seewald, Adam},
+  title     = {Beyond Traditional Energy Planning: the Weight of Computations in Planetary Exploration},
+  year      = {2020},
+  copyright = {http://rightsstatements.org/page/InC-NC/1.0/},
+  doi       = {10.3929/ETHZ-B-000450120},
+  file      = {:Seewald2020 - Beyond Traditional Energy Planning_ the Weight of Computations in Planetary Exploration.pdf:PDF},
+  groups    = {Space Exploration},
+  keywords  = {Space robotics},
+  language  = {en},
+  publisher = {ETH Zurich},
+}
+
+@Article{Kodgule2019,
+  author        = {Suhit Kodgule and Alberto Candela and David Wettergreen},
+  title         = {Non-myopic Planetary Exploration Combining In Situ and Remote Measurements},
+  year          = {2019},
+  month         = apr,
+  abstract      = {Remote sensing can provide crucial information for planetary rovers. However, they must validate these orbital observations with in situ measurements. Typically, this involves validating hyperspectral data using a spectrometer on-board the field robot. In order to achieve this, the robot must visit sampling locations that jointly improve a model of the environment while satisfying sampling constraints. However, current planners follow sub-optimal greedy strategies that are not scalable to larger regions. We demonstrate how the problem can be effectively defined in an MDP framework and propose a planning algorithm based on Monte Carlo Tree Search, which is devoid of the common drawbacks of existing planners and also provides superior performance. We evaluate our approach using hyperspectral imagery of a well-studied geologic site in Cuprite, Nevada.},
+  archiveprefix = {arXiv},
+  eprint        = {1904.12255},
+  file          = {:Kodgule2019 - Non Myopic Planetary Exploration Combining in Situ and Remote Measurements.pdf:PDF},
+  groups        = {Space Exploration},
+  keywords      = {cs.RO, cs.AI, cs.LG},
+  primaryclass  = {cs.RO},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
