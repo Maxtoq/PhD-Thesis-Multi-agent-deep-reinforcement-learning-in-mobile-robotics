@@ -4060,6 +4060,18 @@ FacMADDPG},
   primaryclass  = {cs.RO},
 }
 
+@InProceedings{Candela2020,
+  author    = {Alberto Candela and Suhit Kodgule and Kevin Edelson and Srinivasan Vijayarangan and David R. Thompson and Eldar Noe Dobrea and David Wettergreen},
+  booktitle = {2020 {IEEE} International Conference on Robotics and Automation ({ICRA})},
+  title     = {Planetary Rover Exploration Combining Remote and In Situ Measurements for Active Spectroscopic Mapping},
+  year      = {2020},
+  month     = {may},
+  publisher = {{IEEE}},
+  doi       = {10.1109/icra40945.2020.9196973},
+  file      = {:Candela2020 - Planetary Rover Exploration Combining Remote and in Situ Measurements for Active Spectroscopic Mapping.pdf:PDF},
+  groups    = {Space Exploration},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
