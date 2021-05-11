@@ -4072,6 +4072,18 @@ FacMADDPG},
   groups    = {Space Exploration},
 }
 
+@InProceedings{Ono2020,
+  author    = {Masahiro Ono and Brandon Rothrock and Kyohei Otsu and Shoya Higa and Yumi Iwashita and Annie Didier and Tanvir Islam and Christopher Laporte and Vivian Sun and Kathryn Stack and Jacek Sawoniewicz and Shreyansh Daftry and Virisha Timmaraju and Sami Sahnoune and Chris A. Mattmann and Olivier Lamarre and Sourish Ghosh and Dicong Qiu and Shunichiro Nomura and Hiya Roy and Hemanth Sarabu and Gabrielle Hedrick and Larkin Folsom and Sean Suehr and Hyoshin Park},
+  booktitle = {2020 {IEEE} Aerospace Conference},
+  title     = {{MAARS}: Machine learning-based Analytics for Automated Rover Systems},
+  year      = {2020},
+  month     = {mar},
+  publisher = {{IEEE}},
+  doi       = {10.1109/aero47225.2020.9172271},
+  file      = {:09172271.pdf:PDF},
+  groups    = {Space Exploration},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
