@@ -1056,6 +1056,7 @@
   biburl    = {https://dblp.org/rec/conf/aaai/MordatchA18.bib},
   file      = {:Mordatch2017 - Emergence of Grounded Compositional Language in Multi Agent Populations.pdf:PDF},
   groups    = {MARL, Communication},
+  priority  = {prio2},
   ranking   = {rank3},
   url       = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17007},
 }
@@ -1305,7 +1306,6 @@
   comment      = {COMA},
   file         = {:Foerster_Farquhar_Afouras_Nardelli_Whiteson_2018 - Counterfactual Multi Agent Policy Gradients.pdf:PDF},
   groups       = {Multi-agent RL},
-  priority     = {prio1},
   ranking      = {rank5},
   readstatus   = {read},
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11794},
@@ -1660,7 +1660,6 @@ sharing of policy parameters},
   doi       = {10.1007/978-3-319-71682-4_5},
   file      = {:Gupta2017 - Cooperative Multi Agent Control Using Deep Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL},
-  priority  = {prio2},
   ranking   = {rank3},
 }
 
@@ -1681,7 +1680,6 @@ sharing of policy parameters},
   file       = {:foerster17b - Stabilising Experience Replay for Deep Multi Agent Reinforcement Learning.pdf:PDF},
   groups     = {Multi-agent RL},
   pdf        = {http://proceedings.mlr.press/v70/foerster17b/foerster17b.pdf},
-  priority   = {prio1},
   ranking    = {rank2},
   readstatus = {read},
   url        = {http://proceedings.mlr.press/v70/foerster17b.html},
@@ -1703,7 +1701,6 @@ sharing of policy parameters},
   file       = {:rashid18a - QMIX_ Monotonic Value Function Factorisation for Deep Multi Agent Reinforcement Learning.pdf:PDF},
   groups     = {Multi-agent RL},
   pdf        = {http://proceedings.mlr.press/v80/rashid18a/rashid18a.pdf},
-  priority   = {prio1},
   ranking    = {rank4},
   readstatus = {read},
   url        = {http://proceedings.mlr.press/v80/rashid18a.html},
@@ -1727,7 +1724,6 @@ Dec-Histeretic Deep Recurrent Q-Network},
   file      = {:omidshafiei17a - Deep Decentralized Multi Task Multi Agent Reinforcement Learning under Partial Observability.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v70/omidshafiei17a/omidshafiei17a.pdf},
-  priority  = {prio3},
   ranking   = {rank3},
   url       = {http://proceedings.mlr.press/v70/omidshafiei17a.html},
 }
@@ -1778,7 +1774,6 @@ Dec-Histeretic Deep Recurrent Q-Network},
   groups        = {Multi-agent RL},
   keywords      = {cs.LG, cs.AI, cs.MA},
   primaryclass  = {cs.LG},
-  priority      = {prio2},
   ranking       = {rank4},
 }
 
@@ -1805,7 +1800,6 @@ Dec-Histeretic Deep Recurrent Q-Network},
   groups     = {Multi-agent RL},
   journal    = {NeurIPS Proceedings 2020},
   organizer  = {34th Annual Conference on Neural Information Processing Systems (NeurIPS 2020)},
-  priority   = {prio2},
   ranking    = {rank4},
   readstatus = {read},
 }
@@ -2126,7 +2120,6 @@ Dec-Histeretic Deep Recurrent Q-Network},
   comment    = {LOLA},
   file       = {:foerster2017learning - Learning with Opponent Learning Awareness.pdf:PDF},
   groups     = {Multi-agent RL},
-  priority   = {prio1},
   ranking    = {rank2},
   readstatus = {read},
 }
@@ -2144,7 +2137,6 @@ Dec-Histeretic Deep Recurrent Q-Network},
   groups        = {Multi-agent RL},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
-  priority      = {prio2},
   ranking       = {rank2},
   readstatus    = {read},
 }
@@ -2196,6 +2188,7 @@ Dec-Histeretic Deep Recurrent Q-Network},
   month         = mar,
   abstract      = {Many artificial intelligence (AI) applications often require multiple intelligent agents to work in a collaborative effort. Efficient learning for intra-agent communication and coordination is an indispensable step towards general AI. In this paper, we take StarCraft combat game as a case study, where the task is to coordinate multiple agents as a team to defeat their enemies. To maintain a scalable yet effective communication protocol, we introduce a Multiagent Bidirectionally-Coordinated Network (BiCNet ['bIknet]) with a vectorised extension of actor-critic formulation. We show that BiCNet can handle different types of combats with arbitrary numbers of AI agents for both sides. Our analysis demonstrates that without any supervisions such as human demonstrations or labelled data, BiCNet could learn various types of advanced coordination strategies that have been commonly used by experienced game players. In our experiments, we evaluate our approach against multiple baselines under different scenarios; it shows state-of-the-art performance, and possesses potential values for large-scale real-world applications.},
   archiveprefix = {arXiv},
+  comment       = {BiCNet},
   eprint        = {1703.10069},
   file          = {:Peng2017 - Multiagent Bidirectionally Coordinated Nets_ Emergence of Human Level Coordination in Learning to Play StarCraft Combat Games.pdf:PDF},
   groups        = {Communication},
@@ -2272,7 +2265,6 @@ Dec-Histeretic Deep Recurrent Q-Network},
   pages        = {5887--5896},
   file         = {:son2019qtran - Qtran_ Learning to Factorize with Transformation for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
   groups       = {Multi-agent RL},
-  priority     = {prio2},
   ranking      = {rank3},
   readstatus   = {read},
 }
@@ -2324,7 +2316,6 @@ FacMADDPG},
   groups        = {Multi-agent RL},
   keywords      = {cs.LG, cs.AI, stat.ML},
   primaryclass  = {cs.LG},
-  priority      = {prio2},
 }
 
 @Article{levine2016end,
@@ -2402,7 +2393,6 @@ FacMADDPG},
   keywords   = {neural networks, reinforcement learning, collaborative, q-learning, dqn, multi-agent, value-decomposition},
   location   = {Stockholm, Sweden},
   numpages   = {3},
-  priority   = {prio1},
   readstatus = {read},
 }
 
@@ -2439,7 +2429,7 @@ FacMADDPG},
   file      = {:Boehmer2020 - Deep Coordination Graphs.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v119/boehmer20a/boehmer20a.pdf},
-  priority  = {prio3},
+  priority  = {prio2},
   ranking   = {rank1},
   url       = {http://proceedings.mlr.press/v119/boehmer20a.html},
 }
@@ -2456,7 +2446,6 @@ FacMADDPG},
   groups        = {Multi-agent RL},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
-  priority      = {prio3},
   ranking       = {rank1},
 }
 
@@ -2866,7 +2855,6 @@ FacMADDPG},
   volume    = {1},
   file      = {:almadhoun2019survey - A Survey on Multi Robot Coverage Path Planning for Model Reconstruction and Mapping.pdf:PDF},
   groups    = {Multi-robot, Coverage Path Planning},
-  priority  = {prio2},
   publisher = {Springer},
 }
 
@@ -3081,7 +3069,6 @@ FacMADDPG},
   file     = {:JUN2016325 - Pose Estimation Based Path Planning for a Tracked Mobile Robot Traversing Uneven Terrains.pdf:PDF},
   groups   = {Navigation},
   keywords = {Path planning, Rough terrain, Sampling-based motion planning, Mobile robot, Tip-over stability},
-  priority = {prio1},
   url      = {https://www.sciencedirect.com/science/article/pii/S092188901500202X},
 }
 
@@ -3402,7 +3389,6 @@ FacMADDPG},
   volume    = {17},
   file      = {:fabisch2020bolero - BOLeRo_ Behavior Optimization and Learning for Robots.pdf:PDF},
   groups    = {Robotics, Platforms},
-  priority  = {prio2},
   publisher = {SAGE Publications Sage UK: London, England},
 }
 
@@ -3448,7 +3434,6 @@ FacMADDPG},
   doi       = {10.1007/978-3-662-47694-9_1},
   file      = {:Starek2016 - Spacecraft Autonomy Challenges for Next Generation Space Missions.pdf:PDF},
   groups    = {Space Exploration},
-  priority  = {prio2},
   ranking   = {rank4},
   url       = {https://doi.org/10.1007/978-3-662-47694-9_1},
 }
@@ -3580,7 +3565,6 @@ FacMADDPG},
   doi       = {10.1007/978-3-319-32552-1_53},
   file      = {:Parker2016 - Multiple Mobile Robot Systems.pdf:PDF},
   groups    = {Multi-robot},
-  priority  = {prio2},
   ranking   = {rank3},
   url       = {https://doi.org/10.1007/978-3-319-32552-1_53},
 }
@@ -3864,7 +3848,6 @@ FacMADDPG},
   file     = {:dlr132830 - Collaborative Localization and Mapping for Autonomous Planetary Exploration_ Distributed Stereo Vision Based 6D SLAM in GNSS Denied Environments.pdf:PDF},
   groups   = {Space Exploration},
   keywords = {SLAM, collaborative SLAM, distributed SLAM, localization, mapping, stereo-vision, multi-robot, planetary exploration, autonomous robots},
-  priority = {prio2},
   url      = {https://elib.dlr.de/132830/},
 }
 
@@ -4005,12 +3988,11 @@ FacMADDPG},
 }
 
 @PhdThesis{matheron2020,
-  author   = {Guillaume Matheron},
-  title    = {Integrating Motion Planning into Reinforcement Learning to solve hard exploration problems},
-  year     = {2020},
-  file     = {:matheron2020 - Integrating Motion Planning into Reinforcement Learning to Solve Hard Exploration Problems.pdf:PDF},
-  groups   = {Information gathering},
-  priority = {prio1},
+  author = {Guillaume Matheron},
+  title  = {Integrating Motion Planning into Reinforcement Learning to solve hard exploration problems},
+  year   = {2020},
+  file   = {:matheron2020 - Integrating Motion Planning into Reinforcement Learning to Solve Hard Exploration Problems.pdf:PDF},
+  groups = {Information gathering},
 }
 
 @Article{Lamarre2020,
@@ -4147,6 +4129,77 @@ FacMADDPG},
   publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
 }
 
+@Article{Li2020,
+  author        = {Sheng Li and Jayesh K. Gupta and Peter Morales and Ross Allen and Mykel J. Kochenderfer},
+  title         = {Deep Implicit Coordination Graphs for Multi-agent Reinforcement Learning},
+  year          = {2020},
+  month         = jun,
+  abstract      = {Multi-agent reinforcement learning (MARL) requires coordination to efficiently solve certain tasks. Fully centralized control is often infeasible in such domains due to the size of joint action spaces. Coordination graph based formalization allows reasoning about the joint action based on the structure of interactions. However, they often require domain expertise in their design. This paper introduces the deep implicit coordination graph (DICG) architecture for such scenarios. DICG consists of a module for inferring the dynamic coordination graph structure which is then used by a graph neural network based module to learn to implicitly reason about the joint actions or values. DICG allows learning the tradeoff between full centralization and decentralization via standard actor-critic methods to significantly improve coordination for domains with large number of agents. We apply DICG to both centralized-training-centralized-execution and centralized-training-decentralized-execution regimes. We demonstrate that DICG solves the relative overgeneralization pathology in predatory-prey tasks as well as outperforms various MARL baselines on the challenging StarCraft II Multi-agent Challenge (SMAC) and traffic junction environments.},
+  archiveprefix = {arXiv},
+  eprint        = {2006.11438},
+  file          = {:Li2020 - Deep Implicit Coordination Graphs for Multi Agent Reinforcement Learning.pdf:PDF},
+  groups        = {Multi-agent RL},
+  keywords      = {cs.LG, cs.AI, cs.MA},
+  primaryclass  = {cs.LG},
+  priority      = {prio2},
+}
+
+@InProceedings{Jiang2020Graph,
+  author    = {Jiechuan Jiang and Chen Dun and Tiejun Huang and Zongqing Lu},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Graph Convolutional Reinforcement Learning},
+  year      = {2020},
+  file      = {:Jiang2020Graph - Graph Convolutional Reinforcement Learning.pdf:PDF},
+  groups    = {Multi-agent RL},
+  priority  = {prio2},
+  url       = {https://openreview.net/forum?id=HkxdQkSYDB},
+}
+
+@Article{Meneghetti2020,
+  author        = {Douglas De Rizzo Meneghetti and Reinaldo Augusto da Costa Bianchi},
+  title         = {Towards Heterogeneous Multi-Agent Reinforcement Learning with Graph Neural Networks},
+  year          = {2020},
+  month         = sep,
+  abstract      = {This work proposes a neural network architecture that learns policies for multiple agent classes in a heterogeneous multi-agent reinforcement setting. The proposed network uses directed labeled graph representations for states, encodes feature vectors of different sizes for different entity classes, uses relational graph convolution layers to model different communication channels between entity types and learns distinct policies for different agent classes, sharing parameters wherever possible. Results have shown that specializing the communication channels between entity classes is a promising step to achieve higher performance in environments composed of heterogeneous entities.},
+  archiveprefix = {arXiv},
+  doi           = {10.5753/eniac.2020.12161},
+  eprint        = {2009.13161},
+  file          = {:Meneghetti2020 - Towards Heterogeneous Multi Agent Reinforcement Learning with Graph Neural Networks.pdf:PDF},
+  groups        = {H-MADRL},
+  keywords      = {cs.AI, cs.LG},
+  primaryclass  = {cs.AI},
+  readstatus    = {read},
+}
+
+@Article{Zheng2020,
+  author        = {Han Zheng and Pengfei Wei and Jing Jiang and Guodong Long and Qinghua Lu and Chengqi Zhang},
+  title         = {Cooperative Heterogeneous Deep Reinforcement Learning},
+  year          = {2020},
+  month         = nov,
+  abstract      = {Numerous deep reinforcement learning agents have been proposed, and each of them has its strengths and flaws. In this work, we present a Cooperative Heterogeneous Deep Reinforcement Learning (CHDRL) framework that can learn a policy by integrating the advantages of heterogeneous agents. Specifically, we propose a cooperative learning framework that classifies heterogeneous agents into two classes: global agents and local agents. Global agents are off-policy agents that can utilize experiences from the other agents. Local agents are either on-policy agents or population-based evolutionary algorithms (EAs) agents that can explore the local area effectively. We employ global agents, which are sample-efficient, to guide the learning of local agents so that local agents can benefit from sample-efficient agents and simultaneously maintain their advantages, e.g., stability. Global agents also benefit from effective local searches. Experimental studies on a range of continuous control tasks from the Mujoco benchmark show that CHDRL achieves better performance compared with state-of-the-art baselines.},
+  archiveprefix = {arXiv},
+  eprint        = {2011.00791},
+  file          = {:Zheng2020 - Cooperative Heterogeneous Deep Reinforcement Learning.pdf:PDF},
+  groups        = {H-MADRL},
+  keywords      = {cs.LG, cs.AI},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Meneghetti2020a,
+  author        = {Douglas De Rizzo Meneghetti and Reinaldo Augusto da Costa Bianchi},
+  title         = {Specializing Inter-Agent Communication in Heterogeneous Multi-Agent Reinforcement Learning using Agent Class Information},
+  year          = {2020},
+  month         = dec,
+  abstract      = {Inspired by recent advances in agent communication with graph neural networks, this work proposes the representation of multi-agent communication capabilities as a directed labeled heterogeneous agent graph, in which node labels denote agent classes and edge labels, the communication type between two classes of agents. We also introduce a neural network architecture that specializes communication in fully cooperative heterogeneous multi-agent tasks by learning individual transformations to the exchanged messages between each pair of agent classes. By also employing encoding and action selection modules with parameter sharing for environments with heterogeneous agents, we demonstrate comparable or superior performance in environments where a larger number of agent classes operates.},
+  archiveprefix = {arXiv},
+  eprint        = {2012.07617},
+  file          = {:Meneghetti2020a - Specializing Inter Agent Communication in Heterogeneous Multi Agent Reinforcement Learning Using Agent Class Information.pdf:PDF},
+  groups        = {H-MADRL},
+  keywords      = {cs.AI, cs.LG, cs.MA},
+  primaryclass  = {cs.AI},
+  priority      = {prio2},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -4189,6 +4242,8 @@ FacMADDPG},
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Heterogeneous Systems\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
