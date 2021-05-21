@@ -8,8 +8,20 @@
   pages     = {8113-8124},
   cdate     = {1514764800000},
   crossref  = {conf/nips/2018},
-  file      = {:NguyenKL18 - Credit Assignment for Collective Multiagent RL with Global Rewards.pdf:PDF},
   groups    = {Multi-agent RL},
+  url       = {http://papers.nips.cc/paper/8033-credit-assignment-for-collective-multiagent-rl-with-global-rewards},
+}
+
+@InProceedings{NguyenKL18,
+  author    = {Duc Thien Nguyen and Akshat Kumar and Hoong Chuin Lau},
+  booktitle = {NeurIPS},
+  title     = {Credit Assignment For Collective Multiagent RL With Global Rewards},
+  year      = {2018},
+  pages     = {8113-8124},
+  cdate     = {1514764800000},
+  crossref  = {conf/nips/2018},
+  file      = {:NguyenKL18 - Credit Assignment for Collective Multiagent RL with Global Rewards.pdf:PDF},
+  groups    = {Multi-agent RL, Credit Assignment},
   url       = {http://papers.nips.cc/paper/8033-credit-assignment-for-collective-multiagent-rl-with-global-rewards},
 }
 
@@ -1073,6 +1085,7 @@
   groups        = {Multi-agent RL},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
+  ranking       = {rank3},
 }
 
 @Article{Leibo2019,
@@ -1356,6 +1369,7 @@
   file      = {:Iqbal2019 - Actor Attention Critic for Multi Agent Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v97/iqbal19a/iqbal19a.pdf},
+  ranking   = {rank3},
   url       = {http://proceedings.mlr.press/v97/iqbal19a.html},
 }
 
@@ -2265,7 +2279,7 @@ Dec-Histeretic Deep Recurrent Q-Network},
   pages        = {5887--5896},
   file         = {:son2019qtran - Qtran_ Learning to Factorize with Transformation for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
   groups       = {Multi-agent RL},
-  ranking      = {rank3},
+  ranking      = {rank2},
   readstatus   = {read},
 }
 
@@ -4242,7 +4256,26 @@ FacMADDPG},
   doi       = {10.1609/aaai.v33i01.33016128},
   file      = {:4570-Article Text-7609-1-10-20190707.pdf:PDF},
   groups    = {Multi-agent RL},
+  priority  = {prio2},
   publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
+  ranking   = {rank3},
+}
+
+@Article{Foerster_Farquhar_Afouras_Nardelli_Whiteson_2018,
+  author       = {Foerster, Jakob and Farquhar, Gregory and Afouras, Triantafyllos and Nardelli, Nantas and Whiteson, Shimon},
+  journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title        = {Counterfactual Multi-Agent Policy Gradients},
+  year         = {2018},
+  month        = {Apr.},
+  number       = {1},
+  volume       = {32},
+  abstractnote = {&lt;p&gt; Many real-world problems, such as network packet routing and the coordination of autonomous vehicles, are naturally modelled as cooperative multi-agent systems. There is a great need for new reinforcement learning methods that can efficiently learn decentralised policies for such systems. To this end, we propose a new multi-agent actor-critic method called counterfactual multi-agent (COMA) policy gradients. COMA uses a centralised critic to estimate the Q-function and decentralised actors to optimise the agents’ policies. In addition, to address the challenges of multi-agent credit assignment, it uses a counterfactual baseline that marginalises out a single agent’s action, while keeping the other agents’ actions fixed. COMA also uses a critic representation that allows the counterfactual baseline to be computed efficiently in a single forward pass. We evaluate COMA in the testbed of StarCraft unit micromanagement, using a decentralised variant with significant partial observability. COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state. &lt;/p&gt;},
+  comment      = {COMA},
+  file         = {:Foerster_Farquhar_Afouras_Nardelli_Whiteson_2018 - Counterfactual Multi Agent Policy Gradients.pdf:PDF},
+  groups       = {Multi-agent RL, Credit Assignment},
+  ranking      = {rank5},
+  readstatus   = {read},
+  url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11794},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
