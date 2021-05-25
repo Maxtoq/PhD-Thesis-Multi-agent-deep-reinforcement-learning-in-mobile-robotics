@@ -4292,6 +4292,54 @@ FacMADDPG},
   url       = {https://proceedings.neurips.cc/paper/2018/file/6a8018b3a00b69c008601b8becae392b-Paper.pdf},
 }
 
+@InProceedings{10.5555/3306127.3332052,
+  author    = {Samvelyan, Mikayel and Rashid, Tabish and Schroeder de Witt, Christian and Farquhar, Gregory and Nardelli, Nantas and Rudner, Tim G. J. and Hung, Chia-Man and Torr, Philip H. S. and Foerster, Jakob and Whiteson, Shimon},
+  booktitle = {Proceedings of the 18th International Conference on Autonomous Agents and MultiAgent Systems},
+  title     = {The StarCraft Multi-Agent Challenge},
+  year      = {2019},
+  address   = {Richland, SC},
+  pages     = {2186–2188},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '19},
+  abstract  = {In the last few years, deep multi-agent reinforcement learning (RL) has become a highly active area of research. A particularly challenging class of problems in this area is partially observable, cooperative, multi-agent learning, in which teams of agents must learn to coordinate their behaviour while conditioning only on their private observations. This is an attractive research area since such problems are relevant to a large number of real-world systems and are also more amenable to evaluation than general-sum problems. Standardised environments such as the ALE and MuJoCo have allowed single-agent RL to move beyond toy domains, such as grid worlds. However, there is no comparable benchmark for cooperative multi-agent RL. As a result, most papers in this field use one-off toy problems, making it difficult to measure real progress. In this paper, we propose the StarCraft Multi-Agent Challenge (SMAC) as a benchmark problem to fill this gap. SMAC is based on the popular real-time strategy game StarCraft II and focuses on micromanagement challenges where each unit is controlled by an independent agent that must act based on local observations. We offer a diverse set of challenge maps and recommendations for best practices in benchmarking and evaluations. We also open-source a deep multi-agent RL learning framework including state-of-the-art algorithms. We believe that SMAC can provide a standard benchmark environment for years to come. Videos of our best agents for several SMAC scenarios are available at: https://youtu.be/VZ7zmQ_obZ0.},
+  file      = {:10.5555_3306127.3332052 - The StarCraft Multi Agent Challenge (2).pdf:PDF},
+  groups    = {Multi-agent RL},
+  isbn      = {9781450363099},
+  keywords  = {multi-agent learning, starcraft, reinforcement learning},
+  location  = {Montreal QC, Canada},
+  numpages  = {3},
+  ranking   = {rank2},
+}
+
+@Article{ShalevShwartz2016a,
+  author        = {Shai Shalev-Shwartz and Shaked Shammah and Amnon Shashua},
+  title         = {Safe, Multi-Agent, Reinforcement Learning for Autonomous Driving},
+  year          = {2016},
+  month         = oct,
+  abstract      = {Autonomous driving is a multi-agent setting where the host vehicle must apply sophisticated negotiation skills with other road users when overtaking, giving way, merging, taking left and right turns and while pushing ahead in unstructured urban roadways. Since there are many possible scenarios, manually tackling all possible cases will likely yield a too simplistic policy. Moreover, one must balance between unexpected behavior of other drivers/pedestrians and at the same time not to be too defensive so that normal traffic flow is maintained. In this paper we apply deep reinforcement learning to the problem of forming long term driving strategies. We note that there are two major challenges that make autonomous driving different from other robotic tasks. First, is the necessity for ensuring functional safety - something that machine learning has difficulty with given that performance is optimized at the level of an expectation over many instances. Second, the Markov Decision Process model often used in robotics is problematic in our case because of unpredictable behavior of other agents in this multi-agent scenario. We make three contributions in our work. First, we show how policy gradient iterations can be used without Markovian assumptions. Second, we decompose the problem into a composition of a Policy for Desires (which is to be learned) and trajectory planning with hard constraints (which is not learned). The goal of Desires is to enable comfort of driving, while hard constraints guarantees the safety of driving. Third, we introduce a hierarchical temporal abstraction we call an "Option Graph" with a gating mechanism that significantly reduces the effective horizon and thereby reducing the variance of the gradient estimation even further.},
+  archiveprefix = {arXiv},
+  eprint        = {1610.03295},
+  file          = {:- Safe, Multi Agent, Reinforcement Learning for Autonomous Driving.pdf:PDF},
+  groups        = {Navigation},
+  keywords      = {cs.AI, cs.LG, stat.ML},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Wang2020a,
+  author        = {Rose E. Wang and Michael Everett and Jonathan P. How},
+  journal       = {Reinforcement Learning for Real Life (RL4RealLife) Workshop in the 36th International Conference on Machine Learning, Long Beach, California, USA, 2019},
+  title         = {R-MADDPG for Partially Observable Environments and Limited Communication},
+  year          = {2020},
+  month         = feb,
+  abstract      = {There are several real-world tasks that would benefit from applying multiagent reinforcement learning (MARL) algorithms, including the coordination among self-driving cars. The real world has challenging conditions for multiagent learning systems, such as its partial observable and nonstationary nature. Moreover, if agents must share a limited resource (e.g. network bandwidth) they must all learn how to coordinate resource use. This paper introduces a deep recurrent multiagent actor-critic framework (R-MADDPG) for handling multiagent coordination under partial observable set-tings and limited communication. We investigate recurrency effects on performance and communication use of a team of agents. We demonstrate that the resulting framework learns time dependencies for sharing missing observations, handling resource limitations, and developing different communication patterns among agents.},
+  archiveprefix = {arXiv},
+  eprint        = {2002.06684},
+  file          = {:Wang2020a - R MADDPG for Partially Observable Environments and Limited Communication.pdf:PDF},
+  groups        = {Multi-agent RL},
+  keywords      = {cs.MA, cs.AI},
+  primaryclass  = {cs.MA},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
