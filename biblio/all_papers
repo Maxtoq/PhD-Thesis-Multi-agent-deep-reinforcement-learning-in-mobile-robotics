@@ -8,18 +8,6 @@
   pages     = {8113-8124},
   cdate     = {1514764800000},
   crossref  = {conf/nips/2018},
-  groups    = {Multi-agent RL},
-  url       = {http://papers.nips.cc/paper/8033-credit-assignment-for-collective-multiagent-rl-with-global-rewards},
-}
-
-@InProceedings{NguyenKL18,
-  author    = {Duc Thien Nguyen and Akshat Kumar and Hoong Chuin Lau},
-  booktitle = {NeurIPS},
-  title     = {Credit Assignment For Collective Multiagent RL With Global Rewards},
-  year      = {2018},
-  pages     = {8113-8124},
-  cdate     = {1514764800000},
-  crossref  = {conf/nips/2018},
   file      = {:NguyenKL18 - Credit Assignment for Collective Multiagent RL with Global Rewards.pdf:PDF},
   groups    = {Multi-agent RL, Credit Assignment},
   url       = {http://papers.nips.cc/paper/8033-credit-assignment-for-collective-multiagent-rl-with-global-rewards},
@@ -473,7 +461,7 @@
   archiveprefix = {arXiv},
   eprint        = {1511.08779},
   file          = {:Tampuu2015 - Multiagent Cooperation and Competition with Deep Reinforcement Learning.pdf:PDF},
-  groups        = {MARL},
+  groups        = {MARL, Multi-agent RL},
   keywords      = {cs.AI, cs.LG, q-bio.NC},
   primaryclass  = {cs.AI},
 }
@@ -487,7 +475,7 @@
   archiveprefix = {arXiv},
   eprint        = {1912.00949},
   file          = {:Wang2019 - Multi Agent Deep Reinforcement Learning with Adaptive Policies.pdf:PDF},
-  groups        = {MARL},
+  groups        = {MARL, Multi-agent RL},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
 }
@@ -503,7 +491,7 @@
   biburl    = {https://dblp.org/rec/journals/ai/BardFCBLSPDMHDM20.bib},
   doi       = {10.1016/j.artint.2019.103216},
   file      = {:Bard2020 - The Hanabi Challenge_ a New Frontier for AI Research.pdf:PDF},
-  groups    = {MARL},
+  groups    = {MARL, Multi-agent learning},
 }
 
 @Article{Long2020,
@@ -515,7 +503,7 @@
   archiveprefix = {arXiv},
   eprint        = {2003.10423},
   file          = {:Long2020 - Evolutionary Population Curriculum for Scaling Multi Agent Reinforcement Learning.pdf:PDF},
-  groups        = {MARL},
+  groups        = {MARL, Multi-agent RL},
   keywords      = {cs.LG, cs.AI, cs.NE, cs.RO, stat.ML},
   primaryclass  = {cs.LG},
 }
@@ -530,7 +518,7 @@
   volume  = {33},
   doi     = {10.1609/aaai.v33i01.33014213},
   file    = {:Li - Robust Multi Agent Reinforcement Learning Via Minimax Deep Deterministic Policy Gradient.pdf:PDF},
-  groups  = {MARL},
+  groups  = {MARL, Multi-agent RL},
 }
 
 @Article{Hu2021,
@@ -542,7 +530,7 @@
   archiveprefix = {arXiv},
   eprint        = {2101.08001},
   file          = {:Hu2021 - UPDeT_ Universal Multi Agent Reinforcement Learning Via Policy Decoupling with Transformers.pdf:PDF},
-  groups        = {MARL},
+  groups        = {MARL, Multi-agent RL},
   keywords      = {cs.LG, cs.AI},
   primaryclass  = {cs.LG},
 }
@@ -894,21 +882,6 @@
   url           = {http://arxiv.org/abs/1712.01815},
 }
 
-@Article{Lowe2017,
-  author        = {Ryan Lowe and Yi Wu and Aviv Tamar and Jean Harb and Pieter Abbeel and Igor Mordatch},
-  journal       = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
-  title         = {Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments},
-  year          = {2017},
-  month         = jun,
-  abstract      = {We explore deep reinforcement learning methods for multi-agent domains. We begin by analyzing the difficulty of traditional algorithms in the multi-agent case: Q-learning is challenged by an inherent non-stationarity of the environment, while policy gradient suffers from a variance that increases as the number of agents grows. We then present an adaptation of actor-critic methods that considers action policies of other agents and is able to successfully learn policies that require complex multi-agent coordination. Additionally, we introduce a training regimen utilizing an ensemble of policies for each agent that leads to more robust multi-agent policies. We show the strength of our approach compared to existing methods in cooperative as well as competitive scenarios, where agent populations are able to discover various physical and informational coordination strategies.},
-  archiveprefix = {arXiv},
-  eprint        = {1706.02275},
-  file          = {:Lowe2017 - Multi Agent Actor Critic for Mixed Cooperative Competitive Environments.pdf:PDF},
-  groups        = {MARL, Communication},
-  keywords      = {cs.LG, cs.AI, cs.NE},
-  primaryclass  = {cs.LG},
-}
-
 @Article{Schulman2015a,
   author        = {John Schulman and Philipp Moritz and Sergey Levine and Michael Jordan and Pieter Abbeel},
   journal       = {ICLR 2016},
@@ -962,7 +935,7 @@
   archiveprefix = {arXiv},
   eprint        = {1909.07528},
   file          = {:Baker2019 - Emergent Tool Use from Multi Agent Autocurricula.pdf:PDF},
-  groups        = {MARL},
+  groups        = {MARL, Multi-agent learning},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
 }
@@ -977,7 +950,7 @@
   archiveprefix = {arXiv},
   eprint        = {1710.03748},
   file          = {:Bansal2017 - Emergent Complexity Via Multi Agent Competition.pdf:PDF},
-  groups        = {MARL},
+  groups        = {MARL, Multi-agent learning},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
 }
@@ -993,7 +966,7 @@
   doi           = {10.1126/science.aau6249},
   eprint        = {1807.01281},
   file          = {:Jaderberg2018 - Human Level Performance in First Person Multiplayer Games with Population Based Deep Reinforcement Learning.pdf:PDF},
-  groups        = {MARL},
+  groups        = {MARL, Multi-agent RL},
   keywords      = {cs.LG, cs.AI, stat.ML},
   primaryclass  = {cs.LG},
 }
@@ -1007,7 +980,7 @@
   archiveprefix = {arXiv},
   eprint        = {1902.07151},
   file          = {:Liu2019 - Emergent Coordination through Competition.pdf:PDF},
-  groups        = {MARL},
+  groups        = {MARL, Multi-agent RL},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
 }
@@ -1068,7 +1041,6 @@
   biburl    = {https://dblp.org/rec/conf/aaai/MordatchA18.bib},
   file      = {:Mordatch2017 - Emergence of Grounded Compositional Language in Multi Agent Populations.pdf:PDF},
   groups    = {MARL, Communication},
-  priority  = {prio2},
   ranking   = {rank3},
   url       = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17007},
 }
@@ -1224,7 +1196,6 @@
   isbn       = {9781510860964},
   location   = {Long Beach, California, USA},
   numpages   = {12},
-  priority   = {prio1},
   ranking    = {rank5},
   readstatus = {read},
   url        = {https://dl.acm.org/doi/abs/10.5555/3295222.3295385},
@@ -1580,7 +1551,6 @@
   file     = {:KRAEMER201682 - Multi Agent Reinforcement Learning As a Rehearsal for Decentralized Planning.pdf:PDF},
   groups   = {Multi-agent RL},
   keywords = {Multi-agent reinforcement learning, Decentralized planning},
-  priority = {prio3},
   url      = {https://www.sciencedirect.com/science/article/pii/S0925231216000783},
 }
 
@@ -1754,7 +1724,6 @@ Dec-Histeretic Deep Recurrent Q-Network},
   groups        = {DDPG},
   keywords      = {cs.AI, cs.LG, I.2.1; I.2.6},
   primaryclass  = {cs.AI},
-  priority      = {prio2},
   ranking       = {rank2},
 }
 
@@ -2303,17 +2272,16 @@ Dec-Histeretic Deep Recurrent Q-Network},
 }
 
 @Article{schroeder2019multi,
-  author   = {Schroeder de Witt, Christian and Foerster, Jakob and Farquhar, Gregory and Torr, Philip and Boehmer, Wendelin and Whiteson, Shimon},
-  journal  = {Advances in Neural Information Processing Systems},
-  title    = {Multi-agent common knowledge reinforcement learning},
-  year     = {2019},
-  pages    = {9927--9939},
-  volume   = {32},
-  comment  = {MACKRL},
-  file     = {:schroeder2019multi - Multi Agent Common Knowledge Reinforcement Learning (1).pdf:PDF},
-  groups   = {Multi-agent RL},
-  priority = {prio3},
-  ranking  = {rank1},
+  author  = {Schroeder de Witt, Christian and Foerster, Jakob and Farquhar, Gregory and Torr, Philip and Boehmer, Wendelin and Whiteson, Shimon},
+  journal = {Advances in Neural Information Processing Systems},
+  title   = {Multi-agent common knowledge reinforcement learning},
+  year    = {2019},
+  pages   = {9927--9939},
+  volume  = {32},
+  comment = {MACKRL},
+  file    = {:schroeder2019multi - Multi Agent Common Knowledge Reinforcement Learning (1).pdf:PDF},
+  groups  = {Multi-agent RL},
+  ranking = {rank1},
 }
 
 @Article{Witt2020a,
@@ -2387,7 +2355,6 @@ FacMADDPG},
   file      = {:He2016 - Opponent Modeling in Deep Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v48/he16.pdf},
-  priority  = {prio3},
   ranking   = {rank1},
   url       = {http://proceedings.mlr.press/v48/he16.html},
 }
@@ -2443,7 +2410,6 @@ FacMADDPG},
   file      = {:Boehmer2020 - Deep Coordination Graphs.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v119/boehmer20a/boehmer20a.pdf},
-  priority  = {prio2},
   ranking   = {rank1},
   url       = {http://proceedings.mlr.press/v119/boehmer20a.html},
 }
@@ -2484,21 +2450,6 @@ FacMADDPG},
   file    = {:wiegand2003analysis - An Analysis of Cooperative Coevolutionary Algorithms.pdf:PDF},
   groups  = {Multi-agent RL},
   ranking = {rank3},
-}
-
-@InProceedings{NEURIPS2018_6a8018b3,
-  author    = {Jiang, Jiechuan and Lu, Zongqing},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {Learning Attentional Communication for Multi-Agent Cooperation},
-  year      = {2018},
-  editor    = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
-  publisher = {Curran Associates, Inc.},
-  volume    = {31},
-  comment   = {ATOC},
-  file      = {:NEURIPS2018_6a8018b3 - Learning Attentional Communication for Multi Agent Cooperation.pdf:PDF},
-  groups    = {Communication},
-  ranking   = {rank3},
-  url       = {https://proceedings.neurips.cc/paper/2018/file/6a8018b3a00b69c008601b8becae392b-Paper.pdf},
 }
 
 @Article{WANG202068,
@@ -2757,7 +2708,6 @@ FacMADDPG},
   eprint   = {https://doi.org/10.1177/0278364920987859},
   file     = {:0278364920987859.pdf:PDF},
   groups   = {Robotics},
-  priority = {prio1},
   url      = {https://doi.org/10.1177/0278364920987859},
 }
 
@@ -4157,7 +4107,6 @@ FacMADDPG},
   groups        = {Multi-agent RL},
   keywords      = {cs.LG, cs.AI, cs.MA},
   primaryclass  = {cs.LG},
-  priority      = {prio2},
 }
 
 @InProceedings{Jiang2020Graph,
@@ -4167,7 +4116,6 @@ FacMADDPG},
   year      = {2020},
   file      = {:Jiang2020Graph - Graph Convolutional Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL},
-  priority  = {prio2},
   url       = {https://openreview.net/forum?id=HkxdQkSYDB},
 }
 
@@ -4256,7 +4204,6 @@ FacMADDPG},
   doi       = {10.1609/aaai.v33i01.33016128},
   file      = {:4570-Article Text-7609-1-10-20190707.pdf:PDF},
   groups    = {Multi-agent RL},
-  priority  = {prio2},
   publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
   ranking   = {rank3},
 }
@@ -4276,20 +4223,6 @@ FacMADDPG},
   ranking      = {rank5},
   readstatus   = {read},
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11794},
-}
-
-@InProceedings{NEURIPS2018_6a8018b3,
-  author    = {Jiang, Jiechuan and Lu, Zongqing},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {Learning Attentional Communication for Multi-Agent Cooperation},
-  year      = {2018},
-  editor    = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
-  publisher = {Curran Associates, Inc.},
-  volume    = {31},
-  file      = {:NEURIPS2018_6a8018b3 - Learning Attentional Communication for Multi Agent Cooperation (1).pdf:PDF},
-  groups    = {Multi-agent RL},
-  ranking   = {rank1},
-  url       = {https://proceedings.neurips.cc/paper/2018/file/6a8018b3a00b69c008601b8becae392b-Paper.pdf},
 }
 
 @InProceedings{10.5555/3306127.3332052,
@@ -4340,6 +4273,35 @@ FacMADDPG},
   primaryclass  = {cs.MA},
 }
 
+@InProceedings{NEURIPS2018_6a8018b3,
+  author    = {Jiang, Jiechuan and Lu, Zongqing},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Learning Attentional Communication for Multi-Agent Cooperation},
+  year      = {2018},
+  editor    = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {31},
+  file      = {:NEURIPS2018_6a8018b3 - Learning Attentional Communication for Multi Agent Cooperation (1).pdf:PDF},
+  groups    = {Multi-agent RL, Communication},
+  ranking   = {rank1},
+  url       = {https://proceedings.neurips.cc/paper/2018/file/6a8018b3a00b69c008601b8becae392b-Paper.pdf},
+}
+
+@Article{Stone2000,
+  author    = {Peter Stone and Manuela Veloso},
+  journal   = {Autonomous Robots},
+  title     = {Multiagent Systems: A Survey from a Machine Learning Perspective},
+  year      = {2000},
+  number    = {3},
+  pages     = {345--383},
+  volume    = {8},
+  doi       = {10.1023/a:1008942012299},
+  file      = {:Stone2000 - Multiagent Systems_ a Survey from a Machine Learning Perspective.pdf:PDF},
+  groups    = {MAS Reviews},
+  publisher = {Springer Science and Business Media {LLC}},
+  ranking   = {rank4},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -4379,8 +4341,8 @@ FacMADDPG},
 3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent RL\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Communication\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Heterogeneous Systems\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
