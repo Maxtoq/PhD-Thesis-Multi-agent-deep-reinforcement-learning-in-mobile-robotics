@@ -2311,6 +2311,7 @@ FacMADDPG},
   file      = {:levine2016end - End to End Training of Deep Visuomotor Policies.pdf:PDF},
   groups    = {Robotics},
   publisher = {JMLR. org},
+  ranking   = {rank5},
 }
 
 @InProceedings{matignon2007hysteretic,
@@ -4295,11 +4296,28 @@ FacMADDPG},
   number    = {3},
   pages     = {345--383},
   volume    = {8},
+  comment   = {Survey MAS organizing them along two axes: degree of heterogeneity and degree of communication (homogeneous
+non-communicating agents; heterogeneous non-communicating agents; and heterogeneous communicating
+agents)},
   doi       = {10.1023/a:1008942012299},
   file      = {:Stone2000 - Multiagent Systems_ a Survey from a Machine Learning Perspective.pdf:PDF},
   groups    = {MAS Reviews},
   publisher = {Springer Science and Business Media {LLC}},
   ranking   = {rank4},
+}
+
+@Article{Wakilpoor2020,
+  author        = {Ceyer Wakilpoor and Patrick J. Martin and Carrie Rebhuhn and Amanda Vu},
+  title         = {Heterogeneous Multi-Agent Reinforcement Learning for Unknown Environment Mapping},
+  year          = {2020},
+  month         = oct,
+  abstract      = {Reinforcement learning in heterogeneous multi-agent scenarios is important for real-world applications but presents challenges beyond those seen in homogeneous settings and simple benchmarks. In this work, we present an actor-critic algorithm that allows a team of heterogeneous agents to learn decentralized control policies for covering an unknown environment. This task is of interest to national security and emergency response organizations that would like to enhance situational awareness in hazardous areas by deploying teams of unmanned aerial vehicles. To solve this multi-agent coverage path planning problem in unknown environments, we augment a multi-agent actor-critic architecture with a new state encoding structure and triplet learning loss to support heterogeneous agent learning. We developed a simulation environment that includes real-world environmental factors such as turbulence, delayed communication, and agent loss, to train teams of agents as well as probe their robustness and flexibility to such disturbances.},
+  archiveprefix = {arXiv},
+  eprint        = {2010.02663},
+  file          = {:Wakilpoor2020 - Heterogeneous Multi Agent Reinforcement Learning for Unknown Environment Mapping.pdf:PDF},
+  groups        = {H-MADRL},
+  keywords      = {cs.MA, cs.AI},
+  primaryclass  = {cs.MA},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
