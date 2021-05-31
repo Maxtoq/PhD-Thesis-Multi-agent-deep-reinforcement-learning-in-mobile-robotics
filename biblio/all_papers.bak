@@ -4306,6 +4306,36 @@ agents)},
   ranking   = {rank4},
 }
 
+@Article{Wakilpoor2020,
+  author        = {Ceyer Wakilpoor and Patrick J. Martin and Carrie Rebhuhn and Amanda Vu},
+  title         = {Heterogeneous Multi-Agent Reinforcement Learning for Unknown Environment Mapping},
+  year          = {2020},
+  month         = oct,
+  abstract      = {Reinforcement learning in heterogeneous multi-agent scenarios is important for real-world applications but presents challenges beyond those seen in homogeneous settings and simple benchmarks. In this work, we present an actor-critic algorithm that allows a team of heterogeneous agents to learn decentralized control policies for covering an unknown environment. This task is of interest to national security and emergency response organizations that would like to enhance situational awareness in hazardous areas by deploying teams of unmanned aerial vehicles. To solve this multi-agent coverage path planning problem in unknown environments, we augment a multi-agent actor-critic architecture with a new state encoding structure and triplet learning loss to support heterogeneous agent learning. We developed a simulation environment that includes real-world environmental factors such as turbulence, delayed communication, and agent loss, to train teams of agents as well as probe their robustness and flexibility to such disturbances.},
+  archiveprefix = {arXiv},
+  eprint        = {2010.02663},
+  file          = {:Wakilpoor2020 - Heterogeneous Multi Agent Reinforcement Learning for Unknown Environment Mapping.pdf:PDF},
+  groups        = {H-MADRL},
+  keywords      = {cs.MA, cs.AI},
+  primaryclass  = {cs.MA},
+}
+
+@InProceedings{10.5555/3237383.3237451,
+  author    = {Palmer, Gregory and Tuyls, Karl and Bloembergen, Daan and Savani, Rahul},
+  booktitle = {Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems},
+  title     = {Lenient Multi-Agent Deep Reinforcement Learning},
+  year      = {2018},
+  address   = {Richland, SC},
+  pages     = {443–451},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '18},
+  abstract  = {Much of the success of single agent deep reinforcement learning (DRL) in recent years can be attributed to the use of experience replay memories (ERM), which allow Deep Q-Networks (DQNs) to be trained efficiently through sampling stored state transitions. However, care is required when using ERMs for multi-agent deep reinforcement learning (MA-DRL), as stored transitions can become outdated when agents update their policies in parallel citefoerster2017stabilising. In this work we apply leniency citepanait2006lenient to MA-DRL. Lenient agents map state-action pairs to decaying temperature values that control the amount of leniency applied towards negative policy updates that are sampled from the ERM. This introduces optimism in the value-function update, and has been shown to facilitate cooperation in tabular fully-cooperative multi-agent reinforcement learning problems. We evaluate our Lenient-DQN (LDQN) empirically against the related Hysteretic-DQN (HDQN) algorithm citeomidshafiei2017deep as well as a modified version we call scheduled -HDQN, that uses average reward learning near terminal states. Evaluations take place in extended variations of the Coordinated Multi-Agent Object Transportation Problem (CMOTP) citebucsoniu2010multi. We find that LDQN agents are more likely to converge to the optimal policy in a stochastic reward CMOTP compared to standard and scheduled-HDQN agents.},
+  groups    = {Multi-agent RL},
+  keywords  = {leniency, multi-agent deep reinforcement learning},
+  location  = {Stockholm, Sweden},
+  numpages  = {9},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:

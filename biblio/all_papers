@@ -4320,6 +4320,24 @@ agents)},
   primaryclass  = {cs.MA},
 }
 
+@InProceedings{10.5555/3237383.3237451,
+  author    = {Palmer, Gregory and Tuyls, Karl and Bloembergen, Daan and Savani, Rahul},
+  booktitle = {Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems},
+  title     = {Lenient Multi-Agent Deep Reinforcement Learning},
+  year      = {2018},
+  address   = {Richland, SC},
+  pages     = {443–451},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '18},
+  abstract  = {Much of the success of single agent deep reinforcement learning (DRL) in recent years can be attributed to the use of experience replay memories (ERM), which allow Deep Q-Networks (DQNs) to be trained efficiently through sampling stored state transitions. However, care is required when using ERMs for multi-agent deep reinforcement learning (MA-DRL), as stored transitions can become outdated when agents update their policies in parallel citefoerster2017stabilising. In this work we apply leniency citepanait2006lenient to MA-DRL. Lenient agents map state-action pairs to decaying temperature values that control the amount of leniency applied towards negative policy updates that are sampled from the ERM. This introduces optimism in the value-function update, and has been shown to facilitate cooperation in tabular fully-cooperative multi-agent reinforcement learning problems. We evaluate our Lenient-DQN (LDQN) empirically against the related Hysteretic-DQN (HDQN) algorithm citeomidshafiei2017deep as well as a modified version we call scheduled -HDQN, that uses average reward learning near terminal states. Evaluations take place in extended variations of the Coordinated Multi-Agent Object Transportation Problem (CMOTP) citebucsoniu2010multi. We find that LDQN agents are more likely to converge to the optimal policy in a stochastic reward CMOTP compared to standard and scheduled-HDQN agents.},
+  file      = {:10.5555_3237383.3237451 - Lenient Multi Agent Deep Reinforcement Learning (1).pdf:PDF},
+  groups    = {Multi-agent RL},
+  keywords  = {leniency, multi-agent deep reinforcement learning},
+  location  = {Stockholm, Sweden},
+  numpages  = {9},
+  ranking   = {rank1},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
