@@ -2219,7 +2219,7 @@ Dec-Histeretic Deep Recurrent Q-Network},
   file       = {:rizk2019cooperative - Cooperative Heterogeneous Multi Robot Systems_ a Survey.pdf:PDF},
   groups     = {Multi-robot, Heterogeneous},
   publisher  = {ACM New York, NY, USA},
-  ranking    = {rank3},
+  ranking    = {rank2},
   readstatus = {skimmed},
 }
 
@@ -2796,6 +2796,7 @@ FacMADDPG},
   groups        = {Multi-robot, Information gathering, Heterogeneous},
   keywords      = {cs.RO, cs.LG, cs.MA},
   primaryclass  = {cs.RO},
+  ranking       = {rank2},
 }
 
 @Article{9392290,
@@ -3344,7 +3345,7 @@ FacMADDPG},
   volume   = {8},
   abstract = {Heterogeneous multi-robot system is one of the most important research directions in the robotic field. Real-time path planning for heterogeneous multi-robot system under unknown 3D environment is a new challenging research and a hot spot in this field. In this paper, an improved real-time path planning method is proposed for a heterogeneous multi-robot system, which is composed of many unmanned aerial vehicles (UAVs) and unmanned ground vehicles (UGVs). In the proposed method, the 3D environment is modelled as a neuron topology map, based on the grid method combined with the bio-inspired neural network. Then a new 3D dynamic movement model for multi-robots is established based on an improved Dragonfly Algorithm (DA). Thus, the movements of the robots are optimized according to the activities of the neurons in the bio-inspired neural network to realize the real-time path planning. Furthermore, some simulations have been carried out. The results show that the proposed method can effectively guide the heterogeneous UAV/UGV system to the target, and has better performance than traditional methods in the real-time path planning tasks.},
   doi      = {10.1109/ACCESS.2020.3012886},
-  file     = {:9152817 - An Improved Real Time Path Planning Method Based on Dragonfly Algorithm for Heterogeneous Multi Robot System.pdf:PDF},
+  file     = {:09152817.pdf:PDF},
   groups   = {Heterogeneous},
 }
 
@@ -4322,6 +4323,7 @@ agents)},
   groups        = {H-MADRL},
   keywords      = {cs.MA, cs.AI},
   primaryclass  = {cs.MA},
+  readstatus    = {skimmed},
 }
 
 @InProceedings{10.5555/3237383.3237451,

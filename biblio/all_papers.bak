@@ -4377,6 +4377,25 @@ agents)},
   ranking       = {rank1},
 }
 
+@InProceedings{Rabinowitz2018,
+  author    = {Rabinowitz, Neil and Perbet, Frank and Song, Francis and Zhang, Chiyuan and Eslami, S. M. Ali and Botvinick, Matthew},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning},
+  title     = {Machine Theory of Mind},
+  year      = {2018},
+  editor    = {Dy, Jennifer and Krause, Andreas},
+  month     = {10--15 Jul},
+  pages     = {4218--4227},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {80},
+  abstract  = {Theory of mind (ToM) broadly refers to humans’ ability to represent the mental states of others, including their desires, beliefs, and intentions. We design a Theory of Mind neural network {–} a ToMnet {–} which uses meta-learning to build such models of the agents it encounters. The ToMnet learns a strong prior model for agents’ future behaviour, and, using only a small number of behavioural observations, can bootstrap to richer predictions about agents’ characteristics and mental states. We apply the ToMnet to agents behaving in simple gridworld environments, showing that it learns to model random, algorithmic, and deep RL agents from varied populations, and that it passes classic ToM tasks such as the "Sally-Anne" test of recognising that others can hold false beliefs about the world.},
+  file      = {:Rabinowitz2018 - Machine Theory of Mind.pdf:PDF},
+  groups    = {Multi-agent RL},
+  pdf       = {http://proceedings.mlr.press/v80/rabinowitz18a/rabinowitz18a.pdf},
+  ranking   = {rank2},
+  url       = {http://proceedings.mlr.press/v80/rabinowitz18a.html},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
