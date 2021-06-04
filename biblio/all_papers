@@ -1707,7 +1707,8 @@ sharing of policy parameters},
   volume    = {70},
   abstract  = {Many real-world tasks involve multiple agents with partial observability and limited communication. Learning is challenging in these settings due to local viewpoints of agents, which perceive the world as non-stationary due to concurrently-exploring teammates. Approaches that learn specialized policies for individual tasks face problems when applied to the real world: not only do agents have to learn and store distinct policies for each task, but in practice identities of tasks are often non-observable, making these approaches inapplicable. This paper formalizes and addresses the problem of multi-task multi-agent reinforcement learning under partial observability. We introduce a decentralized single-task learning approach that is robust to concurrent interactions of teammates, and present an approach for distilling single-task policies into a unified policy that performs well across multiple related tasks, without explicit provision of task identity.},
   comment   = {Multi-task MARL
-Dec-Histeretic Deep Recurrent Q-Network},
+Dec-Histeretic Deep Recurrent Q-Network
+Concurrent Experience Replay Trajectories (CERT)},
   file      = {:omidshafiei17a - Deep Decentralized Multi Task Multi Agent Reinforcement Learning under Partial Observability.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v70/omidshafiei17a/omidshafiei17a.pdf},
@@ -4397,6 +4398,15 @@ agents)},
   pdf       = {http://proceedings.mlr.press/v80/rabinowitz18a/rabinowitz18a.pdf},
   ranking   = {rank2},
   url       = {http://proceedings.mlr.press/v80/rabinowitz18a.html},
+}
+
+@Book{oliehoek2016concise,
+  author    = {Oliehoek, Frans A and Amato, Christopher},
+  publisher = {Springer},
+  title     = {A concise introduction to decentralized POMDPs},
+  year      = {2016},
+  file      = {:oliehoek2016concise - A Concise Introduction to Decentralized POMDPs.pdf:PDF},
+  groups    = {MAS Reviews},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

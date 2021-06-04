@@ -1707,10 +1707,12 @@ sharing of policy parameters},
   volume    = {70},
   abstract  = {Many real-world tasks involve multiple agents with partial observability and limited communication. Learning is challenging in these settings due to local viewpoints of agents, which perceive the world as non-stationary due to concurrently-exploring teammates. Approaches that learn specialized policies for individual tasks face problems when applied to the real world: not only do agents have to learn and store distinct policies for each task, but in practice identities of tasks are often non-observable, making these approaches inapplicable. This paper formalizes and addresses the problem of multi-task multi-agent reinforcement learning under partial observability. We introduce a decentralized single-task learning approach that is robust to concurrent interactions of teammates, and present an approach for distilling single-task policies into a unified policy that performs well across multiple related tasks, without explicit provision of task identity.},
   comment   = {Multi-task MARL
-Dec-Histeretic Deep Recurrent Q-Network},
+Dec-Histeretic Deep Recurrent Q-Network
+Concurrent Experience Replay Trajectories (CERT)},
   file      = {:omidshafiei17a - Deep Decentralized Multi Task Multi Agent Reinforcement Learning under Partial Observability.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v70/omidshafiei17a/omidshafiei17a.pdf},
+  priority  = {prio1},
   ranking   = {rank3},
   url       = {http://proceedings.mlr.press/v70/omidshafiei17a.html},
 }
@@ -2219,7 +2221,7 @@ Dec-Histeretic Deep Recurrent Q-Network},
   file       = {:rizk2019cooperative - Cooperative Heterogeneous Multi Robot Systems_ a Survey.pdf:PDF},
   groups     = {Multi-robot, Heterogeneous},
   publisher  = {ACM New York, NY, USA},
-  ranking    = {rank3},
+  ranking    = {rank2},
   readstatus = {skimmed},
 }
 
@@ -2796,6 +2798,7 @@ FacMADDPG},
   groups        = {Multi-robot, Information gathering, Heterogeneous},
   keywords      = {cs.RO, cs.LG, cs.MA},
   primaryclass  = {cs.RO},
+  ranking       = {rank2},
 }
 
 @Article{9392290,
@@ -3344,7 +3347,7 @@ FacMADDPG},
   volume   = {8},
   abstract = {Heterogeneous multi-robot system is one of the most important research directions in the robotic field. Real-time path planning for heterogeneous multi-robot system under unknown 3D environment is a new challenging research and a hot spot in this field. In this paper, an improved real-time path planning method is proposed for a heterogeneous multi-robot system, which is composed of many unmanned aerial vehicles (UAVs) and unmanned ground vehicles (UGVs). In the proposed method, the 3D environment is modelled as a neuron topology map, based on the grid method combined with the bio-inspired neural network. Then a new 3D dynamic movement model for multi-robots is established based on an improved Dragonfly Algorithm (DA). Thus, the movements of the robots are optimized according to the activities of the neurons in the bio-inspired neural network to realize the real-time path planning. Furthermore, some simulations have been carried out. The results show that the proposed method can effectively guide the heterogeneous UAV/UGV system to the target, and has better performance than traditional methods in the real-time path planning tasks.},
   doi      = {10.1109/ACCESS.2020.3012886},
-  file     = {:9152817 - An Improved Real Time Path Planning Method Based on Dragonfly Algorithm for Heterogeneous Multi Robot System.pdf:PDF},
+  file     = {:09152817.pdf:PDF},
   groups   = {Heterogeneous},
 }
 
@@ -4322,6 +4325,7 @@ agents)},
   groups        = {H-MADRL},
   keywords      = {cs.MA, cs.AI},
   primaryclass  = {cs.MA},
+  readstatus    = {skimmed},
 }
 
 @InProceedings{10.5555/3237383.3237451,
@@ -4340,8 +4344,6 @@ agents)},
   location  = {Stockholm, Sweden},
   numpages  = {9},
   ranking   = {rank1},
-<<<<<<< HEAD
-=======
 }
 
 @InProceedings{Raileanu2018,
@@ -4396,7 +4398,14 @@ agents)},
   pdf       = {http://proceedings.mlr.press/v80/rabinowitz18a/rabinowitz18a.pdf},
   ranking   = {rank2},
   url       = {http://proceedings.mlr.press/v80/rabinowitz18a.html},
->>>>>>> 0648e4c1e7bf59e68a5033c8e48e81ce7ea0bf62
+}
+
+@Book{oliehoek2016concise,
+  author    = {Oliehoek, Frans A and Amato, Christopher},
+  publisher = {Springer},
+  title     = {A concise introduction to decentralized POMDPs},
+  year      = {2016},
+  groups    = {MAS Reviews},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
