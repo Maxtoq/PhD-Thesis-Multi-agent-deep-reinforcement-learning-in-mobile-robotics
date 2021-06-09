@@ -2901,15 +2901,15 @@ FacMADDPG},
 }
 
 @Article{amato2019modeling,
-  author   = {Amato, Christopher and Konidaris, George and Kaelbling, Leslie P and How, Jonathan P},
-  journal  = {Journal of Artificial Intelligence Research},
-  title    = {Modeling and planning with macro-actions in decentralized POMDPs},
-  year     = {2019},
-  pages    = {817--859},
-  volume   = {64},
-  file     = {:amato2019modeling - Modeling and Planning with Macro Actions in Decentralized POMDPs (1).pdf:PDF},
-  groups   = {Multi-robot},
-  priority = {prio1},
+  author     = {Amato, Christopher and Konidaris, George and Kaelbling, Leslie P and How, Jonathan P},
+  journal    = {Journal of Artificial Intelligence Research},
+  title      = {Modeling and planning with macro-actions in decentralized POMDPs},
+  year       = {2019},
+  pages      = {817--859},
+  volume     = {64},
+  file       = {:amato2019modeling - Modeling and Planning with Macro Actions in Decentralized POMDPs (1).pdf:PDF},
+  groups     = {Multi-robot},
+  readstatus = {skimmed},
 }
 
 @Article{9001226,
@@ -3685,7 +3685,6 @@ FacMADDPG},
   doi       = {10.1007/s10846-021-01378-2},
   file      = {:Verma2021 - Multi Robot Coordination Analysis, Taxonomy, Challenges and Future Scope.pdf:PDF},
   groups    = {Multi-robot},
-  priority  = {prio1},
   publisher = {Springer Science and Business Media {LLC}},
 }
 
@@ -3701,21 +3700,6 @@ FacMADDPG},
   doi       = {10.1109/lra.2021.3057559},
   file      = {:Mayya2021 - Resilient Task Allocation in Heterogeneous Multi Robot Systems.pdf:PDF},
   groups    = {Heterogeneous},
-  publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-}
-
-@Article{Amigoni2017,
-  author    = {Francesco Amigoni and Jacopo Banfi and Nicola Basilico},
-  journal   = {{IEEE} Intelligent Systems},
-  title     = {Multirobot Exploration of Communication-Restricted Environments: A Survey},
-  year      = {2017},
-  month     = {nov},
-  number    = {6},
-  pages     = {48--57},
-  volume    = {32},
-  doi       = {10.1109/mis.2017.4531226},
-  file      = {:Amigoni2017 - Multirobot Exploration of Communication Restricted Environments_ a Survey.pdf:PDF},
-  groups    = {Multi-robot},
   publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
 }
 
@@ -4409,6 +4393,21 @@ agents)},
   year      = {2016},
   file      = {:oliehoek2016concise - A Concise Introduction to Decentralized POMDPs.pdf:PDF},
   groups    = {MAS Reviews},
+}
+
+@InProceedings{9196684,
+  author    = {Xiao, Yuchen and Hoffman, Joshua and Xia, Tian and Amato, Christopher},
+  booktitle = {2020 IEEE International Conference on Robotics and Automation (ICRA)},
+  title     = {Learning Multi-Robot Decentralized Macro-Action-Based Policies via a Centralized Q-Net},
+  year      = {2020},
+  month     = {May},
+  pages     = {10695-10701},
+  abstract  = {In many real-world multi-robot tasks, high-quality solutions often require a team of robots to perform asynchronous actions under decentralized control. Decentralized multi-agent reinforcement learning methods have difficulty learning decentralized policies because of the environment appearing to be non-stationary due to other agents also learning at the same time. In this paper, we address this challenge by proposing a macro-action-based decentralized multi-agent double deep recurrent Q-net (MacDec-MADDRQN) which trains each decentralized Q-net using a centralized Q-net for action selection. A generalized version of MacDec-MADDRQN with two separate training environments, called Parallel-MacDec-MADDRQN, is also presented to leverage either centralized or decentralized exploration. The advantages and the practical nature of our methods are demonstrated by achieving near-centralized results in simulation and having real robots accomplish a warehouse tool delivery task in an efficient way.},
+  doi       = {10.1109/ICRA40945.2020.9196684},
+  file      = {:9196684 - Learning Multi Robot Decentralized Macro Action Based Policies Via a Centralized Q Net.pdf:PDF},
+  groups    = {Multi-robot},
+  issn      = {2577-087X},
+  priority  = {prio1},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
