@@ -3061,6 +3061,7 @@ FacMADDPG},
   file     = {:doi_10.1177_0278364918770733 - The Limits and Potentials of Deep Learning for Robotics.pdf:PDF},
   groups   = {Robotics},
   priority = {prio1},
+  ranking  = {rank3},
   url      = {https://doi.org/10.1177/0278364918770733},
 }
 
