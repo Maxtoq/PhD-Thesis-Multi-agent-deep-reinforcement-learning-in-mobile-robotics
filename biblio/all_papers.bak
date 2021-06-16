@@ -1338,6 +1338,8 @@
   file      = {:Das2019 - TarMAC_ Targeted Multi Agent Communication.pdf:PDF},
   groups    = {Communication},
   pdf       = {http://proceedings.mlr.press/v97/das19a/das19a.pdf},
+  priority  = {prio1},
+  ranking   = {rank2},
   url       = {http://proceedings.mlr.press/v97/das19a.html},
 }
 
@@ -1387,6 +1389,7 @@
   year      = {2018},
   file      = {:cao2018emergent - Emergent Communication through Negotiation.pdf:PDF},
   groups    = {Communication},
+  ranking   = {rank1},
   url       = {https://openreview.net/forum?id=Hk6WhagRW},
 }
 
@@ -1646,7 +1649,7 @@
   groups        = {Communication},
   keywords      = {cs.CL, cs.CV, cs.GT, cs.LG, cs.MA},
   primaryclass  = {cs.CL},
-  ranking       = {rank1},
+  ranking       = {rank2},
 }
 
 @InCollection{Gupta2017,
@@ -3267,16 +3270,6 @@ FacMADDPG},
   primaryclass  = {cs.RO},
 }
 
-@InProceedings{giubilato2020gpgm,
-  author       = {Giubilato, Riccardo and Le Gentil, Cedric and Vayugundla, Mallikarjuna and Vidal-Calleja, Teresa and Triebel, Rudolph},
-  booktitle    = {IROS Workshop on Planetary Exploration Robots: Challenges and Opportunities (PLANROBO20)},
-  title        = {GPGM-SLAM: Towards a Robust SLAM System for Unstructured Planetary Environments with Gaussian Process Gradient Maps},
-  year         = {2020},
-  organization = {ETH Zurich, Department of Mechanical and Process Engineering},
-  file         = {:giubilato2020gpgm - GPGM SLAM_ Towards a Robust SLAM System for Unstructured Planetary Environments with Gaussian Process Gradient Maps.pdf:PDF},
-  groups       = {Information gathering},
-}
-
 @InProceedings{Sonsalla2014,
   author = {Sonsalla, Roland and Cordes, Florian and Christensen, Leif and Planthaber, Steffen and Albiez, Jan and Scholz, Ingo and Kirchner, Frank},
   title  = {Towards a Heterogeneous Modular Robotic Team in a Logistic Chain for Extraterrestrial Exploration},
@@ -3768,7 +3761,7 @@ FacMADDPG},
   year         = {2020},
   organization = {ETH Zurich, Department of Mechanical and Process Engineering},
   file         = {:giubilato2020gpgm - GPGM SLAM_ Towards a Robust SLAM System for Unstructured Planetary Environments with Gaussian Process Gradient Maps (1).pdf:PDF},
-  groups       = {Space Exploration},
+  groups       = {Space Exploration, Information gathering},
 }
 
 @Article{wedler2021german,
@@ -4292,6 +4285,7 @@ FacMADDPG},
   editor    = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
   publisher = {Curran Associates, Inc.},
   volume    = {31},
+  comment   = {ATOC},
   file      = {:NEURIPS2018_6a8018b3 - Learning Attentional Communication for Multi Agent Cooperation (1).pdf:PDF},
   groups    = {Multi-agent RL, Communication},
   ranking   = {rank1},
@@ -4538,6 +4532,49 @@ agents)},
   pdf       = {http://proceedings.mlr.press/v70/haarnoja17a/haarnoja17a.pdf},
   ranking   = {rank3},
   url       = {http://proceedings.mlr.press/v70/haarnoja17a.html},
+}
+
+@Article{OpenAI2019,
+  author        = {OpenAI and : and Christopher Berner and Greg Brockman and Brooke Chan and Vicki Cheung and Przemysław Dębiak and Christy Dennison and David Farhi and Quirin Fischer and Shariq Hashme and Chris Hesse and Rafal Józefowicz and Scott Gray and Catherine Olsson and Jakub Pachocki and Michael Petrov and Henrique P. d. O. Pinto and Jonathan Raiman and Tim Salimans and Jeremy Schlatter and Jonas Schneider and Szymon Sidor and Ilya Sutskever and Jie Tang and Filip Wolski and Susan Zhang},
+  title         = {Dota 2 with Large Scale Deep Reinforcement Learning},
+  year          = {2019},
+  month         = dec,
+  abstract      = {On April 13th, 2019, OpenAI Five became the first AI system to defeat the world champions at an esports game. The game of Dota 2 presents novel challenges for AI systems such as long time horizons, imperfect information, and complex, continuous state-action spaces, all challenges which will become increasingly central to more capable AI systems. OpenAI Five leveraged existing reinforcement learning techniques, scaled to learn from batches of approximately 2 million frames every 2 seconds. We developed a distributed training system and tools for continual training which allowed us to train OpenAI Five for 10 months. By defeating the Dota 2 world champion (Team OG), OpenAI Five demonstrates that self-play reinforcement learning can achieve superhuman performance on a difficult task.},
+  archiveprefix = {arXiv},
+  eprint        = {1912.06680},
+  file          = {:OpenAI2019 - Dota 2 with Large Scale Deep Reinforcement Learning.pdf:PDF},
+  groups        = {Multi-agent RL},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+  ranking       = {rank3},
+  readstatus    = {skimmed},
+}
+
+@Article{Singh2018,
+  author        = {Amanpreet Singh and Tushar Jain and Sainbayar Sukhbaatar},
+  title         = {Learning when to Communicate at Scale in Multiagent Cooperative and Competitive Tasks},
+  year          = {2018},
+  month         = dec,
+  abstract      = {Learning when to communicate and doing that effectively is essential in multi-agent tasks. Recent works show that continuous communication allows efficient training with back-propagation in multi-agent scenarios, but have been restricted to fully-cooperative tasks. In this paper, we present Individualized Controlled Continuous Communication Model (IC3Net) which has better training efficiency than simple continuous communication model, and can be applied to semi-cooperative and competitive settings along with the cooperative settings. IC3Net controls continuous communication with a gating mechanism and uses individualized rewards foreach agent to gain better performance and scalability while fixing credit assignment issues. Using variety of tasks including StarCraft BroodWars explore and combat scenarios, we show that our network yields improved performance and convergence rates than the baselines as the scale increases. Our results convey that IC3Net agents learn when to communicate based on the scenario and profitability.},
+  archiveprefix = {arXiv},
+  comment       = {IC3Net},
+  eprint        = {1812.09755},
+  file          = {:Singh2018 - Learning When to Communicate at Scale in Multiagent Cooperative and Competitive Tasks.pdf:PDF},
+  groups        = {Communication},
+  keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{Kottur2017,
+  author    = {Satwik Kottur and Jos{\'{e}} Moura and Stefan Lee and Dhruv Batra},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  title     = {Natural Language Does Not Emerge `Naturally' in Multi-Agent Dialog},
+  year      = {2017},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/d17-1321},
+  file      = {:Kottur2017 - Natural Language Does Not Emerge `Naturally' in Multi Agent Dialog.pdf:PDF},
+  groups    = {Communication},
+  ranking   = {rank1},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
