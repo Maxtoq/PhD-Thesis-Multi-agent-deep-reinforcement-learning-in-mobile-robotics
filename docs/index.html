@@ -307,8 +307,6 @@ Error message and password prompt
 
 <li>Deep Reinforcement Learning</li>
 
-<li>Draft of 'TarMAC'</li>
-
 <li>Home</li>
 
 <li>Hypernetworks</li>
@@ -10620,7 +10618,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210616134740328" list="MADDPG [[Draft of 'TarMAC']] Home [[TO DO]]" modified="20210616145904633" title="$:/StoryList">
+<div created="20210616134740328" list="MADDPG TarMAC Home [[TO DO]]" modified="20210616145904633" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11314,33 +11312,6 @@ with $$\epsilon\sim\mathcal{N}$$.
 <div created="20210409143337120" modified="20210409143339453" tags="[[Reinforcement Learning]]" title="Deep Reinforcement Learning">
 <pre></pre>
 </div>
-<div created="20210616134828340" draft.of="TarMAC" draft.title="TarMAC" modified="20210616150103385" tags="Communication [[Multi-agent Deep Reinforcement Learning]] model paper" title="Draft of 'TarMAC'">
-<pre>!! Paper
-//TarMAC: Targeted Multi-Agent Communication//, Das et al., 2019. McGill University, FAIR. ICML.
-
-!! Problem
-For effective communication, it can be useful to target message toward specific agents.
-
-!! Solution
-The authors propose TarMAC, a Targeted Multi-Agent Communication architecture for collaborative multi-agent deep reinforcement learning that can be adapted for mixed or competitive settings. Agents communicate via ''continuous vectors'' and //actively select// which other agents to address messages to using an attention mechanism. 
-
-!! Model
-The architecture resembles [[MADDPG]]'s, with an actor for each agent $$i$$ for selecting action and producing messages, but with a single centralised critic that estimates the joint action-value function.
-
-The actors are composed of a GRU unit. They take as input the local observation $$\omega_i^t$$ and a vector $$v_i^t$$ of aggregated messages sent by all agents at the previous time-step. They then update their internal hidden state $$h_i^t$$ from which they produce their policy $$\pi_{\theta_i}(a_i^t|h_i^t)$$ and an outgoing message vector $$m_i^t$$. The policy parameters are shared across all agents.
-
-The centralised critic takes as input all actions $$\{a_1^t,...,a_N^t\}$$ and hidden states $$\{h_1^t,...,h_N^t\}$$ and estimates the joint action-value function $$\hat{Q}_t$$. The authors choose this centralised critic instead of having one critic per agent as in [[MADDPG]] to greatly reduce variance. 
-
-!! Results
-
-
-!! Downs
-
-
-!!Resources
-* Mahajan et al., //[[MAVEN]]: Multi-Agent Variational Exploration//, 2020.
-* </pre>
-</div>
 <div created="20210317173823342" modified="20210427103912247" tags="" title="Home">
 <pre>Welcome to my personal wiki. Here, I keep notes on concepts, papers, models and other interesting things I look into during my research on my PhD Thesis on //Multi-agent deep reinforcement learning in mobile robotics//.
 
@@ -11834,8 +11805,38 @@ The real improvement is brought by the fingerprints. The performance of the agen
 !!Resources
 </pre>
 </div>
-<div created="20210616134828340" modified="20210616134916508" tags="Communication [[Multi-agent Deep Reinforcement Learning]]" title="TarMAC">
-<pre></pre>
+<div created="20210616134828340" modified="20210616152509256" tags="Communication [[Multi-agent Deep Reinforcement Learning]] model paper" title="TarMAC">
+<pre>!! Paper
+//TarMAC: Targeted Multi-Agent Communication//, Das et al., 2019. McGill University, FAIR. ICML.
+
+!! Problem
+For effective communication, it can be useful to target message toward specific agents.
+
+!! Solution
+The authors propose TarMAC, a Targeted Multi-Agent Communication architecture for collaborative multi-agent deep reinforcement learning that can be adapted for mixed or competitive settings. Agents communicate via ''continuous vectors'' and //actively select// which other agents to address messages to using an attention mechanism. 
+
+!! Model
+[img[img/tarmac.png]]
+//Figure 1: Architecture of TarMAC, with the multi-agent actor-critic on the left and the targeted communication module on the right.//
+
+The architecture resembles [[MADDPG]]'s, with an actor for each agent $$i$$ for selecting action and producing messages, but with a single centralised critic that estimates the joint action-value function.
+
+The actors are composed of a GRU unit. They take as input the local observation $$\omega_i^t$$ and a vector $$v_i^t$$ of aggregated messages sent by all agents at the previous time-step. They then update their internal hidden state $$h_i^t$$ from which they produce their policy $$\pi_{\theta_i}(a_i^t|h_i^t)$$ and an outgoing message vector $$m_i^t$$. The policy parameters are shared across all agents.
+
+The centralised critic takes as input all actions $$\{a_1^t,...,a_N^t\}$$ and hidden states $$\{h_1^t,...,h_N^t\}$$ and estimates the joint action-value function $$\hat{Q}_t$$. The authors choose this centralised critic instead of having one critic per agent as in [[MADDPG]] to greatly reduce variance. 
+
+!!! Multi-round communication
+
+
+!! Results
+
+
+!! Downs
+
+
+!!Resources
+* Mahajan et al., //[[MAVEN]]: Multi-Agent Variational Exploration//, 2020.
+* </pre>
 </div>
 <div created="20210312143343407" modified="20210422072938448" tags="" title="TO DO">
 <pre>[[Actor-Critic]] to finish
