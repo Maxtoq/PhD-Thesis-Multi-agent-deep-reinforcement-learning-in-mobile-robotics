@@ -11805,7 +11805,7 @@ The real improvement is brought by the fingerprints. The performance of the agen
 !!Resources
 </pre>
 </div>
-<div created="20210616134828340" modified="20210617090208787" tags="Communication [[Multi-agent Deep Reinforcement Learning]] model paper" title="TarMAC">
+<div created="20210616134828340" modified="20210617090405084" tags="Communication [[Multi-agent Deep Reinforcement Learning]] model paper" title="TarMAC">
 <pre>!! Paper
 //TarMAC: Targeted Multi-Agent Communication//, Das et al., 2019. McGill University, FAIR. ICML.
 
@@ -11837,7 +11837,7 @@ These weights are then used to compute the vector $$c_j^{t+1}$$ of aggregated me
 $$
 c_j^{t+1}=\sum_{i=1}^N\alpha_{ji}v_i^t .
 $$
-Intuitively, attention weights are high when both sender and receiver predict similar signature and query vectors respectively. The targeting is therefore done implicitly (without choosing specific recipients) and learnt through back-propagation.  
+Intuitively, attention weights are high when both sender and receiver predict similar signature and query vectors respectively. The signature thus also encodes parts of the sender's observations that are most relevant to other agents' goals. The targeting is therefore done implicitly (without choosing specific recipients) and learnt through back-propagation.  
 
 !!! Multi-round communication
 TarMAC allows for multi-round communication at any point in an episode. During this process, only the aggregated messages and hidden states are used to compute the next hidden state, which is then used for computing a new message and query.
