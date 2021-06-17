@@ -1042,6 +1042,7 @@
   groups        = {Communication},
   keywords      = {cs.LG, cs.AI},
   primaryclass  = {cs.LG},
+  priority      = {prio1},
   ranking       = {rank4},
 }
 
@@ -1324,23 +1325,23 @@
 }
 
 @InProceedings{Das2019,
-  author    = {Das, Abhishek and Gervet, Th{\'e}ophile and Romoff, Joshua and Batra, Dhruv and Parikh, Devi and Rabbat, Mike and Pineau, Joelle},
-  booktitle = {Proceedings of the 36th International Conference on Machine Learning},
-  title     = {{T}ar{MAC}: Targeted Multi-Agent Communication},
-  year      = {2019},
-  editor    = {Kamalika Chaudhuri and Ruslan Salakhutdinov},
-  month     = {09--15 Jun},
-  pages     = {1538--1546},
-  publisher = {PMLR},
-  series    = {Proceedings of Machine Learning Research},
-  volume    = {97},
-  abstract  = {We propose a targeted communication architecture for multi-agent reinforcement learning, where agents learn both <em>what</em> messages to send and <em>whom</em> to address them to while performing cooperative tasks in partially-observable environments. This targeting behavior is learnt solely from downstream task-specific reward without any communication supervision. We additionally augment this with a multi-round communication approach where agents coordinate via multiple rounds of communication before taking actions in the environment. We evaluate our approach on a diverse set of cooperative multi-agent tasks, of varying difficulties, with varying number of agents, in a variety of environments ranging from 2D grid layouts of shapes and simulated traffic junctions to 3D indoor environments, and demonstrate the benefits of targeted and multi-round communication. Moreover, we show that the targeted communication strategies learned by agents are interpretable and intuitive. Finally, we show that our architecture can be easily extended to mixed and competitive environments, leading to improved performance and sample complexity over recent state-of-the-art approaches.},
-  file      = {:Das2019 - TarMAC_ Targeted Multi Agent Communication.pdf:PDF},
-  groups    = {Communication},
-  pdf       = {http://proceedings.mlr.press/v97/das19a/das19a.pdf},
-  priority  = {prio1},
-  ranking   = {rank2},
-  url       = {http://proceedings.mlr.press/v97/das19a.html},
+  author     = {Das, Abhishek and Gervet, Th{\'e}ophile and Romoff, Joshua and Batra, Dhruv and Parikh, Devi and Rabbat, Mike and Pineau, Joelle},
+  booktitle  = {Proceedings of the 36th International Conference on Machine Learning},
+  title      = {{T}ar{MAC}: Targeted Multi-Agent Communication},
+  year       = {2019},
+  editor     = {Kamalika Chaudhuri and Ruslan Salakhutdinov},
+  month      = {09--15 Jun},
+  pages      = {1538--1546},
+  publisher  = {PMLR},
+  series     = {Proceedings of Machine Learning Research},
+  volume     = {97},
+  abstract   = {We propose a targeted communication architecture for multi-agent reinforcement learning, where agents learn both <em>what</em> messages to send and <em>whom</em> to address them to while performing cooperative tasks in partially-observable environments. This targeting behavior is learnt solely from downstream task-specific reward without any communication supervision. We additionally augment this with a multi-round communication approach where agents coordinate via multiple rounds of communication before taking actions in the environment. We evaluate our approach on a diverse set of cooperative multi-agent tasks, of varying difficulties, with varying number of agents, in a variety of environments ranging from 2D grid layouts of shapes and simulated traffic junctions to 3D indoor environments, and demonstrate the benefits of targeted and multi-round communication. Moreover, we show that the targeted communication strategies learned by agents are interpretable and intuitive. Finally, we show that our architecture can be easily extended to mixed and competitive environments, leading to improved performance and sample complexity over recent state-of-the-art approaches.},
+  file       = {:Das2019 - TarMAC_ Targeted Multi Agent Communication.pdf:PDF},
+  groups     = {Communication},
+  pdf        = {http://proceedings.mlr.press/v97/das19a/das19a.pdf},
+  ranking    = {rank2},
+  readstatus = {read},
+  url        = {http://proceedings.mlr.press/v97/das19a.html},
 }
 
 @InProceedings{Iqbal2019,
@@ -1729,7 +1730,6 @@ Concurrent Experience Replay Trajectories (CERT)},
   file      = {:omidshafiei17a - Deep Decentralized Multi Task Multi Agent Reinforcement Learning under Partial Observability.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v70/omidshafiei17a/omidshafiei17a.pdf},
-  priority  = {prio1},
   ranking   = {rank3},
   url       = {http://proceedings.mlr.press/v70/omidshafiei17a.html},
 }
@@ -2914,7 +2914,6 @@ FacMADDPG},
   eprint   = {https://doi.org/10.1177/0278364917692864},
   file     = {:doi_10.1177_0278364917692864 - Decentralized Control of Multi Robot Partially Observable Markov Decision Processes Using Belief Space Macro Actions.pdf:PDF},
   groups   = {Multi-robot},
-  priority = {prio1},
   url      = {https://doi.org/10.1177/0278364917692864},
 }
 
@@ -4164,7 +4163,6 @@ FacMADDPG},
   groups        = {H-MADRL},
   keywords      = {cs.AI, cs.LG, cs.MA},
   primaryclass  = {cs.AI},
-  priority      = {prio2},
 }
 
 @Article{Zhou2020,
@@ -4288,6 +4286,7 @@ FacMADDPG},
   comment   = {ATOC},
   file      = {:NEURIPS2018_6a8018b3 - Learning Attentional Communication for Multi Agent Cooperation (1).pdf:PDF},
   groups    = {Multi-agent RL, Communication},
+  priority  = {prio1},
   ranking   = {rank1},
   url       = {https://proceedings.neurips.cc/paper/2018/file/6a8018b3a00b69c008601b8becae392b-Paper.pdf},
 }
@@ -4563,6 +4562,7 @@ agents)},
   groups        = {Communication},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
+  priority      = {prio1},
 }
 
 @InProceedings{Kottur2017,
@@ -4593,6 +4593,26 @@ agents)},
   location  = {Long Beach, California, USA},
   numpages  = {11},
   ranking   = {rank1},
+}
+
+@InProceedings{pmlr-v87-das18a,
+  author    = {Das, Abhishek and Gkioxari, Georgia and Lee, Stefan and Parikh, Devi and Batra, Dhruv},
+  booktitle = {Proceedings of The 2nd Conference on Robot Learning},
+  title     = {Neural Modular Control for Embodied Question Answering},
+  year      = {2018},
+  editor    = {Aude Billard and Anca Dragan and Jan Peters and Jun Morimoto},
+  month     = {29--31 Oct},
+  pages     = {53--62},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {87},
+  abstract  = {We present a modular approach for learning policies for navigation over long planning horizons from language input. Our hierarchical policy operates at multiple timescales, where the higher-level master policy proposes subgoals to be executed by specialized sub-policies. Our choice of subgoals is compositional and semantic, i.e. they can be sequentially combined in arbitrary orderings, and assume human-interpretable descriptions (e.g. ‘exit room’, ‘find kitchen’, ‘find refrigerator’, etc.). We use imitation learning to warm-start policies at each level of the hierarchy, dramatically increasing sample efficiency, followed by reinforcement learning. Independent reinforcement learning at each level of hierarchy enables sub-policies to adapt to consequences of their actions and recover from errors. Subsequent joint hierarchical training enables the master policy to adapt to the sub-policies. On the challenging EQA [1] benchmark in House3D [2], requiring navigating diverse realistic indoor environments, our approach outperforms prior work by a significant margin, both in terms of navigation and question answering.},
+  file      = {:pmlr-v87-das18a - Neural Modular Control for Embodied Question Answering.pdf:PDF},
+  groups    = {Hierarchical RL},
+  pdf       = {http://proceedings.mlr.press/v87/das18a/das18a.pdf},
+  priority  = {prio1},
+  ranking   = {rank2},
+  url       = {http://proceedings.mlr.press/v87/das18a.html},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -4643,4 +4663,5 @@ agents)},
 1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
 }
