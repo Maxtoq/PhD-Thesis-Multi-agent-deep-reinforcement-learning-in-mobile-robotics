@@ -10618,7 +10618,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210616134740328" list="MADDPG TarMAC Home [[TO DO]]" modified="20210616145904633" title="$:/StoryList">
+<div created="20210617075142522" list="TarMAC Home [[TO DO]]" modified="20210617081040314" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11805,7 +11805,7 @@ The real improvement is brought by the fingerprints. The performance of the agen
 !!Resources
 </pre>
 </div>
-<div created="20210616134828340" modified="20210616152509256" tags="Communication [[Multi-agent Deep Reinforcement Learning]] model paper" title="TarMAC">
+<div created="20210616134828340" modified="20210617090208787" tags="Communication [[Multi-agent Deep Reinforcement Learning]] model paper" title="TarMAC">
 <pre>!! Paper
 //TarMAC: Targeted Multi-Agent Communication//, Das et al., 2019. McGill University, FAIR. ICML.
 
@@ -11817,16 +11817,30 @@ The authors propose TarMAC, a Targeted Multi-Agent Communication architecture fo
 
 !! Model
 [img[img/tarmac.png]]
+
 //Figure 1: Architecture of TarMAC, with the multi-agent actor-critic on the left and the targeted communication module on the right.//
 
 The architecture resembles [[MADDPG]]'s, with an actor for each agent $$i$$ for selecting action and producing messages, but with a single centralised critic that estimates the joint action-value function.
 
-The actors are composed of a GRU unit. They take as input the local observation $$\omega_i^t$$ and a vector $$v_i^t$$ of aggregated messages sent by all agents at the previous time-step. They then update their internal hidden state $$h_i^t$$ from which they produce their policy $$\pi_{\theta_i}(a_i^t|h_i^t)$$ and an outgoing message vector $$m_i^t$$. The policy parameters are shared across all agents.
+The actors are composed of a GRU unit. They take as input the local observation $$\omega_i^t$$ and a vector $$c_i^t$$ of aggregated messages sent by all agents at the previous time-step. They then update their internal hidden state $$h_i^t$$ from which they produce their policy $$\pi_{\theta_i}(a_i^t|h_i^t)$$ and an outgoing message vector $$m_i^t$$. The policy parameters are shared across all agents.
 
 The centralised critic takes as input all actions $$\{a_1^t,...,a_N^t\}$$ and hidden states $$\{h_1^t,...,h_N^t\}$$ and estimates the joint action-value function $$\hat{Q}_t$$. The authors choose this centralised critic instead of having one critic per agent as in [[MADDPG]] to greatly reduce variance. 
 
-!!! Multi-round communication
+!!! Targeted communication
+In order to target messages to specific agents, the authors use a ''signature-based'' attention mechanism. Each message $$m_i^t$$ is composed of two parts: a //signature// $$k_i^t\in\mathbb{R}^{d_k}$$ to encode properties of intended receivers and a //value// $$v_i^t\in\mathbb{R}^{d_v}$$.
 
+When receiving messages, each agent $$j$$ predicts a //query// vector $$q_j^{t+1}\in\mathbb{R}^{d_k}$$ from its hidden state $$h_j^{t+1}$$. The query is used to compute attention weights $$\alpha_{ji}$$ for each incoming messages:
+$$
+\alpha_j=softmax\left[\frac{{q_j^{t+1}}^T k_1^t}{\sqrt{d_k}}...\underbrace{\frac{{q_j^{t+1}}^T k_i^t}{\sqrt{d_k}}}_{\alpha_{ji}}...\frac{{q_j^{t+1}}^T k_N^t}{\sqrt{d_k}}\right]
+$$
+These weights are then used to compute the vector $$c_j^{t+1}$$ of aggregated messages:
+$$
+c_j^{t+1}=\sum_{i=1}^N\alpha_{ji}v_i^t .
+$$
+Intuitively, attention weights are high when both sender and receiver predict similar signature and query vectors respectively. The targeting is therefore done implicitly (without choosing specific recipients) and learnt through back-propagation.  
+
+!!! Multi-round communication
+TarMAC allows for multi-round communication at any point in an episode. During this process, only the aggregated messages and hidden states are used to compute the next hidden state, which is then used for computing a new message and query.
 
 !! Results
 
