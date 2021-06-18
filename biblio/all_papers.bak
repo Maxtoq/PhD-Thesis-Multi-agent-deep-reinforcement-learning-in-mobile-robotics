@@ -1197,7 +1197,7 @@
   readstatus = {skimmed},
 }
 
-@InProceedings{10.5555/3295222.3295385,
+@InProceedings{Lowe2017,
   author     = {Lowe, Ryan and Wu, Yi and Tamar, Aviv and Harb, Jean and Abbeel, Pieter and Mordatch, Igor},
   booktitle  = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
   title      = {Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments},
@@ -1730,7 +1730,6 @@ Concurrent Experience Replay Trajectories (CERT)},
   file      = {:omidshafiei17a - Deep Decentralized Multi Task Multi Agent Reinforcement Learning under Partial Observability.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v70/omidshafiei17a/omidshafiei17a.pdf},
-  priority  = {prio1},
   ranking   = {rank3},
   url       = {http://proceedings.mlr.press/v70/omidshafiei17a.html},
 }
@@ -1780,7 +1779,6 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups        = {Multi-agent RL},
   keywords      = {cs.LG, cs.AI, cs.MA},
   primaryclass  = {cs.LG},
-  ranking       = {rank4},
 }
 
 @Article{Brown2020,
@@ -2915,7 +2913,6 @@ FacMADDPG},
   eprint   = {https://doi.org/10.1177/0278364917692864},
   file     = {:doi_10.1177_0278364917692864 - Decentralized Control of Multi Robot Partially Observable Markov Decision Processes Using Belief Space Macro Actions.pdf:PDF},
   groups   = {Multi-robot},
-  priority = {prio1},
   url      = {https://doi.org/10.1177/0278364917692864},
 }
 
@@ -4119,24 +4116,8 @@ FacMADDPG},
   title     = {Graph Convolutional Reinforcement Learning},
   year      = {2020},
   file      = {:Jiang2020Graph - Graph Convolutional Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Graphs},
   url       = {https://openreview.net/forum?id=HkxdQkSYDB},
-}
-
-@Article{Meneghetti2020,
-  author        = {Douglas De Rizzo Meneghetti and Reinaldo Augusto da Costa Bianchi},
-  title         = {Towards Heterogeneous Multi-Agent Reinforcement Learning with Graph Neural Networks},
-  year          = {2020},
-  month         = sep,
-  abstract      = {This work proposes a neural network architecture that learns policies for multiple agent classes in a heterogeneous multi-agent reinforcement setting. The proposed network uses directed labeled graph representations for states, encodes feature vectors of different sizes for different entity classes, uses relational graph convolution layers to model different communication channels between entity types and learns distinct policies for different agent classes, sharing parameters wherever possible. Results have shown that specializing the communication channels between entity classes is a promising step to achieve higher performance in environments composed of heterogeneous entities.},
-  archiveprefix = {arXiv},
-  doi           = {10.5753/eniac.2020.12161},
-  eprint        = {2009.13161},
-  file          = {:Meneghetti2020 - Towards Heterogeneous Multi Agent Reinforcement Learning with Graph Neural Networks.pdf:PDF},
-  groups        = {H-MADRL},
-  keywords      = {cs.AI, cs.LG},
-  primaryclass  = {cs.AI},
-  readstatus    = {read},
 }
 
 @Article{Zheng2020,
@@ -4162,10 +4143,9 @@ FacMADDPG},
   archiveprefix = {arXiv},
   eprint        = {2012.07617},
   file          = {:Meneghetti2020a - Specializing Inter Agent Communication in Heterogeneous Multi Agent Reinforcement Learning Using Agent Class Information.pdf:PDF},
-  groups        = {H-MADRL},
+  groups        = {H-MADRL, Graphs},
   keywords      = {cs.AI, cs.LG, cs.MA},
   primaryclass  = {cs.AI},
-  priority      = {prio2},
 }
 
 @Article{Zhou2020,
@@ -4618,6 +4598,123 @@ agents)},
   url       = {http://proceedings.mlr.press/v87/das18a.html},
 }
 
+@InProceedings{pmlr-v80-zhang18n,
+  author    = {Zhang, Kaiqing and Yang, Zhuoran and Liu, Han and Zhang, Tong and Basar, Tamer},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning},
+  title     = {Fully Decentralized Multi-Agent Reinforcement Learning with Networked Agents},
+  year      = {2018},
+  editor    = {Dy, Jennifer and Krause, Andreas},
+  month     = {10--15 Jul},
+  pages     = {5872--5881},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {80},
+  abstract  = {We consider the fully decentralized multi-agent reinforcement learning (MARL) problem, where the agents are connected via a time-varying and possibly sparse communication network. Specifically, we assume that the reward functions of the agents might correspond to different tasks, and are only known to the corresponding agent. Moreover, each agent makes individual decisions based on both the information observed locally and the messages received from its neighbors over the network. To maximize the globally averaged return over the network, we propose two fully decentralized actor-critic algorithms, which are applicable to large-scale MARL problems in an online fashion. Convergence guarantees are provided when the value functions are approximated within the class of linear functions. Our work appears to be the first theoretical study of fully decentralized MARL algorithms for networked agents that use function approximation.},
+  file      = {:pmlr-v80-zhang18n - Fully Decentralized Multi Agent Reinforcement Learning with Networked Agents.pdf:PDF},
+  groups    = {Multi-agent RL, Communication},
+  pdf       = {http://proceedings.mlr.press/v80/zhang18n/zhang18n.pdf},
+  priority  = {prio2},
+  ranking   = {rank2},
+  url       = {http://proceedings.mlr.press/v80/zhang18n.html},
+}
+
+@InProceedings{8619581,
+  author    = {Zhang, Kaiqing and Yang, Zhuoran and Basar, Tamer},
+  booktitle = {2018 IEEE Conference on Decision and Control (CDC)},
+  title     = {Networked Multi-Agent Reinforcement Learning in Continuous Spaces},
+  year      = {2018},
+  month     = {Dec},
+  pages     = {2771-2776},
+  abstract  = {Many real-world tasks on practical control systems involve the learning and decision-making of multiple agents, under limited communications and observations. In this paper, we study the problem of networked multi-agent reinforcement learning (MARL), where multiple agents perform reinforcement learning in a common environment, and are able to exchange information via a possibly time-varying communication network. In particular, we focus on a collaborative MARL setting where each agent has individual reward functions, and the objective of all the agents is to maximize the network-wide averaged long-term return. To this end, we propose a fully decentralized actor-critic algorithm that only relies on neighbor-to-neighbor communications among agents. To promote the use of the algorithm on practical control systems, we focus on the setting with continuous state and action spaces, and adopt the newly proposed expected policy gradient to reduce the variance of the gradient estimate. We provide convergence guarantees for the algorithm when linear function approximation is employed, and corroborate our theoretical results via simulations.},
+  doi       = {10.1109/CDC.2018.8619581},
+  file      = {:zhang2018.pdf:PDF},
+  groups    = {Multi-agent RL, Communication},
+  issn      = {2576-2370},
+}
+
+@Article{Zhang2019,
+  author        = {Kaiqing Zhang and Zhuoran Yang and Tamer Başar},
+  title         = {Multi-Agent Reinforcement Learning: A Selective Overview of Theories and Algorithms},
+  year          = {2019},
+  month         = nov,
+  abstract      = {Recent years have witnessed significant advances in reinforcement learning (RL), which has registered great success in solving various sequential decision-making problems in machine learning. Most of the successful RL applications, e.g., the games of Go and Poker, robotics, and autonomous driving, involve the participation of more than one single agent, which naturally fall into the realm of multi-agent RL (MARL), a domain with a relatively long history, and has recently re-emerged due to advances in single-agent RL techniques. Though empirically successful, theoretical foundations for MARL are relatively lacking in the literature. In this chapter, we provide a selective overview of MARL, with focus on algorithms backed by theoretical analysis. More specifically, we review the theoretical results of MARL algorithms mainly within two representative frameworks, Markov/stochastic games and extensive-form games, in accordance with the types of tasks they address, i.e., fully cooperative, fully competitive, and a mix of the two. We also introduce several significant but challenging applications of these algorithms. Orthogonal to the existing reviews on MARL, we highlight several new angles and taxonomies of MARL theory, including learning in extensive-form games, decentralized MARL with networked agents, MARL in the mean-field regime, (non-)convergence of policy-based methods for learning in games, etc. Some of the new angles extrapolate from our own research endeavors and interests. Our overall goal with this chapter is, beyond providing an assessment of the current state of the field on the mark, to identify fruitful future research directions on theoretical studies of MARL. We expect this chapter to serve as continuing stimulus for researchers interested in working on this exciting while challenging topic.},
+  archiveprefix = {arXiv},
+  eprint        = {1911.10635},
+  file          = {:Zhang2019 - Multi Agent Reinforcement Learning_ a Selective Overview of Theories and Algorithms.pdf:PDF},
+  groups        = {MAS Reviews},
+  keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{pittir39099,
+  author    = {Akshat Agarwal and Sumit Kumar and Katia Sycara and Michael Lewis},
+  booktitle = {International Conference on Autonomous Agents and Multiagent Systems (AAMAS'2020)},
+  title     = {Learning Transferable Cooperative Behavior in Multi-Agent Team},
+  year      = {2020},
+  address   = {Aukland, NZ},
+  publisher = {IFMAS},
+  abstract  = {While multi-agent interactions can be naturally modeled as a graph, the environment has traditionally been considered as a black box. To better utilize the inherent structure of our environment, we propose to create a shared agent-entity graph, where agents and environmental entities form vertices, and edges exist between the vertices which can communicate with each other, allowing agents to selectively attend to different parts of the environment, while also introducing invariance to the number of agents or entities present in the system as well as permutation invariance. We present stateof- the-art results on coverage, formation and line control tasks for multi-agent teams in a fully decentralized execution framework.},
+  file      = {:pittir39099 - Learning Transferable Cooperative Behavior in Multi Agent Team.pdf:PDF},
+  groups    = {Communication, Graphs},
+  journal   = {International Conference on Autonomous Agents and Multiagent Systems (AAMAS'2020)},
+  url       = {http://d-scholarship.pitt.edu/39099/},
+}
+
+@InProceedings{8929168,
+  author    = {Luo, Tianze and Subagdja, Budhitama and Wang, Di and Tan, Ah-Hwee},
+  booktitle = {2019 IEEE International Conference on Agents (ICA)},
+  title     = {Multi-Agent Collaborative Exploration through Graph-based Deep Reinforcement Learning},
+  year      = {2019},
+  month     = {Oct},
+  pages     = {2-7},
+  abstract  = {Autonomous exploration by a single or multiple agents in an unknown environment leads to various applications in automation, such as cleaning, search and rescue, etc. Traditional methods normally take frontier locations and segmented regions of the environment into account to efficiently allocate target locations to different agents to visit. They may employ ad hoc solutions to allocate the task to the agents, but the allocation may not be efficient. In the literature, few studies focused on enhancing the traditional methods by applying machine learning models for agent performance improvement. In this paper, we propose a graph-based deep reinforcement learning approach to effectively perform multi-agent exploration. Specifically, we first design a hierarchical map segmentation method to transform the environment exploration problem to the graph domain, wherein each node of the graph corresponds to a segmented region in the environment and each edge indicates the distance between two nodes. Subsequently, based on the graph structure, we apply a Graph Convolutional Network (GCN) to allocate the exploration target to each agent. Our experiments show that our proposed model significantly improves the efficiency of map explorations across varying sizes of collaborative agents over the traditional methods.},
+  doi       = {10.1109/AGENTS.2019.8929168},
+  file      = {:8929168 - Multi Agent Collaborative Exploration through Graph Based Deep Reinforcement Learning.pdf:PDF},
+  groups    = {Graphs},
+}
+
+@Article{Meneghetti2020,
+  author        = {Douglas De Rizzo Meneghetti and Reinaldo Augusto da Costa Bianchi},
+  title         = {Towards Heterogeneous Multi-Agent Reinforcement Learning with Graph Neural Networks},
+  year          = {2020},
+  month         = sep,
+  abstract      = {This work proposes a neural network architecture that learns policies for multiple agent classes in a heterogeneous multi-agent reinforcement setting. The proposed network uses directed labeled graph representations for states, encodes feature vectors of different sizes for different entity classes, uses relational graph convolution layers to model different communication channels between entity types and learns distinct policies for different agent classes, sharing parameters wherever possible. Results have shown that specializing the communication channels between entity classes is a promising step to achieve higher performance in environments composed of heterogeneous entities.},
+  archiveprefix = {arXiv},
+  doi           = {10.5753/eniac.2020.12161},
+  eprint        = {2009.13161},
+  file          = {:Meneghetti2020 - Towards Heterogeneous Multi Agent Reinforcement Learning with Graph Neural Networks.pdf:PDF},
+  groups        = {H-MADRL, Graphs},
+  keywords      = {cs.AI, cs.LG},
+  primaryclass  = {cs.AI},
+  readstatus    = {read},
+}
+
+@Article{Ryu2020,
+  author    = {Heechang Ryu and Hayong Shin and Jinkyoo Park},
+  journal   = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
+  title     = {Multi-Agent Actor-Critic with Hierarchical Graph Attention Network},
+  year      = {2020},
+  month     = {apr},
+  number    = {05},
+  pages     = {7236--7243},
+  volume    = {34},
+  doi       = {10.1609/aaai.v34i05.6214},
+  file      = {:6214-Article Text-9439-1-10-20200516.pdf:PDF},
+  groups    = {Graphs},
+  publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
+}
+
+@Article{pesce2020improving,
+  author    = {Pesce, Emanuele and Montana, Giovanni},
+  journal   = {Machine Learning},
+  title     = {Improving coordination in small-scale multi-agent deep reinforcement learning through memory-driven communication},
+  year      = {2020},
+  pages     = {1--21},
+  file      = {:pesce2020improving - Improving Coordination in Small Scale Multi Agent Deep Reinforcement Learning through Memory Driven Communication.pdf:PDF},
+  groups    = {Communication},
+  publisher = {Springer},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -4657,8 +4754,9 @@ agents)},
 3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent RL\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Communication\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Graphs\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Heterogeneous Systems\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
