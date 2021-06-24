@@ -2289,6 +2289,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   isbn      = {9781510838819},
   location  = {Barcelona, Spain},
   numpages  = {9},
+  priority  = {prio1},
   ranking   = {rank4},
 }
 
