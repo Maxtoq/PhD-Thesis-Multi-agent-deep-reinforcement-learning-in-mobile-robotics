@@ -4481,6 +4481,7 @@ agents)},
   groups        = {Communication},
   keywords      = {cs.CL, cs.AI},
   primaryclass  = {cs.CL},
+  priority      = {prio1},
 }
 
 @InProceedings{pmlr-v100-chen20a,
