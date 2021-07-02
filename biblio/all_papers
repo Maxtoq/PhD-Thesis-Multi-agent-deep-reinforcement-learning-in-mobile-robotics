@@ -1072,10 +1072,10 @@
   archiveprefix = {arXiv},
   eprint        = {1810.08647},
   file          = {:Jaques2018 - Social Influence As Intrinsic Motivation for Multi Agent Deep Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-agent RL},
+  groups        = {Multi-agent RL, Communication},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
-  ranking       = {rank3},
+  ranking       = {rank2},
 }
 
 @Article{Leibo2019,
@@ -4837,18 +4837,6 @@ agents)},
   location  = {Montreal QC, Canada},
   numpages  = {9},
   ranking   = {rank1},
-}
-
-@InProceedings{jaques2019social,
-  author       = {Jaques, Natasha and Lazaridou, Angeliki and Hughes, Edward and Gulcehre, Caglar and Ortega, Pedro and Strouse, DJ and Leibo, Joel Z and De Freitas, Nando},
-  booktitle    = {International Conference on Machine Learning},
-  title        = {Social influence as intrinsic motivation for multi-agent deep reinforcement learning},
-  year         = {2019},
-  organization = {PMLR},
-  pages        = {3040--3049},
-  file         = {:jaques2019social - Social Influence As Intrinsic Motivation for Multi Agent Deep Reinforcement Learning.pdf:PDF},
-  groups       = {Communication},
-  ranking      = {rank2},
 }
 
 @InProceedings{chaabouni-etal-2020-compositionality,
