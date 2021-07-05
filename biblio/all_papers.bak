@@ -1075,7 +1075,7 @@
   groups        = {Multi-agent RL, Communication},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
-  ranking       = {rank3},
+  ranking       = {rank2},
 }
 
 @Article{Leibo2019,
@@ -4148,7 +4148,7 @@ FacMADDPG},
   archiveprefix = {arXiv},
   eprint        = {2012.07617},
   file          = {:Meneghetti2020a - Specializing Inter Agent Communication in Heterogeneous Multi Agent Reinforcement Learning Using Agent Class Information.pdf:PDF},
-  groups        = {H-MADRL, Graphs},
+  groups        = {H-MADRL, Graphs, Communication},
   keywords      = {cs.AI, cs.LG, cs.MA},
   primaryclass  = {cs.AI},
 }
@@ -4691,10 +4691,10 @@ agents)},
   doi           = {10.5753/eniac.2020.12161},
   eprint        = {2009.13161},
   file          = {:Meneghetti2020 - Towards Heterogeneous Multi Agent Reinforcement Learning with Graph Neural Networks.pdf:PDF},
-  groups        = {H-MADRL, Graphs},
+  groups        = {H-MADRL, Graphs, Communication},
   keywords      = {cs.AI, cs.LG},
   primaryclass  = {cs.AI},
-  readstatus    = {read},
+  readstatus    = {skimmed},
 }
 
 @Article{Ryu2020,
@@ -4879,6 +4879,19 @@ agents)},
   groups    = {Communication},
   ranking   = {rank2},
   url       = {https://openreview.net/forum?id=rJxGLlBtwH},
+}
+
+@InProceedings{NEURIPS2019_14cfdb59,
+  author    = {Zhang, Sai Qian and Zhang, Qi and Lin, Jieyu},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Efficient Communication in Multi-Agent Reinforcement Learning via Variance Based Control},
+  year      = {2019},
+  editor    = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {32},
+  file      = {:https\://proceedings.neurips.cc/paper/2019/file/14cfdb59b5bda1fc245aadae15b1984a-Paper.pdf:PDF},
+  groups    = {Multi-agent RL},
+  url       = {https://proceedings.neurips.cc/paper/2019/file/14cfdb59b5bda1fc245aadae15b1984a-Paper.pdf},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
