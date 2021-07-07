@@ -3006,9 +3006,10 @@ FacMADDPG},
   file      = {:8202134 - Virtual to Real Deep Reinforcement Learning_ Continuous Control of Mobile Robots for Mapless Navigation.pdf:PDF},
   groups    = {Navigation, Sim to Real},
   issn      = {2153-0866},
+  ranking   = {rank2},
 }
 
-@InProceedings{8202133,
+@InProceedings{Tobin2017,
   author    = {Tobin, Josh and Fong, Rachel and Ray, Alex and Schneider, Jonas and Zaremba, Wojciech and Abbeel, Pieter},
   booktitle = {2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   title     = {Domain randomization for transferring deep neural networks from simulation to the real world},
@@ -3067,7 +3068,7 @@ FacMADDPG},
   url      = {https://www.sciencedirect.com/science/article/pii/S092188901500202X},
 }
 
-@Article{doi:10.1177/0278364918770733,
+@Article{Sunderhauf2018,
   author     = {Niko Sünderhauf and Oliver Brock and Walter Scheirer and Raia Hadsell and Dieter Fox and Jürgen Leitner and Ben Upcroft and Pieter Abbeel and Wolfram Burgard and Michael Milford and Peter Corke},
   journal    = {The International Journal of Robotics Research},
   title      = {The limits and potentials of deep learning for robotics},
@@ -4926,6 +4927,78 @@ agents)},
   primaryclass  = {cs.LG},
 }
 
+@InProceedings{James2019,
+  author    = {James, Stephen and Wohlhart, Paul and Kalakrishnan, Mrinal and Kalashnikov, Dmitry and Irpan, Alex and Ibarz, Julian and Levine, Sergey and Hadsell, Raia and Bousmalis, Konstantinos},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Sim-To-Real via Sim-To-Sim: Data-Efficient Robotic Grasping via Randomized-To-Canonical Adaptation Networks},
+  year      = {2019},
+  month     = {June},
+  file      = {:James_2019_CVPR - Sim to Real Via Sim to Sim_ Data Efficient Robotic Grasping Via Randomized to Canonical Adaptation Networks.pdf:PDF},
+  groups    = {Sim to Real},
+  ranking   = {rank3},
+}
+
+@InProceedings{Chebotar2019,
+  author    = {Yevgen Chebotar and Ankur Handa and Viktor Makoviychuk and Miles Macklin and Jan Issac and Nathan Ratliff and Dieter Fox},
+  booktitle = {2019 International Conference on Robotics and Automation ({ICRA})},
+  title     = {Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience},
+  year      = {2019},
+  month     = {may},
+  publisher = {{IEEE}},
+  doi       = {10.1109/icra.2019.8793789},
+  file      = {:Chebotar2019 - Closing the Sim to Real Loop_ Adapting Simulation Randomization with Real World Experience.pdf:PDF},
+  groups    = {Sim to Real},
+  ranking   = {rank3},
+}
+
+@InProceedings{Peng2018,
+  author    = {Xue Bin Peng and Marcin Andrychowicz and Wojciech Zaremba and Pieter Abbeel},
+  booktitle = {2018 {IEEE} International Conference on Robotics and Automation ({ICRA})},
+  title     = {Sim-to-Real Transfer of Robotic Control with Dynamics Randomization},
+  year      = {2018},
+  month     = {may},
+  publisher = {{IEEE}},
+  doi       = {10.1109/icra.2018.8460528},
+  file      = {:peng2018.pdf:PDF},
+  groups    = {Sim to Real},
+  ranking   = {rank4},
+}
+
+@Article{Andrychowicz2020,
+  author   = {OpenAI: Marcin Andrychowicz and Bowen Baker and Maciek Chociej and Rafal Józefowicz and Bob McGrew and Jakub Pachocki and Arthur Petron and Matthias Plappert and Glenn Powell and Alex Ray and Jonas Schneider and Szymon Sidor and Josh Tobin and Peter Welinder and Lilian Weng and Wojciech Zaremba},
+  journal  = {The International Journal of Robotics Research},
+  title    = {Learning dexterous in-hand manipulation},
+  year     = {2020},
+  number   = {1},
+  pages    = {3-20},
+  volume   = {39},
+  abstract = {We use reinforcement learning (RL) to learn dexterous in-hand manipulation policies that can perform vision-based object reorientation on a physical Shadow Dexterous Hand. The training is performed in a simulated environment in which we randomize many of the physical properties of the system such as friction coefficients and an object’s appearance. Our policies transfer to the physical robot despite being trained entirely in simulation. Our method does not rely on any human demonstrations, but many behaviors found in human manipulation emerge naturally, including finger gaiting, multi-finger coordination, and the controlled use of gravity. Our results were obtained using the same distributed RL system that was used to train OpenAI Five. We also include a video of our results: https://youtu.be/jwSbzNHGflM.},
+  doi      = {10.1177/0278364919887447},
+  eprint   = {https://doi.org/10.1177/0278364919887447},
+  file     = {:doi_10.1177_0278364919887447 - Learning Dexterous in Hand Manipulation.pdf:PDF},
+  groups   = {Sim to Real},
+  ranking  = {rank4},
+  url      = {https://doi.org/10.1177/0278364919887447},
+}
+
+@Article{Sutton1999,
+  author   = {Richard S. Sutton and Doina Precup and Satinder Singh},
+  journal  = {Artificial Intelligence},
+  title    = {Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning},
+  year     = {1999},
+  issn     = {0004-3702},
+  number   = {1},
+  pages    = {181-211},
+  volume   = {112},
+  abstract = {Learning, planning, and representing knowledge at multiple levels of temporal abstraction are key, longstanding challenges for AI. In this paper we consider how these challenges can be addressed within the mathematical framework of reinforcement learning and Markov decision processes (MDPs). We extend the usual notion of action in this framework to include options—closed-loop policies for taking action over a period of time. Examples of options include picking up an object, going to lunch, and traveling to a distant city, as well as primitive actions such as muscle twitches and joint torques. Overall, we show that options enable temporally abstract knowledge and action to be included in the reinforcement learning framework in a natural and general way. In particular, we show that options may be used interchangeably with primitive actions in planning methods such as dynamic programming and in learning methods such as Q-learning. Formally, a set of options defined over an MDP constitutes a semi-Markov decision process (SMDP), and the theory of SMDPs provides the foundation for the theory of options. However, the most interesting issues concern the interplay between the underlying MDP and the SMDP and are thus beyond SMDP theory. We present results for three such cases: (1) we show that the results of planning with options can be used during execution to interrupt options and thereby perform even better than planned, (2) we introduce new intra-option methods that are able to learn about an option from fragments of its execution, and (3) we propose a notion of subgoal that can be used to improve the options themselves. All of these results have precursors in the existing literature; the contribution of this paper is to establish them in a simpler and more general setting with fewer changes to the existing reinforcement learning framework. In particular, we show that these results can be obtained without committing to (or ruling out) any particular approach to state abstraction, hierarchy, function approximation, or the macro-utility problem.},
+  doi      = {https://doi.org/10.1016/S0004-3702(99)00052-1},
+  file     = {:SUTTON1999181 - Between MDPs and Semi MDPs_ a Framework for Temporal Abstraction in Reinforcement Learning.pdf:PDF},
+  groups   = {RL},
+  keywords = {Temporal abstraction, Reinforcement learning, Markov decision processes, Options, Macros, Macroactions, Subgoals, Intra-option learning, Hierarchical planning, Semi-Markov decision processes},
+  ranking  = {rank4},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0004370299000521},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -4976,4 +5049,5 @@ agents)},
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
 }
