@@ -4166,7 +4166,6 @@ FacMADDPG},
   groups        = {Navigation, Multi-robot},
   keywords      = {cs.MA, cs.AI, cs.GT, cs.LG, cs.SY, eess.SY},
   primaryclass  = {cs.MA},
-  priority      = {prio2},
 }
 
 @Article{Mitchell2019,
@@ -4981,7 +4980,7 @@ agents)},
   url      = {https://doi.org/10.1177/0278364919887447},
 }
 
-@Article{SUTTON1999181,
+@Article{Sutton1999,
   author   = {Richard S. Sutton and Doina Precup and Satinder Singh},
   journal  = {Artificial Intelligence},
   title    = {Between MDPs and semi-MDPs: A framework for temporal abstraction in reinforcement learning},
@@ -4999,10 +4998,171 @@ agents)},
   url      = {https://www.sciencedirect.com/science/article/pii/S0004370299000521},
 }
 
+@InProceedings{Colas2020,
+  author    = {Colas, C\'{e}dric and Karch, Tristan and Lair, Nicolas and Dussoux, Jean-Michel and Moulin-Frier, Cl\'{e}ment and Dominey, Peter and Oudeyer, Pierre-Yves},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Language as a Cognitive Tool to Imagine Goals in Curiosity Driven Exploration},
+  year      = {2020},
+  editor    = {H. Larochelle and M. Ranzato and R. Hadsell and M. F. Balcan and H. Lin},
+  pages     = {3761--3774},
+  publisher = {Curran Associates, Inc.},
+  volume    = {33},
+  comment   = {IMAGINE},
+  file      = {:NEURIPS2020_274e6fcf - Language As a Cognitive Tool to Imagine Goals in Curiosity Driven Exploration.pdf:PDF},
+  groups    = {Curiosity, Language-Augmented RL},
+  priority  = {prio1},
+  url       = {https://proceedings.neurips.cc/paper/2020/file/274e6fcf4a583de4a81c6376f17673e7-Paper.pdf},
+}
+
+@Article{Chan2019,
+  author        = {Harris Chan and Yuhuai Wu and Jamie Kiros and Sanja Fidler and Jimmy Ba},
+  title         = {ACTRCE: Augmenting Experience via Teacher's Advice For Multi-Goal Reinforcement Learning},
+  year          = {2019},
+  month         = feb,
+  abstract      = {Sparse reward is one of the most challenging problems in reinforcement learning (RL). Hindsight Experience Replay (HER) attempts to address this issue by converting a failed experience to a successful one by relabeling the goals. Despite its effectiveness, HER has limited applicability because it lacks a compact and universal goal representation. We present Augmenting experienCe via TeacheR's adviCE (ACTRCE), an efficient reinforcement learning technique that extends the HER framework using natural language as the goal representation. We first analyze the differences among goal representation, and show that ACTRCE can efficiently solve difficult reinforcement learning problems in challenging 3D navigation tasks, whereas HER with non-language goal representation failed to learn. We also show that with language goal representations, the agent can generalize to unseen instructions, and even generalize to instructions with unseen lexicons. We further demonstrate it is crucial to use hindsight advice to solve challenging tasks, and even small amount of advice is sufficient for the agent to achieve good performance.},
+  archiveprefix = {arXiv},
+  eprint        = {1902.04546},
+  file          = {:Chan2019 - ACTRCE_ Augmenting Experience Via Teacher's Advice for Multi Goal Reinforcement Learning.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {cs.LG, cs.AI, cs.NE, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{NEURIPS2019_0af78794,
+  author    = {Jiang, YiDing and Gu, Shixiang (Shane) and Murphy, Kevin P and Finn, Chelsea},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Language as an Abstraction for Hierarchical Deep Reinforcement Learning},
+  year      = {2019},
+  editor    = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {32},
+  file      = {:NEURIPS2019_0af78794 - Language As an Abstraction for Hierarchical Deep Reinforcement Learning.pdf:PDF},
+  groups    = {Hierarchical RL, Language-Augmented RL},
+  url       = {https://proceedings.neurips.cc/paper/2019/file/0af787945872196b42c9f73ead2565c8-Paper.pdf},
+}
+
+@InProceedings{Cideron2020,
+  author    = {Geoffrey Cideron and Mathieu Seurin and Florian Strub and Olivier Pietquin},
+  booktitle = {2020 {IEEE} Symposium Series on Computational Intelligence ({SSCI})},
+  title     = {{HIGhER}: Improving instruction following with Hindsight Generation for Experience Replay},
+  year      = {2020},
+  month     = {dec},
+  publisher = {{IEEE}},
+  doi       = {10.1109/ssci47803.2020.9308603},
+  file      = {:Cideron2020 - HIGhER_ Improving Instruction Following with Hindsight Generation for Experience Replay.pdf:PDF},
+  groups    = {Language-Augmented RL},
+}
+
+@Article{Zhou_Small_2021,
+  author       = {Zhou, Li and Small, Kevin},
+  journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title        = {Inverse Reinforcement Learning with Natural Language Goals},
+  year         = {2021},
+  month        = {May},
+  number       = {12},
+  pages        = {11116-11124},
+  volume       = {35},
+  abstractnote = {Humans generally use natural language to communicate task requirements to each other. Ideally, natural language should also be usable for communicating goals to autonomous machines (e.g., robots) to minimize friction in task specification. However, understanding and mapping natural language goals to sequences of states and actions is challenging. Specifically, existing work along these lines has encountered difficulty in generalizing learned policies to new natural language goals and environments. In this paper, we propose a novel adversarial inverse reinforcement learning algorithm to learn a language-conditioned policy and reward function. To improve generalization of the learned policy and reward function, we use a variational goal generator to relabel trajectories and sample diverse goals during training. Our algorithm outperforms multiple baselines by a large margin on a vision-based natural language instruction following dataset (Room-2-Room), demonstrating a promising advance in enabling the use of natural language instructions in specifying agent goals.},
+  file         = {:Zhou_Small_2021 - Inverse Reinforcement Learning with Natural Language Goals.pdf:PDF},
+  groups       = {Language-Augmented RL},
+  url          = {https://ojs.aaai.org/index.php/AAAI/article/view/17326},
+}
+
+@Article{Nguyen2021,
+  author        = {Khanh Nguyen and Dipendra Misra and Robert Schapire and Miro Dudík and Patrick Shafto},
+  title         = {Interactive Learning from Activity Description},
+  year          = {2021},
+  month         = feb,
+  abstract      = {We present a novel interactive learning protocol that enables training request-fulfilling agents by verbally describing their activities. Unlike imitation learning (IL), our protocol allows the teaching agent to provide feedback in a language that is most appropriate for them. Compared with reward in reinforcement learning (RL), the description feedback is richer and allows for improved sample complexity. We develop a probabilistic framework and an algorithm that practically implements our protocol. Empirical results in two challenging request-fulfilling problems demonstrate the strengths of our approach: compared with RL baselines, it is more sample-efficient; compared with IL baselines, it achieves competitive success rates without requiring the teaching agent to be able to demonstrate the desired behavior using the learning agent's actions. Apart from empirical evaluation, we also provide theoretical guarantees for our algorithm under certain assumptions about the teacher and the environment.},
+  archiveprefix = {arXiv},
+  eprint        = {2102.07024},
+  file          = {:Nguyen2021 - Interactive Learning from Activity Description.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {cs.CL, cs.AI, cs.HC, cs.LG},
+  primaryclass  = {cs.CL},
+}
+
+@Article{Hill2019,
+  author        = {Felix Hill and Andrew Lampinen and Rosalia Schneider and Stephen Clark and Matthew Botvinick and James L. McClelland and Adam Santoro},
+  title         = {Environmental drivers of systematicity and generalization in a situated agent},
+  year          = {2019},
+  month         = oct,
+  abstract      = {The question of whether deep neural networks are good at generalising beyond their immediate training experience is of critical importance for learning-based approaches to AI. Here, we consider tests of out-of-sample generalisation that require an agent to respond to never-seen-before instructions by manipulating and positioning objects in a 3D Unity simulated room. We first describe a comparatively generic agent architecture that exhibits strong performance on these tests. We then identify three aspects of the training regime and environment that make a significant difference to its performance: (a) the number of object/word experiences in the training set; (b) the visual invariances afforded by the agent's perspective, or frame of reference; and (c) the variety of visual input inherent in the perceptual aspect of the agent's perception. Our findings indicate that the degree of generalisation that networks exhibit can depend critically on particulars of the environment in which a given task is instantiated. They further suggest that the propensity for neural networks to generalise in systematic ways may increase if, like human children, those networks have access to many frames of richly varying, multi-modal observations as they learn.},
+  archiveprefix = {arXiv},
+  eprint        = {1910.00571},
+  file          = {:Hill2019 - Environmental Drivers of Systematicity and Generalization in a Situated Agent.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@InProceedings{pmlr-v70-andreas17a,
+  author    = {Jacob Andreas and Dan Klein and Sergey Levine},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning},
+  title     = {Modular Multitask Reinforcement Learning with Policy Sketches},
+  year      = {2017},
+  editor    = {Precup, Doina and Teh, Yee Whye},
+  month     = {06--11 Aug},
+  pages     = {166--175},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {70},
+  abstract  = {We describe a framework for multitask deep reinforcement learning guided by policy sketches. Sketches annotate tasks with sequences of named subtasks, providing information about high-level structural relationships among tasks but not how to implement them—specifically not providing the detailed guidance used by much previous work on learning policy abstractions for RL (e.g. intermediate rewards, subtask completion signals, or intrinsic motivations). To learn from sketches, we present a model that associates every subtask with a modular subpolicy, and jointly maximizes reward over full task-specific policies by tying parameters across shared subpolicies. Optimization is accomplished via a decoupled actor–critic training objective that facilitates learning common behaviors from multiple dissimilar reward functions. We evaluate the effectiveness of our approach in three environments featuring both discrete and continuous control, and with sparse rewards that can be obtained only after completing a number of high-level subgoals. Experiments show that using our approach to learn policies guided by sketches gives better performance than existing techniques for learning task-specific or shared policies, while naturally inducing a library of interpretable primitive behaviors that can be recombined to rapidly adapt to new tasks.},
+  file      = {:pmlr-v70-andreas17a - Modular Multitask Reinforcement Learning with Policy Sketches.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  pdf       = {http://proceedings.mlr.press/v70/andreas17a/andreas17a.pdf},
+  ranking   = {rank3},
+  url       = {http://proceedings.mlr.press/v70/andreas17a.html},
+}
+
+@InProceedings{Shridhar2021,
+  author    = {Mohit Shridhar and Xingdi Yuan and Marc-Alexandre Cote and Yonatan Bisk and Adam Trischler and Matthew Hausknecht},
+  booktitle = {International Conference on Learning Representations},
+  title     = {ALFWorld: Aligning Text and Embodied Environments for Interactive Learning},
+  year      = {2021},
+  file      = {:Shridhar2021 - ALFWorld_ Aligning Text and Embodied Environments for Interactive Learning.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  url       = {https://openreview.net/forum?id=0IOX0YcCdTn},
+}
+
+@InProceedings{akakzia:hal-03121146,
+  author      = {Akakzia, Ahmed and Colas, C{\'e}dric and Oudeyer, Pierre-Yves and Chetouani, Mohamed and Sigaud, Olivier},
+  booktitle   = {{ICLR 2021 - Ninth International Conference on Learning Representation}},
+  title       = {{Grounding Language to Autonomously-Acquired Skills via Goal Generation}},
+  year        = {2021},
+  address     = {Vienna / Virtual, Austria},
+  month       = May,
+  comment     = {LGB},
+  file        = {:akakzia_hal-03121146 - Grounding Language to Autonomously Acquired Skills Via Goal Generation.pdf:PDF},
+  groups      = {Language-Augmented RL},
+  hal_id      = {hal-03121146},
+  hal_version = {v1},
+  keywords    = {Reinforcement learning ; Artificial intelligence and robotics},
+  pdf         = {https://hal.inria.fr/hal-03121146/file/2006.07185.pdf},
+  priority    = {prio1},
+  url         = {https://hal.inria.fr/hal-03121146},
+}
+
+@InProceedings{Luketina2019,
+  author    = {Luketina, Jelena and Nardelli, Nantas and Farquhar, Gregory and Foerster, Jakob and Andreas, Jacob and Grefenstette, Edward and Whiteson, Shimon and Rocktäschel, Tim},
+  booktitle = {Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, {IJCAI-19}},
+  title     = {A Survey of Reinforcement Learning Informed by Natural Language},
+  year      = {2019},
+  month     = {7},
+  pages     = {6309--6317},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  doi       = {10.24963/ijcai.2019/880},
+  file      = {:Luketina2019 - A Survey of Reinforcement Learning Informed by Natural Language.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  priority  = {prio1},
+  url       = {https://doi.org/10.24963/ijcai.2019/880},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
+1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
@@ -5049,5 +5209,5 @@ agents)},
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language-Augmented RL\;0\;1\;0x8a8a8aff\;\;\;;
 }
