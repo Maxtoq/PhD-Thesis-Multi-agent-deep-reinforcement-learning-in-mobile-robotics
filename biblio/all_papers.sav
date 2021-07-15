@@ -121,7 +121,7 @@
   doi           = {10.1038/s41586-020-03051-4},
   eprint        = {1911.08265},
   file          = {:Schrittwieser2019 - Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model.pdf:PDF},
-  groups        = {Model based, Tree-based},
+  groups        = {Model based},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -1610,7 +1610,7 @@
   url       = {https://doi.org/10.1371/journal.pone.0172395},
 }
 
-@InProceedings{10.5555/3091529.3091572,
+@InProceedings{Tan1993,
   author     = {Tan, Ming},
   booktitle  = {Proceedings of the Tenth International Conference on Machine Learning},
   title      = {Multi-Agent Reinforcement Learning: Independent versus Cooperative Agents},
@@ -5188,7 +5188,6 @@ agents)},
 1 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Tree-based\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;

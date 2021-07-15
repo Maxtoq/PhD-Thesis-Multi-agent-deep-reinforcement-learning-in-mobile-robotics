@@ -121,7 +121,7 @@
   doi           = {10.1038/s41586-020-03051-4},
   eprint        = {1911.08265},
   file          = {:Schrittwieser2019 - Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model.pdf:PDF},
-  groups        = {Model based, Tree-based},
+  groups        = {Model based},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -5011,6 +5011,7 @@ agents)},
   file      = {:NEURIPS2020_274e6fcf - Language As a Cognitive Tool to Imagine Goals in Curiosity Driven Exploration.pdf:PDF},
   groups    = {Curiosity, Language-Augmented RL},
   priority  = {prio1},
+  ranking   = {rank1},
   url       = {https://proceedings.neurips.cc/paper/2020/file/274e6fcf4a583de4a81c6376f17673e7-Paper.pdf},
 }
 
@@ -5111,7 +5112,7 @@ agents)},
   file      = {:pmlr-v70-andreas17a - Modular Multitask Reinforcement Learning with Policy Sketches.pdf:PDF},
   groups    = {Language-Augmented RL},
   pdf       = {http://proceedings.mlr.press/v70/andreas17a/andreas17a.pdf},
-  ranking   = {rank3},
+  ranking   = {rank4},
   url       = {http://proceedings.mlr.press/v70/andreas17a.html},
 }
 
@@ -5155,7 +5156,23 @@ agents)},
   file      = {:Luketina2019 - A Survey of Reinforcement Learning Informed by Natural Language.pdf:PDF},
   groups    = {Language-Augmented RL},
   priority  = {prio1},
+  ranking   = {rank2},
   url       = {https://doi.org/10.24963/ijcai.2019/880},
+}
+
+@Article{Karch2021,
+  author        = {Tristan Karch and Laetitia Teodorescu and Katja Hofmann and Clément Moulin-Frier and Pierre-Yves Oudeyer},
+  title         = {Grounding Spatio-Temporal Language with Transformers},
+  year          = {2021},
+  month         = jun,
+  abstract      = {Language is an interface to the outside world. In order for embodied agents to use it, language must be grounded in other, sensorimotor modalities. While there is an extended literature studying how machines can learn grounded language, the topic of how to learn spatio-temporal linguistic concepts is still largely uncharted. To make progress in this direction, we here introduce a novel spatio-temporal language grounding task where the goal is to learn the meaning of spatio-temporal descriptions of behavioral traces of an embodied agent. This is achieved by training a truth function that predicts if a description matches a given history of observations. The descriptions involve time-extended predicates in past and present tense as well as spatio-temporal references to objects in the scene. To study the role of architectural biases in this task, we train several models including multimodal Transformer architectures; the latter implement different attention computations between words and objects across space and time. We test models on two classes of generalization: 1) generalization to randomly held-out sentences; 2) generalization to grammar primitives. We observe that maintaining object identity in the attention computation of our Transformers is instrumental to achieving good performance on generalization overall, and that summarizing object traces in a single token has little influence on performance. We then discuss how this opens new perspectives for language-guided autonomous embodied agents. We also release our code under open-source license as well as pretrained models and datasets to encourage the wider community to build upon and extend our work in the future.},
+  archiveprefix = {arXiv},
+  eprint        = {2106.08858},
+  file          = {:Karch2021 - Grounding Spatio Temporal Language with Transformers.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {cs.AI, cs.CL, cs.LG},
+  primaryclass  = {cs.AI},
+  priority      = {prio2},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -5171,7 +5188,6 @@ agents)},
 1 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Tree-based\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
