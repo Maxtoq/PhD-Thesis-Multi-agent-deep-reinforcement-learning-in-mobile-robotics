@@ -1280,7 +1280,7 @@
   url       = {https://ci.nii.ac.jp/naid/10013542751/en/},
 }
 
-@Article{Wang2020,
+@Article{Wang2020a,
   author     = {Jianhong Wang and Yuan Zhang and Tae-Kyun Kim and Yunjie Gu},
   journal    = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
   title      = {Shapley Q-Value: A Local Reward Approach to Solve Global Reward Games},
@@ -1610,7 +1610,7 @@
   url       = {https://doi.org/10.1371/journal.pone.0172395},
 }
 
-@InProceedings{10.5555/3091529.3091572,
+@InProceedings{Tan1993,
   author     = {Tan, Ming},
   booktitle  = {Proceedings of the Tenth International Conference on Machine Learning},
   title      = {Multi-Agent Reinforcement Learning: Independent versus Cooperative Agents},
@@ -1805,7 +1805,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups     = {Multi-agent RL},
   journal    = {NeurIPS Proceedings 2020},
   organizer  = {34th Annual Conference on Neural Information Processing Systems (NeurIPS 2020)},
-  ranking    = {rank4},
+  ranking    = {rank2},
   readstatus = {read},
 }
 
@@ -4248,7 +4248,7 @@ FacMADDPG},
   ranking       = {rank2},
 }
 
-@Article{Wang2020a,
+@Article{Wang2020d,
   author        = {Rose E. Wang and Michael Everett and Jonathan P. How},
   journal       = {Reinforcement Learning for Real Life (RL4RealLife) Workshop in the 36th International Conference on Machine Learning, Long Beach, California, USA, 2019},
   title         = {R-MADDPG for Partially Observable Environments and Limited Communication},
@@ -4441,7 +4441,7 @@ agents)},
   primaryclass  = {cs.LG},
 }
 
-@Article{Wang2020b,
+@Article{Wang2020e,
   author        = {Tonghan Wang and Tarun Gupta and Anuj Mahajan and Bei Peng and Shimon Whiteson and Chongjie Zhang},
   title         = {RODE: Learning Roles to Decompose Multi-Agent Tasks},
   year          = {2020},
@@ -4453,6 +4453,7 @@ agents)},
   groups        = {Multi-agent RL},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
+  ranking       = {rank1},
 }
 
 @Article{Liu2021,
@@ -4651,6 +4652,7 @@ agents)},
   groups        = {MAS Reviews},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
+  ranking       = {rank3},
 }
 
 @InProceedings{pittir39099,
@@ -4889,8 +4891,10 @@ agents)},
   editor    = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
   publisher = {Curran Associates, Inc.},
   volume    = {32},
+  comment   = {communication integrated in QMIX, with tricks to make it more efficient},
   file      = {:NEURIPS2019_14cfdb59 - Efficient Communication in Multi Agent Reinforcement Learning Via Variance Based Control.pdf:PDF},
   groups    = {Multi-agent RL, Communication},
+  ranking   = {rank1},
   url       = {https://proceedings.neurips.cc/paper/2019/file/14cfdb59b5bda1fc245aadae15b1984a-Paper.pdf},
 }
 
@@ -5173,6 +5177,46 @@ agents)},
   keywords      = {cs.AI, cs.CL, cs.LG},
   primaryclass  = {cs.AI},
   priority      = {prio2},
+}
+
+@InProceedings{Wang2020b,
+  author    = {Wang, Tonghan and Dong, Heng and Lesser, Victor and Zhang, Chongjie},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+  title     = {{ROMA}: Multi-Agent Reinforcement Learning with Emergent Roles},
+  year      = {2020},
+  editor    = {III, Hal Daumé and Singh, Aarti},
+  month     = {13--18 Jul},
+  pages     = {9876--9886},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {119},
+  abstract  = {The role concept provides a useful tool to design and understand complex multi-agent systems, which allows agents with a similar role to share similar behaviors. However, existing role-based methods use prior domain knowledge and predefine role structures and behaviors. In contrast, multi-agent reinforcement learning (MARL) provides flexibility and adaptability, but less efficiency in complex tasks. In this paper, we synergize these two paradigms and propose a role-oriented MARL framework (ROMA). In this framework, roles are emergent, and agents with similar roles tend to share their learning and to be specialized on certain sub-tasks. To this end, we construct a stochastic role embedding space by introducing two novel regularizers and conditioning individual policies on roles. Experiments show that our method can learn specialized, dynamic, and identifiable roles, which help our method push forward the state of the art on the StarCraft II micromanagement benchmark. Demonstrative videos are available at https://sites.google.com/view/romarl/.},
+  file      = {:Wang2020 - ROMA_ Multi Agent Reinforcement Learning with Emergent Roles.pdf:PDF},
+  groups    = {Multi-agent RL},
+  pdf       = {http://proceedings.mlr.press/v119/wang20f/wang20f.pdf},
+  ranking   = {rank2},
+  url       = {http://proceedings.mlr.press/v119/wang20f.html},
+}
+
+@InProceedings{Wang2021,
+  author    = {Jianhao Wang and Zhizhou Ren and Terry Liu and Yang Yu and Chongjie Zhang},
+  booktitle = {International Conference on Learning Representations},
+  title     = {QPLEX: Duplex Dueling Multi-Agent Q-Learning},
+  year      = {2021},
+  file      = {:Wang2021 - QPLEX_ Duplex Dueling Multi Agent Q Learning.pdf:PDF},
+  groups    = {Multi-agent RL},
+  ranking   = {rank2},
+  url       = {https://openreview.net/forum?id=Rcmk0xxIQV},
+}
+
+@InProceedings{Wang2020c,
+  author    = {Tonghan Wang and Jianhao Wang and Chongyi Zheng and Chongjie Zhang},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Learning Nearly Decomposable Value Functions Via Communication Minimization},
+  year      = {2020},
+  file      = {:Wang2020 - Learning Nearly Decomposable Value Functions Via Communication Minimization.pdf:PDF},
+  groups    = {Communication},
+  url       = {https://openreview.net/forum?id=HJx-3grYDB},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
