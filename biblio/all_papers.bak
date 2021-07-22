@@ -1,8 +1,8 @@
 % Encoding: UTF-8
 
-@InProceedings{NguyenKL18,
+@InProceedings{Nguyen2018,
   author    = {Duc Thien Nguyen and Akshat Kumar and Hoong Chuin Lau},
-  booktitle = {NeurIPS},
+  booktitle = {Advances in Neural Information Processing Systems 31 (NeurIPS 2018)},
   title     = {Credit Assignment For Collective Multiagent RL With Global Rewards},
   year      = {2018},
   pages     = {8113-8124},
@@ -1219,7 +1219,7 @@
   url        = {https://dl.acm.org/doi/abs/10.5555/3295222.3295385},
 }
 
-@InBook{doi:10.1142/9789812777263_0020,
+@InBook{Wolpert2002,
   author    = {David H. Wolpert and Kagan Tumer},
   pages     = {355-369},
   title     = {Optimal Payoff Functions for Members of Collectives},
@@ -1266,7 +1266,7 @@
   readstatus = {skimmed},
 }
 
-@Article{10013542751,
+@Article{Shapley1953,
   author    = {Shapley, L. S.},
   journal   = {Contributions to the Theory of Games},
   title     = {A value for n-person games},
@@ -5235,6 +5235,35 @@ agents)},
   groups    = {Credit Assignment},
   ranking   = {rank2},
   url       = {https://proceedings.neurips.cc/paper/2003/file/c8067ad1937f728f51288b3eb986afaa-Paper.pdf},
+}
+
+@InBook{10.5555/3454287.3454683,
+  author    = {Du, Yali and Han, Lei and Fang, Meng and Dai, Tianhong and Liu, Ji and Tao, Dacheng},
+  publisher = {Curran Associates Inc.},
+  title     = {LIIR: Learning Individual Intrinsic Reward in Multi-Agent Reinforcement Learning},
+  year      = {2019},
+  address   = {Red Hook, NY, USA},
+  abstract  = {A great challenge in cooperative decentralized multi-agent reinforcement learning
+(MARL) is generating diversified behaviors for each individual agent when receiving
+only a team reward. Prior studies have paid many efforts on reward shaping or designing
+a centralized critic that can discriminatively credit the agents. In this paper, we
+propose to merge the two directions and learn each agent an intrinsic reward function
+which diversely stimulates the agents at each time step. Specifically, the intrinsic
+reward for a specific agent will be involved in computing a distinct proxy critic
+for the agent to direct the updating of its individual policy. Meanwhile, the parameterized
+intrinsic reward function will be updated towards maximizing the expected accumulated
+team reward from the environment so that the objective is consistent with the original
+MARL problem. The proposed method is referred to as learning individual intrinsic
+reward (LIIR) in MARL. We compare LIIR with a number of state-of-the-art MARL methods
+on battle games in StarCraft II. The results demonstrate the effectiveness of LIIR,
+and we show LIIR can assign each individual agent an insightful intrinsic reward per
+time step.},
+  articleno = {396},
+  booktitle = {Proceedings of the 33rd International Conference on Neural Information Processing Systems},
+  file      = {:10.5555_3454287.3454683 - LIIR_ Learning Individual Intrinsic Reward in Multi Agent Reinforcement Learning.pdf:PDF},
+  groups    = {Multi-agent RL},
+  numpages  = {12},
+  ranking   = {rank1},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
