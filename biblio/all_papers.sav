@@ -5266,6 +5266,15 @@ time step.},
   ranking   = {rank1},
 }
 
+@InProceedings{Narasimhan2015,
+  author    = {Karthik Narasimhan and Tejas D Kulkarni and Regina Barzilay},
+  booktitle = {In Proceedings of the Conference on Empirical Methods in Natural Language Processing},
+  title     = {Language understanding for textbased games using deep reinforcement learning},
+  year      = {2015},
+  file      = {:Narasimhan2015 - Language Understanding for Textbased Games Using Deep Reinforcement Learning (1).pdf:PDF},
+  groups    = {Language-Augmented RL},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:

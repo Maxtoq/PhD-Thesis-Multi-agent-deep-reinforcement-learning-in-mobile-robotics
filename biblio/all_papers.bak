@@ -1167,7 +1167,7 @@
   primaryclass  = {cs.AI},
 }
 
-@Article{Hester_Vecerik_Pietquin_Lanctot_Schaul_Piot_Horgan_Quan_Sendonaris_Osband_Dulac-Arnold_Agapiou_Leibo_Gruslys_2018,
+@Article{Hester2018,
   author       = {Hester, Todd and Vecerik, Matej and Pietquin, Olivier and Lanctot, Marc and Schaul, Tom and Piot, Bilal and Horgan, Dan and Quan, John and Sendonaris, Andrew and Osband, Ian and Dulac-Arnold, Gabriel and Agapiou, John and Leibo, Joel and Gruslys, Audrunas},
   journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
   title        = {Deep Q-learning From Demonstrations},
@@ -5264,6 +5264,14 @@ time step.},
   groups    = {Multi-agent RL},
   numpages  = {12},
   ranking   = {rank1},
+}
+
+@InProceedings{Narasimhan2015,
+  author    = {Karthik Narasimhan and Tejas D Kulkarni and Regina Barzilay},
+  booktitle = {In Proceedings of the Conference on Empirical Methods in Natural Language Processing},
+  title     = {Language understanding for textbased games using deep reinforcement learning},
+  year      = {2015},
+  groups    = {Language-Augmented RL},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
