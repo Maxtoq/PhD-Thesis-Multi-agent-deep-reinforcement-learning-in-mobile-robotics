@@ -2122,7 +2122,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   archiveprefix = {arXiv},
   eprint        = {1910.07483},
   file          = {:Mahajan2019 - MAVEN_ Multi Agent Variational Exploration.pdf:PDF},
-  groups        = {Multi-agent RL},
+  groups        = {Multi-agent RL, Exploration},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
   ranking       = {rank2},
@@ -4894,7 +4894,7 @@ agents)},
   abstract  = {Exploration in multi-agent reinforcement learning is a challenging problem, especially in environments with sparse rewards. We propose a general method for efficient exploration by sharing experience amongst agents. Our proposed algorithm, called Shared Experience Actor-Critic (SEAC), applies experience sharing in an actor-critic framework. We evaluate SEAC in a collection of sparse-reward multi-agent environments and find that it consistently outperforms two baselines and two state-of-the-art algorithms by learning in fewer steps and converging to higher returns. In some harder environments, experience sharing makes the difference between learning to solve the task and not learning at all.},
   day       = {6},
   file      = {:Christianos2020 - Shared Experience Actor Critic for Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Exploration},
   language  = {English},
   url       = {https://nips.cc/Conferences/2020},
 }
@@ -5193,17 +5193,6 @@ agents)},
   url       = {https://openreview.net/forum?id=Rcmk0xxIQV},
 }
 
-@InProceedings{Wang2020c,
-  author    = {Tonghan Wang and Jianhao Wang and Chongyi Zheng and Chongjie Zhang},
-  booktitle = {International Conference on Learning Representations},
-  title     = {Learning Nearly Decomposable Value Functions Via Communication Minimization},
-  year      = {2020},
-  file      = {:Wang2020 - Learning Nearly Decomposable Value Functions Via Communication Minimization.pdf:PDF},
-  groups    = {Communication},
-  priority  = {prio1},
-  url       = {https://openreview.net/forum?id=HJx-3grYDB},
-}
-
 @Book{Vygotsky1934,
   author = {Lev S. Vygotsky},
   title  = {Thought and Language},
@@ -5271,7 +5260,70 @@ time step.},
   booktitle = {In Proceedings of the Conference on Empirical Methods in Natural Language Processing},
   title     = {Language understanding for textbased games using deep reinforcement learning},
   year      = {2015},
+  file      = {:Narasimhan2015 - Language Understanding for Textbased Games Using Deep Reinforcement Learning (1).pdf:PDF},
   groups    = {Language-Augmented RL},
+}
+
+@Article{Sun2021,
+  author        = {Charles Sun and Jędrzej Orbik and Coline Devin and Brian Yang and Abhishek Gupta and Glen Berseth and Sergey Levine},
+  title         = {Fully Autonomous Real-World Reinforcement Learning for Mobile Manipulation},
+  year          = {2021},
+  month         = jul,
+  abstract      = {We study how robots can autonomously learn skills that require a combination of navigation and grasping. While reinforcement learning in principle provides for automated robotic skill learning, in practice reinforcement learning in the real world is challenging and often requires extensive instrumentation and supervision. Our aim is to devise a robotic reinforcement learning system for learning navigation and manipulation together, in an autonomous way without human intervention, enabling continual learning under realistic assumptions. Our proposed system, ReLMM, can learn continuously on a real-world platform without any environment instrumentation, without human intervention, and without access to privileged information, such as maps, objects positions, or a global view of the environment. Our method employs a modularized policy with components for manipulation and navigation, where manipulation policy uncertainty drives exploration for the navigation controller, and the manipulation module provides rewards for navigation. We evaluate our method on a room cleanup task, where the robot must navigate to and pick up items scattered on the floor. After a grasp curriculum training phase, ReLMM can learn navigation and grasping together fully automatically, in around 40 hours of autonomous real-world training.},
+  archiveprefix = {arXiv},
+  eprint        = {2107.13545},
+  file          = {:Sun2021 - Fully Autonomous Real World Reinforcement Learning for Mobile Manipulation.pdf:PDF},
+  groups        = {Robotics},
+  keywords      = {cs.LG, cs.RO},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{Gupta2021,
+  author    = {Gupta, Tarun and Mahajan, Anuj and Peng, Bei and Boehmer, Wendelin and Whiteson, Shimon},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+  title     = {UneVEn: Universal Value Exploration for Multi-Agent Reinforcement Learning},
+  year      = {2021},
+  editor    = {Meila, Marina and Zhang, Tong},
+  month     = {18--24 Jul},
+  pages     = {3930--3941},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {139},
+  abstract  = {VDN and QMIX are two popular value-based algorithms for cooperative MARL that learn a centralized action value function as a monotonic mixing of per-agent utilities. While this enables easy decentralization of the learned policy, the restricted joint action value function can prevent them from solving tasks that require significant coordination between agents at a given timestep. We show that this problem can be overcome by improving the joint exploration of all agents during training. Specifically, we propose a novel MARL approach called Universal Value Exploration (UneVEn) that learns a set of related tasks simultaneously with a linear decomposition of universal successor features. With the policies of already solved related tasks, the joint exploration process of all agents can be improved to help them achieve better coordination. Empirical results on a set of exploration games, challenging cooperative predator-prey tasks requiring significant coordination among agents, and StarCraft II micromanagement benchmarks show that UneVEn can solve tasks where other state-of-the-art MARL methods fail.},
+  file      = {:Gupta2021 - UneVEn_ Universal Value Exploration for Multi Agent Reinforcement Learning.pdf:PDF},
+  groups    = {Multi-agent RL, Exploration},
+  pdf       = {http://proceedings.mlr.press/v139/gupta21a/gupta21a.pdf},
+  ranking   = {rank2},
+  url       = {http://proceedings.mlr.press/v139/gupta21a.html},
+}
+
+@InProceedings{Iqbal2021,
+  author    = {Iqbal, Shariq and De Witt, Christian A Schroeder and Peng, Bei and Boehmer, Wendelin and Whiteson, Shimon and Sha, Fei},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+  title     = {Randomized Entity-wise Factorization for Multi-Agent Reinforcement Learning},
+  year      = {2021},
+  editor    = {Meila, Marina and Zhang, Tong},
+  month     = {18--24 Jul},
+  pages     = {4596--4606},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {139},
+  abstract  = {Multi-agent settings in the real world often involve tasks with varying types and quantities of agents and non-agent entities; however, common patterns of behavior often emerge among these agents/entities. Our method aims to leverage these commonalities by asking the question: “What is the expected utility of each agent when only considering a randomly selected sub-group of its observed entities?” By posing this counterfactual question, we can recognize state-action trajectories within sub-groups of entities that we may have encountered in another task and use what we learned in that task to inform our prediction in the current one. We then reconstruct a prediction of the full returns as a combination of factors considering these disjoint groups of entities and train this “randomly factorized" value function as an auxiliary objective for value-based multi-agent reinforcement learning. By doing so, our model can recognize and leverage similarities across tasks to improve learning efficiency in a multi-task setting. Our approach, Randomized Entity-wise Factorization for Imagined Learning (REFIL), outperforms all strong baselines by a significant margin in challenging multi-task StarCraft micromanagement settings.},
+  file      = {:Iqbal2021 - Randomized Entity Wise Factorization for Multi Agent Reinforcement Learning.pdf:PDF},
+  groups    = {Multi-agent RL},
+  pdf       = {http://proceedings.mlr.press/v139/iqbal21a/iqbal21a.pdf},
+  url       = {http://proceedings.mlr.press/v139/iqbal21a.html},
+}
+
+@InProceedings{Wang2020c,
+  author    = {Tonghan Wang and Jianhao Wang and Chongyi Zheng and Chongjie Zhang},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Learning Nearly Decomposable Value Functions Via Communication Minimization},
+  year      = {2020},
+  file      = {:Wang2020 - Learning Nearly Decomposable Value Functions Via Communication Minimization.pdf:PDF},
+  groups    = {Communication, Multi-agent RL},
+  priority  = {prio1},
+  url       = {https://openreview.net/forum?id=HJx-3grYDB},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -5315,6 +5367,8 @@ time step.},
 4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Graphs\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Heterogeneous Systems\;0\;1\;0x8a8a8aff\;\;\;;
