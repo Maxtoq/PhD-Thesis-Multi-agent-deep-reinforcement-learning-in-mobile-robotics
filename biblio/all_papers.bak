@@ -9,7 +9,7 @@
   cdate     = {1514764800000},
   crossref  = {conf/nips/2018},
   file      = {:NguyenKL18 - Credit Assignment for Collective Multiagent RL with Global Rewards.pdf:PDF},
-  groups    = {Multi-agent RL, Credit Assignment},
+  groups    = {Multi-agent RL, Credit Assignment, Credit assignment},
   url       = {http://papers.nips.cc/paper/8033-credit-assignment-for-collective-multiagent-rl-with-global-rewards},
 }
 
@@ -1688,7 +1688,7 @@ sharing of policy parameters},
   volume     = {80},
   abstract   = {In many real-world settings, a team of agents must coordinate their behaviour while acting in a decentralised way. At the same time, it is often possible to train the agents in a centralised fashion in a simulated or laboratory setting, where global state information is available and communication constraints are lifted. Learning joint action-values conditioned on extra state information is an attractive way to exploit centralised learning, but the best strategy for then extracting decentralised policies is unclear. Our solution is QMIX, a novel value-based method that can train decentralised policies in a centralised end-to-end fashion. QMIX employs a network that estimates joint action-values as a complex non-linear combination of per-agent values that condition only on local observations. We structurally enforce that the joint-action value is monotonic in the per-agent values, which allows tractable maximisation of the joint action-value in off-policy learning, and guarantees consistency between the centralised and decentralised policies. We evaluate QMIX on a challenging set of StarCraft II micromanagement tasks, and show that QMIX significantly outperforms existing value-based multi-agent reinforcement learning methods.},
   file       = {:rashid18a - QMIX_ Monotonic Value Function Factorisation for Deep Multi Agent Reinforcement Learning.pdf:PDF;:rashid18a - QMIX_ Monotonic Value Function Factorisation for Deep Multi Agent Reinforcement Learning (1).pdf:PDF},
-  groups     = {Multi-agent RL},
+  groups     = {Multi-agent RL, Value factorisation},
   pdf        = {http://proceedings.mlr.press/v80/rashid18a/rashid18a.pdf},
   ranking    = {rank4},
   readstatus = {read},
@@ -1785,7 +1785,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   title      = {Weighted QMIX: Expanding monotonic value function factorisation for deep multi−agent reinforcement learning},
   year       = {2020},
   publisher  = {NeurIPS},
-  groups     = {Multi-agent RL},
+  groups     = {Multi-agent RL, Value factorisation},
   journal    = {NeurIPS Proceedings 2020},
   organizer  = {34th Annual Conference on Neural Information Processing Systems (NeurIPS 2020)},
   ranking    = {rank2},
@@ -2252,7 +2252,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   organization = {PMLR},
   pages        = {5887--5896},
   file         = {:son2019qtran - Qtran_ Learning to Factorize with Transformation for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
-  groups       = {Multi-agent RL},
+  groups       = {Multi-agent RL, Value factorisation},
   ranking      = {rank2},
   readstatus   = {read},
 }
@@ -2379,7 +2379,7 @@ FacMADDPG},
   series     = {AAMAS '18},
   abstract   = {We study the problem of cooperative multi-agent reinforcement learning with a single joint reward signal. This class of learning problems is difficult because of the often large combined action and observation spaces. In the fully centralized and decentralized approaches, we find the problem of spurious rewards and a phenomenon we call the "lazy agent'' problem, which arises due to partial observability. We address these problems by training individual agents with a novel value-decomposition network architecture, which learns to decompose the team value function into agent-wise value functions.},
   file       = {:10.5555_3237383.3238080 - Value Decomposition Networks for Cooperative Multi Agent Learning Based on Team Reward.pdf:PDF},
-  groups     = {Multi-agent RL},
+  groups     = {Multi-agent RL, Value factorisation},
   keywords   = {neural networks, reinforcement learning, collaborative, q-learning, dqn, multi-agent, value-decomposition},
   location   = {Stockholm, Sweden},
   numpages   = {3},
@@ -2899,7 +2899,6 @@ FacMADDPG},
   eprint   = {https://doi.org/10.1177/0278364917692864},
   file     = {:doi_10.1177_0278364917692864 - Decentralized Control of Multi Robot Partially Observable Markov Decision Processes Using Belief Space Macro Actions.pdf:PDF},
   groups   = {Multi-robot},
-  priority = {prio2},
   url      = {https://doi.org/10.1177/0278364917692864},
 }
 
@@ -4191,7 +4190,7 @@ FacMADDPG},
   abstractnote = {&lt;p&gt; Many real-world problems, such as network packet routing and the coordination of autonomous vehicles, are naturally modelled as cooperative multi-agent systems. There is a great need for new reinforcement learning methods that can efficiently learn decentralised policies for such systems. To this end, we propose a new multi-agent actor-critic method called counterfactual multi-agent (COMA) policy gradients. COMA uses a centralised critic to estimate the Q-function and decentralised actors to optimise the agents’ policies. In addition, to address the challenges of multi-agent credit assignment, it uses a counterfactual baseline that marginalises out a single agent’s action, while keeping the other agents’ actions fixed. COMA also uses a critic representation that allows the counterfactual baseline to be computed efficiently in a single forward pass. We evaluate COMA in the testbed of StarCraft unit micromanagement, using a decentralised variant with significant partial observability. COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state. &lt;/p&gt;},
   comment      = {COMA},
   file         = {:Foerster_Farquhar_Afouras_Nardelli_Whiteson_2018 - Counterfactual Multi Agent Policy Gradients.pdf:PDF},
-  groups       = {Multi-agent RL, Credit Assignment},
+  groups       = {Multi-agent RL, Credit Assignment, Credit assignment},
   ranking      = {rank5},
   readstatus   = {read},
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11794},
@@ -4406,7 +4405,6 @@ agents)},
   file      = {:Xiao2020a - Macro Action Based Deep Multi Agent Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL},
   pdf       = {http://proceedings.mlr.press/v100/xiao20a/xiao20a.pdf},
-  priority  = {prio1},
   url       = {http://proceedings.mlr.press/v100/xiao20a.html},
 }
 
@@ -4584,7 +4582,6 @@ agents)},
   file      = {:pmlr-v87-das18a - Neural Modular Control for Embodied Question Answering.pdf:PDF},
   groups    = {Hierarchical RL, Language-Augmented RL},
   pdf       = {http://proceedings.mlr.press/v87/das18a/das18a.pdf},
-  priority  = {prio1},
   ranking   = {rank2},
   url       = {http://proceedings.mlr.press/v87/das18a.html},
 }
@@ -4909,7 +4906,7 @@ agents)},
   comment       = {LICA},
   eprint        = {2007.02529},
   file          = {:Zhou2020a - Learning Implicit Credit Assignment for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-agent RL},
+  groups        = {Multi-agent RL, Credit assignment},
   keywords      = {cs.LG, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
 }
@@ -4998,7 +4995,6 @@ agents)},
   comment   = {IMAGINE},
   file      = {:NEURIPS2020_274e6fcf - Language As a Cognitive Tool to Imagine Goals in Curiosity Driven Exploration.pdf:PDF},
   groups    = {Curiosity, Language-Augmented RL},
-  priority  = {prio1},
   ranking   = {rank1},
   url       = {https://proceedings.neurips.cc/paper/2020/file/274e6fcf4a583de4a81c6376f17673e7-Paper.pdf},
 }
@@ -5128,7 +5124,6 @@ agents)},
   hal_version = {v1},
   keywords    = {Reinforcement learning ; Artificial intelligence and robotics},
   pdf         = {https://hal.inria.fr/hal-03121146/file/2006.07185.pdf},
-  priority    = {prio1},
   url         = {https://hal.inria.fr/hal-03121146},
 }
 
@@ -5143,7 +5138,6 @@ agents)},
   doi       = {10.24963/ijcai.2019/880},
   file      = {:Luketina2019 - A Survey of Reinforcement Learning Informed by Natural Language.pdf:PDF},
   groups    = {Language-Augmented RL},
-  priority  = {prio1},
   ranking   = {rank2},
   url       = {https://doi.org/10.24963/ijcai.2019/880},
 }
@@ -5160,7 +5154,6 @@ agents)},
   groups        = {Language-Augmented RL},
   keywords      = {cs.AI, cs.CL, cs.LG},
   primaryclass  = {cs.AI},
-  priority      = {prio2},
 }
 
 @InProceedings{Wang2020b,
@@ -5188,7 +5181,7 @@ agents)},
   title     = {QPLEX: Duplex Dueling Multi-Agent Q-Learning},
   year      = {2021},
   file      = {:Wang2021 - QPLEX_ Duplex Dueling Multi Agent Q Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Value factorisation},
   ranking   = {rank2},
   url       = {https://openreview.net/forum?id=Rcmk0xxIQV},
 }
@@ -5264,7 +5257,7 @@ time step.},
   groups    = {Language-Augmented RL},
 }
 
-@Article{Sun2021,
+@Article{Sun2021b,
   author        = {Charles Sun and Jędrzej Orbik and Coline Devin and Brian Yang and Abhishek Gupta and Glen Berseth and Sergey Levine},
   title         = {Fully Autonomous Real-World Reinforcement Learning for Mobile Manipulation},
   year          = {2021},
@@ -5310,7 +5303,7 @@ time step.},
   volume    = {139},
   abstract  = {Multi-agent settings in the real world often involve tasks with varying types and quantities of agents and non-agent entities; however, common patterns of behavior often emerge among these agents/entities. Our method aims to leverage these commonalities by asking the question: “What is the expected utility of each agent when only considering a randomly selected sub-group of its observed entities?” By posing this counterfactual question, we can recognize state-action trajectories within sub-groups of entities that we may have encountered in another task and use what we learned in that task to inform our prediction in the current one. We then reconstruct a prediction of the full returns as a combination of factors considering these disjoint groups of entities and train this “randomly factorized" value function as an auxiliary objective for value-based multi-agent reinforcement learning. By doing so, our model can recognize and leverage similarities across tasks to improve learning efficiency in a multi-task setting. Our approach, Randomized Entity-wise Factorization for Imagined Learning (REFIL), outperforms all strong baselines by a significant margin in challenging multi-task StarCraft micromanagement settings.},
   file      = {:Iqbal2021 - Randomized Entity Wise Factorization for Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Value factorisation},
   pdf       = {http://proceedings.mlr.press/v139/iqbal21a/iqbal21a.pdf},
   url       = {http://proceedings.mlr.press/v139/iqbal21a.html},
 }
@@ -5326,20 +5319,44 @@ time step.},
   url       = {https://openreview.net/forum?id=HJx-3grYDB},
 }
 
+@Article{Ding2020,
+  author        = {Ziluo Ding and Tiejun Huang and Zongqing Lu},
+  title         = {Learning Individually Inferred Communication for Multi-Agent Cooperation},
+  year          = {2020},
+  month         = jun,
+  abstract      = {Communication lays the foundation for human cooperation. It is also crucial for multi-agent cooperation. However, existing work focuses on broadcast communication, which is not only impractical but also leads to information redundancy that could even impair the learning process. To tackle these difficulties, we propose Individually Inferred Communication (I2C), a simple yet effective model to enable agents to learn a prior for agent-agent communication. The prior knowledge is learned via causal inference and realized by a feed-forward neural network that maps the agent's local observation to a belief about who to communicate with. The influence of one agent on another is inferred via the joint action-value function in multi-agent reinforcement learning and quantified to label the necessity of agent-agent communication. Furthermore, the agent policy is regularized to better exploit communicated messages. Empirically, we show that I2C can not only reduce communication overhead but also improve the performance in a variety of multi-agent cooperative scenarios, comparing to existing methods. The code is available at https://github.com/PKU-AI-Edge/I2C.},
+  archiveprefix = {arXiv},
+  eprint        = {2006.06455},
+  file          = {:Ding2020 - Learning Individually Inferred Communication for Multi Agent Cooperation.pdf:PDF},
+  groups        = {Communication},
+  keywords      = {cs.LG, cs.MA, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{Sun2021a,
+  author    = {Sun, Chuxiong and Wu, Bo and Wang, Rui and Hu, Xiaohui and Yang, Xiaoya and Cong, Cong},
+  booktitle = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
+  title     = {Intrinsic Motivated Multi-Agent Communication},
+  year      = {2021},
+  pages     = {1668--1670},
+  file      = {:Sun2021 - Intrinsic Motivated Multi Agent Communication.pdf:PDF},
+  groups    = {Communication},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Intrinsic goals\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
@@ -5347,7 +5364,7 @@ time step.},
 2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
@@ -5361,22 +5378,23 @@ time step.},
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent learning\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Graphs\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Heterogeneous Systems\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Language-Augmented RL\;0\;1\;0x8a8a8aff\;\;\;;
 }

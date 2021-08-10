@@ -2898,8 +2898,7 @@ FacMADDPG},
   doi      = {10.1177/0278364917692864},
   eprint   = {https://doi.org/10.1177/0278364917692864},
   file     = {:doi_10.1177_0278364917692864 - Decentralized Control of Multi Robot Partially Observable Markov Decision Processes Using Belief Space Macro Actions.pdf:PDF},
-  groups   = {Multi-robot},
-  priority = {prio2},
+  groups   = {Multi-robot, Macro-actions},
   url      = {https://doi.org/10.1177/0278364917692864},
 }
 
@@ -2911,7 +2910,7 @@ FacMADDPG},
   pages      = {817--859},
   volume     = {64},
   file       = {:amato2019modeling - Modeling and Planning with Macro Actions in Decentralized POMDPs (1).pdf:PDF},
-  groups     = {Multi-robot},
+  groups     = {Multi-robot, Macro-actions},
   readstatus = {skimmed},
 }
 
@@ -4386,7 +4385,7 @@ agents)},
   abstract   = {In many real-world multi-robot tasks, high-quality solutions often require a team of robots to perform asynchronous actions under decentralized control. Decentralized multi-agent reinforcement learning methods have difficulty learning decentralized policies because of the environment appearing to be non-stationary due to other agents also learning at the same time. In this paper, we address this challenge by proposing a macro-action-based decentralized multi-agent double deep recurrent Q-net (MacDec-MADDRQN) which trains each decentralized Q-net using a centralized Q-net for action selection. A generalized version of MacDec-MADDRQN with two separate training environments, called Parallel-MacDec-MADDRQN, is also presented to leverage either centralized or decentralized exploration. The advantages and the practical nature of our methods are demonstrated by achieving near-centralized results in simulation and having real robots accomplish a warehouse tool delivery task in an efficient way.},
   doi        = {10.1109/ICRA40945.2020.9196684},
   file       = {:9196684 - Learning Multi Robot Decentralized Macro Action Based Policies Via a Centralized Q Net.pdf:PDF},
-  groups     = {Multi-robot},
+  groups     = {Multi-robot, Macro-actions},
   issn       = {2577-087X},
   readstatus = {read},
 }
@@ -4404,9 +4403,8 @@ agents)},
   volume    = {100},
   abstract  = {In real-world multi-robot systems, performing high-quality, collaborative behaviors requires robots to asynchronously reason about high-level action selection at varying time durations. Macro-Action Decentralized Partially Observable Markov Decision Processes (MacDec-POMDPs) provide a general framework for asynchronous decision making under uncertainty in fully cooperative multi-agent tasks. However, multi-agent deep reinforcement learning methods have only been developed for (synchronous) primitive-action problems. This paper proposes two Deep Q-Network (DQN) based methods for learning decentralized and centralized macro-action-value functions with novel macro-action trajectory replay buffers introduced for each case. Evaluations on benchmark problems and a larger domain demonstrate the advantage of learning with macro-actions over primitive-actions and the scalability of our approaches.},
   file      = {:Xiao2020a - Macro Action Based Deep Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Macro-actions},
   pdf       = {http://proceedings.mlr.press/v100/xiao20a/xiao20a.pdf},
-  priority  = {prio1},
   url       = {http://proceedings.mlr.press/v100/xiao20a.html},
 }
 
@@ -4584,7 +4582,6 @@ agents)},
   file      = {:pmlr-v87-das18a - Neural Modular Control for Embodied Question Answering.pdf:PDF},
   groups    = {Hierarchical RL, Language-Augmented RL},
   pdf       = {http://proceedings.mlr.press/v87/das18a/das18a.pdf},
-  priority  = {prio1},
   ranking   = {rank2},
   url       = {http://proceedings.mlr.press/v87/das18a.html},
 }
@@ -4980,7 +4977,7 @@ agents)},
   abstract = {Learning, planning, and representing knowledge at multiple levels of temporal abstraction are key, longstanding challenges for AI. In this paper we consider how these challenges can be addressed within the mathematical framework of reinforcement learning and Markov decision processes (MDPs). We extend the usual notion of action in this framework to include options—closed-loop policies for taking action over a period of time. Examples of options include picking up an object, going to lunch, and traveling to a distant city, as well as primitive actions such as muscle twitches and joint torques. Overall, we show that options enable temporally abstract knowledge and action to be included in the reinforcement learning framework in a natural and general way. In particular, we show that options may be used interchangeably with primitive actions in planning methods such as dynamic programming and in learning methods such as Q-learning. Formally, a set of options defined over an MDP constitutes a semi-Markov decision process (SMDP), and the theory of SMDPs provides the foundation for the theory of options. However, the most interesting issues concern the interplay between the underlying MDP and the SMDP and are thus beyond SMDP theory. We present results for three such cases: (1) we show that the results of planning with options can be used during execution to interrupt options and thereby perform even better than planned, (2) we introduce new intra-option methods that are able to learn about an option from fragments of its execution, and (3) we propose a notion of subgoal that can be used to improve the options themselves. All of these results have precursors in the existing literature; the contribution of this paper is to establish them in a simpler and more general setting with fewer changes to the existing reinforcement learning framework. In particular, we show that these results can be obtained without committing to (or ruling out) any particular approach to state abstraction, hierarchy, function approximation, or the macro-utility problem.},
   doi      = {https://doi.org/10.1016/S0004-3702(99)00052-1},
   file     = {:SUTTON1999181 - Between MDPs and Semi MDPs_ a Framework for Temporal Abstraction in Reinforcement Learning.pdf:PDF},
-  groups   = {RL},
+  groups   = {RL, Macro-actions},
   keywords = {Temporal abstraction, Reinforcement learning, Markov decision processes, Options, Macros, Macroactions, Subgoals, Intra-option learning, Hierarchical planning, Semi-Markov decision processes},
   ranking  = {rank4},
   url      = {https://www.sciencedirect.com/science/article/pii/S0004370299000521},
@@ -4998,7 +4995,6 @@ agents)},
   comment   = {IMAGINE},
   file      = {:NEURIPS2020_274e6fcf - Language As a Cognitive Tool to Imagine Goals in Curiosity Driven Exploration.pdf:PDF},
   groups    = {Curiosity, Language-Augmented RL},
-  priority  = {prio1},
   ranking   = {rank1},
   url       = {https://proceedings.neurips.cc/paper/2020/file/274e6fcf4a583de4a81c6376f17673e7-Paper.pdf},
 }
@@ -5128,7 +5124,6 @@ agents)},
   hal_version = {v1},
   keywords    = {Reinforcement learning ; Artificial intelligence and robotics},
   pdf         = {https://hal.inria.fr/hal-03121146/file/2006.07185.pdf},
-  priority    = {prio1},
   url         = {https://hal.inria.fr/hal-03121146},
 }
 
@@ -5143,7 +5138,6 @@ agents)},
   doi       = {10.24963/ijcai.2019/880},
   file      = {:Luketina2019 - A Survey of Reinforcement Learning Informed by Natural Language.pdf:PDF},
   groups    = {Language-Augmented RL},
-  priority  = {prio1},
   ranking   = {rank2},
   url       = {https://doi.org/10.24963/ijcai.2019/880},
 }
@@ -5160,7 +5154,6 @@ agents)},
   groups        = {Language-Augmented RL},
   keywords      = {cs.AI, cs.CL, cs.LG},
   primaryclass  = {cs.AI},
-  priority      = {prio2},
 }
 
 @InProceedings{Wang2020b,
@@ -5188,7 +5181,7 @@ agents)},
   title     = {QPLEX: Duplex Dueling Multi-Agent Q-Learning},
   year      = {2021},
   file      = {:Wang2021 - QPLEX_ Duplex Dueling Multi Agent Q Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Value factorisation},
   ranking   = {rank2},
   url       = {https://openreview.net/forum?id=Rcmk0xxIQV},
 }
@@ -5264,7 +5257,7 @@ time step.},
   groups    = {Language-Augmented RL},
 }
 
-@Article{Sun2021,
+@Article{Sun2021b,
   author        = {Charles Sun and Jędrzej Orbik and Coline Devin and Brian Yang and Abhishek Gupta and Glen Berseth and Sergey Levine},
   title         = {Fully Autonomous Real-World Reinforcement Learning for Mobile Manipulation},
   year          = {2021},
@@ -5326,20 +5319,58 @@ time step.},
   url       = {https://openreview.net/forum?id=HJx-3grYDB},
 }
 
+@Article{Ding2020,
+  author        = {Ziluo Ding and Tiejun Huang and Zongqing Lu},
+  title         = {Learning Individually Inferred Communication for Multi-Agent Cooperation},
+  year          = {2020},
+  month         = jun,
+  abstract      = {Communication lays the foundation for human cooperation. It is also crucial for multi-agent cooperation. However, existing work focuses on broadcast communication, which is not only impractical but also leads to information redundancy that could even impair the learning process. To tackle these difficulties, we propose Individually Inferred Communication (I2C), a simple yet effective model to enable agents to learn a prior for agent-agent communication. The prior knowledge is learned via causal inference and realized by a feed-forward neural network that maps the agent's local observation to a belief about who to communicate with. The influence of one agent on another is inferred via the joint action-value function in multi-agent reinforcement learning and quantified to label the necessity of agent-agent communication. Furthermore, the agent policy is regularized to better exploit communicated messages. Empirically, we show that I2C can not only reduce communication overhead but also improve the performance in a variety of multi-agent cooperative scenarios, comparing to existing methods. The code is available at https://github.com/PKU-AI-Edge/I2C.},
+  archiveprefix = {arXiv},
+  eprint        = {2006.06455},
+  file          = {:Ding2020 - Learning Individually Inferred Communication for Multi Agent Cooperation.pdf:PDF},
+  groups        = {Communication},
+  keywords      = {cs.LG, cs.MA, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{Sun2021a,
+  author    = {Sun, Chuxiong and Wu, Bo and Wang, Rui and Hu, Xiaohui and Yang, Xiaoya and Cong, Cong},
+  booktitle = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
+  title     = {Intrinsic Motivated Multi-Agent Communication},
+  year      = {2021},
+  pages     = {1668--1670},
+  file      = {:Sun2021 - Intrinsic Motivated Multi Agent Communication.pdf:PDF},
+  groups    = {Communication},
+}
+
+@Article{Li2020a,
+  author        = {Chenghao Li and Xiaoteng Ma and Chongjie Zhang and Jun Yang and Li Xia and Qianchuan Zhao},
+  title         = {SOAC: The Soft Option Actor-Critic Architecture},
+  year          = {2020},
+  month         = jun,
+  abstract      = {The option framework has shown great promise by automatically extracting temporally-extended sub-tasks from a long-horizon task. Methods have been proposed for concurrently learning low-level intra-option policies and high-level option selection policy. However, existing methods typically suffer from two major challenges: ineffective exploration and unstable updates. In this paper, we present a novel and stable off-policy approach that builds on the maximum entropy model to address these challenges. Our approach introduces an information-theoretical intrinsic reward for encouraging the identification of diverse and effective options. Meanwhile, we utilize a probability inference model to simplify the optimization problem as fitting optimal trajectories. Experimental results demonstrate that our approach significantly outperforms prior on-policy and off-policy methods in a range of Mujoco benchmark tasks while still providing benefits for transfer learning. In these tasks, our approach learns a diverse set of options, each of whose state-action space has strong coherence.},
+  archiveprefix = {arXiv},
+  eprint        = {2006.14363},
+  file          = {:Li2020a - SOAC_ the Soft Option Actor Critic Architecture.pdf:PDF},
+  groups        = {Macro-actions},
+  keywords      = {cs.AI, cs.LG},
+  primaryclass  = {cs.AI},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Intrinsic goals\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
@@ -5347,7 +5378,7 @@ time step.},
 2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
@@ -5361,7 +5392,7 @@ time step.},
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent learning\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
@@ -5370,14 +5401,15 @@ time step.},
 3 StaticGroup:Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Heterogeneous Systems\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Macro-actions\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Language-Augmented RL\;0\;1\;0x8a8a8aff\;\;\;;
 }
