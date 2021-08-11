@@ -10620,7 +10620,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210622115815657" list="DIAL TarMAC Home [[TO DO]]" modified="20210622115815657" title="$:/StoryList">
+<div created="20210811084250227" list="DIAL TarMAC Home [[TO DO]]" modified="20210811090905705" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20180826061648522" creator="jd" modified="20210312132901088" modifier="jd" title="$:/theme">
@@ -11830,7 +11830,7 @@ The real improvement is brought by the fingerprints. The performance of the agen
 !!Resources
 </pre>
 </div>
-<div created="20210616134828340" modified="20210617103352271" tags="Communication [[Multi-agent Deep Reinforcement Learning]] model paper" title="TarMAC">
+<div created="20210616134828340" modified="20210811091942577" tags="Communication [[Multi-agent Deep Reinforcement Learning]] model paper" title="TarMAC">
 <pre>!! Paper
 //TarMAC: Targeted Multi-Agent Communication//, Das et al., 2019. McGill University, FAIR. ICML.
 
@@ -11868,7 +11868,7 @@ Intuitively, attention weights are high when both sender and receiver predict si
 TarMAC allows for multi-round communication at any point in an episode. During this process, only the aggregated messages and hidden states are used to compute the next hidden state, which is then used for computing a new message and query.
 
 !! Results
-TarMAC is first evaluated on a cooperative navigation adaptation of the SHAPES dataset (Andreas et al., 2016) where agents must find different shapes of different colors. TarMAC is compared to two baselines: one with no communication and one with no attention (received messages are averaged). The importance of both communication and attention increases with the task complexity.
+TarMAC is first evaluated on cooperative navigation in 2D with an adaptation of the SHAPES dataset (Andreas et al., 2016) and 3D in House 3D (Wu et al., 2018). In these two tasks, agents must respectively find different shapes of different colors and objects in a house. TarMAC is compared to two baselines: one with no communication and one with no attention (received messages are averaged). The importance of both communication and attention increases with the task complexity.
 
 Then, TarMAC is evaluated on a traffic junction environment and compared to [[CommNet]] (Sukhbaatar et al., 2016). On a hard setting, TarMAC is significantly more efficient than CommNet. On this task, the authors study the effect of multi-round communication. 2-round communication is shown to greatly improve the performance. However, no improvement have been seen beyond 2 rounds in this environment. The size of the message is studied: it doesn't impact performance a lot, especially with multiple rounds. Interestingly, the size of the messages can be reduced to a single scalar with almost no loss in performance. 
 
@@ -11879,7 +11879,8 @@ Finally, TarMAC is extended to work in mixed or competitive environments. In ord
 
 !!Resources
 * Andreas et al., //Neural Module Networks//, 2016.
-* [[Sukhbaatar et al.|CommNet]], //Learning multiagent communication with backpropagation//, 2016.</pre>
+* [[Sukhbaatar et al.|CommNet]], //Learning multiagent communication with backpropagation//, 2016.
+* Wu et al., //Building Generalizable Agents With a Realistic And Rich 3D Environment//, 2018.</pre>
 </div>
 <div created="20210312143343407" modified="20210422072938448" tags="" title="TO DO">
 <pre>[[Actor-Critic]] to finish
