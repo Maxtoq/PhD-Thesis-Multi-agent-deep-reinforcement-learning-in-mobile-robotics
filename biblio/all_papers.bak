@@ -951,9 +951,10 @@
   archiveprefix = {arXiv},
   eprint        = {1909.07528},
   file          = {:Baker2019 - Emergent Tool Use from Multi Agent Autocurricula.pdf:PDF},
-  groups        = {MARL, Multi-agent learning},
+  groups        = {MARL, Multi-agent learning, Multi-agent RL},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
+  ranking       = {rank4},
 }
 
 @Article{Bansal2017,
@@ -1042,8 +1043,8 @@
   groups        = {Communication},
   keywords      = {cs.LG, cs.AI},
   primaryclass  = {cs.LG},
-  priority      = {prio1},
   ranking       = {rank4},
+  readstatus    = {skimmed},
 }
 
 @InProceedings{Mordatch2018,
@@ -2273,7 +2274,6 @@ Concurrent Experience Replay Trajectories (CERT)},
   isbn       = {9781510838819},
   location   = {Barcelona, Spain},
   numpages   = {9},
-  priority   = {prio1},
   ranking    = {rank4},
   readstatus = {skimmed},
 }
@@ -2898,7 +2898,7 @@ FacMADDPG},
   doi      = {10.1177/0278364917692864},
   eprint   = {https://doi.org/10.1177/0278364917692864},
   file     = {:doi_10.1177_0278364917692864 - Decentralized Control of Multi Robot Partially Observable Markov Decision Processes Using Belief Space Macro Actions.pdf:PDF},
-  groups   = {Multi-robot},
+  groups   = {Multi-robot, Macro-actions},
   url      = {https://doi.org/10.1177/0278364917692864},
 }
 
@@ -2910,7 +2910,7 @@ FacMADDPG},
   pages      = {817--859},
   volume     = {64},
   file       = {:amato2019modeling - Modeling and Planning with Macro Actions in Decentralized POMDPs (1).pdf:PDF},
-  groups     = {Multi-robot},
+  groups     = {Multi-robot, Macro-actions},
   readstatus = {skimmed},
 }
 
@@ -4385,7 +4385,7 @@ agents)},
   abstract   = {In many real-world multi-robot tasks, high-quality solutions often require a team of robots to perform asynchronous actions under decentralized control. Decentralized multi-agent reinforcement learning methods have difficulty learning decentralized policies because of the environment appearing to be non-stationary due to other agents also learning at the same time. In this paper, we address this challenge by proposing a macro-action-based decentralized multi-agent double deep recurrent Q-net (MacDec-MADDRQN) which trains each decentralized Q-net using a centralized Q-net for action selection. A generalized version of MacDec-MADDRQN with two separate training environments, called Parallel-MacDec-MADDRQN, is also presented to leverage either centralized or decentralized exploration. The advantages and the practical nature of our methods are demonstrated by achieving near-centralized results in simulation and having real robots accomplish a warehouse tool delivery task in an efficient way.},
   doi        = {10.1109/ICRA40945.2020.9196684},
   file       = {:9196684 - Learning Multi Robot Decentralized Macro Action Based Policies Via a Centralized Q Net.pdf:PDF},
-  groups     = {Multi-robot},
+  groups     = {Multi-robot, Macro-actions},
   issn       = {2577-087X},
   readstatus = {read},
 }
@@ -4403,7 +4403,7 @@ agents)},
   volume    = {100},
   abstract  = {In real-world multi-robot systems, performing high-quality, collaborative behaviors requires robots to asynchronously reason about high-level action selection at varying time durations. Macro-Action Decentralized Partially Observable Markov Decision Processes (MacDec-POMDPs) provide a general framework for asynchronous decision making under uncertainty in fully cooperative multi-agent tasks. However, multi-agent deep reinforcement learning methods have only been developed for (synchronous) primitive-action problems. This paper proposes two Deep Q-Network (DQN) based methods for learning decentralized and centralized macro-action-value functions with novel macro-action trajectory replay buffers introduced for each case. Evaluations on benchmark problems and a larger domain demonstrate the advantage of learning with macro-actions over primitive-actions and the scalability of our approaches.},
   file      = {:Xiao2020a - Macro Action Based Deep Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Macro-actions},
   pdf       = {http://proceedings.mlr.press/v100/xiao20a/xiao20a.pdf},
   url       = {http://proceedings.mlr.press/v100/xiao20a.html},
 }
@@ -4521,20 +4521,16 @@ agents)},
 }
 
 @Article{Singh2018,
-  author        = {Amanpreet Singh and Tushar Jain and Sainbayar Sukhbaatar},
-  title         = {Learning when to Communicate at Scale in Multiagent Cooperative and Competitive Tasks},
-  year          = {2018},
-  month         = dec,
-  abstract      = {Learning when to communicate and doing that effectively is essential in multi-agent tasks. Recent works show that continuous communication allows efficient training with back-propagation in multi-agent scenarios, but have been restricted to fully-cooperative tasks. In this paper, we present Individualized Controlled Continuous Communication Model (IC3Net) which has better training efficiency than simple continuous communication model, and can be applied to semi-cooperative and competitive settings along with the cooperative settings. IC3Net controls continuous communication with a gating mechanism and uses individualized rewards foreach agent to gain better performance and scalability while fixing credit assignment issues. Using variety of tasks including StarCraft BroodWars explore and combat scenarios, we show that our network yields improved performance and convergence rates than the baselines as the scale increases. Our results convey that IC3Net agents learn when to communicate based on the scenario and profitability.},
-  archiveprefix = {arXiv},
-  comment       = {IC3Net},
-  eprint        = {1812.09755},
-  file          = {:Singh2018 - Learning When to Communicate at Scale in Multiagent Cooperative and Competitive Tasks.pdf:PDF},
-  groups        = {Communication},
-  keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
-  primaryclass  = {cs.LG},
-  priority      = {prio1},
-  ranking       = {rank1},
+  author    = {Amanpreet Singh and Tushar Jain and Sainbayar Sukhbaatar},
+  title     = {Learning when to Communicate at Scale in Multiagent Cooperative and Competitive Tasks},
+  year      = {2019},
+  abstract  = {Learning when to communicate and doing that effectively is essential in multi-agent tasks. Recent works show that continuous communication allows efficient training with back-propagation in multi-agent scenarios, but have been restricted to fully-cooperative tasks. In this paper, we present Individualized Controlled Continuous Communication Model (IC3Net) which has better training efficiency than simple continuous communication model, and can be applied to semi-cooperative and competitive settings along with the cooperative settings. IC3Net controls continuous communication with a gating mechanism and uses individualized rewards foreach agent to gain better performance and scalability while fixing credit assignment issues. Using variety of tasks including StarCraft BroodWars explore and combat scenarios, we show that our network yields improved performance and convergence rates than the baselines as the scale increases. Our results convey that IC3Net agents learn when to communicate based on the scenario and profitability.},
+  booktitle = {International Conference on Learning Representations},
+  comment   = {IC3Net},
+  file      = {:Singh2018 - Learning When to Communicate at Scale in Multiagent Cooperative and Competitive Tasks.pdf:PDF},
+  groups    = {Communication},
+  priority  = {prio1},
+  ranking   = {rank1},
 }
 
 @InProceedings{Kottur2017,
@@ -4977,7 +4973,7 @@ agents)},
   abstract = {Learning, planning, and representing knowledge at multiple levels of temporal abstraction are key, longstanding challenges for AI. In this paper we consider how these challenges can be addressed within the mathematical framework of reinforcement learning and Markov decision processes (MDPs). We extend the usual notion of action in this framework to include options—closed-loop policies for taking action over a period of time. Examples of options include picking up an object, going to lunch, and traveling to a distant city, as well as primitive actions such as muscle twitches and joint torques. Overall, we show that options enable temporally abstract knowledge and action to be included in the reinforcement learning framework in a natural and general way. In particular, we show that options may be used interchangeably with primitive actions in planning methods such as dynamic programming and in learning methods such as Q-learning. Formally, a set of options defined over an MDP constitutes a semi-Markov decision process (SMDP), and the theory of SMDPs provides the foundation for the theory of options. However, the most interesting issues concern the interplay between the underlying MDP and the SMDP and are thus beyond SMDP theory. We present results for three such cases: (1) we show that the results of planning with options can be used during execution to interrupt options and thereby perform even better than planned, (2) we introduce new intra-option methods that are able to learn about an option from fragments of its execution, and (3) we propose a notion of subgoal that can be used to improve the options themselves. All of these results have precursors in the existing literature; the contribution of this paper is to establish them in a simpler and more general setting with fewer changes to the existing reinforcement learning framework. In particular, we show that these results can be obtained without committing to (or ruling out) any particular approach to state abstraction, hierarchy, function approximation, or the macro-utility problem.},
   doi      = {https://doi.org/10.1016/S0004-3702(99)00052-1},
   file     = {:SUTTON1999181 - Between MDPs and Semi MDPs_ a Framework for Temporal Abstraction in Reinforcement Learning.pdf:PDF},
-  groups   = {RL},
+  groups   = {RL, Macro-actions},
   keywords = {Temporal abstraction, Reinforcement learning, Markov decision processes, Options, Macros, Macroactions, Subgoals, Intra-option learning, Hierarchical planning, Semi-Markov decision processes},
   ranking  = {rank4},
   url      = {https://www.sciencedirect.com/science/article/pii/S0004370299000521},
@@ -5343,6 +5339,32 @@ time step.},
   groups    = {Communication},
 }
 
+@Article{Li2020a,
+  author        = {Chenghao Li and Xiaoteng Ma and Chongjie Zhang and Jun Yang and Li Xia and Qianchuan Zhao},
+  title         = {SOAC: The Soft Option Actor-Critic Architecture},
+  year          = {2020},
+  month         = jun,
+  abstract      = {The option framework has shown great promise by automatically extracting temporally-extended sub-tasks from a long-horizon task. Methods have been proposed for concurrently learning low-level intra-option policies and high-level option selection policy. However, existing methods typically suffer from two major challenges: ineffective exploration and unstable updates. In this paper, we present a novel and stable off-policy approach that builds on the maximum entropy model to address these challenges. Our approach introduces an information-theoretical intrinsic reward for encouraging the identification of diverse and effective options. Meanwhile, we utilize a probability inference model to simplify the optimization problem as fitting optimal trajectories. Experimental results demonstrate that our approach significantly outperforms prior on-policy and off-policy methods in a range of Mujoco benchmark tasks while still providing benefits for transfer learning. In these tasks, our approach learns a diverse set of options, each of whose state-action space has strong coherence.},
+  archiveprefix = {arXiv},
+  eprint        = {2006.14363},
+  file          = {:Li2020a - SOAC_ the Soft Option Actor Critic Architecture.pdf:PDF},
+  groups        = {Macro-actions},
+  keywords      = {cs.AI, cs.LG},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Gronauer2021,
+  author    = {Sven Gronauer and Klaus Diepold},
+  journal   = {Artificial Intelligence Review},
+  title     = {Multi-agent deep reinforcement learning: a survey},
+  year      = {2021},
+  month     = {apr},
+  doi       = {10.1007/s10462-021-09996-w},
+  file      = {:https\://link.springer.com/content/pdf/10.1007/s10462-021-09996-w.pdf:PDF},
+  groups    = {MAS Reviews},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -5389,6 +5411,7 @@ time step.},
 3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Macro-actions\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
