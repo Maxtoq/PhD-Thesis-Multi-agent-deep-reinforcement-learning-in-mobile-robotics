@@ -2183,6 +2183,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups        = {Communication},
   keywords      = {cs.AI, cs.LG},
   primaryclass  = {cs.AI},
+  priority      = {prio1},
   ranking       = {rank1},
 }
 
@@ -4521,16 +4522,16 @@ agents)},
 }
 
 @Article{Singh2018,
-  author    = {Amanpreet Singh and Tushar Jain and Sainbayar Sukhbaatar},
-  title     = {Learning when to Communicate at Scale in Multiagent Cooperative and Competitive Tasks},
-  year      = {2019},
-  abstract  = {Learning when to communicate and doing that effectively is essential in multi-agent tasks. Recent works show that continuous communication allows efficient training with back-propagation in multi-agent scenarios, but have been restricted to fully-cooperative tasks. In this paper, we present Individualized Controlled Continuous Communication Model (IC3Net) which has better training efficiency than simple continuous communication model, and can be applied to semi-cooperative and competitive settings along with the cooperative settings. IC3Net controls continuous communication with a gating mechanism and uses individualized rewards foreach agent to gain better performance and scalability while fixing credit assignment issues. Using variety of tasks including StarCraft BroodWars explore and combat scenarios, we show that our network yields improved performance and convergence rates than the baselines as the scale increases. Our results convey that IC3Net agents learn when to communicate based on the scenario and profitability.},
-  booktitle = {International Conference on Learning Representations},
-  comment   = {IC3Net},
-  file      = {:Singh2018 - Learning When to Communicate at Scale in Multiagent Cooperative and Competitive Tasks.pdf:PDF},
-  groups    = {Communication},
-  priority  = {prio1},
-  ranking   = {rank1},
+  author     = {Amanpreet Singh and Tushar Jain and Sainbayar Sukhbaatar},
+  title      = {Learning when to Communicate at Scale in Multiagent Cooperative and Competitive Tasks},
+  year       = {2019},
+  abstract   = {Learning when to communicate and doing that effectively is essential in multi-agent tasks. Recent works show that continuous communication allows efficient training with back-propagation in multi-agent scenarios, but have been restricted to fully-cooperative tasks. In this paper, we present Individualized Controlled Continuous Communication Model (IC3Net) which has better training efficiency than simple continuous communication model, and can be applied to semi-cooperative and competitive settings along with the cooperative settings. IC3Net controls continuous communication with a gating mechanism and uses individualized rewards foreach agent to gain better performance and scalability while fixing credit assignment issues. Using variety of tasks including StarCraft BroodWars explore and combat scenarios, we show that our network yields improved performance and convergence rates than the baselines as the scale increases. Our results convey that IC3Net agents learn when to communicate based on the scenario and profitability.},
+  booktitle  = {International Conference on Learning Representations},
+  comment    = {IC3Net},
+  file       = {:Singh2018 - Learning When to Communicate at Scale in Multiagent Cooperative and Competitive Tasks.pdf:PDF},
+  groups     = {Communication},
+  ranking    = {rank1},
+  readstatus = {skimmed},
 }
 
 @InProceedings{Kottur2017,
@@ -5363,6 +5364,20 @@ time step.},
   file      = {:https\://link.springer.com/content/pdf/10.1007/s10462-021-09996-w.pdf:PDF},
   groups    = {MAS Reviews},
   publisher = {Springer Science and Business Media {LLC}},
+}
+
+@Article{Seita2019,
+  author        = {Daniel Seita and David Chan and Roshan Rao and Chen Tang and Mandi Zhao and John Canny},
+  title         = {ZPD Teaching Strategies for Deep Reinforcement Learning from Demonstrations},
+  year          = {2019},
+  month         = oct,
+  abstract      = {Learning from demonstrations is a popular tool for accelerating and reducing the exploration requirements of reinforcement learning. When providing expert demonstrations to human students, we know that the demonstrations must fall within a particular range of difficulties called the "Zone of Proximal Development (ZPD)". If they are too easy the student learns nothing, but if they are too difficult the student is unable to follow along. This raises the question: Given a set of potential demonstrators, which among them is best suited for teaching any particular learner? Prior work, such as the popular Deep Q-learning from Demonstrations (DQfD) algorithm has generally focused on single demonstrators. In this work we consider the problem of choosing among multiple demonstrators of varying skill levels. Our results align with intuition from human learners: it is not always the best policy to draw demonstrations from the best performing demonstrator (in terms of reward). We show that careful selection of teaching strategies can result in sample efficiency gains in the learner's environment across nine Atari games},
+  archiveprefix = {arXiv},
+  eprint        = {1910.12154},
+  file          = {:Seita2019 - ZPD Teaching Strategies for Deep Reinforcement Learning from Demonstrations.pdf:PDF},
+  groups        = {Meta-Learning},
+  keywords      = {cs.LG, cs.AI},
+  primaryclass  = {cs.LG},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

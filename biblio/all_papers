@@ -5366,6 +5366,20 @@ time step.},
   publisher = {Springer Science and Business Media {LLC}},
 }
 
+@Article{Seita2019,
+  author        = {Daniel Seita and David Chan and Roshan Rao and Chen Tang and Mandi Zhao and John Canny},
+  title         = {ZPD Teaching Strategies for Deep Reinforcement Learning from Demonstrations},
+  year          = {2019},
+  month         = oct,
+  abstract      = {Learning from demonstrations is a popular tool for accelerating and reducing the exploration requirements of reinforcement learning. When providing expert demonstrations to human students, we know that the demonstrations must fall within a particular range of difficulties called the "Zone of Proximal Development (ZPD)". If they are too easy the student learns nothing, but if they are too difficult the student is unable to follow along. This raises the question: Given a set of potential demonstrators, which among them is best suited for teaching any particular learner? Prior work, such as the popular Deep Q-learning from Demonstrations (DQfD) algorithm has generally focused on single demonstrators. In this work we consider the problem of choosing among multiple demonstrators of varying skill levels. Our results align with intuition from human learners: it is not always the best policy to draw demonstrations from the best performing demonstrator (in terms of reward). We show that careful selection of teaching strategies can result in sample efficiency gains in the learner's environment across nine Atari games},
+  archiveprefix = {arXiv},
+  eprint        = {1910.12154},
+  file          = {:Seita2019 - ZPD Teaching Strategies for Deep Reinforcement Learning from Demonstrations.pdf:PDF},
+  groups        = {Meta-Learning, ZPD},
+  keywords      = {cs.LG, cs.AI},
+  primaryclass  = {cs.LG},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -5418,6 +5432,7 @@ time step.},
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Language-Augmented RL\;0\;1\;0x8a8a8aff\;\;\;;
