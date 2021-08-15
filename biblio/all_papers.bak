@@ -2183,8 +2183,8 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups        = {Communication},
   keywords      = {cs.AI, cs.LG},
   primaryclass  = {cs.AI},
-  priority      = {prio1},
   ranking       = {rank1},
+  readstatus    = {skimmed},
 }
 
 @InProceedings{FSS1511673,
@@ -5375,9 +5375,38 @@ time step.},
   archiveprefix = {arXiv},
   eprint        = {1910.12154},
   file          = {:Seita2019 - ZPD Teaching Strategies for Deep Reinforcement Learning from Demonstrations.pdf:PDF},
-  groups        = {Meta-Learning},
+  groups        = {Meta-Learning, ZPD},
   keywords      = {cs.LG, cs.AI},
   primaryclass  = {cs.LG},
+}
+
+@InProceedings{Steels2005,
+  author    = {Luc Steels},
+  booktitle = {In: AISB'05: Proceedings of the Second International Symposium on the Emergence and Evolution of Linguistic Communication (EELC'05), pages 143-150, Hatfield, 2005. University of Hertfordshire.},
+  title     = {What triggers the emergence of grammar?},
+  year      = {2005},
+  note      = {In: AISB'05: Proceedings of the Second International Symposium on the Emergence and Evolution of Linguistic Communication (EELC'05), pages 143-150, Hatfield, 2005. University of Hertfordshire.},
+  file      = {:Steels2005 - What Triggers the Emergence of Grammar_.pdf:PDF},
+  groups    = {Language},
+  language  = {English},
+}
+
+@Article{Steels1995,
+  author   = {Steels, Luc},
+  journal  = {Artificial Life},
+  title    = {{A Self-Organizing Spatial Vocabulary}},
+  year     = {1995},
+  issn     = {1064-5462},
+  month    = {04},
+  number   = {3},
+  pages    = {319-332},
+  volume   = {2},
+  abstract = {{Language is a shared set of conventions for mapping meanings to utterances. This paper explores self-organization as the primary mechanism for the formation of a vocabulary. It reports on a computational experiment in which a group of distributed agents develop ways to identify each other using names or spatial descriptions. It is also shown that the proposed mechanism copes with the acquisition of an existing vocabulary by new agents entering the community and with an expansion of the set of meanings.}},
+  doi      = {10.1162/artl.1995.2.3.319},
+  eprint   = {https://direct.mit.edu/artl/article-pdf/2/3/319/1661525/artl.1995.2.3.319.pdf},
+  file     = {:Steels1995 - A Self Organizing Spatial Vocabulary.pdf:PDF},
+  groups   = {Language},
+  url      = {https://doi.org/10.1162/artl.1995.2.3.319},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -5432,7 +5461,9 @@ time step.},
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Language-Augmented RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language\;0\;1\;0x8a8a8aff\;\;\;;
 }
