@@ -1048,20 +1048,20 @@
 }
 
 @InProceedings{Mordatch2018,
-  author    = {Igor Mordatch and Pieter Abbeel},
-  booktitle = {Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence},
-  title     = {Emergence of Grounded Compositional Language in Multi-Agent Populations},
-  year      = {2018},
-  editor    = {Sheila A. McIlraith and Kilian Q. Weinberger},
-  pages     = {1495--1502},
-  publisher = {{AAAI} Press},
-  bibsource = {dblp computer science bibliography, https://dblp.org},
-  biburl    = {https://dblp.org/rec/conf/aaai/MordatchA18.bib},
-  file      = {:Mordatch2017 - Emergence of Grounded Compositional Language in Multi Agent Populations.pdf:PDF},
-  groups    = {MARL, Communication},
-  priority  = {prio1},
-  ranking   = {rank4},
-  url       = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17007},
+  author     = {Igor Mordatch and Pieter Abbeel},
+  booktitle  = {Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence},
+  title      = {Emergence of Grounded Compositional Language in Multi-Agent Populations},
+  year       = {2018},
+  editor     = {Sheila A. McIlraith and Kilian Q. Weinberger},
+  pages      = {1495--1502},
+  publisher  = {{AAAI} Press},
+  bibsource  = {dblp computer science bibliography, https://dblp.org},
+  biburl     = {https://dblp.org/rec/conf/aaai/MordatchA18.bib},
+  file       = {:Mordatch2017 - Emergence of Grounded Compositional Language in Multi Agent Populations.pdf:PDF},
+  groups     = {MARL, Communication, Discrete language},
+  ranking    = {rank4},
+  readstatus = {read},
+  url        = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17007},
 }
 
 @Article{Jaques2019,
@@ -1619,7 +1619,7 @@
   year      = {2017},
   month     = {Oct},
   file      = {:Das_2017_ICCV - Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning.pdf:PDF},
-  groups    = {Communication},
+  groups    = {Communication, Discrete language},
   ranking   = {rank3},
 }
 
@@ -1635,6 +1635,7 @@
   groups        = {Communication},
   keywords      = {cs.CL, cs.CV, cs.GT, cs.LG, cs.MA},
   primaryclass  = {cs.CL},
+  priority      = {prio1},
   ranking       = {rank2},
 }
 
@@ -4175,9 +4176,9 @@ FacMADDPG},
   volume    = {33},
   doi       = {10.1609/aaai.v33i01.33016128},
   file      = {:4570-Article Text-7609-1-10-20190707.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Communication},
   publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
-  ranking   = {rank3},
+  ranking   = {rank2},
 }
 
 @Article{Foerster_Farquhar_Afouras_Nardelli_Whiteson_2018,
@@ -4464,6 +4465,7 @@ agents)},
   groups        = {Communication},
   keywords      = {cs.CL, cs.AI},
   primaryclass  = {cs.CL},
+  ranking       = {rank1},
   readstatus    = {read},
 }
 
@@ -4713,7 +4715,7 @@ agents)},
   series    = {NIPS'17},
   abstract  = {Learning to communicate through interaction, rather than relying on explicit supervision, is often considered a prerequisite for developing a general AI. We study a setting where two agents engage in playing a referential game and, from scratch, develop a communication protocol necessary to succeed in this game. Unlike previous work, we require that messages they exchange, both at train and test time, are in the form of a language (i.e. sequences of discrete symbols). We compare a reinforcement learning approach and one using a differentiable relaxation (straight-through Gumbel-softmax estimator (Jang et al., 2017)) and observe that the latter is much faster to converge and it results in more effective protocols. Interestingly, we also observe that the protocol we induce by optimizing the communication success exhibits a degree of compositionality and variability (i.e. the same information can be phrased in different ways), both properties characteristic of natural languages. As the ultimate goal is to ensure that communication is accomplished in natural language, we also perform experiments where we inject prior information about natural language into our model and study properties of the resulting protocol.},
   file      = {:10.5555_3294771.3294976 - Emergence of Language with Multi Agent Games_ Learning to Communicate with Sequences of Symbols.pdf:PDF},
-  groups    = {Communication},
+  groups    = {Communication, Discrete language},
   isbn      = {9781510860964},
   location  = {Long Beach, California, USA},
   numpages  = {11},
@@ -5409,6 +5411,40 @@ time step.},
   url      = {https://doi.org/10.1162/artl.1995.2.3.319},
 }
 
+@Article{Andreas2019,
+  author        = {Jacob Andreas},
+  title         = {Measuring Compositionality in Representation Learning},
+  year          = {2019},
+  month         = feb,
+  abstract      = {Many machine learning algorithms represent input data with vector embeddings or discrete codes. When inputs exhibit compositional structure (e.g. objects built from parts or procedures from subroutines), it is natural to ask whether this compositional structure is reflected in the the inputs' learned representations. While the assessment of compositionality in languages has received significant attention in linguistics and adjacent fields, the machine learning literature lacks general-purpose tools for producing graded measurements of compositional structure in more general (e.g. vector-valued) representation spaces. We describe a procedure for evaluating compositionality by measuring how well the true representation-producing model can be approximated by a model that explicitly composes a collection of inferred representational primitives. We use the procedure to provide formal and empirical characterizations of compositional structure in a variety of settings, exploring the relationship between compositionality and learning dynamics, human judgments, representational similarity, and generalization.},
+  archiveprefix = {arXiv},
+  eprint        = {1902.07181},
+  file          = {:Andreas2019 - Measuring Compositionality in Representation Learning.pdf:PDF},
+  groups        = {Communication},
+  keywords      = {cs.LG, cs.CL, stat.ML},
+  primaryclass  = {cs.LG},
+  ranking       = {rank1},
+}
+
+@InProceedings{Wang2020,
+  author    = {Wang, Rundong and He, Xu and Yu, Runsheng and Qiu, Wei and An, Bo and Rabinovich, Zinovi},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+  title     = {Learning Efficient Multi-agent Communication: An Information Bottleneck Approach},
+  year      = {2020},
+  editor    = {III, Hal Daumé and Singh, Aarti},
+  month     = {13--18 Jul},
+  pages     = {9908--9918},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {119},
+  abstract  = {We consider the problem of the limited-bandwidth communication for multi-agent reinforcement learning, where agents cooperate with the assistance of a communication protocol and a scheduler. The protocol and scheduler jointly determine which agent is communicating what message and to whom. Under the limited bandwidth constraint, a communication protocol is required to generate informative messages. Meanwhile, an unnecessary communication connection should not be established because it occupies limited resources in vain. In this paper, we develop an Informative Multi-Agent Communication (IMAC) method to learn efficient communication protocols as well as scheduling. First, from the perspective of communication theory, we prove that the limited bandwidth constraint requires low-entropy messages throughout the transmission. Then inspired by the information bottleneck principle, we learn a valuable and compact communication protocol and a weight-based scheduler. To demonstrate the efficiency of our method, we conduct extensive experiments in various cooperative and competitive multi-agent tasks with different numbers of agents and different bandwidths. We show that IMAC converges faster and leads to efficient communication among agents under the limited bandwidth as compared to many baseline methods.},
+  file      = {:Wang2020 - Learning Efficient Multi Agent Communication_ an Information Bottleneck Approach (1).pdf:PDF},
+  groups    = {Communication},
+  pdf       = {http://proceedings.mlr.press/v119/wang20i/wang20i.pdf},
+  ranking   = {rank1},
+  url       = {http://proceedings.mlr.press/v119/wang20i.html},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -5454,6 +5490,7 @@ time step.},
 3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Discrete language\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Macro-actions\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
