@@ -2596,7 +2596,7 @@ FacMADDPG},
   pages     = {2169-2176},
   doi       = {10.1109/ICRA.2017.7989250},
   file      = {:7989250 - Learning Modular Neural Network Policies for Multi Task and Multi Robot Transfer.pdf:PDF},
-  groups    = {Multi-robot, Multi-task},
+  groups    = {Multi-robot, Multi-task robotics},
   ranking   = {rank2},
 }
 
@@ -2624,7 +2624,7 @@ FacMADDPG},
   volume    = {100},
   abstract  = {Meta-reinforcement learning algorithms can enable robots to acquire new skills much more quickly, by leveraging prior experience to learn how to learn. However, much of the current research on meta-reinforcement learning focuses on task distributions that are very narrow. For example, a commonly used meta-reinforcement learning benchmark uses different running velocities for a simulated robot as different tasks. When policies are meta-trained on such narrow task distributions, they cannot possibly generalize to more quickly acquire entirely new tasks. Therefore, if the aim of these methods is enable faster acquisition of entirely new behaviors, we must evaluate them on task distributions that are sufficiently broad to enable generalization to new behaviors. In this paper, we propose an open-source simulated benchmark for meta-reinforcement learning and multitask learning consisting of 50 distinct robotic manipulation tasks. Our aim is to make it possible to develop algorithms that generalize to accelerate the acquisition of entirely new, held-out tasks. We evaluate 6 state-of-the-art meta-reinforcement learning and multi-task learning algorithms on these tasks. Surprisingly, while each task and its variations (e.g., with different object positions) can be learned with reasonable success, these algorithms struggle to learn with multiple tasks at the same time, even with as few as ten distinct training tasks. Our analysis and open-source environments pave the way for future research in multi-task learning and meta-learning that can enable meaningful generalization, thereby unlocking the full potential of these methods.1.},
   file      = {:pmlr-v100-yu20a - Meta World_ a Benchmark and Evaluation for Multi Task and Meta Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-task},
+  groups    = {Multi-task robotics},
   pdf       = {http://proceedings.mlr.press/v100/yu20a/yu20a.pdf},
   url       = {http://proceedings.mlr.press/v100/yu20a.html},
 }
@@ -3019,7 +3019,7 @@ FacMADDPG},
   archiveprefix = {arXiv},
   eprint        = {2005.06223},
   file          = {:Doncieux2020 - DREAM Architecture_ a Developmental Approach to Open Ended Learning in Robotics.pdf:PDF},
-  groups        = {Multi-task},
+  groups        = {Multi-task robotics},
   keywords      = {cs.AI, cs.LG, cs.NE, cs.RO},
   primaryclass  = {cs.AI},
 }
@@ -5271,8 +5271,9 @@ time step.},
   series    = {Proceedings of Machine Learning Research},
   volume    = {139},
   abstract  = {VDN and QMIX are two popular value-based algorithms for cooperative MARL that learn a centralized action value function as a monotonic mixing of per-agent utilities. While this enables easy decentralization of the learned policy, the restricted joint action value function can prevent them from solving tasks that require significant coordination between agents at a given timestep. We show that this problem can be overcome by improving the joint exploration of all agents during training. Specifically, we propose a novel MARL approach called Universal Value Exploration (UneVEn) that learns a set of related tasks simultaneously with a linear decomposition of universal successor features. With the policies of already solved related tasks, the joint exploration process of all agents can be improved to help them achieve better coordination. Empirical results on a set of exploration games, challenging cooperative predator-prey tasks requiring significant coordination among agents, and StarCraft II micromanagement benchmarks show that UneVEn can solve tasks where other state-of-the-art MARL methods fail.},
+  comment   = {UneVEn},
   file      = {:Gupta2021 - UneVEn_ Universal Value Exploration for Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL, Exploration},
+  groups    = {Multi-agent RL, Exploration, Multi-task},
   pdf       = {http://proceedings.mlr.press/v139/gupta21a/gupta21a.pdf},
   ranking   = {rank2},
   url       = {http://proceedings.mlr.press/v139/gupta21a.html},
@@ -5297,15 +5298,15 @@ time step.},
 }
 
 @InProceedings{Wang2020c,
-  author    = {Tonghan Wang and Jianhao Wang and Chongyi Zheng and Chongjie Zhang},
-  booktitle = {International Conference on Learning Representations},
-  title     = {Learning Nearly Decomposable Value Functions Via Communication Minimization},
-  year      = {2020},
-  comment   = {NDQ},
-  file      = {:Wang2020 - Learning Nearly Decomposable Value Functions Via Communication Minimization.pdf:PDF},
-  groups    = {Communication, Multi-agent RL},
-  priority  = {prio1},
-  url       = {https://openreview.net/forum?id=HJx-3grYDB},
+  author     = {Tonghan Wang and Jianhao Wang and Chongyi Zheng and Chongjie Zhang},
+  booktitle  = {International Conference on Learning Representations},
+  title      = {Learning Nearly Decomposable Value Functions Via Communication Minimization},
+  year       = {2020},
+  comment    = {NDQ},
+  file       = {:Wang2020 - Learning Nearly Decomposable Value Functions Via Communication Minimization.pdf:PDF},
+  groups     = {Communication, Multi-agent RL},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=HJx-3grYDB},
 }
 
 @Article{Ding2020,
@@ -5555,6 +5556,7 @@ time step.},
   series    = {Proceedings of Machine Learning Research},
   volume    = {48},
   abstract  = {In this paper, we introduce a new set of reinforcement learning (RL) tasks in Minecraft (a flexible 3D world). We then use these tasks to systematically compare and contrast existing deep reinforcement learning (DRL) architectures with our new memory-based DRL architectures. These tasks are designed to emphasize, in a controllable manner, issues that pose challenges for RL methods including partial observability (due to first-person visual observations), delayed rewards, high-dimensional visual observations, and the need to use active perception in a correct manner so as to perform well in the tasks. While these tasks are conceptually simple to describe, by virtue of having all of these challenges simultaneously they are difficult for current DRL architectures. Additionally, we evaluate the generalization performance of the architectures on environments not used during training. The experimental results show that our new architectures generalize to unseen environments better than existing DRL architectures.},
+  comment   = {MQN, RMQN, FRMQN},
   file      = {:Oh2016 - Control of Memory, Active Perception, and Action in Minecraft.pdf:PDF},
   groups    = {Memory},
   pdf       = {http://proceedings.mlr.press/v48/oh16.pdf},
@@ -5563,7 +5565,7 @@ time step.},
 }
 
 @InProceedings{Zhu2020,
-  author    = {Guangxiang Zhu* and Zichuan Lin* and Guangwen Yang and Chongjie Zhang},
+  author    = {Guangxiang Zhu and Zichuan Lin and Guangwen Yang and Chongjie Zhang},
   booktitle = {International Conference on Learning Representations},
   title     = {Episodic Reinforcement Learning with Associative Memory},
   year      = {2020},
@@ -5671,12 +5673,12 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Navigation\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-task\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-task robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
@@ -5696,6 +5698,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Discrete language\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Multi-task\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Macro-actions\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
