@@ -11,16 +11,16 @@ class RandomPolicy(Policy):
         self.env = env
 
     def action(self, obs):
-        (env.world.dim_p + env.world.dim_c, 1)
-        return np.zeros((self.env.world.dim_p + self.env.world.dim_c, 1))
+        return np.random.uniform(-1, 1, world.dim_p)
 
 if __name__ == "__main__":
     scenario = PushScenario()
     # Create world
-    world = scenario.make_world(2)
+    world = scenario.make_world()
 
     # Create multiagent environment
     env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation)
+    env.discrete_action_space = False
     env.render()
 
     # Create policies
@@ -28,4 +28,13 @@ if __name__ == "__main__":
 
     obs_n = env.reset()
     while True:
-        continue
+        # Get each agent's action
+        act_n = []
+        for i, policy in enumerate(policies):
+            act_n.append(policy.action(obs_n[i]))
+            print(f'Agent {i}: \nobs:{obs_n[i]}\naction:{act_n[i]}')
+
+        # Environment step
+        obs_n, reward_n, done_n, _ = env.step(act_n)
+
+        env.render()

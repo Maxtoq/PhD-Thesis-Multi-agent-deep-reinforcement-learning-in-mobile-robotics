@@ -1,13 +1,16 @@
 import numpy as np
 
 from multiagent.scenario import BaseScenario
-from multiagent.core import World, Agent, Landmark
+from multiagent.core import World, Agent, Landmark, Action
 
 def get_dist(pos1, pos2):
     return np.sqrt(np.sum(np.square(pos1 - pos2)))
 
 def obj_callback(agent, world):
-    return
+    action = Action()
+    action.u = np.zeros((world.dim_p))
+    action.c = np.zeros((world.dim_c))
+    return action
 
 class PushScenario(BaseScenario):
 
@@ -43,7 +46,7 @@ class PushScenario(BaseScenario):
             if 'agent' in agent.name:
                 agent.color = np.array([1.0,0.0,0.0])
             elif 'object' in agent.name:
-                agent.color = np.array([0.0,0.0,0.75])
+                agent.color = np.array([0.0,0.0,1.0])
         for landmark in world.landmarks:
             landmark.color = np.array([0.75,0.75,0.75])
         # set initial states
@@ -57,7 +60,7 @@ class PushScenario(BaseScenario):
 
     def reward(self, agent, world):
         # Reward = -1 x distance between object and landmark
-        dist = get_dist(world.agents[-1].state.p_pos, world.landmarks[1].state.p_pos)
+        dist = get_dist(world.agents[-1].state.p_pos, world.landmarks[0].state.p_pos)
         return -dist
 
     def observation(self, agent, world):
@@ -69,20 +72,21 @@ class PushScenario(BaseScenario):
         #  - Landmarks:
         #     - If in sight: [1, relative x, relative y]
         #     - If not: [0, 0, 0]
-        # => Full observation dim = 2 + 2 + 5 x (nb_agents_objects) + 3 x (nb_landmarks)
+        # => Full observation dim = 2 + 2 + 5 x (nb_agents_objects - 1) + 3 x (nb_landmarks)
         # All distances are divided by max_distance to be in [0, 1]
         entity_obs = []
         for entity in world.agents:
+            if entity is agent: continue
             if get_dist(agent.state.p_pos, entity.state.p_pos) <= self.obs_range:
                 entity_obs.append(np.concatenate((
-                    [1.0], entity.state.p_pos - agent.state.p_pos, entity.state.p_vel
+                    [1.0], (entity.state.p_pos - agent.state.p_pos) / self.obs_range, entity.state.p_vel
                 )))
             else:
                 entity_obs.append(np.zeros(5))
         for entity in world.landmarks:
             if get_dist(agent.state.p_pos, entity.state.p_pos) <= self.obs_range:
                 entity_obs.append(np.concatenate((
-                    [1.0], entity.state.p_pos - agent.state.p_pos
+                    [1.0], (entity.state.p_pos - agent.state.p_pos) / self.obs_range
                 )))
             else:
                 entity_obs.append(np.zeros(3))
