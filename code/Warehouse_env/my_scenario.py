@@ -3,8 +3,12 @@ import numpy as np
 from multiagent.scenario import BaseScenario
 from multiagent.core import World, Agent, Landmark, Action
 
-def get_dist(pos1, pos2):
-    return np.sqrt(np.sum(np.square(pos1 - pos2)))
+def get_dist(pos1, pos2, squared=False):
+    dist = np.sum(np.square(pos1 - pos2))
+    if squared:
+        return dist
+    else:
+        return np.sqrt(dist)
 
 def obj_callback(agent, world):
     action = Action()
@@ -44,9 +48,9 @@ class PushScenario(BaseScenario):
     def reset_world(self, world):
         for agent in world.agents:
             if 'agent' in agent.name:
-                agent.color = np.array([1.0,0.0,0.0])
+                agent.color = np.array([0.5,0.0,0.0])
             elif 'object' in agent.name:
-                agent.color = np.array([0.0,0.0,1.0])
+                agent.color = np.array([0.0,0.0,0.5])
         for landmark in world.landmarks:
             landmark.color = np.array([0.75,0.75,0.75])
         # set initial states
@@ -59,9 +63,9 @@ class PushScenario(BaseScenario):
             landmark.state.p_vel = np.zeros(world.dim_p)
 
     def reward(self, agent, world):
-        # Reward = -1 x distance between object and landmark
-        dist = get_dist(world.agents[-1].state.p_pos, world.landmarks[0].state.p_pos)
-        return -dist
+        # Reward = -1 x squared distance between object and landmark
+        rew = get_dist(world.agents[-1].state.p_pos, world.landmarks[0].state.p_pos, squared=True)
+        return -rew
 
     def observation(self, agent, world):
         # Observation:
@@ -90,4 +94,8 @@ class PushScenario(BaseScenario):
                 )))
             else:
                 entity_obs.append(np.zeros(3))
+
+        # Communication
+
+
         return np.concatenate([agent.state.p_vel] + [agent.state.p_pos] + entity_obs)
