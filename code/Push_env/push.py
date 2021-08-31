@@ -11,7 +11,12 @@ class RandomPolicy(Policy):
         self.env = env
 
     def action(self, obs):
-        return np.random.uniform(-1, 1, world.dim_p)
+        obj_pos = obs[5:7]
+        if not obj_pos.any():
+            return np.random.uniform(-1, 1, self.env.world.dim_p)
+        else:
+            dir_vec = 0.1 * obj_pos / np.sqrt(np.sum(np.square(obj_pos)))
+            return dir_vec
 
 if __name__ == "__main__":
     scenario = PushScenario()
@@ -36,5 +41,6 @@ if __name__ == "__main__":
 
         # Environment step
         obs_n, reward_n, done_n, _ = env.step(act_n)
+        print(reward_n)
 
         env.render()
