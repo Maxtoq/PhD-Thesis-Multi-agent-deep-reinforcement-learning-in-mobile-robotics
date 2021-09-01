@@ -11,7 +11,7 @@ class RandomPolicy(Policy):
         self.env = env
 
     def action(self, obs):
-        obj_pos = obs[5:7]
+        obj_pos = obs[10:12]
         if not obj_pos.any():
             return np.random.uniform(-1, 1, self.env.world.dim_p)
         else:

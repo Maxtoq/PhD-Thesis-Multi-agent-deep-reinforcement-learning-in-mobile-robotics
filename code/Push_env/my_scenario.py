@@ -23,38 +23,39 @@ class Object(Entity):
         self.movable = True
 
 class PushWorld(World):
-    def __init__(self):
+    def __init__(self, nb_objects):
         super(PushWorld, self).__init__()
         # List of objects to push
+        self.nb_objects = nb_objects
         self.objects = []
-        # Probability of adding an object on every step
-        self.obj_prob = 0.01
+        for i in range(self.nb_objects):
+            self.objects.append(Object())
+            self.landmarks.append(Landmark())
+            self.init_object(i)
 
     @property
     def entities(self):
         return self.agents + self.objects + self.landmarks
 
-    def add_object_and_landmark(self, min_dist=None):
+    def init_object(self, obj_i, min_dist=None):
         # Random color for both entities
         color = np.random.uniform(0, 1, self.dim_color)
         # Object
-        obj = Object()
-        obj.name = 'object %d' % len(self.objects)
-        obj.color = color
+        self.objects[obj_i].name = 'object %d' % len(self.objects)
+        self.objects[obj_i].color = color
         # Landmark
-        lm = Landmark()
-        lm.name = 'landmark %d' % len(self.landmarks)
-        lm.collide = False
-        lm.color = color / 10
+        self.landmarks[obj_i].name = 'landmark %d' % len(self.landmarks)
+        self.landmarks[obj_i].collide = False
+        self.landmarks[obj_i].color = color
         # Set initial positions
-        obj.state.p_pos = np.random.uniform(-1, 1, self.dim_p)
-        lm.state.p_pos = np.random.uniform(-1, 1, self.dim_p)
+        self.objects[obj_i].state.p_pos = np.random.uniform(-1, 1, self.dim_p)
+        self.landmarks[obj_i].state.p_pos = np.random.uniform(-1, 1, self.dim_p)
         if min_dist is not None:
-            while get_dist(obj.state.p_pos, lm.state.p_pos) < min_dist:
-                lm.state.p_pos = np.random.uniform(-1, 1, self.dim_p)
-        # Add to world
-        self.objects.append(obj)
-        self.landmarks.append(lm)
+            while get_dist(
+                self.objects[obj_i].state.p_pos, 
+                self.landmarks[obj_i].state.p_pos
+            ) < min_dist:
+                self.landmarks[obj_i].state.p_pos = np.random.uniform(-1, 1, self.dim_p)
 
     def step(self):
         super(PushWorld, self).step()
@@ -65,8 +66,8 @@ class PushWorld(World):
 
 class PushScenario(BaseScenario):
 
-    def make_world(self, nb_agents=1, obs_range=0.5, collision_pen=10.0):
-        world = PushWorld()
+    def make_world(self, nb_agents=2, nb_objects=2, obs_range=0.5, collision_pen=10.0):
+        world = PushWorld(nb_objects)
         # add agent
         self.nb_agents = nb_agents
         world.agents = [Agent() for i in range(self.nb_agents)]
@@ -77,8 +78,8 @@ class PushScenario(BaseScenario):
             agent.initial_mass = 0.5
             agent.max_speed = 0.1
             agent.color = np.array([0.5,0.0,0.0])
-        # add object and corresponding landmark
-        world.add_object_and_landmark()
+        # Objects and landmarks
+        self.nb_objects = nb_objects
         # world attributes
         self.obs_range = obs_range
         self.collision_pen = collision_pen
@@ -108,7 +109,7 @@ class PushScenario(BaseScenario):
         # Penalty for collision between agents
         for other_agent in world.agents:
                 if other_agent is agent: continue
-                dist = get_dist(agent, other_agent)
+                dist = get_dist(agent.state.p_pos, other_agent.state.p_pos)
                 dist_min = agent.size + other_agent.size
                 if dist <= dist_min:
                     rew -= self.collision_pen
