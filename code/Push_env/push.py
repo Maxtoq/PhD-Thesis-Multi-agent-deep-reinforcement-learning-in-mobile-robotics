@@ -1,13 +1,12 @@
 import numpy as np
+import argparse
 
 from multiagent.environment import MultiAgentEnv
-from multiagent.policy import Policy
 
 from my_scenario import PushScenario
 
-class RandomPolicy(Policy):
+class RandomPolicy():
     def __init__(self, env):
-        super(RandomPolicy, self).__init__()
         self.env = env
 
     def action(self, obs):
@@ -19,6 +18,10 @@ class RandomPolicy(Policy):
             return dir_vec
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--no_render", action='store_true')
+    config = parser.parse_args()
+
     scenario = PushScenario()
     # Create world
     world = scenario.make_world()
@@ -26,12 +29,13 @@ if __name__ == "__main__":
     # Create multiagent environment
     env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation)
     env.discrete_action_space = False
-    env.render()
+    #env.render()
 
     # Create policies
     policies = [RandomPolicy(env) for i in range(env.n)]
 
     obs_n = env.reset()
+    it = 0
     while True:
         # Get each agent's action
         act_n = []
@@ -43,4 +47,8 @@ if __name__ == "__main__":
         obs_n, reward_n, done_n, _ = env.step(act_n)
         print(reward_n)
 
-        env.render()
+        if not config.no_render:
+            env.render()
+        it += 1
+        if it == 500:
+            break
