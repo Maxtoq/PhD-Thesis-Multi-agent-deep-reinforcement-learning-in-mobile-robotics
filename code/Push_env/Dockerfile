@@ -10,7 +10,7 @@ RUN apt-get update -y && apt-get install software-properties-common -y \
     apt-get upgrade -y 
 
 # Install dependencies
-RUN apt-get install -y git 
+RUN apt-get install -y git cmake libopenmpi-dev python3-dev zlib1g-dev
 #freeglut3-dev xvfb
 
 # Install python
