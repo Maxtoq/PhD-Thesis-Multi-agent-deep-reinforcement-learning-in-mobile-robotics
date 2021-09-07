@@ -3,7 +3,7 @@ import torch
 import time
 import os
 import numpy as np
-from gym.spaces import Box, Discrete
+from gym.spaces import Box
 from pathlib import Path
 from torch.autograd import Variable
 from tensorboardX import SummaryWriter
@@ -48,9 +48,9 @@ def run(config):
     np.random.seed(config.seed)
     if not USE_CUDA:
         torch.set_num_threads(config.n_training_threads)
-    #env = make_parallel_env(config.env_id, config.n_rollout_threads, config.seed,
-    #                        config.discrete_action)
-    env = make_env(config.env_id, discrete_action=config.discrete_action)
+    env = make_parallel_env(config.env_id, config.n_rollout_threads, config.seed,
+                            config.discrete_action)
+    #env = make_env(config.env_id, discrete_action=config.discrete_action)
     maddpg = MADDPG.init_from_env(env, agent_alg=config.agent_alg,
                                   adversary_alg=config.adversary_alg,
                                   tau=config.tau,
@@ -75,8 +75,6 @@ def run(config):
 
         for et_i in range(config.episode_length):
             # rearrange observations to be per agent, and convert to torch Variable
-            print(obs)
-            print(type(obs))
             torch_obs = [Variable(torch.Tensor(np.vstack(obs[:, i])),
                                   requires_grad=False)
                          for i in range(maddpg.nagents)]
