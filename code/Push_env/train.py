@@ -75,6 +75,8 @@ def run(config):
 
         for et_i in range(config.episode_length):
             # rearrange observations to be per agent, and convert to torch Variable
+            print(obs)
+            print(type(obs))
             torch_obs = [Variable(torch.Tensor(np.vstack(obs[:, i])),
                                   requires_grad=False)
                          for i in range(maddpg.nagents)]
