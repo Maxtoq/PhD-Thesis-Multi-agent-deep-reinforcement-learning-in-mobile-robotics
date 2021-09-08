@@ -7,12 +7,44 @@ from gym.spaces import Box
 from pathlib import Path
 from torch.autograd import Variable
 from tensorboardX import SummaryWriter
-from utils.make_env import make_env
 from utils.buffer import ReplayBuffer
 from utils.env_wrappers import SubprocVecEnv, DummyVecEnv
 from algorithms.maddpg import MADDPG
+from my_scenario import PushScenario
 
 USE_CUDA = torch.cuda.is_available()
+
+def make_env(scenario_name, benchmark=False, discrete_action=False):
+    '''
+    Creates a MultiAgentEnv object as env. This can be used similar to a gym
+    environment by calling env.reset() and env.step().
+    Use env.render() to view the environment on the screen.
+
+    Input:
+        scenario_name   :   name of the scenario from ./scenarios/ to be Returns
+                            (without the .py extension)
+        benchmark       :   whether you want to produce benchmarking data
+                            (usually only done during evaluation)
+
+    Some useful env properties (see environment.py):
+        .observation_space  :   Returns the observation space for each agent
+        .action_space       :   Returns the action space for each agent
+        .n                  :   Returns the number of Agents
+    '''
+    from multiagent.environment import MultiAgentEnv
+
+    # load scenario from script
+    scenario = PushScenario()
+    # create world
+    world = scenario.make_world()
+    # create multiagent environment
+    if benchmark:        
+        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward,
+                            scenario.observation, scenario.benchmark_data)
+    else:
+        env = MultiAgentEnv(world, scenario.reset_world, scenario.reward,
+                            scenario.observation)
+    return env
 
 def make_parallel_env(env_id, n_rollout_threads, seed, discrete_action):
     def get_env_fn(rank):
@@ -50,7 +82,7 @@ def run(config):
         torch.set_num_threads(config.n_training_threads)
     env = make_parallel_env(config.env_id, config.n_rollout_threads, config.seed,
                             config.discrete_action)
-    #env = make_env(config.env_id, discrete_action=config.discrete_action)
+
     maddpg = MADDPG.init_from_env(env, agent_alg=config.agent_alg,
                                   adversary_alg=config.adversary_alg,
                                   tau=config.tau,
