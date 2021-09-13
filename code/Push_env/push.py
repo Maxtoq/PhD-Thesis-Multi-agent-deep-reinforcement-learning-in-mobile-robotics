@@ -3,7 +3,7 @@ import argparse
 
 from multiagent.environment import MultiAgentEnv
 
-from my_scenario import PushScenario
+from my_scenario import Scenario
 
 class RandomPolicy():
     def __init__(self, env):
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     parser.add_argument("--no_render", action='store_true')
     config = parser.parse_args()
 
-    scenario = PushScenario()
+    scenario = Scenario()
     # Create world
     world = scenario.make_world()
 

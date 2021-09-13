@@ -27,17 +27,18 @@ class PushWorld(World):
         super(PushWorld, self).__init__()
         # List of objects to push
         self.nb_objects = nb_objects
-        self.objects = []
-        for i in range(self.nb_objects):
-            self.objects.append(Object())
-            self.landmarks.append(Landmark())
-            self.init_object(i)
+        self.objects = [Object() for _ in range(self.nb_objects)]
+        self.landmarks = [Landmark() for _ in range(self.nb_objects)]
 
     @property
     def entities(self):
         return self.agents + self.objects + self.landmarks
 
-    def init_object(self, obj_i, min_dist=None):
+    def reset(self):
+        for i in range(self.nb_objects):
+            self.init_object(i)
+
+    def init_object(self, obj_i, min_dist=0.1):
         # Random color for both entities
         color = np.random.uniform(0, 1, self.dim_color)
         # Object
@@ -64,9 +65,9 @@ class PushWorld(World):
         #    self.add_object_and_landmark()
         
 
-class PushScenario(BaseScenario):
+class Scenario(BaseScenario):
 
-    def make_world(self, nb_agents=2, nb_objects=2, obs_range=0.5, collision_pen=10.0):
+    def make_world(self, nb_agents=4, nb_objects=2, obs_range=0.4, collision_pen=10.0):
         world = PushWorld(nb_objects)
         # add agent
         self.nb_agents = nb_agents
@@ -75,7 +76,7 @@ class PushScenario(BaseScenario):
             agent.name = 'agent %d' % i
             agent.silent = True
             agent.size = 0.025
-            agent.initial_mass = 0.5
+            agent.initial_mass = 0.4
             agent.max_speed = 0.1
             agent.color = np.array([0.5,0.0,0.0])
         # Objects and landmarks
@@ -87,7 +88,20 @@ class PushScenario(BaseScenario):
         self.reset_world(world)
         return world
 
+    def done(self, agent, world):
+        # Done if all objects are on their landmarks
+        tot_dist = 0.0
+        for i, object in enumerate(world.objects):
+            tot_dist += get_dist(
+                object.state.p_pos, 
+                world.landmarks[i].state.p_pos
+            )
+        if tot_dist == 0.0:
+            return True
+        return False
+
     def reset_world(self, world):
+        world.reset()
         # set initial states
         for agent in world.agents:
             agent.state.p_pos = np.random.uniform(-1, 1, world.dim_p)

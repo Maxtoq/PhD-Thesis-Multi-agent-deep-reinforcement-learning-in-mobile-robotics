@@ -1,7 +1,8 @@
 import argparse
 import torch
-import time
+import imp
 import os
+import re
 import numpy as np
 from gym.spaces import Box
 from pathlib import Path
@@ -10,11 +11,10 @@ from tensorboardX import SummaryWriter
 from utils.buffer import ReplayBuffer
 from utils.env_wrappers import SubprocVecEnv, DummyVecEnv
 from algorithms.maddpg import MADDPG
-from my_scenario import PushScenario
 
 USE_CUDA = torch.cuda.is_available()
 
-def make_env(scenario_name, benchmark=False, discrete_action=False):
+def make_env(scenario_path, benchmark=False, discrete_action=False):
     '''
     Creates a MultiAgentEnv object as env. This can be used similar to a gym
     environment by calling env.reset() and env.step().
@@ -34,22 +34,24 @@ def make_env(scenario_name, benchmark=False, discrete_action=False):
     from multiagent.environment import MultiAgentEnv
 
     # load scenario from script
-    scenario = PushScenario()
+    scenario = imp.load_source('', scenario_path).Scenario()
     # create world
     world = scenario.make_world()
     # create multiagent environment
     if benchmark:        
         env = MultiAgentEnv(world, scenario.reset_world, scenario.reward,
-                            scenario.observation, scenario.benchmark_data)
+                            scenario.observation, scenario.benchmark_data, 
+                            done_callback=scenario.done if hasattr(scenario, "done") else None)
     else:
         env = MultiAgentEnv(world, scenario.reset_world, scenario.reward,
-                            scenario.observation)
+                            scenario.observation, 
+                            done_callback=scenario.done if hasattr(scenario, "done") else None)
     return env
 
-def make_parallel_env(env_id, n_rollout_threads, seed, discrete_action):
+def make_parallel_env(env_path, n_rollout_threads, seed, discrete_action):
     def get_env_fn(rank):
         def init_env():
-            env = make_env(env_id, discrete_action=discrete_action)
+            env = make_env(env_path, discrete_action=discrete_action)
             env.seed(seed + rank * 1000)
             np.random.seed(seed + rank * 1000)
             return env
@@ -60,7 +62,8 @@ def make_parallel_env(env_id, n_rollout_threads, seed, discrete_action):
         return SubprocVecEnv([get_env_fn(i) for i in range(n_rollout_threads)])
 
 def run(config):
-    model_dir = Path('./models') / config.env_id / config.model_name
+    env_name = re.findall("\/?([^\/.]*)\.py", config.env_path)[0]
+    model_dir = Path('./models') / env_name / config.model_name
     if not model_dir.exists():
         curr_run = 'run1'
     else:
@@ -80,7 +83,7 @@ def run(config):
     np.random.seed(config.seed)
     if not USE_CUDA:
         torch.set_num_threads(config.n_training_threads)
-    env = make_parallel_env(config.env_id, config.n_rollout_threads, config.seed,
+    env = make_parallel_env(config.env_path, config.n_rollout_threads, config.seed,
                             config.discrete_action)
 
     maddpg = MADDPG.init_from_env(env, agent_alg=config.agent_alg,
@@ -118,6 +121,8 @@ def run(config):
             actions = [[ac[i] for ac in agent_actions] for i in range(config.n_rollout_threads)]
             next_obs, rewards, dones, infos = env.step(actions)
             replay_buffer.push(obs, agent_actions, rewards, next_obs, dones)
+            if dones[0,0]:
+                break
             obs = next_obs
             t += config.n_rollout_threads
             if (len(replay_buffer) >= config.batch_size and
@@ -151,7 +156,7 @@ def run(config):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("env_id", help="Name of environment")
+    parser.add_argument("env_path", help="Path to the environment")
     parser.add_argument("model_name",
                         help="Name of directory to store " +
                              "model/training contents")
