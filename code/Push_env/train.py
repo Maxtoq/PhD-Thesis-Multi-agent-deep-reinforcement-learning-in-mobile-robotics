@@ -1,6 +1,7 @@
 import argparse
 import torch
 import imp
+import sys
 import os
 import re
 import numpy as np
@@ -66,6 +67,15 @@ def run(config):
     model_dir = Path('./models') / env_name / config.model_name
     if not model_dir.exists():
         curr_run = 'run1'
+    elif config.run_name is not None:
+        run_dir = model_dir / config.run_name
+        if not run_dir.exists():
+            sys.exit('Error: run directory %s does not exist.' % run_dir)
+        model_cp_path = run_dir / 'model.pt'
+        if not model_cp_path.exists():
+            sys.exit('Error: model checkpoint path %s does not exist. \
+                Unable to load the run.' % model_cp_path)
+        curr_run = config.run_name
     else:
         exst_run_nums = [int(str(folder.name).split('run')[1]) for folder in
                          model_dir.iterdir() if
@@ -75,6 +85,7 @@ def run(config):
         else:
             curr_run = 'run%i' % (max(exst_run_nums) + 1)
     run_dir = model_dir / curr_run
+    model_cp_path = run_dir / 'model.pt'
     log_dir = run_dir / 'logs'
     os.makedirs(log_dir)
     logger = SummaryWriter(str(log_dir))
@@ -86,11 +97,15 @@ def run(config):
     env = make_parallel_env(config.env_path, config.n_rollout_threads, config.seed,
                             config.discrete_action)
 
-    maddpg = MADDPG.init_from_env(env, agent_alg=config.agent_alg,
-                                  adversary_alg=config.adversary_alg,
-                                  tau=config.tau,
-                                  lr=config.lr,
-                                  hidden_dim=config.hidden_dim)
+    if config.run_name is None:
+        maddpg = MADDPG.init_from_env(env, agent_alg=config.agent_alg,
+                                    adversary_alg=config.adversary_alg,
+                                    tau=config.tau,
+                                    lr=config.lr,
+                                    hidden_dim=config.hidden_dim)
+    else:
+        maddpg = MADDPG.init_from_save(model_cp_path)
+
     replay_buffer = ReplayBuffer(config.buffer_length, maddpg.nagents,
                                  [obsp.shape[0] for obsp in env.observation_space],
                                  [acsp.shape[0] if isinstance(acsp, Box) else acsp.n
@@ -146,9 +161,9 @@ def run(config):
         if ep_i % config.save_interval < config.n_rollout_threads:
             os.makedirs(run_dir / 'incremental', exist_ok=True)
             maddpg.save(run_dir / 'incremental' / ('model_ep%i.pt' % (ep_i + 1)))
-            maddpg.save(run_dir / 'model.pt')
+            maddpg.save(model_cp_path)
 
-    maddpg.save(run_dir / 'model.pt')
+    maddpg.save(model_cp_path)
     env.close()
     logger.export_scalars_to_json(str(log_dir / 'summary.json'))
     logger.close()
@@ -187,6 +202,7 @@ if __name__ == '__main__':
                         choices=['MADDPG', 'DDPG'])
     parser.add_argument("--discrete_action",
                         action='store_true')
+    parser.add_argument("--run_name", default=None, type=str)
 
     config = parser.parse_args()
 
