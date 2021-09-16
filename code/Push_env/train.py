@@ -5,6 +5,7 @@ import sys
 import os
 import re
 import numpy as np
+from tqdm import tqdm
 from gym.spaces import Box
 from pathlib import Path
 from torch.autograd import Variable
@@ -63,6 +64,7 @@ def make_parallel_env(env_path, n_rollout_threads, seed, discrete_action):
         return SubprocVecEnv([get_env_fn(i) for i in range(n_rollout_threads)])
 
 def run(config):
+    start_ep = 0
     env_name = re.findall("\/?([^\/.]*)\.py", config.env_path)[0]
     model_dir = Path('./models') / env_name / config.model_name
     if not model_dir.exists():
@@ -76,6 +78,8 @@ def run(config):
             sys.exit('Error: model checkpoint path %s does not exist. \
                 Unable to load the run.' % model_cp_path)
         curr_run = config.run_name
+        with open(str(run_dir / 'logs' / 'ep_nb.txt')) as f:
+            start_ep = int(f.read()) + 1
     else:
         exst_run_nums = [int(str(folder.name).split('run')[1]) for folder in
                          model_dir.iterdir() if
@@ -87,7 +91,8 @@ def run(config):
     run_dir = model_dir / curr_run
     model_cp_path = run_dir / 'model.pt'
     log_dir = run_dir / 'logs'
-    os.makedirs(log_dir)
+    if not log_dir.exists():
+        os.makedirs(log_dir)
     logger = SummaryWriter(str(log_dir))
 
     torch.manual_seed(config.seed)
@@ -111,10 +116,10 @@ def run(config):
                                  [acsp.shape[0] if isinstance(acsp, Box) else acsp.n
                                   for acsp in env.action_space])
     t = 0
-    for ep_i in range(0, config.n_episodes, config.n_rollout_threads):
-        print("Episodes %i-%i of %i" % (ep_i + 1,
-                                        ep_i + 1 + config.n_rollout_threads,
-                                        config.n_episodes))
+    for ep_i in tqdm(range(start_ep, config.n_episodes, config.n_rollout_threads)):
+        #print("Episodes %i-%i of %i" % (ep_i + 1,
+        #                                ep_i + 1 + config.n_rollout_threads,
+        #                                config.n_episodes))
         obs = env.reset()
         # obs.shape = (n_rollout_threads, nagent)(nobs), nobs differs per agent so not tensor
         maddpg.prep_rollouts(device='cpu')
@@ -153,10 +158,12 @@ def run(config):
                         maddpg.update(sample, a_i, logger=logger)
                     maddpg.update_all_targets()
                 maddpg.prep_rollouts(device='cpu')
-        ep_rews = replay_buffer.get_average_rewards(
-            config.episode_length * config.n_rollout_threads)
+        ep_rews = replay_buffer.get_average_rewards(config.episode_length)
         for a_i, a_ep_rew in enumerate(ep_rews):
             logger.add_scalar('agent%i/mean_episode_rewards' % a_i, a_ep_rew, ep_i)
+        # Save ep number
+        with open(str(log_dir / 'ep_nb.txt'), 'w') as f:
+            f.write(str(ep_i))
 
         if ep_i % config.save_interval < config.n_rollout_threads:
             os.makedirs(run_dir / 'incremental', exist_ok=True)
@@ -182,7 +189,7 @@ if __name__ == '__main__':
     parser.add_argument("--n_training_threads", default=6, type=int)
     parser.add_argument("--buffer_length", default=int(1e6), type=int)
     parser.add_argument("--n_episodes", default=25000, type=int)
-    parser.add_argument("--episode_length", default=25, type=int)
+    parser.add_argument("--episode_length", default=50, type=int)
     parser.add_argument("--steps_per_update", default=100, type=int)
     parser.add_argument("--batch_size",
                         default=1024, type=int,

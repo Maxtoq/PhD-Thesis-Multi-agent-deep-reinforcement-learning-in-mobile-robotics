@@ -93,4 +93,4 @@ class ReplayBuffer(object):
             inds = np.arange(self.curr_i - N, self.curr_i)  # allow for negative indexing
         else:
             inds = np.arange(max(0, self.curr_i - N), self.curr_i)
-        return [self.rew_buffs[i][inds].mean() for i in range(self.num_agents)]
+        return [self.rew_buffs[i][inds].sum() for i in range(self.num_agents)]
