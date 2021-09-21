@@ -107,7 +107,8 @@ def run(config):
                                     adversary_alg=config.adversary_alg,
                                     tau=config.tau,
                                     lr=config.lr,
-                                    hidden_dim=config.hidden_dim)
+                                    hidden_dim=config.hidden_dim,
+                                    shared_params=config.shared_params)
     else:
         maddpg = MADDPG.init_from_save(model_cp_path)
 
@@ -158,9 +159,12 @@ def run(config):
                         maddpg.update(sample, a_i, logger=logger)
                     maddpg.update_all_targets()
                 maddpg.prep_rollouts(device='cpu')
-        ep_rews = replay_buffer.get_average_rewards(config.episode_length)
+        ep_rews = replay_buffer.get_average_rewards(
+            config.episode_length * config.n_rollout_threads
+            ) 
         for a_i, a_ep_rew in enumerate(ep_rews):
-            logger.add_scalar('agent%i/mean_episode_rewards' % a_i, a_ep_rew, ep_i)
+            logger.add_scalar('agent%i/mean_episode_rewards' % a_i, 
+                            a_ep_rew / config.n_rollout_threads, ep_i)
         # Save ep number
         with open(str(log_dir / 'ep_nb.txt'), 'w') as f:
             f.write(str(ep_i))
@@ -189,8 +193,8 @@ if __name__ == '__main__':
     parser.add_argument("--n_training_threads", default=6, type=int)
     parser.add_argument("--buffer_length", default=int(1e6), type=int)
     parser.add_argument("--n_episodes", default=25000, type=int)
-    parser.add_argument("--episode_length", default=50, type=int)
-    parser.add_argument("--steps_per_update", default=100, type=int)
+    parser.add_argument("--episode_length", default=250, type=int)
+    parser.add_argument("--steps_per_update", default=1000, type=int)
     parser.add_argument("--batch_size",
                         default=1024, type=int,
                         help="Batch size for model training")
@@ -207,9 +211,9 @@ if __name__ == '__main__':
     parser.add_argument("--adversary_alg",
                         default="MADDPG", type=str,
                         choices=['MADDPG', 'DDPG'])
-    parser.add_argument("--discrete_action",
-                        action='store_true')
+    parser.add_argument("--discrete_action", action='store_true')
     parser.add_argument("--run_name", default=None, type=str)
+    parser.add_argument("--shared_params", action='store_true')
 
     config = parser.parse_args()
 

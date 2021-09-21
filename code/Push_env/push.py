@@ -3,14 +3,14 @@ import argparse
 
 from multiagent.environment import MultiAgentEnv
 
-from my_scenario import Scenario
+from coop_push_scenario import Scenario
 
 class RandomPolicy():
     def __init__(self, env):
         self.env = env
 
     def action(self, obs):
-        obj_pos = obs[10:12]
+        obj_pos = obs[20:22]
         if not obj_pos.any():
             return np.random.uniform(-1, 1, self.env.world.dim_p)
         else:
@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     scenario = Scenario()
     # Create world
-    world = scenario.make_world()
+    world = scenario.make_world(obs_range=1.0)
 
     # Create multiagent environment
     env = MultiAgentEnv(world, scenario.reset_world, scenario.reward, scenario.observation)
@@ -50,5 +50,5 @@ if __name__ == "__main__":
         if not config.no_render:
             env.render()
         it += 1
-        if it == 500:
+        if it == 250:
             break
