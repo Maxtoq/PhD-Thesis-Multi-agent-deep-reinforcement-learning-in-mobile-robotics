@@ -124,12 +124,13 @@ class Scenario(BaseScenario):
             )
 
         # Penalty for collision between agents
-        for other_agent in world.agents:
-                if other_agent is agent: continue
-                dist = get_dist(agent.state.p_pos, other_agent.state.p_pos)
-                dist_min = agent.size + other_agent.size
-                if dist <= dist_min:
-                    rew -= self.collision_pen
+        if agent.collide:
+            for other_agent in world.agents:
+                    if other_agent is agent: continue
+                    dist = get_dist(agent.state.p_pos, other_agent.state.p_pos)
+                    dist_min = agent.size + other_agent.size
+                    if dist <= dist_min:
+                        rew -= self.collision_pen
         return rew
 
     def observation(self, agent, world):
