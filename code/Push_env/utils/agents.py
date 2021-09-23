@@ -1,3 +1,5 @@
+import torch
+
 from torch import Tensor
 from torch.autograd import Variable
 from torch.optim import Adam
@@ -89,3 +91,25 @@ class DDPGAgent(object):
         self.target_critic.load_state_dict(params['target_critic'])
         self.policy_optimizer.load_state_dict(params['policy_optimizer'])
         self.critic_optimizer.load_state_dict(params['critic_optimizer'])
+
+
+class DDPGCommAgent(object):
+
+    def __init__(self, dim_obs, dim_act, dim_in_critic, 
+                 dim_com, hidden_dim=64,
+                 lr=0.01, discrete_action=True):
+        """
+        Inputs:
+            dim_obs (int): dimension of observations
+            dim_act (int): dimension of actions
+            dim_in_critic (int): dimension of critic input
+            dim_com (int): dimension of communication act
+        """
+        # Action 
+        self.ddpg = DDPGAgent(dim_obs, dim_act, dim_in_critic, hidden_dim, 
+                              lr, discrete_action)
+        # Memory
+        self.mem = torch.nn.LSTM(dim_obs, hidden_dim)
+        # Comm 
+        self.comm = torch.nn.LSTM(hidden_dim + dim_act, dim_com)
+        

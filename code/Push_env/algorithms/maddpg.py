@@ -29,6 +29,7 @@ class MADDPG(object):
         """
         self.nagents = len(alg_types)
         self.alg_types = alg_types
+        self.shared_params = shared_params
         if not shared_params:
             self.agents = [DDPGAgent(lr=lr, discrete_action=discrete_action,
                                     hidden_dim=hidden_dim,
@@ -178,9 +179,13 @@ class MADDPG(object):
         Update all target networks (called after normal updates have been
         performed for each agent)
         """
-        for a in self.agents:
-            soft_update(a.target_critic, a.critic, self.tau)
-            soft_update(a.target_policy, a.policy, self.tau)
+        if self.shared_params:
+            soft_update(self.agents[0].target_critic, self.agents[0].critic, self.tau)
+            soft_update(self.agents[0].target_policy, self.agents[0].policy, self.tau)
+        else:
+            for a in self.agents:
+                soft_update(a.target_critic, a.critic, self.tau)
+                soft_update(a.target_policy, a.policy, self.tau)
         self.niter += 1
 
     def prep_training(self, device='gpu'):

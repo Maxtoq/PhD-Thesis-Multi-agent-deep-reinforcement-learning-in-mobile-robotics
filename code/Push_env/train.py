@@ -65,7 +65,9 @@ def make_parallel_env(env_path, n_rollout_threads, seed, discrete_action):
 
 def run(config):
     start_ep = 0
+    # Get environment name from script path
     env_name = re.findall("\/?([^\/.]*)\.py", config.env_path)[0]
+    # Get path of the run directory
     model_dir = Path('./models') / env_name / config.model_name
     if not model_dir.exists():
         curr_run = 'run1'
