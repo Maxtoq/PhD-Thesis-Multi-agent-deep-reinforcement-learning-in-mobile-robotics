@@ -99,7 +99,9 @@ class MADDPG(object):
         obs, acs, rews, next_obs, dones = sample
         curr_agent = self.agents[agent_i]
 
+        # Critic Update
         curr_agent.critic_optimizer.zero_grad()
+        # Compute Target Value
         if self.alg_types[agent_i] == 'MADDPG':
             if self.discrete_action: # one-hot encode action
                 all_trgt_acs = [onehot_from_logits(pi(nobs)) for pi, nobs in
@@ -122,12 +124,13 @@ class MADDPG(object):
         target_value = (rews[agent_i].view(-1, 1) + self.gamma *
                         curr_agent.target_critic(trgt_vf_in) *
                         (1 - dones[agent_i].view(-1, 1)))
-
+        # Compute Value
         if self.alg_types[agent_i] == 'MADDPG':
             vf_in = torch.cat((*obs, *acs), dim=1)
         else:  # DDPG
             vf_in = torch.cat((obs[agent_i], acs[agent_i]), dim=1)
         actual_value = curr_agent.critic(vf_in)
+        # Value loss = minimise TD error (difference between target and value)
         vf_loss = MSELoss(actual_value, target_value.detach())
         vf_loss.backward()
         if parallel:
@@ -136,7 +139,8 @@ class MADDPG(object):
         curr_agent.critic_optimizer.step()
 
         curr_agent.policy_optimizer.zero_grad()
-
+        # Policy Update
+        # Get Action
         if self.discrete_action:
             # Forward pass as if onehot (hard=True) but backprop through a differentiable
             # Gumbel-Softmax sample. The MADDPG paper uses the Gumbel-Softmax trick to backprop
@@ -156,11 +160,12 @@ class MADDPG(object):
                 elif self.discrete_action:
                     all_pol_acs.append(onehot_from_logits(pi(ob)))
                 else:
-                    all_pol_acs.append(pi(ob))
+                    all_pol_acs.append(pi(ob).detach())
             vf_in = torch.cat((*obs, *all_pol_acs), dim=1)
         else:  # DDPG
             vf_in = torch.cat((obs[agent_i], curr_pol_vf_in),
                               dim=1)
+        # Policy loss = maximise value of our actions
         pol_loss = -curr_agent.critic(vf_in).mean()
         pol_loss += (curr_pol_out**2).mean() * 1e-3
         pol_loss.backward()

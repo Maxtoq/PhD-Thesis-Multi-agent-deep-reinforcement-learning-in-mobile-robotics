@@ -1,5 +1,6 @@
 import argparse
 import torch
+import json
 import imp
 import sys
 import os
@@ -16,14 +17,14 @@ from algorithms.maddpg import MADDPG
 
 USE_CUDA = torch.cuda.is_available()
 
-def make_env(scenario_path, benchmark=False, discrete_action=False):
+def make_env(scenario_path, sce_conf_path=None, benchmark=False, discrete_action=False):
     '''
     Creates a MultiAgentEnv object as env. This can be used similar to a gym
     environment by calling env.reset() and env.step().
     Use env.render() to view the environment on the screen.
 
     Input:
-        scenario_name   :   name of the scenario from ./scenarios/ to be Returns
+        scenario_path   :   path of the scenario script
                             (without the .py extension)
         benchmark       :   whether you want to produce benchmarking data
                             (usually only done during evaluation)
@@ -38,22 +39,32 @@ def make_env(scenario_path, benchmark=False, discrete_action=False):
     # load scenario from script
     scenario = imp.load_source('', scenario_path).Scenario()
     # create world
-    world = scenario.make_world()
+    conf = {}
+    if sce_conf_path is not None:
+        with open(sce_conf_path) as cf:
+            conf = json.load(cf)
+            print('Special config for scenario:', scenario_path)
+            print(conf, '\n')
+    world = scenario.make_world(**conf)
     # create multiagent environment
-    if benchmark:        
+    if benchmark:
         env = MultiAgentEnv(world, scenario.reset_world, scenario.reward,
                             scenario.observation, scenario.benchmark_data, 
-                            done_callback=scenario.done if hasattr(scenario, "done") else None)
+                            done_callback=scenario.done if hasattr(scenario, "done") 
+                            else None, discrete_action=discrete_action)
     else:
         env = MultiAgentEnv(world, scenario.reset_world, scenario.reward,
                             scenario.observation, 
-                            done_callback=scenario.done if hasattr(scenario, "done") else None)
+                            done_callback=scenario.done if hasattr(scenario, "done")
+                            else None, discrete_action=discrete_action)
     return env
 
-def make_parallel_env(env_path, n_rollout_threads, seed, discrete_action):
+def make_parallel_env(env_path, n_rollout_threads, seed, discrete_action, 
+                      sce_conf_path=None):
     def get_env_fn(rank):
         def init_env():
-            env = make_env(env_path, discrete_action=discrete_action)
+            env = make_env(env_path, discrete_action=discrete_action, 
+                           sce_conf_path=sce_conf_path)
             env.seed(seed + rank * 1000)
             np.random.seed(seed + rank * 1000)
             return env
@@ -102,7 +113,7 @@ def run(config):
     if not USE_CUDA:
         torch.set_num_threads(config.n_training_threads)
     env = make_parallel_env(config.env_path, config.n_rollout_threads, config.seed,
-                            config.discrete_action)
+                            config.discrete_action, config.sce_conf_path)
 
     if config.run_name is None:
         maddpg = MADDPG.init_from_env(env, agent_alg=config.agent_alg,
@@ -216,6 +227,8 @@ if __name__ == '__main__':
     parser.add_argument("--discrete_action", action='store_true')
     parser.add_argument("--run_name", default=None, type=str)
     parser.add_argument("--shared_params", action='store_true')
+    parser.add_argument("--sce_conf_path", default=None, type=str,
+                        help="Path to the scenario config file")
 
     config = parser.parse_args()
 
