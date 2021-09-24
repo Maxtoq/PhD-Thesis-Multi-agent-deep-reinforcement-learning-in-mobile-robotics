@@ -38,7 +38,7 @@ class PushWorld(World):
         for i in range(self.nb_objects):
             self.init_object(i)
 
-    def init_object(self, obj_i, min_dist=0.1):
+    def init_object(self, obj_i, min_dist=0.3, max_dist=1.0):
         # Random color for both entities
         color = np.random.uniform(0, 1, self.dim_color)
         # Object
@@ -52,14 +52,14 @@ class PushWorld(World):
         self.landmarks[obj_i].color = color
         self.landmarks[obj_i].size = 0.01
         # Set initial positions
-        self.objects[obj_i].state.p_pos = np.random.uniform(-1, 1, self.dim_p)
-        self.landmarks[obj_i].state.p_pos = np.random.uniform(-1, 1, self.dim_p)
         if min_dist is not None:
-            while get_dist(
-                self.objects[obj_i].state.p_pos, 
-                self.landmarks[obj_i].state.p_pos
-            ) < min_dist:
+            while True:
+                self.objects[obj_i].state.p_pos = np.random.uniform(-1, 1, self.dim_p)
                 self.landmarks[obj_i].state.p_pos = np.random.uniform(-1, 1, self.dim_p)
+                dist = get_dist(self.objects[obj_i].state.p_pos, 
+                                self.landmarks[obj_i].state.p_pos)
+                if dist > min_dist and dist < max_dist:
+                    break
 
     def step(self):
         super(PushWorld, self).step()
