@@ -10,6 +10,7 @@ from tqdm import tqdm
 from gym.spaces import Box
 from pathlib import Path
 from torch.autograd import Variable
+from shutil import copyfile
 from tensorboardX import SummaryWriter
 from utils.buffer import ReplayBuffer
 from utils.env_wrappers import SubprocVecEnv, DummyVecEnv
@@ -74,6 +75,10 @@ def make_parallel_env(env_path, n_rollout_threads, seed, discrete_action,
     else:
         return SubprocVecEnv([get_env_fn(i) for i in range(n_rollout_threads)])
 
+def save_scenario_cfg(config, save_dir):
+    if config.sce_conf_path is not None:
+        copyfile(config.sce_conf_path, save_dir / 'sce_config.json')
+
 def run(config):
     start_ep = 0
     # Get environment name from script path
@@ -114,6 +119,8 @@ def run(config):
         torch.set_num_threads(config.n_training_threads)
     env = make_parallel_env(config.env_path, config.n_rollout_threads, config.seed,
                             config.discrete_action, config.sce_conf_path)
+    
+    save_scenario_cfg(config, run_dir)
 
     if config.run_name is None:
         maddpg = MADDPG.init_from_env(env, agent_alg=config.agent_alg,
