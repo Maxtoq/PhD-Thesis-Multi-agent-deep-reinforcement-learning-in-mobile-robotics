@@ -18,7 +18,7 @@ from algorithms.maddpg import MADDPG
 
 USE_CUDA = torch.cuda.is_available()
 
-def make_env(scenario_path, sce_conf_path=None, benchmark=False, discrete_action=False):
+def make_env(scenario_path, sce_conf={}, benchmark=False, discrete_action=False):
     '''
     Creates a MultiAgentEnv object as env. This can be used similar to a gym
     environment by calling env.reset() and env.step().
@@ -40,13 +40,7 @@ def make_env(scenario_path, sce_conf_path=None, benchmark=False, discrete_action
     # load scenario from script
     scenario = imp.load_source('', scenario_path).Scenario()
     # create world
-    conf = {}
-    if sce_conf_path is not None:
-        with open(sce_conf_path) as cf:
-            conf = json.load(cf)
-            print('Special config for scenario:', scenario_path)
-            print(conf, '\n')
-    world = scenario.make_world(**conf)
+    world = scenario.make_world(**sce_conf)
     # create multiagent environment
     if benchmark:
         env = MultiAgentEnv(world, scenario.reset_world, scenario.reward,
@@ -61,11 +55,11 @@ def make_env(scenario_path, sce_conf_path=None, benchmark=False, discrete_action
     return env
 
 def make_parallel_env(env_path, n_rollout_threads, seed, discrete_action, 
-                      sce_conf_path=None):
+                      sce_conf={}):
     def get_env_fn(rank):
         def init_env():
             env = make_env(env_path, discrete_action=discrete_action, 
-                           sce_conf_path=sce_conf_path)
+                           sce_conf_path=sce_conf)
             env.seed(seed + rank * 1000)
             np.random.seed(seed + rank * 1000)
             return env
@@ -74,10 +68,6 @@ def make_parallel_env(env_path, n_rollout_threads, seed, discrete_action,
         return DummyVecEnv([get_env_fn(0)])
     else:
         return SubprocVecEnv([get_env_fn(i) for i in range(n_rollout_threads)])
-
-def save_scenario_cfg(config, save_dir):
-    if config.sce_conf_path is not None:
-        copyfile(config.sce_conf_path, save_dir / 'sce_config.json')
 
 def run(config):
     start_ep = 0
@@ -113,14 +103,21 @@ def run(config):
         os.makedirs(log_dir)
     logger = SummaryWriter(str(log_dir))
 
+    # Load scenario config
+    sce_conf = {}
+    if config.sce_conf_path is not None:
+        copyfile(config.sce_conf_path, run_dir / 'sce_config.json')
+        with open(config.sce_conf_path) as cf:
+            sce_conf = json.load(cf)
+            print('Special config for scenario:', config.env_path)
+            print(sce_conf, '\n')
+
     torch.manual_seed(config.seed)
     np.random.seed(config.seed)
     if not USE_CUDA:
         torch.set_num_threads(config.n_training_threads)
     env = make_parallel_env(config.env_path, config.n_rollout_threads, config.seed,
-                            config.discrete_action, config.sce_conf_path)
-    
-    save_scenario_cfg(config, run_dir)
+                            config.discrete_action, sce_conf)
 
     if config.run_name is None:
         maddpg = MADDPG.init_from_env(env, agent_alg=config.agent_alg,
