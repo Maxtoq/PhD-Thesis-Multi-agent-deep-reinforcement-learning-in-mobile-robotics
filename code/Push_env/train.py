@@ -59,7 +59,7 @@ def make_parallel_env(env_path, n_rollout_threads, seed, discrete_action,
     def get_env_fn(rank):
         def init_env():
             env = make_env(env_path, discrete_action=discrete_action, 
-                           sce_conf_path=sce_conf)
+                           sce_conf=sce_conf)
             env.seed(seed + rank * 1000)
             np.random.seed(seed + rank * 1000)
             return env

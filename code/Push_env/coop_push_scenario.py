@@ -38,7 +38,7 @@ class PushWorld(World):
         for i in range(self.nb_objects):
             self.init_object(i)
 
-    def init_object(self, obj_i, min_dist=0.3, max_dist=1.0):
+    def init_object(self, obj_i, min_dist=0.5, max_dist=0.7):
         # Random color for both entities
         color = np.random.uniform(0, 1, self.dim_color)
         # Object

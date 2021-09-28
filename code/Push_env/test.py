@@ -1,5 +1,6 @@
 import argparse
 import torch
+import json
 import sys
 import os
 import numpy as np
@@ -16,9 +17,17 @@ def run(config):
     maddpg = MADDPG.init_from_save(config.model_cp_path)
     maddpg.prep_rollouts(device='cpu')
 
+    # Load scenario config
+    sce_conf = {}
+    if config.sce_conf_path is not None:
+        with open(config.sce_conf_path) as cf:
+            sce_conf = json.load(cf)
+            print('Special config for scenario:', config.env_path)
+            print(sce_conf)
+
     # Create environment
     env = make_env(config.env_path, discrete_action=config.discrete_action, 
-                           sce_conf_path=config.sce_conf_path)
+                           sce_conf=sce_conf)
     env.seed(config.seed * 1000)
     #np.random.seed(config.seed * 1000)
 
