@@ -38,7 +38,7 @@ class PushWorld(World):
         for i in range(self.nb_objects):
             self.init_object(i)
 
-    def init_object(self, obj_i, min_dist=0.5, max_dist=0.7):
+    def init_object(self, obj_i, min_dist=0.9, max_dist=1.5):
         # Random color for both entities
         color = np.random.uniform(0, 1, self.dim_color)
         # Object
@@ -70,7 +70,7 @@ class PushWorld(World):
 
 class Scenario(BaseScenario):
 
-    def make_world(self, nb_agents=4, nb_objects=1, obs_range=0.4, collision_pen=10.0):
+    def make_world(self, nb_agents=4, nb_objects=1, obs_range=0.4, collision_pen=10.0, relative_coord=True):
         world = PushWorld(nb_objects)
         # add agent
         self.nb_agents = nb_agents
@@ -87,6 +87,7 @@ class Scenario(BaseScenario):
         # world attributes
         self.obs_range = obs_range
         self.collision_pen = collision_pen
+        self.relative_coord = relative_coord
         # make initial conditions
         self.reset_world(world)
         return world
@@ -148,16 +149,38 @@ class Scenario(BaseScenario):
         for entity in world.agents + world.objects:
             if entity is agent: continue
             if get_dist(agent.state.p_pos, entity.state.p_pos) <= self.obs_range:
-                entity_obs.append(np.concatenate((
-                    [1.0], (entity.state.p_pos - agent.state.p_pos) / self.obs_range, entity.state.p_vel
-                )))
+                # Pos: relative normalised
+                #entity_obs.append(np.concatenate((
+                #    [1.0], (entity.state.p_pos - agent.state.p_pos) / self.obs_range, entity.state.p_vel
+                #)))
+                # Pos: relative
+                if self.relative_coord:
+                    entity_obs.append(np.concatenate((
+                        [1.0], (entity.state.p_pos - agent.state.p_pos), entity.state.p_vel
+                    )))
+                # Pos: absolute
+                else:
+                    entity_obs.append(np.concatenate((
+                        [1.0], entity.state.p_pos, entity.state.p_vel
+                    )))
             else:
                 entity_obs.append(np.zeros(5))
         for entity in world.landmarks:
             if get_dist(agent.state.p_pos, entity.state.p_pos) <= self.obs_range:
-                entity_obs.append(np.concatenate((
-                    [1.0], (entity.state.p_pos - agent.state.p_pos) / self.obs_range
-                )))
+                # Pos: relative normalised
+                #entity_obs.append(np.concatenate((
+                #    [1.0], (entity.state.p_pos - agent.state.p_pos) / self.obs_range
+                #)))
+                # Pos: relative
+                if self.relative_coord:
+                    entity_obs.append(np.concatenate((
+                        [1.0], (entity.state.p_pos - agent.state.p_pos)
+                    )))
+                # Pos: absolute
+                else:
+                    entity_obs.append(np.concatenate((
+                        [1.0], entity.state.p_pos
+                    )))
             else:
                 entity_obs.append(np.zeros(3))
 
