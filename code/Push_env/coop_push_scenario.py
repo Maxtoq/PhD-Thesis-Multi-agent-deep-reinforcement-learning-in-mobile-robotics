@@ -80,7 +80,7 @@ class Scenario(BaseScenario):
             agent.silent = True
             agent.size = 0.025
             agent.initial_mass = 0.4
-            agent.max_speed = 0.1
+            #agent.max_speed = 0.3
             agent.color = np.array([0.5,0.0,0.0])
         # Objects and landmarks
         self.nb_objects = nb_objects
@@ -117,12 +117,19 @@ class Scenario(BaseScenario):
     def reward(self, agent, world):
         # Reward = -1 x squared distance between objects and corresponding landmarks
         rew = 0
-        for i, object in enumerate(world.objects):
+        for i, obj in enumerate(world.objects):
             rew -= get_dist(
-                object.state.p_pos, 
+                obj.state.p_pos, 
                 world.landmarks[i].state.p_pos, 
                 squared=True
             )
+
+        # Reward based on distance to object
+        dist = 0
+        for agent in world.agents:
+            dist += get_dist(agent.state.p_pos, world.objects[0].state.p_pos)
+        dist /= self.nb_agents
+        rew -= dist
 
         # Penalty for collision between agents
         if agent.collide:
