@@ -44,13 +44,13 @@ class PushWorld(World):
         # Object
         self.objects[obj_i].name = 'object %d' % len(self.objects)
         self.objects[obj_i].color = color
-        self.objects[obj_i].size = 0.08
+        self.objects[obj_i].size = 0.16
         self.objects[obj_i].initial_mass = 2.0
         # Landmark
         self.landmarks[obj_i].name = 'landmark %d' % len(self.landmarks)
         self.landmarks[obj_i].collide = False
         self.landmarks[obj_i].color = color
-        self.landmarks[obj_i].size = 0.01
+        self.landmarks[obj_i].size = 0.03
         # Set initial positions
         if min_dist is not None:
             while True:
@@ -70,7 +70,8 @@ class PushWorld(World):
 
 class Scenario(BaseScenario):
 
-    def make_world(self, nb_agents=4, nb_objects=1, obs_range=0.4, collision_pen=10.0, relative_coord=True):
+    def make_world(self, nb_agents=4, nb_objects=1, obs_range=0.4, 
+                   collision_pen=10.0, relative_coord=True, dist_reward=False):
         world = PushWorld(nb_objects)
         # add agent
         self.nb_agents = nb_agents
@@ -78,9 +79,8 @@ class Scenario(BaseScenario):
         for i, agent in enumerate(world.agents):
             agent.name = 'agent %d' % i
             agent.silent = True
-            agent.size = 0.025
+            agent.size = 0.05
             agent.initial_mass = 0.4
-            #agent.max_speed = 0.3
             agent.color = np.array([0.5,0.0,0.0])
         # Objects and landmarks
         self.nb_objects = nb_objects
@@ -88,6 +88,7 @@ class Scenario(BaseScenario):
         self.obs_range = obs_range
         self.collision_pen = collision_pen
         self.relative_coord = relative_coord
+        self.dist_reward = dist_reward
         # make initial conditions
         self.reset_world(world)
         return world
@@ -125,11 +126,12 @@ class Scenario(BaseScenario):
             )
 
         # Reward based on distance to object
-        dist = 0
-        for agent in world.agents:
-            dist += get_dist(agent.state.p_pos, world.objects[0].state.p_pos)
-        dist /= self.nb_agents
-        rew -= dist
+        if self.dist_reward:
+            dist = 0
+            for agent in world.agents:
+                dist += get_dist(agent.state.p_pos, world.objects[0].state.p_pos)
+            dist /= self.nb_agents
+            rew -= dist
 
         # Penalty for collision between agents
         if agent.collide:
