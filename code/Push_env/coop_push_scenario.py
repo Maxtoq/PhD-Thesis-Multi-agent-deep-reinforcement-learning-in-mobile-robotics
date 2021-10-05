@@ -104,17 +104,7 @@ class Scenario(BaseScenario):
 
     def done(self, agent, world):
         # Done if all objects are on their landmarks
-        done = False
-        for i, obj in enumerate(world.objects):
-            dist = get_dist(
-                obj.state.p_pos, 
-                world.landmarks[i].state.p_pos
-            )
-            if dist <= LANDMARK_SIZE:
-                done = True
-            else:
-                done = False
-        return done
+        return self._done_flag
 
     def reset_world(self, world):
         world.reset()
