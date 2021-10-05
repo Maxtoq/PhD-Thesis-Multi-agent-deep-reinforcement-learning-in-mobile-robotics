@@ -3,6 +3,12 @@ import numpy as np
 from multiagent.scenario import BaseScenario
 from multiagent.core import World, Agent, Landmark, Action, Entity
 
+LANDMARK_SIZE = 0.03
+OBJECT_SIZE = 0.16
+OBJECT_MASS = 2.0
+AGENT_SIZE = 0.05
+AGENT_MASS = 0.4
+
 def get_dist(pos1, pos2, squared=False):
     dist = np.sum(np.square(pos1 - pos2))
     if squared:
@@ -44,13 +50,13 @@ class PushWorld(World):
         # Object
         self.objects[obj_i].name = 'object %d' % len(self.objects)
         self.objects[obj_i].color = color
-        self.objects[obj_i].size = 0.16
-        self.objects[obj_i].initial_mass = 2.0
+        self.objects[obj_i].size = OBJECT_SIZE
+        self.objects[obj_i].initial_mass = OBJECT_MASS
         # Landmark
         self.landmarks[obj_i].name = 'landmark %d' % len(self.landmarks)
         self.landmarks[obj_i].collide = False
         self.landmarks[obj_i].color = color
-        self.landmarks[obj_i].size = 0.03
+        self.landmarks[obj_i].size = LANDMARK_SIZE
         # Set initial positions
         if min_dist is not None:
             while True:
@@ -79,31 +85,36 @@ class Scenario(BaseScenario):
         for i, agent in enumerate(world.agents):
             agent.name = 'agent %d' % i
             agent.silent = True
-            agent.size = 0.05
-            agent.initial_mass = 0.4
+            agent.size = AGENT_SIZE
+            agent.initial_mass = AGENT_MASS
             agent.color = np.array([0.5,0.0,0.0])
         # Objects and landmarks
         self.nb_objects = nb_objects
-        # world attributes
+        # Scenario attributes
         self.obs_range = obs_range
-        self.collision_pen = collision_pen
         self.relative_coord = relative_coord
         self.dist_reward = dist_reward
+        # Reward attributes
+        self.collision_pen = collision_pen
+        # Flag for end of episode
+        self._done_flag = False
         # make initial conditions
         self.reset_world(world)
         return world
 
     def done(self, agent, world):
         # Done if all objects are on their landmarks
-        tot_dist = 0.0
-        for i, object in enumerate(world.objects):
-            tot_dist += get_dist(
-                object.state.p_pos, 
+        done = False
+        for i, obj in enumerate(world.objects):
+            dist = get_dist(
+                obj.state.p_pos, 
                 world.landmarks[i].state.p_pos
             )
-        if tot_dist == 0.0:
-            return True
-        return False
+            if dist <= LANDMARK_SIZE:
+                done = True
+            else:
+                done = False
+        return done
 
     def reset_world(self, world):
         world.reset()
@@ -117,21 +128,18 @@ class Scenario(BaseScenario):
 
     def reward(self, agent, world):
         # Reward = -1 x squared distance between objects and corresponding landmarks
-        rew = 0
-        for i, obj in enumerate(world.objects):
-            rew -= get_dist(
-                obj.state.p_pos, 
-                world.landmarks[i].state.p_pos, 
-                squared=True
-            )
+        dists = [get_dist(obj.state.p_pos, world.landmarks[i].state.p_pos)
+                    for i, obj in enumerate(world.objects)]
+        rew = -sum([d ** 2 for d in dists])
+        # Check if done
+        self._done_flag = all(d <= LANDMARK_SIZE for d in dists)
+
 
         # Reward based on distance to object
         if self.dist_reward:
-            dist = 0
-            for agent in world.agents:
-                dist += get_dist(agent.state.p_pos, world.objects[0].state.p_pos)
-            dist /= self.nb_agents
-            rew -= dist
+            moy_dist = sum([get_dist(agent.state.p_pos, world.objects[0].state.p_pos)
+                                for agent in world.agents]) / self.nb_agents
+            rew -= moy_dist
 
         # Penalty for collision between agents
         if agent.collide:

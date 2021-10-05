@@ -116,7 +116,7 @@ def run(config):
     np.random.seed(config.seed)
     if not USE_CUDA:
         torch.set_num_threads(config.n_training_threads)
-        
+
     env = make_parallel_env(config.env_path, config.n_rollout_threads, config.seed,
                             config.discrete_action, sce_conf)
 
@@ -211,7 +211,7 @@ if __name__ == '__main__':
     parser.add_argument("--n_training_threads", default=6, type=int)
     parser.add_argument("--buffer_length", default=int(1e6), type=int)
     parser.add_argument("--n_episodes", default=25000, type=int)
-    parser.add_argument("--episode_length", default=250, type=int)
+    parser.add_argument("--episode_length", default=100, type=int)
     parser.add_argument("--steps_per_update", default=1000, type=int)
     parser.add_argument("--batch_size",
                         default=1024, type=int,

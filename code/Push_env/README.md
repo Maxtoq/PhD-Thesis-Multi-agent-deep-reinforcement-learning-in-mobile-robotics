@@ -13,7 +13,10 @@ This command will run the training script for the MADDPG model. The first argume
 The default number of episodes is 25000, which is only good for checking that the script works. For a proper training process, you have to specify the number of episodes with the argument `--n_episodes`. You'll also need to set the number of exploration episodes with the argument `--n_exploration_eps`, otherwise it will be set to the default 25000.
 
 A classic command for running the training script on the pushing scenario:
-> python train.py my_scenario.py maddpg --n_episodes=1000000 --n_exploration_eps=1000000
+> python train.py coop_push_scenario.py maddpg --n_episodes=1000000 --n_exploration_eps=1000000
+
+Command for running the training script on the coop push scenario with 30 parallel environments, with discrete actions and a special scenario config file:
+> python train.py coop_push_scenario.py 2addpg_BIG_fo_disc_abs_distrew_100 --n_episodes=1000000 --n_exploration_eps=1000000 --n_rollout_threads=30 --steps_per_update=30000 --batch_size=4096 --discrete_action --sce_conf_path configs/2a_1o_fullobs_absolute_distrew.json
 
 ## Continue an existing run
 You can continue an existing run, loading a checkpoint for the model. To do so, use the argument `--run_name`. The run name must be of the form "run<number>" and correspond to an existing directory where a run has been saved. This directory should therefore contain a "model.pt" file. 

@@ -28,8 +28,6 @@ def run(config):
     # Create environment
     env = make_env(config.env_path, discrete_action=config.discrete_action, 
                            sce_conf=sce_conf)
-    env.seed(config.seed * 1000)
-    #np.random.seed(config.seed * 1000)
 
     for ep_i in range(config.n_episodes):
         obs = env.reset()
@@ -68,7 +66,7 @@ if __name__ == '__main__':
                         help="Path to the model checkpoint")
     parser.add_argument("--seed",default=1, type=int, help="Random seed")
     parser.add_argument("--n_episodes", default=1, type=int)
-    parser.add_argument("--episode_length", default=250, type=int)
+    parser.add_argument("--episode_length", default=100, type=int)
     parser.add_argument("--sce_conf_path", default=None, type=str,
                         help="Path to the scenario config file")
     parser.add_argument("--discrete_action", action='store_true')
