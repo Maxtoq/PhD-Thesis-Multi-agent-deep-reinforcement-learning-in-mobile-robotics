@@ -118,11 +118,13 @@ class Scenario(BaseScenario):
 
     def reward(self, agent, world):
         # Reward = -1 x squared distance between objects and corresponding landmarks
-        dists = [get_dist(obj.state.p_pos, world.landmarks[i].state.p_pos)
+        dists = [get_dist(obj.state.p_pos, 
+                          world.landmarks[i].state.p_pos,
+                          squared=True)
                     for i, obj in enumerate(world.objects)]
-        rew = -sum([d ** 2 for d in dists])
+        rew = -sum(dists)
         # Check if done
-        self._done_flag = all(d <= LANDMARK_SIZE for d in dists)
+        self._done_flag = all(d <= LANDMARK_SIZE ** 2 for d in dists)
 
 
         # Reward based on distance to object

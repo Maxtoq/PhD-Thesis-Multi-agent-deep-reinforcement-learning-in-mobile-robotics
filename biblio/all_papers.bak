@@ -5684,6 +5684,20 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   primaryclass  = {cs.RO},
 }
 
+@Article{Ecoffet2021,
+  author        = {Paul Ecoffet and Nicolas Fontbonne and Jean-Baptiste André and Nicolas Bredeche},
+  title         = {Policy Search with Rare Significant Events: Choosing the Right Partner to Cooperate with},
+  year          = {2021},
+  month         = mar,
+  abstract      = {This paper focuses on a class of reinforcement learning problems where significant events are rare and limited to a single positive reward per episode. A typical example is that of an agent who has to choose a partner to cooperate with, while a large number of partners are simply not interested in cooperating, regardless of what the agent has to offer. We address this problem in a continuous state and action space with two different kinds of search methods: a gradient policy search method and a direct policy search method using an evolution strategy. We show that when significant events are rare, gradient information is also scarce, making it difficult for policy gradient search methods to find an optimal policy, with or without a deep neural architecture. On the other hand, we show that direct policy search methods are invariant to the rarity of significant events, which is yet another confirmation of the unique role evolutionary algorithms has to play as a reinforcement learning method.},
+  archiveprefix = {arXiv},
+  eprint        = {2103.06846},
+  file          = {:Ecoffet2021 - Policy Search with Rare Significant Events_ Choosing the Right Partner to Cooperate with.pdf:PDF},
+  groups        = {Evolution Strategy},
+  keywords      = {cs.LG, cs.AI, cs.NE, I.2.6; I.2},
+  primaryclass  = {cs.LG},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -5736,7 +5750,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Offline RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
@@ -5744,4 +5758,5 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 1 StaticGroup:Language-Augmented RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Language\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Memory\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Evolution Strategy\;0\;1\;0x8a8a8aff\;\;\;;
 }

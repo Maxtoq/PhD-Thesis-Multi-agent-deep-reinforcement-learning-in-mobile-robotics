@@ -41,7 +41,7 @@ if __name__ == "__main__":
         act_n = []
         for i, policy in enumerate(policies):
             act_n.append(policy.action(obs_n[i]))
-            #print(f'Agent {i}: \nobs:{obs_n[i]}\naction:{act_n[i]}')
+            print(f'Agent {i}: \nobs:{obs_n[i]}\naction:{act_n[i]}')
 
         # Environment step
         obs_n, reward_n, done_n, _ = env.step(act_n)
