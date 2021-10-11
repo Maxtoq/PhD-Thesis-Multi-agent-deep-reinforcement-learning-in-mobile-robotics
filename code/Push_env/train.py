@@ -69,25 +69,13 @@ def make_parallel_env(env_path, n_rollout_threads, seed, discrete_action,
     else:
         return SubprocVecEnv([get_env_fn(i) for i in range(n_rollout_threads)])
 
-def run(config):
-    start_ep = 0
+def get_paths(config):
     # Get environment name from script path
     env_name = re.findall("\/?([^\/.]*)\.py", config.env_path)[0]
     # Get path of the run directory
     model_dir = Path('./models') / env_name / config.model_name
     if not model_dir.exists():
         curr_run = 'run1'
-    elif config.run_name is not None:
-        run_dir = model_dir / config.run_name
-        if not run_dir.exists():
-            sys.exit('Error: run directory %s does not exist.' % run_dir)
-        model_cp_path = run_dir / 'model.pt'
-        if not model_cp_path.exists():
-            sys.exit('Error: model checkpoint path %s does not exist. \
-                Unable to load the run.' % model_cp_path)
-        curr_run = config.run_name
-        with open(str(run_dir / 'logs' / 'ep_nb.txt')) as f:
-            start_ep = int(f.read()) + 1
     else:
         exst_run_nums = [int(str(folder.name).split('run')[1]) for folder in
                          model_dir.iterdir() if
@@ -101,9 +89,10 @@ def run(config):
     log_dir = run_dir / 'logs'
     if not log_dir.exists():
         os.makedirs(log_dir)
-    logger = SummaryWriter(str(log_dir))
 
-    # Load scenario config
+    return run_dir, model_cp_path, log_dir
+
+def load_scenario_config(config, run_dir):
     sce_conf = {}
     if config.sce_conf_path is not None:
         copyfile(config.sce_conf_path, run_dir / 'sce_config.json')
@@ -111,6 +100,17 @@ def run(config):
             sce_conf = json.load(cf)
             print('Special config for scenario:', config.env_path)
             print(sce_conf, '\n')
+    return sce_conf
+
+def run(config):
+    # Get paths for saving logs and model
+    run_dir, model_cp_path, log_dir = get_paths(config)
+
+    # Init summary writer
+    logger = SummaryWriter(str(log_dir))
+
+    # Load scenario config
+    sce_conf = load_scenario_config(config, run_dir)
 
     torch.manual_seed(config.seed)
     np.random.seed(config.seed)
@@ -120,22 +120,26 @@ def run(config):
     env = make_parallel_env(config.env_path, config.n_rollout_threads, config.seed,
                             config.discrete_action, sce_conf)
 
-    if config.run_name is None:
-        maddpg = MADDPG.init_from_env(env, agent_alg=config.agent_alg,
-                                    adversary_alg=config.adversary_alg,
-                                    tau=config.tau,
-                                    lr=config.lr,
-                                    hidden_dim=config.hidden_dim,
-                                    shared_params=config.shared_params)
-    else:
-        maddpg = MADDPG.init_from_save(model_cp_path)
+    maddpg = MADDPG.init_from_env(
+        env, 
+        agent_alg=config.agent_alg,
+        adversary_alg=config.adversary_alg,
+        tau=config.tau,
+        lr=config.lr,
+        hidden_dim=config.hidden_dim,
+        shared_params=config.shared_params
+    )
 
-    replay_buffer = ReplayBuffer(config.buffer_length, maddpg.nagents,
-                                 [obsp.shape[0] for obsp in env.observation_space],
-                                 [acsp.shape[0] if isinstance(acsp, Box) else acsp.n
-                                  for acsp in env.action_space])
+    replay_buffer = ReplayBuffer(
+        config.buffer_length, 
+        maddpg.nagents,
+        [obsp.shape[0] for obsp in env.observation_space],
+        [acsp.shape[0] if isinstance(acsp, Box) else acsp.n
+        for acsp in env.action_space]
+    )
+    
     t = 0
-    for ep_i in tqdm(range(start_ep, config.n_episodes, config.n_rollout_threads)):
+    for ep_i in tqdm(range(0, config.n_episodes, config.n_rollout_threads)):
         #print("Episodes %i-%i of %i" % (ep_i + 1,
         #                                ep_i + 1 + config.n_rollout_threads,
         #                                config.n_episodes))
@@ -230,7 +234,6 @@ if __name__ == '__main__':
                         default="MADDPG", type=str,
                         choices=['MADDPG', 'DDPG'])
     parser.add_argument("--discrete_action", action='store_true')
-    parser.add_argument("--run_name", default=None, type=str)
     parser.add_argument("--shared_params", action='store_true')
     parser.add_argument("--sce_conf_path", default=None, type=str,
                         help="Path to the scenario config file")

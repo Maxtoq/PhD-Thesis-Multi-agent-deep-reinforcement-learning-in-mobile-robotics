@@ -1,8 +1,6 @@
 import argparse
-import json
 import cma
 import os
-import re
 import numpy as np
 from tqdm import tqdm
 from gym.spaces import Box
@@ -10,10 +8,35 @@ from pathlib import Path
 from shutil import copyfile
 from tensorboardX import SummaryWriter
 from utils.env_wrappers import SubprocVecEnv, DummyVecEnv
+from train import make_parallel_env, get_paths, load_scenario_config
+from utils.networks import MLPNetwork
 
 
 def run(config):
-    pass
+    # Get paths for saving logs and model
+    run_dir, model_cp_path, log_dir = get_paths(config)
+
+    # Init summary writer
+    logger = SummaryWriter(str(log_dir))
+
+    # Load scenario config
+    sce_conf = load_scenario_config(config, run_dir)
+
+    np.random.seed(config.seed)
+
+    env = make_parallel_env(config.env_path, config.n_rollout_threads, config.seed,
+                            config.discrete_action, sce_conf)
+
+    # Create model
+    num_in_pol = env.observation_space
+    if config.discrete_action:
+        num_out_pol = env.action_space.n
+    else:
+        num_out_pol = env.action_space.shape[0]
+    policy = MLPNetwork(num_in_pol, num_out_pol, config.hidden_dim, 
+                        constrain_out=True, discrete_action=config.discrete_action)
+    
+    
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
