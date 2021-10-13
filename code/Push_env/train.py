@@ -117,8 +117,8 @@ def run(config):
     if not USE_CUDA:
         torch.set_num_threads(config.n_training_threads)
 
-    env = make_parallel_env(config.env_path, config.n_rollout_threads, config.seed,
-                            config.discrete_action, sce_conf)
+    env = make_parallel_env(config.env_path, config.n_rollout_threads, 
+                            config.seed, config.discrete_action, sce_conf)
 
     maddpg = MADDPG.init_from_env(
         env, 

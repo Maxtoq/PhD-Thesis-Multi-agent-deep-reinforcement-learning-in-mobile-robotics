@@ -26,6 +26,9 @@ def load_array_in_model(param_array, model):
         new_state_dict[key] = param_tensor
     model.load_state_dict(new_state_dict, strict=True)
 
+def save_model(model, path):
+    torch.save(model.state_dict(), path)
+
 def run(config):
     # Get paths for saving logs and model
     run_dir, model_cp_path, log_dir = get_paths(config)
@@ -50,7 +53,6 @@ def run(config):
         num_out_pol = env.action_space[0].n
     else:
         num_out_pol = env.action_space[0].shape[0]
-    print(num_in_pol, num_out_pol)
     policy = MLPNetwork(num_in_pol, num_out_pol, config.hidden_dim, norm_in=False, 
                         constrain_out=True, discrete_action=config.discrete_action)
     
@@ -73,56 +75,42 @@ def run(config):
             
             # Reset env
             obs = env.reset()
-
+            episode_reward = 0.0
             for et_i in range(config.episode_length):
                 # Rearrange observations to fit in the model
                 torch_obs = Variable(torch.Tensor(np.vstack(obs)),
                                      requires_grad=False)
-                print(torch_obs)
-                print(torch_obs.shape)
+              
                 actions = policy(torch_obs)
-                print(actions)
-                return
-                torch_obs = [Variable(torch.Tensor(np.vstack(obs[:, i])),
-                                    requires_grad=False)
-                            for i in range(nb_agents)]
-                print(es.popsize)
-                print(torch_obs[0].shape)
-                return
-
-                # Get actions
-                torch_agent_actions = [policy(obs) for obs in torch_obs]
 
                 # Convert actions to numpy arrays
-                agent_actions = [ac.data.numpy() for ac in torch_agent_actions]
+                agent_actions = [ac.data.numpy() for ac in actions]
 
-                # Rearrange actions to be per environment
-                actions = [[ac[i] for ac in agent_actions] for i in range(config.n_rollout_threads)]
-                next_obs, rewards, dones, infos = env.step(actions)
+                next_obs, rewards, dones, infos = env.step(agent_actions)
 
-                if dones[0,0]:
+                episode_reward += sum(rewards) / nb_agents
+
+                if dones[0]:
                     break
 
                 obs = next_obs
-        
-            # Get final rewards
-            # tell_rewards[] = 
+            tell_rewards.append(-episode_reward)
 
         # Update CMA-ES model
-
+        es.tell(solutions, tell_rewards)
 
         # Log rewards
-        for a_i, a_ep_rew in enumerate(ep_rews):
-            logger.add_scalar('agent%i/mean_episode_rewards' % a_i, 
-                            a_ep_rew / config.n_rollout_threads, ep_i)
+        logger.add_scalar('mean_episode_rewards', 
+                          -sum(tell_rewards) / es.popsize, ep_i)
 
         # Save model
-        if ep_i % config.save_interval < config.n_rollout_threads:
+        if ep_i % config.save_interval < es.popsize:
             os.makedirs(run_dir / 'incremental', exist_ok=True)
-            #maddpg.save(run_dir / 'incremental' / ('model_ep%i.pt' % (ep_i + 1)))
-            #maddpg.save(model_cp_path)
+            save_model(policy, run_dir / 'incremental' / 
+                                ('model_ep%i.pt' % (ep_i + 1)))
+            save_model(policy, model_cp_path)
 
-    #maddpg.save(model_cp_path)
+    save_model(policy, model_cp_path)
     env.close()
     logger.export_scalars_to_json(str(log_dir / 'summary.json'))
     logger.close()
@@ -141,10 +129,7 @@ if __name__ == '__main__':
     parser.add_argument("--episode_length", default=100, type=int)
     parser.add_argument("--save_interval", default=1000, type=int)
     parser.add_argument("--hidden_dim", default=64, type=int)
-    parser.add_argument("--lr", default=0.01, type=float)
     parser.add_argument("--discrete_action", action='store_true')
-    parser.add_argument("--run_name", default=None, type=str)
-    parser.add_argument("--shared_params", action='store_true')
     parser.add_argument("--sce_conf_path", default=None, type=str,
                         help="Path to the scenario config file")
 

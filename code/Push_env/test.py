@@ -40,7 +40,7 @@ def run(config):
                                 requires_grad=False)
                         for a in range(maddpg.nagents)]
             # get actions as torch Variables
-            torch_agent_actions = maddpg.step(torch_obs, explore=True)
+            torch_agent_actions = maddpg.step(torch_obs)
             # convert actions to numpy arrays
             actions = [ac.data.numpy().squeeze() for ac in torch_agent_actions]
             #print(agent_actions)
