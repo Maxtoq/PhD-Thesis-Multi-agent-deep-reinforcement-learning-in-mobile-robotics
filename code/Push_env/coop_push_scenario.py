@@ -115,6 +115,7 @@ class Scenario(BaseScenario):
         # Set initial velocity
         for entity in world.entities:
             entity.state.p_vel = np.zeros(world.dim_p)
+        self._done_flag = False
 
     def reward(self, agent, world):
         # Reward = -1 x squared distance between objects and corresponding landmarks

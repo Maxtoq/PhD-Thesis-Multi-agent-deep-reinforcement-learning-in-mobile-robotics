@@ -57,7 +57,7 @@ def run(config):
                         constrain_out=True, discrete_action=config.discrete_action)
     
     # Create the CMA-ES trainer
-    es = cma.CMAEvolutionStrategy(np.zeros(get_num_params(policy)), 1, 
+    es = cma.CMAEvolutionStrategy(np.zeros(get_num_params(policy)), 0.01, 
                                             {'seed': config.seed})
     
     t = 0
@@ -100,7 +100,7 @@ def run(config):
         es.tell(solutions, tell_rewards)
 
         # Log rewards
-        logger.add_scalar('mean_episode_rewards', 
+        logger.add_scalar('agent0/mean_episode_rewards', 
                           -sum(tell_rewards) / es.popsize, ep_i)
 
         # Save model

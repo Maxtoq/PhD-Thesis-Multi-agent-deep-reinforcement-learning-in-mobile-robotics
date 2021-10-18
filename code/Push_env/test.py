@@ -33,8 +33,6 @@ def run(config):
         obs = env.reset()
         rew = 0
         for step_i in range(config.episode_length):
-            # Get each agent's action
-            act_n = []
             # rearrange observations to be per agent, and convert to torch Variable
             torch_obs = [Variable(torch.Tensor(obs[a]).unsqueeze(0),
                                 requires_grad=False)
