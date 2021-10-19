@@ -130,9 +130,9 @@ class Scenario(BaseScenario):
 
         # Reward based on distance to object
         if self.dist_reward:
-            moy_dist = sum([get_dist(agent.state.p_pos, world.objects[0].state.p_pos)
+            mean_dist = sum([get_dist(agent.state.p_pos, world.objects[0].state.p_pos)
                                 for agent in world.agents]) / self.nb_agents
-            rew -= moy_dist
+            rew -= mean_dist
 
         # Penalty for collision between agents
         if agent.collide:

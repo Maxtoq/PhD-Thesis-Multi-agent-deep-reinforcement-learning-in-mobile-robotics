@@ -3,6 +3,7 @@ import torch
 import cma
 import os
 import numpy as np
+import torch.nn.functional as F
 from tqdm import tqdm
 from torch.autograd import Variable
 from gym.spaces import Box
@@ -55,9 +56,11 @@ def run(config):
         num_out_pol = env.action_space[0].shape[0]
     policy = MLPNetwork(num_in_pol, num_out_pol, config.hidden_dim, norm_in=False, 
                         constrain_out=True, discrete_action=config.discrete_action)
-    
+    if config.discrete_action:
+        policy.out_fn = F.softmax
+
     # Create the CMA-ES trainer
-    es = cma.CMAEvolutionStrategy(np.zeros(get_num_params(policy)), 0.01, 
+    es = cma.CMAEvolutionStrategy(np.zeros(get_num_params(policy)), 1, 
                                             {'seed': config.seed})
     
     t = 0
