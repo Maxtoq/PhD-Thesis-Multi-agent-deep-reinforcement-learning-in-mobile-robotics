@@ -6,11 +6,8 @@ import numpy as np
 import torch.nn.functional as F
 from tqdm import tqdm
 from torch.autograd import Variable
-from gym.spaces import Box
-from pathlib import Path
-from shutil import copyfile
 from tensorboardX import SummaryWriter
-from train import get_paths, load_scenario_config, make_env
+from utils.make_env import get_paths, load_scenario_config, make_env
 from utils.networks import MLPNetwork
 
 

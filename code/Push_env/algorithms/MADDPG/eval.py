@@ -3,11 +3,9 @@ import torch
 import json
 import sys
 import os
-import numpy as np
-
 from torch.autograd import Variable
-from algorithms.maddpg import MADDPG
-from train import make_env
+from maddpg import MADDPG
+from utils.make_env import make_env
 
 def run(config):
     # Load model
