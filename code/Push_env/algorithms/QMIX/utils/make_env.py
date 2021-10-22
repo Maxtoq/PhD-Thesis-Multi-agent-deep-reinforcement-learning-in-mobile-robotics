@@ -7,7 +7,7 @@ from pathlib import Path
 from shutil import copyfile
 from .env_wrappers import SubprocVecEnv, DummyVecEnv
 
-def make_env(scenario_path, sce_conf={}, discrete_action=False):
+def make_env(scenario_path, sce_conf={}, benchmark=False, discrete_action=False):
     '''
     Creates a MultiAgentEnv object as env. This can be used similar to a gym
     environment by calling env.reset() and env.step().
