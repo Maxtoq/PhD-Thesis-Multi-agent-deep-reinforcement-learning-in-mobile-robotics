@@ -1,21 +1,22 @@
-import torch
 import json
-import sys
 import imp
-import re
+import sys
 import os
+import re
 import numpy as np
 from pathlib import Path
 from shutil import copyfile
-from config import get_config
-from utils.util import get_cent_act_dim, get_dim_from_space
-from envs.mpe.environment import MultiAgentEnv
-from envs.env_wrappers import DummyVecEnv, SubprocVecEnv
+import wandb
+import torch
+from offpolicy.config import get_config
+from offpolicy.utils.util import get_cent_act_dim, get_dim_from_space
+from offpolicy.envs.mpe.environment import MultiAgentEnv
+from offpolicy.envs.env_wrappers import DummyVecEnv, SubprocVecEnv
 
 
 def get_paths(config):
     # Get environment name from script path
-    env_name = re.findall("\/?([^\/.]*)\.py", config.scenario_path)[0]
+    env_name = re.findall("\/?([^\/.]*)\.py", config.scenario_name)[0]
     # Get path of the run directory
     model_dir = Path('./models') / env_name / config.model_name
     if not model_dir.exists():
@@ -42,18 +43,18 @@ def load_scenario_config(config, run_dir):
         copyfile(config.sce_conf_path, run_dir / 'sce_config.json')
         with open(config.sce_conf_path) as cf:
             sce_conf = json.load(cf)
-            print('Special config for scenario:', config.scenario_path)
+            print('Special config for scenario:', config.scenario_name)
             print(sce_conf, '\n')
     return sce_conf
 
-def make_env(scenario_path, sce_conf={}, discrete_action=False):
+def make_env(scenario_name, sce_conf={}, discrete_action=False):
     '''
     Creates a MultiAgentEnv object as env. This can be used similar to a gym
     environment by calling env.reset() and env.step().
     Use env.render() to view the environment on the screen.
 
     Input:
-        scenario_path   :   path of the scenario script
+        scenario_name   :   path of the scenario script
                             (without the .py extension)
         benchmark       :   whether you want to produce benchmarking data
                             (usually only done during evaluation)
@@ -65,7 +66,7 @@ def make_env(scenario_path, sce_conf={}, discrete_action=False):
     '''
 
     # load scenario from script
-    scenario = imp.load_source('', scenario_path).Scenario()
+    scenario = imp.load_source('', scenario_name).Scenario()
     # create world
     world = scenario.make_world(**sce_conf)
     # create multiagent environment
@@ -79,7 +80,7 @@ def make_train_env(all_args, sce_conf):
     def get_env_fn(rank):
         def init_env():
             if all_args.env_name == "MPE":
-                env = make_env(all_args.scenario_path, sce_conf)
+                env = make_env(all_args.scenario_name, sce_conf)
             else:
                 print("Can not support the " +
                       all_args.env_name + "environment.")
@@ -97,7 +98,7 @@ def make_eval_env(all_args, sce_conf):
     def get_env_fn(rank):
         def init_env():
             if all_args.env_name == "MPE":
-                env = make_env(all_args.scenario_path, sce_conf)
+                env = make_env(all_args.scenario_name, sce_conf)
             else:
                 print("Can not support the " +
                       all_args.env_name + "environment.")
@@ -112,7 +113,7 @@ def make_eval_env(all_args, sce_conf):
 
 
 def parse_args(args, parser):
-    parser.add_argument('--scenario_path', type=str,
+    parser.add_argument('--scenario_name', type=str,
                         help="Path to scenario to train on")
     parser.add_argument("--num_landmarks", type=int, default=3)
     parser.add_argument('--num_agents', type=int,
@@ -160,7 +161,7 @@ def main(args):
 
     # create env
     env = make_train_env(all_args, sce_conf)
-    num_agents = all_args.num_agents
+    num_agents = sce_conf['nb_agents']
 
     # create policies and mapping fn
     if all_args.share_policy:
@@ -218,7 +219,7 @@ def main(args):
         eval_env.close()
 
     runner.writter.export_scalars_to_json(
-        str(runner.log_dir + '/summary.json'))
+            str(runner.log_dir + '/summary.json'))
     runner.writter.close()
 
 

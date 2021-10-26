@@ -1,7 +1,7 @@
 import numpy as np
 
-from envs.mpe.scenario import BaseScenario
-from envs.mpe.core import World, Agent, Landmark, Action, Entity
+from offpolicy.envs.mpe.scenario import BaseScenario
+from offpolicy.envs.mpe.core import World, Agent, Landmark, Action, Entity
 
 LANDMARK_SIZE = 0.03
 OBJECT_SIZE = 0.16
@@ -68,7 +68,7 @@ class PushWorld(World):
                     break
 
     def step(self):
-        super(PushWorld, self).step()
+        super().step()
         # Randomly add an object
         #if np.random.random() < self.obj_prob:
         #    self.add_object_and_landmark()
