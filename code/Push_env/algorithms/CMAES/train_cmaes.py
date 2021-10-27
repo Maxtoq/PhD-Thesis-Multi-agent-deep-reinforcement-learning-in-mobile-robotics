@@ -3,16 +3,58 @@ import torch
 import cma
 import os
 import numpy as np
+import torch.nn as nn
 import torch.nn.functional as F
 from tqdm import tqdm
 from torch.autograd import Variable
 from tensorboardX import SummaryWriter
 from utils.make_env import get_paths, load_scenario_config, make_env
-from utils.networks import MLPNetwork
+
+
+class PolicyNetwork(nn.Module):
+    def __init__(self, input_dim, out_dim, hidden_dim=32, nb_hidden_layers=0, 
+                 nonlin=F.relu, discrete_action=False):
+        """
+        Inputs:
+            input_dim (int): Number of dimensions in input
+            out_dim (int): Number of dimensions in output
+            hidden_dim (int): Number of hidden dimensions
+            nb_hidden_layers (int): Number of hidden layers
+            nonlin (PyTorch function): Nonlinearity to apply to hidden layers
+        """
+        super(PolicyNetwork, self).__init__()
+
+        self.fc_in = nn.Linear(input_dim, hidden_dim)
+        self.fc_hidden = []
+        for i in range(nb_hidden_layers):
+            self.fc_hidden.append(nn.Linear(hidden_dim, hidden_dim))
+        self.fc_out = nn.Linear(hidden_dim, out_dim)
+        self.nonlin = nonlin
+        if not discrete_action:
+            # Constrain between 0 and 1
+            # initialize small to prevent saturation
+            self.fc_out.weight.data.uniform_(-3e-3, 3e-3)
+            self.out_fn = F.tanh
+        else:  # one hot argmax
+            self.out_fn = lambda x: (x == x.max(1, keepdim=True)[0]).float()
+
+    def forward(self, X):
+        """
+        Inputs:
+            X (PyTorch Matrix): Batch of observations
+        Outputs:
+            out (PyTorch Matrix): Output of network (actions)
+        """
+        x = self.nonlin(self.fc_in(X))
+        for fc in self.fc_hidden:
+            x = self.nonlin(fc(x))
+        out = self.out_fn(self.fc_out(x))
+        return out
 
 
 def get_num_params(model):
     return sum(p.numel() for p in model.parameters())
+
 
 def load_array_in_model(param_array, model):
     new_state_dict = model.state_dict()
@@ -24,8 +66,10 @@ def load_array_in_model(param_array, model):
         new_state_dict[key] = param_tensor
     model.load_state_dict(new_state_dict, strict=True)
 
+
 def save_model(model, path):
     torch.save(model.state_dict(), path)
+
 
 def run(config):
     # Get paths for saving logs and model
@@ -45,16 +89,14 @@ def run(config):
                    discrete_action=config.discrete_action)
 
     # Create model
-    # Toy env for getting in and out dimensions
     num_in_pol = env.observation_space[0].shape[0]
     if config.discrete_action:
         num_out_pol = env.action_space[0].n
     else:
         num_out_pol = env.action_space[0].shape[0]
-    policy = MLPNetwork(num_in_pol, num_out_pol, config.hidden_dim, norm_in=False, 
-                        constrain_out=True, discrete_action=config.discrete_action)
-    if config.discrete_action:
-        policy.out_fn = F.softmax
+    policy = PolicyNetwork(num_in_pol, num_out_pol, config.hidden_dim,  
+                           discrete_action=config.discrete_action)
+    policy.eval()
 
     # Create the CMA-ES trainer
     es = cma.CMAEvolutionStrategy(np.zeros(get_num_params(policy)), 1, 
