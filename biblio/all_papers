@@ -5728,6 +5728,21 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   ranking       = {rank4},
 }
 
+@Article{Lin2021,
+  author        = {Toru Lin and Minyoung Huh and Chris Stauffer and Ser-Nam Lim and Phillip Isola},
+  title         = {Learning to Ground Multi-Agent Communication with Autoencoders},
+  year          = {2021},
+  month         = oct,
+  abstract      = {Communication requires having a common language, a lingua franca, between agents. This language could emerge via a consensus process, but it may require many generations of trial and error. Alternatively, the lingua franca can be given by the environment, where agents ground their language in representations of the observed world. We demonstrate a simple way to ground language in learned representations, which facilitates decentralized multi-agent communication and coordination. We find that a standard representation learning algorithm -- autoencoding -- is sufficient for arriving at a grounded common language. When agents broadcast these representations, they learn to understand and respond to each other's utterances and achieve surprisingly strong task performance across a variety of multi-agent communication environments.},
+  archiveprefix = {arXiv},
+  eprint        = {2110.15349},
+  file          = {:Lin2021 - Learning to Ground Multi Agent Communication with Autoencoders.pdf:PDF},
+  groups        = {Communication},
+  keywords      = {cs.LG, cs.AI, cs.CL, cs.MA},
+  primaryclass  = {cs.LG},
+  priority      = {prio1},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:

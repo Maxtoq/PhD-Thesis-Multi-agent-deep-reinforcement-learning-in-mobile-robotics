@@ -5698,6 +5698,51 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   primaryclass  = {cs.LG},
 }
 
+@Article{Salimans2017,
+  author        = {Tim Salimans and Jonathan Ho and Xi Chen and Szymon Sidor and Ilya Sutskever},
+  title         = {Evolution Strategies as a Scalable Alternative to Reinforcement Learning},
+  year          = {2017},
+  month         = mar,
+  abstract      = {We explore the use of Evolution Strategies (ES), a class of black box optimization algorithms, as an alternative to popular MDP-based RL techniques such as Q-learning and Policy Gradients. Experiments on MuJoCo and Atari show that ES is a viable solution strategy that scales extremely well with the number of CPUs available: By using a novel communication strategy based on common random numbers, our ES implementation only needs to communicate scalars, making it possible to scale to over a thousand parallel workers. This allows us to solve 3D humanoid walking in 10 minutes and obtain competitive results on most Atari games after one hour of training. In addition, we highlight several advantages of ES as a black box optimization technique: it is invariant to action frequency and delayed rewards, tolerant of extremely long horizons, and does not need temporal discounting or value function approximation.},
+  archiveprefix = {arXiv},
+  eprint        = {1703.03864},
+  file          = {:Salimans2017 - Evolution Strategies As a Scalable Alternative to Reinforcement Learning.pdf:PDF},
+  groups        = {Evolution Strategy},
+  keywords      = {stat.ML, cs.AI, cs.LG, cs.NE},
+  primaryclass  = {stat.ML},
+  ranking       = {rank5},
+}
+
+@Article{Such2017,
+  author        = {Felipe Petroski Such and Vashisht Madhavan and Edoardo Conti and Joel Lehman and Kenneth O. Stanley and Jeff Clune},
+  title         = {Deep Neuroevolution: Genetic Algorithms Are a Competitive Alternative for Training Deep Neural Networks for Reinforcement Learning},
+  year          = {2017},
+  month         = dec,
+  abstract      = {Deep artificial neural networks (DNNs) are typically trained via gradient-based learning algorithms, namely backpropagation. Evolution strategies (ES) can rival backprop-based algorithms such as Q-learning and policy gradients on challenging deep reinforcement learning (RL) problems. However, ES can be considered a gradient-based algorithm because it performs stochastic gradient descent via an operation similar to a finite-difference approximation of the gradient. That raises the question of whether non-gradient-based evolutionary algorithms can work at DNN scales. Here we demonstrate they can: we evolve the weights of a DNN with a simple, gradient-free, population-based genetic algorithm (GA) and it performs well on hard deep RL problems, including Atari and humanoid locomotion. The Deep GA successfully evolves networks with over four million free parameters, the largest neural networks ever evolved with a traditional evolutionary algorithm. These results (1) expand our sense of the scale at which GAs can operate, (2) suggest intriguingly that in some cases following the gradient is not the best choice for optimizing performance, and (3) make immediately available the multitude of neuroevolution techniques that improve performance. We demonstrate the latter by showing that combining DNNs with novelty search, which encourages exploration on tasks with deceptive or sparse reward functions, can solve a high-dimensional problem on which reward-maximizing algorithms (e.g.\ DQN, A3C, ES, and the GA) fail. Additionally, the Deep GA is faster than ES, A3C, and DQN (it can train Atari in ${\raise.17ex\hbox{$\scriptstyle\sim$}}$4 hours on one desktop or ${\raise.17ex\hbox{$\scriptstyle\sim$}}$1 hour distributed on 720 cores), and enables a state-of-the-art, up to 10,000-fold compact encoding technique.},
+  archiveprefix = {arXiv},
+  eprint        = {1712.06567},
+  file          = {:Such2017 - Deep Neuroevolution_ Genetic Algorithms Are a Competitive Alternative for Training Deep Neural Networks for Reinforcement Learning.pdf:PDF},
+  groups        = {Evolution Strategy},
+  keywords      = {cs.NE, cs.LG},
+  primaryclass  = {cs.NE},
+  ranking       = {rank4},
+}
+
+@Article{Lin2021,
+  author        = {Toru Lin and Minyoung Huh and Chris Stauffer and Ser-Nam Lim and Phillip Isola},
+  title         = {Learning to Ground Multi-Agent Communication with Autoencoders},
+  year          = {2021},
+  month         = oct,
+  abstract      = {Communication requires having a common language, a lingua franca, between agents. This language could emerge via a consensus process, but it may require many generations of trial and error. Alternatively, the lingua franca can be given by the environment, where agents ground their language in representations of the observed world. We demonstrate a simple way to ground language in learned representations, which facilitates decentralized multi-agent communication and coordination. We find that a standard representation learning algorithm -- autoencoding -- is sufficient for arriving at a grounded common language. When agents broadcast these representations, they learn to understand and respond to each other's utterances and achieve surprisingly strong task performance across a variety of multi-agent communication environments.},
+  archiveprefix = {arXiv},
+  eprint        = {2110.15349},
+  file          = {:http\://arxiv.org/pdf/2110.15349v1:PDF},
+  groups        = {Communication},
+  keywords      = {cs.LG, cs.AI, cs.CL, cs.MA},
+  primaryclass  = {cs.LG},
+  priority      = {prio1},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
