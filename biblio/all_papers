@@ -228,6 +228,7 @@
 
 @Article{Sekar2020,
   author        = {Ramanan Sekar and Oleh Rybkin and Kostas Daniilidis and Pieter Abbeel and Danijar Hafner and Deepak Pathak},
+  journal       = {ICML 2020},
   title         = {Planning to Explore via Self-Supervised World Models},
   year          = {2020},
   month         = may,
@@ -249,6 +250,7 @@
   groups        = {Model based, Disagreement, Model-based exploration, Intrinsic goals},
   keywords      = {cs.LG, cs.AI, cs.CV, cs.NE, cs.RO, stat.ML},
   primaryclass  = {cs.LG},
+  ranking       = {rank4},
   readstatus    = {read},
 }
 
@@ -390,6 +392,7 @@
 
 @Article{Shyam2018,
   author        = {Pranav Shyam and Wojciech Jaśkowski and Faustino Gomez},
+  journal       = {ICML 2019},
   title         = {Model-Based Active Exploration},
   year          = {2018},
   month         = oct,
@@ -408,6 +411,7 @@
   groups        = {Model-based exploration, Model based, Disagreement},
   keywords      = {cs.LG, cs.AI, cs.IT, cs.NE, math.IT, stat.ML},
   primaryclass  = {cs.LG},
+  ranking       = {rank3},
   readstatus    = {skimmed},
 }
 
@@ -5737,10 +5741,19 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   archiveprefix = {arXiv},
   eprint        = {2110.15349},
   file          = {:Lin2021 - Learning to Ground Multi Agent Communication with Autoencoders.pdf:PDF},
-  groups        = {Communication},
+  groups        = {Communication, Discrete language},
   keywords      = {cs.LG, cs.AI, cs.CL, cs.MA},
   primaryclass  = {cs.LG},
   priority      = {prio1},
+}
+
+@Misc{exa2021,
+  author    = {Mendonca, Russell and Rybkin, Oleh and Daniilidis, Kostas and Hafner, Danijar and Pathak, Deepak},
+  title     = {Discovering and Achieving Goals via World Models},
+  year      = {2021},
+  booktitle = {NeurIPS},
+  file      = {:exa2021 - Discovering and Achieving Goals Via World Models.pdf:PDF},
+  groups    = {Model-based exploration},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -5753,7 +5766,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Intrinsic goals\;0\;0\;0x8a8a8aff\;\;\;;
