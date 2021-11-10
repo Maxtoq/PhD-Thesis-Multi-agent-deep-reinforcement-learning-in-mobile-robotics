@@ -3,7 +3,7 @@ import argparse
 
 from multiagent.environment import MultiAgentEnv
 
-from coop_push_scenario import Scenario
+from coop_push_scenario_closed import Scenario
 
 class RandomPolicy():
     def __init__(self, env):
