@@ -75,26 +75,28 @@ class PushWorld(World):
         #if np.random.random() < self.obj_prob:
         #    self.add_object_and_landmark()
 
-    def apply_environment_force(self, p_force):
-        p_force = super().apply_environment_force(p_force)
-
-        # Check for wall collision
-        for i, e in enumerate(self.entities):
-            if not e.movable: continue
-            wall_force = np.zeros(self.dim_p)
-            # West wall
-            if e.state.p_pos[0] <= -1:
-                delta_pos = e.state.p_pos - np.array([-1, e.state.p_pos[1]])
-                dist = np.sqrt(np.sum(np.square(delta_pos)))
-                min_dist = e.size
-                # softmax penetration
-                k = self.contact_margin
-                penetration = 0#np.logaddexp(0, -(dist - min_dist)/k)*k
-                wall_force += self.contact_force * delta_pos \
-                                / dist * penetration
-            p_force[i] += wall_force
-        
-        return p_force
+    def integrate_state(self, p_force):
+        for i,entity in enumerate(self.entities):
+            if not entity.movable: continue
+            entity.state.p_vel = entity.state.p_vel * (1 - self.damping)
+            if (p_force[i] is not None):
+                entity.state.p_vel += (p_force[i] / entity.mass) * self.dt
+            if entity.max_speed is not None:
+                speed = np.sqrt(np.square(entity.state.p_vel[0]) + np.square(entity.state.p_vel[1]))
+                if speed > entity.max_speed:
+                    entity.state.p_vel = entity.state.p_vel / np.sqrt(np.square(entity.state.p_vel[0]) +
+                                                                  np.square(entity.state.p_vel[1])) * entity.max_speed
+            # Check for wall collision
+            temp_pos = entity.state.p_pos + entity.state.p_vel * self.dt
+            # West and East walls
+            if temp_pos[0] - entity.size <= -1 or \
+               temp_pos[0] + entity.size >= 1:
+                entity.state.p_vel[0] = 0.0
+            # North and South walls
+            if temp_pos[1] - entity.size <= -1 or \
+               temp_pos[1] + entity.size >= 1:
+                entity.state.p_vel[1] = 0.0
+            entity.state.p_pos += entity.state.p_vel * self.dt
                 
         
 
