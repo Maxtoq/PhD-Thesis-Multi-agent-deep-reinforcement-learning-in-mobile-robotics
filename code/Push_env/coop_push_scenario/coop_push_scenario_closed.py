@@ -3,10 +3,10 @@ import numpy as np
 from multiagent.scenario import BaseScenario
 from multiagent.core import World, Agent, Landmark, Action, Entity
 
-LANDMARK_SIZE = 0.03
-OBJECT_SIZE = 0.16
+LANDMARK_SIZE = 0.05
+OBJECT_SIZE = 0.08
 OBJECT_MASS = 2.0
-AGENT_SIZE = 0.05
+AGENT_SIZE = 0.025
 AGENT_MASS = 0.4
 
 def get_dist(pos1, pos2, squared=False):
@@ -61,9 +61,9 @@ class PushWorld(World):
         if min_dist is not None:
             while True:
                 self.objects[obj_i].state.p_pos = np.random.uniform(
-                    -1, 1, self.dim_p)
+                    -1 + OBJECT_SIZE, 1 - OBJECT_SIZE, self.dim_p)
                 self.landmarks[obj_i].state.p_pos = np.random.uniform(
-                    -1, 1, self.dim_p)
+                    -1 + OBJECT_SIZE, 1 - OBJECT_SIZE, self.dim_p)
                 dist = get_dist(self.objects[obj_i].state.p_pos, 
                                 self.landmarks[obj_i].state.p_pos)
                 if dist > min_dist and dist < max_dist:
@@ -193,12 +193,14 @@ class Scenario(BaseScenario):
                 # Pos: relative
                 if self.relative_coord:
                     entity_obs.append(np.concatenate((
-                        [1.0], (entity.state.p_pos - agent.state.p_pos), entity.state.p_vel
+                        #[1.0], (entity.state.p_pos - agent.state.p_pos), entity.state.p_vel
+                        (entity.state.p_pos - agent.state.p_pos), entity.state.p_vel
                     )))
                 # Pos: absolute
                 else:
                     entity_obs.append(np.concatenate((
-                        [1.0], entity.state.p_pos, entity.state.p_vel
+                        #[1.0], entity.state.p_pos, entity.state.p_vel
+                        entity.state.p_pos, entity.state.p_vel
                     )))
             else:
                 entity_obs.append(np.zeros(5))
@@ -211,13 +213,15 @@ class Scenario(BaseScenario):
                 # Pos: relative
                 if self.relative_coord:
                     entity_obs.append(np.concatenate((
-                        [1.0], (entity.state.p_pos - agent.state.p_pos)
+                        #[1.0], (entity.state.p_pos - agent.state.p_pos)
+                        (entity.state.p_pos - agent.state.p_pos)
                     )))
                 # Pos: absolute
                 else:
-                    entity_obs.append(np.concatenate((
-                        [1.0], entity.state.p_pos
-                    )))
+                    # entity_obs.append(np.concatenate((
+                    #     [1.0], entity.state.p_pos
+                    # )))
+                    entity_obs.append(entity.state.p_pos)
             else:
                 entity_obs.append(np.zeros(3))
 
