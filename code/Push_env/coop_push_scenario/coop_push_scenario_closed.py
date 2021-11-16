@@ -88,14 +88,22 @@ class PushWorld(World):
                                                                   np.square(entity.state.p_vel[1])) * entity.max_speed
             # Check for wall collision
             temp_pos = entity.state.p_pos + entity.state.p_vel * self.dt
-            # West and East walls
-            if temp_pos[0] - entity.size <= -1 or \
-               temp_pos[0] + entity.size >= 1:
+            # West wall
+            if temp_pos[0] - entity.size < -1:
                 entity.state.p_vel[0] = 0.0
-            # North and South walls
-            if temp_pos[1] - entity.size <= -1 or \
-               temp_pos[1] + entity.size >= 1:
+                entity.state.p_pos[0] = -1.0 + entity.size
+            # East wall
+            if temp_pos[0] + entity.size > 1:
+                entity.state.p_vel[0] = 0.0
+                entity.state.p_pos[0] = 1.0 - entity.size
+            # North wall
+            if temp_pos[1] - entity.size < -1:
                 entity.state.p_vel[1] = 0.0
+                entity.state.p_pos[1] = -1.0 + entity.size
+            # South wall
+            if temp_pos[1] + entity.size > 1:
+                entity.state.p_vel[1] = 0.0
+                entity.state.p_pos[1] = 1.0 - entity.size
             entity.state.p_pos += entity.state.p_vel * self.dt
                 
         
@@ -212,10 +220,12 @@ class Scenario(BaseScenario):
                 #)))
                 # Pos: relative
                 if self.relative_coord:
-                    entity_obs.append(np.concatenate((
-                        #[1.0], (entity.state.p_pos - agent.state.p_pos)
-                        (entity.state.p_pos - agent.state.p_pos)
-                    )))
+                    # entity_obs.append(np.concatenate((
+                    #     [1.0], (entity.state.p_pos - agent.state.p_pos)
+                    # )))
+                    entity_obs.append(
+                        entity.state.p_pos - agent.state.p_pos
+                    )
                 # Pos: absolute
                 else:
                     # entity_obs.append(np.concatenate((

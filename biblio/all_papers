@@ -4402,20 +4402,6 @@ agents)},
   url       = {http://proceedings.mlr.press/v100/xiao20a.html},
 }
 
-@Article{Yu2021a,
-  author        = {Chao Yu and Akash Velu and Eugene Vinitsky and Yu Wang and Alexandre Bayen and Yi Wu},
-  title         = {The Surprising Effectiveness of MAPPO in Cooperative, Multi-Agent Games},
-  year          = {2021},
-  month         = mar,
-  abstract      = {Proximal Policy Optimization (PPO) is a popular on-policy reinforcement learning algorithm but is significantly less utilized than off-policy learning algorithms in multi-agent problems. In this work, we investigate Multi-Agent PPO (MAPPO), a multi-agent PPO variant which adopts a centralized value function. Using a 1-GPU desktop, we show that MAPPO achieves performance comparable to the state-of-the-art in three popular multi-agent testbeds: the Particle World environments, Starcraft II Micromanagement Tasks, and the Hanabi Challenge, with minimal hyperparameter tuning and without any domain-specific algorithmic modifications or architectures. In the majority of environments, we find that compared to off-policy baselines, MAPPO achieves better or comparable sample complexity as well as substantially faster running time. Finally, we present 5 factors most influential to MAPPO's practical performance with ablation studies.},
-  archiveprefix = {arXiv},
-  eprint        = {2103.01955},
-  file          = {:Yu2021a - The Surprising Effectiveness of MAPPO in Cooperative, Multi Agent Games.pdf:PDF},
-  groups        = {Multi-agent RL},
-  keywords      = {cs.LG, cs.AI, cs.MA},
-  primaryclass  = {cs.LG},
-}
-
 @Article{Wang2020e,
   author        = {Tonghan Wang and Tarun Gupta and Anuj Mahajan and Bei Peng and Shimon Whiteson and Chongjie Zhang},
   title         = {RODE: Learning Roles to Decompose Multi-Agent Tasks},
@@ -5773,6 +5759,20 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   pdf       = {http://proceedings.mlr.press/v70/finn17a/finn17a.pdf},
   ranking   = {rank5},
   url       = {https://proceedings.mlr.press/v70/finn17a.html},
+}
+
+@Article{Yu2021b,
+  author        = {Chao Yu and Akash Velu and Eugene Vinitsky and Yu Wang and Alexandre Bayen and Yi Wu},
+  title         = {The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games},
+  year          = {2021},
+  month         = mar,
+  abstract      = {Proximal Policy Optimization (PPO) is a popular on-policy reinforcement learning algorithm but is significantly less utilized than off-policy learning algorithms in multi-agent settings. This is often due the belief that on-policy methods are significantly less sample efficient than their off-policy counterparts in multi-agent problems. In this work, we investigate Multi-Agent PPO (MAPPO), a variant of PPO which is specialized for multi-agent settings. Using a 1-GPU desktop, we show that MAPPO achieves surprisingly strong performance in three popular multi-agent testbeds: the particle-world environments, the Starcraft multi-agent challenge, and the Hanabi challenge, with minimal hyperparameter tuning and without any domain-specific algorithmic modifications or architectures. In the majority of environments, we find that compared to off-policy baselines, MAPPO achieves strong results while exhibiting comparable sample efficiency. Finally, through ablation studies, we present the implementation and algorithmic factors which are most influential to MAPPO's practical performance.},
+  archiveprefix = {arXiv},
+  eprint        = {2103.01955},
+  file          = {:- The Surprising Effectiveness of PPO in Cooperative, Multi Agent Games.pdf:PDF},
+  groups        = {Multi-agent RL},
+  keywords      = {cs.LG, cs.AI, cs.MA},
+  primaryclass  = {cs.LG},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

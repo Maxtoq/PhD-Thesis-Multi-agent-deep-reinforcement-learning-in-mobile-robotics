@@ -5771,6 +5771,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   file      = {:pmlr-v70-finn17a - Model Agnostic Meta Learning for Fast Adaptation of Deep Networks.pdf:PDF},
   groups    = {Meta-Learning},
   pdf       = {http://proceedings.mlr.press/v70/finn17a/finn17a.pdf},
+  ranking   = {rank5},
   url       = {https://proceedings.mlr.press/v70/finn17a.html},
 }
 
