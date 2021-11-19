@@ -51,8 +51,9 @@ if __name__ == "__main__":
         # Environment step
         obs_n, reward_n, done_n, _ = env.step(act_n)
         for obs in obs_n:
-            if np.isnan(obs[0]):
+            if np.isnan(obs).any():
                 print("NAN IN OBS")
+                print(obs_n)
                 print("seed:", seed)
                 exit(1)
         print(reward_n)

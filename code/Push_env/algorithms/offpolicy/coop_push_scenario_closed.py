@@ -1,7 +1,7 @@
 import numpy as np
 
-from multiagent.scenario import BaseScenario
-from multiagent.core import World, Agent, Landmark, Action, Entity
+from offpolicy.envs.mpe.scenario import BaseScenario
+from offpolicy.envs.mpe.core import World, Agent, Landmark, Action, Entity
 
 LANDMARK_SIZE = 0.05
 OBJECT_SIZE = 0.08

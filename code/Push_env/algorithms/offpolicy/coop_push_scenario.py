@@ -166,15 +166,17 @@ class Scenario(BaseScenario):
                 # Pos: relative
                 if self.relative_coord:
                     entity_obs.append(np.concatenate((
-                        [1.0], (entity.state.p_pos - agent.state.p_pos), entity.state.p_vel
+                        #[1.0], (entity.state.p_pos - agent.state.p_pos), entity.state.p_vel
+                        (entity.state.p_pos - agent.state.p_pos), entity.state.p_vel
                     )))
                 # Pos: absolute
                 else:
                     entity_obs.append(np.concatenate((
-                        [1.0], entity.state.p_pos, entity.state.p_vel
+                        #[1.0], entity.state.p_pos, entity.state.p_vel
+                        entity.state.p_pos, entity.state.p_vel
                     )))
             else:
-                entity_obs.append(np.zeros(5))
+                entity_obs.append(np.zeros(4))
         for entity in world.landmarks:
             if get_dist(agent.state.p_pos, entity.state.p_pos) <= self.obs_range:
                 # Pos: relative normalised
@@ -184,15 +186,17 @@ class Scenario(BaseScenario):
                 # Pos: relative
                 if self.relative_coord:
                     entity_obs.append(np.concatenate((
-                        [1.0], (entity.state.p_pos - agent.state.p_pos)
+                        #[1.0], (entity.state.p_pos - agent.state.p_pos)
+                        (entity.state.p_pos - agent.state.p_pos)
                     )))
                 # Pos: absolute
                 else:
-                    entity_obs.append(np.concatenate((
-                        [1.0], entity.state.p_pos
-                    )))
+                    # entity_obs.append(np.concatenate((
+                    #     [1.0], entity.state.p_pos
+                    # )))
+                    entity_obs.append(entity.state.p_pos)
             else:
-                entity_obs.append(np.zeros(3))
+                entity_obs.append(np.zeros(2))
 
         # Communication
 

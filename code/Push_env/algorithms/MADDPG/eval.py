@@ -13,7 +13,7 @@ def run(config):
     # Load model
     if config.model_dir is not None:
         model_path = os.path.join(config.model_dir, "model.pt")
-        sce_conf_path = os.path.join(config.model_dir, "sce_conf.json")
+        sce_conf_path = os.path.join(config.model_dir, "sce_config.json")
     elif config.model_cp_path is not None and config.sce_conf_path is not None:
         model_path = config.model_cp_path
         sce_conf_path = config.sce_conf_path
