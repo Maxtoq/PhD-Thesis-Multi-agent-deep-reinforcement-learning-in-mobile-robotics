@@ -5865,6 +5865,39 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url       = {https://openreview.net/forum?id=EuvW3-Lmoxm},
 }
 
+@Article{Chen2021,
+  author        = {Lili Chen and Kevin Lu and Aravind Rajeswaran and Kimin Lee and Aditya Grover and Michael Laskin and Pieter Abbeel and Aravind Srinivas and Igor Mordatch},
+  title         = {Decision Transformer: Reinforcement Learning via Sequence Modeling},
+  year          = {2021},
+  month         = jun,
+  abstract      = {We introduce a framework that abstracts Reinforcement Learning (RL) as a sequence modeling problem. This allows us to draw upon the simplicity and scalability of the Transformer architecture, and associated advances in language modeling such as GPT-x and BERT. In particular, we present Decision Transformer, an architecture that casts the problem of RL as conditional sequence modeling. Unlike prior approaches to RL that fit value functions or compute policy gradients, Decision Transformer simply outputs the optimal actions by leveraging a causally masked Transformer. By conditioning an autoregressive model on the desired return (reward), past states, and actions, our Decision Transformer model can generate future actions that achieve the desired return. Despite its simplicity, Decision Transformer matches or exceeds the performance of state-of-the-art model-free offline RL baselines on Atari, OpenAI Gym, and Key-to-Door tasks.},
+  archiveprefix = {arXiv},
+  eprint        = {2106.01345},
+  file          = {:Chen2021 - Decision Transformer_ Reinforcement Learning Via Sequence Modeling.pdf:PDF},
+  groups        = {Offline RL},
+  keywords      = {cs.LG, cs.AI},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{pmlr-v119-parisotto20a,
+  author    = {Parisotto, Emilio and Song, Francis and Rae, Jack and Pascanu, Razvan and Gulcehre, Caglar and Jayakumar, Siddhant and Jaderberg, Max and Kaufman, Rapha{\"e}l Lopez and Clark, Aidan and Noury, Seb and Botvinick, Matthew and Heess, Nicolas and Hadsell, Raia},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+  title     = {Stabilizing Transformers for Reinforcement Learning},
+  year      = {2020},
+  editor    = {III, Hal Daumé and Singh, Aarti},
+  month     = {13--18 Jul},
+  pages     = {7487--7498},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {119},
+  abstract  = {Owing to their ability to both effectively integrate information over long time horizons and scale to massive amounts of data, self-attention architectures have recently shown breakthrough success in natural language processing (NLP). Harnessing the transformer’s ability to process long time horizons of information could provide a similar performance boost in partially observable reinforcement learning (RL) domains, but the large-scale transformers used in NLP have yet to be successfully applied to the RL setting. In this work we demonstrate that the standard transformer architecture is difficult to optimize, which was previously observed in the supervised learning setting but becomes especially pronounced with RL objectives. We propose architectural modifications that substantially improve the stability and learning speed of the original Transformer and XL variant. The proposed architecture, the Gated Transformer-XL (GTrXL), surpasses LSTMs on challenging memory environments and achieves state-of-the-art results on the multi-task DMLab-30 benchmark suite, exceeding the performance of an external memory architecture. We show that the GTrXL has stability and performance that consistently matches or exceeds a competitive LSTM baseline, including on more reactive tasks where memory is less critical.},
+  file      = {:pmlr-v119-parisotto20a - Stabilizing Transformers for Reinforcement Learning.pdf:PDF},
+  groups    = {RL},
+  pdf       = {http://proceedings.mlr.press/v119/parisotto20a/parisotto20a.pdf},
+  ranking   = {rank3},
+  url       = {https://proceedings.mlr.press/v119/parisotto20a.html},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:

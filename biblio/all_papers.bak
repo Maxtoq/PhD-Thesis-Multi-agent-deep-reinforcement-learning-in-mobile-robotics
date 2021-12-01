@@ -5721,6 +5721,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 
 @Article{Lin2021,
   author        = {Toru Lin and Minyoung Huh and Chris Stauffer and Ser-Nam Lim and Phillip Isola},
+  journal       = {Thirty-Fifth Conference on Neural Information Processing Systems},
   title         = {Learning to Ground Multi-Agent Communication with Autoencoders},
   year          = {2021},
   month         = oct,
@@ -5731,7 +5732,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   groups        = {Communication, Discrete language},
   keywords      = {cs.LG, cs.AI, cs.CL, cs.MA},
   primaryclass  = {cs.LG},
-  priority      = {prio1},
+  readstatus    = {read},
 }
 
 @Misc{exa2021,
@@ -5862,6 +5863,20 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   file      = {:tucker2021emergent - Emergent Discrete Communication in Semantic Spaces.pdf:PDF},
   groups    = {Communication},
   url       = {https://openreview.net/forum?id=EuvW3-Lmoxm},
+}
+
+@Article{Chen2021,
+  author        = {Lili Chen and Kevin Lu and Aravind Rajeswaran and Kimin Lee and Aditya Grover and Michael Laskin and Pieter Abbeel and Aravind Srinivas and Igor Mordatch},
+  title         = {Decision Transformer: Reinforcement Learning via Sequence Modeling},
+  year          = {2021},
+  month         = jun,
+  abstract      = {We introduce a framework that abstracts Reinforcement Learning (RL) as a sequence modeling problem. This allows us to draw upon the simplicity and scalability of the Transformer architecture, and associated advances in language modeling such as GPT-x and BERT. In particular, we present Decision Transformer, an architecture that casts the problem of RL as conditional sequence modeling. Unlike prior approaches to RL that fit value functions or compute policy gradients, Decision Transformer simply outputs the optimal actions by leveraging a causally masked Transformer. By conditioning an autoregressive model on the desired return (reward), past states, and actions, our Decision Transformer model can generate future actions that achieve the desired return. Despite its simplicity, Decision Transformer matches or exceeds the performance of state-of-the-art model-free offline RL baselines on Atari, OpenAI Gym, and Key-to-Door tasks.},
+  archiveprefix = {arXiv},
+  eprint        = {2106.01345},
+  file          = {:Chen2021 - Decision Transformer_ Reinforcement Learning Via Sequence Modeling.pdf:PDF},
+  groups        = {Offline RL},
+  keywords      = {cs.LG, cs.AI},
+  primaryclass  = {cs.LG},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
