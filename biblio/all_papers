@@ -5073,9 +5073,9 @@ communication integrated in QMIX, with tricks to make it more efficient},
   volume    = {70},
   abstract  = {We describe a framework for multitask deep reinforcement learning guided by policy sketches. Sketches annotate tasks with sequences of named subtasks, providing information about high-level structural relationships among tasks but not how to implement them—specifically not providing the detailed guidance used by much previous work on learning policy abstractions for RL (e.g. intermediate rewards, subtask completion signals, or intrinsic motivations). To learn from sketches, we present a model that associates every subtask with a modular subpolicy, and jointly maximizes reward over full task-specific policies by tying parameters across shared subpolicies. Optimization is accomplished via a decoupled actor–critic training objective that facilitates learning common behaviors from multiple dissimilar reward functions. We evaluate the effectiveness of our approach in three environments featuring both discrete and continuous control, and with sparse rewards that can be obtained only after completing a number of high-level subgoals. Experiments show that using our approach to learn policies guided by sketches gives better performance than existing techniques for learning task-specific or shared policies, while naturally inducing a library of interpretable primitive behaviors that can be recombined to rapidly adapt to new tasks.},
   file      = {:pmlr-v70-andreas17a - Modular Multitask Reinforcement Learning with Policy Sketches.pdf:PDF},
-  groups    = {Language-Augmented RL},
+  groups    = {Meta-Learning, Macro-actions},
   pdf       = {http://proceedings.mlr.press/v70/andreas17a/andreas17a.pdf},
-  ranking   = {rank4},
+  ranking   = {rank3},
   url       = {http://proceedings.mlr.press/v70/andreas17a.html},
 }
 
@@ -5896,6 +5896,47 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   pdf       = {http://proceedings.mlr.press/v119/parisotto20a/parisotto20a.pdf},
   ranking   = {rank3},
   url       = {https://proceedings.mlr.press/v119/parisotto20a.html},
+}
+
+@Article{Colas2020a,
+  author        = {Cédric Colas and Ahmed Akakzia and Pierre-Yves Oudeyer and Mohamed Chetouani and Olivier Sigaud},
+  title         = {Language-Conditioned Goal Generation: a New Approach to Language Grounding for RL},
+  year          = {2020},
+  month         = jun,
+  abstract      = {In the real world, linguistic agents are also embodied agents: they perceive and act in the physical world. The notion of Language Grounding questions the interactions between language and embodiment: how do learning agents connect or ground linguistic representations to the physical world ? This question has recently been approached by the Reinforcement Learning community under the framework of instruction-following agents. In these agents, behavioral policies or reward functions are conditioned on the embedding of an instruction expressed in natural language. This paper proposes another approach: using language to condition goal generators. Given any goal-conditioned policy, one could train a language-conditioned goal generator to generate language-agnostic goals for the agent. This method allows to decouple sensorimotor learning from language acquisition and enable agents to demonstrate a diversity of behaviors for any given instruction. We propose a particular instantiation of this approach and demonstrate its benefits.},
+  archiveprefix = {arXiv},
+  eprint        = {2006.07043},
+  file          = {:Colas2020a - Language Conditioned Goal Generation_ a New Approach to Language Grounding for RL.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {cs.LG, cs.AI, cs.CL, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Veeriah2021,
+  author    = {Vivek Veeriah and Tom Zahavy and Matteo Hessel and Zhongwen Xu and Junhyuk Oh and Iurii Kemaev and Hado van Hasselt and David Silver and Satinder Singh},
+  title     = {Discovery of Options via Meta-Learned Subgoals},
+  year      = {2021},
+  month     = feb,
+  abstract  = {Temporal abstractions in the form of options have been shown to help reinforcement learning (RL) agents learn faster. However, despite prior work on this topic, the problem of discovering options through interaction with an environment remains a challenge. In this paper, we introduce a novel meta-gradient approach for discovering useful options in multi-task RL environments. Our approach is based on a manager-worker decomposition of the RL agent, in which a manager maximises rewards from the environment by learning a task-dependent policy over both a set of task-independent discovered-options and primitive actions. The option-reward and termination functions that define a subgoal for each option are parameterised as neural networks and trained via meta-gradients to maximise their usefulness. Empirical analysis on gridworld and DeepMind Lab tasks show that: (1) our approach can discover meaningful and diverse temporally-extended options in multi-task RL domains, (2) the discovered options are frequently used by the agent while learning to solve the training tasks, and (3) that the discovered options help a randomly initialised manager learn faster in completely new tasks.},
+  booktitle = {Advances in Neural Information Processing Systems 35 (NeurIPS 2021)},
+  file      = {:Veeriah2021 - Discovery of Options Via Meta Learned Subgoals.pdf:PDF},
+  groups    = {Macro-actions},
+}
+
+@Article{Lampinen2021,
+  author        = {Andrew Kyle Lampinen and Stephanie C. Y. Chan and Andrea Banino and Felix Hill},
+  journal       = {Advances in Neural Information Processing Systems, 2021},
+  title         = {Towards mental time travel: a hierarchical memory for reinforcement learning agents},
+  year          = {2021},
+  month         = may,
+  abstract      = {Reinforcement learning agents often forget details of the past, especially after delays or distractor tasks. Agents with common memory architectures struggle to recall and integrate across multiple timesteps of a past event, or even to recall the details of a single timestep that is followed by distractor tasks. To address these limitations, we propose a Hierarchical Chunk Attention Memory (HCAM), which helps agents to remember the past in detail. HCAM stores memories by dividing the past into chunks, and recalls by first performing high-level attention over coarse summaries of the chunks, and then performing detailed attention within only the most relevant chunks. An agent with HCAM can therefore "mentally time-travel" -- remember past events in detail without attending to all intervening events. We show that agents with HCAM substantially outperform agents with other memory architectures at tasks requiring long-term recall, retention, or reasoning over memory. These include recalling where an object is hidden in a 3D environment, rapidly learning to navigate efficiently in a new neighborhood, and rapidly learning and retaining new object names. Agents with HCAM can extrapolate to task sequences much longer than they were trained on, and can even generalize zero-shot from a meta-learning setting to maintaining knowledge across episodes. HCAM improves agent sample efficiency, generalization, and generality (by solving tasks that previously required specialized architectures). Our work is a step towards agents that can learn, interact, and adapt in complex and temporally-extended environments.},
+  archiveprefix = {arXiv},
+  eprint        = {2105.14039},
+  file          = {:Lampinen2021 - Towards Mental Time Travel_ a Hierarchical Memory for Reinforcement Learning Agents.pdf:PDF},
+  groups        = {Memory},
+  keywords      = {cs.LG, cs.AI, cs.NE, I.2.6},
+  primaryclass  = {cs.LG},
+  ranking       = {rank2},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
