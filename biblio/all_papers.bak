@@ -1,5 +1,3 @@
-% Encoding: UTF-8
-
 @InProceedings{Nguyen2018,
   author    = {Duc Thien Nguyen and Akshat Kumar and Hoong Chuin Lau},
   booktitle = {Advances in Neural Information Processing Systems 31 (NeurIPS 2018)},
@@ -143,26 +141,30 @@
   readstatus    = {read},
 }
 
-@Article{Pathak2017,
+@InProceedings{Pathak2017,
   author        = {Deepak Pathak and Pulkit Agrawal and Alexei A. Efros and Trevor Darrell},
   title         = {Curiosity-driven Exploration by Self-supervised Prediction},
   year          = {2017},
   month         = may,
+  pages         = {2778-2787},
+  volume        = {PMLR 70},
   abstract      = {In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent's ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: VizDoom and Super Mario Bros. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch. Demo video and code available at https://pathak22.github.io/noreward-rl/},
   archiveprefix = {arXiv},
   comment       = {Intrinsinc Curiosity Module},
   eprint        = {1705.05363},
   file          = {:Pathak2017 - Curiosity Driven Exploration by Self Supervised Prediction.pdf:PDF},
   groups        = {Intrinsic goals, Curiosity},
+  journal       = {Proceedings of the 34th International Conference on Machine Learning},
   keywords      = {cs.LG, cs.AI, cs.CV, cs.RO, stat.ML},
   primaryclass  = {cs.LG},
   readstatus    = {read},
 }
 
-@Article{Burda2018,
+@InProceedings{Burda2019,
   author        = {Yuri Burda and Harrison Edwards and Amos Storkey and Oleg Klimov},
+  booktitle     = {International Conference on Learning Representations},
   title         = {Exploration by Random Network Distillation},
-  year          = {2018},
+  year          = {2019},
   month         = oct,
   abstract      = {We introduce an exploration bonus for deep reinforcement learning methods that is easy to implement and adds minimal overhead to the computation performed. The bonus is the error of a neural network predicting features of the observations given by a fixed randomly initialized neural network. We also introduce a method to flexibly combine intrinsic and extrinsic rewards. We find that the random network distillation (RND) bonus combined with this increased flexibility enables significant progress on several hard exploration Atari games. In particular we establish state of the art performance on Montezuma's Revenge, a game famously difficult for deep reinforcement learning methods. To the best of our knowledge, this is the first method that achieves better than average human performance on this game without using demonstrations or having access to the underlying state of the game, and occasionally completes the first level.},
   archiveprefix = {arXiv},
@@ -228,10 +230,12 @@
 
 @Article{Sekar2020,
   author        = {Ramanan Sekar and Oleh Rybkin and Kostas Daniilidis and Pieter Abbeel and Danijar Hafner and Deepak Pathak},
-  journal       = {ICML 2020},
+  journal       = {Proceedings of the 37th International Conference on Machine Learning},
   title         = {Planning to Explore via Self-Supervised World Models},
   year          = {2020},
   month         = may,
+  pages         = {8583-8592},
+  volume        = {PMLR 119},
   abstract      = {Reinforcement learning allows solving complex tasks, however, the learning tends to be task-specific and the sample efficiency remains a challenge. We present Plan2Explore, a self-supervised reinforcement learning agent that tackles both these challenges through a new approach to self-supervised exploration and fast adaptation to new tasks, which need not be known during exploration. During exploration, unlike prior methods which retrospectively compute the novelty of observations after the agent has already reached them, our agent acts efficiently by leveraging planning to seek out expected future novelty. After exploration, the agent quickly adapts to multiple downstream tasks in a zero or a few-shot manner. We evaluate on challenging control tasks from high-dimensional image inputs. Without any training supervision or task-specific interaction, Plan2Explore outperforms prior self-supervised exploration methods, and in fact, almost matches the performances oracle which has access to rewards. Videos and code at https://ramanans1.github.io/plan2explore/},
   archiveprefix = {arXiv},
   comment       = {- PROBLEM:
@@ -390,12 +394,14 @@
   readstatus    = {skimmed},
 }
 
-@Article{Shyam2018,
+@Article{Shyam2019,
   author        = {Pranav Shyam and Wojciech Jaśkowski and Faustino Gomez},
-  journal       = {ICML 2019},
+  journal       = {Proceedings of the 36th International Conference on Machine Learning},
   title         = {Model-Based Active Exploration},
-  year          = {2018},
+  year          = {2019},
   month         = oct,
+  pages         = {5779-5788},
+  volume        = {PMLR 97},
   abstract      = {Efficient exploration is an unsolved problem in Reinforcement Learning which is usually addressed by reactively rewarding the agent for fortuitously encountering novel situations. This paper introduces an efficient active exploration algorithm, Model-Based Active eXploration (MAX), which uses an ensemble of forward models to plan to observe novel events. This is carried out by optimizing agent behaviour with respect to a measure of novelty derived from the Bayesian perspective of exploration, which is estimated using the disagreement between the futures predicted by the ensemble members. We show empirically that in semi-random discrete environments where directed exploration is critical to make progress, MAX is at least an order of magnitude more efficient than strong baselines. MAX scales to high-dimensional continuous environments where it builds task-agnostic models that can be used for any downstream task.},
   archiveprefix = {arXiv},
   comment       = {- PROBLEM:
@@ -683,7 +689,7 @@
 
 @Article{Mnih2015,
   author    = {Volodymyr Mnih and Koray Kavukcuoglu and David Silver and Andrei A. Rusu and Joel Veness and Marc G. Bellemare and Alex Graves and Martin A. Riedmiller and Andreas Fidjeland and Georg Ostrovski and Stig Petersen and Charles Beattie and Amir Sadik and Ioannis Antonoglou and Helen King and Dharshan Kumaran and Daan Wierstra and Shane Legg and Demis Hassabis},
-  journal   = {Nat.},
+  journal   = {Nature 518},
   title     = {Human-level control through deep reinforcement learning},
   year      = {2015},
   number    = {7540},
@@ -725,7 +731,7 @@
 
 @InProceedings{Wang2016,
   author    = {Ziyu Wang and Tom Schaul and Matteo Hessel and Hado van Hasselt and Marc Lanctot and Nando de Freitas},
-  booktitle = {Proceedings of the 33nd International Conference on Machine Learning, {ICML} 2016, New York City, NY, USA, June 19-24, 2016},
+  booktitle = {Proceedings of the 33rd International Conference on Machine Learning, {ICML} 2016, New York City, NY, USA, June 19-24, 2016},
   title     = {Dueling Network Architectures for Deep Reinforcement Learning},
   year      = {2016},
   editor    = {Maria{-}Florina Balcan and Kilian Q. Weinberger},
@@ -762,6 +768,7 @@
   bibsource     = {dblp computer science bibliography, https://dblp.org},
   biburl        = {https://dblp.org/rec/journals/corr/abs-1901-10995.bib},
   eprint        = {1901.10995},
+  file          = {:Ecoffet2019 - Go Explore_ a New Approach for Hard Exploration Problems.pdf:PDF},
   groups        = {Random Exploration, Imitation},
   url           = {http://arxiv.org/abs/1901.10995},
 }
@@ -856,7 +863,7 @@
 
 @Article{Silver2016,
   author    = {David Silver and Aja Huang and Chris J. Maddison and Arthur Guez and Laurent Sifre and George van den Driessche and Julian Schrittwieser and Ioannis Antonoglou and Vedavyas Panneershelvam and Marc Lanctot and Sander Dieleman and Dominik Grewe and John Nham and Nal Kalchbrenner and Ilya Sutskever and Timothy P. Lillicrap and Madeleine Leach and Koray Kavukcuoglu and Thore Graepel and Demis Hassabis},
-  journal   = {Nat.},
+  journal   = {Nature 529},
   title     = {Mastering the game of Go with deep neural networks and tree search},
   year      = {2016},
   number    = {7587},
@@ -868,11 +875,12 @@
   doi       = {10.1038/nature16961},
   file      = {:Silver2016 - Mastering the Game of Go with Deep Neural Networks and Tree Search.pdf:PDF},
   groups    = {Model based},
+  ranking   = {rank5},
 }
 
 @Article{Silver2017,
   author    = {David Silver and Julian Schrittwieser and Karen Simonyan and Ioannis Antonoglou and Aja Huang and Arthur Guez and Thomas Hubert and Lucas Baker and Matthew Lai and Adrian Bolton and Yutian Chen and Timothy P. Lillicrap and Fan Hui and Laurent Sifre and George van den Driessche and Thore Graepel and Demis Hassabis},
-  journal   = {Nat.},
+  journal   = {Nature 550},
   title     = {Mastering the game of Go without human knowledge},
   year      = {2017},
   number    = {7676},
@@ -884,11 +892,11 @@
   doi       = {10.1038/nature24270},
   file      = {:Silver2017 - Mastering the Game of Go without Human Knowledge.pdf:PDF},
   groups    = {Model based},
+  ranking   = {rank5},
 }
 
 @Article{Silver2017a,
   author        = {David Silver and Thomas Hubert and Julian Schrittwieser and Ioannis Antonoglou and Matthew Lai and Arthur Guez and Marc Lanctot and Laurent Sifre and Dharshan Kumaran and Thore Graepel and Timothy P. Lillicrap and Karen Simonyan and Demis Hassabis},
-  journal       = {CoRR},
   title         = {Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm},
   year          = {2017},
   volume        = {abs/1712.01815},
@@ -899,6 +907,7 @@
   eprint        = {1712.01815},
   file          = {:Silver2017a - Mastering Chess and Shogi by Self Play with a General Reinforcement Learning Algorithm.pdf:PDF},
   groups        = {Model based},
+  ranking       = {rank5},
   url           = {http://arxiv.org/abs/1712.01815},
 }
 
@@ -1155,7 +1164,7 @@
   url      = {https://www.sciencedirect.com/science/article/pii/S0004370207000495},
 }
 
-@Article{Ecoffet2020,
+@Article{Ecoffet2021,
   author        = {Adrien Ecoffet and Joost Huizinga and Joel Lehman and Kenneth O. Stanley and Jeff Clune},
   journal       = {Nature},
   title         = {First return then explore},
@@ -1537,7 +1546,7 @@
   ranking   = {rank2},
 }
 
-@Article{KRAEMER201682,
+@Article{Kraemer2016,
   author   = {Landon Kraemer and Bikramjit Banerjee},
   journal  = {Neurocomputing},
   title    = {Multi-agent reinforcement learning as a rehearsal for decentralized planning},
@@ -1569,7 +1578,7 @@
   ranking       = {rank1},
 }
 
-@Article{10.1371/journal.pone.0172395,
+@Article{Tampuu2017,
   author    = {Tampuu, Ardi AND Matiisen, Tambet AND Kodelja, Dorian AND Kuzovkin, Ilya AND Korjus, Kristjan AND Aru, Juhan AND Aru, Jaan AND Vicente, Raul},
   journal   = {PLOS ONE},
   title     = {Multiagent cooperation and competition with deep reinforcement learning},
@@ -1582,7 +1591,7 @@
   comment   = {Independent Deep-Q-learning},
   doi       = {10.1371/journal.pone.0172395},
   file      = {:10.1371_journal.pone.0172395 - Multiagent Cooperation and Competition with Deep Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Independent Learning},
   publisher = {Public Library of Science},
   ranking   = {rank3},
   url       = {https://doi.org/10.1371/journal.pone.0172395},
@@ -1598,7 +1607,7 @@
   publisher  = {Morgan Kaufmann Publishers Inc.},
   series     = {ICML'93},
   file       = {:tan1993.pdf:PDF},
-  groups     = {Multi-agent RL},
+  groups     = {Multi-agent RL, Independent Learning},
   isbn       = {1558603077},
   location   = {Amherst, MA, USA},
   numpages   = {8},
@@ -1707,7 +1716,7 @@ sharing of policy parameters},
 Dec-Histeretic Deep Recurrent Q-Network
 Concurrent Experience Replay Trajectories (CERT)},
   file      = {:omidshafiei17a - Deep Decentralized Multi Task Multi Agent Reinforcement Learning under Partial Observability.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Multi-task},
   pdf       = {http://proceedings.mlr.press/v70/omidshafiei17a/omidshafiei17a.pdf},
   ranking   = {rank3},
   url       = {http://proceedings.mlr.press/v70/omidshafiei17a.html},
@@ -1797,7 +1806,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   comment       = {IPPO},
   eprint        = {2011.09533},
   file          = {:Witt2020 - Is Independent Learning All You Need in the StarCraft Multi Agent Challenge_.pdf:PDF},
-  groups        = {Multi-agent RL},
+  groups        = {Multi-agent RL, Independent Learning},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
   ranking       = {rank1},
@@ -2221,7 +2230,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   readstatus = {skimmed},
 }
 
-@InProceedings{kapturowski2018recurrent,
+@InProceedings{Kapturowski2018,
   author    = {Kapturowski, Steven and Ostrovski, Georg and Quan, John and Munos, Remi and Dabney, Will},
   booktitle = {International conference on learning representations},
   title     = {Recurrent experience replay in distributed reinforcement learning},
@@ -2239,7 +2248,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups = {Communication},
 }
 
-@InProceedings{son2019qtran,
+@InProceedings{Son2019,
   author       = {Son, Kyunghwan and Kim, Daewoo and Kang, Wan Ju and Hostallero, David Earl and Yi, Yung},
   booktitle    = {International Conference on Machine Learning},
   title        = {Qtran: Learning to factorize with transformation for cooperative multi-agent reinforcement learning},
@@ -2363,7 +2372,7 @@ FacMADDPG},
   url       = {http://proceedings.mlr.press/v48/he16.html},
 }
 
-@InProceedings{10.5555/3237383.3238080,
+@InProceedings{Sunehag2018,
   author     = {Sunehag, Peter and Lever, Guy and Gruslys, Audrunas and Czarnecki, Wojciech Marian and Zambaldi, Vinicius and Jaderberg, Max and Lanctot, Marc and Sonnerat, Nicolas and Leibo, Joel Z. and Tuyls, Karl and Graepel, Thore},
   booktitle  = {Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems},
   title      = {Value-Decomposition Networks For Cooperative Multi-Agent Learning Based On Team Reward},
@@ -2399,8 +2408,8 @@ FacMADDPG},
   numpages  = {3},
 }
 
-@InProceedings{Boehmer2020,
-  author    = {Boehmer, Wendelin and Kurin, Vitaly and Whiteson, Shimon},
+@InProceedings{Bohmer2020,
+  author    = {Böhmer, Wendelin and Kurin, Vitaly and Whiteson, Shimon},
   booktitle = {Proceedings of the 37th International Conference on Machine Learning},
   title     = {Deep Coordination Graphs},
   year      = {2020},
@@ -2412,7 +2421,7 @@ FacMADDPG},
   volume    = {119},
   abstract  = {This paper introduces the deep coordination graph (DCG) for collaborative multi-agent reinforcement learning. DCG strikes a flexible trade-off between representational capacity and generalization by factoring the joint value function of all agents according to a coordination graph into payoffs between pairs of agents. The value can be maximized by local message passing along the graph, which allows training of the value function end-to-end with Q-learning. Payoff functions are approximated with deep neural networks that employ parameter sharing and low-rank approximations to significantly improve sample efficiency. We show that DCG can solve predator-prey tasks that highlight the relative overgeneralization pathology, as well as challenging StarCraft II micromanagement tasks.},
   file      = {:Boehmer2020 - Deep Coordination Graphs.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Centralised execution, Graphs},
   pdf       = {http://proceedings.mlr.press/v119/boehmer20a/boehmer20a.pdf},
   ranking   = {rank1},
   url       = {http://proceedings.mlr.press/v119/boehmer20a.html},
@@ -2433,7 +2442,7 @@ FacMADDPG},
   ranking       = {rank1},
 }
 
-@Article{wei2016lenient,
+@Article{Wei2016,
   author    = {Wei, Ermo and Luke, Sean},
   journal   = {The Journal of Machine Learning Research},
   title     = {Lenient learning in independent-learner stochastic cooperative games},
@@ -2442,7 +2451,7 @@ FacMADDPG},
   pages     = {2914--2955},
   volume    = {17},
   file      = {:wei2016lenient - Lenient Learning in Independent Learner Stochastic Cooperative Games.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Independent Learning},
   publisher = {JMLR. org},
 }
 
@@ -2506,7 +2515,7 @@ FacMADDPG},
   url       = {http://proceedings.mlr.press/v100/lin20a.html},
 }
 
-@InProceedings{8461113,
+@InProceedings{Long2018,
   author    = {Long, Pinxin and Fan, Tingxiang and Liao, Xinyi and Liu, Wenxi and Zhang, Hao and Pan, Jia},
   booktitle = {2018 IEEE International Conference on Robotics and Automation (ICRA)},
   title     = {Towards Optimally Decentralized Multi-Robot Collision Avoidance via Deep Reinforcement Learning},
@@ -2605,7 +2614,7 @@ FacMADDPG},
   ranking   = {rank2},
 }
 
-@InProceedings{8460655,
+@InProceedings{Kahn2018,
   author    = {Kahn, Gregory and Villaflor, Adam and Ding, Bosen and Abbeel, Pieter and Levine, Sergey},
   booktitle = {2018 IEEE International Conference on Robotics and Automation (ICRA)},
   title     = {Self-Supervised Deep Reinforcement Learning with Generalized Computation Graphs for Robot Navigation},
@@ -2614,6 +2623,7 @@ FacMADDPG},
   doi       = {10.1109/ICRA.2018.8460655},
   file      = {:8460655 - Self Supervised Deep Reinforcement Learning with Generalized Computation Graphs for Robot Navigation.pdf:PDF},
   groups    = {Navigation},
+  ranking   = {rank2},
 }
 
 @InProceedings{pmlr-v100-yu20a,
@@ -2716,7 +2726,7 @@ FacMADDPG},
   url        = {https://doi.org/10.1177/0278364920987859},
 }
 
-@InProceedings{7487175,
+@InProceedings{Zhang2016,
   author    = {Zhang, Tianhao and Kahn, Gregory and Levine, Sergey and Abbeel, Pieter},
   booktitle = {2016 IEEE International Conference on Robotics and Automation (ICRA)},
   title     = {Learning deep control policies for autonomous aerial vehicles with MPC-guided policy search},
@@ -2751,9 +2761,10 @@ FacMADDPG},
   doi       = {10.1109/ICRA.2017.7989379},
   file      = {:7989379 - PLATO_ Policy Learning Using Adaptive Trajectory Optimization.pdf:PDF},
   groups    = {Navigation},
+  ranking   = {rank1},
 }
 
-@InProceedings{8793735,
+@InProceedings{Kang2019,
   author    = {Kang, Katie and Belkhale, Suneel and Kahn, Gregory and Abbeel, Pieter and Levine, Sergey},
   booktitle = {2019 International Conference on Robotics and Automation (ICRA)},
   title     = {Generalization through Simulation: Integrating Simulated and Real Data into Deep Reinforcement Learning for Vision-Based Autonomous Flight},
@@ -2840,9 +2851,10 @@ FacMADDPG},
   file      = {:8202312 - Socially Aware Motion Planning with Deep Reinforcement Learning.pdf:PDF},
   groups    = {Navigation, Multi-robot},
   issn      = {2153-0866},
+  ranking   = {rank2},
 }
 
-@InProceedings{7989037,
+@InProceedings{Chen2017,
   author    = {Chen, Yu Fan and Liu, Miao and Everett, Michael and How, Jonathan P.},
   booktitle = {2017 IEEE International Conference on Robotics and Automation (ICRA)},
   title     = {Decentralized non-communicating multiagent collision avoidance with deep reinforcement learning},
@@ -2853,6 +2865,7 @@ FacMADDPG},
   doi       = {10.1109/ICRA.2017.7989037},
   file      = {:7989037 - Decentralized Non Communicating Multiagent Collision Avoidance with Deep Reinforcement Learning.pdf:PDF},
   groups    = {Navigation, Multi-robot},
+  ranking   = {rank2},
 }
 
 @InProceedings{7989179,
@@ -2879,6 +2892,7 @@ FacMADDPG},
   doi       = {10.1109/ICRA.2017.7989677},
   file      = {:7989677 - Aggressive 3 D Collision Avoidance for High Speed Navigation.pdf:PDF},
   groups    = {Navigation},
+  ranking   = {rank1},
 }
 
 @Article{doi:10.1177/0278364917692864,
@@ -2909,7 +2923,7 @@ FacMADDPG},
   readstatus = {skimmed},
 }
 
-@Article{9001226,
+@Article{Semnani2020,
   author   = {Semnani, Samaneh Hosseini and Liu, Hugh and Everett, Michael and de Ruiter, Anton and How, Jonathan P.},
   journal  = {IEEE Robotics and Automation Letters},
   title    = {Multi-Agent Motion Planning for Dense and Dynamic Environments via Deep Reinforcement Learning},
@@ -2927,7 +2941,7 @@ FacMADDPG},
   ranking  = {rank3},
 }
 
-@InProceedings{8593871,
+@InProceedings{Everett2018,
   author    = {Everett, Michael and Chen, Yu Fan and How, Jonathan P.},
   booktitle = {2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   title     = {Motion Planning Among Dynamic, Decision-Making Agents with Deep Reinforcement Learning},
@@ -2940,10 +2954,10 @@ FacMADDPG},
   file      = {:8593871 - Motion Planning among Dynamic, Decision Making Agents with Deep Reinforcement Learning.pdf:PDF},
   groups    = {Navigation},
   issn      = {2153-0866},
-  ranking   = {rank3},
+  ranking   = {rank2},
 }
 
-@Article{9317723,
+@Article{Everett2021,
   author   = {Everett, Michael and Chen, Yu Fan and How, Jonathan P.},
   journal  = {IEEE Access},
   title    = {Collision Avoidance in Pedestrian-Rich Environments With Deep Reinforcement Learning},
@@ -2969,9 +2983,10 @@ FacMADDPG},
   groups        = {Navigation},
   keywords      = {cs.LG, cs.RO},
   primaryclass  = {cs.LG},
+  ranking       = {rank2},
 }
 
-@InProceedings{8202134,
+@InProceedings{Tai2017,
   author    = {Tai, Lei and Paolo, Giuseppe and Liu, Ming},
   booktitle = {2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   title     = {Virtual-to-real deep reinforcement learning: Continuous control of mobile robots for mapless navigation},
@@ -3001,7 +3016,7 @@ FacMADDPG},
   ranking   = {rank5},
 }
 
-@InProceedings{7989381,
+@InProceedings{Zhu2017,
   author    = {Zhu, Yuke and Mottaghi, Roozbeh and Kolve, Eric and Lim, Joseph J. and Gupta, Abhinav and Fei-Fei, Li and Farhadi, Ali},
   booktitle = {2017 IEEE International Conference on Robotics and Automation (ICRA)},
   title     = {Target-driven visual navigation in indoor scenes using deep reinforcement learning},
@@ -3012,7 +3027,7 @@ FacMADDPG},
   doi       = {10.1109/ICRA.2017.7989381},
   file      = {:7989381 - Target Driven Visual Navigation in Indoor Scenes Using Deep Reinforcement Learning.pdf:PDF},
   groups    = {Navigation},
-  ranking   = {rank5},
+  ranking   = {rank4},
 }
 
 @Article{Doncieux2020,
@@ -3853,7 +3868,7 @@ FacMADDPG},
   doi       = {10.1109/jsac.2018.2864373},
   groups    = {Navigation},
   publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
-  ranking   = {rank3},
+  ranking   = {rank2},
 }
 
 @Article{ROPERO2019260,
@@ -4088,7 +4103,7 @@ FacMADDPG},
   archiveprefix = {arXiv},
   eprint        = {2006.11438},
   file          = {:Li2020 - Deep Implicit Coordination Graphs for Multi Agent Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-agent RL},
+  groups        = {Multi-agent RL, Graphs},
   keywords      = {cs.LG, cs.AI, cs.MA},
   primaryclass  = {cs.LG},
 }
@@ -4210,7 +4225,7 @@ FacMADDPG},
   ranking   = {rank2},
 }
 
-@Article{ShalevShwartz2016a,
+@Article{Shalev2016,
   author        = {Shai Shalev-Shwartz and Shaked Shammah and Amnon Shashua},
   title         = {Safe, Multi-Agent, Reinforcement Learning for Autonomous Driving},
   year          = {2016},
@@ -4448,7 +4463,7 @@ agents)},
   readstatus    = {read},
 }
 
-@InProceedings{pmlr-v100-chen20a,
+@InProceedings{Chen2020a,
   author    = {Chen, Dian and Zhou, Brady and Koltun, Vladlen and Kr\"ahenb\"uhl, Philipp},
   booktitle = {Proceedings of the Conference on Robot Learning},
   title     = {Learning by Cheating},
@@ -4872,7 +4887,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   file      = {:Christianos2020 - Shared Experience Actor Critic for Multi Agent Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL, Exploration},
   language  = {English},
-  url       = {https://nips.cc/Conferences/2020},
+  url       = {https://www.research.ed.ac.uk/en/publications/shared-experience-actor-critic-for-multi-agent-reinforcement-lear},
 }
 
 @Article{Zhou2020a,
@@ -4885,7 +4900,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   comment       = {LICA},
   eprint        = {2007.02529},
   file          = {:Zhou2020a - Learning Implicit Credit Assignment for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-agent RL, Credit assignment},
+  groups        = {Multi-agent RL, Credit assignment, Value factorisation},
   keywords      = {cs.LG, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
 }
@@ -5107,18 +5122,19 @@ communication integrated in QMIX, with tricks to make it more efficient},
 }
 
 @InProceedings{Luketina2019,
-  author    = {Luketina, Jelena and Nardelli, Nantas and Farquhar, Gregory and Foerster, Jakob and Andreas, Jacob and Grefenstette, Edward and Whiteson, Shimon and Rocktäschel, Tim},
-  booktitle = {Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, {IJCAI-19}},
-  title     = {A Survey of Reinforcement Learning Informed by Natural Language},
-  year      = {2019},
-  month     = {7},
-  pages     = {6309--6317},
-  publisher = {International Joint Conferences on Artificial Intelligence Organization},
-  doi       = {10.24963/ijcai.2019/880},
-  file      = {:Luketina2019 - A Survey of Reinforcement Learning Informed by Natural Language.pdf:PDF},
-  groups    = {Language-Augmented RL},
-  ranking   = {rank2},
-  url       = {https://doi.org/10.24963/ijcai.2019/880},
+  author     = {Luketina, Jelena and Nardelli, Nantas and Farquhar, Gregory and Foerster, Jakob and Andreas, Jacob and Grefenstette, Edward and Whiteson, Shimon and Rocktäschel, Tim},
+  booktitle  = {Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, {IJCAI-19}},
+  title      = {A Survey of Reinforcement Learning Informed by Natural Language},
+  year       = {2019},
+  month      = {7},
+  pages      = {6309--6317},
+  publisher  = {International Joint Conferences on Artificial Intelligence Organization},
+  doi        = {10.24963/ijcai.2019/880},
+  file       = {:Luketina2019 - A Survey of Reinforcement Learning Informed by Natural Language.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  ranking    = {rank2},
+  readstatus = {skimmed},
+  url        = {https://doi.org/10.24963/ijcai.2019/880},
 }
 
 @Article{Karch2021,
@@ -5990,6 +6006,85 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url          = {https://par.nsf.gov/biblio/10100557},
 }
 
+@Article{Hospedales2020,
+  author        = {Timothy Hospedales and Antreas Antoniou and Paul Micaelli and Amos Storkey},
+  title         = {Meta-Learning in Neural Networks: A Survey},
+  year          = {2020},
+  month         = apr,
+  abstract      = {The field of meta-learning, or learning-to-learn, has seen a dramatic rise in interest in recent years. Contrary to conventional approaches to AI where tasks are solved from scratch using a fixed learning algorithm, meta-learning aims to improve the learning algorithm itself, given the experience of multiple learning episodes. This paradigm provides an opportunity to tackle many conventional challenges of deep learning, including data and computation bottlenecks, as well as generalization. This survey describes the contemporary meta-learning landscape. We first discuss definitions of meta-learning and position it with respect to related fields, such as transfer learning and hyperparameter optimization. We then propose a new taxonomy that provides a more comprehensive breakdown of the space of meta-learning methods today. We survey promising applications and successes of meta-learning such as few-shot learning and reinforcement learning. Finally, we discuss outstanding challenges and promising areas for future research.},
+  archiveprefix = {arXiv},
+  eprint        = {2004.05439},
+  file          = {:Hospedales2020 - Meta Learning in Neural Networks_ a Survey.pdf:PDF},
+  groups        = {Meta-Learning},
+  keywords      = {cs.LG, stat.ML},
+  primaryclass  = {cs.LG},
+  ranking       = {rank4},
+}
+
+@InProceedings{10.1145/3356464.3357707,
+  author    = {Zhou, Ming and Chen, Yong and Wen, Ying and Yang, Yaodong and Su, Yufeng and Zhang, Weinan and Zhang, Dell and Wang, Jun},
+  booktitle = {Proceedings of the First International Conference on Distributed Artificial Intelligence},
+  title     = {Factorized Q-Learning for Large-Scale Multi-Agent Systems},
+  year      = {2019},
+  address   = {New York, NY, USA},
+  publisher = {Association for Computing Machinery},
+  series    = {DAI '19},
+  abstract  = {Deep Q-learning has achieved significant success in single-agent decision making tasks. However, it is challenging to extend Q-learning to large-scale multi-agent scenarios, due to the explosion of action space resulting from the complex dynamics between the environment and the agents. In this paper, we propose to make the computation of multi-agent Q-learning tractable by treating the Q-function (w.r.t. state and joint-action) as a high-order high-dimensional tensor and then approximate it with factorized pairwise interactions. Furthermore, we utilize a composite deep neural network architecture for computing the factorized Q-function, share the model parameters among all the agents within the same group, and estimate the agents' optimal joint actions through a coordinate descent type algorithm. All these simplifications greatly reduce the model complexity and accelerate the learning process. Extensive experiments on two different multi-agent problems demonstrate the performance gain of our proposed approach in comparison with strong baselines, particularly when there are a large number of agents.},
+  articleno = {7},
+  doi       = {10.1145/3356464.3357707},
+  groups    = {Centralised execution},
+  isbn      = {9781450376563},
+  keywords  = {multi-agent reinforcement learning, large-scale multi-agent systems},
+  location  = {Beijing, China},
+  numpages  = {7},
+  url       = {https://doi.org/10.1145/3356464.3357707},
+}
+
+@InProceedings{Sun2021a,
+  author     = {Sun, Chuxiong and Wu, Bo and Wang, Rui and Hu, Xiaohui and Yang, Xiaoya and Cong, Cong},
+  booktitle  = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
+  title      = {Intrinsic Motivated Multi-Agent Communication},
+  year       = {2021},
+  pages      = {1668--1670},
+  comment    = {IMMAC},
+  file       = {:Sun2021 - Intrinsic Motivated Multi Agent Communication.pdf:PDF},
+  groups     = {Communication},
+  readstatus = {read},
+}
+
+@InProceedings{Gupta2021a,
+  author    = {Abhinav Gupta and Marc Lanctot and Angeliki Lazaridou},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Dynamic population-based meta-learning for multi-agent communication with natural language},
+  year      = {2021},
+  editor    = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+  file      = {:Gupta2021a - Dynamic Population Based Meta Learning for Multi Agent Communication with Natural Language.pdf:PDF},
+  groups    = {Discrete language},
+  url       = {https://openreview.net/forum?id=NFurmj-rIWe},
+}
+
+@InProceedings{Liu2021,
+  author    = {Dianbo Liu and Alex Lamb and Kenji Kawaguchi and Anirudh Goyal and Chen Sun and Michael Curtis Mozer and Yoshua Bengio},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Discrete-Valued Neural Communication},
+  year      = {2021},
+  editor    = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+  file      = {:Liu2021 - Discrete Valued Neural Communication.pdf:PDF},
+  groups    = {Discrete language},
+  url       = {https://openreview.net/forum?id=YSYXmOzlrou},
+}
+
+@InProceedings{Tucker2021,
+  author    = {Mycal Tucker and Huao Li and Siddharth Agrawal and Dana Hughes and Katia P. Sycara and Michael Lewis and Julie Shah},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Emergent Discrete Communication in Semantic Spaces},
+  year      = {2021},
+  editor    = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+  file      = {:https\://openreview.net/pdf?id=hsqZ5v8PFyQ:PDF},
+  groups    = {Discrete language},
+  url       = {https://openreview.net/forum?id=hsqZ5v8PFyQ},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -6036,7 +6131,9 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Discrete language\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Multi-task\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Independent Learning\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Centralised execution\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Macro-actions\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
