@@ -6080,7 +6080,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   title     = {Emergent Discrete Communication in Semantic Spaces},
   year      = {2021},
   editor    = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
-  file      = {:https\://openreview.net/pdf?id=hsqZ5v8PFyQ:PDF},
+  file      = {:Tucker2021 - Emergent Discrete Communication in Semantic Spaces.pdf:PDF},
   groups    = {Discrete language},
   url       = {https://openreview.net/forum?id=hsqZ5v8PFyQ},
 }

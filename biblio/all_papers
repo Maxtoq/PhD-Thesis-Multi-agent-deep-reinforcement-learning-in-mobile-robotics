@@ -8,6 +8,7 @@
   crossref  = {conf/nips/2018},
   file      = {:NguyenKL18 - Credit Assignment for Collective Multiagent RL with Global Rewards.pdf:PDF},
   groups    = {Multi-agent RL, Credit Assignment, Credit assignment},
+  ranking   = {rank1},
   url       = {http://papers.nips.cc/paper/8033-credit-assignment-for-collective-multiagent-rl-with-global-rewards},
 }
 

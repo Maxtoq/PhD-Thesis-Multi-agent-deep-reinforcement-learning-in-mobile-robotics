@@ -8,6 +8,7 @@
   crossref  = {conf/nips/2018},
   file      = {:NguyenKL18 - Credit Assignment for Collective Multiagent RL with Global Rewards.pdf:PDF},
   groups    = {Multi-agent RL, Credit Assignment, Credit assignment},
+  ranking   = {rank1},
   url       = {http://papers.nips.cc/paper/8033-credit-assignment-for-collective-multiagent-rl-with-global-rewards},
 }
 
@@ -6145,5 +6146,4 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 1 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Language-Augmented RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language\;0\;1\;0x8a8a8aff\;\;\;;
-1 
+1 StaticGroup:Language\;0\;
