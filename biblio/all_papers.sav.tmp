@@ -6086,6 +6086,48 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url       = {https://openreview.net/forum?id=hsqZ5v8PFyQ},
 }
 
+@InProceedings{NEURIPS2018_85fc37b1,
+  author    = {Khadka, Shauharda and Tumer, Kagan},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Evolution-Guided Policy Gradient in Reinforcement Learning},
+  year      = {2018},
+  editor    = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {31},
+  file      = {:NEURIPS2018_85fc37b1 - Evolution Guided Policy Gradient in Reinforcement Learning.pdf:PDF},
+  groups    = {Evolutionary + RL},
+  url       = {https://proceedings.neurips.cc/paper/2018/file/85fc37b18c57097425b52fc7afbb6969-Paper.pdf},
+}
+
+@Article{Pourchot2018,
+  author        = {Aloïs Pourchot and Olivier Sigaud},
+  title         = {CEM-RL: Combining evolutionary and gradient-based methods for policy search},
+  year          = {2018},
+  month         = oct,
+  abstract      = {Deep neuroevolution and deep reinforcement learning (deep RL) algorithms are two popular approaches to policy search. The former is widely applicable and rather stable, but suffers from low sample efficiency. By contrast, the latter is more sample efficient, but the most sample efficient variants are also rather unstable and highly sensitive to hyper-parameter setting. So far, these families of methods have mostly been compared as competing tools. However, an emerging approach consists in combining them so as to get the best of both worlds. Two previously existing combinations use either an ad hoc evolutionary algorithm or a goal exploration process together with the Deep Deterministic Policy Gradient (DDPG) algorithm, a sample efficient off-policy deep RL algorithm. In this paper, we propose a different combination scheme using the simple cross-entropy method (CEM) and Twin Delayed Deep Deterministic policy gradient (td3), another off-policy deep RL algorithm which improves over ddpg. We evaluate the resulting method, cem-rl, on a set of benchmarks classically used in deep RL. We show that cem-rl benefits from several advantages over its competitors and offers a satisfactory trade-off between performance and sample efficiency.},
+  archiveprefix = {arXiv},
+  eprint        = {1810.01222},
+  file          = {:Pourchot2018 - CEM RL_ Combining Evolutionary and Gradient Based Methods for Policy Search.pdf:PDF},
+  groups        = {Evolutionary + RL},
+  keywords      = {cs.LG, cs.NE, stat.ML},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Bodnar2020,
+  author    = {Cristian Bodnar and Ben Day and Pietro Li{\'{o}}},
+  journal   = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
+  title     = {Proximal Distilled Evolutionary Reinforcement Learning},
+  year      = {2020},
+  month     = {apr},
+  number    = {04},
+  pages     = {3283--3290},
+  volume    = {34},
+  doi       = {10.1609/aaai.v34i04.5728},
+  file      = {:Bodnar2020 - Proximal Distilled Evolutionary Reinforcement Learning.pdf:PDF},
+  groups    = {Evolutionary + RL},
+  publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -6127,23 +6169,4 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Exploration\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
-4 StaticGroup:Discrete language\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Independent Learning\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Centralised execution\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Macro-actions\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language-Augmented RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language\;0\;
+3
