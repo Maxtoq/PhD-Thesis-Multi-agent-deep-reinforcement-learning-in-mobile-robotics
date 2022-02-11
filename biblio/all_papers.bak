@@ -6214,6 +6214,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   title     = {Reinforced Cross-Modal Matching and Self-Supervised Imitation Learning for Vision-Language Navigation},
   year      = {2019},
   month     = {June},
+  file      = {:Wang_2019_CVPR - Reinforced Cross Modal Matching and Self Supervised Imitation Learning for Vision Language Navigation.pdf:PDF},
   groups    = {Language-Augmented RL},
 =======
 @InProceedings{NEURIPS2018_85fc37b1,
@@ -6241,6 +6242,21 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   groups        = {Evolutionary + RL},
   keywords      = {cs.LG, cs.NE, stat.ML},
   primaryclass  = {cs.LG},
+}
+
+@Article{Bodnar2020,
+  author    = {Cristian Bodnar and Ben Day and Pietro Li{\'{o}}},
+  journal   = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
+  title     = {Proximal Distilled Evolutionary Reinforcement Learning},
+  year      = {2020},
+  month     = {apr},
+  number    = {04},
+  pages     = {3283--3290},
+  volume    = {34},
+  doi       = {10.1609/aaai.v34i04.5728},
+  file      = {:Bodnar2020 - Proximal Distilled Evolutionary Reinforcement Learning.pdf:PDF},
+  groups    = {Evolutionary + RL},
+  publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
 >>>>>>> e1acc745b68f4e69f514785e579c56cad8d4e026
 }
 
