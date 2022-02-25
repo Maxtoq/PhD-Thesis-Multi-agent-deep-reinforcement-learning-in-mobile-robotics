@@ -4561,23 +4561,24 @@ agents)},
   ranking   = {rank1},
 }
 
-@InProceedings{pmlr-v87-das18a,
-  author    = {Das, Abhishek and Gkioxari, Georgia and Lee, Stefan and Parikh, Devi and Batra, Dhruv},
-  booktitle = {Proceedings of The 2nd Conference on Robot Learning},
-  title     = {Neural Modular Control for Embodied Question Answering},
-  year      = {2018},
-  editor    = {Aude Billard and Anca Dragan and Jan Peters and Jun Morimoto},
-  month     = {29--31 Oct},
-  pages     = {53--62},
-  publisher = {PMLR},
-  series    = {Proceedings of Machine Learning Research},
-  volume    = {87},
-  abstract  = {We present a modular approach for learning policies for navigation over long planning horizons from language input. Our hierarchical policy operates at multiple timescales, where the higher-level master policy proposes subgoals to be executed by specialized sub-policies. Our choice of subgoals is compositional and semantic, i.e. they can be sequentially combined in arbitrary orderings, and assume human-interpretable descriptions (e.g. ‘exit room’, ‘find kitchen’, ‘find refrigerator’, etc.). We use imitation learning to warm-start policies at each level of the hierarchy, dramatically increasing sample efficiency, followed by reinforcement learning. Independent reinforcement learning at each level of hierarchy enables sub-policies to adapt to consequences of their actions and recover from errors. Subsequent joint hierarchical training enables the master policy to adapt to the sub-policies. On the challenging EQA [1] benchmark in House3D [2], requiring navigating diverse realistic indoor environments, our approach outperforms prior work by a significant margin, both in terms of navigation and question answering.},
-  file      = {:pmlr-v87-das18a - Neural Modular Control for Embodied Question Answering.pdf:PDF},
-  groups    = {Hierarchical RL, Language-Augmented RL},
-  pdf       = {http://proceedings.mlr.press/v87/das18a/das18a.pdf},
-  ranking   = {rank4},
-  url       = {http://proceedings.mlr.press/v87/das18a.html},
+@InProceedings{Das2018,
+  author     = {Das, Abhishek and Gkioxari, Georgia and Lee, Stefan and Parikh, Devi and Batra, Dhruv},
+  booktitle  = {Proceedings of The 2nd Conference on Robot Learning},
+  title      = {Neural Modular Control for Embodied Question Answering},
+  year       = {2018},
+  editor     = {Aude Billard and Anca Dragan and Jan Peters and Jun Morimoto},
+  month      = {29--31 Oct},
+  pages      = {53--62},
+  publisher  = {PMLR},
+  series     = {Proceedings of Machine Learning Research},
+  volume     = {87},
+  abstract   = {We present a modular approach for learning policies for navigation over long planning horizons from language input. Our hierarchical policy operates at multiple timescales, where the higher-level master policy proposes subgoals to be executed by specialized sub-policies. Our choice of subgoals is compositional and semantic, i.e. they can be sequentially combined in arbitrary orderings, and assume human-interpretable descriptions (e.g. ‘exit room’, ‘find kitchen’, ‘find refrigerator’, etc.). We use imitation learning to warm-start policies at each level of the hierarchy, dramatically increasing sample efficiency, followed by reinforcement learning. Independent reinforcement learning at each level of hierarchy enables sub-policies to adapt to consequences of their actions and recover from errors. Subsequent joint hierarchical training enables the master policy to adapt to the sub-policies. On the challenging EQA [1] benchmark in House3D [2], requiring navigating diverse realistic indoor environments, our approach outperforms prior work by a significant margin, both in terms of navigation and question answering.},
+  file       = {:pmlr-v87-das18a - Neural Modular Control for Embodied Question Answering.pdf:PDF},
+  groups     = {Hierarchical RL, Macro-actions},
+  pdf        = {http://proceedings.mlr.press/v87/das18a/das18a.pdf},
+  ranking    = {rank4},
+  readstatus = {read},
+  url        = {http://proceedings.mlr.press/v87/das18a.html},
 }
 
 @InProceedings{pmlr-v80-zhang18n,
@@ -4990,6 +4991,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   comment   = {IMAGINE},
   file      = {:NEURIPS2020_274e6fcf - Language As a Cognitive Tool to Imagine Goals in Curiosity Driven Exploration.pdf:PDF},
   groups    = {Curiosity, Language-Augmented RL},
+  priority  = {prio1},
   ranking   = {rank2},
   url       = {https://proceedings.neurips.cc/paper/2020/file/274e6fcf4a583de4a81c6376f17673e7-Paper.pdf},
 }
@@ -5018,6 +5020,8 @@ communication integrated in QMIX, with tricks to make it more efficient},
   volume    = {32},
   file      = {:NEURIPS2019_0af78794 - Language As an Abstraction for Hierarchical Deep Reinforcement Learning.pdf:PDF},
   groups    = {Hierarchical RL, Language-Augmented RL},
+  priority  = {prio1},
+  ranking   = {rank2},
   url       = {https://proceedings.neurips.cc/paper/2019/file/0af787945872196b42c9f73ead2565c8-Paper.pdf},
 }
 
@@ -5119,6 +5123,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   hal_version = {v1},
   keywords    = {Reinforcement learning ; Artificial intelligence and robotics},
   pdf         = {https://hal.inria.fr/hal-03121146/file/2006.07185.pdf},
+  readstatus  = {read},
   url         = {https://hal.inria.fr/hal-03121146},
 }
 
@@ -5134,7 +5139,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   file       = {:Luketina2019 - A Survey of Reinforcement Learning Informed by Natural Language.pdf:PDF},
   groups     = {Language-Augmented RL},
   ranking    = {rank3},
-  readstatus = {skimmed},
+  readstatus = {read},
   url        = {https://doi.org/10.24963/ijcai.2019/880},
 }
 
@@ -5183,10 +5188,11 @@ communication integrated in QMIX, with tricks to make it more efficient},
 }
 
 @Book{Vygotsky1934,
-  author = {Lev S. Vygotsky},
-  title  = {Thought and Language},
-  year   = {1934},
-  groups = {Language-Augmented RL},
+  author  = {Lev S. Vygotsky},
+  title   = {Thought and Language},
+  year    = {1934},
+  groups  = {Language, Developmental psychology},
+  ranking = {rank5},
 }
 
 @InProceedings{Andreas2018,
@@ -5963,6 +5969,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   year      = {2019},
   file      = {:bahdanau2018learning - Learning to Understand Goal Specifications by Modelling Reward.pdf:PDF},
   groups    = {Language-Augmented RL},
+  priority  = {prio1},
   ranking   = {rank2},
   url       = {https://openreview.net/forum?id=H1xsSjC9Ym},
 }
@@ -5978,6 +5985,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   doi       = {10.1613/jair.1.11263},
   file      = {:Narasimhan2018 - Grounding Language for Transfer in Deep Reinforcement Learning (3).pdf:PDF},
   groups    = {Language-Augmented RL},
+  priority  = {prio2},
   publisher = {{AI} Access Foundation},
 }
 
@@ -5990,6 +5998,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   cdate    = {1483228800000},
   file     = {:HermannHGWFSSCJ17 - Grounded Language Learning in a Simulated 3D World.pdf:PDF},
   groups   = {Language-Augmented RL},
+  priority = {prio2},
   publtype = {informal},
   ranking  = {rank2},
   url      = {http://arxiv.org/abs/1706.06551},
@@ -6004,6 +6013,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   groups       = {Language-Augmented RL},
   journal      = {Proceedings of the 28th International Joint Conference on Artificial Intelligence},
   place        = {Country unknown/Code not available},
+  ranking      = {rank1},
   url          = {https://par.nsf.gov/biblio/10100557},
 }
 
@@ -6086,7 +6096,6 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url       = {https://openreview.net/forum?id=hsqZ5v8PFyQ},
 }
 
-<<<<<<< HEAD
 @InProceedings{Chevalier2018,
   author    = {Maxime Chevalier-Boisvert and Dzmitry Bahdanau and Salem Lahlou and Lucas Willems and Chitwan Saharia and Thien Huu Nguyen and Yoshua Bengio},
   booktitle = {International Conference on Learning Representations},
@@ -6136,6 +6145,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   file       = {:Mei2016 - Listen, Attend, and Walk_ Neural Mapping of Navigational Instructions to Action Sequences.pdf:PDF},
   groups     = {Language-Augmented RL},
   keywords   = {direction following; natural language processing; natural language semantics},
+  priority   = {prio2},
   ranking    = {rank2},
   url        = {https://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12522/12021},
 }
@@ -6151,6 +6161,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   abstractnote = {&lt;p&gt; To perform tasks specified by natural language instructions, autonomous agents need to extract semantically meaningful representations of language and map it to visual elements and actions in the environment. This problem is called task-oriented language grounding. We propose an end-to-end trainable neural architecture for task-oriented language grounding in 3D environments which assumes no prior linguistic or perceptual knowledge and requires only raw pixels from the environment and the natural language instruction as input. The proposed model combines the image and text representations using a Gated-Attention mechanism and learns a policy to execute the natural language instruction using standard reinforcement and imitation learning methods. We show the effectiveness of the proposed model on unseen instructions as well as unseen maps, both quantitatively and qualitatively. We also introduce a novel environment based on a 3D game engine to simulate the challenges of task-oriented language grounding over a rich set of instructions and environment states. &lt;/p&gt;},
   file         = {:Chaplot_MysoreSathyendra_Pasumarthi_Rajagopal_Salakhutdinov_2018 - Gated Attention Architectures for Task Oriented Language Grounding.pdf:PDF},
   groups       = {Language-Augmented RL},
+  priority     = {prio2},
   ranking      = {rank2},
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11832},
 }
@@ -6193,19 +6204,23 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   doi       = {10.18653/v1/D17-1106},
   file      = {:misra-etal-2017-mapping - Mapping Instructions and Visual Observations to Actions with Reinforcement Learning.pdf:PDF},
   groups    = {Language-Augmented RL},
+  priority  = {prio2},
   ranking   = {rank2},
   url       = {https://aclanthology.org/D17-1106},
 }
 
 @InProceedings{Anderson_2018_CVPR,
-  author    = {Anderson, Peter and Wu, Qi and Teney, Damien and Bruce, Jake and Johnson, Mark and Sünderhauf, Niko and Reid, Ian and Gould, Stephen and van den Hengel, Anton},
-  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  title     = {Vision-and-Language Navigation: Interpreting Visually-Grounded Navigation Instructions in Real Environments},
-  year      = {2018},
-  month     = {June},
-  file      = {:Anderson_2018_CVPR - Vision and Language Navigation_ Interpreting Visually Grounded Navigation Instructions in Real Environments.pdf:PDF},
-  groups    = {Language-Augmented RL},
-  ranking   = {rank4},
+  author     = {Anderson, Peter and Wu, Qi and Teney, Damien and Bruce, Jake and Johnson, Mark and Sünderhauf, Niko and Reid, Ian and Gould, Stephen and van den Hengel, Anton},
+  booktitle  = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title      = {Vision-and-Language Navigation: Interpreting Visually-Grounded Navigation Instructions in Real Environments},
+  year       = {2018},
+  month      = {June},
+  file       = {:Anderson_2018_CVPR - Vision and Language Navigation_ Interpreting Visually Grounded Navigation Instructions in Real Environments.pdf:PDF},
+  groups     = {Visual-and-Language Navigation},
+  priority   = {prio1},
+  ranking    = {rank4},
+  readstatus = {read},
+  url        = {https://openaccess.thecvf.com/content_cvpr_2018/html/Anderson_Vision-and-Language_Navigation_Interpreting_CVPR_2018_paper.html},
 }
 
 @InProceedings{Wang_2019_CVPR,
@@ -6216,7 +6231,8 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   month     = {June},
   file      = {:Wang_2019_CVPR - Reinforced Cross Modal Matching and Self Supervised Imitation Learning for Vision Language Navigation.pdf:PDF},
   groups    = {Language-Augmented RL},
-=======
+}
+
 @InProceedings{NEURIPS2018_85fc37b1,
   author    = {Khadka, Shauharda and Tumer, Kagan},
   booktitle = {Advances in Neural Information Processing Systems},
@@ -6226,38 +6242,301 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   publisher = {Curran Associates, Inc.},
   volume    = {31},
   file      = {:NEURIPS2018_85fc37b1 - Evolution Guided Policy Gradient in Reinforcement Learning.pdf:PDF},
-  groups    = {Evolutionary + RL},
+  groups    = {Evolutionary RL},
+  ranking   = {rank3},
   url       = {https://proceedings.neurips.cc/paper/2018/file/85fc37b18c57097425b52fc7afbb6969-Paper.pdf},
 }
 
-@Article{Pourchot2018,
-  author        = {Aloïs Pourchot and Olivier Sigaud},
-  title         = {CEM-RL: Combining evolutionary and gradient-based methods for policy search},
-  year          = {2018},
-  month         = oct,
-  abstract      = {Deep neuroevolution and deep reinforcement learning (deep RL) algorithms are two popular approaches to policy search. The former is widely applicable and rather stable, but suffers from low sample efficiency. By contrast, the latter is more sample efficient, but the most sample efficient variants are also rather unstable and highly sensitive to hyper-parameter setting. So far, these families of methods have mostly been compared as competing tools. However, an emerging approach consists in combining them so as to get the best of both worlds. Two previously existing combinations use either an ad hoc evolutionary algorithm or a goal exploration process together with the Deep Deterministic Policy Gradient (DDPG) algorithm, a sample efficient off-policy deep RL algorithm. In this paper, we propose a different combination scheme using the simple cross-entropy method (CEM) and Twin Delayed Deep Deterministic policy gradient (td3), another off-policy deep RL algorithm which improves over ddpg. We evaluate the resulting method, cem-rl, on a set of benchmarks classically used in deep RL. We show that cem-rl benefits from several advantages over its competitors and offers a satisfactory trade-off between performance and sample efficiency.},
-  archiveprefix = {arXiv},
-  eprint        = {1810.01222},
-  file          = {:Pourchot2018 - CEM RL_ Combining Evolutionary and Gradient Based Methods for Policy Search.pdf:PDF},
-  groups        = {Evolutionary + RL},
-  keywords      = {cs.LG, cs.NE, stat.ML},
-  primaryclass  = {cs.LG},
+@InProceedings{pmlr-v70-oh17a,
+  author    = {Junhyuk Oh and Satinder Singh and Honglak Lee and Pushmeet Kohli},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning},
+  title     = {Zero-Shot Task Generalization with Multi-Task Deep Reinforcement Learning},
+  year      = {2017},
+  editor    = {Precup, Doina and Teh, Yee Whye},
+  month     = {06--11 Aug},
+  pages     = {2661--2670},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {70},
+  abstract  = {As a step towards developing zero-shot task generalization capabilities in reinforcement learning (RL), we introduce a new RL problem where the agent should learn to execute sequences of instructions after learning useful skills that solve subtasks. In this problem, we consider two types of generalizations: to previously unseen instructions and to longer sequences of instructions. For generalization over unseen instructions, we propose a new objective which encourages learning correspondences between similar subtasks by making analogies. For generalization over sequential instructions, we present a hierarchical architecture where a meta controller learns to use the acquired skills for executing the instructions. To deal with delayed reward, we propose a new neural architecture in the meta controller that learns when to update the subtask, which makes learning more efficient. Experimental results on a stochastic 3D domain show that the proposed ideas are crucial for generalization to longer instructions as well as unseen instructions.},
+  file      = {:pmlr-v70-oh17a - Zero Shot Task Generalization with Multi Task Deep Reinforcement Learning.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  pdf       = {http://proceedings.mlr.press/v70/oh17a/oh17a.pdf},
+  priority  = {prio2},
+  ranking   = {rank2},
+  url       = {https://proceedings.mlr.press/v70/oh17a.html},
 }
 
-@Article{Bodnar2020,
-  author    = {Cristian Bodnar and Ben Day and Pietro Li{\'{o}}},
-  journal   = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
-  title     = {Proximal Distilled Evolutionary Reinforcement Learning},
-  year      = {2020},
-  month     = {apr},
-  number    = {04},
-  pages     = {3283--3290},
-  volume    = {34},
-  doi       = {10.1609/aaai.v34i04.5728},
-  file      = {:Bodnar2020 - Proximal Distilled Evolutionary Reinforcement Learning.pdf:PDF},
-  groups    = {Evolutionary + RL},
-  publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
->>>>>>> e1acc745b68f4e69f514785e579c56cad8d4e026
+@InProceedings{Gordon2018,
+  author    = {Gordon, Daniel and Kembhavi, Aniruddha and Rastegari, Mohammad and Redmon, Joseph and Fox, Dieter and Farhadi, Ali},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {IQA: Visual Question Answering in Interactive Environments},
+  year      = {2018},
+  month     = {June},
+  file      = {:Gordon2018 - IQA_ Visual Question Answering in Interactive Environments.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  priority  = {prio1},
+  ranking   = {rank3},
+}
+
+@InProceedings{Andreas2016,
+  author     = {Andreas, Jacob and Rohrbach, Marcus and Darrell, Trevor and Klein, Dan},
+  booktitle  = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title      = {Neural Module Networks},
+  year       = {2016},
+  month      = {June},
+  file       = {:Andreas2016 - Neural Module Networks.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  ranking    = {rank4},
+  readstatus = {skimmed},
+}
+
+@InProceedings{shu2018hierarchical,
+  author    = {Tianmin Shu and Caiming Xiong and Richard Socher},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Hierarchical and Interpretable Skill Acquisition in Multi-task Reinforcement Learning},
+  year      = {2018},
+  file      = {:shu2018hierarchical - Hierarchical and Interpretable Skill Acquisition in Multi Task Reinforcement Learning.pdf:PDF},
+  groups    = {Hierarchical RL, Language-Augmented RL},
+  priority  = {prio2},
+  ranking   = {rank1},
+  url       = {https://openreview.net/forum?id=SJJQVZW0b},
+}
+
+@InProceedings{NIPS2016_c4492cbe,
+  author    = {Vezhnevets, Alexander and Mnih, Volodymyr and Osindero, Simon and Graves, Alex and Vinyals, Oriol and Agapiou, John and kavukcuoglu, koray},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Strategic Attentive Writer for Learning Macro-Actions},
+  year      = {2016},
+  editor    = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {29},
+  file      = {:NIPS2016_c4492cbe - Strategic Attentive Writer for Learning Macro Actions.pdf:PDF},
+  groups    = {Macro-actions},
+  ranking   = {rank2},
+  url       = {https://proceedings.neurips.cc/paper/2016/file/c4492cbe90fbdbf88a5aec486aa81ed5-Paper.pdf},
+}
+
+@InProceedings{NEURIPS2019_7967cc8e,
+  author    = {Hu, Hengyuan and Yarats, Denis and Gong, Qucheng and Tian, Yuandong and Lewis, Mike},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Hierarchical Decision Making by Generating and Following Natural Language Instructions},
+  year      = {2019},
+  editor    = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {32},
+  file      = {:NEURIPS2019_7967cc8e - Hierarchical Decision Making by Generating and Following Natural Language Instructions.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  priority  = {prio2},
+  url       = {https://proceedings.neurips.cc/paper/2019/file/7967cc8e3ab559e68cc944c44b1cf3e8-Paper.pdf},
+}
+
+@InProceedings{Ndousse2021,
+  author    = {Ndousse, Kamal K and Eck, Douglas and Levine, Sergey and Jaques, Natasha},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+  title     = {Emergent Social Learning via Multi-agent Reinforcement Learning},
+  year      = {2021},
+  editor    = {Meila, Marina and Zhang, Tong},
+  month     = {18--24 Jul},
+  pages     = {7991--8004},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {139},
+  abstract  = {Social learning is a key component of human and animal intelligence. By taking cues from the behavior of experts in their environment, social learners can acquire sophisticated behavior and rapidly adapt to new circumstances. This paper investigates whether independent reinforcement learning (RL) agents in a multi-agent environment can learn to use social learning to improve their performance. We find that in most circumstances, vanilla model-free RL agents do not use social learning. We analyze the reasons for this deficiency, and show that by imposing constraints on the training environment and introducing a model-based auxiliary loss we are able to obtain generalized social learning policies which enable agents to: i) discover complex skills that are not learned from single-agent training, and ii) adapt online to novel environments by taking cues from experts present in the new environment. In contrast, agents trained with model-free RL or imitation learning generalize poorly and do not succeed in the transfer tasks. By mixing multi-agent and solo training, we can obtain agents that use social learning to gain skills that they can deploy when alone, even out-performing agents trained alone from the start.},
+  file      = {:Ndousse2021 - Emergent Social Learning Via Multi Agent Reinforcement Learning.pdf:PDF},
+  groups    = {Social Learning},
+  pdf       = {http://proceedings.mlr.press/v139/ndousse21a/ndousse21a.pdf},
+  url       = {https://proceedings.mlr.press/v139/ndousse21a.html},
+}
+
+@InProceedings{yu2018,
+  author    = {Haonan Yu and Haichao Zhang and Wei Xu},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Interactive Grounded Language Acquisition and Generalization in a 2D World},
+  year      = {2018},
+  file      = {:yu2018 - Interactive Grounded Language Acquisition and Generalization in a 2D World.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  priority  = {prio2},
+  ranking   = {rank1},
+  url       = {https://openreview.net/forum?id=H1UOm4gA-},
+}
+
+@InProceedings{Puig_2018_CVPR,
+  author    = {Puig, Xavier and Ra, Kevin and Boben, Marko and Li, Jiaman and Wang, Tingwu and Fidler, Sanja and Torralba, Antonio},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {VirtualHome: Simulating Household Activities via Programs},
+  year      = {2018},
+  month     = {June},
+  file      = {:Puig_2018_CVPR - VirtualHome_ Simulating Household Activities Via Programs.pdf:PDF},
+  groups    = {Macro-actions},
+  ranking   = {rank2},
+}
+
+@InProceedings{Gupta2017,
+  author    = {Gupta, Saurabh and Davidson, James and Levine, Sergey and Sukthankar, Rahul and Malik, Jitendra},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Cognitive Mapping and Planning for Visual Navigation},
+  year      = {2017},
+  month     = {July},
+  file      = {:Gupta2017 - Cognitive Mapping and Planning for Visual Navigation.pdf:PDF},
+  groups    = {Navigation},
+  ranking   = {rank3},
+}
+
+@InProceedings{10.5555/645528.657613,
+  author    = {Ng, Andrew Y. and Harada, Daishi and Russell, Stuart J.},
+  booktitle = {Proceedings of the Sixteenth International Conference on Machine Learning},
+  title     = {Policy Invariance Under Reward Transformations: Theory and Application to Reward Shaping},
+  year      = {1999},
+  address   = {San Francisco, CA, USA},
+  pages     = {278–287},
+  publisher = {Morgan Kaufmann Publishers Inc.},
+  series    = {ICML '99},
+  file      = {:10.5555_645528.657613 - Policy Invariance under Reward Transformations_ Theory and Application to Reward Shaping.pdf:PDF},
+  groups    = {RL},
+  isbn      = {1558606122},
+  numpages  = {10},
+  ranking   = {rank4},
+}
+
+@Article{Chen_Mooney_2011,
+  author       = {Chen, David and Mooney, Raymond},
+  journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title        = {Learning to Interpret Natural Language Navigation Instructions from Observations},
+  year         = {2011},
+  month        = {Aug.},
+  number       = {1},
+  pages        = {859-865},
+  volume       = {25},
+  abstractnote = {&lt;p&gt; The ability to understand natural-language instructions is critical to building intelligent agents that interact with humans. We present a system that learns to transform natural-language navigation instructions into executable formal plans. Given no prior linguistic knowledge, the system learns by simply observing how humans follow navigation instructions. The system is evaluated in three complex virtual indoor environments with numerous objects and landmarks. A previously collected realistic corpus of complex English navigation instructions for these environments is used for training and testing data. By using a learned lexicon to refine inferred plans and a supervised learner to induce a semantic parser, the system is able to automatically learnto correctly interpret a reasonable fraction of the complex instructions in this corpus. &lt;/p&gt;},
+  file         = {:Chen_Mooney_2011 - Learning to Interpret Natural Language Navigation Instructions from Observations.pdf:PDF},
+  groups       = {Visual-and-Language Navigation},
+  ranking      = {rank2},
+  url          = {https://ojs.aaai.org/index.php/AAAI/article/view/7974},
+}
+
+@InProceedings{6696569,
+  author    = {Guadarrama, Sergio and Riano, Lorenzo and Golland, Dave and Go¨hring, Daniel and Jia, Yangqing and Klein, Dan and Abbeel, Pieter and Darrell, Trevor},
+  booktitle = {2013 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  title     = {Grounding spatial relations for human-robot interaction},
+  year      = {2013},
+  pages     = {1640-1647},
+  doi       = {10.1109/IROS.2013.6696569},
+  groups    = {Visual-and-Language Navigation},
+  ranking   = {rank1},
+}
+
+@Article{Tellex_Kollar_Dickerson_Walter_Banerjee_Teller_Roy_2011,
+  author       = {Tellex, Stefanie and Kollar, Thomas and Dickerson, Steven and Walter, Matthew and Banerjee, Ashis and Teller, Seth and Roy, Nicholas},
+  journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title        = {Understanding Natural Language Commands for Robotic Navigation and Mobile Manipulation},
+  year         = {2011},
+  month        = {Aug.},
+  number       = {1},
+  pages        = {1507-1514},
+  volume       = {25},
+  abstractnote = {&lt;p&gt; This paper describes a new model for understanding natural language commands given to autonomous systems that perform navigation and mobile manipulation in semi-structured environments. Previous approaches have used models with fixed structure to infer the likelihood of a sequence of actions given the environment and the command. In contrast, our framework, called Generalized Grounding Graphs, dynamically instantiates a probabilistic graphical model for a particular natural language command according to the command’s hierarchical and compositional semantic structure. Our system performs inference in the model to successfully find and execute plans corresponding to natural language commands such as &quot;Put the tire pallet on the truck.&quot; The model is trained using a corpus of commands collected using crowdsourcing. We pair each command with robot actions and use the corpus to learn the parameters of the model. We evaluate the robot’s performance by inferring plans from natural language commands, executing each plan in a realistic robot simulator, and asking users to evaluate the system’s performance. We demonstrate that our system can successfully follow many natural language commands from the corpus. &lt;/p&gt;},
+  file         = {:Tellex_Kollar_Dickerson_Walter_Banerjee_Teller_Roy_2011 - Understanding Natural Language Commands for Robotic Navigation and Mobile Manipulation.pdf:PDF},
+  groups       = {Visual-and-Language Navigation},
+  ranking      = {rank3},
+  url          = {https://ojs.aaai.org/index.php/AAAI/article/view/7979},
+}
+
+@InProceedings{10.1007/978-3-540-74690-4_71,
+  author    = {Wierstra, Daan and Foerster, Alexander and Peters, Jan and Schmidhuber, J{\"u}rgen},
+  booktitle = {Artificial Neural Networks -- ICANN 2007},
+  title     = {Solving Deep Memory POMDPs with Recurrent Policy Gradients},
+  year      = {2007},
+  address   = {Berlin, Heidelberg},
+  editor    = {de S{\'a}, Joaquim Marques and Alexandre, Lu{\'i}s A. and Duch, W{\l}odzis{\l}aw and Mandic, Danilo},
+  pages     = {697--706},
+  publisher = {Springer Berlin Heidelberg},
+  abstract  = {This paper presents Recurrent Policy Gradients, a model-free reinforcement learning (RL) method creating limited-memory sto-chastic policies for partially observable Markov decision problems (POMDPs) that require long-term memories of past observations. The approach involves approximating a policy gradient for a Recurrent Neural Network (RNN) by backpropagating return-weighted characteristic eligibilities through time. Using a ``Long Short-Term Memory'' architecture, we are able to outperform other RL methods on two important benchmark tasks. Furthermore, we show promising results on a complex car driving simulation task.},
+  file      = {:10.1007_978-3-540-74690-4_71 - Solving Deep Memory POMDPs with Recurrent Policy Gradients.pdf:PDF},
+  groups    = {POMDP},
+  isbn      = {978-3-540-74690-4},
+}
+
+@InProceedings{NIPS2016_9dcb88e0,
+  author    = {Lu, Jiasen and Yang, Jianwei and Batra, Dhruv and Parikh, Devi},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Hierarchical Question-Image Co-Attention for Visual Question Answering},
+  year      = {2016},
+  editor    = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {29},
+  file      = {:NIPS2016_9dcb88e0 - Hierarchical Question Image Co Attention for Visual Question Answering.pdf:PDF},
+  groups    = {Visual-Language Co-Attention},
+  ranking   = {rank4},
+  url       = {https://proceedings.neurips.cc/paper/2016/file/9dcb88e0137649590b755372b040afad-Paper.pdf},
+}
+
+@InProceedings{Yang_2016_CVPR,
+  author    = {Yang, Zichao and He, Xiaodong and Gao, Jianfeng and Deng, Li and Smola, Alex},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Stacked Attention Networks for Image Question Answering},
+  year      = {2016},
+  month     = {June},
+  file      = {:Yang_2016_CVPR - Stacked Attention Networks for Image Question Answering.pdf:PDF},
+  groups    = {Visual-Language Co-Attention},
+  ranking   = {rank4},
+}
+
+@InProceedings{Anderson_2018_CVPR,
+  author    = {Anderson, Peter and He, Xiaodong and Buehler, Chris and Teney, Damien and Johnson, Mark and Gould, Stephen and Zhang, Lei},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering},
+  year      = {2018},
+  month     = {June},
+  file      = {:Anderson_2018_CVPR - Bottom up and Top down Attention for Image Captioning and Visual Question Answering.pdf:PDF},
+  groups    = {Visual-Language Co-Attention},
+  ranking   = {rank5},
+}
+
+@Article{6788810,
+  author  = {Smith, Linda and Gasser, Michael},
+  journal = {Artificial Life},
+  title   = {The Development of Embodied Cognition: Six Lessons from Babies},
+  year    = {2005},
+  number  = {1-2},
+  pages   = {13-29},
+  volume  = {11},
+  doi     = {10.1162/1064546053278973},
+  file    = {:6788810 - The Development of Embodied Cognition_ Six Lessons from Babies.pdf:PDF},
+  groups  = {Developmental psychology},
+  ranking = {rank3},
+}
+
+@Book{piaget1977development,
+  author    = {Piaget, Jean},
+  publisher = {Viking},
+  title     = {The development of thought: Equilibration of cognitive structures.(Trans A. Rosin).},
+  year      = {1977},
+  groups    = {Developmental psychology},
+  ranking   = {rank5},
+}
+
+@InProceedings{fu2018from,
+  author    = {Justin Fu and Anoop Korattikara and Sergey Levine and Sergio Guadarrama},
+  booktitle = {International Conference on Learning Representations},
+  title     = {From Language to Goals: Inverse Reinforcement Learning for Vision-Based Instruction Following},
+  year      = {2019},
+  file      = {:fu2018from - From Language to Goals_ Inverse Reinforcement Learning for Vision Based Instruction Following.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  ranking   = {rank1},
+  url       = {https://openreview.net/forum?id=r1lq1hRqYQ},
+}
+
+@Misc{lynch2021language,
+  author        = {Corey Lynch and Pierre Sermanet},
+  title         = {Language Conditioned Imitation Learning over Unstructured Data},
+  year          = {2021},
+  archiveprefix = {arXiv},
+  eprint        = {2005.07648},
+  file          = {:lynch2021language - Language Conditioned Imitation Learning Over Unstructured Data.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  priority      = {prio2},
+  ranking       = {rank2},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -6270,7 +6549,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Intrinsic goals\;0\;0\;0x8a8a8aff\;\;\;;
@@ -6292,8 +6571,9 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Sim to Real\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Space Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:MARL\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
@@ -6309,8 +6589,8 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Independent Learning\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Centralised execution\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Social Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Macro-actions\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
@@ -6319,10 +6599,13 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Macro-actions\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Language-Augmented RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visual-Language Co-Attention\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Memory\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Evolution Strategy\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Evolutionary + RL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Evolutionary RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Developmental psychology\;0\;1\;0x8a8a8aff\;\;\;;
 }
