@@ -5963,15 +5963,15 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 }
 
 @InProceedings{bahdanau2018learning,
-  author    = {Dzmitry Bahdanau and Felix Hill and Jan Leike and Edward Hughes and Pushmeet Kohli and Edward Grefenstette},
-  booktitle = {International Conference on Learning Representations},
-  title     = {Learning to Understand Goal Specifications by Modelling Reward},
-  year      = {2019},
-  file      = {:bahdanau2018learning - Learning to Understand Goal Specifications by Modelling Reward.pdf:PDF},
-  groups    = {Language-Augmented RL},
-  priority  = {prio1},
-  ranking   = {rank2},
-  url       = {https://openreview.net/forum?id=H1xsSjC9Ym},
+  author     = {Dzmitry Bahdanau and Felix Hill and Jan Leike and Edward Hughes and Pushmeet Kohli and Edward Grefenstette},
+  booktitle  = {International Conference on Learning Representations},
+  title      = {Learning to Understand Goal Specifications by Modelling Reward},
+  year       = {2019},
+  file       = {:bahdanau2018learning - Learning to Understand Goal Specifications by Modelling Reward.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  ranking    = {rank2},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=H1xsSjC9Ym},
 }
 
 @Article{Narasimhan2018,
@@ -6467,3 +6467,40 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   volume    = {29},
   file      = {:NIPS2016_9dcb88e0 - Hierarchical Question Image Co Attention for Visual Question Answering.pdf:PDF},
   groups    = {Visual-Language Co-Attention},
+  ranking   = {rank4},
+  url       = {https://proceedings.neurips.cc/paper/2016/file/9dcb88e0137649590b755372b040afad-Paper.pdf},
+}
+
+@InProceedings{Yang_2016_CVPR,
+  author    = {Yang, Zichao and He, Xiaodong and Gao, Jianfeng and Deng, Li and Smola, Alex},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Stacked Attention Networks for Image Question Answering},
+  year      = {2016},
+  month     = {June},
+  file      = {:Yang_2016_CVPR - Stacked Attention Networks for Image Question Answering.pdf:PDF},
+  groups    = {Visual-Language Co-Attention},
+  ranking   = {rank4},
+}
+
+@InProceedings{Anderson_2018_CVPR,
+  author    = {Anderson, Peter and He, Xiaodong and Buehler, Chris and Teney, Damien and Johnson, Mark and Gould, Stephen and Zhang, Lei},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Bottom-Up and Top-Down Attention for Image Captioning and Visual Question Answering},
+  year      = {2018},
+  month     = {June},
+  file      = {:Anderson_2018_CVPR - Bottom up and Top down Attention for Image Captioning and Visual Question Answering.pdf:PDF},
+  groups    = {Visual-Language Co-Attention},
+  ranking   = {rank5},
+}
+
+@Article{6788810,
+  author  = {Smith, Linda and Gasser, Michael},
+  journal = {Artificial Life},
+  title   = {The Development of Embodied Cognition: Six Lessons from Babies},
+  year    = {2005},
+  number  = {1-2},
+  pages   = {13-29},
+  volume  = {11},
+  doi     = {10.1162/1064546053278973},
+  file    = {:6788810 - The Development of Embodied Cognition_ Six Lessons from Babies.pdf:PDF},
+  groups  = {Dev

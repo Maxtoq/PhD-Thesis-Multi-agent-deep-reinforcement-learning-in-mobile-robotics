@@ -5990,18 +5990,18 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 }
 
 @Article{HermannHGWFSSCJ17,
-  author   = {Karl Moritz Hermann and Felix Hill and Simon Green and Fumin Wang and Ryan Faulkner and Hubert Soyer and David Szepesvari and Wojciech Marian Czarnecki and Max Jaderberg and Denis Teplyashin and Marcus Wainwright and Chris Apps and Demis Hassabis and Phil Blunsom},
-  journal  = {CoRR},
-  title    = {Grounded Language Learning in a Simulated 3D World},
-  year     = {2017},
-  volume   = {abs/1706.06551},
-  cdate    = {1483228800000},
-  file     = {:HermannHGWFSSCJ17 - Grounded Language Learning in a Simulated 3D World.pdf:PDF},
-  groups   = {Language-Augmented RL},
-  priority = {prio2},
-  publtype = {informal},
-  ranking  = {rank2},
-  url      = {http://arxiv.org/abs/1706.06551},
+  author     = {Karl Moritz Hermann and Felix Hill and Simon Green and Fumin Wang and Ryan Faulkner and Hubert Soyer and David Szepesvari and Wojciech Marian Czarnecki and Max Jaderberg and Denis Teplyashin and Marcus Wainwright and Chris Apps and Demis Hassabis and Phil Blunsom},
+  journal    = {CoRR},
+  title      = {Grounded Language Learning in a Simulated 3D World},
+  year       = {2017},
+  volume     = {abs/1706.06551},
+  cdate      = {1483228800000},
+  file       = {:HermannHGWFSSCJ17 - Grounded Language Learning in a Simulated 3D World.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  publtype   = {informal},
+  ranking    = {rank2},
+  readstatus = {read},
+  url        = {http://arxiv.org/abs/1706.06551},
 }
 
 @InProceedings{Goyal2019,
@@ -6539,6 +6539,21 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   ranking       = {rank2},
 }
 
+@Article{Najar2020,
+  author    = {Anis Najar and Olivier Sigaud and Mohamed Chetouani},
+  journal   = {Autonomous Agents and Multi-Agent Systems},
+  title     = {Interactively shaping robot behaviour with unlabeled human instructions},
+  year      = {2020},
+  month     = {may},
+  number    = {2},
+  volume    = {34},
+  doi       = {10.1007/s10458-020-09459-6},
+  file      = {:Najar2020 - Interactively Shaping Robot Behaviour with Unlabeled Human Instructions.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  priority  = {prio1},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -6552,7 +6567,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 1 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Intrinsic goals\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
@@ -6560,7 +6575,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;

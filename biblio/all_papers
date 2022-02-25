@@ -5963,15 +5963,15 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 }
 
 @InProceedings{bahdanau2018learning,
-  author    = {Dzmitry Bahdanau and Felix Hill and Jan Leike and Edward Hughes and Pushmeet Kohli and Edward Grefenstette},
-  booktitle = {International Conference on Learning Representations},
-  title     = {Learning to Understand Goal Specifications by Modelling Reward},
-  year      = {2019},
-  file      = {:bahdanau2018learning - Learning to Understand Goal Specifications by Modelling Reward.pdf:PDF},
-  groups    = {Language-Augmented RL},
-  priority  = {prio1},
-  ranking   = {rank2},
-  url       = {https://openreview.net/forum?id=H1xsSjC9Ym},
+  author     = {Dzmitry Bahdanau and Felix Hill and Jan Leike and Edward Hughes and Pushmeet Kohli and Edward Grefenstette},
+  booktitle  = {International Conference on Learning Representations},
+  title      = {Learning to Understand Goal Specifications by Modelling Reward},
+  year       = {2019},
+  file       = {:bahdanau2018learning - Learning to Understand Goal Specifications by Modelling Reward.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  ranking    = {rank2},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=H1xsSjC9Ym},
 }
 
 @Article{Narasimhan2018,
