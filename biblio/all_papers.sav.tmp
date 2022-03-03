@@ -557,7 +557,7 @@
   archiveprefix = {arXiv},
   eprint        = {2101.08001},
   file          = {:Hu2021 - UPDeT_ Universal Multi Agent Reinforcement Learning Via Policy Decoupling with Transformers.pdf:PDF},
-  groups        = {MARL, Multi-agent RL},
+  groups        = {MARL, Multi-agent RL, Transformers in RL},
   keywords      = {cs.LG, cs.AI},
   primaryclass  = {cs.LG},
 }
@@ -4576,7 +4576,7 @@ agents)},
   file       = {:pmlr-v87-das18a - Neural Modular Control for Embodied Question Answering.pdf:PDF},
   groups     = {Hierarchical RL, Macro-actions},
   pdf        = {http://proceedings.mlr.press/v87/das18a/das18a.pdf},
-  ranking    = {rank4},
+  ranking    = {rank2},
   readstatus = {read},
   url        = {http://proceedings.mlr.press/v87/das18a.html},
 }
@@ -5078,6 +5078,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   groups        = {Language-Augmented RL},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
+  ranking       = {rank1},
 }
 
 @InProceedings{pmlr-v70-andreas17a,
@@ -5889,17 +5890,16 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 }
 
 @Article{Chen2021,
-  author        = {Lili Chen and Kevin Lu and Aravind Rajeswaran and Kimin Lee and Aditya Grover and Michael Laskin and Pieter Abbeel and Aravind Srinivas and Igor Mordatch},
-  title         = {Decision Transformer: Reinforcement Learning via Sequence Modeling},
-  year          = {2021},
-  month         = jun,
-  abstract      = {We introduce a framework that abstracts Reinforcement Learning (RL) as a sequence modeling problem. This allows us to draw upon the simplicity and scalability of the Transformer architecture, and associated advances in language modeling such as GPT-x and BERT. In particular, we present Decision Transformer, an architecture that casts the problem of RL as conditional sequence modeling. Unlike prior approaches to RL that fit value functions or compute policy gradients, Decision Transformer simply outputs the optimal actions by leveraging a causally masked Transformer. By conditioning an autoregressive model on the desired return (reward), past states, and actions, our Decision Transformer model can generate future actions that achieve the desired return. Despite its simplicity, Decision Transformer matches or exceeds the performance of state-of-the-art model-free offline RL baselines on Atari, OpenAI Gym, and Key-to-Door tasks.},
-  archiveprefix = {arXiv},
-  eprint        = {2106.01345},
-  file          = {:Chen2021 - Decision Transformer_ Reinforcement Learning Via Sequence Modeling.pdf:PDF},
-  groups        = {Offline RL},
-  keywords      = {cs.LG, cs.AI},
-  primaryclass  = {cs.LG},
+  author    = {Lili Chen and Kevin Lu and Aravind Rajeswaran and Kimin Lee and Aditya Grover and Michael Laskin and Pieter Abbeel and Aravind Srinivas and Igor Mordatch},
+  title     = {Decision Transformer: Reinforcement Learning via Sequence Modeling},
+  year      = {2021},
+  month     = jun,
+  abstract  = {We introduce a framework that abstracts Reinforcement Learning (RL) as a sequence modeling problem. This allows us to draw upon the simplicity and scalability of the Transformer architecture, and associated advances in language modeling such as GPT-x and BERT. In particular, we present Decision Transformer, an architecture that casts the problem of RL as conditional sequence modeling. Unlike prior approaches to RL that fit value functions or compute policy gradients, Decision Transformer simply outputs the optimal actions by leveraging a causally masked Transformer. By conditioning an autoregressive model on the desired return (reward), past states, and actions, our Decision Transformer model can generate future actions that achieve the desired return. Despite its simplicity, Decision Transformer matches or exceeds the performance of state-of-the-art model-free offline RL baselines on Atari, OpenAI Gym, and Key-to-Door tasks.},
+  booktitle = {Advances in Neural Information Processing Systems},
+  file      = {:Chen2021 - Decision Transformer_ Reinforcement Learning Via Sequence Modeling.pdf:PDF},
+  groups    = {Offline RL, Transformers in RL},
+  ranking   = {rank4},
+  url       = {https://proceedings.neurips.cc/paper/2021/hash/7f489f642a0ddb10272b5c31057f0663-Abstract.html},
 }
 
 @InProceedings{pmlr-v119-parisotto20a,
@@ -5915,7 +5915,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   volume    = {119},
   abstract  = {Owing to their ability to both effectively integrate information over long time horizons and scale to massive amounts of data, self-attention architectures have recently shown breakthrough success in natural language processing (NLP). Harnessing the transformer’s ability to process long time horizons of information could provide a similar performance boost in partially observable reinforcement learning (RL) domains, but the large-scale transformers used in NLP have yet to be successfully applied to the RL setting. In this work we demonstrate that the standard transformer architecture is difficult to optimize, which was previously observed in the supervised learning setting but becomes especially pronounced with RL objectives. We propose architectural modifications that substantially improve the stability and learning speed of the original Transformer and XL variant. The proposed architecture, the Gated Transformer-XL (GTrXL), surpasses LSTMs on challenging memory environments and achieves state-of-the-art results on the multi-task DMLab-30 benchmark suite, exceeding the performance of an external memory architecture. We show that the GTrXL has stability and performance that consistently matches or exceeds a competitive LSTM baseline, including on more reactive tasks where memory is less critical.},
   file      = {:pmlr-v119-parisotto20a - Stabilizing Transformers for Reinforcement Learning.pdf:PDF},
-  groups    = {RL},
+  groups    = {RL, Transformers in RL},
   pdf       = {http://proceedings.mlr.press/v119/parisotto20a/parisotto20a.pdf},
   ranking   = {rank3},
   url       = {https://proceedings.mlr.press/v119/parisotto20a.html},
@@ -5990,18 +5990,18 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 }
 
 @Article{HermannHGWFSSCJ17,
-  author   = {Karl Moritz Hermann and Felix Hill and Simon Green and Fumin Wang and Ryan Faulkner and Hubert Soyer and David Szepesvari and Wojciech Marian Czarnecki and Max Jaderberg and Denis Teplyashin and Marcus Wainwright and Chris Apps and Demis Hassabis and Phil Blunsom},
-  journal  = {CoRR},
-  title    = {Grounded Language Learning in a Simulated 3D World},
-  year     = {2017},
-  volume   = {abs/1706.06551},
-  cdate    = {1483228800000},
-  file     = {:HermannHGWFSSCJ17 - Grounded Language Learning in a Simulated 3D World.pdf:PDF},
-  groups   = {Language-Augmented RL},
-  priority = {prio2},
-  publtype = {informal},
-  ranking  = {rank2},
-  url      = {http://arxiv.org/abs/1706.06551},
+  author     = {Karl Moritz Hermann and Felix Hill and Simon Green and Fumin Wang and Ryan Faulkner and Hubert Soyer and David Szepesvari and Wojciech Marian Czarnecki and Max Jaderberg and Denis Teplyashin and Marcus Wainwright and Chris Apps and Demis Hassabis and Phil Blunsom},
+  journal    = {CoRR},
+  title      = {Grounded Language Learning in a Simulated 3D World},
+  year       = {2017},
+  volume     = {abs/1706.06551},
+  cdate      = {1483228800000},
+  file       = {:HermannHGWFSSCJ17 - Grounded Language Learning in a Simulated 3D World.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  publtype   = {informal},
+  ranking    = {rank2},
+  readstatus = {read},
+  url        = {http://arxiv.org/abs/1706.06551},
 }
 
 @InProceedings{Goyal2019,
@@ -6268,15 +6268,16 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 }
 
 @InProceedings{Gordon2018,
-  author    = {Gordon, Daniel and Kembhavi, Aniruddha and Rastegari, Mohammad and Redmon, Joseph and Fox, Dieter and Farhadi, Ali},
-  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  title     = {IQA: Visual Question Answering in Interactive Environments},
-  year      = {2018},
-  month     = {June},
-  file      = {:Gordon2018 - IQA_ Visual Question Answering in Interactive Environments.pdf:PDF},
-  groups    = {Language-Augmented RL},
-  priority  = {prio1},
-  ranking   = {rank3},
+  author     = {Gordon, Daniel and Kembhavi, Aniruddha and Rastegari, Mohammad and Redmon, Joseph and Fox, Dieter and Farhadi, Ali},
+  booktitle  = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title      = {IQA: Visual Question Answering in Interactive Environments},
+  year       = {2018},
+  month      = {June},
+  file       = {:Gordon2018 - IQA_ Visual Question Answering in Interactive Environments.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  ranking    = {rank3},
+  readstatus = {read},
+  url        = {https://openaccess.thecvf.com/content_cvpr_2018/html/Gordon_IQA_Visual_Question_CVPR_2018_paper.html},
 }
 
 @InProceedings{Andreas2016,
@@ -6286,7 +6287,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   year       = {2016},
   month      = {June},
   file       = {:Andreas2016 - Neural Module Networks.pdf:PDF},
-  groups     = {Language-Augmented RL},
+  groups     = {Language},
   ranking    = {rank4},
   readstatus = {skimmed},
 }
@@ -6503,4 +6504,119 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   volume  = {11},
   doi     = {10.1162/1064546053278973},
   file    = {:6788810 - The Development of Embodied Cognition_ Six Lessons from Babies.pdf:PDF},
-  groups  = {Dev
+  groups  = {Developmental psychology},
+  ranking = {rank3},
+}
+
+@Book{piaget1977development,
+  author    = {Piaget, Jean},
+  publisher = {Viking},
+  title     = {The development of thought: Equilibration of cognitive structures.(Trans A. Rosin).},
+  year      = {1977},
+  groups    = {Developmental psychology},
+  ranking   = {rank5},
+}
+
+@InProceedings{fu2018from,
+  author    = {Justin Fu and Anoop Korattikara and Sergey Levine and Sergio Guadarrama},
+  booktitle = {International Conference on Learning Representations},
+  title     = {From Language to Goals: Inverse Reinforcement Learning for Vision-Based Instruction Following},
+  year      = {2019},
+  file      = {:fu2018from - From Language to Goals_ Inverse Reinforcement Learning for Vision Based Instruction Following.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  ranking   = {rank1},
+  url       = {https://openreview.net/forum?id=r1lq1hRqYQ},
+}
+
+@Misc{lynch2021language,
+  author        = {Corey Lynch and Pierre Sermanet},
+  title         = {Language Conditioned Imitation Learning over Unstructured Data},
+  year          = {2021},
+  archiveprefix = {arXiv},
+  eprint        = {2005.07648},
+  file          = {:lynch2021language - Language Conditioned Imitation Learning Over Unstructured Data.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  priority      = {prio2},
+  ranking       = {rank2},
+}
+
+@Article{Najar2020,
+  author     = {Anis Najar and Olivier Sigaud and Mohamed Chetouani},
+  journal    = {Autonomous Agents and Multi-Agent Systems},
+  title      = {Interactively shaping robot behaviour with unlabeled human instructions},
+  year       = {2020},
+  month      = {may},
+  number     = {2},
+  volume     = {34},
+  doi        = {10.1007/s10458-020-09459-6},
+  file       = {:Najar2020 - Interactively Shaping Robot Behaviour with Unlabeled Human Instructions.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  publisher  = {Springer Science and Business Media {LLC}},
+  readstatus = {read},
+}
+
+@InProceedings{janner2021offline,
+  author    = {Michael Janner and Qiyang Li and Sergey Levine},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Offline Reinforcement Learning as One Big Sequence Modeling Problem},
+  year      = {2021},
+  editor    = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+  groups    = {Offline RL},
+  ranking   = {rank3},
+  url       = {https://openreview.net/forum?id=wgeK563QgSw},
+}
+
+@InProceedings{NIPS2016_f442d33f,
+  author    = {Kulkarni, Tejas D and Narasimhan, Karthik and Saeedi, Ardavan and Tenenbaum, Josh},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Hierarchical Deep Reinforcement Learning: Integrating Temporal Abstraction and Intrinsic Motivation},
+  year      = {2016},
+  editor    = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {29},
+  file      = {:NIPS2016_f442d33f - Hierarchical Deep Reinforcement Learning_ Integrating Temporal Abstraction and Intrinsic Motivation.pdf:PDF},
+  groups    = {Hierarchical RL},
+  ranking   = {rank4},
+  url       = {https://proceedings.neurips.cc/paper/2016/file/f442d33fa06832082290ad8544a8da27-Paper.pdf},
+}
+
+@Article{Tessler_Givony_Zahavy_Mankowitz_Mannor_2017,
+  author       = {Tessler, Chen and Givony, Shahar and Zahavy, Tom and Mankowitz, Daniel and Mannor, Shie},
+  journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title        = {A Deep Hierarchical Approach to Lifelong Learning in Minecraft},
+  year         = {2017},
+  month        = {Feb.},
+  number       = {1},
+  volume       = {31},
+  abstractnote = {&lt;p&gt; We propose a lifelong learning system that has the ability to reuse and transfer knowledge from one task to another while efficiently retaining the previously learned knowledge-base. Knowledge is transferred by learning reusable skills to solve tasks in Minecraft, a popular video game which is an unsolved and high-dimensional lifelong learning problem. These reusable skills, which we refer to as Deep Skill Networks, are then incorporated into our novel Hierarchical Deep Reinforcement Learning Network (H-DRLN) architecture using two techniques: (1) a deep skill array and (2) skill distillation, our novel variation of policy distillation (Rusu et. al. 2015) for learning skills. Skill distillation enables the H-DRLN to efficiently retain knowledge and therefore scale in lifelong learning, by accumulating knowledge and encapsulating multiple reusable skills into a single distilled network. The H-DRLN exhibits superior performance and lower learning sample complexity compared to the regular Deep Q Network (Mnih et. al. 2015) in sub-domains of Minecraft. &lt;/p&gt;},
+  file         = {:Tessler_Givony_Zahavy_Mankowitz_Mannor_2017 - A Deep Hierarchical Approach to Lifelong Learning in Minecraft.pdf:PDF},
+  groups       = {Hierarchical RL},
+  ranking      = {rank3},
+  url          = {https://ojs.aaai.org/index.php/AAAI/article/view/10744},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Multi-Robot Communication\;0\;1\;0
