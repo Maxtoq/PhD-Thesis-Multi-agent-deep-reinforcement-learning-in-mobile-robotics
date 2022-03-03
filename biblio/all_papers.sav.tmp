@@ -22,6 +22,7 @@
   crossref  = {conf/nips/2017},
   file      = {:AndrychowiczCRS17 - Hindsight Experience Replay.pdf:PDF},
   groups    = {Robotics},
+  priority  = {prio1},
   ranking   = {rank4},
   url       = {http://papers.nips.cc/paper/7090-hindsight-experience-replay},
 }
@@ -6217,7 +6218,6 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   month      = {June},
   file       = {:Anderson_2018_CVPR - Vision and Language Navigation_ Interpreting Visually Grounded Navigation Instructions in Real Environments.pdf:PDF},
   groups     = {Visual-and-Language Navigation},
-  priority   = {prio1},
   ranking    = {rank4},
   readstatus = {read},
   url        = {https://openaccess.thecvf.com/content_cvpr_2018/html/Anderson_Vision-and-Language_Navigation_Interpreting_CVPR_2018_paper.html},
@@ -6595,28 +6595,48 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/10744},
 }
 
-@Comment{jabref-meta: databaseType:bibtex;}
+@InProceedings{levy2018hierarchical,
+  author    = {Andrew Levy and Robert Platt and Kate Saenko},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Hierarchical Reinforcement Learning with Hindsight},
+  year      = {2019},
+  file      = {:levy2018hierarchical - Hierarchical Reinforcement Learning with Hindsight.pdf:PDF},
+  groups    = {Hierarchical RL},
+  ranking   = {rank2},
+  url       = {https://openreview.net/forum?id=ryzECoAcY7},
+}
 
-@Comment{jabref-meta: grouping:
-0 AllEntriesGroup:;
-1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Multi-Robot Communication\;0\;1\;0
+@InProceedings{NEURIPS2018_e6384711,
+  author    = {Nachum, Ofir and Gu, Shixiang (Shane) and Lee, Honglak and Levine, Sergey},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Data-Efficient Hierarchical Reinforcement Learning},
+  year      = {2018},
+  editor    = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {31},
+  file      = {:NEURIPS2018_e6384711 - Data Efficient Hierarchical Reinforcement Learning.pdf:PDF},
+  groups    = {Hierarchical RL},
+  ranking   = {rank3},
+  url       = {https://proceedings.neurips.cc/paper/2018/file/e6384711491713d29bc63fc5eeb5ba4f-Paper.pdf},
+}
+
+@InProceedings{frans2018meta,
+  author    = {Kevin Frans and Jonathan Ho and Xi Chen and Pieter Abbeel and John Schulman},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Meta Learning Shared Hierarchies},
+  year      = {2018},
+  file      = {:frans2018meta - Meta Learning Shared Hierarchies.pdf:PDF},
+  groups    = {Hierarchical RL, Meta-Learning},
+  ranking   = {rank3},
+  url       = {https://openreview.net/forum?id=SyX0IeWAW},
+}
+
+@Article{Bacon_Harb_Precup_2017,
+  author       = {Bacon, Pierre-Luc and Harb, Jean and Precup, Doina},
+  journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title        = {The Option-Critic Architecture},
+  year         = {2017},
+  month        = {Feb.},
+  number       = {1},
+  volume       = {31},
+  abstractnote = {&lt;p&gt; Temporal abstraction is key to scaling up learning and planning in reinforcement learning. While planning with temporally extended actions is well understood, creating such abstractions autonomously from data has remained challenging.We tackle this problem in the framework of options [Sutton,Precup and Singh, 1999; Precup, 2000]. We derive policy gradient theorems for options and propose a new option-critic architecture capable of learning both the internal policies and the termination conditions of options, in tandem with the policy over options, and without the need to provide any additional rewards or subgoals. Experimental results in both discrete and continuous environments showcase the flexibili
