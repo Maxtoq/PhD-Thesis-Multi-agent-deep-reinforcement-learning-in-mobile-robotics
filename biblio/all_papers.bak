@@ -23,7 +23,7 @@
   file      = {:AndrychowiczCRS17 - Hindsight Experience Replay.pdf:PDF},
   groups    = {Robotics},
   priority  = {prio1},
-  ranking   = {rank4},
+  ranking   = {rank5},
   url       = {http://papers.nips.cc/paper/7090-hindsight-experience-replay},
 }
 
@@ -924,7 +924,7 @@
   comment       = {General Advantage Estimator},
   eprint        = {1506.02438},
   file          = {:Schulman2015a - High Dimensional Continuous Control Using Generalized Advantage Estimation.pdf:PDF},
-  groups        = {TRPO},
+  groups        = {TRPO, RL},
   keywords      = {cs.LG, cs.RO, cs.SY},
   primaryclass  = {cs.LG},
   ranking       = {rank4},
@@ -5012,18 +5012,18 @@ communication integrated in QMIX, with tricks to make it more efficient},
 }
 
 @InProceedings{NEURIPS2019_0af78794,
-  author    = {Jiang, YiDing and Gu, Shixiang (Shane) and Murphy, Kevin P and Finn, Chelsea},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {Language as an Abstraction for Hierarchical Deep Reinforcement Learning},
-  year      = {2019},
-  editor    = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
-  publisher = {Curran Associates, Inc.},
-  volume    = {32},
-  file      = {:NEURIPS2019_0af78794 - Language As an Abstraction for Hierarchical Deep Reinforcement Learning.pdf:PDF},
-  groups    = {Hierarchical RL, Language-Augmented RL},
-  priority  = {prio1},
-  ranking   = {rank2},
-  url       = {https://proceedings.neurips.cc/paper/2019/file/0af787945872196b42c9f73ead2565c8-Paper.pdf},
+  author     = {Jiang, YiDing and Gu, Shixiang (Shane) and Murphy, Kevin P and Finn, Chelsea},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Language as an Abstraction for Hierarchical Deep Reinforcement Learning},
+  year       = {2019},
+  editor     = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {32},
+  file       = {:NEURIPS2019_0af78794 - Language As an Abstraction for Hierarchical Deep Reinforcement Learning.pdf:PDF},
+  groups     = {Hierarchical RL, Language-Augmented RL},
+  ranking    = {rank2},
+  readstatus = {read},
+  url        = {https://proceedings.neurips.cc/paper/2019/file/0af787945872196b42c9f73ead2565c8-Paper.pdf},
 }
 
 @InProceedings{Cideron2020,
@@ -6647,18 +6647,18 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 }
 
 @InProceedings{NEURIPS2018_6a81681a,
-  author    = {Fried, Daniel and Hu, Ronghang and Cirik, Volkan and Rohrbach, Anna and Andreas, Jacob and Morency, Louis-Philippe and Berg-Kirkpatrick, Taylor and Saenko, Kate and Klein, Dan and Darrell, Trevor},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {Speaker-Follower Models for Vision-and-Language Navigation},
-  year      = {2018},
-  editor    = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
-  publisher = {Curran Associates, Inc.},
-  volume    = {31},
-  file      = {:NEURIPS2018_6a81681a - Speaker Follower Models for Vision and Language Navigation.pdf:PDF},
-  groups    = {Language-Augmented RL},
-  priority  = {prio1},
-  ranking   = {rank3},
-  url       = {https://proceedings.neurips.cc/paper/2018/file/6a81681a7af700c6385d36577ebec359-Paper.pdf},
+  author     = {Fried, Daniel and Hu, Ronghang and Cirik, Volkan and Rohrbach, Anna and Andreas, Jacob and Morency, Louis-Philippe and Berg-Kirkpatrick, Taylor and Saenko, Kate and Klein, Dan and Darrell, Trevor},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Speaker-Follower Models for Vision-and-Language Navigation},
+  year       = {2018},
+  editor     = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {31},
+  file       = {:NEURIPS2018_6a81681a - Speaker Follower Models for Vision and Language Navigation.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  ranking    = {rank3},
+  readstatus = {read},
+  url        = {https://proceedings.neurips.cc/paper/2018/file/6a81681a7af700c6385d36577ebec359-Paper.pdf},
 }
 
 @InProceedings{co-reyes2018metalearning,
@@ -6679,7 +6679,66 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   title     = {CLEVR: A Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning},
   year      = {2017},
   month     = {July},
+  file      = {:Johnson_2017_CVPR - CLEVR_ a Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning.pdf:PDF},
   groups    = {Language},
+  priority  = {prio1},
+  ranking   = {rank5},
+  url       = {https://openaccess.thecvf.com/content_cvpr_2017/html/Johnson_CLEVR_A_Diagnostic_CVPR_2017_paper.html},
+}
+
+@InProceedings{pmlr-v100-nachum20a,
+  author    = {Nachum, Ofir and Ahn, Michael and Ponte, Hugo and Gu, Shixiang (Shane) and Kumar, Vikash},
+  booktitle = {Proceedings of the Conference on Robot Learning},
+  title     = {Multi-Agent Manipulation via Locomotion using Hierarchical Sim2Real},
+  year      = {2020},
+  editor    = {Kaelbling, Leslie Pack and Kragic, Danica and Sugiura, Komei},
+  month     = {30 Oct--01 Nov},
+  pages     = {110--121},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {100},
+  abstract  = {Manipulation and locomotion are closely related problems that are often studied in isolation. In this work, we study the problem of coordinating multiple mobile agents to exhibit manipulation behaviors using a reinforcement learning (RL) approach. Our method hinges on the use of hierarchical sim2real – a simulated environment is used to learn low-level goal-reaching skills, which are then used as the action space for a high-level RL controller, also trained in simulation. The full hierarchical policy is then transferred to the real world in a zero-shot fashion. The application of domain randomization during training enables the learned behaviors to generalize to real-world settings, while the use of hierarchy provides a modular paradigm for learning and transferring increasingly complex behaviors. We evaluate our method on a number of real-world tasks, including coordinated object manipulation in a multi-agent setting.},
+  file      = {:pmlr-v100-nachum20a - Multi Agent Manipulation Via Locomotion Using Hierarchical Sim2Real.pdf:PDF},
+  groups    = {Sim to Real, Hierarchical RL, Multi-robot},
+  pdf       = {http://proceedings.mlr.press/v100/nachum20a/nachum20a.pdf},
+  priority  = {prio2},
+  ranking   = {rank1},
+  url       = {https://proceedings.mlr.press/v100/nachum20a.html},
+}
+
+@InProceedings{Zhao2020,
+  author    = {Wenshuai Zhao and Jorge Pena Queralta and Tomi Westerlund},
+  booktitle = {2020 {IEEE} Symposium Series on Computational Intelligence ({SSCI})},
+  title     = {Sim-to-Real Transfer in Deep Reinforcement Learning for Robotics: a Survey},
+  year      = {2020},
+  month     = {dec},
+  publisher = {{IEEE}},
+  doi       = {10.1109/ssci47803.2020.9308468},
+  file      = {:Zhao2020 - Sim to Real Transfer in Deep Reinforcement Learning for Robotics_ a Survey.pdf:PDF},
+  groups    = {Sim to Real},
+  ranking   = {rank2},
+}
+
+@InProceedings{pmlr-v37-schaul15,
+  author    = {Schaul, Tom and Horgan, Daniel and Gregor, Karol and Silver, David},
+  booktitle = {Proceedings of the 32nd International Conference on Machine Learning},
+  title     = {Universal Value Function Approximators},
+  year      = {2015},
+  address   = {Lille, France},
+  editor    = {Bach, Francis and Blei, David},
+  month     = {07--09 Jul},
+  pages     = {1312--1320},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {37},
+  abstract  = {Value functions are a core component of reinforcement learning. The main idea is to to construct a single function approximator V(s; theta) that estimates the long-term reward from any state s, using parameters θ. In this paper we introduce universal value function approximators (UVFAs) V(s,g;theta) that generalise not just over states s but also over goals g. We develop an efficient technique for supervised learning of UVFAs, by factoring observed values into separate embedding vectors for state and goal, and then learning a mapping from s and g to these factored embedding vectors. We show how this technique may be incorporated into a reinforcement learning algorithm that updates the UVFA solely from observed rewards. Finally, we demonstrate that a UVFA can successfully generalise to previously unseen goals.},
+  comment   = {DQN with different possible goals
+the agent takes as input the current state and goal, the value function depends also on this goal},
+  file      = {:pmlr-v37-schaul15 - Universal Value Function Approximators.pdf:PDF},
+  groups    = {RL, Value based},
+  pdf       = {http://proceedings.mlr.press/v37/schaul15.pdf},
+  ranking   = {rank4},
+  url       = {https://proceedings.mlr.press/v37/schaul15.html},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
@@ -6703,7 +6762,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
@@ -6716,7 +6775,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 2 StaticGroup:Space Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:MARL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
@@ -6734,7 +6793,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 3 StaticGroup:Centralised execution\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Social Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Heterogeneous Systems\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
