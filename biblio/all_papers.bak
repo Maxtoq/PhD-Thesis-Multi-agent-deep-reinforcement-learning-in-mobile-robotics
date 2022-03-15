@@ -5992,10 +5992,8 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 
 @Article{HermannHGWFSSCJ17,
   author     = {Karl Moritz Hermann and Felix Hill and Simon Green and Fumin Wang and Ryan Faulkner and Hubert Soyer and David Szepesvari and Wojciech Marian Czarnecki and Max Jaderberg and Denis Teplyashin and Marcus Wainwright and Chris Apps and Demis Hassabis and Phil Blunsom},
-  journal    = {CoRR},
   title      = {Grounded Language Learning in a Simulated 3D World},
   year       = {2017},
-  volume     = {abs/1706.06551},
   cdate      = {1483228800000},
   file       = {:HermannHGWFSSCJ17 - Grounded Language Learning in a Simulated 3D World.pdf:PDF},
   groups     = {Language-Augmented RL},
@@ -6739,6 +6737,21 @@ the agent takes as input the current state and goal, the value function depends 
   pdf       = {http://proceedings.mlr.press/v37/schaul15.pdf},
   ranking   = {rank4},
   url       = {https://proceedings.mlr.press/v37/schaul15.html},
+}
+
+@Article{Dafoe2020,
+  author        = {Allan Dafoe and Edward Hughes and Yoram Bachrach and Tantum Collins and Kevin R. McKee and Joel Z. Leibo and Kate Larson and Thore Graepel},
+  title         = {Open Problems in Cooperative AI},
+  year          = {2020},
+  month         = dec,
+  abstract      = {Problems of cooperation--in which agents seek ways to jointly improve their welfare--are ubiquitous and important. They can be found at scales ranging from our daily routines--such as driving on highways, scheduling meetings, and working collaboratively--to our global challenges--such as peace, commerce, and pandemic preparedness. Arguably, the success of the human species is rooted in our ability to cooperate. Since machines powered by artificial intelligence are playing an ever greater role in our lives, it will be important to equip them with the capabilities necessary to cooperate and to foster cooperation. We see an opportunity for the field of artificial intelligence to explicitly focus effort on this class of problems, which we term Cooperative AI. The objective of this research would be to study the many aspects of the problems of cooperation and to innovate in AI to contribute to solving these problems. Central goals include building machine agents with the capabilities needed for cooperation, building tools to foster cooperation in populations of (machine and/or human) agents, and otherwise conducting AI research for insight relevant to problems of cooperation. This research integrates ongoing work on multi-agent systems, game theory and social choice, human-machine interaction and alignment, natural-language processing, and the construction of social tools and platforms. However, Cooperative AI is not the union of these existing areas, but rather an independent bet about the productivity of specific kinds of conversations that involve these and other areas. We see opportunity to more explicitly focus on the problem of cooperation, to construct unified theory and vocabulary, and to build bridges with adjacent communities working on cooperation, including in the natural, social, and behavioural sciences.},
+  archiveprefix = {arXiv},
+  eprint        = {2012.08630},
+  file          = {:Dafoe2020 - Open Problems in Cooperative AI.pdf:PDF},
+  groups        = {Multi-agent RL},
+  keywords      = {cs.AI, cs.MA},
+  primaryclass  = {cs.AI},
+  ranking       = {rank3},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

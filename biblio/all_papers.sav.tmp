@@ -4991,7 +4991,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   volume    = {33},
   comment   = {IMAGINE},
   file      = {:NEURIPS2020_274e6fcf - Language As a Cognitive Tool to Imagine Goals in Curiosity Driven Exploration.pdf:PDF},
-  groups    = {Curiosity, Language-Augmented RL},
+  groups    = {Curiosity, Language-Augmented RL, ZPD},
   priority  = {prio1},
   ranking   = {rank2},
   url       = {https://proceedings.neurips.cc/paper/2020/file/274e6fcf4a583de4a81c6376f17673e7-Paper.pdf},
@@ -6736,4 +6736,4 @@ the agent takes as input the current state and goal, the value function depends 
   groups    = {RL, Value based},
   pdf       = {http://proceedings.mlr.press/v37/schaul15.pdf},
   ranking   = {rank4},
-  url       = {htt
+  url       =
