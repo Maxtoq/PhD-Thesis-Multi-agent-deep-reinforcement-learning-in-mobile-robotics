@@ -5145,6 +5145,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   groups        = {Language-Augmented RL},
   keywords      = {cs.AI, cs.CL, cs.LG},
   primaryclass  = {cs.AI},
+  readstatus    = {read},
 }
 
 @InProceedings{Wang2020b,
@@ -6812,4 +6813,4 @@ the agent takes as input the current state and goal, the value function depends 
   title         = {Improving Intrinsic Exploration with Language Abstractions},
   year          = {2022},
   month         = feb,
-  abstract      = {Reinforcement learning (RL) agents are particularly hard to train when rewards are sparse. One common solution is to use intrinsic rewards to encourage agents to explore their environment. However, recent intrinsic exploration methods often use state-based novelty measures which reward low-level exploration and may not scale to domains requiring more abstract skills. Instead, we explore natural language as a general medium for highlighting relevant abstractions in an environment. Unlike previous work, we evaluate whether language can improve over existing exploration methods by directly extending (and co
+  abstract      = {Reinforcement learning (RL) agents are particularly hard to train when rewards are sparse. One common solution is to use intrinsic rewards to encourage agents to explore their environment. However, recent intrinsic exploration methods often use state-based novelty measures which reward low-level exploration and may not scale to domains requiring more abstract skills. Instead, we explore natural language as a general medium for highlighting relevant abstractions in an environment. Unlike previous work, we evaluate whether language can improve over existing exploration methods by 

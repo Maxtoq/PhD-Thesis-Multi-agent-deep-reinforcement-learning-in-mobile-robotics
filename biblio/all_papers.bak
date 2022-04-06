@@ -6807,6 +6807,21 @@ the agent takes as input the current state and goal, the value function depends 
   priority      = {prio3},
 }
 
+@Article{Mu2022,
+  author        = {Jesse Mu and Victor Zhong and Roberta Raileanu and Minqi Jiang and Noah Goodman and Tim Rocktäschel and Edward Grefenstette},
+  title         = {Improving Intrinsic Exploration with Language Abstractions},
+  year          = {2022},
+  month         = feb,
+  abstract      = {Reinforcement learning (RL) agents are particularly hard to train when rewards are sparse. One common solution is to use intrinsic rewards to encourage agents to explore their environment. However, recent intrinsic exploration methods often use state-based novelty measures which reward low-level exploration and may not scale to domains requiring more abstract skills. Instead, we explore natural language as a general medium for highlighting relevant abstractions in an environment. Unlike previous work, we evaluate whether language can improve over existing exploration methods by directly extending (and comparing to) competitive intrinsic exploration baselines: AMIGo (Campero et al., 2021) and NovelD (Zhang et al., 2021). These language-based variants outperform their non-linguistic forms by 45-85% across 13 challenging tasks from the MiniGrid and MiniHack environment suites.},
+  archiveprefix = {arXiv},
+  eprint        = {2202.08938},
+  file          = {:Mu2022 - Improving Intrinsic Exploration with Language Abstractions.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {cs.LG, cs.AI, cs.CL},
+  primaryclass  = {cs.LG},
+  priority      = {prio2},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
