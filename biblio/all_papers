@@ -21,7 +21,7 @@
   cdate      = {1483228800000},
   crossref   = {conf/nips/2017},
   file       = {:AndrychowiczCRS17 - Hindsight Experience Replay.pdf:PDF},
-  groups     = {Robotics},
+  groups     = {Robotics, Multi-goal RL},
   ranking    = {rank5},
   readstatus = {skimmed},
   url        = {http://papers.nips.cc/paper/7090-hindsight-experience-replay},
@@ -4996,7 +4996,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   archiveprefix = {arXiv},
   eprint        = {1902.04546},
   file          = {:Chan2019 - ACTRCE_ Augmenting Experience Via Teacher's Advice for Multi Goal Reinforcement Learning.pdf:PDF},
-  groups        = {Language-Augmented RL},
+  groups        = {Language-Augmented RL, Multi-goal RL},
   keywords      = {cs.LG, cs.AI, cs.NE, stat.ML},
   primaryclass  = {cs.LG},
 }
@@ -7325,6 +7325,20 @@ the agent takes as input the current state and goal, the value function depends 
   url       = {https://openaccess.thecvf.com/content/CVPR2022/html/Zhou_Conditional_Prompt_Learning_for_Vision-Language_Models_CVPR_2022_paper.html},
 }
 
+@Article{Eysenbach2022,
+  author        = {Benjamin Eysenbach and Tianjun Zhang and Ruslan Salakhutdinov and Sergey Levine},
+  title         = {Contrastive Learning as Goal-Conditioned Reinforcement Learning},
+  year          = {2022},
+  month         = jun,
+  abstract      = {In reinforcement learning (RL), it is easier to solve a task if given a good representation. While deep RL should automatically acquire such good representations, prior work often finds that learning representations in an end-to-end fashion is unstable and instead equip RL algorithms with additional representation learning parts (e.g., auxiliary losses, data augmentation). How can we design RL algorithms that directly acquire good representations? In this paper, instead of adding representation learning parts to an existing RL algorithm, we show (contrastive) representation learning methods can be cast as RL algorithms in their own right. To do this, we build upon prior work and apply contrastive representation learning to action-labeled trajectories, in such a way that the (inner product of) learned representations exactly corresponds to a goal-conditioned value function. We use this idea to reinterpret a prior RL method as performing contrastive learning, and then use the idea to propose a much simpler method that achieves similar performance. Across a range of goal-conditioned RL tasks, we demonstrate that contrastive RL methods achieve higher success rates than prior non-contrastive methods, including in the offline RL setting. We also show that contrastive RL outperforms prior methods on image-based tasks, without using data augmentation or auxiliary objectives.},
+  archiveprefix = {arXiv},
+  eprint        = {2206.07568},
+  file          = {:Eysenbach2022 - Contrastive Learning As Goal Conditioned Reinforcement Learning.pdf:PDF},
+  groups        = {Multi-goal RL},
+  keywords      = {cs.LG, cs.AI},
+  primaryclass  = {cs.LG},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -7382,6 +7396,7 @@ the agent takes as input the current state and goal, the value function depends 
 2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Multi-goal RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
