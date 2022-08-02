@@ -7292,7 +7292,7 @@ the agent takes as input the current state and goal, the value function depends 
   comment       = {ConVIRT},
   eprint        = {2010.00747},
   file          = {:Zhang2020a - Contrastive Learning of Medical Visual Representations from Paired Images and Text.pdf:PDF},
-  groups        = {Visual-Language Learning},
+  groups        = {Visual-Language Learning, Contrastive Learning},
   keywords      = {cs.CV, cs.CL, cs.LG},
   primaryclass  = {cs.CV},
   ranking       = {rank3},
@@ -7330,4 +7330,182 @@ the agent takes as input the current state and goal, the value function depends 
   title         = {Contrastive Learning as Goal-Conditioned Reinforcement Learning},
   year          = {2022},
   month         = jun,
-  abstract      = {In reinforcement learning (RL), it is easier to solve a task if given a good representation. While deep RL should automatically acquire such good representations, prior work often finds that learning representations in an end-to-end fashion is unstable and instead equip RL algorithms with additional representation learning parts (e.g., auxiliary losses, data augmentation). How can we design RL algorithms that directly acquire good representations? In this paper, instead of adding representation learning parts to an existing RL algorithm, we show (contrastive) representation learning methods can be cast as RL algorithms in their own right. To do this, we build upon prior work and apply contrastive representation learning to action-labeled trajectories, in such a way that the (inner product of) learned representations exactly corresponds to a goal-conditioned value function. We use this idea to reinterpret a prior RL method as performing contrastive learning, and then use the idea to propose a much simpler method
+  abstract      = {In reinforcement learning (RL), it is easier to solve a task if given a good representation. While deep RL should automatically acquire such good representations, prior work often finds that learning representations in an end-to-end fashion is unstable and instead equip RL algorithms with additional representation learning parts (e.g., auxiliary losses, data augmentation). How can we design RL algorithms that directly acquire good representations? In this paper, instead of adding representation learning parts to an existing RL algorithm, we show (contrastive) representation learning methods can be cast as RL algorithms in their own right. To do this, we build upon prior work and apply contrastive representation learning to action-labeled trajectories, in such a way that the (inner product of) learned representations exactly corresponds to a goal-conditioned value function. We use this idea to reinterpret a prior RL method as performing contrastive learning, and then use the idea to propose a much simpler method that achieves similar performance. Across a range of goal-conditioned RL tasks, we demonstrate that contrastive RL methods achieve higher success rates than prior non-contrastive methods, including in the offline RL setting. We also show that contrastive RL outperforms prior methods on image-based tasks, without using data augmentation or auxiliary objectives.},
+  archiveprefix = {arXiv},
+  eprint        = {2206.07568},
+  file          = {:Eysenbach2022 - Contrastive Learning As Goal Conditioned Reinforcement Learning.pdf:PDF},
+  groups        = {Multi-goal RL, Contrastive Learning},
+  keywords      = {cs.LG, cs.AI},
+  primaryclass  = {cs.LG},
+}
+
+@InProceedings{10.1007/978-3-030-58621-8_45,
+  author    = {Tian, Yonglong and Krishnan, Dilip and Isola, Phillip},
+  booktitle = {Computer Vision -- ECCV 2020},
+  title     = {Contrastive Multiview Coding},
+  year      = {2020},
+  address   = {Cham},
+  editor    = {Vedaldi, Andrea and Bischof, Horst and Brox, Thomas and Frahm, Jan-Michael},
+  pages     = {776--794},
+  publisher = {Springer International Publishing},
+  abstract  = {Humans view the world through many sensory channels, e.g., the long-wavelength light channel, viewed by the left eye, or the high-frequency vibrations channel, heard by the right ear. Each view is noisy and incomplete, but important factors, such as physics, geometry, and semantics, tend to be shared between all views (e.g., a ``dog'' can be seen, heard, and felt). We investigate the classic hypothesis that a powerful representation is one that models view-invariant factors. We study this hypothesis under the framework of multiview contrastive learning, where we learn a representation that aims to maximize mutual information between different views of the same scene but is otherwise compact. Our approach scales to any number of views, and is view-agnostic. We analyze key properties of the approach that make it work, finding that the contrastive loss outperforms a popular alternative based on cross-view prediction, and that the more views we learn from, the better the resulting representation captures underlying scene semantics. Code is available at: http://github.com/HobbitLong/CMC/.},
+  file      = {:10.1007_978-3-030-58621-8_45 - Contrastive Multiview Coding.pdf:PDF},
+  groups    = {Contrastive Learning},
+  isbn      = {978-3-030-58621-8},
+  ranking   = {rank5},
+  url       = {https://link.springer.com/chapter/10.1007/978-3-030-58621-8_45},
+}
+
+@InProceedings{pmlr-v119-laskin20a,
+  author    = {Laskin, Michael and Srinivas, Aravind and Abbeel, Pieter},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+  title     = {{CURL}: Contrastive Unsupervised Representations for Reinforcement Learning},
+  year      = {2020},
+  editor    = {III, Hal Daumé and Singh, Aarti},
+  month     = {13--18 Jul},
+  pages     = {5639--5650},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {119},
+  abstract  = {We present CURL: Contrastive Unsupervised Representations for Reinforcement Learning. CURL extracts high-level features from raw pixels using contrastive learning and performs off-policy control on top of the extracted features. CURL outperforms prior pixel-based methods, both model-based and model-free, on complex tasks in the DeepMind Control Suite and Atari Games showing 1.9x and 1.2x performance gains at the 100K environment and interaction steps benchmarks respectively. On the DeepMind Control Suite, CURL is the first image-based algorithm to nearly match the sample-efficiency of methods that use state-based features. Our code is open-sourced and available at https://www.github.com/MishaLaskin/curl.},
+  file      = {:pmlr-v119-laskin20a - CURL_ Contrastive Unsupervised Representations for Reinforcement Learning.pdf:PDF},
+  groups    = {Contrastive Learning},
+  pdf       = {http://proceedings.mlr.press/v119/laskin20a/laskin20a.pdf},
+  ranking   = {rank3},
+  url       = {https://proceedings.mlr.press/v119/laskin20a.html},
+}
+
+@Article{Hafner2022,
+  author        = {Danijar Hafner and Kuang-Huei Lee and Ian Fischer and Pieter Abbeel},
+  title         = {Deep Hierarchical Planning from Pixels},
+  year          = {2022},
+  month         = jun,
+  abstract      = {Intelligent agents need to select long sequences of actions to solve complex tasks. While humans easily break down tasks into subgoals and reach them through millions of muscle commands, current artificial intelligence is limited to tasks with horizons of a few hundred decisions, despite large compute budgets. Research on hierarchical reinforcement learning aims to overcome this limitation but has proven to be challenging, current methods rely on manually specified goal spaces or subtasks, and no general solution exists. We introduce Director, a practical method for learning hierarchical behaviors directly from pixels by planning inside the latent space of a learned world model. The high-level policy maximizes task and exploration rewards by selecting latent goals and the low-level policy learns to achieve the goals. Despite operating in latent space, the decisions are interpretable because the world model can decode goals into images for visualization. Director outperforms exploration methods on tasks with sparse rewards, including 3D maze traversal with a quadruped robot from an egocentric camera and proprioception, without access to the global position or top-down view that was used by prior work. Director also learns successful behaviors across a wide range of environments, including visual control, Atari games, and DMLab levels.},
+  archiveprefix = {arXiv},
+  eprint        = {2206.04114},
+  file          = {:Hafner2022 - Deep Hierarchical Planning from Pixels.pdf:PDF},
+  groups        = {Hierarchical RL},
+  keywords      = {cs.AI, cs.LG, cs.RO, stat.ML},
+  primaryclass  = {cs.AI},
+}
+
+@Article{Wan2022,
+  author        = {Lipeng Wan and Zeyang Liu and Xingyu Chen and Han Wang and Xuguang Lan},
+  journal       = {Proceedings of the 39th International Conference on Machine Learning},
+  title         = {Greedy-based Value Representation for Optimal Coordination in Multi-agent Reinforcement Learning},
+  year          = {2022},
+  month         = dec,
+  abstract      = {Due to the representation limitation of the joint Q value function, multi-agent reinforcement learning methods with linear value decomposition (LVD) or monotonic value decomposition (MVD) suffer from relative overgeneralization. As a result, they can not ensure optimal consistency (i.e., the correspondence between individual greedy actions and the maximal true Q value). In this paper, we derive the expression of the joint Q value function of LVD and MVD. According to the expression, we draw a transition diagram, where each self-transition node (STN) is a possible convergence. To ensure optimal consistency, the optimal node is required to be the unique STN. Therefore, we propose the greedy-based value representation (GVR), which turns the optimal node into an STN via inferior target shaping and further eliminates the non-optimal STNs via superior experience replay. In addition, GVR achieves an adaptive trade-off between optimality and stability. Our method outperforms state-of-the-art baselines in experiments on various benchmarks. Theoretical proofs and empirical results on matrix games demonstrate that GVR ensures optimal consistency under sufficient exploration.},
+  archiveprefix = {arXiv},
+  eprint        = {2112.04454},
+  file          = {:Wan2021 - Greedy Based Value Representation for Optimal Coordination in Multi Agent Reinforcement Learning.pdf:PDF},
+  groups        = {Multi-agent RL},
+  keywords      = {cs.MA},
+  primaryclass  = {cs.MA},
+}
+
+@Article{Li2022,
+  author        = {Pengyi Li and Hongyao Tang and Tianpei Yang and Xiaotian Hao and Tong Sang and Yan Zheng and Jianye Hao and Matthew E. Taylor and Wenyuan Tao and Zhen Wang},
+  journal       = {Proceedings of the 39th International Conference on Machine Learning},
+  title         = {PMIC: Improving Multi-Agent Reinforcement Learning with Progressive Mutual Information Collaboration},
+  year          = {2022},
+  month         = mar,
+  abstract      = {Learning to collaborate is critical in Multi-Agent Reinforcement Learning (MARL). Previous works promote collaboration by maximizing the correlation of agents' behaviors, which is typically characterized by Mutual Information (MI) in different forms. However, we reveal sub-optimal collaborative behaviors also emerge with strong correlations, and simply maximizing the MI can, surprisingly, hinder the learning towards better collaboration. To address this issue, we propose a novel MARL framework, called Progressive Mutual Information Collaboration (PMIC), for more effective MI-driven collaboration. PMIC uses a new collaboration criterion measured by the MI between global states and joint actions. Based on this criterion, the key idea of PMIC is maximizing the MI associated with superior collaborative behaviors and minimizing the MI associated with inferior ones. The two MI objectives play complementary roles by facilitating better collaborations while avoiding falling into sub-optimal ones. Experiments on a wide range of MARL benchmarks show the superior performance of PMIC compared with other algorithms.},
+  archiveprefix = {arXiv},
+  eprint        = {2203.08553},
+  file          = {:Li2022 - PMIC_ Improving Multi Agent Reinforcement Learning with Progressive Mutual Information Collaboration.pdf:PDF},
+  groups        = {Multi-agent RL},
+  keywords      = {cs.MA, cs.AI},
+  primaryclass  = {cs.MA},
+}
+
+@InProceedings{AFK2022,
+  author    = {Iou-Jen Liu and Xingdi Yuan and Marc-Alexandre C\^{o}t\'{e} and Pierre-Yves Oudeyer and Alexander G. Schwing},
+  booktitle = {International Conference on Machine Learning},
+  title     = {Asking for Knowledge: Training RL Agents to Query External Knowledge Using Language},
+  year      = {2022},
+  file      = {:AFK2022 - Asking for Knowledge_ Training RL Agents to Query External Knowledge Using Language.pdf:PDF},
+  groups    = {Language-Augmented RL},
+}
+
+@InProceedings{mahmoudieh22a,
+  author    = {Mahmoudieh, Parsa and Pathak, Deepak and Darrell, Trevor},
+  booktitle = {Proceedings of the 39th International Conference on Machine Learning},
+  title     = {Zero-Shot Reward Specification via Grounded Natural Language},
+  year      = {2022},
+  editor    = {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  month     = {17--23 Jul},
+  pages     = {14743--14752},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {162},
+  abstract  = {Reward signals in reinforcement learning are expensive to design and often require access to the true state which is not available in the real world. Common alternatives are usually demonstrations or goal images which can be labor-intensive to collect. On the other hand, text descriptions provide a general, natural, and low-effort way of communicating the desired task. However, prior works in learning text-conditioned policies still rely on rewards that are defined using either true state or labeled expert demonstrations. We use recent developments in building large-scale visuolanguage models like CLIP to devise a framework that generates the task reward signal just from goal text description and raw pixel observations which is then used to learn the task policy. We evaluate the proposed framework on control and robotic manipulation tasks. Finally, we distill the individual task policies into a single goal text conditioned policy that can generalize in a zero-shot manner to new tasks with unseen objects and unseen goal text descriptions.},
+  file      = {:mahmoudieh22a - Zero Shot Reward Specification Via Grounded Natural Language.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  pdf       = {https://proceedings.mlr.press/v162/mahmoudieh22a/mahmoudieh22a.pdf},
+  url       = {https://proceedings.mlr.press/v162/mahmoudieh22a.html},
+}
+
+@Article{Huang2022,
+  author        = {Wenlong Huang and Pieter Abbeel and Deepak Pathak and Igor Mordatch},
+  journal       = {International Conference on Machine Learning},
+  title         = {Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents},
+  year          = {2022},
+  month         = jan,
+  abstract      = {Can world knowledge learned by large language models (LLMs) be used to act in interactive environments? In this paper, we investigate the possibility of grounding high-level tasks, expressed in natural language (e.g. "make breakfast"), to a chosen set of actionable steps (e.g. "open fridge"). While prior work focused on learning from explicit step-by-step examples of how to act, we surprisingly find that if pre-trained LMs are large enough and prompted appropriately, they can effectively decompose high-level tasks into mid-level plans without any further training. However, the plans produced naively by LLMs often cannot map precisely to admissible actions. We propose a procedure that conditions on existing demonstrations and semantically translates the plans to admissible actions. Our evaluation in the recent VirtualHome environment shows that the resulting method substantially improves executability over the LLM baseline. The conducted human evaluation reveals a trade-off between executability and correctness but shows a promising sign towards extracting actionable knowledge from language models. Website at https://huangwl18.github.io/language-planner},
+  archiveprefix = {arXiv},
+  eprint        = {2201.07207},
+  file          = {:Huang2022 - Language Models As Zero Shot Planners_ Extracting Actionable Knowledge for Embodied Agents.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {cs.LG, cs.AI, cs.CL, cs.CV, cs.RO},
+  primaryclass  = {cs.LG},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Navigation\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-task robotics\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Sim to Real\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Space Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Interactivity\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
+4 St
