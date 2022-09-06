@@ -4981,7 +4981,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   volume     = {33},
   comment    = {IMAGINE},
   file       = {:NEURIPS2020_274e6fcf - Language As a Cognitive Tool to Imagine Goals in Curiosity Driven Exploration.pdf:PDF},
-  groups     = {Curiosity, Language-Augmented RL, ZPD},
+  groups     = {Curiosity, ZPD, Language-Augmented RL},
   ranking    = {rank2},
   readstatus = {read},
   url        = {https://proceedings.neurips.cc/paper/2020/file/274e6fcf4a583de4a81c6376f17673e7-Paper.pdf},
@@ -4996,7 +4996,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   archiveprefix = {arXiv},
   eprint        = {1902.04546},
   file          = {:Chan2019 - ACTRCE_ Augmenting Experience Via Teacher's Advice for Multi Goal Reinforcement Learning.pdf:PDF},
-  groups        = {Language-Augmented RL, Multi-goal RL},
+  groups        = {Multi-goal RL, Language-Augmented RL},
   keywords      = {cs.LG, cs.AI, cs.NE, stat.ML},
   primaryclass  = {cs.LG},
 }
@@ -6651,7 +6651,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   title      = {Guiding Policies with Language via Meta-Learning},
   year       = {2019},
   file       = {:co-reyes2018metalearning - Meta Learning Language Guided Policy Learning.pdf:PDF},
-  groups     = {Language-Augmented RL, Meta-Learning},
+  groups     = {Meta-Learning, Language-Augmented RL},
   ranking    = {rank1},
   readstatus = {read},
   url        = {https://openreview.net/forum?id=HkgSEnA5KQ},
@@ -7461,51 +7461,79 @@ the agent takes as input the current state and goal, the value function depends 
   primaryclass  = {cs.LG},
 }
 
-@Comment{jabref-meta: databaseType:bibtex;}
+@Article{Colas2022,
+  author        = {Cédric Colas and Tristan Karch and Clément Moulin-Frier and Pierre-Yves Oudeyer},
+  title         = {Vygotskian Autotelic Artificial Intelligence: Language and Culture Internalization for Human-Like AI},
+  year          = {2022},
+  month         = jun,
+  abstract      = {Building autonomous artificial agents able to grow open-ended repertoires of skills is one of the fundamental goals of AI. To that end, a promising developmental approach recommends the design of intrinsically motivated agents that learn new skills by generating and pursuing their own goals - autotelic agents. However, existing algorithms still show serious limitations in terms of goal diversity, exploration, generalization or skill composition. This perspective calls for the immersion of autotelic agents into rich socio-cultural worlds. We focus on language especially, and how its structure and content may support the development of new cognitive functions in artificial agents, just like it does in humans. Indeed, most of our skills could not be learned in isolation. Formal education teaches us to reason systematically, books teach us history, and YouTube might teach us how to cook. Crucially, our values, traditions, norms and most of our goals are cultural in essence. This knowledge, and some argue, some of our cognitive functions such as abstraction, compositional imagination or relational thinking, are formed through linguistic and cultural interactions. Inspired by the work of Vygotsky, we suggest the design of Vygotskian autotelic agents able to interact with others and, more importantly, able to internalize these interactions to transform them into cognitive tools supporting the development of new cognitive functions. This perspective paper proposes a new AI paradigm in the quest for artificial lifelong skill discovery. It justifies the approach by uncovering examples of new artificial cognitive functions emerging from interactions between language and embodiment in recent works at the intersection of deep reinforcement learning and natural language processing. Looking forward, it highlights future opportunities and challenges for Vygotskian Autotelic AI research.},
+  archiveprefix = {arXiv},
+  eprint        = {2206.01134},
+  file          = {:Colas2022 - Vygotskian Autotelic Artificial Intelligence_ Language and Culture Internalization for Human like AI.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {cs.AI, cs.CL, cs.LG},
+  primaryclass  = {cs.AI},
+  priority      = {prio1},
+}
 
-@Comment{jabref-meta: grouping:
-0 AllEntriesGroup:;
-1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Intrinsic goals\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Navigation\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-task robotics\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Sim to Real\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Space Exploration\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Interactivity\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
-4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
-4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Exploration\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
-4 St
+@Article{Carta2022,
+  author        = {Thomas Carta and Sylvain Lamprier and Pierre-Yves Oudeyer and Olivier Sigaud},
+  title         = {EAGER: Asking and Answering Questions for Automatic Reward Shaping in Language-guided RL},
+  year          = {2022},
+  month         = jun,
+  abstract      = {Reinforcement learning (RL) in long horizon and sparse reward tasks is notoriously difficult and requires a lot of training steps. A standard solution to speed up the process is to leverage additional reward signals, shaping it to better guide the learning process. In the context of language-conditioned RL, the abstraction and generalisation properties of the language input provide opportunities for more efficient ways of shaping the reward. In this paper, we leverage this idea and propose an automated reward shaping method where the agent extracts auxiliary objectives from the general language goal. These auxiliary objectives use a question generation (QG) and question answering (QA) system: they consist of questions leading the agent to try to reconstruct partial information about the global goal using its own trajectory. When it succeeds, it receives an intrinsic reward proportional to its confidence in its answer. This incentivizes the agent to generate trajectories which unambiguously explain various aspects of the general language goal. Our experimental study shows that this approach, which does not require engineer intervention to design the auxiliary objectives, improves sample efficiency by effectively directing exploration.},
+  archiveprefix = {arXiv},
+  eprint        = {2206.09674},
+  file          = {:Carta2022 - EAGER_ Asking and Answering Questions for Automatic Reward Shaping in Language Guided RL.pdf:PDF},
+  groups        = {Reward shaping},
+  keywords      = {cs.CL, cs.AI, cs.LG},
+  primaryclass  = {cs.CL},
+  priority      = {prio2},
+}
+
+@Article{Sumers2022,
+  author        = {Theodore R Sumers and Robert D Hawkins and Mark K Ho and Thomas L Griffiths and Dylan Hadfield-Menell},
+  title         = {How to talk so your robot will learn: Instructions, descriptions, and pragmatics},
+  year          = {2022},
+  month         = jun,
+  abstract      = {From the earliest years of our lives, humans use language to express our beliefs and desires. Being able to talk to artificial agents about our preferences would thus fulfill a central goal of value alignment. Yet today, we lack computational models explaining such flexible and abstract language use. To address this challenge, we consider social learning in a linear bandit setting and ask how a human might communicate preferences over behaviors (i.e. the reward function). We study two distinct types of language: instructions, which provide information about the desired policy, and descriptions, which provide information about the reward function. To explain how humans use these forms of language, we suggest they reason about both known present and unknown future states: instructions optimize for the present, while descriptions generalize to the future. We formalize this choice by extending reward design to consider a distribution over states. We then define a pragmatic listener agent that infers the speaker's reward function by reasoning about how the speaker expresses themselves. We validate our models with a behavioral experiment, demonstrating that (1) our speaker model predicts spontaneous human behavior, and (2) our pragmatic listener is able to recover their reward functions. Finally, we show that in traditional reinforcement learning settings, pragmatic social learning can integrate with and accelerate individual learning. Our findings suggest that social learning from a wider range of language -- in particular, expanding the field's present focus on instructions to include learning from descriptions -- is a promising approach for value alignment and reinforcement learning more broadly.},
+  archiveprefix = {arXiv},
+  eprint        = {2206.07870},
+  file          = {:Sumers2022 - How to Talk so Your Robot Will Learn_ Instructions, Descriptions, and Pragmatics.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {cs.AI},
+  primaryclass  = {cs.AI},
+}
+
+@InProceedings{radulescu2022name,
+  author    = {Radulescu, Angela and Vong, Wai Keen and Gureckis, Todd M},
+  booktitle = {Proceedings of the Annual Meeting of the Cognitive Science Society},
+  title     = {Name that state: How language affects human reinforcement learning},
+  year      = {2022},
+  number    = {44},
+  volume    = {44},
+  file      = {:radulescu2022name - Name That State_ How Language Affects Human Reinforcement Learning.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  priority  = {prio3},
+}
+
+@Article{Micheli2022,
+  author        = {Vincent Micheli and Eloi Alonso and François Fleuret},
+  title         = {Transformers are Sample Efficient World Models},
+  year          = {2022},
+  month         = sep,
+  abstract      = {Deep reinforcement learning agents are notoriously sample inefficient, which considerably limits their application to real-world problems. Recently, many model-based methods have been designed to address this issue, with learning in the imagination of a world model being one of the most prominent approaches. However, while virtually unlimited interaction with a simulated environment sounds appealing, the world model has to be accurate over extended periods of time. Motivated by the success of Transformers in sequence modeling tasks, we introduce IRIS, a data-efficient agent that learns in a world model composed of a discrete autoencoder and an autoregressive Transformer. With the equivalent of only two hours of gameplay in the Atari 100k benchmark, IRIS achieves a mean human normalized score of 1.046, and outperforms humans on 10 out of 26 games. Our approach sets a new state of the art for methods without lookahead search, and even surpasses MuZero. To foster future research on Transformers and world models for sample-efficient reinforcement learning, we release our codebase at https://github.com/eloialonso/iris.},
+  archiveprefix = {arXiv},
+  eprint        = {2209.00588},
+  file          = {:Micheli2022 - Transformers Are Sample Efficient World Models.pdf:PDF},
+  groups        = {Transformers in RL},
+  keywords      = {cs.LG, cs.AI, cs.CV},
+  primaryclass  = {cs.LG},
+}
+
+@Article{Li2022a,
+  author        = {Shuang Li and Xavier Puig and Chris Paxton and Yilun Du and Clinton Wang and Linxi Fan and Tao Chen and De-An Huang and Ekin Akyürek and Anima Anandkumar and Jacob Andreas and Igor Mordatch and Antonio Torralba and Yuke Zhu},
+  title         = {Pre-Trained Language Models for Interactive Decision-Making},
+  year          = {2022},
+  month         = feb,
+  abstract      = {Language model (LM) pre-training is useful in many language processing tasks. But can pre-trained LMs be further leveraged for more general machine learning problems? We propose an approach for using LMs to scaffold learning and generalization in general sequential decision-making problems. In this approach, goals and observations are represented as a sequence of embeddings, and a policy network initialized with a pre-trained LM predicts the next action. We demonstrate that this framework enables effective combinatorial generalization across different environments and supervisory modalities. We begin by assuming access to a set of expert demonstrations, and show that initializing policies with LMs and fine-tuning them via behavior cloning improves task completion rates by 43.6% in the VirtualHome environment. We then examine how our framework may be used in environments without pre-collected expert data. To do this, we integrate an active data gathering procedure into pre-trained LMs. The agent iteratively learns by interacting with the environment, relabeling the language goal of past 'failed' experiences, and updating the policy in a self-supervised loop. The active data gathering procedure also enables effective combinatorial generalization, outperforming the best baseline b
