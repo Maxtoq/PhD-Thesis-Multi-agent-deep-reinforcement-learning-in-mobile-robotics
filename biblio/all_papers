@@ -7543,7 +7543,52 @@ the agent takes as input the current state and goal, the value function depends 
   groups        = {Language-Augmented RL},
   keywords      = {cs.LG, cs.CL},
   primaryclass  = {cs.LG},
-  priority      = {prio1},
+  readstatus    = {read},
+}
+
+@Article{Hill2020a,
+  author        = {Felix Hill and Sona Mokra and Nathaniel Wong and Tim Harley},
+  title         = {Human Instruction-Following with Deep Reinforcement Learning via Transfer-Learning from Text},
+  year          = {2020},
+  month         = may,
+  abstract      = {Recent work has described neural-network-based agents that are trained with reinforcement learning (RL) to execute language-like commands in simulated worlds, as a step towards an intelligent agent or robot that can be instructed by human users. However, the optimisation of multi-goal motor policies via deep RL from scratch requires many episodes of experience. Consequently, instruction-following with deep RL typically involves language generated from templates (by an environment simulator), which does not reflect the varied or ambiguous expressions of real users. Here, we propose a conceptually simple method for training instruction-following agents with deep RL that are robust to natural human instructions. By applying our method with a state-of-the-art pre-trained text-based language model (BERT), on tasks requiring agents to identify and position everyday objects relative to other objects in a naturalistic 3D simulated room, we demonstrate substantially-above-chance zero-shot transfer from synthetic template commands to natural instructions given by humans. Our approach is a general recipe for training any deep RL-based system to interface with human users, and bridges the gap between two research directions of notable recent success: agent-centric motor behavior and text-based representation learning.},
+  archiveprefix = {arXiv},
+  eprint        = {2005.09382},
+  file          = {:Hill2020a - Human Instruction Following with Deep Reinforcement Learning Via Transfer Learning from Text.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {cs.CL},
+  primaryclass  = {cs.CL},
+}
+
+@InProceedings{10.1007/978-3-030-58539-6_16,
+  author    = {Majumdar, Arjun and Shrivastava, Ayush and Lee, Stefan and Anderson, Peter and Parikh, Devi and Batra, Dhruv},
+  booktitle = {Computer Vision -- ECCV 2020},
+  title     = {Improving Vision-and-Language Navigation with Image-Text Pairs from the Web},
+  year      = {2020},
+  address   = {Cham},
+  editor    = {Vedaldi, Andrea and Bischof, Horst and Brox, Thomas and Frahm, Jan-Michael},
+  pages     = {259--274},
+  publisher = {Springer International Publishing},
+  abstract  = {Following a navigation instruction such as `Walk down the stairs and stop at the brown sofa' requires embodied AI agents to ground referenced scene elements referenced (e.g. `stairs') to visual content in the environment (pixels corresponding to `stairs'). We ask the following question -- can we leverage abundant `disembodied' web-scraped vision-and-language corpora (e.g. Conceptual Captions) to learn the visual groundings that improve performance on a relatively data-starved embodied perception task (Vision-and-Language Navigation)? Specifically, we develop VLN-BERT, a visiolinguistic transformer-based model for scoring the compatibility between an instruction (`...stop at the brown sofa') and a trajectory of panoramic RGB images captured by the agent. We demonstrate that pretraining VLN-BERT on image-text pairs from the web before fine-tuning on embodied path-instruction data significantly improves performance on VLN -- outperforming prior state-of-the-art in the fully-observed setting by 4 absolute percentage points on success rate. Ablations of our pretraining curriculum show each stage to be impactful -- with their combination resulting in further gains.},
+  groups    = {Visual-Language Learning},
+  isbn      = {978-3-030-58539-6},
+  ranking   = {rank2},
+}
+
+@InProceedings{sharma-etal-2022-skill,
+  author    = {Sharma, Pratyusha and Torralba, Antonio and Andreas, Jacob},
+  booktitle = {Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  title     = {Skill Induction and Planning with Latent Language},
+  year      = {2022},
+  address   = {Dublin, Ireland},
+  month     = may,
+  pages     = {1713--1726},
+  publisher = {Association for Computational Linguistics},
+  abstract  = {We present a framework for learning hierarchical policies from demonstrations, using sparse natural language annotations to guide the discovery of reusable skills for autonomous decision-making. We formulate a generative model of action sequences in which goals generate sequences of high-level subtask descriptions, and these descriptions generate sequences of low-level actions. We describe how to train this model using primarily unannotated demonstrations by parsing demonstrations into sequences of named high-level sub-tasks, using only a small number of seed annotations to ground language in action. In trained models, natural language commands index a combinatorial library of skills; agents can use these skills to plan by generating high-level instruction sequences tailored to novel goals. We evaluate this approach in the ALFRED household simulation environment, providing natural language annotations for only 10{\%} of demonstrations. It achieves performance comparable state-of-the-art models on ALFRED success rate, outperforming several recent methods with access to ground-truth plans during training and evaluation.},
+  doi       = {10.18653/v1/2022.acl-long.120},
+  file      = {:sharma-etal-2022-skill - Skill Induction and Planning with Latent Language.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  url       = {https://aclanthology.org/2022.acl-long.120},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
