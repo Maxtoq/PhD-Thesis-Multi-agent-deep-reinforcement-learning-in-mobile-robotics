@@ -746,18 +746,22 @@
   url        = {http://proceedings.mlr.press/v48/wangf16.html},
 }
 
-@Article{Conti2017,
-  author        = {Edoardo Conti and Vashisht Madhavan and Felipe Petroski Such and Joel Lehman and Kenneth O. Stanley and Jeff Clune},
-  title         = {Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents},
-  year          = {2017},
-  month         = dec,
-  abstract      = {Evolution strategies (ES) are a family of black-box optimization algorithms able to train deep neural networks roughly as well as Q-learning and policy gradient methods on challenging deep reinforcement learning (RL) problems, but are much faster (e.g. hours vs. days) because they parallelize better. However, many RL problems require directed exploration because they have reward functions that are sparse or deceptive (i.e. contain local optima), and it is unknown how to encourage such exploration with ES. Here we show that algorithms that have been invented to promote directed exploration in small-scale evolved neural networks via populations of exploring agents, specifically novelty search (NS) and quality diversity (QD) algorithms, can be hybridized with ES to improve its performance on sparse or deceptive deep RL tasks, while retaining scalability. Our experiments confirm that the resultant new algorithms, NS-ES and two QD algorithms, NSR-ES and NSRA-ES, avoid local optima encountered by ES to achieve higher performance on Atari and simulated robots learning to walk around a deceptive trap. This paper thus introduces a family of fast, scalable algorithms for reinforcement learning that are capable of directed exploration. It also adds this new family of exploration algorithms to the RL toolbox and raises the interesting possibility that analogous algorithms with multiple simultaneous paths of exploration might also combine well with existing RL algorithms outside ES.},
-  archiveprefix = {arXiv},
-  eprint        = {1712.06560},
-  file          = {:Conti2017 - Improving Exploration in Evolution Strategies for Deep Reinforcement Learning Via a Population of Novelty Seeking Agents.pdf:PDF},
-  groups        = {Diversity},
-  keywords      = {cs.AI},
-  primaryclass  = {cs.AI},
+@Article{Ostrovski2017,
+  author    = {Georg Ostrovski and Marc G. Bellemare and A{\"a}ron van den Oord and R{\'e}mi Munos},
+  title     = {Count-Based Exploration with Neural Density Models},
+  year      = {2017},
+  month     = {06--11 Aug},
+  pages     = {2721--2730},
+  volume    = {70},
+  abstract  = {Bellemare et al. (2016) introduced the notion of a pseudo-count, derived from a density model, to generalize count-based exploration to non-tabular reinforcement learning. This pseudo-count was used to generate an exploration bonus for a DQN agent and combined with a mixed Monte Carlo update was sufficient to achieve state of the art on the Atari 2600 game Montezuma’s Revenge. We consider two questions left open by their work: First, how important is the quality of the density model for exploration? Second, what role does the Monte Carlo update play in exploration? We answer the first question by demonstrating the use of PixelCNN, an advanced neural density model for images, to supply a pseudo-count. In particular, we examine the intrinsic difficulties in adapting Bellemare et al.’s approach when assumptions about the model are violated. The result is a more practical and general algorithm requiring no special apparatus. We combine PixelCNN pseudo-counts with different agent architectures to dramatically improve the state of the art on several hard Atari games. One surprising finding is that the mixed Monte Carlo update is a powerful facilitator of exploration in the sparsest of settings, including Montezuma’s Revenge.},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning},
+  editor    = {Precup, Doina and Teh, Yee Whye},
+  groups    = {Visitation count},
+  pdf       = {http://proceedings.mlr.press/v70/ostrovski17a/ostrovski17a.pdf},
+  publisher = {PMLR},
+  ranking   = {rank3},
+  series    = {Proceedings of Machine Learning Research},
+  url       = {https://proceedings.mlr.press/v70/ostrovski17a.html},
 }
 
 @Article{Ecoffet2019,
@@ -773,20 +777,6 @@
   groups        = {Random Exploration, Imitation, Exploration},
   ranking       = {rank4},
   url           = {http://arxiv.org/abs/1901.10995},
-}
-
-@Article{Ostrovski2017,
-  author        = {Georg Ostrovski and Marc G. Bellemare and A{\"{a}}ron van den Oord and R{\'{e}}mi Munos},
-  journal       = {CoRR},
-  title         = {Count-Based Exploration with Neural Density Models},
-  year          = {2017},
-  volume        = {abs/1703.01310},
-  archiveprefix = {arXiv},
-  bibsource     = {dblp computer science bibliography, https://dblp.org},
-  biburl        = {https://dblp.org/rec/journals/corr/OstrovskiBOM17.bib},
-  eprint        = {1703.01310},
-  groups        = {Visitation count},
-  url           = {http://arxiv.org/abs/1703.01310},
 }
 
 @InProceedings{Bellemare2017,
@@ -825,18 +815,21 @@
   readstatus    = {skimmed},
 }
 
-@Article{FletBerliac2021,
-  author        = {Yannis Flet-Berliac and Johan Ferret and Olivier Pietquin and Philippe Preux and Matthieu Geist},
-  title         = {Adversarially Guided Actor-Critic},
-  year          = {2021},
-  month         = feb,
-  abstract      = {Despite definite success in deep reinforcement learning problems, actor-critic algorithms are still confronted with sample inefficiency in complex environments, particularly in tasks where efficient exploration is a bottleneck. These methods consider a policy (the actor) and a value function (the critic) whose respective losses are built using different motivations and approaches. This paper introduces a third protagonist: the adversary. While the adversary mimics the actor by minimizing the KL-divergence between their respective action distributions, the actor, in addition to learning to solve the task, tries to differentiate itself from the adversary predictions. This novel objective stimulates the actor to follow strategies that could not have been correctly predicted from previous trajectories, making its behavior innovative in tasks where the reward is extremely rare. Our experimental analysis shows that the resulting Adversarially Guided Actor-Critic (AGAC) algorithm leads to more exhaustive exploration. Notably, AGAC outperforms current state-of-the-art methods on a set of various hard-exploration and procedurally-generated tasks.},
-  archiveprefix = {arXiv},
-  eprint        = {2102.04376},
-  file          = {:FletBerliac2021 - Adversarially Guided Actor Critic.pdf:PDF},
-  groups        = {Adversary Guidance},
-  keywords      = {cs.LG, cs.AI, stat.ML},
-  primaryclass  = {cs.LG},
+@InProceedings{FletBerliac2021,
+  author     = {Flet-Berliac, Yannis and Ferret, Johan and Pietquin, Olivier and Preux, Philippe and Geist, Matthieu},
+  booktitle  = {International Conference on Learning Representations},
+  title      = {Adversarially Guided Actor-Critic},
+  year       = {2021},
+  address    = {Vienna / Virtual, Austria},
+  month      = May,
+  abstract   = {Despite definite success in deep reinforcement learning problems, actor-critic algorithms are still confronted with sample inefficiency in complex environments, particularly in tasks where efficient exploration is a bottleneck. These methods consider a policy (the actor) and a value function (the critic) whose respective losses are built using different motivations and approaches. This paper introduces a third protagonist: the adversary. While the adversary mimics the actor by minimizing the KL-divergence between their respective action distributions, the actor, in addition to learning to solve the task, tries to differentiate itself from the adversary predictions. This novel objective stimulates the actor to follow strategies that could not have been correctly predicted from previous trajectories, making its behavior innovative in tasks where the reward is extremely rare. Our experimental analysis shows that the resulting Adversarially Guided Actor-Critic (AGAC) algorithm leads to more exhaustive exploration. Notably, AGAC outperforms current state-of-the-art methods on a set of various hard-exploration and procedurally-generated tasks.},
+  comment    = {AGAC},
+  file       = {:FletBerliac2021 - Adversarially Guided Actor Critic.pdf:PDF},
+  groups     = {Adversary Guidance},
+  pdf        = {https://hal.inria.fr/hal-03167169/file/AGAC.pdf},
+  ranking    = {rank1},
+  readstatus = {read},
+  url        = {https://hal.inria.fr/hal-03167169},
 }
 
 @Article{Yu2021,
@@ -1093,7 +1086,7 @@
   archiveprefix = {arXiv},
   eprint        = {1810.08647},
   file          = {:Jaques2018 - Social Influence As Intrinsic Motivation for Multi Agent Deep Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-agent RL, Communication, Social Learning, Intrinsic rewards in MAS},
+  groups        = {Multi-agent RL, Communication, Social Learning, Intrinsic rewards in MARL},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
   ranking       = {rank2},
@@ -1776,6 +1769,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups        = {Multi-agent RL},
   keywords      = {cs.LG, cs.AI, cs.MA},
   primaryclass  = {cs.LG},
+  readstatus    = {skimmed},
 }
 
 @Article{Brown2020,
@@ -5229,12 +5223,12 @@ communication integrated in QMIX, with tricks to make it more efficient},
 }
 
 @InBook{10.5555/3454287.3454683,
-  author    = {Du, Yali and Han, Lei and Fang, Meng and Dai, Tianhong and Liu, Ji and Tao, Dacheng},
-  publisher = {Curran Associates Inc.},
-  title     = {LIIR: Learning Individual Intrinsic Reward in Multi-Agent Reinforcement Learning},
-  year      = {2019},
-  address   = {Red Hook, NY, USA},
-  abstract  = {A great challenge in cooperative decentralized multi-agent reinforcement learning
+  author     = {Du, Yali and Han, Lei and Fang, Meng and Dai, Tianhong and Liu, Ji and Tao, Dacheng},
+  publisher  = {Curran Associates Inc.},
+  title      = {LIIR: Learning Individual Intrinsic Reward in Multi-Agent Reinforcement Learning},
+  year       = {2019},
+  address    = {Red Hook, NY, USA},
+  abstract   = {A great challenge in cooperative decentralized multi-agent reinforcement learning
 (MARL) is generating diversified behaviors for each individual agent when receiving
 only a team reward. Prior studies have paid many efforts on reward shaping or designing
 a centralized critic that can discriminatively credit the agents. In this paper, we
@@ -5249,14 +5243,14 @@ reward (LIIR) in MARL. We compare LIIR with a number of state-of-the-art MARL me
 on battle games in StarCraft II. The results demonstrate the effectiveness of LIIR,
 and we show LIIR can assign each individual agent an insightful intrinsic reward per
 time step.},
-  articleno = {396},
-  booktitle = {Proceedings of the 33rd International Conference on Neural Information Processing Systems},
-  file      = {:10.5555_3454287.3454683 - LIIR_ Learning Individual Intrinsic Reward in Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL, Intrinsic rewards in MAS},
-  numpages  = {12},
-  priority  = {prio1},
-  ranking   = {rank1},
-  url       = {https://proceedings.neurips.cc/paper/2019/hash/07a9d3fed4c5ea6b17e80258dee231fa-Abstract.html},
+  articleno  = {396},
+  booktitle  = {Proceedings of the 33rd International Conference on Neural Information Processing Systems},
+  file       = {:10.5555_3454287.3454683 - LIIR_ Learning Individual Intrinsic Reward in Multi Agent Reinforcement Learning.pdf:PDF},
+  groups     = {Multi-agent RL, Intrinsic rewards in MARL},
+  numpages   = {12},
+  ranking    = {rank1},
+  readstatus = {read},
+  url        = {https://proceedings.neurips.cc/paper/2019/hash/07a9d3fed4c5ea6b17e80258dee231fa-Abstract.html},
 }
 
 @InProceedings{Narasimhan2015,
@@ -7104,27 +7098,27 @@ the agent takes as input the current state and goal, the value function depends 
 }
 
 @InProceedings{Badia2020Never,
-  author    = {Adrià Puigdomènech Badia and Pablo Sprechmann and Alex Vitvitskyi and Daniel Guo and Bilal Piot and Steven Kapturowski and Olivier Tieleman and Martin Arjovsky and Alexander Pritzel and Andrew Bolt and Charles Blundell},
-  booktitle = {International Conference on Learning Representations},
-  title     = {Never Give Up: Learning Directed Exploration Strategies},
-  year      = {2020},
-  file      = {:Badia2020Never - Never Give Up_ Learning Directed Exploration Strategies.pdf:PDF},
-  groups    = {Curiosity},
-  priority  = {prio2},
-  ranking   = {rank4},
-  url       = {https://openreview.net/forum?id=Sye57xStvB},
+  author     = {Adrià Puigdomènech Badia and Pablo Sprechmann and Alex Vitvitskyi and Daniel Guo and Bilal Piot and Steven Kapturowski and Olivier Tieleman and Martin Arjovsky and Alexander Pritzel and Andrew Bolt and Charles Blundell},
+  booktitle  = {International Conference on Learning Representations},
+  title      = {Never Give Up: Learning Directed Exploration Strategies},
+  year       = {2020},
+  file       = {:Badia2020Never - Never Give Up_ Learning Directed Exploration Strategies.pdf:PDF},
+  groups     = {Curiosity},
+  ranking    = {rank4},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=Sye57xStvB},
 }
 
 @InProceedings{Raileanu2020RIDE:,
-  author    = {Roberta Raileanu and Tim Rocktäschel},
-  booktitle = {International Conference on Learning Representations},
-  title     = {RIDE: Rewarding Impact-Driven Exploration for Procedurally-Generated Environments},
-  year      = {2020},
-  file      = {:Raileanu2020RIDE_ - RIDE_ Rewarding Impact Driven Exploration for Procedurally Generated Environments.pdf:PDF},
-  groups    = {Curiosity},
-  priority  = {prio2},
-  ranking   = {rank3},
-  url       = {https://openreview.net/forum?id=rkg-TJBFPB},
+  author     = {Roberta Raileanu and Tim Rocktäschel},
+  booktitle  = {International Conference on Learning Representations},
+  title      = {RIDE: Rewarding Impact-Driven Exploration for Procedurally-Generated Environments},
+  year       = {2020},
+  file       = {:Raileanu2020RIDE_ - RIDE_ Rewarding Impact Driven Exploration for Procedurally Generated Environments.pdf:PDF},
+  groups     = {Curiosity},
+  ranking    = {rank3},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=rkg-TJBFPB},
 }
 
 @InProceedings{jacob-etal-2021-multitasking,
@@ -7607,15 +7601,15 @@ the agent takes as input the current state and goal, the value function depends 
 }
 
 @InProceedings{zheng2021episodic,
-  author    = {Lulu Zheng and Jiarui Chen and Jianhao Wang and Jiamin He and Yujing Hu and Yingfeng Chen and Changjie Fan and Yang Gao and Chongjie Zhang},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {Episodic Multi-agent Reinforcement Learning with Curiosity-driven Exploration},
-  year      = {2021},
-  editor    = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
-  file      = {:zheng2021episodic - Episodic Multi Agent Reinforcement Learning with Curiosity Driven Exploration.pdf:PDF},
-  groups    = {Intrinsic rewards in MAS},
-  priority  = {prio2},
-  url       = {https://openreview.net/forum?id=YDGJ5YExiw6},
+  author     = {Lulu Zheng and Jiarui Chen and Jianhao Wang and Jiamin He and Yujing Hu and Yingfeng Chen and Changjie Fan and Yang Gao and Chongjie Zhang},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Episodic Multi-agent Reinforcement Learning with Curiosity-driven Exploration},
+  year       = {2021},
+  editor     = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+  file       = {:zheng2021episodic - Episodic Multi Agent Reinforcement Learning with Curiosity Driven Exploration.pdf:PDF},
+  groups     = {Intrinsic rewards in MARL},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=YDGJ5YExiw6},
 }
 
 @Article{Iqbal2019a,
@@ -7627,7 +7621,7 @@ the agent takes as input the current state and goal, the value function depends 
   archiveprefix = {arXiv},
   eprint        = {1905.12127},
   file          = {:Iqbal2019a - Coordinated Exploration Via Intrinsic Rewards for Multi Agent Reinforcement Learning.pdf:PDF},
-  groups        = {Intrinsic rewards in MAS},
+  groups        = {Intrinsic rewards in MARL},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
   url           = {https://openreview.net/forum?id=rkltE0VKwH},
@@ -7639,7 +7633,7 @@ the agent takes as input the current state and goal, the value function depends 
   title     = {{LIGS}: Learnable Intrinsic-Reward Generation Selection for Multi-Agent Learning},
   year      = {2022},
   file      = {:mguni2022ligs - LIGS_ Learnable Intrinsic Reward Generation Selection for Multi Agent Learning.pdf:PDF},
-  groups    = {Intrinsic rewards in MAS},
+  groups    = {Intrinsic rewards in MARL},
   priority  = {prio2},
   url       = {https://openreview.net/forum?id=CpTuR2ECuW},
 }
@@ -7660,7 +7654,7 @@ the agent takes as input the current state and goal, the value function depends 
   doi      = {10.1177/17298814211044946},
   eprint   = {https://doi.org/10.1177/17298814211044946},
   file     = {:Wu2021.pdf:PDF},
-  groups   = {Intrinsic rewards in MAS},
+  groups   = {Intrinsic rewards in MARL},
   url      = {https://doi.org/10.1177/17298814211044946},
 }
 
@@ -7698,7 +7692,7 @@ the agent takes as input the current state and goal, the value function depends 
   title     = {Influence-Based Multi-Agent Exploration},
   year      = {2020},
   file      = {:Wang_2020Influence-Based - Influence Based Multi Agent Exploration.pdf:PDF},
-  groups    = {Intrinsic rewards in MAS},
+  groups    = {Intrinsic rewards in MARL},
   url       = {https://openreview.net/forum?id=BJgy96EYvr},
 }
 
@@ -7847,15 +7841,15 @@ the agent takes as input the current state and goal, the value function depends 
 }
 
 @InProceedings{henaff2022exploration,
-  author    = {Mikael Henaff and Roberta Raileanu and Minqi Jiang and Tim Rockt{\"a}schel},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {Exploration via Elliptical Episodic Bonuses},
-  year      = {2022},
-  editor    = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
-  file      = {:henaff2022exploration - Exploration Via Elliptical Episodic Bonuses.pdf:PDF},
-  groups    = {Curiosity},
-  priority  = {prio1},
-  url       = {https://openreview.net/forum?id=Xg-yZos9qJQ},
+  author     = {Mikael Henaff and Roberta Raileanu and Minqi Jiang and Tim Rockt{\"a}schel},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Exploration via Elliptical Episodic Bonuses},
+  year       = {2022},
+  editor     = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+  file       = {:henaff2022exploration - Exploration Via Elliptical Episodic Bonuses.pdf:PDF},
+  groups     = {Curiosity},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=Xg-yZos9qJQ},
 }
 
 @Article{Andres2022,
@@ -7901,13 +7895,13 @@ the agent takes as input the current state and goal, the value function depends 
 }
 
 @Misc{jing2022divide,
-  author   = {Xiao Jing and Zhenwei Zhu and Hongliang Li and Xin Pei and Yoshua Bengio and Tong Che and Hongyong Song},
-  title    = {Divide and Explore: Multi-Agent Separate Exploration with Shared Intrinsic Motivations},
-  year     = {2022},
-  file     = {:jing2022divide - Divide and Explore_ Multi Agent Separate Exploration with Shared Intrinsic Motivations.pdf:PDF},
-  groups   = {Intrinsic rewards in MAS},
-  priority = {prio1},
-  url      = {https://openreview.net/forum?id=NgmcJ66xQz_},
+  author     = {Xiao Jing and Zhenwei Zhu and Hongliang Li and Xin Pei and Yoshua Bengio and Tong Che and Hongyong Song},
+  title      = {Divide and Explore: Multi-Agent Separate Exploration with Shared Intrinsic Motivations},
+  year       = {2022},
+  file       = {:jing2022divide - Divide and Explore_ Multi Agent Separate Exploration with Shared Intrinsic Motivations.pdf:PDF},
+  groups     = {Intrinsic goals},
+  readstatus = {skimmed},
+  url        = {https://openreview.net/forum?id=NgmcJ66xQz_},
 }
 
 @InProceedings{pislar2022when,
@@ -7944,4 +7938,131 @@ the agent takes as input the current state and goal, the value function depends 
   publisher = {PMLR},
   series    = {Proceedings of Machine Learning Research},
   volume    = {80},
-  abstract  = {In this work we aim to solve a large collection of tasks using a single reinforcement learning agent with a single set of parameters. A key challenge is to handle the increased amount of data and extended training time. We have developed a new distributed agent IMPALA (Importance Weighted Actor-Learner Architecture) that not only uses resources more efficiently in single-machine training but also scales to thousands of machines without sacrificing data efficiency or resource utilisation. We achieve stable learning at high throughput by combining decoupled acting and learning with a novel off-policy correction method called V-trace. We demonstrate the effectiveness of IMPALA for multi-task reinforcement learning on DMLab-30 (a set of 30 tasks from the DeepMind Lab environment (Beattie et al., 2016)) and Atari57 (all available Atari games in Arcade Learning Environment (Bellemare et al., 2013a)). Our results show that I
+  abstract  = {In this work we aim to solve a large collection of tasks using a single reinforcement learning agent with a single set of parameters. A key challenge is to handle the increased amount of data and extended training time. We have developed a new distributed agent IMPALA (Importance Weighted Actor-Learner Architecture) that not only uses resources more efficiently in single-machine training but also scales to thousands of machines without sacrificing data efficiency or resource utilisation. We achieve stable learning at high throughput by combining decoupled acting and learning with a novel off-policy correction method called V-trace. We demonstrate the effectiveness of IMPALA for multi-task reinforcement learning on DMLab-30 (a set of 30 tasks from the DeepMind Lab environment (Beattie et al., 2016)) and Atari57 (all available Atari games in Arcade Learning Environment (Bellemare et al., 2013a)). Our results show that IMPALA is able to achieve better performance than previous agents with less data, and crucially exhibits positive transfer between tasks as a result of its multi-task approach.},
+  file      = {:pmlr-v80-espeholt18a - IMPALA_ Scalable Distributed Deep RL with Importance Weighted Actor Learner Architectures.pdf:PDF},
+  groups    = {Policy based},
+  pdf       = {http://proceedings.mlr.press/v80/espeholt18a/espeholt18a.pdf},
+  ranking   = {rank4},
+  url       = {https://proceedings.mlr.press/v80/espeholt18a.html},
+}
+
+@InProceedings{pmlr-v97-cobbe19a,
+  author    = {Cobbe, Karl and Klimov, Oleg and Hesse, Chris and Kim, Taehoon and Schulman, John},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning},
+  title     = {Quantifying Generalization in Reinforcement Learning},
+  year      = {2019},
+  editor    = {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  month     = {09--15 Jun},
+  pages     = {1282--1289},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {97},
+  abstract  = {In this paper, we investigate the problem of overfitting in deep reinforcement learning. Among the most common benchmarks in RL, it is customary to use the same environments for both training and testing. This practice offers relatively little insight into an agent’s ability to generalize. We address this issue by using procedurally generated environments to construct distinct training and test sets. Most notably, we introduce a new environment called CoinRun, designed as a benchmark for generalization in RL. Using CoinRun, we find that agents overfit to surprisingly large training sets. We then show that deeper convolutional architectures improve generalization, as do methods traditionally found in supervised learning, including L2 regularization, dropout, data augmentation and batch normalization.},
+  file      = {:pmlr-v97-cobbe19a - Quantifying Generalization in Reinforcement Learning.pdf:PDF},
+  groups    = {RL},
+  pdf       = {http://proceedings.mlr.press/v97/cobbe19a/cobbe19a.pdf},
+  ranking   = {rank3},
+  url       = {https://proceedings.mlr.press/v97/cobbe19a.html},
+}
+
+@Article{osti_10132613,
+  author       = {Justesen, Niels and Rodriguez Torrado, Ruben and Bontrager, Philip and Khalifa, Ahmed and Togelius, Julian and Risi, Sebastian},
+  journal      = {NeurIPS Workshop on Deep Reinforcement Learning},
+  title        = {Illuminating Generalization in Deep Reinforcement Learning through Procedural Level Generation},
+  year         = {2018},
+  abstractnote = {Deep reinforcement learning (RL) has shown impressive results in a variety of domains, learning directly from high-dimensional sensory streams. However, when neural networks are trained in a fixed environment, such as a single level in a video game, they will usually overfit and fail to generalize to new levels. When RL models overfit, even slight modifications to the environment can result in poor agent performance. This paper explores how procedurally generated levels during training can increase generality. We show that for some games procedural level generation enables generalization to new levels within the same distribution. Additionally, it is possible to achieve better performance with less data by manipulating the difficulty of the levels in response to the performance of the agent. The generality of the learned behaviors is also evaluated on a set of human-designed levels. The results suggest that the ability to generalize to human-designed levels highly depends on the design of the level generators. We apply dimensionality reduction and clustering techniques to visualize the generators’ distributions of levels and analyze to what degree they can produce levels similar to those designed by a human.},
+  file         = {:osti_10132613 - Illuminating Generalization in Deep Reinforcement Learning through Procedural Level Generation.pdf:PDF},
+  groups       = {RL},
+  place        = {Country unknown/Code not available},
+  ranking      = {rank2},
+  url          = {https://par.nsf.gov/biblio/10132613},
+}
+
+@InProceedings{ma2022elign,
+  author    = {Zixian Ma and Rose E Wang and Li Fei-Fei and Michael S. Bernstein and Ranjay Krishna},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {{ELIGN}: Expectation Alignment as a Multi-Agent Intrinsic Reward},
+  year      = {2022},
+  editor    = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+  file      = {:ma2022elign - ELIGN_ Expectation Alignment As a Multi Agent Intrinsic Reward.pdf:PDF},
+  groups    = {Intrinsic rewards in MARL},
+  priority  = {prio1},
+  url       = {https://openreview.net/forum?id=uPyNR2yPoe},
+}
+
+@InProceedings{chen2021randomized,
+  author    = {Xinyue Chen and Che Wang and Zijian Zhou and Keith W. Ross},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Randomized Ensembled Double Q-Learning: Learning Fast Without a Model},
+  year      = {2021},
+  file      = {:chen2021randomized - Randomized Ensembled Double Q Learning_ Learning Fast without a Model.pdf:PDF},
+  groups    = {Value based},
+  ranking   = {rank2},
+  url       = {https://openreview.net/forum?id=AY8zfZm0tDd},
+}
+
+@InProceedings{fan2022minedojo,
+  author    = {Linxi Fan and Guanzhi Wang and Yunfan Jiang and Ajay Mandlekar and Yuncong Yang and Haoyi Zhu and Andrew Tang and De-An Huang and Yuke Zhu and Anima Anandkumar},
+  booktitle = {Thirty-sixth Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  title     = {MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge},
+  year      = {2022},
+  file      = {:fan2022minedojo - MineDojo_ Building Open Ended Embodied Agents with Internet Scale Knowledge.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  ranking   = {rank2},
+  url       = {https://openreview.net/forum?id=rc8o_j8I8PX},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Intrinsic goals\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Navigation\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-task robotics\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Sim to Real\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Space Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Interactivity\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Exploration in MARL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Discrete language\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Independent Learning\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Centralised execution\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Social Learning\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Intrinsic rewards in MARL\;0\;1\;0x8a
