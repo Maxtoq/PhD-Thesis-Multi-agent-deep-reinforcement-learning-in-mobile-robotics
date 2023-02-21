@@ -5669,8 +5669,9 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 
 @Article{Nair2021,
   author        = {Suraj Nair and Eric Mitchell and Kevin Chen and Brian Ichter and Silvio Savarese and Chelsea Finn},
+  journal       = {Proceedings of the 5th Conference on Robot Learning},
   title         = {Learning Language-Conditioned Robot Behavior from Offline Data and Crowd-Sourced Annotation},
-  year          = {2021},
+  year          = {2022},
   month         = sep,
   abstract      = {We study the problem of learning a range of vision-based manipulation tasks from a large offline dataset of robot interaction. In order to accomplish this, humans need easy and effective ways of specifying tasks to the robot. Goal images are one popular form of task specification, as they are already grounded in the robot's observation space. However, goal images also have a number of drawbacks: they are inconvenient for humans to provide, they can over-specify the desired behavior leading to a sparse reward signal, or under-specify task information in the case of non-goal reaching tasks. Natural language provides a convenient and flexible alternative for task specification, but comes with the challenge of grounding language in the robot's observation space. To scalably learn this grounding we propose to leverage offline robot datasets (including highly sub-optimal, autonomously collected data) with crowd-sourced natural language labels. With this data, we learn a simple classifier which predicts if a change in state completes a language instruction. This provides a language-conditioned reward function that can then be used for offline multi-task RL. In our experiments, we find that on language-conditioned manipulation tasks our approach outperforms both goal-image specifications and language conditioned imitation techniques by more than 25%, and is able to perform visuomotor tasks from natural language, such as "open the right drawer" and "move the stapler", on a Franka Emika Panda robot.},
   archiveprefix = {arXiv},
@@ -5679,6 +5680,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   groups        = {Language-Augmented RL},
   keywords      = {cs.RO, cs.AI, cs.LG},
   primaryclass  = {cs.RO},
+  ranking       = {rank2},
 }
 
 @Article{Sorokin2021,
@@ -6810,6 +6812,7 @@ the agent takes as input the current state and goal, the value function depends 
   year       = {2022},
   abstract   = {Reinforcement learning (RL) agents are particularly hard to train when rewards are sparse. One common solution is to use intrinsic rewards to encourage agents to explore their environment. However, recent intrinsic exploration methods often use state-based novelty measures which reward low-level exploration and may not scale to domains requiring more abstract skills. Instead, we explore natural language as a general medium for highlighting relevant abstractions in an environment. Unlike previous work, we evaluate whether language can improve over existing exploration methods by directly extending (and comparing to) competitive intrinsic exploration baselines: AMIGo (Campero et al., 2021) and NovelD (Zhang et al., 2021). These language-based variants outperform their non-linguistic forms by 45-85% across 13 challenging tasks from the MiniGrid and MiniHack environment suites.},
   booktitle  = {Advances in Neural Information Processing Systems},
+  comment    = {L-AMIGO L-NovelD},
   editor     = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
   file       = {:Mu2022 - Improving Intrinsic Exploration with Language Abstractions.pdf:PDF},
   groups     = {Language-Augmented RL},
@@ -7465,21 +7468,8 @@ the agent takes as input the current state and goal, the value function depends 
   groups        = {Language-Augmented RL},
   keywords      = {cs.LG, cs.AI, cs.CL, cs.CV, cs.RO},
   primaryclass  = {cs.LG},
-}
-
-@Article{Colas2022,
-  author        = {Cédric Colas and Tristan Karch and Clément Moulin-Frier and Pierre-Yves Oudeyer},
-  title         = {Vygotskian Autotelic Artificial Intelligence: Language and Culture Internalization for Human-Like AI},
-  year          = {2022},
-  month         = jun,
-  abstract      = {Building autonomous artificial agents able to grow open-ended repertoires of skills is one of the fundamental goals of AI. To that end, a promising developmental approach recommends the design of intrinsically motivated agents that learn new skills by generating and pursuing their own goals - autotelic agents. However, existing algorithms still show serious limitations in terms of goal diversity, exploration, generalization or skill composition. This perspective calls for the immersion of autotelic agents into rich socio-cultural worlds. We focus on language especially, and how its structure and content may support the development of new cognitive functions in artificial agents, just like it does in humans. Indeed, most of our skills could not be learned in isolation. Formal education teaches us to reason systematically, books teach us history, and YouTube might teach us how to cook. Crucially, our values, traditions, norms and most of our goals are cultural in essence. This knowledge, and some argue, some of our cognitive functions such as abstraction, compositional imagination or relational thinking, are formed through linguistic and cultural interactions. Inspired by the work of Vygotsky, we suggest the design of Vygotskian autotelic agents able to interact with others and, more importantly, able to internalize these interactions to transform them into cognitive tools supporting the development of new cognitive functions. This perspective paper proposes a new AI paradigm in the quest for artificial lifelong skill discovery. It justifies the approach by uncovering examples of new artificial cognitive functions emerging from interactions between language and embodiment in recent works at the intersection of deep reinforcement learning and natural language processing. Looking forward, it highlights future opportunities and challenges for Vygotskian Autotelic AI research.},
-  archiveprefix = {arXiv},
-  eprint        = {2206.01134},
-  file          = {:Colas2022 - Vygotskian Autotelic Artificial Intelligence_ Language and Culture Internalization for Human like AI.pdf:PDF},
-  groups        = {Language-Augmented RL},
-  keywords      = {cs.AI, cs.CL, cs.LG},
-  primaryclass  = {cs.AI},
-  readstatus    = {read},
+  priority      = {prio1},
+  ranking       = {rank3},
 }
 
 @Article{Carta2022,
@@ -8214,6 +8204,36 @@ the agent takes as input the current state and goal, the value function depends 
   editor    = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
   groups    = {Intrinsic goals},
   url       = {https://openreview.net/forum?id=FJ42JCNNUYT},
+}
+
+@Article{Colas2022a,
+  author     = {Colas, Cédric and Karch, Tristan and Moulin-Frier, Clément and Oudeyer, Pierre-Yves},
+  journal    = {Nature Machine Intelligence},
+  title      = {Language and culture internalization for human-like autotelic AI},
+  year       = {2022},
+  issn       = {2522-5839},
+  number     = {12},
+  pages      = {1068--1076},
+  volume     = {4},
+  abstract   = {Building autonomous agents able to grow open-ended repertoires of skills across their lives is a fundamental goal of artificial intelligence (AI). A promising developmental approach recommends the design of intrinsically motivated agents that learn new skills by generating and pursuing their own goals--autotelic agents. But despite recent progress, existing algorithms still show serious limitations in terms of goal diversity, exploration, generalization or skill composition. This Perspective calls for the immersion of autotelic agents into rich socio-cultural worlds, an immensely important attribute of our environment that shapes human cognition but is mostly omitted in modern AI. Inspired by the seminal work of Vygotsky, we propose Vygotskian autotelic agents--agents able to internalize their interactions with others and turn them into cognitive tools. We focus on language and show how its structure and informational content may support the development of new cognitive functions in artificial agents as it does in humans. We justify the approach by uncovering several examples of new artificial cognitive functions emerging from interactions between language and embodiment in recent works at the intersection of deep reinforcement learning and natural language processing. Looking forward, we highlight future opportunities and challenges for Vygotskian autotelic AI research, including the use of language models as cultural models supporting artificial cognitive development.},
+  doi        = {10.1038/s42256-022-00591-4},
+  file       = {:Colas2022a - Language and Culture Internalization for Human like Autotelic AI.pdf:PDF;:Colas2022 - Vygotskian Autotelic Artificial Intelligence_ Language and Culture Internalization for Human like AI.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  readstatus = {read},
+  refid      = {Colas2022},
+  url        = {https://doi.org/10.1038/s42256-022-00591-4},
+}
+
+@InProceedings{Huang2022:InnerMonol,
+  author    = {Wenlong Huang and Fei Xia and Ted Xiao and Harris Chan and Jacky Liang and Pete Florence and Andy Zeng and Jonathan Tompson and Igor Mordatch and Yevgen Chebotar and Pierre Sermanet and Tomas Jackson and Noah Brown and Linda Luu and Sergey Levine and Karol Hausman and brian ichter},
+  booktitle = {6th Annual Conference on Robot Learning},
+  title     = {Inner Monologue: Embodied Reasoning through Planning with Language Models},
+  year      = {2022},
+  file      = {:Huang2022_InnerMonol - Inner Monologue_ Embodied Reasoning through Planning with Language Models.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  priority  = {prio2},
+  ranking   = {rank2},
+  url       = {https://openreview.net/forum?id=3R3Pz5i0tye},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
