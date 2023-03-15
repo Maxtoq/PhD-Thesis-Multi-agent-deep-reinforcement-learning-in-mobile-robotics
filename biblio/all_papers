@@ -1329,7 +1329,7 @@
   comment   = {SchedNet},
   file      = {:kim2018learning - Learning to Schedule Communication in Multi Agent Reinforcement Learning.pdf:PDF},
   groups    = {Communication},
-  ranking   = {rank1},
+  ranking   = {rank2},
   url       = {https://openreview.net/forum?id=SJxu5iR9KQ},
 }
 
@@ -5880,16 +5880,6 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
 }
 
-@InProceedings{tucker2021emergent,
-  author    = {Mycal Tucker and Huao Li and Siddharth Agrawal and Dana Hughes and Katia P. Sycara and Michael Lewis and Julie Shah},
-  booktitle = {Thirty-Fifth Conference on Neural Information Processing Systems},
-  title     = {Emergent Discrete Communication in Semantic Spaces},
-  year      = {2021},
-  file      = {:tucker2021emergent - Emergent Discrete Communication in Semantic Spaces.pdf:PDF},
-  groups    = {Communication},
-  url       = {https://openreview.net/forum?id=EuvW3-Lmoxm},
-}
-
 @Article{Chen2021,
   author    = {Lili Chen and Kevin Lu and Aravind Rajeswaran and Kimin Lee and Aditya Grover and Michael Laskin and Pieter Abbeel and Aravind Srinivas and Igor Mordatch},
   title     = {Decision Transformer: Reinforcement Learning via Sequence Modeling},
@@ -6051,15 +6041,16 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 }
 
 @InProceedings{Gupta2021a,
-  author    = {Abhinav Gupta and Marc Lanctot and Angeliki Lazaridou},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {Dynamic population-based meta-learning for multi-agent communication with natural language},
-  year      = {2021},
-  editor    = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
-  file      = {:Gupta2021a - Dynamic Population Based Meta Learning for Multi Agent Communication with Natural Language.pdf:PDF},
-  groups    = {Discrete language},
-  priority  = {prio2},
-  url       = {https://openreview.net/forum?id=NFurmj-rIWe},
+  author     = {Abhinav Gupta and Marc Lanctot and Angeliki Lazaridou},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Dynamic population-based meta-learning for multi-agent communication with natural language},
+  year       = {2021},
+  editor     = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+  file       = {:Gupta2021a - Dynamic Population Based Meta Learning for Multi Agent Communication with Natural Language.pdf:PDF},
+  groups     = {Discrete language, Natural language},
+  priority   = {prio1},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=NFurmj-rIWe},
 }
 
 @InProceedings{Liu2021,
@@ -6074,14 +6065,15 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 }
 
 @InProceedings{Tucker2021,
-  author    = {Mycal Tucker and Huao Li and Siddharth Agrawal and Dana Hughes and Katia P. Sycara and Michael Lewis and Julie Shah},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {Emergent Discrete Communication in Semantic Spaces},
-  year      = {2021},
-  editor    = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
-  file      = {:Tucker2021 - Emergent Discrete Communication in Semantic Spaces.pdf:PDF},
-  groups    = {Discrete language},
-  url       = {https://openreview.net/forum?id=hsqZ5v8PFyQ},
+  author     = {Mycal Tucker and Huao Li and Siddharth Agrawal and Dana Hughes and Katia P. Sycara and Michael Lewis and Julie Shah},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Emergent Discrete Communication in Semantic Spaces},
+  year       = {2021},
+  editor     = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+  file       = {:Tucker2021 - Emergent Discrete Communication in Semantic Spaces.pdf:PDF},
+  groups     = {Discrete language},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=hsqZ5v8PFyQ},
 }
 
 @InProceedings{Chevalier2018,
@@ -6874,20 +6866,11 @@ the agent takes as input the current state and goal, the value function depends 
   abstract   = {We present a method for combining multi-agent communication and traditional data-driven approaches to natural language learning, with an end goal of teaching agents to communicate with humans in natural language. Our starting point is a language model that has been trained on generic, not task-specific language data. We then place this model in a multi-agent self-play environment that generates task-specific rewards used to adapt or modulate the model, turning it into a task-conditional language model. We introduce a new way for combining the two types of learning based on the idea of reranking language model samples, and show that this method outperforms others in communicating with humans in a visual referential communication task. Finally, we present a taxonomy of different types of language drift that can occur alongside a set of measures to detect them.},
   doi        = {10.18653/v1/2020.acl-main.685},
   file       = {:lazaridou-etal-2020-multi - Multi Agent Communication Meets Natural Language_ Synergies between Functional and Structural Language Learning.pdf:PDF},
-  groups     = {Discrete language},
+  groups     = {Discrete language, Natural language},
+  priority   = {prio1},
   ranking    = {rank1},
   readstatus = {read},
   url        = {https://aclanthology.org/2020.acl-main.685},
-}
-
-@InProceedings{gupta2021meta,
-  author    = {Abhinav Gupta and Angeliki Lazaridou and Marc Lanctot},
-  booktitle = {Learning to Learn - Workshop at ICLR 2021},
-  title     = {Meta Learning for Multi-agent Communication},
-  year      = {2021},
-  file      = {:gupta2021meta - Meta Learning for Multi Agent Communication.pdf:PDF},
-  groups    = {Discrete language},
-  url       = {https://openreview.net/forum?id=mo_rSxN38VO},
 }
 
 @Article{Donati2021,
@@ -8236,28 +8219,393 @@ the agent takes as input the current state and goal, the value function depends 
   url       = {https://openreview.net/forum?id=3R3Pz5i0tye},
 }
 
+@InProceedings{Niu2021,
+  author    = {Niu, Yaru and Paleja, Rohan and Gombolay, Matthew},
+  booktitle = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
+  title     = {Multi-Agent Graph-Attention Communication and Teaming},
+  year      = {2021},
+  address   = {Richland, SC},
+  pages     = {964–973},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '21},
+  abstract  = {High-performing teams learn effective communication strategies to judiciously share information and reduce the cost of communication overhead. Within multi-agent reinforcement learning, synthesizing effective policies requires reasoning about when to communicate, whom to communicate with, and how to process messages. We propose a novel multi-agent reinforcement learning algorithm, Multi-Agent Graph-attentIon Communication (MAGIC), with a graph-attention communication protocol in which we learn 1) a Scheduler to help with the problems of when to communicate and whom to address messages to, and 2) a Message Processor using Graph Attention Networks (GATs) with dynamic graphs to deal with communication signals. The Scheduler consists of a graph attention encoder and a differentiable attention mechanism, which outputs dynamic, differentiable graphs to the Message Processor, which enables the Scheduler and Message Processor to be trained end-to-end. We evaluate our approach on a variety of cooperative tasks, including Google Research Football. Our method outperforms baselines across all domains, achieving ~10.5% increase in reward in the most challenging domain. We also show MAGIC communicates $27.4%$ more efficiently on average than baselines, is robust to stochasticity, and scales to larger state-action spaces. Finally, we demonstrate MAGIC on a physical, multi-robot testbed.},
+  file      = {:Niu2021 - Multi Agent Graph Attention Communication and Teaming.pdf:PDF},
+  groups    = {Communication},
+  isbn      = {9781450383073},
+  keywords  = {multi-agent reinforcement learning, multi-agent communication, graph-based communication},
+  location  = {Virtual Event, United Kingdom},
+  numpages  = {10},
+  priority  = {prio1},
+  ranking   = {rank2},
+}
+
+@InProceedings{Wang2022,
+  author    = {Wang, Yutong and Sartoretti, Guillaume},
+  booktitle = {Proceedings of the 21st International Conference on Autonomous Agents and Multiagent Systems},
+  title     = {FCMNet: Full Communication Memory Net for Team-Level Cooperation in Multi-Agent Systems},
+  year      = {2022},
+  address   = {Richland, SC},
+  pages     = {1355–1363},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '22},
+  abstract  = {Decentralized cooperation in partially-observable multi-agent systems requires effective communications among agents. To support this effort, this work focuses on the class of problems where global communications are available but may be unreliable, thus precluding differentiable communication learning methods. We introduce FCMNet, a reinforcement learning based approach that allows agents to simultaneously learn a) an effective multi-hop communications protocol and b) a common, decentralized policy that enables team-level decision-making. Specifically, our proposed method utilizes the hidden states of multiple directional recurrent neural networks as communication messages among agents. Using a simple multi-hop topology, we endow each agent with the ability to receive information sequentially encoded by every other agent at each time step, leading to improved global cooperation. We demonstrate FCMNet on a challenging set of StarCraft II micromanagement tasks with shared rewards, as well as a collaborative multi-agent pathfinding task with individual rewards. There, our comparison results show that FCMNet outperforms state-of-the-art communication-based reinforcement learning methods in all StarCraft II micromanagement tasks, and value decomposition methods in certain tasks. We further investigate the robustness of FCMNet under realistic communication disturbances, such as random message loss or binarized messages (i.e., non-differentiable communication channels), to showcase FMCNet's potential applicability to robotic tasks under a variety of real-world conditions.},
+  file      = {:Wang2022 - FCMNet_ Full Communication Memory Net for Team Level Cooperation in Multi Agent Systems.pdf:PDF},
+  groups    = {Communication},
+  isbn      = {9781450392136},
+  keywords  = {multi-agent reinforcement learning, differentiable communications, decentralized cooperation, communication learning},
+  location  = {Virtual Event, New Zealand},
+  numpages  = {9},
+  priority  = {prio2},
+}
+
+@InProceedings{Tucker2020,
+  author    = {Tucker, Mycal and Aksaray, Derya and Paul, Rohan and Stein, Gregory J. and Roy, Nicholas},
+  booktitle = {Robotics Research},
+  title     = {Learning Unknown Groundings for Natural Language Interaction with Mobile Robots},
+  year      = {2020},
+  address   = {Cham},
+  editor    = {Amato, Nancy M. and Hager, Greg and Thomas, Shawna and Torres-Torriti, Miguel},
+  pages     = {317--333},
+  publisher = {Springer International Publishing},
+  abstract  = {Our goal is to enable robots to understand or ``ground'' natural language instructions in the context of their perceived workspace. Contemporary models learn a probabilistic correspondence between input phrases and semantic concepts (or groundings) such as objects, regions or goals for robot motion derived from the robot's world model. Crucially, these models assume a fixed and a priori known set of object types as well as phrases and train probable correspondences offline using static language-workspace corpora. Hence, model inference fails when an input command contains unknown phrases or references to novel object types that were not seen during the training. We introduce a probabilistic model that incorporates a notion of unknown groundings and learns a correspondence between an unknown phrase and an unknown object that cannot be classified into known visual categories. Further, we extend the model to ``hypothesize'' known or unknown object groundings in case the language utterance references an object that exists beyond the robot's partial view of its workspace. When the grounding for an instruction is unknown or hypothetical, the robot performs exploratory actions to gather new observations and find the referenced objects beyond the current view. Once an unknown grounding is associated with percepts of a new object, the model is adapted and trained online using accrued visual-linguistic observations to reflect the new knowledge gained for interpreting future utterances. We evaluate the model quantitatively using a corpus from a user study and report experiments on a mobile platform in a workspace populated with objects from a standardized dataset. A video of the experimental demonstration is available at: https://youtu.be/XFLNdaUKgW0.},
+  file      = {:Tucker2020 - Learning Unknown Groundings for Natural Language Interaction with Mobile Robots.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  isbn      = {978-3-030-28619-4},
+  priority  = {prio2},
+  url       = {https://link.springer.com/chapter/10.1007/978-3-030-28619-4_27},
+}
+
+@Article{Karten2023,
+  author        = {Karten, Seth and Tucker, Mycal and Li, Huao and Kailas, Siva and Lewis, Michael and Sycara, Katia},
+  journal       = {{IEEE} Transactions on Cognitive and Developmental Systems},
+  title         = {Interpretable Learned Emergent Communication for Human-Agent Teams},
+  year          = {2023},
+  month         = jan,
+  pages         = {1--1},
+  abstract      = {Learning interpretable communication is essential for multi-agent and human-agent teams (HATs). In multi-agent reinforcement learning for partially-observable environments, agents may convey information to others via learned communication, allowing the team to complete its task. Inspired by human languages, recent works study discrete (using only a finite set of tokens) and sparse (communicating only at some time-steps) communication. However, the utility of such communication in human-agent team experiments has not yet been investigated. In this work, we analyze the efficacy of sparse-discrete methods for producing emergent communication that enables high agent-only and human-agent team performance. We develop agent-only teams that communicate sparsely via our scheme of Enforcers that sufficiently constrain communication to any budget. Our results show no loss or minimal loss of performance in benchmark environments and tasks. In human-agent teams tested in benchmark environments, where agents have been modeled using the Enforcers, we find that a prototype-based method produces meaningful discrete tokens that enable human partners to learn agent communication faster and better than a one-hot baseline. Additional HAT experiments show that an appropriate sparsity level lowers the cognitive load of humans when communicating with teams of agents and leads to superior team performance.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.1109/tcds.2023.3236599},
+  eprint        = {2201.07452},
+  file          = {:Karten2022 - Interpretable Learned Emergent Communication for Human Agent Teams.pdf:PDF},
+  groups        = {Discrete language},
+  keywords      = {Machine Learning (cs.LG), Multiagent Systems (cs.MA), Robotics (cs.RO), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  priority      = {prio2},
+  publisher     = {Institute of Electrical and Electronics Engineers ({IEEE})},
+}
+
+@InProceedings{Tucker2022:VQVIB,
+  author    = {Mycal Tucker and Roger P. Levy and Julie Shah and Noga Zaslavsky},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Trading off Utility, Informativeness, and Complexity in Emergent Communication},
+  year      = {2022},
+  editor    = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+  file      = {:Tucker2022_VQBIB - Trading off Utility, Informativeness, and Complexity in Emergent Communication.pdf:PDF},
+  groups    = {Discrete language},
+  url       = {https://openreview.net/forum?id=O5arhQvBdH},
+}
+
+@InProceedings{Karten2022,
+  author    = {Karten, Seth and Sycara, Katia},
+  booktitle = {Workshop IROS 2022 - Multi-agent workshop},
+  title     = {Intent-Grounded Compositional Communication through Mutual Information in Multi-Agent Teams},
+  year      = {2022},
+  file      = {:Karten2022 - Interpretable Learned Emergent Communication for Human Agent Teams.pdf:PDF},
+  groups    = {Discrete language},
+  priority  = {prio2},
+}
+
+@InProceedings{chaabouni2022emergent,
+  author    = {Rahma Chaabouni and Florian Strub and Florent Altch{\'e} and Eugene Tarassov and Corentin Tallec and Elnaz Davoodi and Kory Wallace Mathewson and Olivier Tieleman and Angeliki Lazaridou and Bilal Piot},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Emergent Communication at Scale},
+  year      = {2022},
+  file      = {:chaabouni2022emergent - Emergent Communication at Scale.pdf:PDF},
+  groups    = {Communication},
+  priority  = {prio1},
+  ranking   = {rank2},
+  url       = {https://openreview.net/forum?id=AUGBfDIV9rL},
+}
+
+@InProceedings{yao2022linking,
+  author    = {Shunyu Yao and Mo Yu and Yang Zhang and Karthik R Narasimhan and Joshua B. Tenenbaum and Chuang Gan},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Linking Emergent and Natural Languages via Corpus Transfer},
+  year      = {2022},
+  file      = {:yao2022linking - Linking Emergent and Natural Languages Via Corpus Transfer.pdf:PDF},
+  groups    = {Communication},
+  priority  = {prio2},
+  url       = {https://openreview.net/forum?id=49A1Y6tRhaq},
+}
+
+@InProceedings{rita2022on,
+  author    = {Mathieu Rita and Florian Strub and Jean-Bastien Grill and Olivier Pietquin and Emmanuel Dupoux},
+  booktitle = {International Conference on Learning Representations},
+  title     = {On the role of population heterogeneity in emergent communication},
+  year      = {2022},
+  file      = {:rita2022on - On the Role of Population Heterogeneity in Emergent Communication.pdf:PDF},
+  groups    = {Communication},
+  url       = {https://openreview.net/forum?id=5Qkd7-bZfI},
+}
+
+@InProceedings{Rita2020,
+  author    = {Rita, Mathieu and Chaabouni, Rahma and Dupoux, Emmanuel},
+  booktitle = {Proceedings of the 24th Conference on Computational Natural Language Learning},
+  title     = {LazImpa: Lazy and Impatient neural agents learn to communicate efficiently},
+  year      = {2020},
+  address   = {Online},
+  month     = nov,
+  pages     = {335--343},
+  publisher = {Association for Computational Linguistics},
+  abstract  = {Previous work has shown that artificial neural agents naturally develop surprisingly non-efficient codes. This is illustrated by the fact that in a referential game involving a speaker and a listener neural networks optimizing accurate transmission over a discrete channel, the emergent messages fail to achieve an optimal length. Furthermore, frequent messages tend to be longer than infrequent ones, a pattern contrary to the Zipf Law of Abbreviation (ZLA) observed in all natural languages. Here, we show that near-optimal and ZLA-compatible messages can emerge, but only if both the speaker and the listener are modified. We hence introduce a new communication system, {``}LazImpa{''}, where the speaker is made increasingly lazy, i.e., avoids long messages, and the listener impatient, i.e., seeks to guess the intended content as soon as possible.},
+  doi       = {10.18653/v1/2020.conll-1.26},
+  file      = {:Rita2020 - ``LazImpa''_ Lazy and Impatient Neural Agents Learn to Communicate Efficiently.pdf:PDF},
+  groups    = {Discrete language},
+  url       = {https://aclanthology.org/2020.conll-1.26},
+}
+
+@InProceedings{wang2022tomc,
+  author    = {Yuanfei Wang and fangwei zhong and Jing Xu and Yizhou Wang},
+  booktitle = {International Conference on Learning Representations},
+  title     = {ToM2C: Target-oriented Multi-agent Communication and Cooperation with Theory of Mind},
+  year      = {2022},
+  file      = {:wang2022tomc - ToM2C_ Target Oriented Multi Agent Communication and Cooperation with Theory of Mind.pdf:PDF},
+  groups    = {Communication},
+  priority  = {prio1},
+  url       = {https://openreview.net/forum?id=2t7CkQXNpuq},
+}
+
+@InProceedings{Lu2022:R5,
+  author    = {Shengyao Lu and Bang Liu and Keith G Mills and SHANGLING JUI and Di Niu},
+  booktitle = {International Conference on Learning Representations},
+  title     = {R5: Rule Discovery with Reinforced and Recurrent Relational Reasoning},
+  year      = {2022},
+  file      = {:Lu2022_R5 - R5_ Rule Discovery with Reinforced and Recurrent Relational Reasoning.pdf:PDF},
+  groups    = {RL},
+  priority  = {prio3},
+  url       = {https://openreview.net/forum?id=2eXhNpHeW6E},
+}
+
+@InProceedings{banino2022coberl,
+  author    = {Andrea Banino and Adria Puigdomenech Badia and Jacob C Walker and Tim Scholtes and Jovana Mitrovic and Charles Blundell},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Co{BERL}: Contrastive {BERT} for Reinforcement Learning},
+  year      = {2022},
+  file      = {:banino2022coberl - CoBERL_ Contrastive BERT for Reinforcement Learning.pdf:PDF},
+  groups    = {RL},
+  url       = {https://openreview.net/forum?id=sRZ3GhmegS},
+}
+
+@InProceedings{franzmeyer2022learning,
+  author    = {Tim Franzmeyer and Mateusz Malinowski and Joao F. Henriques},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Learning Altruistic Behaviours in Reinforcement Learning without External Rewards},
+  year      = {2022},
+  file      = {:franzmeyer2022learning - Learning Altruistic Behaviours in Reinforcement Learning without External Rewards.pdf:PDF},
+  groups    = {Intrinsic rewards in MARL},
+  url       = {https://openreview.net/forum?id=KxbhdyiPHE},
+}
+
+@InProceedings{rengarajan2022reinforcement,
+  author    = {Desik Rengarajan and Gargi Vaidya and Akshay Sarvesh and Dileep Kalathil and Srinivas Shakkottai},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Reinforcement Learning with Sparse Rewards using Guidance from Offline Demonstration},
+  year      = {2022},
+  file      = {:rengarajan2022reinforcement - Reinforcement Learning with Sparse Rewards Using Guidance from Offline Demonstration.pdf:PDF},
+  groups    = {RL},
+  url       = {https://openreview.net/forum?id=YJ1WzgMVsMt},
+}
+
+@InProceedings{kuba2022trust,
+  author    = {Jakub Grudzien Kuba and Ruiqing Chen and Muning Wen and Ying Wen and Fanglei Sun and Jun Wang and Yaodong Yang},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Trust Region Policy Optimisation in Multi-Agent Reinforcement Learning},
+  year      = {2022},
+  file      = {:kuba2022trust - Trust Region Policy Optimisation in Multi Agent Reinforcement Learning.pdf:PDF},
+  groups    = {Multi-agent RL},
+  url       = {https://openreview.net/forum?id=EcGGFkNTxdJ},
+}
+
+@InProceedings{liang2022reward,
+  author    = {Xinran Liang and Katherine Shu and Kimin Lee and Pieter Abbeel},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Reward Uncertainty for Exploration in Preference-based Reinforcement Learning},
+  year      = {2022},
+  file      = {:liang2022reward - Reward Uncertainty for Exploration in Preference Based Reinforcement Learning.pdf:PDF},
+  groups    = {Intrinsic goals},
+  url       = {https://openreview.net/forum?id=OWZVD-l-ZrC},
+}
+
+@InProceedings{Trauble2022the,
+  author    = {Frederik Tr{\"a}uble and Andrea Dittadi and Manuel Wuthrich and Felix Widmaier and Peter Vincent Gehler and Ole Winther and Francesco Locatello and Olivier Bachem and Bernhard Sch{\"o}lkopf and Stefan Bauer},
+  booktitle = {International Conference on Learning Representations},
+  title     = {The Role of Pretrained Representations for the {OOD} Generalization of {RL} Agents},
+  year      = {2022},
+  file      = {:Trauble2022the - The Role of Pretrained Representations for the OOD Generalization of RL Agents.pdf:PDF},
+  groups    = {RL},
+  url       = {https://openreview.net/forum?id=8eb12UQYxrG},
+}
+
+@InProceedings{f79ef4d4dd994bceb33181d654f20d21,
+  author    = {Lake, {Brenden M.} and Tal Linzen and Marco Baroni},
+  booktitle = {Proceedings of the 41st Annual Meeting of the Cognitive Science Society},
+  title     = {Human few-shot learning of compositional instructions},
+  year      = {2019},
+  note      = {Funding Information: We thank the NYU ConCats group, Michael Frank, Kristina Gulordava, Germ{\'a}n Kruszewski, Roger Levy, and Adina Williams for helpful suggestions. Publisher Copyright: {\textcopyright} Cognitive Science Society: Creativity + Cognition + Computation, CogSci 2019.All rights reserved.; 41st Annual Meeting of the Cognitive Science Society: Creativity + Cognition + Computation, CogSci 2019 ; Conference date: 24-07-2019 Through 27-07-2019},
+  pages     = {611--617},
+  publisher = {The Cognitive Science Society},
+  series    = {Proceedings of the 41st Annual Meeting of the Cognitive Science Society: Creativity + Cognition + Computation, CogSci 2019},
+  abstract  = {People learn in fast and flexible ways that have not been emulated by machines. Once a person learns a new verb “dax,” he or she can effortlessly understand how to “dax twice,” “walk and dax,” or “dax vigorously.” There have been striking recent improvements in machine learning for natural language processing, yet the best algorithms require vast amounts of experience and struggle to generalize new concepts in compositional ways. To better understand these distinctively human abilities, we study the compositional skills of people through language-like instruction learning tasks. Our results show that people can learn and use novel functional concepts from very few examples (few-shot learning), successfully applying familiar functions to novel inputs. People can also compose concepts in complex ways that go beyond the provided demonstrations. Two additional experiments examined the assumptions and inductive biases that people make when solving these tasks, revealing three biases: mutual exclusivity, one-to-one mappings, and iconic concatenation. We discuss the implications for cognitive modeling and the potential for building machines with more human-like language learning capabilities.},
+  file      = {:f79ef4d4dd994bceb33181d654f20d21 - Human Few Shot Learning of Compositional Instructions.pdf:PDF},
+  groups    = {Language},
+  keywords  = {compositionality, concept learning, neural networks, word learning},
+  language  = {English (US)},
+  priority  = {prio2},
+  url       = {https://nyuscholars.nyu.edu/en/publications/human-few-shot-learning-of-compositional-instructions},
+}
+
+@InProceedings{pmlr-v80-lake18a,
+  author    = {Lake, Brenden and Baroni, Marco},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning},
+  title     = {Generalization without Systematicity: On the Compositional Skills of Sequence-to-Sequence Recurrent Networks},
+  year      = {2018},
+  editor    = {Dy, Jennifer and Krause, Andreas},
+  month     = {10--15 Jul},
+  pages     = {2873--2882},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {80},
+  abstract  = {Humans can understand and produce new utterances effortlessly, thanks to their compositional skills. Once a person learns the meaning of a new verb "dax," he or she can immediately understand the meaning of "dax twice" or "sing and dax." In this paper, we introduce the SCAN domain, consisting of a set of simple compositional navigation commands paired with the corresponding action sequences. We then test the zero-shot generalization capabilities of a variety of recurrent neural networks (RNNs) trained on SCAN with sequence-to-sequence methods. We find that RNNs can make successful zero-shot generalizations when the differences between training and test commands are small, so that they can apply "mix-and-match" strategies to solve the task. However, when generalization requires systematic compositional skills (as in the "dax" example above), RNNs fail spectacularly. We conclude with a proof-of-concept experiment in neural machine translation, suggesting that lack of systematicity might be partially responsible for neural networks’ notorious training data thirst.},
+  file      = {:pmlr-v80-lake18a - Generalization without Systematicity_ on the Compositional Skills of Sequence to Sequence Recurrent Networks.pdf:PDF},
+  groups    = {Language},
+  pdf       = {http://proceedings.mlr.press/v80/lake18a/lake18a.pdf},
+  url       = {https://proceedings.mlr.press/v80/lake18a.html},
+}
+
+@InProceedings{Lake2019,
+  author    = {Lake, Brenden M},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Compositional generalization through meta sequence-to-sequence learning},
+  year      = {2019},
+  editor    = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {32},
+  file      = {:Lake2019 - Compositional Generalization through Meta Sequence to Sequence Learning.pdf:PDF},
+  groups    = {Language},
+  ranking   = {rank2},
+  url       = {https://proceedings.neurips.cc/paper/2019/file/f4d0e2e7fc057a58f7ca4a391f01940a-Paper.pdf},
+}
+
+@InProceedings{Ruis2020,
+  author    = {Ruis, Laura and Andreas, Jacob and Baroni, Marco and Bouchacourt, Diane and Lake, Brenden M},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {A Benchmark for Systematic Generalization in Grounded Language Understanding},
+  year      = {2020},
+  editor    = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+  pages     = {19861--19872},
+  publisher = {Curran Associates, Inc.},
+  volume    = {33},
+  file      = {:Ruis2020 - A Benchmark for Systematic Generalization in Grounded Language Understanding.pdf:PDF},
+  groups    = {Language},
+  priority  = {prio1},
+  ranking   = {rank2},
+  url       = {https://proceedings.neurips.cc/paper/2020/file/e5a90182cc81e12ab5e72d66e0b46fe3-Paper.pdf},
+}
+
+@Article{Lake2021,
+  author    = {Brenden M. Lake and Gregory L. Murphy},
+  journal   = {Psychological Review},
+  title     = {Word meaning in minds and machines.},
+  year      = {2021},
+  month     = {jul},
+  doi       = {10.1037/rev0000297},
+  file      = {:Lake2021 - Word Meaning in Minds and Machines..pdf:PDF},
+  groups    = {Language},
+  priority  = {prio1},
+  publisher = {American Psychological Association ({APA})},
+}
+
+@InProceedings{Li2022b,
+  author    = {Sheng Li and Yutai Zhou and Ross Allen and Mykel J. Kochenderfer},
+  booktitle = {2022 International Conference on Robotics and Automation ({ICRA})},
+  title     = {Learning Emergent Discrete Message Communication for Cooperative Reinforcement Learning},
+  year      = {2022},
+  month     = {may},
+  publisher = {{IEEE}},
+  doi       = {10.1109/icra46639.2022.9812285},
+  file      = {:Li2022b - Learning Emergent Discrete Message Communication for Cooperative Reinforcement Learning.pdf:PDF},
+  groups    = {Discrete language},
+  priority  = {prio2},
+}
+
+@Article{Mao2020,
+  author       = {Mao, Hangyu and Zhang, Zhengchao and Xiao, Zhen and Gong, Zhibo and Ni, Yan},
+  journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title        = {Learning Agent Communication under Limited Bandwidth by Message Pruning},
+  year         = {2020},
+  month        = {Apr.},
+  number       = {04},
+  pages        = {5142-5149},
+  volume       = {34},
+  abstractnote = {&lt;p&gt;Communication is a crucial factor for the big multi-agent world to stay organized and productive. Recently, Deep Reinforcement Learning (DRL) has been applied to learn the communication strategy and the control policy for multiple agents. However, the practical &lt;em&gt;limited bandwidth&lt;/em&gt; in multi-agent communication has been largely ignored by the existing DRL methods. Specifically, many methods keep sending messages incessantly, which consumes too much bandwidth. As a result, they are inapplicable to multi-agent systems with limited bandwidth. To handle this problem, we propose a gating mechanism to adaptively prune less beneficial messages. We evaluate the gating mechanism on several tasks. Experiments demonstrate that it can prune a lot of messages with little impact on performance. In fact, the performance may be greatly improved by pruning redundant messages. Moreover, the proposed gating mechanism is applicable to several previous methods, equipping them the ability to address bandwidth restricted settings.&lt;/p&gt;},
+  doi          = {10.1609/aaai.v34i04.5957},
+  file         = {:Mao2020 - Learning Agent Communication under Limited Bandwidth by Message Pruning.pdf:PDF},
+  groups       = {Communication},
+  url          = {https://ojs.aaai.org/index.php/AAAI/article/view/5957},
+}
+
+@InProceedings{Das_2017_CVPR,
+  author    = {Das, Abhishek and Kottur, Satwik and Gupta, Khushi and Singh, Avi and Yadav, Deshraj and Moura, Jose M. F. and Parikh, Devi and Batra, Dhruv},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Visual Dialog},
+  year      = {2017},
+  month     = {July},
+  file      = {:Das_2017_CVPR - Visual Dialog.pdf:PDF},
+  groups    = {Visual-Language Learning},
+}
+
+@InProceedings{Agarwal2019,
+  author    = {Agarwal, Akshat and Gurumurthy, Swaminathan and Sharma, Vasu and Lewis, Mike and Sycara, Katia},
+  booktitle = {Proceedings of the 18th International Conference on Autonomous Agents and MultiAgent Systems},
+  title     = {Community Regularization of Visually-Grounded Dialog},
+  year      = {2019},
+  address   = {Richland, SC},
+  pages     = {1042–1050},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '19},
+  abstract  = {The task of conducting visually grounded dialog involves learning goal-oriented cooperative dialog between autonomous agents who exchange information about a scene through several rounds of questions and answers in natural language. We posit that requiring artificial agents to adhere to the rules of human language, while also requiring them to maximize information exchange through dialog is an ill-posed problem. We observe that humans do not stray from a common language because they are social creatures who live in communities, and have to communicate with many people everyday, so it is far easier to stick to a common language even at the cost of some efficiency loss. Using this as inspiration, we propose and evaluate a multi-agent community-based dialog framework where each agent interacts with, and learns from, multiple agents, and show that this community-enforced regularization results in more relevant and coherent dialog (as judged by human evaluators) without sacrificing task performance (as judged by quantitative metrics).},
+  file      = {:Agarwal2019 - Community Regularization of Visually Grounded Dialog.pdf:PDF},
+  groups    = {Visual-Language Learning, Natural language},
+  isbn      = {9781450363099},
+  keywords  = {curriculum learning, visual dialog, emergent communication, multi-agent reinforcement learning},
+  location  = {Montreal QC, Canada},
+  numpages  = {9},
+  priority  = {prio1},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Intrinsic goals\;2\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
+4 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Intrinsic goals\;2\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
@@ -8285,36 +8633,37 @@ the agent takes as input the current state and goal, the value function depends 
 3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Communication\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Discrete language\;0\;1\;0x8a8a8aff\;\;\;;
+5 StaticGroup:Natural language\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Independent Learning\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Centralised execution\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Social Learning\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Intrinsic rewards in MARL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-Agent Environments\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Multi-goal RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Meta-Learning\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Hierarchical RL\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Macro-actions\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Language-Augmented RL\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Reward shaping\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visual-Language Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Text-based environments\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Question Answering\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Memory\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Contrastive Learning\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Memory\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Meta-Learning\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Hierarchical RL\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Macro-actions\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Multi-goal RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Evolution Strategy\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Evolutionary RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Developmental psychology\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Transformers in RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Contrastive Learning\;0\;0\;0x8a8a8aff\;\;\;;
 }
