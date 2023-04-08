@@ -7822,7 +7822,7 @@ the agent takes as input the current state and goal, the value function depends 
   title      = {Exploration via Elliptical Episodic Bonuses},
   year       = {2022},
   editor     = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
-  file       = {:henaff2022exploration - Exploration Via Elliptical Episodic Bonuses.pdf:PDF},
+  file       = {:Henaff2022_E3B - Exploration Via Elliptical Episodic Bonuses.pdf:PDF;:appendix.pdf:PDF},
   groups     = {Curiosity},
   readstatus = {read},
   url        = {https://openreview.net/forum?id=Xg-yZos9qJQ},
@@ -8655,7 +8655,7 @@ the agent takes as input the current state and goal, the value function depends 
   url       = {https://proceedings.mlr.press/v164/shridhar22a.html},
 }
 
-@InProceedings{pmlr-v139-lupu21a,
+@InProceedings{Lupu2021:TrajeDi,
   author    = {Lupu, Andrei and Cui, Brandon and Hu, Hengyuan and Foerster, Jakob},
   booktitle = {Proceedings of the 38th International Conference on Machine Learning},
   title     = {Trajectory Diversity for Zero-Shot Coordination},
@@ -8675,11 +8675,43 @@ the agent takes as input the current state and goal, the value function depends 
   url       = {https://proceedings.mlr.press/v139/lupu21a.html},
 }
 
+@InProceedings{Strouse2021a,
+  author    = {Strouse, DJ and McKee, Kevin and Botvinick, Matt and Hughes, Edward and Everett, Richard},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Collaborating with Humans without Human Data},
+  year      = {2021},
+  editor    = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+  pages     = {14502--14515},
+  publisher = {Curran Associates, Inc.},
+  volume    = {34},
+  file      = {:Strouse2021a - Collaborating with Humans without Human Data.pdf:PDF},
+  groups    = {Multi-agent RL},
+  ranking   = {rank2},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2021/file/797134c3e42371bb4979a462eb2f042a-Paper.pdf},
+}
+
+@Article{Ellis2022,
+  author        = {Ellis, Benjamin and Moalla, Skander and Samvelyan, Mikayel and Sun, Mingfei and Mahajan, Anuj and Foerster, Jakob N. and Whiteson, Shimon},
+  title         = {SMACv2: An Improved Benchmark for Cooperative Multi-Agent Reinforcement Learning},
+  year          = {2022},
+  month         = dec,
+  abstract      = {The availability of challenging benchmarks has played a key role in the recent progress of machine learning. In cooperative multi-agent reinforcement learning, the StarCraft Multi-Agent Challenge (SMAC) has become a popular testbed for centralised training with decentralised execution. However, after years of sustained improvement on SMAC, algorithms now achieve near-perfect performance. In this work, we conduct new analysis demonstrating that SMAC is not sufficiently stochastic to require complex closed-loop policies. In particular, we show that an open-loop policy conditioned only on the timestep can achieve non-trivial win rates for many SMAC scenarios. To address this limitation, we introduce SMACv2, a new version of the benchmark where scenarios are procedurally generated and require agents to generalise to previously unseen settings (from the same distribution) during evaluation. We show that these changes ensure the benchmark requires the use of closed-loop policies. We evaluate state-of-the-art algorithms on SMACv2 and show that it presents significant challenges not present in the original benchmark. Our analysis illustrates that SMACv2 addresses the discovered deficiencies of SMAC and can help benchmark the next generation of MARL methods. Videos of training are available at https://sites.google.com/view/smacv2},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2212.07489},
+  eprint        = {2212.07489},
+  file          = {:Ellis2022 - SMACv2_ an Improved Benchmark for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
+  groups        = {Multi-Agent Environments},
+  keywords      = {Machine Learning (cs.LG), Multiagent Systems (cs.MA), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  publisher     = {arXiv},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
