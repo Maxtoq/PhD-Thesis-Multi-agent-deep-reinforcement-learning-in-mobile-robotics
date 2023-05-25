@@ -167,7 +167,7 @@
 
 @InProceedings{Burda2019:RND,
   author        = {Yuri Burda and Harrison Edwards and Amos Storkey and Oleg Klimov},
-  booktitle     = {International Conference on Learning Representations},
+  booktitle     = {7th International Conference on Learning Representations},
   title         = {Exploration by Random Network Distillation},
   year          = {2019},
   month         = oct,
@@ -178,7 +178,7 @@
   groups        = {Curiosity, Intrinsic goals},
   keywords      = {cs.LG, cs.AI, stat.ML},
   primaryclass  = {cs.LG},
-  ranking       = {rank3},
+  ranking       = {rank4},
   readstatus    = {read},
 }
 
@@ -723,9 +723,9 @@
   url        = {http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12389},
 }
 
-@InProceedings{Schaul2016,
+@InProceedings{Schaul2016:PER,
   author     = {Tom Schaul and John Quan and Ioannis Antonoglou and David Silver},
-  booktitle  = {4th International Conference on Learning Representations, {ICLR} 2016, San Juan, Puerto Rico, May 2-4, 2016, Conference Track Proceedings},
+  booktitle  = {4th International Conference on Learning Representations},
   title      = {Prioritized Experience Replay},
   year       = {2016},
   editor     = {Yoshua Bengio and Yann LeCun},
@@ -826,7 +826,7 @@
 
 @InProceedings{FletBerliac2021:AGAC,
   author     = {Flet-Berliac, Yannis and Ferret, Johan and Pietquin, Olivier and Preux, Philippe and Geist, Matthieu},
-  booktitle  = {International Conference on Learning Representations},
+  booktitle  = {9th International Conference on Learning Representations},
   title      = {Adversarially Guided Actor-Critic},
   year       = {2021},
   address    = {Vienna / Virtual, Austria},
@@ -1079,6 +1079,7 @@
   publisher  = {{AAAI} Press},
   bibsource  = {dblp computer science bibliography, https://dblp.org},
   biburl     = {https://dblp.org/rec/conf/aaai/MordatchA18.bib},
+  comment    = {Multi-agent particle environment},
   file       = {:Mordatch2017 - Emergence of Grounded Compositional Language in Multi Agent Populations.pdf:PDF},
   groups     = {MARL, Discrete language, Communication},
   ranking    = {rank4},
@@ -1091,6 +1092,7 @@
   booktitle     = {Proceedings of the 36th International Conference on Machine Learning},
   title         = {Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning},
   year          = {2019},
+  pages         = {3040--3049},
   abstract      = {We propose a unified mechanism for achieving coordination and communication in Multi-Agent Reinforcement Learning (MARL), through rewarding agents for having causal influence over other agents' actions. Causal influence is assessed using counterfactual reasoning. At each timestep, an agent simulates alternate actions that it could have taken, and computes their effect on the behavior of other agents. Actions that lead to bigger changes in other agents' behavior are considered influential and are rewarded. We show that this is equivalent to rewarding agents for having high mutual information between their actions. Empirical results demonstrate that influence leads to enhanced coordination and communication in challenging social dilemma environments, dramatically increasing the learning curves of the deep RL agents, and leading to more meaningful learned communication protocols. The influence rewards for all agents can be computed in a decentralized way by enabling agents to learn a model of other agents using deep neural networks. In contrast, key previous works on emergent communication in the MARL setting were unable to learn diverse policies in a decentralized manner and had to resort to centralized training. Consequently, the influence reward opens up a window of new opportunities for research in this area.},
   archiveprefix = {arXiv},
   eprint        = {1810.08647},
@@ -1225,18 +1227,14 @@
 
 @InProceedings{Lowe2017:MADDPG,
   author     = {Lowe, Ryan and Wu, Yi and Tamar, Aviv and Harb, Jean and Abbeel, Pieter and Mordatch, Igor},
-  booktitle  = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
+  booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments},
   year       = {2017},
-  address    = {Red Hook, NY, USA},
-  pages      = {6382–6393},
-  publisher  = {Curran Associates Inc.},
-  series     = {NIPS'17},
+  volume     = {30},
   abstract   = {We explore deep reinforcement learning methods for multi-agent domains. We begin by analyzing the difficulty of traditional algorithms in the multi-agent case: Q-learning is challenged by an inherent non-stationarity of the environment, while policy gradient suffers from a variance that increases as the number of agents grows. We then present an adaptation of actor-critic methods that considers action policies of other agents and is able to successfully learn policies that require complex multi-agent coordination. Additionally, we introduce a training regimen utilizing an ensemble of policies for each agent that leads to more robust multi-agent policies. We show the strength of our approach compared to existing methods in cooperative as well as competitive scenarios, where agent populations are able to discover various physical and informational coordination strategies.},
   comment    = {MADDPG},
   file       = {:10.5555_3295222.3295385 - Multi Agent Actor Critic for Mixed Cooperative Competitive Environments.pdf:PDF},
   groups     = {Multi-agent RL},
-  isbn       = {9781510860964},
   location   = {Long Beach, California, USA},
   numpages   = {12},
   ranking    = {rank5},
@@ -1802,7 +1800,7 @@ Concurrent Experience Replay Trajectories (CERT)},
 
 @InProceedings{Rashid2020:WQMIX,
   author     = {Rashid, Tabish and Farquhar, Gregory and Peng, Bei and Whiteson, Shimon},
-  booktitle  = {Advances in Neural Information Processing Systems},
+  booktitle  = {Advances in Neural Information Processing Systems 33},
   title      = {Weighted QMIX: Expanding monotonic value function factorisation for deep multi−agent reinforcement learning},
   year       = {2020},
   pages      = {10199--10210},
@@ -2136,7 +2134,7 @@ Concurrent Experience Replay Trajectories (CERT)},
 
 @InProceedings{Mahajan2019:MAVEN,
   author     = {Mahajan, Anuj and Rashid, Tabish and Samvelyan, Mikayel and Whiteson, Shimon},
-  booktitle  = {Advances in Neural Information Processing Systems},
+  booktitle  = {Advances in Neural Information Processing Systems 32},
   title      = {MAVEN: Multi-Agent Variational Exploration},
   year       = {2019},
   volume     = {32},
@@ -2252,17 +2250,17 @@ Concurrent Experience Replay Trajectories (CERT)},
 }
 
 @InProceedings{Son2019:Qtran,
-  author       = {Son, Kyunghwan and Kim, Daewoo and Kang, Wan Ju and Hostallero, David Earl and Yi, Yung},
-  booktitle    = {International Conference on Machine Learning},
-  title        = {Qtran: Learning to factorize with transformation for cooperative multi-agent reinforcement learning},
-  year         = {2019},
-  month        = may,
-  organization = {PMLR},
-  pages        = {5887--5896},
-  file         = {:son2019qtran - Qtran_ Learning to Factorize with Transformation for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
-  groups       = {Multi-agent RL, Value factorisation},
-  ranking      = {rank2},
-  readstatus   = {read},
+  author     = {Son, Kyunghwan and Kim, Daewoo and Kang, Wan Ju and Hostallero, David Earl and Yi, Yung},
+  booktitle  = {International Conference on Machine Learning},
+  title      = {Qtran: Learning to factorize with transformation for cooperative multi-agent reinforcement learning},
+  year       = {2019},
+  month      = may,
+  pages      = {5887--5896},
+  volume     = {PMLR 97},
+  file       = {:son2019qtran - Qtran_ Learning to Factorize with Transformation for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
+  groups     = {Multi-agent RL, Value factorisation},
+  ranking    = {rank2},
+  readstatus = {read},
 }
 
 @InProceedings{Foerster2016a,
@@ -2430,7 +2428,7 @@ FacMADDPG},
   url       = {http://proceedings.mlr.press/v119/boehmer20a.html},
 }
 
-@Article{Wei2018,
+@Article{Wei2018:MultiSoftQ,
   author        = {Ermo Wei and Drew Wicke and David Freelan and Sean Luke},
   title         = {Multiagent Soft Q-Learning},
   year          = {2018},
@@ -2446,7 +2444,7 @@ FacMADDPG},
   ranking       = {rank1},
 }
 
-@Article{Wei2016,
+@Article{Wei2016:RelOvergen,
   author    = {Wei, Ermo and Luke, Sean},
   journal   = {The Journal of Machine Learning Research},
   title     = {Lenient learning in independent-learner stochastic cooperative games},
@@ -4183,7 +4181,6 @@ FacMADDPG},
   journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
   title        = {Counterfactual Multi-Agent Policy Gradients},
   year         = {2018},
-  month        = {Apr.},
   number       = {1},
   volume       = {32},
   abstractnote = {&lt;p&gt; Many real-world problems, such as network packet routing and the coordination of autonomous vehicles, are naturally modelled as cooperative multi-agent systems. There is a great need for new reinforcement learning methods that can efficiently learn decentralised policies for such systems. To this end, we propose a new multi-agent actor-critic method called counterfactual multi-agent (COMA) policy gradients. COMA uses a centralised critic to estimate the Q-function and decentralised actors to optimise the agents’ policies. In addition, to address the challenges of multi-agent credit assignment, it uses a counterfactual baseline that marginalises out a single agent’s action, while keeping the other agents’ actions fixed. COMA also uses a critic representation that allows the counterfactual baseline to be computed efficiently in a single forward pass. We evaluate COMA in the testbed of StarCraft unit micromanagement, using a decentralised variant with significant partial observability. COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state. &lt;/p&gt;},
@@ -4678,17 +4675,6 @@ agents)},
   file      = {:6214-Article Text-9439-1-10-20200516.pdf:PDF},
   groups    = {Graphs},
   publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
-}
-
-@Article{pesce2020improving,
-  author    = {Pesce, Emanuele and Montana, Giovanni},
-  journal   = {Machine Learning},
-  title     = {Improving coordination in small-scale multi-agent deep reinforcement learning through memory-driven communication},
-  year      = {2020},
-  pages     = {1--21},
-  file      = {:pesce2020improving - Improving Coordination in Small Scale Multi Agent Deep Reinforcement Learning through Memory Driven Communication.pdf:PDF},
-  groups    = {Communication},
-  publisher = {Springer},
 }
 
 @InProceedings{10.5555/3294771.3294976,
@@ -5191,7 +5177,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   author  = {Lev S. Vygotsky},
   title   = {Thought and Language},
   year    = {1934},
-  groups  = {Language, Developmental psychology},
+  groups  = {Developmental psychology, Language},
   ranking = {rank5},
 }
 
@@ -5223,7 +5209,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
 
 @InProceedings{Du2019:LIIR,
   author     = {Du, Yali and Han, Lei and Fang, Meng and Dai, Tianhong and Liu, Ji and Tao, Dacheng},
-  booktitle  = {Advances in Neural Information Processing Systems},
+  booktitle  = {Advances in Neural Information Processing Systems 32},
   title      = {LIIR: Learning Individual Intrinsic Reward in Multi-Agent Reinforcement Learning},
   year       = {2019},
   volume     = {32},
@@ -5939,22 +5925,6 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   groups    = {Macro-actions},
 }
 
-@Article{Lampinen2021,
-  author        = {Andrew Kyle Lampinen and Stephanie C. Y. Chan and Andrea Banino and Felix Hill},
-  journal       = {Advances in Neural Information Processing Systems, 2021},
-  title         = {Towards mental time travel: a hierarchical memory for reinforcement learning agents},
-  year          = {2021},
-  month         = may,
-  abstract      = {Reinforcement learning agents often forget details of the past, especially after delays or distractor tasks. Agents with common memory architectures struggle to recall and integrate across multiple timesteps of a past event, or even to recall the details of a single timestep that is followed by distractor tasks. To address these limitations, we propose a Hierarchical Chunk Attention Memory (HCAM), which helps agents to remember the past in detail. HCAM stores memories by dividing the past into chunks, and recalls by first performing high-level attention over coarse summaries of the chunks, and then performing detailed attention within only the most relevant chunks. An agent with HCAM can therefore "mentally time-travel" -- remember past events in detail without attending to all intervening events. We show that agents with HCAM substantially outperform agents with other memory architectures at tasks requiring long-term recall, retention, or reasoning over memory. These include recalling where an object is hidden in a 3D environment, rapidly learning to navigate efficiently in a new neighborhood, and rapidly learning and retaining new object names. Agents with HCAM can extrapolate to task sequences much longer than they were trained on, and can even generalize zero-shot from a meta-learning setting to maintaining knowledge across episodes. HCAM improves agent sample efficiency, generalization, and generality (by solving tasks that previously required specialized architectures). Our work is a step towards agents that can learn, interact, and adapt in complex and temporally-extended environments.},
-  archiveprefix = {arXiv},
-  eprint        = {2105.14039},
-  file          = {:Lampinen2021 - Towards Mental Time Travel_ a Hierarchical Memory for Reinforcement Learning Agents.pdf:PDF},
-  groups        = {Memory},
-  keywords      = {cs.LG, cs.AI, cs.NE, I.2.6},
-  primaryclass  = {cs.LG},
-  ranking       = {rank2},
-}
-
 @InProceedings{bahdanau2018learning,
   author     = {Dzmitry Bahdanau and Felix Hill and Jan Leike and Edward Hughes and Pushmeet Kohli and Edward Grefenstette},
   booktitle  = {International Conference on Learning Representations},
@@ -6062,6 +6032,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   editor    = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
   file      = {:Liu2021 - Discrete Valued Neural Communication.pdf:PDF},
   groups    = {Discrete language},
+  priority  = {prio1},
   url       = {https://openreview.net/forum?id=YSYXmOzlrou},
 }
 
@@ -6662,7 +6633,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   year      = {2017},
   month     = {July},
   file      = {:Johnson_2017_CVPR - CLEVR_ a Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning.pdf:PDF},
-  groups    = {Language, Question Answering},
+  groups    = {Question Answering, Language},
   ranking   = {rank5},
   url       = {https://openaccess.thecvf.com/content_cvpr_2017/html/Johnson_CLEVR_A_Diagnostic_CVPR_2017_paper.html},
 }
@@ -6974,6 +6945,7 @@ the agent takes as input the current state and goal, the value function depends 
   file      = {:hanjie21a - Grounding Language to Entities and Dynamics for Generalization in Reinforcement Learning.pdf:PDF},
   groups    = {Language-Augmented RL},
   pdf       = {http://proceedings.mlr.press/v139/hanjie21a/hanjie21a.pdf},
+  priority  = {prio1},
   url       = {https://proceedings.mlr.press/v139/hanjie21a.html},
 }
 
@@ -7082,7 +7054,7 @@ the agent takes as input the current state and goal, the value function depends 
 
 @InProceedings{Badia2020:NGU,
   author     = {Adrià Puigdomènech Badia and Pablo Sprechmann and Alex Vitvitskyi and Daniel Guo and Bilal Piot and Steven Kapturowski and Olivier Tieleman and Martin Arjovsky and Alexander Pritzel and Andrew Bolt and Charles Blundell},
-  booktitle  = {International Conference on Learning Representations},
+  booktitle  = {8th International Conference on Learning Representations, {ICLR} 2020},
   title      = {Never Give Up: Learning Directed Exploration Strategies},
   year       = {2020},
   file       = {:Badia2020Never - Never Give Up_ Learning Directed Exploration Strategies.pdf:PDF},
@@ -7094,7 +7066,7 @@ the agent takes as input the current state and goal, the value function depends 
 
 @InProceedings{Raileanu2020:RIDE,
   author     = {Roberta Raileanu and Tim Rocktäschel},
-  booktitle  = {International Conference on Learning Representations},
+  booktitle  = {9th International Conference on Learning Representations},
   title      = {RIDE: Rewarding Impact-Driven Exploration for Procedurally-Generated Environments},
   year       = {2020},
   file       = {:Raileanu2020RIDE_ - RIDE_ Rewarding Impact Driven Exploration for Procedurally Generated Environments.pdf:PDF},
@@ -7591,7 +7563,8 @@ the agent takes as input the current state and goal, the value function depends 
   month         = may,
   abstract      = {Solving tasks with sparse rewards is one of the most important challenges in reinforcement learning. In the single-agent setting, this challenge is addressed by introducing intrinsic rewards that motivate agents to explore unseen regions of their state spaces; however, applying these techniques naively to the multi-agent setting results in agents exploring independently, without any coordination among themselves. Exploration in cooperative multi-agent settings can be accelerated and improved if agents coordinate their exploration. In this paper we introduce a framework for designing intrinsic rewards which consider what other agents have explored such that the agents can coordinate. Then, we develop an approach for learning how to dynamically select between several exploration modalities to maximize extrinsic rewards. Concretely, we formulate the approach as a hierarchical policy where a high-level controller selects among sets of policies trained on diverse intrinsic rewards and the low-level controllers learn the action policies of all agents under these specific rewards. We demonstrate the effectiveness of the proposed approach in cooperative domains with sparse rewards where state-of-the-art methods fail and challenging multi-stage tasks that necessitate changing modes of coordination.},
   archiveprefix = {arXiv},
-  comment       = {MASAC},
+  comment       = {MASAC
+Multi-Explore},
   eprint        = {1905.12127},
   file          = {:Iqbal2019a - Coordinated Exploration Via Intrinsic Rewards for Multi Agent Reinforcement Learning.pdf:PDF},
   groups        = {Intrinsic rewards in MARL},
@@ -7662,7 +7635,7 @@ the agent takes as input the current state and goal, the value function depends 
 
 @InProceedings{Wang2020:EITI,
   author     = {Tonghan Wang and Jianhao Wang and Yi Wu and Chongjie Zhang},
-  booktitle  = {International Conference on Learning Representations},
+  booktitle  = {8th International Conference on Learning Representations},
   title      = {Influence-Based Multi-Agent Exploration},
   year       = {2020},
   file       = {:Wang_2020Influence-Based - Influence Based Multi Agent Exploration.pdf:PDF},
@@ -7803,7 +7776,7 @@ the agent takes as input the current state and goal, the value function depends 
 
 @InProceedings{Bellemare2016:PseudoCounts,
   author     = {Bellemare, Marc and Srinivasan, Sriram and Ostrovski, Georg and Schaul, Tom and Saxton, David and Munos, Remi},
-  booktitle  = {Advances in Neural Information Processing Systems},
+  booktitle  = {Advances in Neural Information Processing Systems 29 (NIPS 2016)},
   title      = {Unifying Count-Based Exploration and Intrinsic Motivation},
   year       = {2016},
   editor     = {D. Lee and M. Sugiyama and U. Luxburg and I. Guyon and R. Garnett},
@@ -7822,6 +7795,8 @@ the agent takes as input the current state and goal, the value function depends 
   title      = {Exploration via Elliptical Episodic Bonuses},
   year       = {2022},
   editor     = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+  pages      = {37631-37646},
+  volume     = {35},
   file       = {:Henaff2022_E3B - Exploration Via Elliptical Episodic Bonuses.pdf:PDF;:appendix.pdf:PDF},
   groups     = {Curiosity},
   readstatus = {read},
@@ -7960,6 +7935,8 @@ the agent takes as input the current state and goal, the value function depends 
   title      = {{ELIGN}: Expectation Alignment as a Multi-Agent Intrinsic Reward},
   year       = {2022},
   editor     = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+  pages      = {8304-8317},
+  volume     = {35},
   file       = {:ma2022elign - ELIGN_ Expectation Alignment As a Multi Agent Intrinsic Reward.pdf:PDF},
   groups     = {Intrinsic rewards in MARL},
   readstatus = {read},
@@ -8525,6 +8502,7 @@ the agent takes as input the current state and goal, the value function depends 
   file       = {:Lake2021 - Word Meaning in Minds and Machines..pdf:PDF},
   groups     = {Language},
   publisher  = {American Psychological Association ({APA})},
+  ranking    = {rank3},
   readstatus = {skimmed},
 }
 
@@ -8656,23 +8634,23 @@ the agent takes as input the current state and goal, the value function depends 
 }
 
 @InProceedings{Lupu2021:TrajeDi,
-  author    = {Lupu, Andrei and Cui, Brandon and Hu, Hengyuan and Foerster, Jakob},
-  booktitle = {Proceedings of the 38th International Conference on Machine Learning},
-  title     = {Trajectory Diversity for Zero-Shot Coordination},
-  year      = {2021},
-  editor    = {Meila, Marina and Zhang, Tong},
-  month     = {18--24 Jul},
-  pages     = {7204--7213},
-  publisher = {PMLR},
-  series    = {Proceedings of Machine Learning Research},
-  volume    = {139},
-  abstract  = {We study the problem of zero-shot coordination (ZSC), where agents must independently produce strategies for a collaborative game that are compatible with novel partners not seen during training. Our first contribution is to consider the need for diversity in generating such agents. Because self-play (SP) agents control their own trajectory distribution during training, each policy typically only performs well on this exact distribution. As a result, they achieve low scores in ZSC, since playing with another agent is likely to put them in situations they have not encountered during training. To address this issue, we train a common best response (BR) to a population of agents, which we regulate to be diverse. To this end, we introduce \textit{Trajectory Diversity} (TrajeDi) – a differentiable objective for generating diverse reinforcement learning policies. We derive TrajeDi as a generalization of the Jensen-Shannon divergence between policies and motivate it experimentally in two simple settings. We then focus on the collaborative card game Hanabi, demonstrating the scalability of our method and improving upon the cross-play scores of both independently trained SP agents and BRs to unregularized populations.},
-  file      = {:pmlr-v139-lupu21a - Trajectory Diversity for Zero Shot Coordination.pdf:PDF},
-  groups    = {Intrinsic rewards in MARL},
-  pdf       = {http://proceedings.mlr.press/v139/lupu21a/lupu21a.pdf},
-  priority  = {prio1},
-  ranking   = {rank1},
-  url       = {https://proceedings.mlr.press/v139/lupu21a.html},
+  author     = {Lupu, Andrei and Cui, Brandon and Hu, Hengyuan and Foerster, Jakob},
+  booktitle  = {Proceedings of the 38th International Conference on Machine Learning},
+  title      = {Trajectory Diversity for Zero-Shot Coordination},
+  year       = {2021},
+  editor     = {Meila, Marina and Zhang, Tong},
+  month      = {18--24 Jul},
+  pages      = {7204--7213},
+  publisher  = {PMLR},
+  series     = {Proceedings of Machine Learning Research},
+  volume     = {139},
+  abstract   = {We study the problem of zero-shot coordination (ZSC), where agents must independently produce strategies for a collaborative game that are compatible with novel partners not seen during training. Our first contribution is to consider the need for diversity in generating such agents. Because self-play (SP) agents control their own trajectory distribution during training, each policy typically only performs well on this exact distribution. As a result, they achieve low scores in ZSC, since playing with another agent is likely to put them in situations they have not encountered during training. To address this issue, we train a common best response (BR) to a population of agents, which we regulate to be diverse. To this end, we introduce \textit{Trajectory Diversity} (TrajeDi) – a differentiable objective for generating diverse reinforcement learning policies. We derive TrajeDi as a generalization of the Jensen-Shannon divergence between policies and motivate it experimentally in two simple settings. We then focus on the collaborative card game Hanabi, demonstrating the scalability of our method and improving upon the cross-play scores of both independently trained SP agents and BRs to unregularized populations.},
+  file       = {:pmlr-v139-lupu21a - Trajectory Diversity for Zero Shot Coordination.pdf:PDF},
+  groups     = {Intrinsic rewards in MARL},
+  pdf        = {http://proceedings.mlr.press/v139/lupu21a/lupu21a.pdf},
+  ranking    = {rank1},
+  readstatus = {skimmed},
+  url        = {https://proceedings.mlr.press/v139/lupu21a.html},
 }
 
 @InProceedings{Strouse2021a,
@@ -8707,6 +8685,146 @@ the agent takes as input the current state and goal, the value function depends 
   publisher     = {arXiv},
 }
 
+@Article{Schaefer2023,
+  author        = {Schäfer, Lukas and Slumbers, Oliver and McAleer, Stephen and Du, Yali and Albrecht, Stefano V. and Mguni, David},
+  title         = {Ensemble Value Functions for Efficient Exploration in Multi-Agent Reinforcement Learning},
+  year          = {2023},
+  month         = feb,
+  abstract      = {Cooperative multi-agent reinforcement learning (MARL) requires agents to explore to learn to cooperate. Existing value-based MARL algorithms commonly rely on random exploration, such as $\epsilon$-greedy, which is inefficient in discovering multi-agent cooperation. Additionally, the environment in MARL appears non-stationary to any individual agent due to the simultaneous training of other agents, leading to highly variant and thus unstable optimisation signals. In this work, we propose ensemble value functions for multi-agent exploration (EMAX), a general framework to extend any value-based MARL algorithm. EMAX trains ensembles of value functions for each agent to address the key challenges of exploration and non-stationarity: (1) The uncertainty of value estimates across the ensemble is used in a UCB policy to guide the exploration of agents to parts of the environment which require cooperation. (2) Average value estimates across the ensemble serve as target values. These targets exhibit lower variance compared to commonly applied target networks and we show that they lead to more stable gradients during the optimisation. We instantiate three value-based MARL algorithms with EMAX, independent DQN, VDN and QMIX, and evaluate them in 21 tasks across four environments. Using ensembles of five value functions, EMAX improves sample efficiency and final evaluation returns of these algorithms by 53%, 36%, and 498%, respectively, averaged all 21 tasks.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2302.03439},
+  eprint        = {2302.03439},
+  file          = {:Schaefer2023 - Ensemble Value Functions for Efficient Exploration in Multi Agent Reinforcement Learning.pdf:PDF},
+  groups        = {Exploration in MARL},
+  keywords      = {Multiagent Systems (cs.MA), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.MA},
+  priority      = {prio1},
+  publisher     = {arXiv},
+}
+
+@Article{Buesing2018,
+  author        = {Buesing, Lars and Weber, Theophane and Racaniere, Sebastien and Eslami, S. M. Ali and Rezende, Danilo and Reichert, David P. and Viola, Fabio and Besse, Frederic and Gregor, Karol and Hassabis, Demis and Wierstra, Daan},
+  title         = {Learning and Querying Fast Generative Models for Reinforcement Learning},
+  year          = {2018},
+  month         = feb,
+  abstract      = {A key challenge in model-based reinforcement learning (RL) is to synthesize computationally efficient and accurate environment models. We show that carefully designed generative models that learn and operate on compact state representations, so-called state-space models, substantially reduce the computational costs for predicting outcomes of sequences of actions. Extensive experiments establish that state-space models accurately capture the dynamics of Atari games from the Arcade Learning Environment from raw pixels. The computational speed-up of state-space models while maintaining high accuracy makes their application in RL feasible: We demonstrate that agents which query these models for decision making outperform strong model-free baselines on the game MSPACMAN, demonstrating the potential of using learned environment models for planning.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1802.03006},
+  eprint        = {1802.03006},
+  file          = {:Buesing2018 - Learning and Querying Fast Generative Models for Reinforcement Learning.pdf:PDF},
+  groups        = {Latent Dynamics Model},
+  keywords      = {Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  publisher     = {arXiv},
+  ranking       = {rank1},
+  readstatus    = {skimmed},
+}
+
+@InProceedings{Racaniere2017,
+  author    = {Racani\`{e}re, S\'{e}bastien and Weber, Theophane and Reichert, David and Buesing, Lars and Guez, Arthur and Jimenez Rezende, Danilo and Puigdom\`{e}nech Badia, Adri\`{a} and Vinyals, Oriol and Heess, Nicolas and Li, Yujia and Pascanu, Razvan and Battaglia, Peter and Hassabis, Demis and Silver, David and Wierstra, Daan},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Imagination-Augmented Agents for Deep Reinforcement Learning},
+  year      = {2017},
+  editor    = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {30},
+  file      = {:Racaniere2017 - Imagination Augmented Agents for Deep Reinforcement Learning.pdf:PDF},
+  groups    = {Latent Dynamics Model},
+  ranking   = {rank3},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2017/file/9e82757e9a1c12cb710ad680db11f6f1-Paper.pdf},
+}
+
+@InProceedings{Rangwala2020,
+  author    = {Rangwala, Murtaza and Williams, Ryan},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Learning Multi-Agent Communication through Structured Attentive Reasoning},
+  year      = {2020},
+  editor    = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+  pages     = {10088--10098},
+  publisher = {Curran Associates, Inc.},
+  volume    = {33},
+  file      = {:Rangwala2020 - Learning Multi Agent Communication through Structured Attentive Reasoning.pdf:PDF},
+  groups    = {Memory in MARL},
+  priority  = {prio1},
+  ranking   = {rank1},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2020/file/72ab54f9b8c11fae5b923d7f854ef06a-Paper.pdf},
+}
+
+@Article{Pesce2020,
+  author     = {Emanuele Pesce and Giovanni Montana},
+  journal    = {Machine Learning},
+  title      = {Improving coordination in small-scale multi-agent deep reinforcement learning through memory-driven communication},
+  year       = {2020},
+  month      = {jan},
+  number     = {9-10},
+  pages      = {1727--1747},
+  volume     = {109},
+  abstract   = {MD-MADDPG},
+  doi        = {10.1007/s10994-019-05864-5},
+  file       = {:pesce2020improving - Improving Coordination in Small Scale Multi Agent Deep Reinforcement Learning through Memory Driven Communication.pdf:PDF},
+  groups     = {Memory in MARL, Communication},
+  publisher  = {Springer Science and Business Media {LLC}},
+  ranking    = {rank1},
+  readstatus = {read},
+}
+
+@InProceedings{Lampinen2021a,
+  author    = {Lampinen, Andrew and Chan, Stephanie and Banino, Andrea and Hill, Felix},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Towards mental time travel: a hierarchical memory for reinforcement learning agents},
+  year      = {2021},
+  editor    = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+  pages     = {28182--28195},
+  publisher = {Curran Associates, Inc.},
+  volume    = {34},
+  file      = {:Lampinen2021a - Towards Mental Time Travel_ a Hierarchical Memory for Reinforcement Learning Agents.pdf:PDF},
+  groups    = {Memory},
+  ranking   = {rank1},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2021/file/ed519dacc89b2bead3f453b0b05a4a8b-Paper.pdf},
+}
+
+@InProceedings{Zhu_2020_CVPR,
+  author    = {Zhu, Yi and Zhu, Fengda and Zhan, Zhaohuan and Lin, Bingqian and Jiao, Jianbin and Chang, Xiaojun and Liang, Xiaodan},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {Vision-Dialog Navigation by Exploring Cross-Modal Memory},
+  year      = {2020},
+  month     = {June},
+  file      = {:Zhu_2020_CVPR - Vision Dialog Navigation by Exploring Cross Modal Memory.pdf:PDF},
+  groups    = {Visual-Language Learning, Language for memory, Memory},
+  priority  = {prio1},
+  ranking   = {rank1},
+  url       = {https://openaccess.thecvf.com/content_CVPR_2020/html/Zhu_Vision-Dialog_Navigation_by_Exploring_Cross-Modal_Memory_CVPR_2020_paper.html},
+}
+
+@InProceedings{kim2021communication,
+  author    = {Woojun Kim and Jongeui Park and Youngchul Sung},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Communication in Multi-Agent Reinforcement Learning: Intention Sharing},
+  year      = {2021},
+  file      = {:kim2021communication - Communication in Multi Agent Reinforcement Learning_ Intention Sharing.pdf:PDF},
+  groups    = {Communication},
+  url       = {https://openreview.net/forum?id=qpsl2dR9twy},
+}
+
+@Article{Zhu2022,
+  author        = {Zhu, Changxi and Dastani, Mehdi and Wang, Shihan},
+  title         = {A Survey of Multi-Agent Reinforcement Learning with Communication},
+  year          = {2022},
+  month         = mar,
+  abstract      = {Communication is an effective mechanism for coordinating the behavior of multiple agents. In the field of multi-agent reinforcement learning, agents can improve the overall learning performance and achieve their objectives by communication. Moreover, agents can communicate various types of messages, either to all agents or to specific agent groups, and through specific channels. With the growing body of research work in MARL with communication (Comm-MARL), there is lack of a systematic and structural approach to distinguish and classify existing Comm-MARL systems. In this paper, we survey recent works in the Comm-MARL field and consider various aspects of communication that can play a role in the design and development of multi-agent reinforcement learning systems. With these aspects in mind, we propose several dimensions along which Comm-MARL systems can be analyzed, developed, and compared.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2203.08975},
+  eprint        = {2203.08975},
+  file          = {:Zhu2022 - A Survey of Multi Agent Reinforcement Learning with Communication.pdf:PDF},
+  groups        = {Communication, MAS Reviews},
+  keywords      = {Multiagent Systems (cs.MA), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.MA},
+  publisher     = {arXiv},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -8717,7 +8835,7 @@ the agent takes as input the current state and goal, the value function depends 
 4 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
 4 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
@@ -8750,27 +8868,29 @@ the agent takes as input the current state and goal, the value function depends 
 4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Exploration in MARL\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Centralised execution\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Communication\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Discrete language\;2\;1\;0x8a8a8aff\;\;\;;
 5 StaticGroup:Natural language\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Exploration in MARL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Independent Learning\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Centralised execution\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Social Learning\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Intrinsic rewards in MARL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Memory in MARL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Social Learning\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Language-Augmented RL\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Reward shaping\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Visual-Language Learning\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Text-based environments\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Question Answering\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Text-based environments\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visual-Language Learning\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Contrastive Learning\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Memory\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
