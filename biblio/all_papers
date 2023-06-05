@@ -4107,6 +4107,7 @@ FacMADDPG},
   booktitle = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
   file      = {:Li2020 - Deep Implicit Coordination Graphs for Multi Agent Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL, Graphs},
+  priority  = {prio1},
 }
 
 @InProceedings{Jiang2020Graph,
@@ -4747,7 +4748,8 @@ agents)},
   title     = {Emergent Communication in a Multi-Modal, Multi-Step Referential Game},
   year      = {2018},
   file      = {:evtimova2018emergent - Emergent Communication in a Multi Modal, Multi Step Referential Game.pdf:PDF},
-  groups    = {Communication},
+  groups    = {Communication, Discrete language},
+  priority  = {prio2},
   ranking   = {rank1},
   url       = {https://openreview.net/forum?id=rJGZq6g0-},
 }
@@ -4794,20 +4796,22 @@ agents)},
 }
 
 @InProceedings{chaabouni-etal-2020-compositionality,
-  author    = {Chaabouni, Rahma and Kharitonov, Eugene and Bouchacourt, Diane and Dupoux, Emmanuel and Baroni, Marco},
-  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
-  title     = {Compositionality and Generalization In Emergent Languages},
-  year      = {2020},
-  address   = {Online},
-  month     = jul,
-  pages     = {4427--4442},
-  publisher = {Association for Computational Linguistics},
-  abstract  = {Natural language allows us to refer to novel composite concepts by combining expressions denoting their parts according to systematic rules, a property known as compositionality. In this paper, we study whether the language emerging in deep multi-agent simulations possesses a similar ability to refer to novel primitive combinations, and whether it accomplishes this feat by strategies akin to human-language compositionality. Equipped with new ways to measure compositionality in emergent languages inspired by disentanglement in representation learning, we establish three main results: First, given sufficiently large input spaces, the emergent language will naturally develop the ability to refer to novel composite concepts. Second, there is no correlation between the degree of compositionality of an emergent language and its ability to generalize. Third, while compositionality is not necessary for generalization, it provides an advantage in terms of language transmission: The more compositional a language is, the more easily it will be picked up by new learners, even when the latter differ in architecture from the original agents. We conclude that compositionality does not arise from simple generalization pressure, but if an emergent language does chance upon it, it will be more likely to survive and thrive.},
-  doi       = {10.18653/v1/2020.acl-main.407},
-  file      = {:chaabouni-etal-2020-compositionality - Compositionality and Generalization in Emergent Languages.pdf:PDF},
-  groups    = {Communication},
-  priority  = {prio1},
-  url       = {https://www.aclweb.org/anthology/2020.acl-main.407},
+  author     = {Chaabouni, Rahma and Kharitonov, Eugene and Bouchacourt, Diane and Dupoux, Emmanuel and Baroni, Marco},
+  booktitle  = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  title      = {Compositionality and Generalization In Emergent Languages},
+  year       = {2020},
+  address    = {Online},
+  month      = jul,
+  pages      = {4427--4442},
+  publisher  = {Association for Computational Linguistics},
+  abstract   = {Natural language allows us to refer to novel composite concepts by combining expressions denoting their parts according to systematic rules, a property known as compositionality. In this paper, we study whether the language emerging in deep multi-agent simulations possesses a similar ability to refer to novel primitive combinations, and whether it accomplishes this feat by strategies akin to human-language compositionality. Equipped with new ways to measure compositionality in emergent languages inspired by disentanglement in representation learning, we establish three main results: First, given sufficiently large input spaces, the emergent language will naturally develop the ability to refer to novel composite concepts. Second, there is no correlation between the degree of compositionality of an emergent language and its ability to generalize. Third, while compositionality is not necessary for generalization, it provides an advantage in terms of language transmission: The more compositional a language is, the more easily it will be picked up by new learners, even when the latter differ in architecture from the original agents. We conclude that compositionality does not arise from simple generalization pressure, but if an emergent language does chance upon it, it will be more likely to survive and thrive.},
+  comment    = {Introduces metrics to measure compositionality},
+  doi        = {10.18653/v1/2020.acl-main.407},
+  file       = {:chaabouni-etal-2020-compositionality - Compositionality and Generalization in Emergent Languages.pdf:PDF},
+  groups     = {Communication},
+  ranking    = {rank2},
+  readstatus = {skimmed},
+  url        = {https://www.aclweb.org/anthology/2020.acl-main.407},
 }
 
 @Article{Crandall2018,
@@ -6025,15 +6029,17 @@ significantly outperforming regular DQN and other episodic memory based RL algor
 }
 
 @InProceedings{Liu2021,
-  author    = {Dianbo Liu and Alex Lamb and Kenji Kawaguchi and Anirudh Goyal and Chen Sun and Michael Curtis Mozer and Yoshua Bengio},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {Discrete-Valued Neural Communication},
-  year      = {2021},
-  editor    = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
-  file      = {:Liu2021 - Discrete Valued Neural Communication.pdf:PDF},
-  groups    = {Discrete language},
-  priority  = {prio1},
-  url       = {https://openreview.net/forum?id=YSYXmOzlrou},
+  author     = {Dianbo Liu and Alex Lamb and Kenji Kawaguchi and Anirudh Goyal and Chen Sun and Michael Curtis Mozer and Yoshua Bengio},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Discrete-Valued Neural Communication},
+  year       = {2021},
+  editor     = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+  comment    = {Discretization of values sent between different modules of a neural architecture.},
+  file       = {:Liu2021 - Discrete Valued Neural Communication.pdf:PDF},
+  groups     = {Machine Learning},
+  ranking    = {rank1},
+  readstatus = {skimmed},
+  url        = {https://openreview.net/forum?id=YSYXmOzlrou},
 }
 
 @InProceedings{Tucker2021,
@@ -8199,23 +8205,23 @@ Multi-Explore},
 }
 
 @InProceedings{Niu2021,
-  author    = {Niu, Yaru and Paleja, Rohan and Gombolay, Matthew},
-  booktitle = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
-  title     = {Multi-Agent Graph-Attention Communication and Teaming},
-  year      = {2021},
-  address   = {Richland, SC},
-  pages     = {964–973},
-  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
-  series    = {AAMAS '21},
-  abstract  = {High-performing teams learn effective communication strategies to judiciously share information and reduce the cost of communication overhead. Within multi-agent reinforcement learning, synthesizing effective policies requires reasoning about when to communicate, whom to communicate with, and how to process messages. We propose a novel multi-agent reinforcement learning algorithm, Multi-Agent Graph-attentIon Communication (MAGIC), with a graph-attention communication protocol in which we learn 1) a Scheduler to help with the problems of when to communicate and whom to address messages to, and 2) a Message Processor using Graph Attention Networks (GATs) with dynamic graphs to deal with communication signals. The Scheduler consists of a graph attention encoder and a differentiable attention mechanism, which outputs dynamic, differentiable graphs to the Message Processor, which enables the Scheduler and Message Processor to be trained end-to-end. We evaluate our approach on a variety of cooperative tasks, including Google Research Football. Our method outperforms baselines across all domains, achieving ~10.5% increase in reward in the most challenging domain. We also show MAGIC communicates $27.4%$ more efficiently on average than baselines, is robust to stochasticity, and scales to larger state-action spaces. Finally, we demonstrate MAGIC on a physical, multi-robot testbed.},
-  file      = {:Niu2021 - Multi Agent Graph Attention Communication and Teaming.pdf:PDF},
-  groups    = {Communication},
-  isbn      = {9781450383073},
-  keywords  = {multi-agent reinforcement learning, multi-agent communication, graph-based communication},
-  location  = {Virtual Event, United Kingdom},
-  numpages  = {10},
-  priority  = {prio1},
-  ranking   = {rank2},
+  author     = {Niu, Yaru and Paleja, Rohan and Gombolay, Matthew},
+  booktitle  = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
+  title      = {Multi-Agent Graph-Attention Communication and Teaming},
+  year       = {2021},
+  address    = {Richland, SC},
+  pages      = {964–973},
+  publisher  = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series     = {AAMAS '21},
+  abstract   = {High-performing teams learn effective communication strategies to judiciously share information and reduce the cost of communication overhead. Within multi-agent reinforcement learning, synthesizing effective policies requires reasoning about when to communicate, whom to communicate with, and how to process messages. We propose a novel multi-agent reinforcement learning algorithm, Multi-Agent Graph-attentIon Communication (MAGIC), with a graph-attention communication protocol in which we learn 1) a Scheduler to help with the problems of when to communicate and whom to address messages to, and 2) a Message Processor using Graph Attention Networks (GATs) with dynamic graphs to deal with communication signals. The Scheduler consists of a graph attention encoder and a differentiable attention mechanism, which outputs dynamic, differentiable graphs to the Message Processor, which enables the Scheduler and Message Processor to be trained end-to-end. We evaluate our approach on a variety of cooperative tasks, including Google Research Football. Our method outperforms baselines across all domains, achieving ~10.5% increase in reward in the most challenging domain. We also show MAGIC communicates $27.4%$ more efficiently on average than baselines, is robust to stochasticity, and scales to larger state-action spaces. Finally, we demonstrate MAGIC on a physical, multi-robot testbed.},
+  file       = {:Niu2021 - Multi Agent Graph Attention Communication and Teaming.pdf:PDF},
+  groups     = {Communication},
+  isbn       = {9781450383073},
+  keywords   = {multi-agent reinforcement learning, multi-agent communication, graph-based communication},
+  location   = {Virtual Event, United Kingdom},
+  numpages   = {10},
+  ranking    = {rank1},
+  readstatus = {read},
 }
 
 @InProceedings{Wang2022,
@@ -8508,16 +8514,16 @@ Multi-Explore},
 }
 
 @InProceedings{Li2022b,
-  author    = {Sheng Li and Yutai Zhou and Ross Allen and Mykel J. Kochenderfer},
-  booktitle = {2022 International Conference on Robotics and Automation ({ICRA})},
-  title     = {Learning Emergent Discrete Message Communication for Cooperative Reinforcement Learning},
-  year      = {2022},
-  month     = {may},
-  publisher = {{IEEE}},
-  doi       = {10.1109/icra46639.2022.9812285},
-  file      = {:Li2022b - Learning Emergent Discrete Message Communication for Cooperative Reinforcement Learning.pdf:PDF},
-  groups    = {Discrete language},
-  priority  = {prio2},
+  author     = {Sheng Li and Yutai Zhou and Ross Allen and Mykel J. Kochenderfer},
+  booktitle  = {2022 International Conference on Robotics and Automation ({ICRA})},
+  title      = {Learning Emergent Discrete Message Communication for Cooperative Reinforcement Learning},
+  year       = {2022},
+  month      = {may},
+  publisher  = {{IEEE}},
+  doi        = {10.1109/icra46639.2022.9812285},
+  file       = {:Li2022b - Learning Emergent Discrete Message Communication for Cooperative Reinforcement Learning.pdf:PDF},
+  groups     = {Discrete language},
+  readstatus = {read},
 }
 
 @Article{Mao2020,
@@ -8827,44 +8833,53 @@ Multi-Explore},
   publisher     = {arXiv},
 }
 
+@InProceedings{Han2023,
+  author    = {Han, Shuai and Dastani, Mehdi and Wang, Shihan},
+  booktitle = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
+  title     = {Model-Based Sparse Communication in Multi-Agent Reinforcement Learning},
+  year      = {2023},
+  address   = {Richland, SC},
+  pages     = {439–447},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '23},
+  abstract  = {Learning to communicate efficiently is central to multi-agent reinforcement learning (MARL). Existing methods often require agents to exchange messages intensively, which abuses communication channels and leads to high communication overhead. Only a few methods target on learning sparse communication, but they allow limited information to be shared, which affects the efficiency of policy learning. In this work, we propose model-based communication (MBC), a learning framework with a decentralized communication scheduling process. The MBC framework enables multiple agents to make decisions with sparse communication. In particular, the MBC framework introduces a model-based message estimator to estimate the up-to-date global messages using past local data. A decentralized message scheduling mechanism is also proposed to determine whether a message shall be sent based on the estimation. We evaluated our method in a variety of mixed cooperative-competitive environments. The experiment results show that the MBC method shows better performance and lower channel overhead than the state-of-art baselines.},
+  file      = {:Han2023 - Model Based Sparse Communication in Multi Agent Reinforcement Learning.pdf:PDF},
+  groups    = {Communication},
+  isbn      = {9781450394321},
+  keywords  = {communication learning, message scheduling, multi-agent system, multi-agent reinforcement learning},
+  location  = {London, United Kingdom},
+  numpages  = {9},
+  priority  = {prio1},
+  url       = {https://dl.acm.org/doi/abs/10.5555/3545946.3598669},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
-4 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
-4 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
-4 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Intrinsic goals\;2\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Navigation\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-task robotics\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Sim to Real\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Space Exploration\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Interactivity\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Contrastive Learning\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Developmental psychology\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Evolution Strategy\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Evolutionary RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Hierarchical RL\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Macro-actions\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Question Answering\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Text-based environments\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visual-Language Learning\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language-Augmented RL\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Reward shaping\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Machine Learning\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
@@ -8883,32 +8898,44 @@ Multi-Explore},
 3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Social Learning\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language-Augmented RL\;2\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Reward shaping\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language\;2\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Question Answering\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Text-based environments\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Visual-Language Learning\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Contrastive Learning\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Memory\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Hierarchical RL\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Macro-actions\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Multi-goal RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Evolution Strategy\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Evolutionary RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Developmental psychology\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Intrinsic goals\;2\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Interactivity\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-task robotics\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Navigation\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Sim to Real\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Space Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Transformers in RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
 }
