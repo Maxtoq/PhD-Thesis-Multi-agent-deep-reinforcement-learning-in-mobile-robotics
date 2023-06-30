@@ -1320,16 +1320,16 @@
 }
 
 @InProceedings{kim2018learning,
-  author    = {Daewoo Kim and Sangwoo Moon and David Hostallero and Wan Ju Kang and Taeyoung Lee and Kyunghwan Son and Yung Yi},
-  booktitle = {International Conference on Learning Representations},
-  title     = {Learning to Schedule Communication in Multi-agent Reinforcement Learning},
-  year      = {2019},
-  comment   = {SchedNet},
-  file      = {:kim2018learning - Learning to Schedule Communication in Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Communication},
-  priority  = {prio1},
-  ranking   = {rank2},
-  url       = {https://openreview.net/forum?id=SJxu5iR9KQ},
+  author     = {Daewoo Kim and Sangwoo Moon and David Hostallero and Wan Ju Kang and Taeyoung Lee and Kyunghwan Son and Yung Yi},
+  booktitle  = {International Conference on Learning Representations},
+  title      = {Learning to Schedule Communication in Multi-agent Reinforcement Learning},
+  year       = {2019},
+  comment    = {SchedNet},
+  file       = {:kim2018learning - Learning to Schedule Communication in Multi Agent Reinforcement Learning.pdf:PDF},
+  groups     = {Communication},
+  ranking    = {rank2},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=SJxu5iR9KQ},
 }
 
 @InProceedings{Das2019,
@@ -9013,6 +9013,76 @@ Multi-Explore},
   publisher     = {arXiv},
 }
 
+@Article{Haarnoja2023,
+  author        = {Haarnoja, Tuomas and Moran, Ben and Lever, Guy and Huang, Sandy H. and Tirumala, Dhruva and Wulfmeier, Markus and Humplik, Jan and Tunyasuvunakool, Saran and Siegel, Noah Y. and Hafner, Roland and Bloesch, Michael and Hartikainen, Kristian and Byravan, Arunkumar and Hasenclever, Leonard and Tassa, Yuval and Sadeghi, Fereshteh and Batchelor, Nathan and Casarini, Federico and Saliceti, Stefano and Game, Charles and Sreendra, Neil and Patel, Kushal and Gwira, Marlon and Huber, Andrea and Hurley, Nicole and Nori, Francesco and Hadsell, Raia and Heess, Nicolas},
+  title         = {Learning Agile Soccer Skills for a Bipedal Robot with Deep Reinforcement Learning},
+  year          = {2023},
+  month         = apr,
+  abstract      = {We investigate whether Deep Reinforcement Learning (Deep RL) is able to synthesize sophisticated and safe movement skills for a low-cost, miniature humanoid robot that can be composed into complex behavioral strategies in dynamic environments. We used Deep RL to train a humanoid robot with 20 actuated joints to play a simplified one-versus-one (1v1) soccer game. We first trained individual skills in isolation and then composed those skills end-to-end in a self-play setting. The resulting policy exhibits robust and dynamic movement skills such as rapid fall recovery, walking, turning, kicking and more; and transitions between them in a smooth, stable, and efficient manner - well beyond what is intuitively expected from the robot. The agents also developed a basic strategic understanding of the game, and learned, for instance, to anticipate ball movements and to block opponent shots. The full range of behaviors emerged from a small set of simple rewards. Our agents were trained in simulation and transferred to real robots zero-shot. We found that a combination of sufficiently high-frequency control, targeted dynamics randomization, and perturbations during training in simulation enabled good-quality transfer, despite significant unmodeled effects and variations across robot instances. Although the robots are inherently fragile, minor hardware modifications together with basic regularization of the behavior during training led the robots to learn safe and effective movements while still performing in a dynamic and agile way. Indeed, even though the agents were optimized for scoring, in experiments they walked 156% faster, took 63% less time to get up, and kicked 24% faster than a scripted baseline, while efficiently combining the skills to achieve the longer term objectives. Examples of the emergent behaviors and full 1v1 matches are available on the supplementary website.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2304.13653},
+  eprint        = {2304.13653},
+  file          = {:Haarnoja2023 - Learning Agile Soccer Skills for a Bipedal Robot with Deep Reinforcement Learning.pdf:PDF},
+  groups        = {RL in Robotics},
+  keywords      = {Robotics (cs.RO), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.RO},
+  priority      = {prio1},
+  publisher     = {arXiv},
+  ranking       = {rank2},
+}
+
+
+
+
+
+
+
+@Article{Liu2022,
+  author   = {Siqi Liu and Guy Lever and Zhe Wang and Josh Merel and S. M. Ali Eslami and Daniel Hennes and Wojciech M. Czarnecki and Yuval Tassa and Shayegan Omidshafiei and Abbas Abdolmaleki and Noah Y. Siegel and Leonard Hasenclever and Luke Marris and Saran Tunyasuvunakool and H. Francis Song and Markus Wulfmeier and Paul Muller and Tuomas Haarnoja and Brendan Tracey and Karl Tuyls and Thore Graepel and Nicolas Heess},
+  journal  = {Science Robotics},
+  title    = {From motor control to team play in simulated humanoid football},
+  year     = {2022},
+  number   = {69},
+  pages    = {eabo0235},
+  volume   = {7},
+  abstract = {Learning to combine control at the level of joint torques with longer-term goal-directed behavior is a long-standing challenge for physically embodied artificial agents. Intelligent behavior in the physical world unfolds across multiple spatial and temporal scales: Although movements are ultimately executed at the level of instantaneous muscle tensions or joint torques, they must be selected to serve goals that are defined on much longer time scales and that often involve complex interactions with the environment and other agents. Recent research has demonstrated the potential of learning-based approaches applied to the respective problems of complex movement, long-term planning, and multiagent coordination. However, their integration traditionally required the design and optimization of independent subsystems and remains challenging. In this work, we tackled the integration of motor control and long-horizon decision-making in the context of simulated humanoid football, which requires agile motor control and multiagent coordination. We optimized teams of agents to play simulated football via reinforcement learning, constraining the solution space to that of plausible movements learned using human motion capture data. They were trained to maximize several environment rewards and to imitate pretrained football-specific skills if doing so led to improved performance. The result is a team of coordinated humanoid football players that exhibit complex behavior at different scales, quantified by a range of analysis and statistics, including those used in real-world sport analytics. Our work constitutes a complete demonstration of learned integrated decision-making at multiple scales in a multiagent setting. In simulated humanoid football, teams of agents seamlessly integrate motor control with team play via end-to-end learning.},
+  doi      = {10.1126/scirobotics.abo0235},
+  eprint   = {https://www.science.org/doi/pdf/10.1126/scirobotics.abo0235},
+  file     = {:Liu2022 - From Motor Control to Team Play in Simulated Humanoid Football.pdf:PDF},
+  groups   = {RL in Robotics},
+  priority = {prio1},
+  ranking  = {rank3},
+  url      = {https://www.science.org/doi/abs/10.1126/scirobotics.abo0235},
+}
+
+@Article{matignon_laurent_lefort-piat_2012,
+  author    = {Matignon, Laetitia and Laurent, Guillaume J. and Le Fort-Piat, Nadine},
+  journal   = {The Knowledge Engineering Review},
+  title     = {Independent reinforcement learners in cooperative Markov games: a survey regarding coordination problems},
+  year      = {2012},
+  number    = {1},
+  pages     = {1–31},
+  volume    = {27},
+  doi       = {10.1017/S0269888912000057},
+  file      = {:matignon_laurent_lefort-piat_2012 - Independent Reinforcement Learners in Cooperative Markov Games_ a Survey Regarding Coordination Problems.pdf:PDF},
+  groups    = {Multi-agent learning},
+  publisher = {Cambridge University Press},
+}
+
+@Article{claus1998dynamics,
+  author  = {Claus, Caroline and Boutilier, Craig},
+  journal = {AAAI/IAAI},
+  title   = {The dynamics of reinforcement learning in cooperative multiagent systems},
+  year    = {1998},
+  number  = {746-752},
+  pages   = {2},
+  volume  = {1998},
+  groups  = {Multi-agent learning},
+  ranking = {rank4},
+  url     = {https://d1wqtxts1xzle7.cloudfront.net/25341154/10.1.1.81.6446-libre.pdf?1390869093=&response-content-disposition=inline;+filename=The_dynamics_of_reinforcement_learning_i.pdf&Expires=1687783879&Signature=HnkjVTXQY7zb-IZpOSpGMEleq4psXNRlh8CpawK4Pu2NHu9-HVifAEUM2xxFnN7SM10UJ8sSFEXZvRvdXHjNmMpqqjDb8sz85-HLI5k0fzOcNQKfgIbtWLqnzeH0JAtXntZzY4JcZkxNCZ0vxzkbQLl0Kr9SAH9hkzM~PvA-qyoFaQsCjsaXR~-EIPnZ4ql0AZa1ygm~Ao22MZDGQcfwouPOETnxCMaJ-ctGGZ9R2twlg642Uwfyw25VysIJkF8DifdKy2LDYCEUn9oh3C-YQ4epUAAHa4wQup0mmfrN~SgwFa2Qm10gRdpN4pMIeschXS4y~kT~WmjN3cI~Xg-bXA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -9067,7 +9137,7 @@ Multi-Explore},
 1 StaticGroup:Multi-goal RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Intrinsic goals\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
@@ -9085,7 +9155,7 @@ Multi-Explore},
 4 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Interactivity\;0\;1\;0x8a8a8aff\;\;\;;
@@ -9095,6 +9165,7 @@ Multi-Explore},
 2 StaticGroup:Multi-task robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Navigation\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:RL in Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Sim to Real\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Space Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
