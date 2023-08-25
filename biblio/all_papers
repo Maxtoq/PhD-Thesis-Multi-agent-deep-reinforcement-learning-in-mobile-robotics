@@ -9083,6 +9083,107 @@ Multi-Explore},
   url     = {https://d1wqtxts1xzle7.cloudfront.net/25341154/10.1.1.81.6446-libre.pdf?1390869093=&response-content-disposition=inline;+filename=The_dynamics_of_reinforcement_learning_i.pdf&Expires=1687783879&Signature=HnkjVTXQY7zb-IZpOSpGMEleq4psXNRlh8CpawK4Pu2NHu9-HVifAEUM2xxFnN7SM10UJ8sSFEXZvRvdXHjNmMpqqjDb8sz85-HLI5k0fzOcNQKfgIbtWLqnzeH0JAtXntZzY4JcZkxNCZ0vxzkbQLl0Kr9SAH9hkzM~PvA-qyoFaQsCjsaXR~-EIPnZ4ql0AZa1ygm~Ao22MZDGQcfwouPOETnxCMaJ-ctGGZ9R2twlg642Uwfyw25VysIJkF8DifdKy2LDYCEUn9oh3C-YQ4epUAAHa4wQup0mmfrN~SgwFa2Qm10gRdpN4pMIeschXS4y~kT~WmjN3cI~Xg-bXA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA},
 }
 
+@InProceedings{Ouyang2022,
+  author     = {Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and Schulman, John and Hilton, Jacob and Kelton, Fraser and Miller, Luke and Simens, Maddie and Askell, Amanda and Welinder, Peter and Christiano, Paul F and Leike, Jan and Lowe, Ryan},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Training language models to follow instructions with human feedback},
+  year       = {2022},
+  editor     = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+  pages      = {27730--27744},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {35},
+  comment    = {InstructGPT
+ChatGPT},
+  file       = {:Ouyang2022 - Training Language Models to Follow Instructions with Human Feedback.pdf:PDF;:Ouyang2022 - Training Language Models to Follow Instructions with Human Feedback (1).pdf:PDF},
+  groups     = {Question Answering, Language generation with RL},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+  url        = {https://proceedings.neurips.cc/paper_files/paper/2022/file/b1efde53be364a73914f58805a001731-Paper-Conference.pdf},
+}
+
+@Article{Jaques2019a,
+  author        = {Jaques, Natasha and Ghandeharioun, Asma and Shen, Judy Hanwen and Ferguson, Craig and Lapedriza, Agata and Jones, Noah and Gu, Shixiang and Picard, Rosalind},
+  title         = {Way Off-Policy Batch Deep Reinforcement Learning of Implicit Human Preferences in Dialog},
+  year          = {2019},
+  month         = jun,
+  abstract      = {Most deep reinforcement learning (RL) systems are not able to learn effectively from off-policy data, especially if they cannot explore online in the environment. These are critical shortcomings for applying RL to real-world problems where collecting data is expensive, and models must be tested offline before being deployed to interact with the environment -- e.g. systems that learn from human interaction. Thus, we develop a novel class of off-policy batch RL algorithms, which are able to effectively learn offline, without exploring, from a fixed batch of human interaction data. We leverage models pre-trained on data as a strong prior, and use KL-control to penalize divergence from this prior during RL training. We also use dropout-based uncertainty estimates to lower bound the target Q-values as a more efficient alternative to Double Q-Learning. The algorithms are tested on the problem of open-domain dialog generation -- a challenging reinforcement learning problem with a 20,000-dimensional action space. Using our Way Off-Policy algorithm, we can extract multiple different reward functions post-hoc from collected human interaction data, and learn effectively from all of these. We test the real-world generalization of these systems by deploying them live to converse with humans in an open-domain setting, and demonstrate that our algorithm achieves significant improvements over prior methods in off-policy batch RL.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1907.00456},
+  eprint        = {1907.00456},
+  file          = {:Jaques2019a - Way off Policy Batch Deep Reinforcement Learning of Implicit Human Preferences in Dialog.pdf:PDF},
+  groups        = {Language generation with RL},
+  keywords      = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  publisher     = {arXiv},
+  ranking       = {rank2},
+  readstatus    = {skimmed},
+}
+
+@Article{Saleh2020,
+  author     = {Abdelrhman Saleh and Natasha Jaques and Asma Ghandeharioun and Judy Shen and Rosalind Picard},
+  journal    = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
+  title      = {Hierarchical Reinforcement Learning for Open-Domain Dialog},
+  year       = {2020},
+  month      = {apr},
+  number     = {05},
+  pages      = {8741--8748},
+  volume     = {34},
+  doi        = {10.1609/aaai.v34i05.6400},
+  file       = {:Saleh2020 - Hierarchical Reinforcement Learning for Open Domain Dialog.pdf:PDF},
+  groups     = {Language generation with RL},
+  publisher  = {Association for the Advancement of Artificial Intelligence ({AAAI})},
+  ranking    = {rank1},
+  readstatus = {skimmed},
+}
+
+@Article{Ziegler2019,
+  author        = {Ziegler, Daniel M. and Stiennon, Nisan and Wu, Jeffrey and Brown, Tom B. and Radford, Alec and Amodei, Dario and Christiano, Paul and Irving, Geoffrey},
+  title         = {Fine-Tuning Language Models from Human Preferences},
+  year          = {2019},
+  month         = sep,
+  abstract      = {Reward learning enables the application of reinforcement learning (RL) to tasks where reward is defined by human judgment, building a model of reward by asking humans questions. Most work on reward learning has used simulated environments, but complex information about values is often expressed in natural language, and we believe reward learning for language is a key to making RL practical and safe for real-world tasks. In this paper, we build on advances in generative pretraining of language models to apply reward learning to four natural language tasks: continuing text with positive sentiment or physically descriptive language, and summarization tasks on the TL;DR and CNN/Daily Mail datasets. For stylistic continuation we achieve good results with only 5,000 comparisons evaluated by humans. For summarization, models trained with 60,000 comparisons copy whole sentences from the input but skip irrelevant preamble; this leads to reasonable ROUGE scores and very good performance according to our human labelers, but may be exploiting the fact that labelers rely on simple heuristics.},
+  archiveprefix = {arXiv},
+  comment       = {Probably used further in InstructGPT (Ouyang et al., 2022), provides more details on the approach},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1909.08593},
+  eprint        = {1909.08593},
+  file          = {:Ziegler2019 - Fine Tuning Language Models from Human Preferences.pdf:PDF},
+  groups        = {Language generation with RL},
+  keywords      = {Computation and Language (cs.CL), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.CL},
+  publisher     = {arXiv},
+  ranking       = {rank3},
+  readstatus    = {skimmed},
+}
+
+@Article{Lin2023,
+  author        = {Lin, Jessy and Du, Yuqing and Watkins, Olivia and Hafner, Danijar and Abbeel, Pieter and Klein, Dan and Dragan, Anca},
+  title         = {Learning to Model the World with Language},
+  year          = {2023},
+  month         = jul,
+  abstract      = {To interact with humans in the world, agents need to understand the diverse types of language that people use, relate them to the visual world, and act based on them. While current agents learn to execute simple language instructions from task rewards, we aim to build agents that leverage diverse language that conveys general knowledge, describes the state of the world, provides interactive feedback, and more. Our key idea is that language helps agents predict the future: what will be observed, how the world will behave, and which situations will be rewarded. This perspective unifies language understanding with future prediction as a powerful self-supervised learning objective. We present Dynalang, an agent that learns a multimodal world model that predicts future text and image representations and learns to act from imagined model rollouts. Unlike traditional agents that use language only to predict actions, Dynalang acquires rich language understanding by using past language also to predict future language, video, and rewards. In addition to learning from online interaction in an environment, Dynalang can be pretrained on datasets of text, video, or both without actions or rewards. From using language hints in grid worlds to navigating photorealistic scans of homes, Dynalang utilizes diverse types of language to improve task performance, including environment descriptions, game rules, and instructions.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2308.01399},
+  eprint        = {2308.01399},
+  file          = {:Lin2023 - Learning to Model the World with Language.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.CL},
+  priority      = {prio1},
+  publisher     = {arXiv},
+}
+
+@Article{Brohan2023,
+  author   = {Anthony Brohan, Noah Brown, Justice Carbajal, Yevgen Chebotar, Xi Chen, Krzysztof Choromanski, Tianli Ding, Danny Driess, Avinava Dubey, Chelsea Finn, Pete Florence, Chuyuan Fu, Montse Gonzalez Arenas, Keerthana Gopalakrishnan, Kehang Han, Karol Hausman, Alexander Herzog, Jasmine Hsu, Brian Ichter, Alex Irpan, Nikhil Joshi, Ryan Julian, Dmitry Kalashnikov, Yuheng Kuang, Isabel Leal, Lisa Lee, Tsang-Wei Edward Lee, Sergey Levine, Yao Lu, Henryk Michalewski, Igor Mordatch, Karl Pertsch, Kanishka Rao, Krista Reymann, Michael Ryoo, Grecia Salazar, Pannag Sanketi, Pierre Sermanet, Jaspiar Singh, Anikait Singh, Radu Soricut, Huong Tran, Vincent Vanhoucke, Quan Vuong,Ayzaan Wahid, Stefan Welker, Paul Wohlhart, Jialin Wu, Fei Xia, Ted Xiao, Peng Xu, Sichun Xu, Tianhe Yu, Brianna Zitkovich},
+  title    = {RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control},
+  year     = {2023},
+  file     = {:Brohan2023 - RT 2_ Vision Language Action Models Transfer Web Knowledge to Robotic Control.pdf:PDF},
+  groups   = {Visual-Language Learning},
+  priority = {prio1},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -9101,6 +9202,7 @@ Multi-Explore},
 1 StaticGroup:Language\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Language generation with RL\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Question Answering\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Text-based environments\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visual-Language Learning\;0\;1\;0x8a8a8aff\;\;\;;
