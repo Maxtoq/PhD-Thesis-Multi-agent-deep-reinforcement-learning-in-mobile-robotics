@@ -4149,6 +4149,7 @@ FacMADDPG},
   groups        = {Navigation, Multi-robot},
   keywords      = {cs.MA, cs.AI, cs.GT, cs.LG, cs.SY, eess.SY},
   primaryclass  = {cs.MA},
+  ranking       = {rank2},
 }
 
 @Article{Mitchell2019,
@@ -7852,7 +7853,7 @@ Multi-Explore},
   year      = {2020},
   file      = {:Taiga2020On - On Bonus Based Exploration Methods in the Arcade Learning Environment.pdf:PDF},
   groups    = {Intrinsic goals},
-  ranking   = {rank2},
+  ranking   = {rank1},
   url       = {https://openreview.net/forum?id=BJewlyStDr},
 }
 
@@ -9184,6 +9185,171 @@ ChatGPT},
   priority = {prio1},
 }
 
+@Article{Wu2023,
+  author        = {Wu, Qingyun and Bansal, Gagan and Zhang, Jieyu and Wu, Yiran and Li, Beibin and Zhu, Erkang and Jiang, Li and Zhang, Xiaoyun and Zhang, Shaokun and Liu, Jiale and Awadallah, Ahmed Hassan and White, Ryen W and Burger, Doug and Wang, Chi},
+  title         = {AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation},
+  year          = {2023},
+  month         = aug,
+  abstract      = {AutoGen is an open-source framework that allows developers to build LLM applications via multiple agents that can converse with each other to accomplish tasks. AutoGen agents are customizable, conversable, and can operate in various modes that employ combinations of LLMs, human inputs, and tools. Using AutoGen, developers can also flexibly define agent interaction behaviors. Both natural language and computer code can be used to program flexible conversation patterns for different applications. AutoGen serves as a generic infrastructure to build diverse applications of various complexities and LLM capacities. Empirical studies demonstrate the effectiveness of the framework in many example applications, with domains ranging from mathematics, coding, question answering, operations research, online decision-making, entertainment, etc.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2308.08155},
+  eprint        = {2308.08155},
+  file          = {:Wu2023 - AutoGen_ Enabling Next Gen LLM Applications Via Multi Agent Conversation.pdf:PDF},
+  groups        = {Large Language Models},
+  keywords      = {Artificial Intelligence (cs.AI), Computation and Language (cs.CL), FOS: Computer and information sciences},
+  primaryclass  = {cs.AI},
+  publisher     = {arXiv},
+  ranking       = {rank3},
+}
+
+@InProceedings{Carta2023:GLAM,
+  author      = {Carta, Thomas and Romac, Cl{\'e}ment and Wolf, Thomas and Lamprier, Sylvain and Sigaud, Olivier and Oudeyer, Pierre-Yves},
+  booktitle   = {Proceedings of Machine Learning Research},
+  title       = {{Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning}},
+  year        = {2023},
+  number      = {3676-3713},
+  publisher   = {{PMLR}},
+  volume      = {202},
+  file        = {:Carta2023 - Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning.pdf:PDF},
+  groups      = {Language-Augmented RL},
+  hal_id      = {hal-03970122},
+  hal_version = {v3},
+  pdf         = {https://hal.science/hal-03970122v3/file/extended_version.pdf},
+  ranking     = {rank3},
+  readstatus  = {read},
+  url         = {https://hal.science/hal-03970122},
+}
+
+@Article{Ahn2022,
+  author        = {Ahn, Michael and Brohan, Anthony and Brown, Noah and Chebotar, Yevgen and Cortes, Omar and David, Byron and Finn, Chelsea and Fu, Chuyuan and Gopalakrishnan, Keerthana and Hausman, Karol and Herzog, Alex and Ho, Daniel and Hsu, Jasmine and Ibarz, Julian and Ichter, Brian and Irpan, Alex and Jang, Eric and Ruano, Rosario Jauregui and Jeffrey, Kyle and Jesmonth, Sally and Joshi, Nikhil J and Julian, Ryan and Kalashnikov, Dmitry and Kuang, Yuheng and Lee, Kuang-Huei and Levine, Sergey and Lu, Yao and Luu, Linda and Parada, Carolina and Pastor, Peter and Quiambao, Jornell and Rao, Kanishka and Rettinghouse, Jarek and Reyes, Diego and Sermanet, Pierre and Sievers, Nicolas and Tan, Clayton and Toshev, Alexander and Vanhoucke, Vincent and Xia, Fei and Xiao, Ted and Xu, Peng and Xu, Sichun and Yan, Mengyuan and Zeng, Andy},
+  title         = {Do As I Can, Not As I Say: Grounding Language in Robotic Affordances},
+  year          = {2022},
+  month         = apr,
+  abstract      = {Large language models can encode a wealth of semantic knowledge about the world. Such knowledge could be extremely useful to robots aiming to act upon high-level, temporally extended instructions expressed in natural language. However, a significant weakness of language models is that they lack real-world experience, which makes it difficult to leverage them for decision making within a given embodiment. For example, asking a language model to describe how to clean a spill might result in a reasonable narrative, but it may not be applicable to a particular agent, such as a robot, that needs to perform this task in a particular environment. We propose to provide real-world grounding by means of pretrained skills, which are used to constrain the model to propose natural language actions that are both feasible and contextually appropriate. The robot can act as the language model's "hands and eyes," while the language model supplies high-level semantic knowledge about the task. We show how low-level skills can be combined with large language models so that the language model provides high-level knowledge about the procedures for performing complex and temporally-extended instructions, while value functions associated with these skills provide the grounding necessary to connect this knowledge to a particular physical environment. We evaluate our method on a number of real-world robotic tasks, where we show the need for real-world grounding and that this approach is capable of completing long-horizon, abstract, natural language instructions on a mobile manipulator. The project's website and the video can be found at https://say-can.github.io/.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2204.01691},
+  eprint        = {2204.01691},
+  file          = {:Ahn2022 - Do As I Can, Not As I Say_ Grounding Language in Robotic Affordances.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {Robotics (cs.RO), Computation and Language (cs.CL), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.RO},
+  publisher     = {arXiv},
+  ranking       = {rank4},
+  readstatus    = {read},
+}
+
+@InProceedings{Rana2023:CLASP,
+  author     = {Krishan Rana and Andrew Melnik and Niko Suenderhauf},
+  booktitle  = {ICRA2023 Workshop on Pretraining for Robotics (PT4R)},
+  title      = {Contrastive Language, Action, and State Pre-training for Robot Learning},
+  year       = {2023},
+  file       = {:Rana2023_CLASP - Contrastive Language, Action, and State Pre Training for Robot Learning.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=sxKR6zhBDH},
+}
+
+@Article{Karamcheti2023,
+  author        = {Karamcheti, Siddharth and Nair, Suraj and Chen, Annie S. and Kollar, Thomas and Finn, Chelsea and Sadigh, Dorsa and Liang, Percy},
+  title         = {Language-Driven Representation Learning for Robotics},
+  year          = {2023},
+  month         = feb,
+  abstract      = {Recent work in visual representation learning for robotics demonstrates the viability of learning from large video datasets of humans performing everyday tasks. Leveraging methods such as masked autoencoding and contrastive learning, these representations exhibit strong transfer to policy learning for visuomotor control. But, robot learning encompasses a diverse set of problems beyond control including grasp affordance prediction, language-conditioned imitation learning, and intent scoring for human-robot collaboration, amongst others. First, we demonstrate that existing representations yield inconsistent results across these tasks: masked autoencoding approaches pick up on low-level spatial features at the cost of high-level semantics, while contrastive learning approaches capture the opposite. We then introduce Voltron, a framework for language-driven representation learning from human videos and associated captions. Voltron trades off language-conditioned visual reconstruction to learn low-level visual patterns, and visually-grounded language generation to encode high-level semantics. We also construct a new evaluation suite spanning five distinct robot learning problems $\unicode{x2013}$ a unified platform for holistically evaluating visual representations for robotics. Through comprehensive, controlled experiments across all five problems, we find that Voltron's language-driven representations outperform the prior state-of-the-art, especially on targeted problems requiring higher-level features.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2302.12766},
+  eprint        = {2302.12766},
+  file          = {:Karamcheti2023 - Language Driven Representation Learning for Robotics.pdf:PDF},
+  groups        = {Language-Augmented RL},
+  keywords      = {Robotics (cs.RO), Artificial Intelligence (cs.AI), Computation and Language (cs.CL), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.RO},
+  publisher     = {arXiv},
+  readstatus    = {read},
+}
+
+@InProceedings{Driess2023,
+  author     = {Driess, Danny and Xia, Fei and Sajjadi, Mehdi S. M. and Lynch, Corey and Chowdhery, Aakanksha and Ichter, Brian and Wahid, Ayzaan and Tompson, Jonathan and Vuong, Quan and Yu, Tianhe and Huang, Wenlong and Chebotar, Yevgen and Sermanet, Pierre and Duckworth, Daniel and Levine, Sergey and Vanhoucke, Vincent and Hausman, Karol and Toussaint, Marc and Greff, Klaus and Zeng, Andy and Mordatch, Igor and Florence, Pete},
+  booktitle  = {Proceedings of the 40th International Conference on Machine Learning},
+  title      = {PaLM-E: An Embodied Multimodal Language Model},
+  year       = {2023},
+  editor     = {PMLR},
+  volume     = {202},
+  abstract   = {Large language models excel at a wide range of complex tasks. However, enabling general inference in the real world, e.g., for robotics problems, raises the challenge of grounding. We propose embodied language models to directly incorporate real-world continuous sensor modalities into language models and thereby establish the link between words and percepts. Input to our embodied language model are multi-modal sentences that interleave visual, continuous state estimation, and textual input encodings. We train these encodings end-to-end, in conjunction with a pre-trained large language model, for multiple embodied tasks including sequential robotic manipulation planning, visual question answering, and captioning. Our evaluations show that PaLM-E, a single large embodied multimodal model, can address a variety of embodied reasoning tasks, from a variety of observation modalities, on multiple embodiments, and further, exhibits positive transfer: the model benefits from diverse joint training across internet-scale language, vision, and visual-language domains. Our largest model, PaLM-E-562B with 562B parameters, in addition to being trained on robotics tasks, is a visual-language generalist with state-of-the-art performance on OK-VQA, and retains generalist language capabilities with increasing scale.},
+  doi        = {10.48550/ARXIV.2303.03378},
+  eprint     = {2303.03378},
+  file       = {:Driess2023 - PaLM E_ an Embodied Multimodal Language Model.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  keywords   = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Robotics (cs.RO), FOS: Computer and information sciences},
+  ranking    = {rank4},
+  readstatus = {read},
+}
+
+@InProceedings{Dosovitskiy2021,
+  author    = {Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil Houlsby},
+  booktitle = {International Conference on Learning Representations},
+  title     = {An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
+  year      = {2021},
+  file      = {:Dosovitskiy2021 - An Image Is Worth 16x16 Words_ Transformers for Image Recognition at Scale.pdf:PDF},
+  groups    = {Computer Vision},
+  ranking   = {rank5},
+  url       = {https://openreview.net/forum?id=YicbFdNTTy},
+}
+
+@Article{Kalashnikov2021,
+  author        = {Kalashnikov, Dmitry and Varley, Jacob and Chebotar, Yevgen and Swanson, Benjamin and Jonschkowski, Rico and Finn, Chelsea and Levine, Sergey and Hausman, Karol},
+  title         = {MT-Opt: Continuous Multi-Task Robotic Reinforcement Learning at Scale},
+  year          = {2021},
+  month         = apr,
+  abstract      = {General-purpose robotic systems must master a large repertoire of diverse skills to be useful in a range of daily tasks. While reinforcement learning provides a powerful framework for acquiring individual behaviors, the time needed to acquire each skill makes the prospect of a generalist robot trained with RL daunting. In this paper, we study how a large-scale collective robotic learning system can acquire a repertoire of behaviors simultaneously, sharing exploration, experience, and representations across tasks. In this framework new tasks can be continuously instantiated from previously learned tasks improving overall performance and capabilities of the system. To instantiate this system, we develop a scalable and intuitive framework for specifying new tasks through user-provided examples of desired outcomes, devise a multi-robot collective learning system for data collection that simultaneously collects experience for multiple tasks, and develop a scalable and generalizable multi-task deep reinforcement learning method, which we call MT-Opt. We demonstrate how MT-Opt can learn a wide range of skills, including semantic picking (i.e., picking an object from a particular category), placing into various fixtures (e.g., placing a food item onto a plate), covering, aligning, and rearranging. We train and evaluate our system on a set of 12 real-world tasks with data collected from 7 robots, and demonstrate the performance of our system both in terms of its ability to generalize to structurally similar new tasks, and acquire distinct new tasks more quickly by leveraging past experience. We recommend viewing the videos at https://karolhausman.github.io/mt-opt/},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2104.08212},
+  eprint        = {2104.08212},
+  file          = {:Kalashnikov2021 - MT Opt_ Continuous Multi Task Robotic Reinforcement Learning at Scale.pdf:PDF},
+  groups        = {RL in Robotics},
+  keywords      = {Robotics (cs.RO), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.RO},
+  publisher     = {arXiv},
+  ranking       = {rank3},
+}
+
+
+
+
+
+@Article{Tellex2020,
+  author   = {Tellex, Stefanie and Gopalan, Nakul and Kress-Gazit, Hadas and Matuszek, Cynthia},
+  journal  = {Annual Review of Control, Robotics, and Autonomous Systems},
+  title    = {Robots That Use Language},
+  year     = {2020},
+  number   = {1},
+  pages    = {25-55},
+  volume   = {3},
+  abstract = {This article surveys the use of natural language in robotics from a robotics point of view. To use human language, robots must map words to aspects of the physical world, mediated by the robot's sensors and actuators. This problem differs from other natural language processing domains due to the need to ground the language to noisy percepts and physical actions. Here, we describe central aspects of language use by robots, including understanding natural language requests, using language to drive learning about the physical world, and engaging in collaborative dialogue with a human partner. We describe common approaches, roughly divided into learning methods, logic-based methods, and methods that focus on questions of human–robot interaction. Finally, we describe several application domains for language-using robots.},
+  doi      = {10.1146/annurev-control-101119-071628},
+  eprint   = {https://doi.org/10.1146/annurev-control-101119-071628},
+  file     = {:Tellex2020 - Robots That Use Language.pdf:PDF},
+  groups   = {Robotics},
+  ranking  = {rank2},
+  url      = {https://doi.org/10.1146/annurev-control-101119-071628},
+}
+
+@InProceedings{Corbiere2019,
+  author    = {Corbi\`{e}re, Charles and THOME, Nicolas and Bar-Hen, Avner and Cord, Matthieu and P\'{e}rez, Patrick},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Addressing Failure Prediction by Learning Model Confidence},
+  year      = {2019},
+  editor    = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {32},
+  file      = {:Corbiere2019 - Addressing Failure Prediction by Learning Model Confidence.pdf:PDF},
+  groups    = {Confidence},
+  ranking   = {rank2},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2019/file/757f843a169cc678064d9530d12a1881-Paper.pdf},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -9203,13 +9369,15 @@ ChatGPT},
 2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language generation with RL\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Large Language Models\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Question Answering\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Text-based environments\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visual-Language Learning\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Language-Augmented RL\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Reward shaping\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Machine Learning\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Confidence\;0\;1\;0x7c7c7cff\;\;\;;
+1 StaticGroup:MARL\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
@@ -9239,16 +9407,16 @@ ChatGPT},
 1 StaticGroup:Multi-goal RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Intrinsic goals\;2\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Intrinsic goals\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Model based\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
@@ -9272,4 +9440,5 @@ ChatGPT},
 2 StaticGroup:Space Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Transformers in RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Computer Vision\;0\;1\;\;\;\;;
 }
