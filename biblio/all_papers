@@ -1522,6 +1522,7 @@
   doi        = {10.1007/978-3-642-27645-3_14},
   file       = {:Nowé2012 - Game Theory and Multi Agent Reinforcement Learning.pdf:PDF},
   groups     = {MAS Reviews},
+  ranking    = {rank2},
   readstatus = {read},
   url        = {https://doi.org/10.1007/978-3-642-27645-3_14},
 }
@@ -9368,13 +9369,289 @@ ChatGPT},
   ranking       = {rank2},
 }
 
+@Article{Montague2012,
+  author    = {Montague, P. Read and Dolan, Raymond J. and Friston, Karl J. and Dayan, Peter},
+  journal   = {Trends in Cognitive Sciences},
+  title     = {Computational psychiatry},
+  year      = {2012},
+  issn      = {1364-6613},
+  month     = jan,
+  number    = {1},
+  pages     = {72--80},
+  volume    = {16},
+  doi       = {10.1016/j.tics.2011.11.018},
+  groups    = {RL in other domains of science},
+  publisher = {Elsevier BV},
+  ranking   = {rank3},
+}
+
+@Article{Schultz1997,
+  author    = {Schultz, Wolfram and Dayan, Peter and Montague, P. Read},
+  journal   = {Science},
+  title     = {A Neural Substrate of Prediction and Reward},
+  year      = {1997},
+  issn      = {1095-9203},
+  month     = mar,
+  number    = {5306},
+  pages     = {1593--1599},
+  volume    = {275},
+  doi       = {10.1126/science.275.5306.1593},
+  groups    = {RL in other domains of science},
+  publisher = {American Association for the Advancement of Science (AAAS)},
+  ranking   = {rank5},
+}
+
+@Article{Friston2010:FreeEnergy,
+  author    = {Friston, Karl},
+  journal   = {Nature Reviews Neuroscience},
+  title     = {The free-energy principle: a unified brain theory?},
+  year      = {2010},
+  issn      = {1471-0048},
+  month     = jan,
+  number    = {2},
+  pages     = {127--138},
+  volume    = {11},
+  doi       = {10.1038/nrn2787},
+  groups    = {RL in other domains of science},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank5},
+}
+
+@InBook{Rescorla1972:Pavlovian,
+  author  = {Rescorla, RA and Wagner, Allan},
+  pages   = {64-99},
+  title   = {A theory of Pavlovian conditioning: Variations in the effectiveness of reinforcement and nonreinforcement},
+  year    = {1972},
+  month   = {01},
+  volume  = {Vol. 2},
+  file    = {:RescorlaWagner.1972.pdf:PDF},
+  groups  = {RL in other domains of science},
+  journal = {Classical Conditioning II: Current Research and Theory},
+  ranking = {rank5},
+}
+
+@Article{Brembs2010:FreeWill,
+  author    = {Brembs, Björn},
+  journal   = {Proceedings of the Royal Society B: Biological Sciences},
+  title     = {Towards a scientific concept of free will as a biological trait: spontaneous actions and decision-making in invertebrates},
+  year      = {2010},
+  issn      = {1471-2954},
+  month     = dec,
+  number    = {1707},
+  pages     = {930--939},
+  volume    = {278},
+  doi       = {10.1098/rspb.2010.2325},
+  file      = {:brembs-2010-towards-a-scientific-concept-of-free-will-as-a-biological-trait-spontaneous-actions-and-decision-making-in.pdf:PDF},
+  groups    = {RL in other domains of science},
+  publisher = {The Royal Society},
+  ranking   = {rank3},
+}
+
+@Article{Gardner1984:Chimpanzee,
+  author    = {Gardner, R. Allen and Gardner, Beatrix T.},
+  journal   = {Journal of Comparative Psychology},
+  title     = {A vocabulary test for chimpanzees (Pan troglodytes).},
+  year      = {1984},
+  issn      = {0735-7036},
+  number    = {4},
+  pages     = {381--404},
+  volume    = {98},
+  doi       = {10.1037/0735-7036.98.4.381},
+  file      = {:gardner1984.pdf:PDF},
+  groups    = {RL in other domains of science},
+  publisher = {American Psychological Association (APA)},
+  ranking   = {rank3},
+}
+
+@Article{Moerland2023,
+  author    = {Moerland, Thomas M. and Broekens, Joost and Plaat, Aske and Jonker, Catholijn M.},
+  journal   = {Foundations and Trends® in Machine Learning},
+  title     = {Model-based Reinforcement Learning: A Survey},
+  year      = {2023},
+  issn      = {1935-8245},
+  number    = {1},
+  pages     = {1--118},
+  volume    = {16},
+  doi       = {10.1561/2200000086},
+  file      = {:9781638280576-summary.pdf:PDF},
+  groups    = {Model based},
+  publisher = {Now Publishers},
+}
+
+@Article{Hafner2023,
+  author        = {Hafner, Danijar and Pasukonis, Jurgis and Ba, Jimmy and Lillicrap, Timothy},
+  title         = {Mastering Diverse Domains through World Models},
+  year          = {2023},
+  month         = jan,
+  abstract      = {General intelligence requires solving tasks across many domains. Current reinforcement learning algorithms carry this potential but are held back by the resources and knowledge required to tune them for new tasks. We present DreamerV3, a general and scalable algorithm based on world models that outperforms previous approaches across a wide range of domains with fixed hyperparameters. These domains include continuous and discrete actions, visual and low-dimensional inputs, 2D and 3D worlds, different data budgets, reward frequencies, and reward scales. We observe favorable scaling properties of DreamerV3, with larger models directly translating to higher data-efficiency and final performance. Applied out of the box, DreamerV3 is the first algorithm to collect diamonds in Minecraft from scratch without human data or curricula, a long-standing challenge in artificial intelligence. Our general algorithm makes reinforcement learning broadly applicable and allows scaling to hard decision-making problems.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2301.04104},
+  eprint        = {2301.04104},
+  file          = {:Hafner2023 - Mastering Diverse Domains through World Models.pdf:PDF},
+  groups        = {Model based},
+  keywords      = {Artificial Intelligence (cs.AI), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.AI},
+  publisher     = {arXiv},
+  ranking       = {rank3},
+}
+
+@Article{Watkins1992,
+  author    = {Watkins, Christopher J. C. H. and Dayan, Peter},
+  journal   = {Machine Learning},
+  title     = {Q-learning},
+  year      = {1992},
+  issn      = {1573-0565},
+  month     = may,
+  number    = {3–4},
+  pages     = {279--292},
+  volume    = {8},
+  doi       = {10.1007/bf00992698},
+  file      = {:Watkins1992 - Q Learning.pdf:PDF},
+  groups    = {RL},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank5},
+}
+
+@Book{Sutton2018:RL,
+  author    = {Richard S. Sutton and Andrew G. Barto},
+  publisher = {The MIT Press},
+  title     = {Reinforcement Learning: An Introduction, second edition},
+  year      = {2018},
+  file      = {:Sutton2018_RL - Reinforcement Learning_ an Introduction, Second Edition.pdf:PDF},
+  groups    = {RL},
+  ranking   = {rank5},
+  url       = {http://incompleteideas.net/sutton/book/RLbook2018.pdf},
+}
+
+@PhdThesis{Watkins1989:RL,
+  author         = {WATKINS C. J. C. H.},
+  title          = {Learning from Delayed Rewards},
+  year           = {1989},
+  comment-doctoq = {Q-learning Model-based RL},
+  groups         = {RL},
+  journal        = {PhD thesis, Cambridge University, Cambridge, England},
+  ranking        = {rank5},
+  url            = {https://cir.nii.ac.jp/crid/1573105974761345280},
+}
+
+@Article{Minsky1961,
+  author    = {Minsky, Marvin},
+  journal   = {Proceedings of the IRE},
+  title     = {Steps toward Artificial Intelligence},
+  year      = {1961},
+  issn      = {0096-8390},
+  month     = jan,
+  number    = {1},
+  pages     = {8--30},
+  volume    = {49},
+  doi       = {10.1109/jrproc.1961.287775},
+  file      = {:Minsky1961 - Steps toward Artificial Intelligence.pdf:PDF},
+  groups    = {RL},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking   = {rank5},
+}
+
+@Article{Andreae1969,
+  author    = {Andreae, J.H. and Cashin, P.M.},
+  journal   = {International Journal of Man-Machine Studies},
+  title     = {A learning machine with monologue},
+  year      = {1969},
+  issn      = {0020-7373},
+  month     = jan,
+  number    = {1},
+  pages     = {1--20},
+  volume    = {1},
+  comment   = {STeLLA, inner monologue},
+  doi       = {10.1016/s0020-7373(69)80008-8},
+  groups    = {RL},
+  publisher = {Elsevier BV},
+}
+
+@Unpublished{Andreae2017,
+  author   = {John H. Andreae},
+  note     = {2017},
+  title    = {Working memory for the associative learning of language},
+  file     = {:Andreae2017 - Working Memory for the Associative Learning of Language.pdf:PDF},
+  groups   = {RL},
+  priority = {prio1},
+  url      = {http://www.incompleteideas.net/papers/Andreae-2017b.pdf},
+}
+
+@Article{Silver2021,
+  author    = {Silver, David and Singh, Satinder and Precup, Doina and Sutton, Richard S.},
+  journal   = {Artificial Intelligence},
+  title     = {Reward is enough},
+  year      = {2021},
+  issn      = {0004-3702},
+  month     = oct,
+  pages     = {103535},
+  volume    = {299},
+  doi       = {10.1016/j.artint.2021.103535},
+  file      = {:Silver2021 - Reward Is Enough.pdf:PDF},
+  groups    = {RL},
+  publisher = {Elsevier BV},
+  ranking   = {rank4},
+}
+
+@InProceedings{Vahdat2020,
+  author    = {Vahdat, Arash and Kautz, Jan},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {NVAE: A Deep Hierarchical Variational Autoencoder},
+  year      = {2020},
+  editor    = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+  pages     = {19667--19679},
+  publisher = {Curran Associates, Inc.},
+  volume    = {33},
+  file      = {:Vahdat2020 - NVAE_ a Deep Hierarchical Variational Autoencoder.pdf:PDF},
+  groups    = {Computer Vision},
+  ranking   = {rank4},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2020/file/e3b21256183cf7c2c7a66be163579d37-Paper.pdf},
+}
+
+@Article{Andrychowicz2020a,
+  author        = {Andrychowicz, Marcin and Raichuk, Anton and Stańczyk, Piotr and Orsini, Manu and Girgin, Sertan and Marinier, Raphael and Hussenot, Léonard and Geist, Matthieu and Pietquin, Olivier and Michalski, Marcin and Gelly, Sylvain and Bachem, Olivier},
+  title         = {What Matters In On-Policy Reinforcement Learning? A Large-Scale Empirical Study},
+  year          = {2020},
+  month         = jun,
+  abstract      = {In recent years, on-policy reinforcement learning (RL) has been successfully applied to many different continuous control tasks. While RL algorithms are often conceptually simple, their state-of-the-art implementations take numerous low- and high-level design decisions that strongly affect the performance of the resulting agents. Those choices are usually not extensively discussed in the literature, leading to discrepancy between published descriptions of algorithms and their implementations. This makes it hard to attribute progress in RL and slows down overall progress [Engstrom'20]. As a step towards filling that gap, we implement >50 such ``choices'' in a unified on-policy RL framework, allowing us to investigate their impact in a large-scale empirical study. We train over 250'000 agents in five continuous control environments of different complexity and provide insights and practical recommendations for on-policy training of RL agents.},
+  archiveprefix = {arXiv},
+  comment       = {PPO},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2006.05990},
+  eprint        = {2006.05990},
+  file          = {:https___doi.org_10.48550_arxiv.2006.05990 - What Matters in on Policy Reinforcement Learning_ a Large Scale Empirical Study.pdf:PDF},
+  groups        = {Policy based},
+  keywords      = {Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  publisher     = {arXiv},
+  ranking       = {rank2},
+}
+
+@InProceedings{Mitchell2021,
+  author     = {Mitchell, Melanie},
+  booktitle  = {Proceedings of the Genetic and Evolutionary Computation Conference},
+  title      = {Why AI is harder than we think},
+  year       = {2021},
+  month      = jun,
+  publisher  = {ACM},
+  series     = {GECCO ’21},
+  collection = {GECCO ’21},
+  doi        = {10.1145/3449639.3465421},
+  file       = {:Mitchell2021 - Why AI Is Harder Than We Think.pdf:PDF},
+  groups     = {Artificial Intelligence},
+  ranking    = {rank2},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
+1 StaticGroup:Artificial Intelligence\;0\;0\;\;\;\;;
+1 StaticGroup:Computer Vision\;0\;1\;\;\;\;;
 1 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Contrastive Learning\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Data Augmentation\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Data Augmentation\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Developmental psychology\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Evolution Strategy\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Evolutionary RL\;0\;1\;0x8a8a8aff\;\;\;;
@@ -9395,7 +9672,7 @@ ChatGPT},
 2 StaticGroup:Reward shaping\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Machine Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Confidence\;0\;1\;0x7c7c7cff\;\;\;;
-1 StaticGroup:MARL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
@@ -9425,7 +9702,7 @@ ChatGPT},
 1 StaticGroup:Multi-goal RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Intrinsic goals\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
@@ -9443,7 +9720,8 @@ ChatGPT},
 4 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:RL in other domains of science\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Interactivity\;0\;1\;0x8a8a8aff\;\;\;;
@@ -9458,5 +9736,4 @@ ChatGPT},
 2 StaticGroup:Space Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Transformers in RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Computer Vision\;0\;1\;\;\;\;;
 }
