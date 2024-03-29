@@ -1,0 +1,11 @@
+name,value,policy,model,td,montecarlo,policygradient,deep,onpolicy,offpolicy,actor-critic
+sarsa,1,0,0,1,0,0,0,1,0,0
+qlearning,1,0,0,1,0,0,0,0,1,0
+reinforce,0,1,0,0,0,1,0,1,0,0
+ppo,0,1,0,0,0,1,1,1,0,1
+trpo,0,1,0,0,0,1,1,1,0,1
+value_iter,1,0,0,0,0,0,0,1,0,0
+dqn,1,0,0,1,0,0,1,0,1,0
+ddpg,1,0,0,1,0,0,1,0,1,1
+td0,1,0,0,1,0,0,0,1,0,0
+tdlambda,1,0,0,1,0,0,0,1,0,0

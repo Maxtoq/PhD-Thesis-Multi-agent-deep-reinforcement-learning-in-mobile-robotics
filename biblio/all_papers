@@ -21,7 +21,7 @@
   cdate      = {1483228800000},
   crossref   = {conf/nips/2017},
   file       = {:AndrychowiczCRS17 - Hindsight Experience Replay.pdf:PDF},
-  groups     = {Robotics, Multi-goal RL},
+  groups     = {RL in Robotics, Goal-conditioned RL},
   ranking    = {rank5},
   readstatus = {skimmed},
   url        = {http://papers.nips.cc/paper/7090-hindsight-experience-replay},
@@ -54,7 +54,7 @@
   readstatus    = {read},
 }
 
-@Article{Fujimoto2018,
+@Article{Fujimoto2018:TD3,
   author        = {Scott Fujimoto and Herke van Hoof and David Meger},
   title         = {Addressing Function Approximation Error in Actor-Critic Methods},
   year          = {2018},
@@ -76,6 +76,7 @@
   groups        = {Policy based, DDPG, Actor Critic},
   keywords      = {cs.AI, cs.LG, stat.ML},
   primaryclass  = {cs.AI},
+  ranking       = {rank4},
   readstatus    = {read},
 }
 
@@ -89,7 +90,7 @@
   comment       = {PPO},
   eprint        = {1707.06347},
   file          = {:Schulman2017 - Proximal Policy Optimization Algorithms.pdf:PDF},
-  groups        = {Policy based, TRPO, Actor Critic},
+  groups        = {Policy based, Actor Critic, TRPO-PPO},
   keywords      = {cs.LG},
   primaryclass  = {cs.LG},
   ranking       = {rank5},
@@ -106,13 +107,14 @@
   comment       = {TRPO},
   eprint        = {1502.05477},
   file          = {:Schulman2015 - Trust Region Policy Optimization.pdf:PDF},
-  groups        = {Policy based, TRPO, Actor Critic},
+  groups        = {Policy based, Actor Critic, TRPO-PPO},
   keywords      = {cs.LG},
   primaryclass  = {cs.LG},
+  ranking       = {rank4},
   readstatus    = {read},
 }
 
-@Article{Schrittwieser2019,
+@Article{Schrittwieser2019:Muzero,
   author        = {Julian Schrittwieser and Ioannis Antonoglou and Thomas Hubert and Karen Simonyan and Laurent Sifre and Simon Schmitt and Arthur Guez and Edward Lockhart and Demis Hassabis and Thore Graepel and Timothy Lillicrap and David Silver},
   title         = {Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model},
   year          = {2019},
@@ -204,18 +206,24 @@
   groups        = {Policy based, DDPG, Actor Critic},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
+  ranking       = {rank5},
   readstatus    = {read},
 }
 
-@Misc{Williams1992,
-  author     = {Ronald J. Williams},
-  title      = {Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning},
+@Article{Williams1992:Reinforce,
+  author     = {Williams, Ronald J.},
+  journal    = {Machine Learning},
+  title      = {Simple statistical gradient-following algorithms for connectionist reinforcement learning},
   year       = {1992},
-  comment    = {Reinforce},
-  doi        = {10.1007/978-1-4615-3618-5_2},
-  file       = {:Williams1992_Article_SimpleStatisticalGradient-foll.pdf:PDF},
+  issn       = {1573-0565},
+  month      = may,
+  number     = {3–4},
+  pages      = {229--256},
+  volume     = {8},
+  comment    = {REINFORCE},
+  doi        = {10.1007/bf00992696},
   groups     = {Policy based},
-  pages      = {5-32},
+  ranking    = {rank5},
   readstatus = {read},
 }
 
@@ -302,7 +310,7 @@
   readstatus    = {read},
 }
 
-@Article{Vecerik2017,
+@Article{Vecerik2017:Demonstrations,
   author        = {Mel Vecerik and Todd Hester and Jonathan Scholz and Fumin Wang and Olivier Pietquin and Bilal Piot and Nicolas Heess and Thomas Rothörl and Thomas Lampe and Martin Riedmiller},
   title         = {Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards},
   year          = {2017},
@@ -311,9 +319,10 @@
   archiveprefix = {arXiv},
   eprint        = {1707.08817},
   file          = {:Vecerik2017 - Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards.pdf:PDF},
-  groups        = {DDPG, Robotics, Policy based, Actor Critic},
+  groups        = {DDPG, Policy based, Actor Critic, RL in Robotics},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
+  ranking       = {rank3},
 }
 
 @Article{Eysenbach2018,
@@ -784,7 +793,7 @@
   eprint        = {1901.10995},
   file          = {:Ecoffet2019 - Go Explore_ a New Approach for Hard Exploration Problems.pdf:PDF},
   groups        = {Random Exploration, Imitation, Exploration},
-  ranking       = {rank4},
+  ranking       = {rank3},
   url           = {http://arxiv.org/abs/1901.10995},
 }
 
@@ -927,10 +936,10 @@
   month         = jun,
   abstract      = {Policy gradient methods are an appealing approach in reinforcement learning because they directly optimize the cumulative reward and can straightforwardly be used with nonlinear function approximators such as neural networks. The two main challenges are the large number of samples typically required, and the difficulty of obtaining stable and steady improvement despite the nonstationarity of the incoming data. We address the first challenge by using value functions to substantially reduce the variance of policy gradient estimates at the cost of some bias, with an exponentially-weighted estimator of the advantage function that is analogous to TD(lambda). We address the second challenge by using trust region optimization procedure for both the policy and the value function, which are represented by neural networks. Our approach yields strong empirical results on highly challenging 3D locomotion tasks, learning running gaits for bipedal and quadrupedal simulated robots, and learning a policy for getting the biped to stand up from starting out lying on the ground. In contrast to a body of prior work that uses hand-crafted policy representations, our neural network policies map directly from raw kinematics to joint torques. Our algorithm is fully model-free, and the amount of simulated experience required for the learning tasks on 3D bipeds corresponds to 1-2 weeks of real time.},
   archiveprefix = {arXiv},
-  comment       = {General Advantage Estimator},
+  comment       = {General Advantage Estimation},
   eprint        = {1506.02438},
   file          = {:Schulman2015a - High Dimensional Continuous Control Using Generalized Advantage Estimation.pdf:PDF},
-  groups        = {TRPO, RL},
+  groups        = {RL, TRPO-PPO},
   keywords      = {cs.LG, cs.RO, cs.SY},
   primaryclass  = {cs.LG},
   ranking       = {rank4},
@@ -945,7 +954,7 @@
   archiveprefix = {arXiv},
   eprint        = {1707.02286},
   file          = {:Heess2017 - Emergence of Locomotion Behaviours in Rich Environments.pdf:PDF},
-  groups        = {TRPO},
+  groups        = {TRPO-PPO},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
 }
@@ -1008,6 +1017,7 @@
   groups        = {MARL, Multi-agent RL},
   keywords      = {cs.LG, cs.AI, stat.ML},
   primaryclass  = {cs.LG},
+  ranking       = {rank4},
 }
 
 @Article{Liu2019,
@@ -1192,9 +1202,10 @@
   groups        = {Imitation},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
+  ranking       = {rank3},
 }
 
-@Article{Hester2018,
+@Article{Hester2018:DQNfDemo,
   author       = {Hester, Todd and Vecerik, Matej and Pietquin, Olivier and Lanctot, Marc and Schaul, Tom and Piot, Bilal and Horgan, Dan and Quan, John and Sendonaris, Andrew and Osband, Ian and Dulac-Arnold, Gabriel and Agapiou, John and Leibo, Joel and Gruslys, Audrunas},
   journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
   title        = {Deep Q-learning From Demonstrations},
@@ -1205,6 +1216,7 @@
   abstractnote = {&lt;p&gt; Deep reinforcement learning (RL) has achieved several high profile successes in difficult decision-making problems. However, these algorithms typically require a huge amount of data before they reach reasonable performance. In fact, their performance during learning can be extremely poor. This may be acceptable for a simulator, but it severely limits the applicability of deep RL to many real-world tasks, where the agent must learn in the real environment. In this paper we study a setting where the agent may access data from previous control of the system. We present an algorithm, Deep Q-learning from Demonstrations (DQfD), that leverages small sets of demonstration data to massively accelerate the learning process even from relatively small amounts of demonstration data and is able to automatically assess the necessary ratio of demonstration data while learning thanks to a prioritized replay mechanism. DQfD works by combining temporal difference updates with supervised classification of the demonstrator’s actions. We show that DQfD has better initial performance than Prioritized Dueling Double Deep Q-Networks (PDD DQN) as it starts with better scores on the first million steps on 41 of 42 games and on average it takes PDD DQN 83 million steps to catch up to DQfD’s performance. DQfD learns to out-perform the best demonstration given in 14 of 42 games. In addition, DQfD leverages human demonstrations to achieve state-of-the-art results for 11 games. Finally, we show that DQfD performs better than three related algorithms for incorporating demonstration data into DQN. &lt;/p&gt;},
   file         = {:Hester_Vecerik_Pietquin_Lanctot_Schaul_Piot_Horgan_Quan_Sendonaris_Osband_Dulac-Arnold_Agapiou_Leibo_Gruslys_2018 - Deep Q Learning from Demonstrations.pdf:PDF},
   groups       = {Imitation},
+  ranking      = {rank4},
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11757},
 }
 
@@ -1498,6 +1510,7 @@
   file      = {:HernandezLeal2019 - A Survey and Critique of Multiagent Deep Reinforcement Learning.pdf:PDF},
   groups    = {MAS Reviews},
   publisher = {Springer Science and Business Media {LLC}},
+  ranking   = {rank3},
 }
 
 @Misc{Vidal07,
@@ -2160,7 +2173,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   doi      = {10.1177/0278364913495721},
   eprint   = {https://doi.org/10.1177/0278364913495721},
   file     = {:doi_10.1177_0278364913495721 - Reinforcement Learning in Robotics_ a Survey.pdf:PDF},
-  groups   = {Robotics},
+  groups   = {RL in Robotics},
   ranking  = {rank5},
   url      = {https://doi.org/10.1177/0278364913495721},
 }
@@ -2316,7 +2329,7 @@ FacMADDPG},
   primaryclass  = {cs.LG},
 }
 
-@Article{levine2016end,
+@Article{Levine2016:Endtoend,
   author    = {Levine, Sergey and Finn, Chelsea and Darrell, Trevor and Abbeel, Pieter},
   journal   = {The Journal of Machine Learning Research},
   title     = {End-to-end training of deep visuomotor policies},
@@ -2717,19 +2730,18 @@ FacMADDPG},
   url       = {http://proceedings.mlr.press/v87/kahn18a.html},
 }
 
-@Article{Ibarz2021,
+@Article{Ibarz2021:Howto,
   author     = {Julian Ibarz and Jie Tan and Chelsea Finn and Mrinal Kalakrishnan and Peter Pastor and Sergey Levine},
   journal    = {The International Journal of Robotics Research},
   title      = {How to train your robot with deep reinforcement learning: lessons we have learned},
   year       = {2021},
-  number     = {0},
-  pages      = {0278364920987859},
-  volume     = {0},
+  number     = {4-5},
+  volume     = {40},
   abstract   = {Deep reinforcement learning (RL) has emerged as a promising approach for autonomously acquiring complex behaviors from low-level sensor observations. Although a large portion of deep RL research has focused on applications in video games and simulated control, which does not connect with the constraints of learning in real environments, deep RL has also demonstrated promise in enabling physical robots to learn complex skills in the real world. At the same time, real-world robotics provides an appealing domain for evaluating such algorithms, as it connects directly to how humans learn: as an embodied agent in the real world. Learning to perceive and move in the real world presents numerous challenges, some of which are easier to address than others, and some of which are often not considered in RL research that focuses only on simulated domains. In this review article, we present a number of case studies involving robotic deep RL. Building off of these case studies, we discuss commonly perceived challenges in deep RL and how they have been addressed in these works. We also provide an overview of other outstanding challenges, many of which are unique to the real-world robotics setting and are not often the focus of mainstream RL research. Our goal is to provide a resource both for roboticists and machine learning researchers who are interested in furthering the progress of deep RL in the real world.},
   doi        = {10.1177/0278364920987859},
   eprint     = {https://doi.org/10.1177/0278364920987859},
   file       = {:0278364920987859.pdf:PDF},
-  groups     = {Robotics},
+  groups     = {RL in Robotics},
   readstatus = {skimmed},
   url        = {https://doi.org/10.1177/0278364920987859},
 }
@@ -2831,7 +2843,7 @@ FacMADDPG},
   abstract = {Safety remains a central obstacle preventing widespread use of RL in the real world: learning new tasks in uncertain environments requires extensive exploration, but safety requires limiting exploration. We propose Recovery RL, an algorithm which navigates this tradeoff by (1) leveraging offline data to learn about constraint violating zones before policy learning and (2) separating the goals of improving task performance and constraint satisfaction across two policies: a task policy that only optimizes the task reward and a recovery policy that guides the agent to safety when constraint violation is likely. We evaluate Recovery RL on 6 simulation domains, including two contact-rich manipulation tasks and an image-based navigation task, and an image-based obstacle avoidance task on a physical robot. We compare Recovery RL to 5 prior safe RL methods which jointly optimize for task performance and safety via constrained optimization or reward shaping and find that Recovery RL outperforms the next best prior method across all domains. Results suggest that Recovery RL trades off constraint violations and task successes 2–20 times more efficiently in simulation domains and 3 times more efficiently in physical experiments. See https://tinyurl.com/rl-recovery for videos and supplementary material.},
   doi      = {10.1109/LRA.2021.3070252},
   file     = {:9392290 - Recovery RL_ Safe Reinforcement Learning with Learned Recovery Zones.pdf:PDF},
-  groups   = {Robotics},
+  groups   = {RL in Robotics},
 }
 
 @Article{almadhoun2019survey,
@@ -3009,7 +3021,7 @@ FacMADDPG},
   ranking   = {rank2},
 }
 
-@InProceedings{Tobin2017,
+@InProceedings{Tobin2017:RealityGap,
   author    = {Tobin, Josh and Fong, Rachel and Ray, Alex and Schneider, Jonas and Zaremba, Wojciech and Abbeel, Pieter},
   booktitle = {2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   title     = {Domain randomization for transferring deep neural networks from simulation to the real world},
@@ -3068,7 +3080,7 @@ FacMADDPG},
   url      = {https://www.sciencedirect.com/science/article/pii/S092188901500202X},
 }
 
-@Article{Sunderhauf2018,
+@Article{Sunderhauf2018:Limits,
   author     = {Niko Sünderhauf and Oliver Brock and Walter Scheirer and Raia Hadsell and Dieter Fox and Jürgen Leitner and Ben Upcroft and Pieter Abbeel and Wolfram Burgard and Michael Milford and Peter Corke},
   journal    = {The International Journal of Robotics Research},
   title      = {The limits and potentials of deep learning for robotics},
@@ -3080,7 +3092,7 @@ FacMADDPG},
   doi        = {10.1177/0278364918770733},
   eprint     = {https://doi.org/10.1177/0278364918770733},
   file       = {:doi_10.1177_0278364918770733 - The Limits and Potentials of Deep Learning for Robotics.pdf:PDF},
-  groups     = {Robotics},
+  groups     = {RL in Robotics},
   ranking    = {rank3},
   readstatus = {skimmed},
   url        = {https://doi.org/10.1177/0278364918770733},
@@ -4245,7 +4257,6 @@ FacMADDPG},
   groups        = {Multi-agent RL, Communication},
   keywords      = {cs.MA, cs.AI},
   primaryclass  = {cs.MA},
-  priority      = {prio2},
   ranking       = {rank1},
 }
 
@@ -4717,6 +4728,8 @@ agents)},
   keywords  = {multi-agent communication, compositionality, emergent languages},
   location  = {Auckland, New Zealand},
   numpages  = {9},
+  priority  = {prio1},
+  ranking   = {rank1},
 }
 
 @InProceedings{harding-graesser-etal-2019-emergent,
@@ -4897,7 +4910,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   priority      = {prio2},
 }
 
-@InProceedings{James2019,
+@InProceedings{James2019:Sim2Real,
   author    = {James, Stephen and Wohlhart, Paul and Kalakrishnan, Mrinal and Kalashnikov, Dmitry and Irpan, Alex and Ibarz, Julian and Levine, Sergey and Hadsell, Raia and Bousmalis, Konstantinos},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   title     = {Sim-To-Real via Sim-To-Sim: Data-Efficient Robotic Grasping via Randomized-To-Canonical Adaptation Networks},
@@ -4906,9 +4919,10 @@ communication integrated in QMIX, with tricks to make it more efficient},
   file      = {:James_2019_CVPR - Sim to Real Via Sim to Sim_ Data Efficient Robotic Grasping Via Randomized to Canonical Adaptation Networks.pdf:PDF},
   groups    = {Sim to Real},
   ranking   = {rank3},
+  url       = {https://openaccess.thecvf.com/content_CVPR_2019/html/James_Sim-To-Real_via_Sim-To-Sim_Data-Efficient_Robotic_Grasping_via_Randomized-To-Canonical_Adaptation_Networks_CVPR_2019_paper.html},
 }
 
-@InProceedings{Chebotar2019,
+@InProceedings{Chebotar2019:Sim2Real,
   author    = {Yevgen Chebotar and Ankur Handa and Viktor Makoviychuk and Miles Macklin and Jan Issac and Nathan Ratliff and Dieter Fox},
   booktitle = {2019 International Conference on Robotics and Automation ({ICRA})},
   title     = {Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience},
@@ -4934,7 +4948,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   ranking   = {rank4},
 }
 
-@Article{Andrychowicz2020,
+@Article{Andrychowicz2020:Sim2Real,
   author   = {OpenAI: Marcin Andrychowicz and Bowen Baker and Maciek Chociej and Rafal Józefowicz and Bob McGrew and Jakub Pachocki and Arthur Petron and Matthias Plappert and Glenn Powell and Alex Ray and Jonas Schneider and Szymon Sidor and Josh Tobin and Peter Welinder and Lilian Weng and Wojciech Zaremba},
   journal  = {The International Journal of Robotics Research},
   title    = {Learning dexterous in-hand manipulation},
@@ -4995,7 +5009,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   archiveprefix = {arXiv},
   eprint        = {1902.04546},
   file          = {:Chan2019 - ACTRCE_ Augmenting Experience Via Teacher's Advice for Multi Goal Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-goal RL, Language-Augmented RL},
+  groups        = {Language-Augmented RL, Goal-conditioned RL},
   keywords      = {cs.LG, cs.AI, cs.NE, stat.ML},
   primaryclass  = {cs.LG},
 }
@@ -5121,7 +5135,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   url         = {https://hal.inria.fr/hal-03121146},
 }
 
-@InProceedings{Luketina2019,
+@InProceedings{Luketina2019:Language,
   author     = {Luketina, Jelena and Nardelli, Nantas and Farquhar, Gregory and Foerster, Jakob and Andreas, Jacob and Grefenstette, Edward and Whiteson, Shimon and Rocktäschel, Tim},
   booktitle  = {Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, {IJCAI-19}},
   title      = {A Survey of Reinforcement Learning Informed by Natural Language},
@@ -5263,7 +5277,7 @@ time step.},
   archiveprefix = {arXiv},
   eprint        = {2107.13545},
   file          = {:Sun2021 - Fully Autonomous Real World Reinforcement Learning for Mobile Manipulation.pdf:PDF},
-  groups        = {Robotics},
+  groups        = {RL in Robotics},
   keywords      = {cs.LG, cs.RO},
   primaryclass  = {cs.LG},
 }
@@ -5555,8 +5569,8 @@ time step.},
   url        = {https://openreview.net/forum?id=Bk9zbyZCZ},
 }
 
-@InProceedings{Oh2016,
-  author     = {Oh, Junhyuk and Chockalingam, Valliappa and Satinder, and Lee, Honglak},
+@InProceedings{Oh2016:Minecraft,
+  author     = {Oh, Junhyuk and Chockalingam, Valliappa and Singh, Satinder and Lee, Honglak},
   booktitle  = {Proceedings of The 33rd International Conference on Machine Learning},
   title      = {Control of Memory, Active Perception, and Action in Minecraft},
   year       = {2016},
@@ -5570,9 +5584,9 @@ time step.},
   abstract   = {In this paper, we introduce a new set of reinforcement learning (RL) tasks in Minecraft (a flexible 3D world). We then use these tasks to systematically compare and contrast existing deep reinforcement learning (DRL) architectures with our new memory-based DRL architectures. These tasks are designed to emphasize, in a controllable manner, issues that pose challenges for RL methods including partial observability (due to first-person visual observations), delayed rewards, high-dimensional visual observations, and the need to use active perception in a correct manner so as to perform well in the tasks. While these tasks are conceptually simple to describe, by virtue of having all of these challenges simultaneously they are difficult for current DRL architectures. Additionally, we evaluate the generalization performance of the architectures on environments not used during training. The experimental results show that our new architectures generalize to unseen environments better than existing DRL architectures.},
   comment    = {MQN, RMQN, FRMQN},
   file       = {:Oh2016 - Control of Memory, Active Perception, and Action in Minecraft.pdf:PDF},
-  groups     = {Memory},
+  groups     = {Memory, Environments},
   pdf        = {http://proceedings.mlr.press/v48/oh16.pdf},
-  ranking    = {rank2},
+  ranking    = {rank3},
   readstatus = {skimmed},
   url        = {http://proceedings.mlr.press/v48/oh16.html},
 }
@@ -5799,20 +5813,6 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   primaryclass  = {cs.LG},
   priority      = {prio2},
   ranking       = {rank3},
-}
-
-@Article{Strouse2021,
-  author        = {DJ Strouse and Kevin R. McKee and Matt Botvinick and Edward Hughes and Richard Everett},
-  title         = {Collaborating with Humans without Human Data},
-  year          = {2021},
-  month         = oct,
-  abstract      = {Collaborating with humans requires rapidly adapting to their individual strengths, weaknesses, and preferences. Unfortunately, most standard multi-agent reinforcement learning techniques, such as self-play (SP) or population play (PP), produce agents that overfit to their training partners and do not generalize well to humans. Alternatively, researchers can collect human data, train a human model using behavioral cloning, and then use that model to train "human-aware" agents ("behavioral cloning play", or BCP). While such an approach can improve the generalization of agents to new human co-players, it involves the onerous and expensive step of collecting large amounts of human data first. Here, we study the problem of how to train agents that collaborate well with human partners without using human data. We argue that the crux of the problem is to produce a diverse set of training partners. Drawing inspiration from successful multi-agent approaches in competitive domains, we find that a surprisingly simple approach is highly effective. We train our agent partner as the best response to a population of self-play agents and their past checkpoints taken throughout training, a method we call Fictitious Co-Play (FCP). Our experiments focus on a two-player collaborative cooking simulator that has recently been proposed as a challenge problem for coordination with humans. We find that FCP agents score significantly higher than SP, PP, and BCP when paired with novel agent and human partners. Furthermore, humans also report a strong subjective preference to partnering with FCP agents over all baselines.},
-  archiveprefix = {arXiv},
-  eprint        = {2110.08176},
-  file          = {:Strouse2021 - Collaborating with Humans without Human Data.pdf:PDF},
-  groups        = {Multi-agent RL},
-  keywords      = {cs.LG, cs.HC, cs.MA},
-  primaryclass  = {cs.LG},
 }
 
 @Article{HARNAD1990335,
@@ -6257,7 +6257,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   readstatus = {skimmed},
 }
 
-@InProceedings{shu2018hierarchical,
+@InProceedings{Shu2018:Hierarchical,
   author     = {Tianmin Shu and Caiming Xiong and Richard Socher},
   booktitle  = {International Conference on Learning Representations},
   title      = {Hierarchical and Interpretable Skill Acquisition in Multi-task Reinforcement Learning},
@@ -6349,7 +6349,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   ranking   = {rank3},
 }
 
-@InProceedings{10.5555/645528.657613,
+@InProceedings{Ng1999:Shaping,
   author    = {Ng, Andrew Y. and Harada, Daishi and Russell, Stuart J.},
   booktitle = {Proceedings of the Sixteenth International Conference on Machine Learning},
   title     = {Policy Invariance Under Reward Transformations: Theory and Application to Reward Shaping},
@@ -6408,7 +6408,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/7979},
 }
 
-@InProceedings{10.1007/978-3-540-74690-4_71,
+@InProceedings{Wierstra2007:POMDPs,
   author    = {Wierstra, Daan and Foerster, Alexander and Peters, Jan and Schmidhuber, J{\"u}rgen},
   booktitle = {Artificial Neural Networks -- ICANN 2007},
   title     = {Solving Deep Memory POMDPs with Recurrent Policy Gradients},
@@ -6421,6 +6421,8 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   file      = {:10.1007_978-3-540-74690-4_71 - Solving Deep Memory POMDPs with Recurrent Policy Gradients.pdf:PDF},
   groups    = {POMDP},
   isbn      = {978-3-540-74690-4},
+  ranking   = {rank2},
+  url       = {https://link.springer.com/chapter/10.1007/978-3-540-74690-4_71},
 }
 
 @InProceedings{NIPS2016_9dcb88e0,
@@ -6700,7 +6702,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   comment   = {DQN with different possible goals
 the agent takes as input the current state and goal, the value function depends also on this goal},
   file      = {:pmlr-v37-schaul15 - Universal Value Function Approximators.pdf:PDF},
-  groups    = {RL, Value based},
+  groups    = {RL, Value based, Goal-conditioned RL},
   pdf       = {http://proceedings.mlr.press/v37/schaul15.pdf},
   ranking   = {rank4},
   url       = {https://proceedings.mlr.press/v37/schaul15.html},
@@ -6764,7 +6766,6 @@ the agent takes as input the current state and goal, the value function depends 
   file      = {:pmlr-v15-ross11a - A Reduction of Imitation Learning and Structured Prediction to No Regret Online Learning.pdf:PDF},
   groups    = {Imitation},
   pdf       = {http://proceedings.mlr.press/v15/ross11a/ross11a.pdf},
-  priority  = {prio3},
   ranking   = {rank5},
   url       = {https://proceedings.mlr.press/v15/ross11a.html},
 }
@@ -6871,18 +6872,23 @@ the agent takes as input the current state and goal, the value function depends 
   primaryclass  = {cs.AI},
 }
 
-@Article{Uchendu2022,
-  author        = {Ikechukwu Uchendu and Ted Xiao and Yao Lu and Banghua Zhu and Mengyuan Yan and Joséphine Simon and Matthew Bennice and Chuyuan Fu and Cong Ma and Jiantao Jiao and Sergey Levine and Karol Hausman},
-  title         = {Jump-Start Reinforcement Learning},
-  year          = {2022},
-  month         = apr,
-  abstract      = {Reinforcement learning (RL) provides a theoretical framework for continuously improving an agent's behavior via trial and error. However, efficiently learning policies from scratch can be very difficult, particularly for tasks with exploration challenges. In such settings, it might be desirable to initialize RL with an existing policy, offline data, or demonstrations. However, naively performing such initialization in RL often works poorly, especially for value-based methods. In this paper, we present a meta algorithm that can use offline data, demonstrations, or a pre-existing policy to initialize an RL policy, and is compatible with any RL approach. In particular, we propose Jump-Start Reinforcement Learning (JSRL), an algorithm that employs two policies to solve tasks: a guide-policy, and an exploration-policy. By using the guide-policy to form a curriculum of starting states for the exploration-policy, we are able to efficiently improve performance on a set of simulated robotic tasks. We show via experiments that JSRL is able to significantly outperform existing imitation and reinforcement learning algorithms, particularly in the small-data regime. In addition, we provide an upper bound on the sample complexity of JSRL and show that with the help of a guide-policy, one can improve the sample complexity for non-optimism exploration methods from exponential in horizon to polynomial.},
-  archiveprefix = {arXiv},
-  eprint        = {2204.02372},
-  file          = {:Uchendu2022 - Jump Start Reinforcement Learning.pdf:PDF},
-  groups        = {Curriculum Learning},
-  keywords      = {cs.LG},
-  primaryclass  = {cs.LG},
+@InProceedings{Uchendu2022:Jump,
+  author    = {Uchendu, Ikechukwu and Xiao, Ted and Lu, Yao and Zhu, Banghua and Yan, Mengyuan and Simon, Jos\'{e}phine and Bennice, Matthew and Fu, Chuyuan and Ma, Cong and Jiao, Jiantao and Levine, Sergey and Hausman, Karol},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  title     = {Jump-Start Reinforcement Learning},
+  year      = {2023},
+  editor    = {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  month     = {23--29 Jul},
+  pages     = {34556--34583},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {202},
+  abstract  = {Reinforcement learning (RL) provides a theoretical framework for continuously improving an agent’s behavior via trial and error. However, efficiently learning policies from scratch can be very difficult, particularly for tasks that present exploration challenges. In such settings, it might be desirable to initialize RL with an existing policy, offline data, or demonstrations. However, naively performing such initialization in RL often works poorly, especially for value-based methods. In this paper, we present a meta algorithm that can use offline data, demonstrations, or a pre-existing policy to initialize an RL policy, and is compatible with any RL approach. In particular, we propose Jump-Start Reinforcement Learning (JSRL), an algorithm that employs two policies to solve tasks: a guide-policy, and an exploration-policy. By using the guide-policy to form a curriculum of starting states for the exploration-policy, we are able to efficiently improve performance on a set of simulated robotic tasks. We show via experiments that it is able to significantly outperform existing imitation and reinforcement learning algorithms, particularly in the small-data regime. In addition, we provide an upper bound on the sample complexity of JSRL and show that with the help of a guide-policy, one can improve the sample complexity for non-optimism exploration methods from exponential in horizon to polynomial.},
+  file      = {:Uchendu2022 - Jump Start Reinforcement Learning.pdf:PDF},
+  groups    = {Curriculum Learning},
+  pdf       = {https://proceedings.mlr.press/v202/uchendu23a/uchendu23a.pdf},
+  ranking   = {rank2},
+  url       = {https://proceedings.mlr.press/v202/uchendu23a.html},
 }
 
 @InProceedings{Ammanabrolu2020Graph,
@@ -7312,7 +7318,7 @@ the agent takes as input the current state and goal, the value function depends 
   archiveprefix = {arXiv},
   eprint        = {2206.07568},
   file          = {:Eysenbach2022 - Contrastive Learning As Goal Conditioned Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-goal RL, Contrastive Learning},
+  groups        = {Contrastive Learning, Goal-conditioned RL},
   keywords      = {cs.LG, cs.AI},
   primaryclass  = {cs.LG},
 }
@@ -7353,7 +7359,7 @@ the agent takes as input the current state and goal, the value function depends 
   url       = {https://proceedings.mlr.press/v119/laskin20a.html},
 }
 
-@Article{Hafner2022,
+@Article{Hafner2022:Hierarchical,
   author        = {Danijar Hafner and Kuang-Huei Lee and Ian Fischer and Pieter Abbeel},
   title         = {Deep Hierarchical Planning from Pixels},
   year          = {2022},
@@ -7365,6 +7371,7 @@ the agent takes as input the current state and goal, the value function depends 
   groups        = {Hierarchical RL},
   keywords      = {cs.AI, cs.LG, cs.RO, stat.ML},
   primaryclass  = {cs.AI},
+  ranking       = {rank1},
 }
 
 @Article{Wan2022,
@@ -7455,20 +7462,6 @@ the agent takes as input the current state and goal, the value function depends 
   keywords      = {cs.CL, cs.AI, cs.LG},
   primaryclass  = {cs.CL},
   priority      = {prio2},
-}
-
-@Article{Sumers2022,
-  author        = {Theodore R Sumers and Robert D Hawkins and Mark K Ho and Thomas L Griffiths and Dylan Hadfield-Menell},
-  title         = {How to talk so your robot will learn: Instructions, descriptions, and pragmatics},
-  year          = {2022},
-  month         = jun,
-  abstract      = {From the earliest years of our lives, humans use language to express our beliefs and desires. Being able to talk to artificial agents about our preferences would thus fulfill a central goal of value alignment. Yet today, we lack computational models explaining such flexible and abstract language use. To address this challenge, we consider social learning in a linear bandit setting and ask how a human might communicate preferences over behaviors (i.e. the reward function). We study two distinct types of language: instructions, which provide information about the desired policy, and descriptions, which provide information about the reward function. To explain how humans use these forms of language, we suggest they reason about both known present and unknown future states: instructions optimize for the present, while descriptions generalize to the future. We formalize this choice by extending reward design to consider a distribution over states. We then define a pragmatic listener agent that infers the speaker's reward function by reasoning about how the speaker expresses themselves. We validate our models with a behavioral experiment, demonstrating that (1) our speaker model predicts spontaneous human behavior, and (2) our pragmatic listener is able to recover their reward functions. Finally, we show that in traditional reinforcement learning settings, pragmatic social learning can integrate with and accelerate individual learning. Our findings suggest that social learning from a wider range of language -- in particular, expanding the field's present focus on instructions to include learning from descriptions -- is a promising approach for value alignment and reinforcement learning more broadly.},
-  archiveprefix = {arXiv},
-  eprint        = {2206.07870},
-  file          = {:Sumers2022 - How to Talk so Your Robot Will Learn_ Instructions, Descriptions, and Pragmatics.pdf:PDF},
-  groups        = {Language-Augmented RL},
-  keywords      = {cs.AI},
-  primaryclass  = {cs.AI},
 }
 
 @InProceedings{radulescu2022name,
@@ -8181,34 +8174,24 @@ Multi-Explore},
   url       = {https://openreview.net/forum?id=FJ42JCNNUYT},
 }
 
-@Article{Colas2022a,
-  author     = {Colas, Cédric and Karch, Tristan and Moulin-Frier, Clément and Oudeyer, Pierre-Yves},
-  journal    = {Nature Machine Intelligence},
-  title      = {Language and culture internalization for human-like autotelic AI},
-  year       = {2022},
-  issn       = {2522-5839},
-  number     = {12},
-  pages      = {1068--1076},
-  volume     = {4},
-  abstract   = {Building autonomous agents able to grow open-ended repertoires of skills across their lives is a fundamental goal of artificial intelligence (AI). A promising developmental approach recommends the design of intrinsically motivated agents that learn new skills by generating and pursuing their own goals--autotelic agents. But despite recent progress, existing algorithms still show serious limitations in terms of goal diversity, exploration, generalization or skill composition. This Perspective calls for the immersion of autotelic agents into rich socio-cultural worlds, an immensely important attribute of our environment that shapes human cognition but is mostly omitted in modern AI. Inspired by the seminal work of Vygotsky, we propose Vygotskian autotelic agents--agents able to internalize their interactions with others and turn them into cognitive tools. We focus on language and show how its structure and informational content may support the development of new cognitive functions in artificial agents as it does in humans. We justify the approach by uncovering several examples of new artificial cognitive functions emerging from interactions between language and embodiment in recent works at the intersection of deep reinforcement learning and natural language processing. Looking forward, we highlight future opportunities and challenges for Vygotskian autotelic AI research, including the use of language models as cultural models supporting artificial cognitive development.},
-  doi        = {10.1038/s42256-022-00591-4},
-  file       = {:Colas2022a - Language and Culture Internalization for Human like Autotelic AI.pdf:PDF;:Colas2022 - Vygotskian Autotelic Artificial Intelligence_ Language and Culture Internalization for Human like AI.pdf:PDF},
-  groups     = {Language-Augmented RL},
-  readstatus = {read},
-  refid      = {Colas2022},
-  url        = {https://doi.org/10.1038/s42256-022-00591-4},
-}
-
 @InProceedings{Huang2022:InnerMonol,
   author     = {Wenlong Huang and Fei Xia and Ted Xiao and Harris Chan and Jacky Liang and Pete Florence and Andy Zeng and Jonathan Tompson and Igor Mordatch and Yevgen Chebotar and Pierre Sermanet and Tomas Jackson and Noah Brown and Linda Luu and Sergey Levine and Karol Hausman and brian ichter},
-  booktitle  = {6th Annual Conference on Robot Learning},
+  booktitle  = {Proceedings of The 6th Conference on Robot Learning},
   title      = {Inner Monologue: Embodied Reasoning through Planning with Language Models},
-  year       = {2022},
+  year       = {2023},
+  editor     = {Liu, Karen and Kulic, Dana and Ichnowski, Jeff},
+  month      = {14--18 Dec},
+  pages      = {1769--1782},
+  publisher  = {PMLR},
+  series     = {Proceedings of Machine Learning Research},
+  volume     = {205},
+  abstract   = {Recent works have shown how the reasoning capabilities of Large Language Models (LLMs) can be applied to domains beyond natural language processing, such as planning and interaction for robots. These embodied problems require an agent to understand many semantic aspects of the world: the repertoire of skills available, how these skills influence the world, and how changes to the world map back to the language. LLMs planning in embodied environments need to consider not just what skills to do, but also how and when to do them - answers that change over time in response to the agent’s own choices. In this work, we investigate to what extent LLMs used in such embodied contexts can reason over sources of feedback provided through natural language, without any additional training. We propose that by leveraging environment feedback, LLMs are able to form an inner monologue that allows them to more richly process and plan in robotic control scenarios. We investigate a variety of sources of feedback, such as success detection, scene description, and human interaction. We find that closed-loop language feedback significantly improves high level instruction completion on three domains, including simulated and real table top rearrangement tasks and long-horizon mobile manipulation tasks in a kitchen environment in the real world.},
   file       = {:Huang2022_InnerMonol - Inner Monologue_ Embodied Reasoning through Planning with Language Models.pdf:PDF},
   groups     = {Language-Augmented RL},
-  ranking    = {rank2},
+  pdf        = {https://proceedings.mlr.press/v205/huang23c/huang23c.pdf},
+  ranking    = {rank3},
   readstatus = {read},
-  url        = {https://openreview.net/forum?id=3R3Pz5i0tye},
+  url        = {https://proceedings.mlr.press/v205/huang23c.html},
 }
 
 @InProceedings{Niu2021,
@@ -8425,7 +8408,8 @@ Multi-Explore},
   title     = {Reward Uncertainty for Exploration in Preference-based Reinforcement Learning},
   year      = {2022},
   file      = {:liang2022reward - Reward Uncertainty for Exploration in Preference Based Reinforcement Learning.pdf:PDF},
-  groups    = {Intrinsic goals},
+  groups    = {Intrinsic goals, RLHF},
+  ranking   = {rank1},
   url       = {https://openreview.net/forum?id=OWZVD-l-ZrC},
 }
 
@@ -9085,7 +9069,7 @@ Multi-Explore},
   url     = {https://d1wqtxts1xzle7.cloudfront.net/25341154/10.1.1.81.6446-libre.pdf?1390869093=&response-content-disposition=inline;+filename=The_dynamics_of_reinforcement_learning_i.pdf&Expires=1687783879&Signature=HnkjVTXQY7zb-IZpOSpGMEleq4psXNRlh8CpawK4Pu2NHu9-HVifAEUM2xxFnN7SM10UJ8sSFEXZvRvdXHjNmMpqqjDb8sz85-HLI5k0fzOcNQKfgIbtWLqnzeH0JAtXntZzY4JcZkxNCZ0vxzkbQLl0Kr9SAH9hkzM~PvA-qyoFaQsCjsaXR~-EIPnZ4ql0AZa1ygm~Ao22MZDGQcfwouPOETnxCMaJ-ctGGZ9R2twlg642Uwfyw25VysIJkF8DifdKy2LDYCEUn9oh3C-YQ4epUAAHa4wQup0mmfrN~SgwFa2Qm10gRdpN4pMIeschXS4y~kT~WmjN3cI~Xg-bXA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA},
 }
 
-@InProceedings{Ouyang2022,
+@InProceedings{Ouyang2022:InstructGPT,
   author     = {Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and Schulman, John and Hilton, Jacob and Kelton, Fraser and Miller, Luke and Simens, Maddie and Askell, Amanda and Welinder, Peter and Christiano, Paul F and Leike, Jan and Lowe, Ryan},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Training language models to follow instructions with human feedback},
@@ -9097,7 +9081,7 @@ Multi-Explore},
   comment    = {InstructGPT
 ChatGPT},
   file       = {:Ouyang2022 - Training Language Models to Follow Instructions with Human Feedback.pdf:PDF;:Ouyang2022 - Training Language Models to Follow Instructions with Human Feedback (1).pdf:PDF},
-  groups     = {Question Answering, Language generation with RL},
+  groups     = {Question Answering, Language generation with RL, RLHF},
   ranking    = {rank5},
   readstatus = {skimmed},
   url        = {https://proceedings.neurips.cc/paper_files/paper/2022/file/b1efde53be364a73914f58805a001731-Paper-Conference.pdf},
@@ -9114,7 +9098,7 @@ ChatGPT},
   doi           = {10.48550/ARXIV.1907.00456},
   eprint        = {1907.00456},
   file          = {:Jaques2019a - Way off Policy Batch Deep Reinforcement Learning of Implicit Human Preferences in Dialog.pdf:PDF},
-  groups        = {Language generation with RL},
+  groups        = {Language generation with RL, RLHF},
   keywords      = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Machine Learning (stat.ML), FOS: Computer and information sciences},
   primaryclass  = {cs.LG},
   publisher     = {arXiv},
@@ -9151,7 +9135,7 @@ ChatGPT},
   doi           = {10.48550/ARXIV.1909.08593},
   eprint        = {1909.08593},
   file          = {:Ziegler2019 - Fine Tuning Language Models from Human Preferences.pdf:PDF},
-  groups        = {Language generation with RL},
+  groups        = {Language generation with RL, RLHF},
   keywords      = {Computation and Language (cs.CL), Machine Learning (cs.LG), Machine Learning (stat.ML), FOS: Computer and information sciences},
   primaryclass  = {cs.CL},
   publisher     = {arXiv},
@@ -9281,13 +9265,13 @@ ChatGPT},
   doi        = {10.48550/ARXIV.2303.03378},
   eprint     = {2303.03378},
   file       = {:Driess2023 - PaLM E_ an Embodied Multimodal Language Model.pdf:PDF},
-  groups     = {Language-Augmented RL},
+  groups     = {Large Language Models, Visual-and-Language Navigation},
   keywords   = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Robotics (cs.RO), FOS: Computer and information sciences},
   ranking    = {rank4},
   readstatus = {read},
 }
 
-@InProceedings{Dosovitskiy2021,
+@InProceedings{Dosovitskiy2021:VisionTransformer,
   author    = {Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil Houlsby},
   booktitle = {International Conference on Learning Representations},
   title     = {An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
@@ -9380,7 +9364,7 @@ ChatGPT},
   pages     = {72--80},
   volume    = {16},
   doi       = {10.1016/j.tics.2011.11.018},
-  groups    = {RL in other domains of science},
+  groups    = {RL in Biology and Neuroscience},
   publisher = {Elsevier BV},
   ranking   = {rank3},
 }
@@ -9396,7 +9380,7 @@ ChatGPT},
   pages     = {1593--1599},
   volume    = {275},
   doi       = {10.1126/science.275.5306.1593},
-  groups    = {RL in other domains of science},
+  groups    = {RL in Biology and Neuroscience},
   publisher = {American Association for the Advancement of Science (AAAS)},
   ranking   = {rank5},
 }
@@ -9412,7 +9396,7 @@ ChatGPT},
   pages     = {127--138},
   volume    = {11},
   doi       = {10.1038/nrn2787},
-  groups    = {RL in other domains of science},
+  groups    = {RL in Biology and Neuroscience},
   publisher = {Springer Science and Business Media LLC},
   ranking   = {rank5},
 }
@@ -9425,7 +9409,7 @@ ChatGPT},
   month   = {01},
   volume  = {Vol. 2},
   file    = {:RescorlaWagner.1972.pdf:PDF},
-  groups  = {RL in other domains of science},
+  groups  = {RL in Biology and Neuroscience},
   journal = {Classical Conditioning II: Current Research and Theory},
   ranking = {rank5},
 }
@@ -9442,7 +9426,7 @@ ChatGPT},
   volume    = {278},
   doi       = {10.1098/rspb.2010.2325},
   file      = {:brembs-2010-towards-a-scientific-concept-of-free-will-as-a-biological-trait-spontaneous-actions-and-decision-making-in.pdf:PDF},
-  groups    = {RL in other domains of science},
+  groups    = {RL in Biology and Neuroscience},
   publisher = {The Royal Society},
   ranking   = {rank3},
 }
@@ -9458,7 +9442,7 @@ ChatGPT},
   volume    = {98},
   doi       = {10.1037/0735-7036.98.4.381},
   file      = {:gardner1984.pdf:PDF},
-  groups    = {RL in other domains of science},
+  groups    = {RL in Biology and Neuroscience},
   publisher = {American Psychological Association (APA)},
   ranking   = {rank3},
 }
@@ -9473,9 +9457,10 @@ ChatGPT},
   pages     = {1--118},
   volume    = {16},
   doi       = {10.1561/2200000086},
-  file      = {:9781638280576-summary.pdf:PDF},
+  file      = {:Moerland2023 - Model Based Reinforcement Learning_ a Survey.pdf:PDF},
   groups    = {Model based},
   publisher = {Now Publishers},
+  ranking   = {rank4},
 }
 
 @Article{Hafner2023,
@@ -9514,18 +9499,19 @@ ChatGPT},
 }
 
 @Book{Sutton2018:RL,
-  author    = {Richard S. Sutton and Andrew G. Barto},
-  publisher = {The MIT Press},
-  title     = {Reinforcement Learning: An Introduction, second edition},
-  year      = {2018},
-  file      = {:Sutton2018_RL - Reinforcement Learning_ an Introduction, Second Edition.pdf:PDF},
-  groups    = {RL},
-  ranking   = {rank5},
-  url       = {http://incompleteideas.net/sutton/book/RLbook2018.pdf},
+  author     = {Richard S. Sutton and Andrew G. Barto},
+  publisher  = {The MIT Press},
+  title      = {Reinforcement Learning: An Introduction, second edition},
+  year       = {2018},
+  file       = {:Sutton2018_RL - Reinforcement Learning_ an Introduction, Second Edition.pdf:PDF},
+  groups     = {RL},
+  ranking    = {rank5},
+  readstatus = {read},
+  url        = {http://incompleteideas.net/sutton/book/RLbook2018.pdf},
 }
 
 @PhdThesis{Watkins1989:RL,
-  author         = {WATKINS C. J. C. H.},
+  author         = {Watkins, Christopher J. C. H.},
   title          = {Learning from Delayed Rewards},
   year           = {1989},
   comment-doctoq = {Q-learning Model-based RL},
@@ -9547,7 +9533,7 @@ ChatGPT},
   volume    = {49},
   doi       = {10.1109/jrproc.1961.287775},
   file      = {:Minsky1961 - Steps toward Artificial Intelligence.pdf:PDF},
-  groups    = {RL},
+  groups    = {RL, Artificial Intelligence},
   publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
   ranking   = {rank5},
 }
@@ -9570,15 +9556,15 @@ ChatGPT},
 
 @Unpublished{Andreae2017,
   author   = {John H. Andreae},
-  note     = {2017},
   title    = {Working memory for the associative learning of language},
+  year     = {2017},
   file     = {:Andreae2017 - Working Memory for the Associative Learning of Language.pdf:PDF},
   groups   = {RL},
   priority = {prio1},
   url      = {http://www.incompleteideas.net/papers/Andreae-2017b.pdf},
 }
 
-@Article{Silver2021,
+@Article{Silver2021:RewardEnough,
   author    = {Silver, David and Singh, Satinder and Precup, Doina and Sutton, Richard S.},
   journal   = {Artificial Intelligence},
   title     = {Reward is enough},
@@ -9589,7 +9575,7 @@ ChatGPT},
   volume    = {299},
   doi       = {10.1016/j.artint.2021.103535},
   file      = {:Silver2021 - Reward Is Enough.pdf:PDF},
-  groups    = {RL},
+  groups    = {RL, Artificial Intelligence},
   publisher = {Elsevier BV},
   ranking   = {rank4},
 }
@@ -9628,7 +9614,7 @@ ChatGPT},
   ranking       = {rank2},
 }
 
-@InProceedings{Mitchell2021,
+@InProceedings{Mitchell2021:Harder,
   author     = {Mitchell, Melanie},
   booktitle  = {Proceedings of the Genetic and Evolutionary Computation Conference},
   title      = {Why AI is harder than we think},
@@ -9643,24 +9629,970 @@ ChatGPT},
   ranking    = {rank2},
 }
 
+@Article{Samuel1959:Checkers,
+  author    = {Samuel, A. L.},
+  journal   = {IBM Journal of Research and Development},
+  title     = {Some Studies in Machine Learning Using the Game of Checkers},
+  year      = {1959},
+  issn      = {0018-8646},
+  month     = jul,
+  number    = {3},
+  pages     = {210--229},
+  volume    = {3},
+  comment   = {Checkers with temporal difference learning},
+  doi       = {10.1147/rd.33.0210},
+  file      = {:Samuel1959 - Some Studies in Machine Learning Using the Game of Checkers.pdf:PDF;:Samuel1959 - Some Studies in Machine Learning Using the Game of Checkers (1).pdf:PDF},
+  groups    = {RL},
+  publisher = {IBM},
+  ranking   = {rank5},
+}
+
+@Article{Barto1983:ActorCritic,
+  author    = {Barto, Andrew G. and Sutton, Richard S. and Anderson, Charles W.},
+  journal   = {IEEE Transactions on Systems, Man, and Cybernetics},
+  title     = {Neuronlike adaptive elements that can solve difficult learning control problems},
+  year      = {1983},
+  issn      = {2168-2909},
+  month     = sep,
+  number    = {5},
+  pages     = {834--846},
+  volume    = {SMC-13},
+  comment   = {first Actor-Critic architecture},
+  doi       = {10.1109/tsmc.1983.6313077},
+  file      = {:Neuronlike Adaptive Elements That Can Solve Difficult Learning Control Problems Barto1983.pdf:PDF},
+  groups    = {RL},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking   = {rank5},
+}
+
+@Article{Sutton1988:TD,
+  author    = {Sutton, Richard S.},
+  journal   = {Machine Learning},
+  title     = {Learning to predict by the methods of temporal differences},
+  year      = {1988},
+  issn      = {1573-0565},
+  month     = aug,
+  number    = {1},
+  pages     = {9--44},
+  volume    = {3},
+  comment   = {TD(lambda)},
+  doi       = {10.1007/bf00115009},
+  file      = {:Sutton1988 - Learning to Predict by the Methods of Temporal Differences.pdf:PDF},
+  groups    = {RL},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank5},
+}
+
+@Article{Tesauro1994,
+  author    = {Tesauro, Gerald},
+  journal   = {Neural Computation},
+  title     = {TD-Gammon, a Self-Teaching Backgammon Program, Achieves Master-Level Play},
+  year      = {1994},
+  issn      = {1530-888X},
+  month     = mar,
+  number    = {2},
+  pages     = {215--219},
+  volume    = {6},
+  doi       = {10.1162/neco.1994.6.2.215},
+  file      = {:Tesauro1994 - TD Gammon, a Self Teaching Backgammon Program, Achieves Master Level Play.pdf:PDF},
+  groups    = {RL},
+  publisher = {MIT Press - Journals},
+  ranking   = {rank4},
+}
+
+@Article{Michie1968:Boxes,
+  author    = {Michie, Donald and Chambers, Roger A},
+  journal   = {Machine intelligence},
+  title     = {BOXES: An experiment in adaptive control},
+  year      = {1968},
+  number    = {2},
+  pages     = {137--152},
+  volume    = {2},
+  file      = {:Michie1968_Boxes - BOXES_ an Experiment in Adaptive Control.pdf:PDF},
+  groups    = {RL},
+  publisher = {Citeseer},
+  ranking   = {rank3},
+  url       = {https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=2f027193fb703d0af58ec382bd1438daff9417d7},
+}
+
+@Article{Bellemare2013:Atari,
+  author    = {Bellemare, M. G. and Naddaf, Y. and Veness, J. and Bowling, M.},
+  journal   = {Journal of Artificial Intelligence Research},
+  title     = {The Arcade Learning Environment: An Evaluation Platform for General Agents},
+  year      = {2013},
+  issn      = {1076-9757},
+  month     = jun,
+  pages     = {253--279},
+  volume    = {47},
+  doi       = {10.1613/jair.3912},
+  file      = {:10819-Article Text-20168-1-10-20180216.pdf:PDF},
+  groups    = {RL, Environments},
+  publisher = {AI Access Foundation},
+  ranking   = {rank5},
+}
+
+@Article{Guss2019:MineRL,
+  author        = {Guss, William H. and Codel, Cayden and Hofmann, Katja and Houghton, Brandon and Kuno, Noboru and Milani, Stephanie and Mohanty, Sharada and Liebana, Diego Perez and Salakhutdinov, Ruslan and Topin, Nicholay and Veloso, Manuela and Wang, Phillip},
+  title         = {The MineRL 2019 Competition on Sample Efficient Reinforcement Learning using Human Priors},
+  year          = {2019},
+  month         = apr,
+  abstract      = {Though deep reinforcement learning has led to breakthroughs in many difficult domains, these successes have required an ever-increasing number of samples. As state-of-the-art reinforcement learning (RL) systems require an exponentially increasing number of samples, their development is restricted to a continually shrinking segment of the AI community. Likewise, many of these systems cannot be applied to real-world problems, where environment samples are expensive. Resolution of these limitations requires new, sample-efficient methods. To facilitate research in this direction, we introduce the MineRL Competition on Sample Efficient Reinforcement Learning using Human Priors. The primary goal of the competition is to foster the development of algorithms which can efficiently leverage human demonstrations to drastically reduce the number of samples needed to solve complex, hierarchical, and sparse environments. To that end, we introduce: (1) the Minecraft ObtainDiamond task, a sequential decision making environment requiring long-term planning, hierarchical control, and efficient exploration methods; and (2) the MineRL-v0 dataset, a large-scale collection of over 60 million state-action pairs of human demonstrations that can be resimulated into embodied trajectories with arbitrary modifications to game state and visuals. Participants will compete to develop systems which solve the ObtainDiamond task with a limited number of samples from the environment simulator, Malmo. The competition is structured into two rounds in which competitors are provided several paired versions of the dataset and environment with different game textures. At the end of each round, competitors will submit containerized versions of their learning algorithms and they will then be trained/evaluated from scratch on a hold-out dataset-environment pair for a total of 4-days on a prespecified hardware platform.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.1904.10079},
+  eprint        = {1904.10079},
+  file          = {:Guss2019 - The MineRL 2019 Competition on Sample Efficient Reinforcement Learning Using Human Priors.pdf:PDF},
+  groups        = {Environments},
+  keywords      = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  publisher     = {arXiv},
+  ranking       = {rank1},
+}
+
+@InProceedings{Guss2019:MineRLDataset,
+  author    = {Guss, William H. and Houghton, Brandon and Topin, Nicholay and Wang, Phillip and Codel, Cayden and Veloso, Manuela and Salakhutdinov, Ruslan},
+  booktitle = {Proceedings of the 28th International Joint Conference on Artificial Intelligence},
+  title     = {MineRL: a large-scale dataset of minecraft demonstrations},
+  year      = {2019},
+  pages     = {2442–2448},
+  publisher = {AAAI Press},
+  series    = {IJCAI'19},
+  abstract  = {The sample inefficiency of standard deep reinforcement learning methods precludes their application to many real-world problems. Methods which leverage human demonstrations require fewer samples but have been researched less. As demonstrated in the computer vision and natural language processing communities, large-scale datasets have the capacity to facilitate research by serving as an experimental and benchmarking platform for new methods. However, existing datasets compatible with reinforcement learning simulators do not have sufficient scale, structure, and quality to enable the further development and evaluation of methods focused on using human examples. Therefore, we introduce a comprehensive, large-scale, simulator-paired dataset of human demonstrations: MineRL. The dataset consists of over 60 million automatically annotated state-action pairs across a variety of related tasks in Minecraft, a dynamic, 3D, open-world environment. We present a novel data collection scheme which allows for the ongoing introduction of new tasks and the gathering of complete state information suitable for a variety of methods. We demonstrate the hierarchality, diversity, and scale of the MineRL dataset. Further, we show the difficulty of the Minecraft domain along with the potential of MineRL in developing techniques to solve key research challenges within it.},
+  file      = {:Guss2019_MineRLDataset - MineRL_ a Large Scale Dataset of Minecraft Demonstrations.pdf:PDF},
+  groups    = {Environments},
+  isbn      = {9780999241141},
+  location  = {Macao, China},
+  numpages  = {7},
+  ranking   = {rank2},
+}
+
+@PhdThesis{Laud2004:Shaping,
+  author  = {Laud, Adam Daniel},
+  school  = {University of Illinois at Urbana-Champaign},
+  title   = {Theory and Application of Reward Shaping in Reinforcement Learning},
+  year    = {2004},
+  file    = {:Theory and Application of Reward Shaping in Reinforcement Learning.pdf:PDF},
+  groups  = {RL},
+  ranking = {rank2},
+}
+
+@InProceedings{Tsitsiklis1996,
+  author    = {Tsitsiklis, John and Van Roy, Benjamin},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Analysis of Temporal-Diffference Learning with Function Approximation},
+  year      = {1996},
+  editor    = {M.C. Mozer and M. Jordan and T. Petsche},
+  publisher = {MIT Press},
+  volume    = {9},
+  file      = {:Tsitsiklis1996 - Analysis of Temporal Diffference Learning with Function Approximation.pdf:PDF},
+  groups    = {RL},
+  ranking   = {rank5},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/1996/file/e00406144c1e7e35240afed70f34166a-Paper.pdf},
+}
+
+@Book{Busoniu2017:FuncApprox,
+  author    = {Busoniu, Lucian and Babuska, Robert and De Schutter, Bart and Ernst, Damien},
+  publisher = {CRC press},
+  title     = {Reinforcement learning and dynamic programming using function approximators},
+  year      = {2017},
+  file      = {:busoniu2017reinforcement - Reinforcement Learning and Dynamic Programming Using Function Approximators.pdf:PDF},
+  groups    = {RL},
+  ranking   = {rank5},
+  url       = {https://orbi.uliege.be/bitstream/2268/27963/1/book-FA-RL-DP.pdf},
+}
+
+@Book{Bishop2006:Pattern,
+  author    = {Bishop, Christopher M.},
+  publisher = {Springer New York, NY},
+  title     = {Pattern recognition and machine learning},
+  year      = {2006},
+  isbn      = {978-0-387-31073-2},
+  file      = {:Bishop2006_Pattern - Pattern Recognition and Machine Learning.pdf:PDF},
+  groups    = {Machine Learning},
+  ranking   = {rank5},
+  url       = {https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf},
+}
+
+@InProceedings{Bagnell2001:Helicopter,
+  author    = {Bagnell, J.A. and Schneider, J.G.},
+  booktitle = {Proceedings 2001 ICRA. IEEE International Conference on Robotics and Automation (Cat. No.01CH37164)},
+  title     = {Autonomous helicopter control using reinforcement learning policy search methods},
+  year      = {2001},
+  pages     = {1615-1620 vol.2},
+  volume    = {2},
+  doi       = {10.1109/ROBOT.2001.932842},
+  file      = {:file.pdf:PDF},
+  groups    = {Model based, RL, POMDP, RL in Robotics, Navigation},
+  keywords  = {Helicopters;Search methods;Robots;Robust control;Learning systems;Optimal control;Uncertainty;Control system synthesis;Artificial intelligence;Computer crashes},
+  ranking   = {rank3},
+}
+
+@InProceedings{Abbeel2006,
+  author    = {Abbeel, Pieter and Coates, Adam and Quigley, Morgan and Ng, Andrew},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {An Application of Reinforcement Learning to Aerobatic Helicopter Flight},
+  year      = {2006},
+  editor    = {B. Sch\"{o}lkopf and J. Platt and T. Hoffman},
+  publisher = {MIT Press},
+  volume    = {19},
+  file      = {:Abbeel2006 - An Application of Reinforcement Learning to Aerobatic Helicopter Flight.pdf:PDF},
+  groups    = {RL, RL in Robotics, Navigation},
+  ranking   = {rank4},
+  url       = {https://proceedings.neurips.cc/paper/2006/hash/98c39996bf1543e974747a2549b3107c-Abstract.html},
+}
+
+@InProceedings{Sumers2022a,
+  author    = {Sumers, Theodore and Hawkins, Robert and Ho, Mark K and Griffiths, Tom and Hadfield-Menell, Dylan},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {How to talk so AI will learn: Instructions, descriptions, and autonomy},
+  year      = {2022},
+  editor    = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+  pages     = {34762--34775},
+  publisher = {Curran Associates, Inc.},
+  volume    = {35},
+  file      = {:Sumers2022a - How to Talk so AI Will Learn_ Instructions, Descriptions, and Autonomy.pdf:PDF},
+  groups    = {Language-Augmented RL},
+  priority  = {prio1},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/e0cfde0ff720fa9674bb976e7f1b99d4-Paper-Conference.pdf},
+}
+
+@Article{Sigaud2023,
+  author        = {Sigaud, Olivier and Baldassarre, Gianluca and Colas, Cedric and Doncieux, Stephane and Duro, Richard and Perrin-Gilbert, Nicolas and Santucci, Vieri Giuliano},
+  title         = {A Definition of Open-Ended Learning Problems for Goal-Conditioned Agents},
+  year          = {2023},
+  month         = nov,
+  abstract      = {A lot of recent machine learning research papers have ``open-ended learning'' in their title. But very few of them attempt to define what they mean when using the term. Even worse, when looking more closely there seems to be no consensus on what distinguishes open-ended learning from related concepts such as continual learning, lifelong learning or autotelic learning. In this paper, we contribute to fixing this situation. After illustrating the genealogy of the concept and more recent perspectives about what it truly means, we outline that open-ended learning is generally conceived as a composite notion encompassing a set of diverse properties. In contrast with previous approaches, we propose to isolate a key elementary property of open-ended processes, which is to produce elements from time to time (e.g., observations, options, reward functions, and goals), over an infinite horizon, that are considered novel from an observer's perspective. From there, we build the notion of open-ended learning problems and focus in particular on the subset of open-ended goal-conditioned reinforcement learning problems in which agents can learn a growing repertoire of goal-driven skills. Finally, we highlight the work that remains to be performed to fill the gap between our elementary definition and the more involved notions of open-ended learning that developmental AI researchers may have in mind.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2311.00344},
+  eprint        = {2311.00344},
+  file          = {:Sigaud2023 - A Definition of Open Ended Learning Problems for Goal Conditioned Agents.pdf:PDF},
+  groups        = {Open-Ended Learning},
+  keywords      = {Artificial Intelligence (cs.AI), FOS: Computer and information sciences},
+  primaryclass  = {cs.AI},
+  publisher     = {arXiv},
+}
+
+@InProceedings{Christiano2017:RLHF,
+  author    = {Christiano, Paul F and Leike, Jan and Brown, Tom and Martic, Miljan and Legg, Shane and Amodei, Dario},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Deep Reinforcement Learning from Human Preferences},
+  year      = {2017},
+  editor    = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {30},
+  file      = {:Christiano2017 - Deep Reinforcement Learning from Human Preferences.pdf:PDF},
+  groups    = {RLHF},
+  ranking   = {rank5},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2017/file/d5e2c0adad503c91f91df240d0cd4e49-Paper.pdf},
+}
+
+@Article{Leike2018:RewardModel,
+  author        = {Leike, Jan and Krueger, David and Everitt, Tom and Martic, Miljan and Maini, Vishal and Legg, Shane},
+  title         = {Scalable agent alignment via reward modeling: a research direction},
+  year          = {2018},
+  month         = nov,
+  abstract      = {One obstacle to applying reinforcement learning algorithms to real-world problems is the lack of suitable reward functions. Designing such reward functions is difficult in part because the user only has an implicit understanding of the task objective. This gives rise to the agent alignment problem: how do we create agents that behave in accordance with the user's intentions? We outline a high-level research direction to solve the agent alignment problem centered around reward modeling: learning a reward function from interaction with the user and optimizing the learned reward function with reinforcement learning. We discuss the key challenges we expect to face when scaling reward modeling to complex and general domains, concrete approaches to mitigate these challenges, and ways to establish trust in the resulting agents.},
+  archiveprefix = {arXiv},
+  comment       = {Reward modelling},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.1811.07871},
+  eprint        = {1811.07871},
+  file          = {:Leike2018 - Scalable Agent Alignment Via Reward Modeling_ a Research Direction.pdf:PDF},
+  groups        = {RLHF},
+  keywords      = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Neural and Evolutionary Computing (cs.NE), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  publisher     = {arXiv},
+  ranking       = {rank3},
+}
+
+@InProceedings{Stiennon2020,
+  author    = {Stiennon, Nisan and Ouyang, Long and Wu, Jeffrey and Ziegler, Daniel and Lowe, Ryan and Voss, Chelsea and Radford, Alec and Amodei, Dario and Christiano, Paul F},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Learning to summarize with human feedback},
+  year      = {2020},
+  editor    = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+  pages     = {3008--3021},
+  publisher = {Curran Associates, Inc.},
+  volume    = {33},
+  file      = {:Stiennon2020 - Learning to Summarize with Human Feedback.pdf:PDF},
+  groups    = {RLHF},
+  ranking   = {rank4},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2020/file/1f89885d556929e98d3ef9b86448f951-Paper.pdf},
+}
+
+@Article{Casper2023,
+  author        = {Casper, Stephen and Davies, Xander and Shi, Claudia and Gilbert, Thomas Krendl and Scheurer, Jérémy and Rando, Javier and Freedman, Rachel and Korbak, Tomasz and Lindner, David and Freire, Pedro and Wang, Tony and Marks, Samuel and Segerie, Charbel-Raphaël and Carroll, Micah and Peng, Andi and Christoffersen, Phillip and Damani, Mehul and Slocum, Stewart and Anwar, Usman and Siththaranjan, Anand and Nadeau, Max and Michaud, Eric J. and Pfau, Jacob and Krasheninnikov, Dmitrii and Chen, Xin and Langosco, Lauro and Hase, Peter and Bıyık, Erdem and Dragan, Anca and Krueger, David and Sadigh, Dorsa and Hadfield-Menell, Dylan},
+  title         = {Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback},
+  year          = {2023},
+  month         = jul,
+  abstract      = {Reinforcement learning from human feedback (RLHF) is a technique for training AI systems to align with human goals. RLHF has emerged as the central method used to finetune state-of-the-art large language models (LLMs). Despite this popularity, there has been relatively little public work systematizing its flaws. In this paper, we (1) survey open problems and fundamental limitations of RLHF and related methods; (2) overview techniques to understand, improve, and complement RLHF in practice; and (3) propose auditing and disclosure standards to improve societal oversight of RLHF systems. Our work emphasizes the limitations of RLHF and highlights the importance of a multi-faceted approach to the development of safer AI systems.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2307.15217},
+  eprint        = {2307.15217},
+  file          = {:Casper2023 - Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback.pdf:PDF},
+  groups        = {RLHF},
+  keywords      = {Artificial Intelligence (cs.AI), Computation and Language (cs.CL), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.AI},
+  publisher     = {arXiv},
+  ranking       = {rank2},
+}
+
+@Article{Wu2021,
+  author        = {Wu, Jeff and Ouyang, Long and Ziegler, Daniel M. and Stiennon, Nisan and Lowe, Ryan and Leike, Jan and Christiano, Paul},
+  title         = {Recursively Summarizing Books with Human Feedback},
+  year          = {2021},
+  month         = sep,
+  abstract      = {A major challenge for scaling machine learning is training models to perform tasks that are very difficult or time-consuming for humans to evaluate. We present progress on this problem on the task of abstractive summarization of entire fiction novels. Our method combines learning from human feedback with recursive task decomposition: we use models trained on smaller parts of the task to assist humans in giving feedback on the broader task. We collect a large volume of demonstrations and comparisons from human labelers, and fine-tune GPT-3 using behavioral cloning and reward modeling to do summarization recursively. At inference time, the model first summarizes small sections of the book and then recursively summarizes these summaries to produce a summary of the entire book. Our human labelers are able to supervise and evaluate the models quickly, despite not having read the entire books themselves. Our resulting model generates sensible summaries of entire books, even matching the quality of human-written summaries in a few cases ($\sim5\%$ of books). We achieve state-of-the-art results on the recent BookSum dataset for book-length summarization. A zero-shot question-answering model using these summaries achieves state-of-the-art results on the challenging NarrativeQA benchmark for answering questions about books and movie scripts. We release datasets of samples from our model.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2109.10862},
+  eprint        = {2109.10862},
+  file          = {:Wu2021 - Recursively Summarizing Books with Human Feedback.pdf:PDF},
+  groups        = {RLHF},
+  keywords      = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.CL},
+  publisher     = {arXiv},
+  ranking       = {rank2},
+}
+
+@Article{Menick2022,
+  author        = {Menick, Jacob and Trebacz, Maja and Mikulik, Vladimir and Aslanides, John and Song, Francis and Chadwick, Martin and Glaese, Mia and Young, Susannah and Campbell-Gillingham, Lucy and Irving, Geoffrey and McAleese, Nat},
+  title         = {Teaching language models to support answers with verified quotes},
+  year          = {2022},
+  month         = mar,
+  abstract      = {Recent large language models often answer factual questions correctly. But users can't trust any given claim a model makes without fact-checking, because language models can hallucinate convincing nonsense. In this work we use reinforcement learning from human preferences (RLHP) to train "open-book" QA models that generate answers whilst also citing specific evidence for their claims, which aids in the appraisal of correctness. Supporting evidence is drawn from multiple documents found via a search engine, or from a single user-provided document. Our 280 billion parameter model, GopherCite, is able to produce answers with high quality supporting evidence and abstain from answering when unsure. We measure the performance of GopherCite by conducting human evaluation of answers to questions in a subset of the NaturalQuestions and ELI5 datasets. The model's response is found to be high-quality 80\% of the time on this Natural Questions subset, and 67\% of the time on the ELI5 subset. Abstaining from the third of questions for which it is most unsure improves performance to 90\% and 80\% respectively, approaching human baselines. However, analysis on the adversarial TruthfulQA dataset shows why citation is only one part of an overall strategy for safety and trustworthiness: not all claims supported by evidence are true.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2203.11147},
+  eprint        = {2203.11147},
+  file          = {:Menick2022 - Teaching Language Models to Support Answers with Verified Quotes.pdf:PDF},
+  groups        = {RLHF},
+  keywords      = {Computation and Language (cs.CL), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.CL},
+  publisher     = {arXiv},
+  ranking       = {rank2},
+}
+
+@Article{Nakano2021,
+  author        = {Nakano, Reiichiro and Hilton, Jacob and Balaji, Suchir and Wu, Jeff and Ouyang, Long and Kim, Christina and Hesse, Christopher and Jain, Shantanu and Kosaraju, Vineet and Saunders, William and Jiang, Xu and Cobbe, Karl and Eloundou, Tyna and Krueger, Gretchen and Button, Kevin and Knight, Matthew and Chess, Benjamin and Schulman, John},
+  title         = {WebGPT: Browser-assisted question-answering with human feedback},
+  year          = {2021},
+  month         = dec,
+  abstract      = {We fine-tune GPT-3 to answer long-form questions using a text-based web-browsing environment, which allows the model to search and navigate the web. By setting up the task so that it can be performed by humans, we are able to train models on the task using imitation learning, and then optimize answer quality with human feedback. To make human evaluation of factual accuracy easier, models must collect references while browsing in support of their answers. We train and evaluate our models on ELI5, a dataset of questions asked by Reddit users. Our best model is obtained by fine-tuning GPT-3 using behavior cloning, and then performing rejection sampling against a reward model trained to predict human preferences. This model's answers are preferred by humans 56% of the time to those of our human demonstrators, and 69% of the time to the highest-voted answer from Reddit.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2112.09332},
+  eprint        = {2112.09332},
+  file          = {:Nakano2021 - WebGPT_ Browser Assisted Question Answering with Human Feedback.pdf:PDF},
+  groups        = {RLHF},
+  keywords      = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.CL},
+  publisher     = {arXiv},
+  ranking       = {rank3},
+}
+
+@InProceedings{Gao2023:RewardModel,
+  author    = {Gao, Leo and Schulman, John and Hilton, Jacob},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  title     = {Scaling Laws for Reward Model Overoptimization},
+  year      = {2023},
+  editor    = {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  month     = {23--29 Jul},
+  pages     = {10835--10866},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {202},
+  abstract  = {In reinforcement learning from human feedback, it is common to optimize against a reward model trained to predict human preferences. Because the reward model is an imperfect proxy, optimizing its value too much can hinder ground truth performance, in accordance with Goodhart’s law. This effect has been frequently observed, but not carefully measured due to the expense of collecting human preference data. In this work, we use a synthetic setup in which a fixed “gold-standard” reward model plays the role of humans, providing labels used to train a proxy reward model. We study how the gold reward model score changes as we optimize against the proxy reward model using either reinforcement learning or best-of-$n$ sampling. We find that this relationship follows a different functional form depending on the method of optimization, and that in both cases its coefficients scale smoothly with the number of reward model parameters. We also study the effect on this relationship of the size of the reward model dataset, the number of reward model and policy parameters, and the coefficient of the KL penalty added to the reward in the reinforcement learning setup. We explore the implications of these empirical results for theoretical considerations in AI alignment.},
+  file      = {:Gao2023_RewardModel - Scaling Laws for Reward Model Overoptimization.pdf:PDF},
+  groups    = {RLHF},
+  pdf       = {https://proceedings.mlr.press/v202/gao23h/gao23h.pdf},
+  ranking   = {rank2},
+  url       = {https://proceedings.mlr.press/v202/gao23h.html},
+}
+
+@Article{Charpentier2021:Economics,
+  author    = {Charpentier, Arthur and Élie, Romuald and Remlinger, Carl},
+  journal   = {Computational Economics},
+  title     = {Reinforcement Learning in Economics and Finance},
+  year      = {2021},
+  issn      = {1572-9974},
+  month     = apr,
+  number    = {1},
+  pages     = {425--462},
+  volume    = {62},
+  doi       = {10.1007/s10614-021-10119-4},
+  groups    = {RL in Economics},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank2},
+}
+
+@Article{Arthur1991:Economics,
+  author    = {W. Brian Arthur},
+  journal   = {The American Economic Review},
+  title     = {Designing Economic Agents that Act like Human Agents: A Behavioral Approach to Bounded Rationality},
+  year      = {1991},
+  issn      = {00028282},
+  number    = {2},
+  pages     = {353--359},
+  volume    = {81},
+  groups    = {RL in Economics},
+  publisher = {American Economic Association},
+  ranking   = {rank3},
+  url       = {http://www.jstor.org/stable/2006884},
+  urldate   = {2024-02-29},
+}
+
+@Article{Teng2023,
+  author    = {Teng, Siyu and Hu, Xuemin and Deng, Peng and Li, Bai and Li, Yuchen and Ai, Yunfeng and Yang, Dongsheng and Li, Lingxi and Xuanyuan, Zhe and Zhu, Fenghua and Chen, Long},
+  journal   = {IEEE Transactions on Intelligent Vehicles},
+  title     = {Motion Planning for Autonomous Driving: The State of the Art and Future Perspectives},
+  year      = {2023},
+  issn      = {2379-8858},
+  month     = jun,
+  number    = {6},
+  pages     = {3692--3711},
+  volume    = {8},
+  doi       = {10.1109/tiv.2023.3274536},
+  file      = {:Teng2023 - Motion Planning for Autonomous Driving_ the State of the Art and Future Perspectives.pdf:PDF},
+  groups    = {Autonomous Driving},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking   = {rank2},
+}
+
+@Article{Chen2023:EndToEndDriving,
+  author        = {Chen, Li and Wu, Penghao and Chitta, Kashyap and Jaeger, Bernhard and Geiger, Andreas and Li, Hongyang},
+  title         = {End-to-end Autonomous Driving: Challenges and Frontiers},
+  year          = {2023},
+  month         = jun,
+  abstract      = {The autonomous driving community has witnessed a rapid growth in approaches that embrace an end-to-end algorithm framework, utilizing raw sensor input to generate vehicle motion plans, instead of concentrating on individual tasks such as detection and motion prediction. End-to-end systems, in comparison to modular pipelines, benefit from joint feature optimization for perception and planning. This field has flourished due to the availability of large-scale datasets, closed-loop evaluation, and the increasing need for autonomous driving algorithms to perform effectively in challenging scenarios. In this survey, we provide a comprehensive analysis of more than 250 papers, covering the motivation, roadmap, methodology, challenges, and future trends in end-to-end autonomous driving. We delve into several critical challenges, including multi-modality, interpretability, causal confusion, robustness, and world models, amongst others. Additionally, we discuss current advancements in foundation models and visual pre-training, as well as how to incorporate these techniques within the end-to-end driving framework. To facilitate future research, we maintain an active repository that contains up-to-date links to relevant literature and open-source projects at https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution Non Commercial Share Alike 4.0 International},
+  doi           = {10.48550/ARXIV.2306.16927},
+  eprint        = {2306.16927},
+  file          = {:https___doi.org_10.48550_arxiv.2306.16927 - End to End Autonomous Driving_ Challenges and Frontiers.pdf:PDF},
+  groups        = {Autonomous Driving},
+  keywords      = {Robotics (cs.RO), Artificial Intelligence (cs.AI), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.RO},
+  publisher     = {arXiv},
+  ranking       = {rank1},
+}
+
+@Article{Kiran2022:DRLDriving,
+  author    = {Kiran, B Ravi and Sobh, Ibrahim and Talpaert, Victor and Mannion, Patrick and Sallab, Ahmad A. Al and Yogamani, Senthil and Perez, Patrick},
+  journal   = {IEEE Transactions on Intelligent Transportation Systems},
+  title     = {Deep Reinforcement Learning for Autonomous Driving: A Survey},
+  year      = {2022},
+  issn      = {1558-0016},
+  month     = jun,
+  number    = {6},
+  pages     = {4909--4926},
+  volume    = {23},
+  doi       = {10.1109/tits.2021.3054625},
+  groups    = {Autonomous Driving},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking   = {rank4},
+}
+
+@InProceedings{Bengio2009:Curriculum,
+  author     = {Bengio, Yoshua and Louradour, Jérôme and Collobert, Ronan and Weston, Jason},
+  booktitle  = {Proceedings of the 26th Annual International Conference on Machine Learning},
+  title      = {Curriculum learning},
+  year       = {2009},
+  month      = jun,
+  publisher  = {ACM},
+  series     = {ICML ’09},
+  collection = {ICML ’09},
+  doi        = {10.1145/1553374.1553380},
+  file       = {:Bengio2009 - Curriculum Learning.pdf:PDF},
+  groups     = {Curriculum Learning},
+  ranking    = {rank5},
+}
+
+@Article{Colas2022,
+  author     = {Colas, Cédric and Karch, Tristan and Moulin-Frier, Clément and Oudeyer, Pierre-Yves},
+  journal    = {Nature Machine Intelligence},
+  title      = {Language and culture internalization for human-like autotelic AI},
+  year       = {2022},
+  issn       = {2522-5839},
+  month      = dec,
+  number     = {12},
+  pages      = {1068--1076},
+  volume     = {4},
+  abstract   = {Building autonomous agents able to grow open-ended repertoires of skills across their lives is a fundamental goal of artificial intelligence (AI). A promising developmental approach recommends the design of intrinsically motivated agents that learn new skills by generating and pursuing their own goals--autotelic agents. But despite recent progress, existing algorithms still show serious limitations in terms of goal diversity, exploration, generalization or skill composition. This Perspective calls for the immersion of autotelic agents into rich socio-cultural worlds, an immensely important attribute of our environment that shapes human cognition but is mostly omitted in modern AI. Inspired by the seminal work of Vygotsky, we propose Vygotskian autotelic agents--agents able to internalize their interactions with others and turn them into cognitive tools. We focus on language and show how its structure and informational content may support the development of new cognitive functions in artificial agents as it does in humans. We justify the approach by uncovering several examples of new artificial cognitive functions emerging from interactions between language and embodiment in recent works at the intersection of deep reinforcement learning and natural language processing. Looking forward, we highlight future opportunities and challenges for Vygotskian autotelic AI research, including the use of language models as cultural models supporting artificial cognitive development.},
+  doi        = {10.1038/s42256-022-00591-4},
+  file       = {:Colas2022a - Language and Culture Internalization for Human like Autotelic AI.pdf:PDF;:Colas2022 - Vygotskian Autotelic Artificial Intelligence_ Language and Culture Internalization for Human like AI.pdf:PDF},
+  groups     = {Language-Augmented RL},
+  priority   = {prio1},
+  publisher  = {Springer Science and Business Media LLC},
+  readstatus = {read},
+  refid      = {Colas2022},
+  url        = {https://doi.org/10.1038/s42256-022-00591-4},
+}
+
+@InProceedings{Todorov2012,
+  author    = {Todorov, Emanuel and Erez, Tom and Tassa, Yuval},
+  booktitle = {2012 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  title     = {MuJoCo: A physics engine for model-based control},
+  year      = {2012},
+  month     = oct,
+  publisher = {IEEE},
+  doi       = {10.1109/iros.2012.6386109},
+  file      = {:MuJoCo-Aphysicsengineformodel-basedcontrol_Todorov2012.pdf:PDF},
+  groups    = {Environments},
+  ranking   = {rank5},
+}
+
+@Article{Tassa2018:DeepmindControl,
+  author        = {Tassa, Yuval and Doron, Yotam and Muldal, Alistair and Erez, Tom and Li, Yazhe and Casas, Diego de Las and Budden, David and Abdolmaleki, Abbas and Merel, Josh and Lefrancq, Andrew and Lillicrap, Timothy and Riedmiller, Martin},
+  title         = {DeepMind Control Suite},
+  year          = {2018},
+  month         = jan,
+  abstract      = {The DeepMind Control Suite is a set of continuous control tasks with a standardised structure and interpretable rewards, intended to serve as performance benchmarks for reinforcement learning agents. The tasks are written in Python and powered by the MuJoCo physics engine, making them easy to use and modify. We include benchmarks for several learning algorithms. The Control Suite is publicly available at https://www.github.com/deepmind/dm_control . A video summary of all tasks is available at http://youtu.be/rAai4QzcYbs .},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1801.00690},
+  eprint        = {1801.00690},
+  file          = {:Tassa2018 - DeepMind Control Suite.pdf:PDF},
+  groups        = {Environments},
+  keywords      = {Artificial Intelligence (cs.AI), FOS: Computer and information sciences},
+  primaryclass  = {cs.AI},
+  publisher     = {arXiv},
+  ranking       = {rank3},
+}
+
+@Article{Bellman1957:MDP,
+  author    = {Richard Bellman},
+  journal   = {Journal of Mathematics and Mechanics},
+  title     = {A Markovian Decision Process},
+  year      = {1957},
+  issn      = {00959057, 19435274},
+  number    = {5},
+  pages     = {679--684},
+  volume    = {6},
+  groups    = {RL},
+  publisher = {Indiana University Mathematics Department},
+  ranking   = {rank5},
+  url       = {http://www.jstor.org/stable/24900506},
+  urldate   = {2024-03-04},
+}
+
+@Article{Vandenhende2021,
+  author    = {Vandenhende, Simon and Georgoulis, Stamatios and Van Gansbeke, Wouter and Proesmans, Marc and Dai, Dengxin and Van Gool, Luc},
+  journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title     = {Multi-Task Learning for Dense Prediction Tasks: A Survey},
+  year      = {2021},
+  issn      = {1939-3539},
+  pages     = {1--1},
+  doi       = {10.1109/tpami.2021.3054719},
+  file      = {:Vandenhende2021 - Multi Task Learning for Dense Prediction Tasks_ a Survey.pdf:PDF},
+  groups    = {Multi-Task Learning},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking   = {rank3},
+}
+
+@PhdThesis{Sutton1984:ActorCritic,
+  author    = {Sutton, Richard Stuart},
+  title     = {Temporal credit assignment in reinforcement learning},
+  year      = {1984},
+  comment   = {actor-critic},
+  groups    = {RL},
+  publisher = {University of Massachusetts Amherst},
+  ranking   = {rank5},
+}
+
+@Article{Sutton1991:Dyna,
+  author    = {Sutton, Richard S.},
+  journal   = {ACM SIGART Bulletin},
+  title     = {Dyna, an integrated architecture for learning, planning, and reacting},
+  year      = {1991},
+  issn      = {0163-5719},
+  month     = jul,
+  number    = {4},
+  pages     = {160--163},
+  volume    = {2},
+  doi       = {10.1145/122344.122377},
+  file      = {:Sutton1991 - Dyna, an Integrated Architecture for Learning, Planning, and Reacting.pdf:PDF},
+  groups    = {Model based},
+  publisher = {Association for Computing Machinery (ACM)},
+  ranking   = {rank4},
+}
+
+@InProceedings{Sutton2008:DynaLinearReg,
+  author    = {Sutton, Richard S. and Szepesv\'{a}ri, Csaba and Geramifard, Alborz and Bowling, Michael},
+  booktitle = {Proceedings of the Twenty-Fourth Conference on Uncertainty in Artificial Intelligence},
+  title     = {Dyna-style planning with linear function approximation and prioritized sweeping},
+  year      = {2008},
+  address   = {Arlington, Virginia, USA},
+  pages     = {528–536},
+  publisher = {AUAI Press},
+  series    = {UAI'08},
+  abstract  = {We consider the problem of efficiently learning optimal control policies and value functions over large state spaces in an online setting in which estimates must be available after each interaction with the world. This paper develops an explicitly model-based approach extending the Dyna architecture to linear function approximation. Dyna-style planning proceeds by generating imaginary experience from the world model and then applying model-free reinforcement learning algorithms to the imagined state transitions. Our main results are to prove that linear Dyna-style planning converges to a unique solution independent of the generating distribution, under natural conditions. In the policy evaluation setting, we prove that the limit point is the least-squares (LSTD) solution. An implication of our results is that prioritized-sweeping can be soundly extended to the linear approximation case, backing up to preceding features rather than to preceding states. We introduce two versions of prioritized sweeping with linear Dyna and briefly illustrate their performance empirically on the Mountain Car and Boyan Chain problems.},
+  groups    = {Model based},
+  isbn      = {0974903949},
+  location  = {Helsinki, Finland},
+  numpages  = {9},
+  ranking   = {rank2},
+}
+
+@Article{Narendra1990:NNSystemIdent,
+  author    = {Narendra, K.S. and Parthasarathy, K.},
+  journal   = {IEEE Transactions on Neural Networks},
+  title     = {Identification and control of dynamical systems using neural networks},
+  year      = {1990},
+  issn      = {1045-9227},
+  month     = mar,
+  number    = {1},
+  pages     = {4--27},
+  volume    = {1},
+  doi       = {10.1109/72.80202},
+  file      = {:Narendra1990 - Identification and Control of Dynamical Systems Using Neural Networks.pdf:PDF},
+  groups    = {Model based},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking   = {rank4},
+}
+
+@InProceedings{Oh2015:DeepModel,
+  author    = {Oh, Junhyuk and Guo, Xiaoxiao and Lee, Honglak and Lewis, Richard L and Singh, Satinder},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Action-Conditional Video Prediction using Deep Networks in Atari Games},
+  year      = {2015},
+  editor    = {C. Cortes and N. Lawrence and D. Lee and M. Sugiyama and R. Garnett},
+  publisher = {Curran Associates, Inc.},
+  volume    = {28},
+  file      = {:Oh2015 - Action Conditional Video Prediction Using Deep Networks in Atari Games.pdf:PDF},
+  groups    = {Model based},
+  ranking   = {rank4},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2015/file/6ba3af5d7b2790e73f0de32e5c8c1798-Paper.pdf},
+}
+
+@InProceedings{Hester2012,
+  author    = {Hester, Todd and Stone, Peter},
+  booktitle = {2012 IEEE International Conference on Development and Learning and Epigenetic Robotics (ICDL)},
+  title     = {Intrinsically motivated model learning for a developing curious agent},
+  year      = {2012},
+  month     = nov,
+  publisher = {IEEE},
+  doi       = {10.1109/devlrn.2012.6400802},
+  file      = {:Hester2012 - Intrinsically Motivated Model Learning for a Developing Curious Agent.pdf:PDF},
+  groups    = {Curiosity},
+  ranking   = {rank1},
+}
+
+@Article{Hester2012:TEXPLORE,
+  author    = {Hester, Todd and Stone, Peter},
+  journal   = {Machine Learning},
+  title     = {TEXPLORE: real-time sample-efficient reinforcement learning for robots},
+  year      = {2012},
+  issn      = {1573-0565},
+  month     = oct,
+  number    = {3},
+  pages     = {385--429},
+  volume    = {90},
+  doi       = {10.1007/s10994-012-5322-7},
+  file      = {:Hester2012a - TEXPLORE_ Real Time Sample Efficient Reinforcement Learning for Robots.pdf:PDF},
+  groups    = {Model based},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank1},
+}
+
+@InProceedings{Silver2014:DPG,
+  author    = {Silver, David and Lever, Guy and Heess, Nicolas and Degris, Thomas and Wierstra, Daan and Riedmiller, Martin},
+  booktitle = {Proceedings of the 31st International Conference on Machine Learning},
+  title     = {Deterministic Policy Gradient Algorithms},
+  year      = {2014},
+  address   = {Bejing, China},
+  editor    = {Xing, Eric P. and Jebara, Tony},
+  month     = {22--24 Jun},
+  number    = {1},
+  pages     = {387--395},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {32},
+  abstract  = {In this paper we consider deterministic policy gradient algorithms for reinforcement learning with continuous actions. The deterministic policy gradient has a particularly appealing form: it is the expected gradient of the action-value function. This simple form means that the deterministic policy gradient can be estimated much more efficiently than the usual stochastic policy gradient. To ensure adequate exploration, we introduce an off-policy actor-critic algorithm that learns a deterministic target policy from an exploratory behaviour policy. Deterministic policy gradient algorithms outperformed their stochastic counterparts in several benchmark problems, particularly in high-dimensional action spaces.},
+  file      = {:Silver2014_DPG - Deterministic Policy Gradient Algorithms.pdf:PDF;:Silver2014_DPG - supp mat.pdf:PDF},
+  groups    = {Policy based},
+  pdf       = {http://proceedings.mlr.press/v32/silver14.pdf},
+  ranking   = {rank5},
+  url       = {https://proceedings.mlr.press/v32/silver14.html},
+}
+
+@InProceedings{Levine2014:GPSModel,
+  author    = {Levine, Sergey and Abbeel, Pieter},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Learning Neural Network Policies with Guided Policy Search under Unknown Dynamics},
+  year      = {2014},
+  editor    = {Z. Ghahramani and M. Welling and C. Cortes and N. Lawrence and K.Q. Weinberger},
+  publisher = {Curran Associates, Inc.},
+  volume    = {27},
+  file      = {:Levine2014 - Learning Neural Network Policies with Guided Policy Search under Unknown Dynamics.pdf:PDF},
+  groups    = {Model based},
+  ranking   = {rank3},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2014/file/6766aa2750c19aad2fa1b32f36ed4aee-Paper.pdf},
+}
+
+@InProceedings{Levine2013:GPS,
+  author    = {Levine, Sergey and Koltun, Vladlen},
+  booktitle = {Proceedings of the 30th International Conference on Machine Learning},
+  title     = {Guided Policy Search},
+  year      = {2013},
+  address   = {Atlanta, Georgia, USA},
+  editor    = {Dasgupta, Sanjoy and McAllester, David},
+  month     = {17--19 Jun},
+  number    = {3},
+  pages     = {1--9},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {28},
+  abstract  = {Direct policy search can effectively scale to high-dimensional systems, but complex policies with hundreds of parameters often present a challenge for such methods, requiring numerous samples and often falling into poor local optima. We present a guided policy search algorithm that uses trajectory optimization to direct policy learning and avoid poor local optima. We show how differential dynamic programming can be used to generate suitable guiding samples, and describe a regularized importance sampled policy optimization that incorporates these samples into the policy search. We evaluate the method by learning neural network controllers for planar swimming, hopping, and walking, as well as simulated 3D humanoid running.},
+  groups    = {Policy based},
+  pdf       = {http://proceedings.mlr.press/v28/levine13.pdf},
+  ranking   = {rank5},
+  url       = {https://proceedings.mlr.press/v28/levine13.html},
+}
+
+@InBook{Kocsis2006:MCTS,
+  author    = {Kocsis, Levente and Szepesvári, Csaba},
+  pages     = {282--293},
+  publisher = {Springer Berlin Heidelberg},
+  title     = {Bandit Based Monte-Carlo Planning},
+  year      = {2006},
+  isbn      = {9783540460565},
+  booktitle = {Machine Learning: ECML 2006},
+  doi       = {10.1007/11871842_29},
+  groups    = {Model based},
+  issn      = {1611-3349},
+  ranking   = {rank5},
+}
+
+@InProceedings{Tesauro1996:MonteCarloSearch,
+  author    = {Tesauro, Gerald and Galperin, Gregory},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {On-line Policy Improvement using Monte-Carlo Search},
+  year      = {1996},
+  editor    = {M.C. Mozer and M. Jordan and T. Petsche},
+  publisher = {MIT Press},
+  volume    = {9},
+  groups    = {Model based},
+  ranking   = {rank2},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/1996/file/996009f2374006606f4c0b0fda878af1-Paper.pdf},
+}
+
+@InProceedings{Engstrom2020:PPOImplement,
+  author        = {Engstrom, Logan and Ilyas, Andrew and Santurkar, Shibani and Tsipras, Dimitris and Janoos, Firdaus and Rudolph, Larry and Madry, Aleksander},
+  booktitle     = {ICLR 2020},
+  title         = {Implementation Matters in Deep Policy Gradients: A Case Study on PPO and TRPO},
+  year          = {2020},
+  month         = may,
+  publisher     = {arXiv},
+  abstract      = {We study the roots of algorithmic progress in deep policy gradient algorithms through a case study on two popular algorithms: Proximal Policy Optimization (PPO) and Trust Region Policy Optimization (TRPO). Specifically, we investigate the consequences of "code-level optimizations:" algorithm augmentations found only in implementations or described as auxiliary details to the core algorithm. Seemingly of secondary importance, such optimizations turn out to have a major impact on agent behavior. Our results show that they (a) are responsible for most of PPO's gain in cumulative reward over TRPO, and (b) fundamentally change how RL methods function. These insights show the difficulty and importance of attributing performance gains in deep reinforcement learning. Code for reproducing our results is available at https://github.com/MadryLab/implementation-matters .},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2005.12729},
+  eprint        = {2005.12729},
+  file          = {:https___doi.org_10.48550_arxiv.2005.12729 - Implementation Matters in Deep Policy Gradients_ a Case Study on PPO and TRPO.pdf:PDF},
+  groups        = {TRPO-PPO},
+  keywords      = {Machine Learning (cs.LG), Robotics (cs.RO), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  ranking       = {rank3},
+}
+
+@InProceedings{Nagabandi2018,
+  author    = {Nagabandi, Anusha and Kahn, Gregory and Fearing, Ronald S. and Levine, Sergey},
+  booktitle = {2018 IEEE International Conference on Robotics and Automation (ICRA)},
+  title     = {Neural Network Dynamics for Model-Based Deep Reinforcement Learning with Model-Free Fine-Tuning},
+  year      = {2018},
+  month     = may,
+  publisher = {IEEE},
+  doi       = {10.1109/icra.2018.8463189},
+  groups    = {Model based},
+  ranking   = {rank5},
+}
+
+@Book{Thorndike1911:AnimalIntell,
+  author    = {Thorndike, Edward L.},
+  publisher = {The Macmillan Company},
+  title     = {Animal intelligence; experimental studies},
+  year      = {1911},
+  doi       = {10.5962/bhl.title.55072},
+  groups    = {Artificial Intelligence},
+  ranking   = {rank5},
+}
+
+@Article{Walter1950:MechTortoise,
+  author    = {W. Grey Walter},
+  journal   = {Scientific American},
+  title     = {An Imitation Of Life},
+  year      = {1950},
+  issn      = {00368733, 19467087},
+  number    = {5},
+  pages     = {42--45},
+  volume    = {182},
+  groups    = {Artificial Intelligence},
+  publisher = {Scientific American, a division of Nature America, Inc.},
+  ranking   = {rank3},
+  url       = {http://www.jstor.org/stable/24967456},
+  urldate   = {2024-03-24},
+}
+
+@Article{Bellman1966,
+  author    = {Bellman, Richard},
+  journal   = {Science},
+  title     = {Dynamic Programming},
+  year      = {1966},
+  issn      = {1095-9203},
+  month     = jul,
+  number    = {3731},
+  pages     = {34--37},
+  volume    = {153},
+  doi       = {10.1126/science.153.3731.34},
+  groups    = {Artificial Intelligence},
+  publisher = {American Association for the Advancement of Science (AAAS)},
+  ranking   = {rank5},
+}
+
+@Article{Garcia2015:SafeRL,
+  author  = {Javier Garc{{\'i}}a and Fern and o Fern{{\'a}}ndez},
+  journal = {Journal of Machine Learning Research},
+  title   = {A Comprehensive Survey on Safe Reinforcement Learning},
+  year    = {2015},
+  number  = {42},
+  pages   = {1437--1480},
+  volume  = {16},
+  groups  = {Safe RL},
+  ranking = {rank5},
+  url     = {http://jmlr.org/papers/v16/garcia15a.html},
+}
+
+@InProceedings{Coulom2006:MCTS,
+  author    = {Coulom, Rémi},
+  booktitle = {Computers and Games},
+  title     = {Efficient Selectivity and Backup Operators in Monte-Carlo Tree Search},
+  year      = {2006},
+  address   = {Berlin, Heidelberg},
+  editor    = {van den Herik, H. Jaap and Ciancarini, Paolo and Donkers, H. H. L. M. (Jeroen)},
+  pages     = {72--83},
+  publisher = {Springer Berlin Heidelberg},
+  abstract  = {A Monte-Carlo evaluation consists in estimating a position by averaging the outcome of several random continuations. The method can serve as an evaluation function at the leaves of a min-max tree. This paper presents a new framework to combine tree search with Monte-Carlo evaluation, that does not separate between a min-max phase and a Monte-Carlo phase. Instead of backing-up the min-max value close to the root, and the average value at some depth, a more general backup operator is defined that progressively changes from averaging to min-max as the number of simulations grows. This approach provides a fine-grained control of the tree growth, at the level of individual simulations, and allows efficient selectivity. The resulting algorithm was implemented in a 9{\texttimes}9 Go-playing program, Crazy Stone, that won the 10th KGS computer-Go tournament.},
+  doi       = {10.1007/978-3-540-75538-8_7},
+  groups    = {Model based},
+  isbn      = {978-3-540-75538-8},
+  issn      = {1611-3349},
+  ranking   = {rank5},
+}
+
+@InProceedings{Finnsson2008:GamePlaying,
+  author    = {Finnsson, Hilmar and Bj\"{o}rnsson, Yngvi},
+  booktitle = {Proceedings of the 23rd National Conference on Artificial Intelligence - Volume 1},
+  title     = {Simulation-based approach to general game playing},
+  year      = {2008},
+  pages     = {259–264},
+  publisher = {AAAI Press},
+  series    = {AAAI'08},
+  abstract  = {The aim of General Game Playing (GGP) is to create intelligent agents that automatically learn how to play many different games at an expert level without any human intervention. The most successful GGP agents in the past have used traditional game-tree search combined with an automatically learned heuristic function for evaluating game states. In this paper we describe a GGP agent that instead uses a Monte Carlo/UCT simulation technique for action selection, an approach recently popularized in computer Go. Our GGP agent has proven its effectiveness by winning last year s AAAI GGP Competition. Furthermore, we introduce and empirically evaluate a new scheme for automatically learning search-control knowledge for guiding the simulation playouts, showing that it offers significant benefits for a variety of games.},
+  groups    = {Model based},
+  isbn      = {9781577353683},
+  location  = {Chicago, Illinois},
+  numpages  = {6},
+  ranking   = {rank2},
+}
+
+@Article{Rosenblatt1958:Perceptron,
+  author    = {Rosenblatt, F.},
+  journal   = {Psychological Review},
+  title     = {The perceptron: A probabilistic model for information storage and organization in the brain.},
+  year      = {1958},
+  issn      = {0033-295X},
+  number    = {6},
+  pages     = {386--408},
+  volume    = {65},
+  doi       = {10.1037/h0042519},
+  groups    = {Artificial Intelligence},
+  publisher = {American Psychological Association (APA)},
+  ranking   = {rank5},
+}
+
+@InProceedings{Glorot2011:ReLU,
+  author    = {Glorot, Xavier and Bordes, Antoine and Bengio, Yoshua},
+  booktitle = {Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics},
+  title     = {Deep Sparse Rectifier Neural Networks},
+  year      = {2011},
+  address   = {Fort Lauderdale, FL, USA},
+  editor    = {Gordon, Geoffrey and Dunson, David and Dudík, Miroslav},
+  month     = {11--13 Apr},
+  pages     = {315--323},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {15},
+  abstract  = {While logistic sigmoid neurons are more biologically plausible than hyperbolic tangent neurons, the latter work better for training multi-layer neural networks. This paper shows that rectifying neurons are an even better model of biological neurons and yield equal or better performance than hyperbolic tangent networks in spite of the hard non-linearity and non-differentiability at zero, creating sparse representations with true zeros which seem remarkably suitable for naturally sparse data. Even though they can take advantage of semi-supervised setups with extra-unlabeled data, deep rectifier networks can reach their best performance without requiring any unsupervised pre-training on purely supervised tasks with large labeled datasets. Hence, these results can be seen as a new milestone in the attempts at understanding the difficulty in training deep but purely supervised neural networks, and closing the performance gap between neural networks learnt with and without unsupervised pre-training.},
+  groups    = {Deep Learning},
+  pdf       = {http://proceedings.mlr.press/v15/glorot11a/glorot11a.pdf},
+  ranking   = {rank5},
+  url       = {https://proceedings.mlr.press/v15/glorot11a.html},
+}
+
+@InProceedings{Tolstikhin2021:MLPMixer,
+  author    = {Tolstikhin, Ilya O and Houlsby, Neil and Kolesnikov, Alexander and Beyer, Lucas and Zhai, Xiaohua and Unterthiner, Thomas and Yung, Jessica and Steiner, Andreas and Keysers, Daniel and Uszkoreit, Jakob and Lucic, Mario and Dosovitskiy, Alexey},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {MLP-Mixer: An all-MLP Architecture for Vision},
+  year      = {2021},
+  editor    = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+  pages     = {24261--24272},
+  publisher = {Curran Associates, Inc.},
+  volume    = {34},
+  groups    = {Computer Vision},
+  ranking   = {rank5},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2021/file/cba0a4ee5ccd02fda0fe3f9a3e7b89fe-Paper.pdf},
+}
+
+@Article{Hochreiter1997:LSTM,
+  author    = {Hochreiter, Sepp and Schmidhuber, Jürgen},
+  journal   = {Neural Computation},
+  title     = {Long Short-Term Memory},
+  year      = {1997},
+  issn      = {1530-888X},
+  month     = nov,
+  number    = {8},
+  pages     = {1735--1780},
+  volume    = {9},
+  doi       = {10.1162/neco.1997.9.8.1735},
+  groups    = {NLP},
+  publisher = {MIT Press},
+  ranking   = {rank5},
+}
+
+@Article{Chung2014:GRU,
+  author        = {Chung, Junyoung and Gulcehre, Caglar and Cho, KyungHyun and Bengio, Yoshua},
+  title         = {Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling},
+  year          = {2014},
+  month         = dec,
+  abstract      = {In this paper we compare different types of recurrent units in recurrent neural networks (RNNs). Especially, we focus on more sophisticated units that implement a gating mechanism, such as a long short-term memory (LSTM) unit and a recently proposed gated recurrent unit (GRU). We evaluate these recurrent units on the tasks of polyphonic music modeling and speech signal modeling. Our experiments revealed that these advanced recurrent units are indeed better than more traditional recurrent units such as tanh units. Also, we found GRU to be comparable to LSTM.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1412.3555},
+  eprint        = {1412.3555},
+  file          = {:https___doi.org_10.48550_arxiv.1412.3555 - Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling.pdf:PDF},
+  groups        = {NLP},
+  keywords      = {Neural and Evolutionary Computing (cs.NE), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.NE},
+  publisher     = {arXiv},
+  ranking       = {rank5},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:Artificial Intelligence\;0\;0\;\;\;\;;
-1 StaticGroup:Computer Vision\;0\;1\;\;\;\;;
-1 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Contrastive Learning\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Developmental psychology\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Developmental psychology\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Evolution Strategy\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Evolutionary RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Hierarchical RL\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Macro-actions\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language\;2\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language\;2\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language generation with RL\;0\;0\;0x8a8a8aff\;\;\;;
@@ -9668,21 +10600,24 @@ ChatGPT},
 2 StaticGroup:Question Answering\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Text-based environments\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visual-Language Learning\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language-Augmented RL\;2\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Reward shaping\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Machine Learning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Computer Vision\;0\;0\;\;\;\;;
 2 StaticGroup:Confidence\;0\;1\;0x7c7c7cff\;\;\;;
+2 StaticGroup:Contrastive Learning\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Deep Learning\;0\;1\;\;\;\;;
+2 StaticGroup:Multi-Task Learning\;0\;1\;0x838383ff\;\;\;;
+2 StaticGroup:NLP\;0\;1\;0x838383ff\;\;\;;
 1 StaticGroup:MARL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent learning\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Centralised execution\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Communication\;2\;1\;0x8a8a8aff\;\;\;;
-4 StaticGroup:Discrete language\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Discrete language\;2\;0\;0x8a8a8aff\;\;\;;
 5 StaticGroup:Natural language\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit assignment\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Exploration in MARL\;0\;1\;0x8a8a8aff\;\;\;;
@@ -9692,36 +10627,49 @@ ChatGPT},
 3 StaticGroup:Memory in MARL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Social Learning\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Value factorisation\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Shared Mental Models\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Memory\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Multi-goal RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Intrinsic goals\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Environments\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Hierarchical RL\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Macro-actions\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Intrinsic goals\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Language-Augmented RL\;2\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Reward shaping\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
-4 StaticGroup:TRPO\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Value based\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:RL in other domains of science\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:TRPO-PPO\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Value based\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Goal-conditioned RL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:POMDP\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:RL in Biology and Neuroscience\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:RL in Economics\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:RL in Robotics\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Offline RL\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Open-Ended Learning\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:RLHF\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Safe RL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Transformers in RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Autonomous Driving\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Interactivity\;0\;1\;0x8a8a8aff\;\;\;;
@@ -9729,11 +10677,9 @@ ChatGPT},
 3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-task robotics\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Navigation\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Navigation\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:RL in Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Sim to Real\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Space Exploration\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Space Exploration\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Transformers in RL\;0\;1\;0x8a8a8aff\;\;\;;
 }
