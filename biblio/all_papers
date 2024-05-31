@@ -1062,25 +1062,20 @@
   groups = {Multi-agent learning},
 }
 
-@Article{Sukhbaatar2016,
-  author        = {Sainbayar Sukhbaatar and Arthur Szlam and Rob Fergus},
-  journal       = {Advances in Neural Information Processing Systems, pp. 2244–2252},
-  title         = {Learning Multiagent Communication with Backpropagation},
-  year          = {2016},
-  month         = may,
-  abstract      = {Many tasks in AI require the collaboration of multiple agents. Typically, the communication protocol between agents is manually specified and not altered during training. In this paper we explore a simple neural model, called CommNet, that uses continuous communication for fully cooperative tasks. The model consists of multiple agents and the communication between them is learned alongside their policy. We apply this model to a diverse set of tasks, demonstrating the ability of the agents to learn to communicate amongst themselves, yielding improved performance over non-communicative agents and baselines. In some cases, it is possible to interpret the language devised by the agents, revealing simple but effective strategies for solving the task at hand.},
-  archiveprefix = {arXiv},
-  comment       = {CommNet},
-  eprint        = {1605.07736},
-  file          = {:Sukhbaatar2016 - Learning Multiagent Communication with Backpropagation.pdf:PDF},
-  groups        = {Communication},
-  keywords      = {cs.LG, cs.AI},
-  primaryclass  = {cs.LG},
-  ranking       = {rank4},
-  readstatus    = {read},
+@InProceedings{Sukhbaatar2016:CommNet,
+  author     = {Sainbayar Sukhbaatar and Arthur Szlam and Rob Fergus},
+  booktitle  = {Advances in Neural Information Processing Systems, pp. 2244–2252},
+  title      = {Learning Multiagent Communication with Backpropagation},
+  year       = {2016},
+  abstract   = {Many tasks in AI require the collaboration of multiple agents. Typically, the communication protocol between agents is manually specified and not altered during training. In this paper we explore a simple neural model, called CommNet, that uses continuous communication for fully cooperative tasks. The model consists of multiple agents and the communication between them is learned alongside their policy. We apply this model to a diverse set of tasks, demonstrating the ability of the agents to learn to communicate amongst themselves, yielding improved performance over non-communicative agents and baselines. In some cases, it is possible to interpret the language devised by the agents, revealing simple but effective strategies for solving the task at hand.},
+  comment    = {CommNet},
+  file       = {:Sukhbaatar2016 - Learning Multiagent Communication with Backpropagation.pdf:PDF},
+  groups     = {Communication},
+  ranking    = {rank4},
+  readstatus = {read},
 }
 
-@InProceedings{Mordatch2018,
+@InProceedings{Mordatch2018:GroundedCompo,
   author     = {Igor Mordatch and Pieter Abbeel},
   booktitle  = {Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence},
   title      = {Emergence of Grounded Compositional Language in Multi-Agent Populations},
@@ -1098,7 +1093,7 @@
   url        = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17007},
 }
 
-@InProceedings{Jaques2019,
+@InProceedings{Jaques2019:SocialInfluence,
   author        = {Natasha Jaques and Angeliki Lazaridou and Edward Hughes and Caglar Gulcehre and Pedro A. Ortega and DJ Strouse and Joel Z. Leibo and Nando de Freitas},
   booktitle     = {Proceedings of the 36th International Conference on Machine Learning},
   title         = {Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning},
@@ -1332,7 +1327,7 @@
   readstatus = {skimmed},
 }
 
-@InProceedings{kim2018learning,
+@InProceedings{Kim2018:SchedNet,
   author     = {Daewoo Kim and Sangwoo Moon and David Hostallero and Wan Ju Kang and Taeyoung Lee and Kyunghwan Son and Yung Yi},
   booktitle  = {International Conference on Learning Representations},
   title      = {Learning to Schedule Communication in Multi-agent Reinforcement Learning},
@@ -1345,7 +1340,7 @@
   url        = {https://openreview.net/forum?id=SJxu5iR9KQ},
 }
 
-@InProceedings{Das2019,
+@InProceedings{Das2019:TarMAC,
   author     = {Das, Abhishek and Gervet, Th{\'e}ophile and Romoff, Joshua and Batra, Dhruv and Parikh, Devi and Rabbat, Mike and Pineau, Joelle},
   booktitle  = {Proceedings of the 36th International Conference on Machine Learning},
   title      = {{T}ar{MAC}: Targeted Multi-Agent Communication},
@@ -1642,7 +1637,7 @@
   readstatus = {read},
 }
 
-@InProceedings{Das_2017_ICCV,
+@InProceedings{Das2017:CoopVisDial,
   author     = {Das, Abhishek and Kottur, Satwik and Moura, Jose M. F. and Lee, Stefan and Batra, Dhruv},
   booktitle  = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
   title      = {Learning Cooperative Visual Dialog Agents With Deep Reinforcement Learning},
@@ -2187,7 +2182,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups      = {Multi-robot},
 }
 
-@Article{Peng2017,
+@Article{Peng2017:BiCNet,
   author        = {Peng Peng and Ying Wen and Yaodong Yang and Quan Yuan and Zhenkun Tang and Haitao Long and Jun Wang},
   title         = {Multiagent Bidirectionally-Coordinated Nets: Emergence of Human-level Coordination in Learning to Play StarCraft Combat Games},
   year          = {2017},
@@ -4262,7 +4257,7 @@ FacMADDPG},
   ranking       = {rank1},
 }
 
-@InProceedings{Jiang2018,
+@InProceedings{Jiang2018:ATOC,
   author     = {Jiang, Jiechuan and Lu, Zongqing},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Learning Attentional Communication for Multi-Agent Cooperation},
@@ -4526,12 +4521,12 @@ agents)},
   readstatus    = {skimmed},
 }
 
-@Article{Singh2019,
+@InProceedings{Singh2019:IC3Net,
   author     = {Amanpreet Singh and Tushar Jain and Sainbayar Sukhbaatar},
+  booktitle  = {International Conference on Learning Representations},
   title      = {Learning when to Communicate at Scale in Multiagent Cooperative and Competitive Tasks},
   year       = {2019},
   abstract   = {Learning when to communicate and doing that effectively is essential in multi-agent tasks. Recent works show that continuous communication allows efficient training with back-propagation in multi-agent scenarios, but have been restricted to fully-cooperative tasks. In this paper, we present Individualized Controlled Continuous Communication Model (IC3Net) which has better training efficiency than simple continuous communication model, and can be applied to semi-cooperative and competitive settings along with the cooperative settings. IC3Net controls continuous communication with a gating mechanism and uses individualized rewards foreach agent to gain better performance and scalability while fixing credit assignment issues. Using variety of tasks including StarCraft BroodWars explore and combat scenarios, we show that our network yields improved performance and convergence rates than the baselines as the scale increases. Our results convey that IC3Net agents learn when to communicate based on the scenario and profitability.},
-  booktitle  = {International Conference on Learning Representations},
   comment    = {IC3Net},
   file       = {:Singh2018 - Learning When to Communicate at Scale in Multiagent Cooperative and Competitive Tasks.pdf:PDF},
   groups     = {Communication},
@@ -4553,7 +4548,7 @@ agents)},
   readstatus = {skimmed},
 }
 
-@InProceedings{10.5555/3294996.3295030,
+@InProceedings{Hoshen2017:VAIN,
   author     = {Hoshen, Yedid},
   booktitle  = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
   title      = {VAIN: Attentional Multi-Agent Predictive Modeling},
@@ -4702,7 +4697,7 @@ agents)},
   publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
 }
 
-@InProceedings{10.5555/3294771.3294976,
+@InProceedings{Havrylov2017:EmergenceLang,
   author     = {Havrylov, Serhii and Titov, Ivan},
   booktitle  = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
   title      = {Emergence of Language with Multi-Agent Games: Learning to Communicate with Sequences of Symbols},
@@ -4759,7 +4754,7 @@ agents)},
   url       = {https://www.aclweb.org/anthology/D19-1384},
 }
 
-@InProceedings{cao2018emergent,
+@InProceedings{Cao2018:Negotiation,
   author     = {Kris Cao and Angeliki Lazaridou and Marc Lanctot and Joel Z Leibo and Karl Tuyls and Stephen Clark},
   booktitle  = {International Conference on Learning Representations},
   title      = {Emergent Communication through Negotiation},
@@ -4784,9 +4779,9 @@ agents)},
   url        = {https://openreview.net/forum?id=rJGZq6g0-},
 }
 
-@InProceedings{lazaridou2018emergence,
+@InProceedings{Lazaridou2018:Emergence,
   author     = {Angeliki Lazaridou and Karl Moritz Hermann and Karl Tuyls and Stephen Clark},
-  booktitle  = {International Conference on Learning Representations},
+  booktitle  = {International Conference on Learning Representations (ICLR)},
   title      = {Emergence of Linguistic Communication from Referential Games with Symbolic and Pixel Input},
   year       = {2018},
   file       = {:lazaridou2018emergence - Emergence of Linguistic Communication from Referential Games with Symbolic and Pixel Input.pdf:PDF},
@@ -4805,11 +4800,11 @@ agents)},
   organization = {PMLR},
   pages        = {5220--5230},
   file         = {:kharitonov2020entropy - Entropy Minimization in Emergent Languages.pdf:PDF},
-  groups       = {Communication},
+  groups       = {Communication, Speaker-Listener},
   priority     = {prio2},
 }
 
-@InProceedings{10.5555/3306127.3331757,
+@InProceedings{Lowe2019:Pitfalls,
   author     = {Lowe, Ryan and Foerster, Jakob and Boureau, Y-Lan and Pineau, Joelle and Dauphin, Yann},
   booktitle  = {Proceedings of the 18th International Conference on Autonomous Agents and MultiAgent Systems},
   title      = {On the Pitfalls of Measuring Emergent Communication},
@@ -4865,7 +4860,7 @@ agents)},
   readstatus = {skimmed},
 }
 
-@InProceedings{Lowe2020On,
+@InProceedings{Lowe2020:S2P,
   author     = {Ryan Lowe and Abhinav Gupta and Jakob Foerster and Douwe Kiela and Joelle Pineau},
   booktitle  = {International Conference on Learning Representations},
   title      = {On the interaction between supervision and self-play in emergent communication},
@@ -5775,7 +5770,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   ranking       = {rank4},
 }
 
-@InProceedings{Lin2021,
+@InProceedings{Lin2021:GroundMAC,
   author     = {Toru Lin and Minyoung Huh and Chris Stauffer and Ser-Nam Lim and Phillip Isola},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Learning to Ground Multi-Agent Communication with Autoencoders},
@@ -5833,21 +5828,22 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   ranking       = {rank3},
 }
 
-@Article{HARNAD1990335,
-  author   = {Stevan Harnad},
-  journal  = {Physica D: Nonlinear Phenomena},
-  title    = {The symbol grounding problem},
-  year     = {1990},
-  issn     = {0167-2789},
-  number   = {1},
-  pages    = {335-346},
-  volume   = {42},
-  abstract = {There has been much discussion recently about the scope and limits of purely symbolic models of the mind and about the proper role of connectionism in cognitive modeling. This paper describes the “symbol grounding problem”: How can the semantic interpretation of a formal symbol system be made intrinsic to the system, rather than just parasitic on the meanings in our heads? How can the meanings of the meaningless symbol tokens, manipulated solely on the basis of their (arbitrary) shapes, be grounded in anything but other meaningless symbols? The problem is analogous to trying to learn Chinese from a Chinese/Chinese dictionary alone. A candidate solution is sketched: Symbolic representations must be grounded bottom-up in nonsymbolic representations of two kinds: (1) iconic representations, which are analogs of the proximal sensory projections of distal objects and events, and (2) categorical representations, which are learned and innate feature detectors that pick out the invariant features of object and event categories from their sensory projections. Elementary symbols are the names of these object and event categories, assigned on the basis of their (nonsymbolic) categorical representations. Higher-order (3) symbolic representations, grounded in these elementary symbols, consist of symbol strings describing category membership relations (e.g. “An X is a Y that is Z”). Connectionism is one natural candidate for the mechanism that learns the invariant features underlying categorical representations, thereby connecting names to the proximal projections of the distal objects they stand for. In this way connectionism can be seen as a complementary component in a hybrid nonsymbolic/symbolic model of the mind, rather than a rival to purely symbolic modeling. Such a hybrid model would not have an autonomous symbolic “module,” however; the symbolic functions would emerge as an intrinsically “dedicated” symbol system as a consequence of the bottom-up grounding of categories' names in their sensory representations. Symbol manipulation would be governed not just by the arbitrary shapes of the symbol tokens, but by the nonarbitrary shapes of the icons and category invariants in which they are grounded.},
-  doi      = {https://doi.org/10.1016/0167-2789(90)90087-6},
-  file     = {:HARNAD1990335 - The Symbol Grounding Problem.pdf:PDF},
-  groups   = {Language},
-  ranking  = {rank5},
-  url      = {https://www.sciencedirect.com/science/article/pii/0167278990900876},
+@Article{Harnad1990,
+  author     = {Stevan Harnad},
+  journal    = {Physica D: Nonlinear Phenomena},
+  title      = {The symbol grounding problem},
+  year       = {1990},
+  issn       = {0167-2789},
+  number     = {1},
+  pages      = {335-346},
+  volume     = {42},
+  abstract   = {There has been much discussion recently about the scope and limits of purely symbolic models of the mind and about the proper role of connectionism in cognitive modeling. This paper describes the “symbol grounding problem”: How can the semantic interpretation of a formal symbol system be made intrinsic to the system, rather than just parasitic on the meanings in our heads? How can the meanings of the meaningless symbol tokens, manipulated solely on the basis of their (arbitrary) shapes, be grounded in anything but other meaningless symbols? The problem is analogous to trying to learn Chinese from a Chinese/Chinese dictionary alone. A candidate solution is sketched: Symbolic representations must be grounded bottom-up in nonsymbolic representations of two kinds: (1) iconic representations, which are analogs of the proximal sensory projections of distal objects and events, and (2) categorical representations, which are learned and innate feature detectors that pick out the invariant features of object and event categories from their sensory projections. Elementary symbols are the names of these object and event categories, assigned on the basis of their (nonsymbolic) categorical representations. Higher-order (3) symbolic representations, grounded in these elementary symbols, consist of symbol strings describing category membership relations (e.g. “An X is a Y that is Z”). Connectionism is one natural candidate for the mechanism that learns the invariant features underlying categorical representations, thereby connecting names to the proximal projections of the distal objects they stand for. In this way connectionism can be seen as a complementary component in a hybrid nonsymbolic/symbolic model of the mind, rather than a rival to purely symbolic modeling. Such a hybrid model would not have an autonomous symbolic “module,” however; the symbolic functions would emerge as an intrinsically “dedicated” symbol system as a consequence of the bottom-up grounding of categories' names in their sensory representations. Symbol manipulation would be governed not just by the arbitrary shapes of the symbol tokens, but by the nonarbitrary shapes of the icons and category invariants in which they are grounded.},
+  doi        = {https://doi.org/10.1016/0167-2789(90)90087-6},
+  file       = {:HARNAD1990335 - The Symbol Grounding Problem.pdf:PDF},
+  groups     = {Language, Artificial Intelligence},
+  ranking    = {rank5},
+  readstatus = {read},
+  url        = {https://www.sciencedirect.com/science/article/pii/0167278990900876},
 }
 
 @Article{jbp:/content/journals/10.1075/eoc.4.1.03ste,
@@ -6041,7 +6037,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url       = {https://doi.org/10.1145/3356464.3357707},
 }
 
-@InProceedings{Gupta2021a,
+@InProceedings{Gupta2021:DynamicPop,
   author     = {Abhinav Gupta and Marc Lanctot and Angeliki Lazaridou},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Dynamic population-based meta-learning for multi-agent communication with natural language},
@@ -6067,7 +6063,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url        = {https://openreview.net/forum?id=YSYXmOzlrou},
 }
 
-@InProceedings{Tucker2021,
+@InProceedings{Tucker2021:DiscreteEC,
   author     = {Mycal Tucker and Huao Li and Siddharth Agrawal and Dana Hughes and Katia P. Sycara and Michael Lewis and Julie Shah},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Emergent Discrete Communication in Semantic Spaces},
@@ -6858,7 +6854,7 @@ the agent takes as input the current state and goal, the value function depends 
   url        = {https://proceedings.neurips.cc/paper/2021/file/f6f154417c4665861583f9b9c4afafa2-Paper.pdf},
 }
 
-@InProceedings{lazaridou-etal-2020-multi,
+@InProceedings{Lazaridou2020:MACNatLang,
   author     = {Lazaridou, Angeliki and Potapenko, Anna and Tieleman, Olivier},
   booktitle  = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
   title      = {Multi-agent Communication meets Natural Language: Synergies between Functional and Structural Language Learning},
@@ -7130,7 +7126,7 @@ the agent takes as input the current state and goal, the value function depends 
   url        = {https://aclanthology.org/2021.naacl-main.421},
 }
 
-@InProceedings{lee-etal-2019-countering,
+@InProceedings{Lee2019:CounteringLDrift,
   author     = {Lee, Jason and Cho, Kyunghyun and Kiela, Douwe},
   booktitle  = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
   title      = {Countering Language Drift via Visual Grounding},
@@ -7751,7 +7747,7 @@ Multi-Explore},
   publisher = {The Royal Society},
 }
 
-@Article{10.1371/journal.pcbi.1010658,
+@Article{Ohmer2022:MutualInfluence,
   author    = {Ohmer, Xenia AND Marino, Michael AND Franke, Michael AND König, Peter},
   journal   = {PLOS Computational Biology},
   title     = {Mutual influence between language and perception in multi-agent communication games},
@@ -7768,18 +7764,15 @@ Multi-Explore},
   url       = {https://doi.org/10.1371/journal.pcbi.1010658},
 }
 
-@Article{Ohmer2022,
-  author        = {Xenia Ohmer and Marko Duda and Elia Bruni},
-  title         = {Emergence of hierarchical reference systems in multi-agent communication},
-  year          = {2022},
-  month         = mar,
-  abstract      = {In natural language, referencing objects at different levels of specificity is a fundamental pragmatic mechanism for efficient communication in context. We develop a novel communication game, the hierarchical reference game, to study the emergence of such reference systems in artificial agents. We consider a simplified world, in which concepts are abstractions over a set of primitive attributes (e.g., color, style, shape). Depending on how many attributes are combined, concepts are more general ("circle") or more specific ("red dotted circle"). Based on the context, the agents have to communicate at different levels of this hierarchy. Our results show that the agents learn to play the game successfully and can even generalize to novel concepts. To achieve abstraction, they use implicit (omitting irrelevant information) and explicit (indicating that attributes are irrelevant) strategies. In addition, the compositional structure underlying the concept hierarchy is reflected in the emergent protocols, indicating that the need to develop hierarchical reference systems supports the emergence of compositionality.},
-  archiveprefix = {arXiv},
-  eprint        = {2203.13176},
-  file          = {:Ohmer2022 - Emergence of Hierarchical Reference Systems in Multi Agent Communication.pdf:PDF},
-  groups        = {Discrete language},
-  keywords      = {cs.AI, cs.CL},
-  primaryclass  = {cs.AI},
+@InProceedings{Ohmer2022,
+  author    = {Xenia Ohmer and Marko Duda and Elia Bruni},
+  booktitle = {Proceedings of the 29th International Conference on Computational Linguistics},
+  title     = {Emergence of hierarchical reference systems in multi-agent communication},
+  year      = {2022},
+  abstract  = {In natural language, referencing objects at different levels of specificity is a fundamental pragmatic mechanism for efficient communication in context. We develop a novel communication game, the hierarchical reference game, to study the emergence of such reference systems in artificial agents. We consider a simplified world, in which concepts are abstractions over a set of primitive attributes (e.g., color, style, shape). Depending on how many attributes are combined, concepts are more general ("circle") or more specific ("red dotted circle"). Based on the context, the agents have to communicate at different levels of this hierarchy. Our results show that the agents learn to play the game successfully and can even generalize to novel concepts. To achieve abstraction, they use implicit (omitting irrelevant information) and explicit (indicating that attributes are irrelevant) strategies. In addition, the compositional structure underlying the concept hierarchy is reflected in the emergent protocols, indicating that the need to develop hierarchical reference systems supports the emergence of compositionality.},
+  file      = {:Ohmer2022 - Emergence of Hierarchical Reference Systems in Multi Agent Communication.pdf:PDF},
+  groups    = {Discrete language},
+  url       = {https://aclanthology.org/2022.coling-1.501/},
 }
 
 @Article{BARD2020103216,
@@ -8233,7 +8226,7 @@ Multi-Explore},
   readstatus = {read},
 }
 
-@InProceedings{Wang2022,
+@InProceedings{Wang2022:FCMNet,
   author     = {Wang, Yutong and Sartoretti, Guillaume},
   booktitle  = {Proceedings of the 21st International Conference on Autonomous Agents and Multiagent Systems},
   title      = {FCMNet: Full Communication Memory Net for Team-Level Cooperation in Multi-Agent Systems},
@@ -8245,10 +8238,10 @@ Multi-Explore},
   abstract   = {Decentralized cooperation in partially-observable multi-agent systems requires effective communications among agents. To support this effort, this work focuses on the class of problems where global communications are available but may be unreliable, thus precluding differentiable communication learning methods. We introduce FCMNet, a reinforcement learning based approach that allows agents to simultaneously learn a) an effective multi-hop communications protocol and b) a common, decentralized policy that enables team-level decision-making. Specifically, our proposed method utilizes the hidden states of multiple directional recurrent neural networks as communication messages among agents. Using a simple multi-hop topology, we endow each agent with the ability to receive information sequentially encoded by every other agent at each time step, leading to improved global cooperation. We demonstrate FCMNet on a challenging set of StarCraft II micromanagement tasks with shared rewards, as well as a collaborative multi-agent pathfinding task with individual rewards. There, our comparison results show that FCMNet outperforms state-of-the-art communication-based reinforcement learning methods in all StarCraft II micromanagement tasks, and value decomposition methods in certain tasks. We further investigate the robustness of FCMNet under realistic communication disturbances, such as random message loss or binarized messages (i.e., non-differentiable communication channels), to showcase FMCNet's potential applicability to robotic tasks under a variety of real-world conditions.},
   file       = {:Wang2022 - FCMNet_ Full Communication Memory Net for Team Level Cooperation in Multi Agent Systems.pdf:PDF},
   groups     = {Communication},
-  isbn       = {9781450392136},
   keywords   = {multi-agent reinforcement learning, differentiable communications, decentralized cooperation, communication learning},
   location   = {Virtual Event, New Zealand},
   numpages   = {9},
+  priority   = {prio1},
   readstatus = {skimmed},
   url        = {https://dl.acm.org/doi/abs/10.5555/3535850.3536001},
 }
@@ -8283,7 +8276,7 @@ Multi-Explore},
   doi           = {10.1109/tcds.2023.3236599},
   eprint        = {2201.07452},
   file          = {:Karten2022 - Interpretable Learned Emergent Communication for Human Agent Teams.pdf:PDF},
-  groups        = {Discrete language, Speaker-Listener},
+  groups        = {Discrete language},
   keywords      = {Machine Learning (cs.LG), Multiagent Systems (cs.MA), Robotics (cs.RO), FOS: Computer and information sciences},
   primaryclass  = {cs.LG},
   publisher     = {Institute of Electrical and Electronics Engineers ({IEEE})},
@@ -8298,6 +8291,7 @@ Multi-Explore},
   editor    = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
   file      = {:Tucker2022_VQBIB - Trading off Utility, Informativeness, and Complexity in Emergent Communication.pdf:PDF},
   groups    = {Discrete language},
+  priority  = {prio1},
   url       = {https://openreview.net/forum?id=O5arhQvBdH},
 }
 
@@ -8333,7 +8327,7 @@ Multi-Explore},
   url       = {https://openreview.net/forum?id=49A1Y6tRhaq},
 }
 
-@InProceedings{rita2022on,
+@InProceedings{Rita2022:PopHetero,
   author    = {Mathieu Rita and Florian Strub and Jean-Bastien Grill and Olivier Pietquin and Emmanuel Dupoux},
   booktitle = {International Conference on Learning Representations},
   title     = {On the role of population heterogeneity in emergent communication},
@@ -8357,7 +8351,8 @@ Multi-Explore},
   abstract  = {Previous work has shown that artificial neural agents naturally develop surprisingly non-efficient codes. This is illustrated by the fact that in a referential game involving a speaker and a listener neural networks optimizing accurate transmission over a discrete channel, the emergent messages fail to achieve an optimal length. Furthermore, frequent messages tend to be longer than infrequent ones, a pattern contrary to the Zipf Law of Abbreviation (ZLA) observed in all natural languages. Here, we show that near-optimal and ZLA-compatible messages can emerge, but only if both the speaker and the listener are modified. We hence introduce a new communication system, {``}LazImpa{''}, where the speaker is made increasingly lazy, i.e., avoids long messages, and the listener impatient, i.e., seeks to guess the intended content as soon as possible.},
   doi       = {10.18653/v1/2020.conll-1.26},
   file      = {:Rita2020 - ``LazImpa''_ Lazy and Impatient Neural Agents Learn to Communicate Efficiently.pdf:PDF},
-  groups    = {Discrete language},
+  groups    = {Discrete language, Speaker-Listener},
+  priority  = {prio2},
   url       = {https://aclanthology.org/2020.conll-1.26},
 }
 
@@ -8827,27 +8822,11 @@ Multi-Explore},
   year      = {2021},
   file      = {:kim2021communication - Communication in Multi Agent Reinforcement Learning_ Intention Sharing.pdf:PDF},
   groups    = {Communication},
+  priority  = {prio1},
   url       = {https://openreview.net/forum?id=qpsl2dR9twy},
 }
 
-@Article{Zhu2022,
-  author        = {Zhu, Changxi and Dastani, Mehdi and Wang, Shihan},
-  title         = {A Survey of Multi-Agent Reinforcement Learning with Communication},
-  year          = {2022},
-  month         = mar,
-  abstract      = {Communication is an effective mechanism for coordinating the behavior of multiple agents. In the field of multi-agent reinforcement learning, agents can improve the overall learning performance and achieve their objectives by communication. Moreover, agents can communicate various types of messages, either to all agents or to specific agent groups, and through specific channels. With the growing body of research work in MARL with communication (Comm-MARL), there is lack of a systematic and structural approach to distinguish and classify existing Comm-MARL systems. In this paper, we survey recent works in the Comm-MARL field and consider various aspects of communication that can play a role in the design and development of multi-agent reinforcement learning systems. With these aspects in mind, we propose several dimensions along which Comm-MARL systems can be analyzed, developed, and compared.},
-  archiveprefix = {arXiv},
-  copyright     = {arXiv.org perpetual, non-exclusive license},
-  doi           = {10.48550/ARXIV.2203.08975},
-  eprint        = {2203.08975},
-  file          = {:Zhu2022 - A Survey of Multi Agent Reinforcement Learning with Communication.pdf:PDF},
-  groups        = {Communication, MAS Reviews},
-  keywords      = {Multiagent Systems (cs.MA), Machine Learning (cs.LG), FOS: Computer and information sciences},
-  primaryclass  = {cs.MA},
-  publisher     = {arXiv},
-}
-
-@InProceedings{Han2023,
+@InProceedings{Han2023:MBC,
   author     = {Han, Shuai and Dastani, Mehdi and Wang, Shihan},
   booktitle  = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
   title      = {Model-Based Sparse Communication in Multi-Agent Reinforcement Learning},
@@ -9104,7 +9083,7 @@ Multi-Explore},
   comment    = {InstructGPT
 ChatGPT},
   file       = {:Ouyang2022 - Training Language Models to Follow Instructions with Human Feedback.pdf:PDF;:Ouyang2022 - Training Language Models to Follow Instructions with Human Feedback (1).pdf:PDF},
-  groups     = {Question Answering, Language generation with RL, RLHF},
+  groups     = {Question Answering, Language generation with RL, RLHF, Large Language Models},
   ranking    = {rank5},
   readstatus = {skimmed},
   url        = {https://proceedings.neurips.cc/paper_files/paper/2022/file/b1efde53be364a73914f58805a001731-Paper-Conference.pdf},
@@ -9193,7 +9172,7 @@ ChatGPT},
   priority = {prio1},
 }
 
-@Article{Wu2023,
+@Article{Wu2023:AutoGen,
   author        = {Wu, Qingyun and Bansal, Gagan and Zhang, Jieyu and Wu, Yiran and Li, Beibin and Zhu, Erkang and Jiang, Li and Zhang, Xiaoyun and Zhang, Shaokun and Liu, Jiale and Awadallah, Ahmed Hassan and White, Ryen W and Burger, Doug and Wang, Chi},
   title         = {AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation},
   year          = {2023},
@@ -9220,7 +9199,7 @@ ChatGPT},
   publisher   = {{PMLR}},
   volume      = {202},
   file        = {:Carta2023 - Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning.pdf:PDF},
-  groups      = {Language-Augmented RL, Control with LLMs},
+  groups      = {Language-Augmented RL, Agent-based LLMs},
   hal_id      = {hal-03970122},
   hal_version = {v3},
   pdf         = {https://hal.science/hal-03970122v3/file/extended_version.pdf},
@@ -9277,7 +9256,7 @@ ChatGPT},
   readstatus    = {read},
 }
 
-@InProceedings{Driess2023,
+@InProceedings{Driess2023:PaLME,
   author     = {Driess, Danny and Xia, Fei and Sajjadi, Mehdi S. M. and Lynch, Corey and Chowdhery, Aakanksha and Ichter, Brian and Wahid, Ayzaan and Tompson, Jonathan and Vuong, Quan and Yu, Tianhe and Huang, Wenlong and Chebotar, Yevgen and Sermanet, Pierre and Duckworth, Daniel and Levine, Sergey and Vanhoucke, Vincent and Hausman, Karol and Toussaint, Marc and Greff, Klaus and Zeng, Andy and Mordatch, Igor and Florence, Pete},
   booktitle  = {Proceedings of the 40th International Conference on Machine Learning},
   title      = {PaLM-E: An Embodied Multimodal Language Model},
@@ -9288,7 +9267,7 @@ ChatGPT},
   doi        = {10.48550/ARXIV.2303.03378},
   eprint     = {2303.03378},
   file       = {:Driess2023 - PaLM E_ an Embodied Multimodal Language Model.pdf:PDF},
-  groups     = {Large Language Models, Visual-and-Language Navigation, Control with LLMs},
+  groups     = {Large Language Models, Visual-and-Language Navigation, Agent-based LLMs},
   keywords   = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Robotics (cs.RO), FOS: Computer and information sciences},
   ranking    = {rank4},
   readstatus = {read},
@@ -9807,7 +9786,7 @@ ChatGPT},
   publisher = {MIT Press},
   volume    = {9},
   file      = {:Tsitsiklis1996 - Analysis of Temporal Diffference Learning with Function Approximation.pdf:PDF},
-  groups    = {RL},
+  groups    = {RL, Value based},
   ranking   = {rank5},
   url       = {https://proceedings.neurips.cc/paper_files/paper/1996/file/e00406144c1e7e35240afed70f34166a-Paper.pdf},
 }
@@ -10641,7 +10620,7 @@ ChatGPT},
   url       = {https://proceedings.mlr.press/v80/lake18a.html},
 }
 
-@InProceedings{Lee2018:Emergent,
+@InProceedings{Lee2018:EmergentTranslation,
   author     = {Jason Lee and Kyunghyun Cho and Jason Weston and Douwe Kiela},
   booktitle  = {International Conference on Learning Representations},
   title      = {Emergent Translation in Multi-Agent Communication},
@@ -10666,13 +10645,12 @@ ChatGPT},
   doi        = {10.1075/eoc.1.1.02ste},
   file       = {:Steels1997 - The Synthetic Modeling of Language Origins.pdf:PDF:https\://digital.csic.es/bitstream/10261/128074/1/language%20origins.pdf},
   groups     = {Communication, Language evolution},
-  priority   = {prio1},
   publisher  = {John Benjamins Publishing Company},
   ranking    = {rank4},
   readstatus = {skimmed},
 }
 
-@InProceedings{Chaabouni2019,
+@InProceedings{Chaabouni2019:AntiEfficient,
   author     = {Chaabouni, Rahma and Kharitonov, Eugene and Dupoux, Emmanuel and Baroni, Marco},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Anti-efficient encoding in emergent communication},
@@ -10681,7 +10659,7 @@ ChatGPT},
   publisher  = {Curran Associates, Inc.},
   volume     = {32},
   file       = {:Chaabouni2019 - Anti Efficient Encoding in Emergent Communication.pdf:PDF:https\://proceedings.neurips.cc/paper/2019/file/31ca0ca71184bbdb3de7b20a51e88e90-Paper.pdf},
-  groups     = {Communication},
+  groups     = {Communication, Speaker-Listener},
   ranking    = {rank2},
   readstatus = {skimmed},
   url        = {https://proceedings.neurips.cc/paper_files/paper/2019/file/31ca0ca71184bbdb3de7b20a51e88e90-Paper.pdf},
@@ -10827,7 +10805,7 @@ ChatGPT},
   url       = {https://openreview.net/forum?id=wpSWuz_hyqA},
 }
 
-@InProceedings{Rita2022,
+@InProceedings{Rita2022:GenOverf,
   author     = {Rita, Mathieu and Tallec, Corentin and Michel, Paul and Grill, Jean-Bastien and Pietquin, Olivier and Dupoux, Emmanuel and Strub, Florian},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Emergent Communication: Generalization and Overfitting in Lewis Games},
@@ -10885,7 +10863,7 @@ ChatGPT},
 @InProceedings{Hausknecht2015d:DRQN,
   author    = {Hausknecht, Matthew and Stone, Peter},
   booktitle = {2015 AAAI Fall Symposium Series},
-  title     = {Deep recurrent q-learning for partially observable mdps},
+  title     = {Deep Recurrent Q-Learning for Partially Observable MDPs},
   year      = {2015},
   file      = {:Hausknecht2015d_DRQN - Deep Recurrent Q Learning for Partially Observable Mdps.pdf:PDF:https\://cdn.aaai.org/ocs/11673/11673-51288-1-PB.pdf},
   groups    = {Value based},
@@ -10966,7 +10944,7 @@ ChatGPT},
   url       = {https://ai.vub.ac.be/sites/default/files/steels-03f.pdf},
 }
 
-@InProceedings{Li2023,
+@InProceedings{Li2023:CAMEL,
   author    = {Li, Guohao and Hammoud, Hasan and Itani, Hani and Khizbullin, Dmitrii and Ghanem, Bernard},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society},
@@ -10982,7 +10960,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2023/file/a3621ee907def47c1b952ade25c67698-Paper-Conference.pdf},
 }
 
-@Article{Zhu2024,
+@Article{Zhu2024:CognitiveLLMs,
   author    = {Zhu, Feiyu and Simmons, Reid},
   journal   = {Proceedings of the AAAI Conference on Artificial Intelligence},
   title     = {Bootstrapping Cognitive Agents with a Large Language Model},
@@ -10994,7 +10972,7 @@ ChatGPT},
   volume    = {38},
   doi       = {10.1609/aaai.v38i1.27822},
   file      = {:27822-Article Text-31876-1-2-20240324-1.pdf:PDF},
-  groups    = {Control with LLMs},
+  groups    = {Agent-based LLMs},
   publisher = {Association for the Advancement of Artificial Intelligence (AAAI)},
 }
 
@@ -11172,7 +11150,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Wagner2003,
+@Article{Wagner2003:EC,
   author    = {Wagner, Kyle and Reggia, James A. and Uriagereka, Juan and Wilkinson, Gerald S.},
   journal   = {Adaptive Behavior},
   title     = {Progress in the Simulation of Emergent Communication and Language},
@@ -11208,7 +11186,7 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@InProceedings{Park2013:LLMTownrohtua,
+@InProceedings{Park2023:LLMtown,
   author    = {Park, Joon Sung and O'Brien, Joseph and Cai, Carrie Jun and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S.},
   booktitle = {Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology},
   title     = {Generative Agents: Interactive Simulacra of Human Behavior},
@@ -11229,7 +11207,7 @@ ChatGPT},
   url       = {https://doi.org/10.1145/3586183.3606763},
 }
 
-@InProceedings{Wei2022,
+@InProceedings{Wei2022:ChainOfThought,
   author    = {Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and ichter, brian and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {Chain-of-Thought Prompting Elicits Reasoning in Large Language Models},
@@ -11259,7 +11237,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/8bb0d291acd4acf06ef112099c16f326-Paper-Conference.pdf},
 }
 
-@InProceedings{Tishby2000,
+@InProceedings{Tishby1999:IB,
   author     = {Tishby, Naftali and Pereira, Fernando C. and Bialek, William},
   booktitle  = {Proceedings of the 37-th Annual Allerton Conference on Communication, Control and Computing},
   title      = {The information bottleneck method},
@@ -11335,7 +11313,7 @@ ChatGPT},
   ranking   = {rank3},
 }
 
-@Article{Brighton2006,
+@Article{Brighton2006:Understanding,
   author     = {Brighton, Henry and Kirby, Simon},
   journal    = {Artificial Life},
   title      = {Understanding Linguistic Evolution by Visualizing the Emergence of Topographic Mappings},
@@ -11418,18 +11396,7 @@ ChatGPT},
   priority  = {prio2},
 }
 
-@InProceedings{tuckertowards,
-  author    = {Tucker, Mycal and Shah, Julie and Levy, Roger and Zaslavsky, Noga},
-  booktitle = {Robotics Science and Systems Workshop on Social Intelligencein Humans and Robots},
-  title     = {Towards Human-Agent Communication via the Information Bottleneck Principle},
-  year      = {2022},
-  file      = {:tuckertowards - Towards Human Agent Communication Via the Information Bottleneck Principle.pdf:PDF:https\://arxiv.org/pdf/2207.00088},
-  groups    = {Communication},
-  priority  = {prio1},
-  url       = {https://arxiv.org/pdf/2207.00088},
-}
-
-@Article{Zaslavsky2018,
+@Article{Zaslavsky2018:EfficientCompr,
   author    = {Zaslavsky, Noga and Kemp, Charles and Regier, Terry and Tishby, Naftali},
   journal   = {Proceedings of the National Academy of Sciences},
   title     = {Efficient compression in color naming and its evolution},
@@ -11485,20 +11452,376 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@InProceedings{Zhang2024,
+@InProceedings{Zhang2024:CoELA,
   author    = {Hongxin Zhang and Weihua Du and Jiaming Shan and Qinhong Zhou and Yilun Du and Joshua B. Tenenbaum and Tianmin Shu and Chuang Gan},
-  booktitle = {The Twelfth International Conference on Learning Representations},
+  booktitle = {International Conference on Learning Representations},
   title     = {Building Cooperative Embodied Agents Modularly with Large Language Models},
   year      = {2024},
-  groups    = {LLM towns},
+  file      = {:Zhang2024 - Building Cooperative Embodied Agents Modularly with Large Language Models.pdf:PDF:https\://openreview.net/pdf?id=EnXJfQqy0K},
+  groups    = {Comm with LLMs, Agent-based LLMs},
   url       = {https://openreview.net/forum?id=EnXJfQqy0K},
+}
+
+@Article{Perez2024:CulturalEvo,
+  author        = {Perez, Jérémy and Léger, Corentin and Ovando-Tellez, Marcela and Foulon, Chris and Dussauld, Joan and Oudeyer, Pierre-Yves and Moulin-Frier, Clément},
+  title         = {Cultural evolution in populations of Large Language Models},
+  year          = {2024},
+  month         = mar,
+  abstract      = {Research in cultural evolution aims at providing causal explanations for the change of culture over time. Over the past decades, this field has generated an important body of knowledge, using experimental, historical, and computational methods. While computational models have been very successful at generating testable hypotheses about the effects of several factors, such as population structure or transmission biases, some phenomena have so far been more complex to capture using agent-based and formal models. This is in particular the case for the effect of the transformations of social information induced by evolved cognitive mechanisms. We here propose that leveraging the capacity of Large Language Models (LLMs) to mimic human behavior may be fruitful to address this gap. On top of being an useful approximation of human cultural dynamics, multi-agents models featuring generative agents are also important to study for their own sake. Indeed, as artificial agents are bound to participate more and more to the evolution of culture, it is crucial to better understand the dynamics of machine-generated cultural evolution. We here present a framework for simulating cultural evolution in populations of LLMs, allowing the manipulation of variables known to be important in cultural evolution, such as network structure, personality, and the way social information is aggregated and transformed. The software we developed for conducting these simulations is open-source and features an intuitive user-interface, which we hope will help to build bridges between the fields of cultural evolution and generative artificial intelligence.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2403.08882},
+  eprint        = {2403.08882},
+  file          = {:Perez2024 - Cultural Evolution in Populations of Large Language Models.pdf:PDF:http\://arxiv.org/pdf/2403.08882v1},
+  groups        = {LLM towns},
+  keywords      = {Multiagent Systems (cs.MA), Artificial Intelligence (cs.AI), Populations and Evolution (q-bio.PE), FOS: Computer and information sciences, FOS: Biological sciences, I.2.7, 68T50},
+  primaryclass  = {cs.MA},
+  priority      = {prio1},
+  publisher     = {arXiv},
+}
+
+@InProceedings{Lyu2021:DecentralisedCritic,
+  author    = {Lyu, Xueguang and Xiao, Yuchen and Daley, Brett and Amato, Christopher},
+  booktitle = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
+  title     = {Contrasting Centralized and Decentralized Critics in Multi-Agent Reinforcement Learning},
+  year      = {2021},
+  address   = {Richland, SC},
+  pages     = {844–852},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '21},
+  abstract  = {Centralized Training for Decentralized Execution, where agents are trained offline using centralized information but execute in a decentralized manner online, has gained popularity in the multi-agent reinforcement learning community. In particular, actor-critic methods with a centralized critic and decentralized actors are a common instance of this idea. However, the implications of using a centralized critic in this context are not fully discussed and understood even though it is the standard choice of many algorithms. We therefore formally analyze centralized and decentralized critic approaches, providing a deeper understanding of the implications of critic choice. Because our theory makes unrealistic assumptions, we also empirically compare the centralized and decentralized critic methods over a wide set of environments to validate our theories and to provide practical advice. We show that there exist misconceptions regarding centralized critics in the current literature and show that the centralized critic design is not strictly beneficial, but rather both centralized and decentralized critics have different pros and cons that should be taken into account by algorithm designers.},
+  groups    = {Independent Learning},
+  isbn      = {9781450383073},
+  keywords  = {reinforcement learning, policy gradient, multi-agent system},
+  location  = {Virtual Event, United Kingdom},
+  numpages  = {9},
+  priority  = {prio1},
+  ranking   = {rank2},
+}
+
+@Article{Brinkmann2023,
+  author    = {Brinkmann, Levin and Baumann, Fabian and Bonnefon, Jean-François and Derex, Maxime and Müller, Thomas F. and Nussberger, Anne-Marie and Czaplicka, Agnieszka and Acerbi, Alberto and Griffiths, Thomas L. and Henrich, Joseph and Leibo, Joel Z. and McElreath, Richard and Oudeyer, Pierre-Yves and Stray, Jonathan and Rahwan, Iyad},
+  journal   = {Nature Human Behaviour},
+  title     = {Machine culture},
+  year      = {2023},
+  issn      = {2397-3374},
+  month     = nov,
+  number    = {11},
+  pages     = {1855--1868},
+  volume    = {7},
+  doi       = {10.1038/s41562-023-01742-2},
+  file      = {:Brinkmann2023 - Machine Culture.pdf:PDF:https\://arxiv.org/pdf/2311.11388},
+  groups    = {Artificial Intelligence},
+  priority  = {prio1},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Acerbi2023:LLMsBias,
+  author    = {Acerbi, Alberto and Stubbersfield, Joseph M.},
+  journal   = {Proceedings of the National Academy of Sciences},
+  title     = {Large language models show human-like content biases in transmission chain experiments},
+  year      = {2023},
+  issn      = {1091-6490},
+  month     = oct,
+  number    = {44},
+  volume    = {120},
+  doi       = {10.1073/pnas.2313790120},
+  file      = {:acerbi-stubbersfield-2023-large-language-models-show-human-like-content-biases-in-transmission-chain-experiments-1.pdf:PDF},
+  groups    = {Large Language Models},
+  priority  = {prio2},
+  publisher = {Proceedings of the National Academy of Sciences},
+}
+
+@Article{Vezhnevets2023:Concordia,
+  author        = {Vezhnevets, Alexander Sasha and Agapiou, John P. and Aharon, Avia and Ziv, Ron and Matyas, Jayd and Duéñez-Guzmán, Edgar A. and Cunningham, William A. and Osindero, Simon and Karmon, Danny and Leibo, Joel Z.},
+  title         = {Generative agent-based modeling with actions grounded in physical, social, or digital space using Concordia},
+  year          = {2023},
+  month         = dec,
+  abstract      = {Agent-based modeling has been around for decades, and applied widely across the social and natural sciences. The scope of this research method is now poised to grow dramatically as it absorbs the new affordances provided by Large Language Models (LLM)s. Generative Agent-Based Models (GABM) are not just classic Agent-Based Models (ABM)s where the agents talk to one another. Rather, GABMs are constructed using an LLM to apply common sense to situations, act "reasonably", recall common semantic knowledge, produce API calls to control digital technologies like apps, and communicate both within the simulation and to researchers viewing it from the outside. Here we present Concordia, a library to facilitate constructing and working with GABMs. Concordia makes it easy to construct language-mediated simulations of physically- or digitally-grounded environments. Concordia agents produce their behavior using a flexible component system which mediates between two fundamental operations: LLM calls and associative memory retrieval. A special agent called the Game Master (GM), which was inspired by tabletop role-playing games, is responsible for simulating the environment where the agents interact. Agents take actions by describing what they want to do in natural language. The GM then translates their actions into appropriate implementations. In a simulated physical world, the GM checks the physical plausibility of agent actions and describes their effects. In digital environments simulating technologies such as apps and services, the GM may handle API calls to integrate with external tools such as general AI assistants (e.g., Bard, ChatGPT), and digital apps (e.g., Calendar, Email, Search, etc.). Concordia was designed to support a wide array of applications both in scientific research and for evaluating performance of real digital services by simulating users and/or generating synthetic data.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2312.03664},
+  eprint        = {2312.03664},
+  file          = {:Vezhnevets2023 - Generative Agent Based Modeling with Actions Grounded in Physical, Social, or Digital Space Using Concordia.pdf:PDF:http\://arxiv.org/pdf/2312.03664v2},
+  groups        = {LLM towns, Agent-based LLMs},
+  keywords      = {Artificial Intelligence (cs.AI), Computation and Language (cs.CL), FOS: Computer and information sciences},
+  primaryclass  = {cs.AI},
+  priority      = {prio1},
+  publisher     = {arXiv},
+}
+
+@Article{Hinton2006:Autoencoder,
+  author    = {Hinton, G. E. and Salakhutdinov, R. R.},
+  journal   = {Science},
+  title     = {Reducing the Dimensionality of Data with Neural Networks},
+  year      = {2006},
+  issn      = {1095-9203},
+  month     = jul,
+  number    = {5786},
+  pages     = {504--507},
+  volume    = {313},
+  doi       = {10.1126/science.1127647},
+  groups    = {Auto-Encoding},
+  publisher = {American Association for the Advancement of Science (AAAS)},
+  ranking   = {rank5},
+}
+
+@InProceedings{Hunt2024:LLMMultiRobot,
+  author    = {Hunt, William and Godfrey, Toby and Soorati, Mohammad D.},
+  booktitle = {Demonstration at International Conference on Autonomous Agents and Multi-Agent Systems},
+  title     = {Conversational Language Models for Human-in-the-Loop Multi-Robot Coordination},
+  year      = {2024},
+  abstract  = {With the increasing prevalence and diversity of robots interacting in the real world, there is need for flexible, on-the-fly planning and cooperation. Large Language Models are starting to be explored in a multimodal setup for communication, coordination, and planning in robotics. Existing approaches generally use a single agent building a plan, or have multiple homogeneous agents coordinating for a simple task. We present a decentralised, dialogical approach in which a team of agents with different abilities plans solutions through peer-to-peer and human-robot discussion. We suggest that argument-style dialogues are an effective way to facilitate adaptive use of each agent's abilities within a cooperative team. Two robots discuss how to solve a cleaning problem set by a human, define roles, and agree on paths they each take. Each step can be interrupted by a human advisor and agents check their plans with the human. Agents then execute this plan in the real world, collecting rubbish from people in each room. Our implementation uses text at every step, maintaining transparency and effective human-multi-robot interaction.},
+  file      = {:Hunt2024 - Conversational Language Models for Human in the Loop Multi Robot Coordination.pdf:PDF:http\://arxiv.org/pdf/2402.19166v1},
+  groups    = {Comm with LLMs},
+  keywords  = {Robotics (cs.RO), FOS: Computer and information sciences},
+  url       = {https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2809.pdf},
+}
+
+@InProceedings{Ekila2024:LingConvent,
+  author    = {Botoko Ekila, J\'{e}r\^{o}me},
+  booktitle = {Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems},
+  title     = {Emergence of Linguistic Conventions In Multi-Agent Systems Through Situated Communicative Interactions},
+  year      = {2024},
+  address   = {Richland, SC},
+  pages     = {2725–2727},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '24},
+  abstract  = {The field of emergent communication investigates the emergence of shared linguistic conventions among autonomous agents engaged in cooperative tasks that require communication. Conventions that arise through self-organisation are known to be more robust, flexible, and adaptive, and it removes the need for hand-crafting communication protocols. In my PhD research, I investigate how artificial agents can co-construct such conventions of linguistic structures in reference-based tasks. This problem is tackled using the language game experimental paradigm which aims to model the processes underlying the emergence and evolution of human languages. My primary contribution thus far introduces a novel methodology for the language game paradigm in the emergent setting. Using the methodology, agents can establish through self-organisation an emergent language that enables them to refer to arbitrary entities in their environment using single-word utterances. For the first time, the methodology is directly applicable to any dataset that describes entities in terms of continuously-valued features. The next phase in my research is to move from single-word utterances to multi-word utterances through the emergence of grammatical structures.},
+  file      = {:Ekila2024_LingConvent - Emergence of Linguistic Conventions in Multi Agent Systems through Situated Communicative Interactions.pdf:PDF:https\://arxiv.org/pdf/2401.08461},
+  groups    = {Discrete language},
+  isbn      = {9798400704864},
+  keywords  = {autonomous agents, emergent communication, language emergence, language evolution, multi-agent systems, self-organisation},
+  location  = {Auckland, New Zealand},
+  numpages  = {3},
+  priority  = {prio1},
+}
+
+@InProceedings{Liu2024:HLA,
+  author    = {Liu, Jijia and Yu, Chao and Gao, Jiaxuan and Xie, Yuqing and Liao, Qingmin and Wu, Yi and Wang, Yu},
+  booktitle = {International Conference on Autonomous Agents and Multiagent Systems},
+  title     = {LLM-Powered Hierarchical Language Agent for Real-time Human-AI Coordination},
+  year      = {2024},
+  abstract  = {AI agents powered by Large Language Models (LLMs) have made significant advances, enabling them to assist humans in diverse complex tasks and leading to a revolution in human-AI coordination. LLM-powered agents typically require invoking LLM APIs and employing artificially designed complex prompts, which results in high inference latency. While this paradigm works well in scenarios with minimal interactive demands, such as code generation, it is unsuitable for highly interactive and real-time applications, such as gaming. Traditional gaming AI often employs small models or reactive policies, enabling fast inference but offering limited task completion and interaction abilities. In this work, we consider Overcooked as our testbed where players could communicate with natural language and cooperate to serve orders. We propose a Hierarchical Language Agent (HLA) for human-AI coordination that provides both strong reasoning abilities while keeping real-time execution. In particular, HLA adopts a hierarchical framework and comprises three modules: a proficient LLM, referred to as Slow Mind, for intention reasoning and language interaction, a lightweight LLM, referred to as Fast Mind, for generating macro actions, and a reactive policy, referred to as Executor, for transforming macro actions into atomic actions. Human studies show that HLA outperforms other baseline agents, including slow-mind-only agents and fast-mind-only agents, with stronger cooperation abilities, faster responses, and more consistent language communications.},
+  file      = {:Liu2023 - LLM Powered Hierarchical Language Agent for Real Time Human AI Coordination.pdf:PDF:http\://arxiv.org/pdf/2312.15224v2},
+  groups    = {Comm with LLMs},
+  keywords  = {Artificial Intelligence (cs.AI), Human-Computer Interaction (cs.HC), FOS: Computer and information sciences},
+  priority  = {prio1},
+  url       = {https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1219.pdf},
+}
+
+@InProceedings{Choi2018:CompComm,
+  author    = {Edward Choi and Angeliki Lazaridou and Nando de Freitas},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Multi-Agent Compositional Communication Learning from Raw Visual Input},
+  year      = {2018},
+  file      = {:Choi2018_CompComm - Multi Agent Compositional Communication Learning from Raw Visual Input.pdf:PDF:https\://openreview.net/pdf?id=rknt2Be0-},
+  groups    = {Communication},
+  ranking   = {rank1},
+  url       = {https://openreview.net/forum?id=rknt2Be0-},
+}
+
+@Article{Zhu2024a,
+  author    = {Zhu, Changxi and Dastani, Mehdi and Wang, Shihan},
+  journal   = {Autonomous Agents and Multi-Agent Systems},
+  title     = {A survey of multi-agent deep reinforcement learning with communication},
+  year      = {2024},
+  issn      = {1573-7454},
+  month     = jan,
+  number    = {1},
+  volume    = {38},
+  doi       = {10.1007/s10458-023-09633-6},
+  file      = {:s10458-023-09633-6.pdf:PDF},
+  groups    = {Communication},
+  priority  = {prio1},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Gupta2023,
+  author    = {Gupta, Nikunj and Srinivasaraghavan, G. and Mohalik, Swarup and Kumar, Nishant and Taylor, Matthew E.},
+  journal   = {Neural Computing and Applications},
+  title     = {HAMMER: Multi-level coordination of reinforcement learning agents via learned messaging},
+  year      = {2023},
+  issn      = {1433-3058},
+  month     = oct,
+  doi       = {10.1007/s00521-023-09096-6},
+  file      = {:Gupta2023 - HAMMER_ Multi Level Coordination of Reinforcement Learning Agents Via Learned Messaging.pdf:PDF:https\://arxiv.org/pdf/2102.00824},
+  groups    = {Communication},
+  priority  = {prio1},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Tsitsiklis1994,
+  author    = {Tsitsiklis, John N.},
+  journal   = {Machine Learning},
+  title     = {Asynchronous stochastic approximation and Q-learning},
+  year      = {1994},
+  issn      = {1573-0565},
+  month     = sep,
+  number    = {3},
+  pages     = {185--202},
+  volume    = {16},
+  comment   = {Proof of convergence of Q-learning},
+  doi       = {10.1007/bf00993306},
+  groups    = {Value based},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank5},
+}
+
+@Article{Swarup2009,
+  author     = {Swarup, Samarth and Gasser, Les},
+  journal    = {Adaptive Behavior},
+  title      = {The Iterated Classification Game: A New Model of the Cultural Transmission of Language},
+  year       = {2009},
+  issn       = {1741-2633},
+  month      = jun,
+  number     = {3},
+  pages      = {213--235},
+  volume     = {17},
+  doi        = {10.1177/1059712309105818},
+  file       = {:Swarup2009 - The Iterated Classification Game_ a New Model of the Cultural Transmission of Language.pdf:PDF:https\://www.ncbi.nlm.nih.gov/pmc/articles/PMC2828955/pdf/nihms170010.pdf},
+  groups     = {Language evolution},
+  publisher  = {SAGE Publications},
+  readstatus = {read},
+}
+
+@Article{Ji2023:Hallucinations,
+  author    = {Ji, Ziwei and Lee, Nayeon and Frieske, Rita and Yu, Tiezheng and Su, Dan and Xu, Yan and Ishii, Etsuko and Bang, Ye Jin and Madotto, Andrea and Fung, Pascale},
+  journal   = {ACM Computing Surveys},
+  title     = {Survey of Hallucination in Natural Language Generation},
+  year      = {2023},
+  issn      = {1557-7341},
+  month     = mar,
+  number    = {12},
+  pages     = {1--38},
+  volume    = {55},
+  doi       = {10.1145/3571730},
+  groups    = {Large Language Models},
+  publisher = {Association for Computing Machinery (ACM)},
+  ranking   = {rank5},
+}
+
+@Article{Hong2023:MetaGPT,
+  author        = {Hong, Sirui and Zhuge, Mingchen and Chen, Jonathan and Zheng, Xiawu and Cheng, Yuheng and Zhang, Ceyao and Wang, Jinlin and Wang, Zili and Yau, Steven Ka Shing and Lin, Zijuan and Zhou, Liyang and Ran, Chenyu and Xiao, Lingfeng and Wu, Chenglin and Schmidhuber, Jürgen},
+  title         = {MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework},
+  year          = {2023},
+  month         = aug,
+  abstract      = {Remarkable progress has been made on automated problem solving through societies of agents based on large language models (LLMs). Existing LLM-based multi-agent systems can already solve simple dialogue tasks. Solutions to more complex tasks, however, are complicated through logic inconsistencies due to cascading hallucinations caused by naively chaining LLMs. Here we introduce MetaGPT, an innovative meta-programming framework incorporating efficient human workflows into LLM-based multi-agent collaborations. MetaGPT encodes Standardized Operating Procedures (SOPs) into prompt sequences for more streamlined workflows, thus allowing agents with human-like domain expertise to verify intermediate results and reduce errors. MetaGPT utilizes an assembly line paradigm to assign diverse roles to various agents, efficiently breaking down complex tasks into subtasks involving many agents working together. On collaborative software engineering benchmarks, MetaGPT generates more coherent solutions than previous chat-based multi-agent systems. Our project can be found at https://github.com/geekan/MetaGPT},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2308.00352},
+  eprint        = {2308.00352},
+  file          = {:Hong2023 - MetaGPT_ Meta Programming for a Multi Agent Collaborative Framework.pdf:PDF:http\://arxiv.org/pdf/2308.00352v5},
+  groups        = {LLM towns},
+  keywords      = {Artificial Intelligence (cs.AI), Multiagent Systems (cs.MA), FOS: Computer and information sciences},
+  primaryclass  = {cs.AI},
+  publisher     = {arXiv},
+}
+
+@Article{Vogt2005,
+  author    = {Vogt, Paul},
+  journal   = {Artificial Intelligence},
+  title     = {The emergence of compositional structures in perceptually grounded language games},
+  year      = {2005},
+  issn      = {0004-3702},
+  month     = sep,
+  number    = {1–2},
+  pages     = {206--242},
+  volume    = {167},
+  doi       = {10.1016/j.artint.2005.04.010},
+  file      = {:1-s2.0-S0004370205001001-main.pdf:PDF},
+  groups    = {Language evolution},
+  priority  = {prio1},
+  publisher = {Elsevier BV},
+  ranking   = {rank2},
+}
+
+@Article{Nagel1974,
+  author    = {Nagel, Thomas},
+  journal   = {The Philosophical Review},
+  title     = {What Is It Like to Be a Bat?},
+  year      = {1974},
+  issn      = {0031-8108},
+  month     = oct,
+  number    = {4},
+  pages     = {435},
+  volume    = {83},
+  doi       = {10.2307/2183914},
+  file      = {:Nagel1974 - What Is It like to Be a Bat_.pdf:PDF:https\://www.sas.upenn.edu/~cavitch/pdf-library/Nagel_Bat.pdf},
+  groups    = {Conciousness},
+  publisher = {JSTOR},
+}
+
+@Article{Searle1980,
+  author    = {Searle, John R.},
+  journal   = {Behavioral and Brain Sciences},
+  title     = {Minds, brains, and programs},
+  year      = {1980},
+  issn      = {1469-1825},
+  month     = sep,
+  number    = {3},
+  pages     = {417--424},
+  volume    = {3},
+  doi       = {10.1017/s0140525x00005756},
+  file      = {:Searle1980 - Minds, Brains, and Programs.pdf:PDF:https\://cse.buffalo.edu/~rapaport/Papers/Papers.by.Others/Searle/searle80-MindsBrainsProgs-BBS.pdf},
+  groups    = {Artificial Intelligence},
+  publisher = {Cambridge University Press (CUP)},
+  ranking   = {rank5},
+}
+
+@Article{Hinton1987:LearningEvolution,
+  author  = {Hinton, Geoffrey E and Nowlan, Steven J and others},
+  journal = {Complex systems},
+  title   = {How learning can guide evolution},
+  year    = {1987},
+  number  = {3},
+  pages   = {495--502},
+  volume  = {1},
+  file    = {:Hinton1987_LearningEvolution - How Learning Can Guide Evolution.pdf:PDF:https\://icts.res.in/sites/default/files/How%20Learning%20Can%20Guide%20Evolution%20-1987.pdf},
+  groups  = {Evolution},
+  ranking = {rank4},
+  url     = {https://icts.res.in/sites/default/files/How Learning Can Guide Evolution -1987.pdf},
+}
+
+@Article{Baldwin1896:BaldwinEffect,
+  author    = {Baldwin, J. Mark},
+  journal   = {The American Naturalist},
+  title     = {A New Factor in Evolution},
+  year      = {1896},
+  issn      = {1537-5323},
+  month     = jun,
+  number    = {354},
+  pages     = {441--451},
+  volume    = {30},
+  doi       = {10.1086/276408},
+  file      = {:Baldwin1896_BaldwinEffect - A New Factor in Evolution.pdf:PDF:https\://web.archive.org/web/20180721170610id_/http\://www.diacronia.ro/en/journal/issue/7/A112/en/pdf},
+  groups    = {Evolution},
+  publisher = {University of Chicago Press},
+  ranking   = {rank5},
+}
+
+@Book{Steels2015,
+  author    = {Steels, Luc L.},
+  publisher = {Language Science Press},
+  title     = {{The} {Talking} {Heads} experiment},
+  year      = {2015},
+  address   = {Berlin},
+  number    = {1},
+  series    = {Computational Models of Language Evolution},
+  doi       = {10.17169/FUDOCS_document_000000022455},
+  groups    = {Language evolution},
+  ranking   = {rank2},
+  subtitle  = {{Origins} of words and meanings},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:Artificial Intelligence\;0\;0\;\;\;\;;
+1 StaticGroup:Artificial Intelligence\;0\;1\;\;\;\;;
+1 StaticGroup:Biology\;0\;1\;\;\;\;;
+2 StaticGroup:Conciousness\;0\;1\;\;\;\;;
+2 StaticGroup:Evolution\;0\;1\;\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Developmental psychology\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Evolution Strategy\;0\;0\;0x8a8a8aff\;\;\;;
@@ -11511,7 +11834,7 @@ ChatGPT},
 2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language generation with RL\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Large Language Models\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Control with LLMs\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Agent-based LLMs\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:LLM towns\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Question Answering\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Text-based environments\;0\;1\;0x8a8a8aff\;\;\;;
@@ -11528,7 +11851,7 @@ ChatGPT},
 1 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent learning\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
@@ -11539,7 +11862,7 @@ ChatGPT},
 3 StaticGroup:Communication\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Discrete language\;2\;1\;0x8a8a8aff\;\;\;;
 5 StaticGroup:Natural language\;0\;1\;0x8a8a8aff\;\;\;;
-4 StaticGroup:Speaker-Listener\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Speaker-Listener\;0\;0\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Language-Grounded Communication\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Comm with LLMs\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Applied MAC\;0\;1\;0x8a8a8aff\;\;\;;
@@ -11557,7 +11880,7 @@ ChatGPT},
 1 StaticGroup:Meta-Learning\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Environments\;0\;0\;0x8a8a8aff\;\;\;;
@@ -11591,7 +11914,7 @@ ChatGPT},
 2 StaticGroup:RLHF\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Safe RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Transformers in RL\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Autonomous Driving\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
