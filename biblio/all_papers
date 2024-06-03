@@ -55,13 +55,15 @@
 }
 
 @Article{Fujimoto2018:TD3,
-  author        = {Scott Fujimoto and Herke van Hoof and David Meger},
-  title         = {Addressing Function Approximation Error in Actor-Critic Methods},
-  year          = {2018},
-  month         = feb,
-  abstract      = {In value-based reinforcement learning methods such as deep Q-learning, function approximation errors are known to lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance. We evaluate our method on the suite of OpenAI gym tasks, outperforming the state of the art in every environment tested.},
-  archiveprefix = {arXiv},
-  comment       = {- PROBLEM:
+  author     = {Scott Fujimoto and Herke van Hoof and David Meger},
+  title      = {Addressing Function Approximation Error in Actor-Critic Methods},
+  year       = {2018},
+  month      = {10--15 Jul},
+  pages      = {1587--1596},
+  volume     = {80},
+  abstract   = {In value-based reinforcement learning methods such as deep Q-learning, function approximation errors are known to lead to overestimated value estimates and suboptimal policies. We show that this problem persists in an actor-critic setting and propose novel mechanisms to minimize its effects on both the actor and the critic. Our algorithm builds on Double Q-learning, by taking the minimum value between a pair of critics to limit overestimation. We draw the connection between target networks and overestimation bias, and suggest delaying policy updates to reduce per-update error and further improve performance. We evaluate our method on the suite of OpenAI gym tasks, outperforming the state of the art in every environment tested.},
+  booktitle  = {Proceedings of the 35th International Conference on Machine Learning},
+  comment    = {- PROBLEM:
 	Overestimation of Q-values estimates leading to suboptimal policies, even in DDPG
 - SOLUTION:
 	TD3: Double DQN and Clipped Double-Q trick
@@ -71,13 +73,15 @@
 - RESULTS:
 	Reduces overestimation of Q-values
 	Outperforms all previous policy-based algorithms},
-  eprint        = {1802.09477},
-  file          = {:Fujimoto2018 - Addressing Function Approximation Error in Actor Critic Methods.pdf:PDF},
-  groups        = {Policy based, DDPG, Actor Critic},
-  keywords      = {cs.AI, cs.LG, stat.ML},
-  primaryclass  = {cs.AI},
-  ranking       = {rank4},
-  readstatus    = {read},
+  editor     = {Dy, Jennifer and Krause, Andreas},
+  file       = {:Fujimoto2018 - Addressing Function Approximation Error in Actor Critic Methods.pdf:PDF},
+  groups     = {Policy based, DDPG, Actor Critic},
+  pdf        = {http://proceedings.mlr.press/v80/fujimoto18a/fujimoto18a.pdf},
+  publisher  = {PMLR},
+  ranking    = {rank4},
+  readstatus = {read},
+  series     = {Proceedings of Machine Learning Research},
+  url        = {https://proceedings.mlr.press/v80/fujimoto18a.html},
 }
 
 @Article{Schulman2017,
