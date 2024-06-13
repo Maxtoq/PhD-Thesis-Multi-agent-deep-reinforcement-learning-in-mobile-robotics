@@ -5840,7 +5840,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   ranking       = {rank3},
 }
 
-@Article{Harnad1990,
+@Article{Harnad1990:SymbolGrounding,
   author     = {Stevan Harnad},
   journal    = {Physica D: Nonlinear Phenomena},
   title      = {The symbol grounding problem},
@@ -10999,7 +10999,7 @@ ChatGPT},
   ranking   = {rank2},
 }
 
-@Article{Nowak1999,
+@Article{Nowak1999:LanguageEvo,
   author    = {Nowak, Martin A. and Krakauer, David C.},
   journal   = {Proceedings of the National Academy of Sciences},
   title     = {The evolution of language},
@@ -11302,7 +11302,7 @@ ChatGPT},
   url       = {https://openreview.net/forum?id=HyxQzBceg},
 }
 
-@Article{Smith2003,
+@Article{Smith2003:IteratedLearning,
   author    = {Smith, Kenny and Kirby, Simon and Brighton, Henry},
   journal   = {Artificial Life},
   title     = {Iterated Learning: A Framework for the Emergence of Language},
@@ -11320,7 +11320,7 @@ ChatGPT},
   ranking   = {rank3},
 }
 
-@Article{Brighton2006:Understanding,
+@Article{Brighton2006:TopographicMapping,
   author     = {Brighton, Henry and Kirby, Simon},
   journal    = {Artificial Life},
   title      = {Understanding Linguistic Evolution by Visualizing the Emergence of Topographic Mappings},
@@ -11361,7 +11361,6 @@ ChatGPT},
   volume    = {36},
   doi       = {10.1111/j.1755-2567.1970.tb00434.x},
   groups    = {Language, Language origins and evolution},
-  priority  = {prio1},
   publisher = {Wiley},
   ranking   = {rank5},
 }
@@ -11403,7 +11402,7 @@ ChatGPT},
   priority  = {prio2},
 }
 
-@Article{Zaslavsky2018:EfficientCompr,
+@Article{Zaslavsky2018:ColorNamingEvo,
   author    = {Zaslavsky, Noga and Kemp, Charles and Regier, Terry and Tishby, Naftali},
   journal   = {Proceedings of the National Academy of Sciences},
   title     = {Efficient compression in color naming and its evolution},
@@ -11724,7 +11723,7 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@Article{Vogt2005,
+@Article{Vogt2005:EmergenceCompo,
   author    = {Vogt, Paul},
   journal   = {Artificial Intelligence},
   title     = {The emergence of compositional structures in perceptually grounded language games},
@@ -11923,7 +11922,7 @@ ChatGPT},
   ranking   = {rank2},
 }
 
-@Article{Vogt2002,
+@Article{Vogt2002:PhysicalGrounding,
   author    = {Vogt, Paul},
   journal   = {Cognitive Systems Research},
   title     = {The physical symbol grounding problem},
@@ -11975,7 +11974,7 @@ ChatGPT},
   ranking   = {rank3},
 }
 
-@Article{Beuls2013,
+@Article{Beuls2013:GrammaticalAgreement,
   author    = {Beuls, Katrien and Steels, Luc},
   journal   = {PLoS ONE},
   title     = {Agent-Based Models of Strategies for the Emergence and Evolution of Grammatical Agreement},
@@ -12008,7 +12007,7 @@ ChatGPT},
   url      = {https://www.frontiersin.org/articles/10.3389/frobt.2020.00084},
 }
 
-@Article{Wellens2008,
+@Article{Wellens2008:FlexibleWordMeaning,
   author    = {Wellens, Peter and Loetzsch, Martin and Steels, Luc},
   journal   = {Connection Science},
   title     = {Flexible word meaning in embodied agents},
@@ -12024,6 +12023,48 @@ ChatGPT},
   priority  = {prio1},
   publisher = {Informa UK Limited},
   ranking   = {rank1},
+}
+
+@Article{Kirby2001:ILM,
+  author    = {Kirby, S.},
+  journal   = {IEEE Transactions on Evolutionary Computation},
+  title     = {Spontaneous evolution of linguistic structure-an iterated learning model of the emergence of regularity and irregularity},
+  year      = {2001},
+  issn      = {1089-778X},
+  month     = apr,
+  number    = {2},
+  pages     = {102--110},
+  volume    = {5},
+  doi       = {10.1109/4235.918430},
+  file      = {:Kirby2001 - Spontaneous Evolution of Linguistic Structure an Iterated Learning Model of the Emergence of Regularity and Irregularity.pdf:PDF:https\://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=e5bc94f7f841b83012d3895839f539bf85270532},
+  groups    = {Language origins and evolution},
+  priority  = {prio1},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking   = {rank3},
+}
+
+@Book{Steels1999:TalkingHeads1,
+  author   = {Luc Steels},
+  editor   = {Special pre-edition for LABORATORIUM},
+  title    = {The Talking Heads Experiment. Volume I. Words and Meanings},
+  year     = {1999},
+  groups   = {Language origins and evolution},
+  priority = {prio1},
+  ranking  = {rank2},
+}
+
+@InProceedings{Zuidema2002,
+  author    = {Zuidema, Willem},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {How the Poverty of the Stimulus Solves the Poverty of the Stimulus},
+  year      = {2002},
+  editor    = {S. Becker and S. Thrun and K. Obermayer},
+  publisher = {MIT Press},
+  volume    = {15},
+  file      = {:Zuidema2002 - How the Poverty of the Stimulus Solves the Poverty of the Stimulus.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2002/file/04ad5632029cbfbed8e136e5f6f7ddfa-Paper.pdf},
+  groups    = {Language origins and evolution},
+  ranking   = {rank2},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2002/file/04ad5632029cbfbed8e136e5f6f7ddfa-Paper.pdf},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
