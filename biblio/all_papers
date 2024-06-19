@@ -1016,20 +1016,22 @@
   primaryclass  = {cs.AI},
 }
 
-@Article{Jaderberg2018,
+@Article{Jaderberg2018:FTW,
   author        = {Max Jaderberg and Wojciech M. Czarnecki and Iain Dunning and Luke Marris and Guy Lever and Antonio Garcia Castaneda and Charles Beattie and Neil C. Rabinowitz and Ari S. Morcos and Avraham Ruderman and Nicolas Sonnerat and Tim Green and Louise Deason and Joel Z. Leibo and David Silver and Demis Hassabis and Koray Kavukcuoglu and Thore Graepel},
-  journal       = {Science, 364(6443):859–865, 2019},
+  journal       = {Science},
   title         = {Human-level performance in first-person multiplayer games with population-based deep reinforcement learning},
-  year          = {2018},
-  month         = jul,
+  year          = {2019},
+  month         = may,
+  number        = {6443},
+  pages         = {859-865},
+  volume        = {364},
   abstract      = {Recent progress in artificial intelligence through reinforcement learning (RL) has shown great success on increasingly complex single-agent environments and two-player turn-based games. However, the real-world contains multiple agents, each learning and acting independently to cooperate and compete with other agents, and environments reflecting this degree of complexity remain an open challenge. In this work, we demonstrate for the first time that an agent can achieve human-level in a popular 3D multiplayer first-person video game, Quake III Arena Capture the Flag, using only pixels and game points as input. These results were achieved by a novel two-tier optimisation process in which a population of independent RL agents are trained concurrently from thousands of parallel matches with agents playing in teams together and against each other on randomly generated environments. Each agent in the population learns its own internal reward signal to complement the sparse delayed reward from winning, and selects actions using a novel temporally hierarchical representation that enables the agent to reason at multiple timescales. During game-play, these agents display human-like behaviours such as navigating, following, and defending based on a rich learned representation that is shown to encode high-level game knowledge. In an extensive tournament-style evaluation the trained agents exceeded the win-rate of strong human players both as teammates and opponents, and proved far stronger than existing state-of-the-art agents. These results demonstrate a significant jump in the capabilities of artificial agents, bringing us closer to the goal of human-level intelligence.},
   archiveprefix = {arXiv},
   doi           = {10.1126/science.aau6249},
-  eprint        = {1807.01281},
   file          = {:Jaderberg2018 - Human Level Performance in First Person Multiplayer Games with Population Based Deep Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-agent RL, Multi-agent Systems},
-  keywords      = {cs.LG, cs.AI, stat.ML},
+  groups        = {Multi-agent RL, Independent Learning, Population-based training},
   primaryclass  = {cs.LG},
+  priority      = {prio1},
   ranking       = {rank4},
 }
 
@@ -1191,6 +1193,8 @@
   doi      = {https://doi.org/10.1016/j.artint.2006.02.006},
   file     = {:SHOHAM2007365 - If Multi Agent Learning Is the Answer, What Is the Question_ (2).pdf:PDF},
   groups   = {MAS Reviews, Multi-agent Systems},
+  priority = {prio1},
+  ranking  = {rank3},
   url      = {https://www.sciencedirect.com/science/article/pii/S0004370207000495},
 }
 
@@ -1447,7 +1451,8 @@
   title     = {An introduction to multiagent systems},
   year      = {2009},
   file      = {:An Introduction to MultiAgent Systems ( PDFDrive ).pdf:PDF},
-  groups    = {Multi-agent Systems},
+  groups    = {Multi-agent Systems, MAS Reviews},
+  priority  = {prio1},
   ranking   = {rank5},
   url       = {https://books.google.fr/books?hl=en&lr=&id=X3ZQ7yeDn2IC&oi=fnd&pg=PR13&ots=WHohqr4qa_&sig=0NufQwkvOFQvIdmAjHTz0F27huo&redir_esc=y#v=onepage&q&f=false},
 }
@@ -1539,7 +1544,7 @@
   booktitle  = {Reinforcement Learning: State-of-the-Art},
   doi        = {10.1007/978-3-642-27645-3_14},
   file       = {:Nowé2012 - Game Theory and Multi Agent Reinforcement Learning.pdf:PDF},
-  groups     = {MAS Reviews},
+  groups     = {MAS Reviews, Game theory},
   ranking    = {rank2},
   readstatus = {read},
   url        = {https://doi.org/10.1007/978-3-642-27645-3_14},
@@ -1592,6 +1597,8 @@
   file     = {:KRAEMER201682 - Multi Agent Reinforcement Learning As a Rehearsal for Decentralized Planning.pdf:PDF},
   groups   = {Multi-agent RL},
   keywords = {Multi-agent reinforcement learning, Decentralized planning},
+  priority = {prio2},
+  ranking  = {rank3},
   url      = {https://www.sciencedirect.com/science/article/pii/S0925231216000783},
 }
 
@@ -1691,7 +1698,7 @@ sharing of policy parameters},
   ranking   = {rank3},
 }
 
-@InProceedings{foerster17b,
+@InProceedings{Foerster2017:StabilisingExpReplay,
   author     = {Jakob Foerster and Nantas Nardelli and Gregory Farquhar and Triantafyllos Afouras and Philip H. S. Torr and Pushmeet Kohli and Shimon Whiteson},
   booktitle  = {Proceedings of the 34th International Conference on Machine Learning},
   title      = {Stabilising Experience Replay for Deep Multi-Agent Reinforcement Learning},
@@ -1852,18 +1859,19 @@ Concurrent Experience Replay Trajectories (CERT)},
   readstatus    = {read},
 }
 
-@Article{Li2021,
+@InProceedings{Li2022:MAMT,
   author        = {Wenhao Li and Xiangfeng Wang and Bo Jin and Junjie Sheng and Hongyuan Zha},
+  booktitle     = {The Tenth International Conference on Learning Representations, ICLR 2022},
   title         = {Dealing with Non-Stationarity in Multi-Agent Reinforcement Learning via Trust Region Decomposition},
-  year          = {2021},
-  month         = feb,
+  year          = {2022},
   abstract      = {Non-stationarity is one thorny issue in multi-agent reinforcement learning, which is caused by the policy changes of agents during the learning procedure. Current works to solve this problem have their own limitations in effectiveness and scalability, such as centralized critic and decentralized actor (CCDA), population-based self-play, modeling of others and etc. In this paper, we novelly introduce a $\delta$-stationarity measurement to explicitly model the stationarity of a policy sequence, which is theoretically proved to be proportional to the joint policy divergence. However, simple policy factorization like mean-field approximation will mislead to larger policy divergence, which can be considered as trust region decomposition dilemma. We model the joint policy as a general Markov random field and propose a trust region decomposition network based on message passing to estimate the joint policy divergence more accurately. The Multi-Agent Mirror descent policy algorithm with Trust region decomposition, called MAMT, is established with the purpose to satisfy $\delta$-stationarity. MAMT can adjust the trust region of the local policies adaptively in an end-to-end manner, thereby approximately constraining the divergence of joint policy to alleviate the non-stationary problem. Our method can bring noticeable and stable performance improvement compared with baselines in coordination tasks of different complexity.},
   archiveprefix = {arXiv},
   eprint        = {2102.10616},
-  file          = {:Li2021 - Dealing with Non Stationarity in Multi Agent Reinforcement Learning Via Trust Region Decomposition.pdf:PDF},
+  file          = {:Li2022_MAMT - Dealing with Non Stationarity in Multi Agent Reinforcement Learning Via Trust Region Decomposition.pdf:PDF:https\://openreview.net/pdf?id=XHUxf5aRB3s},
   groups        = {Multi-agent RL},
   keywords      = {cs.LG, cs.GT, cs.MA},
   primaryclass  = {cs.LG},
+  ranking       = {rank1},
 }
 
 @InProceedings{Liu2020,
@@ -1915,7 +1923,8 @@ Concurrent Experience Replay Trajectories (CERT)},
   booktitle = {Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 1)},
   file      = {:Papoudakis2020 - Comparative Evaluation of Multi Agent Deep Reinforcement Learning Algorithms (1).pdf:PDF},
   groups    = {MAS Reviews},
-  ranking   = {rank1},
+  priority  = {prio1},
+  ranking   = {rank2},
   url       = {https://openreview.net/forum?id=cIrPX-Sn5n},
 }
 
@@ -4152,7 +4161,7 @@ FacMADDPG},
   archiveprefix = {arXiv},
   eprint        = {2012.07617},
   file          = {:Meneghetti2020a - Specializing Inter Agent Communication in Heterogeneous Multi Agent Reinforcement Learning Using Agent Class Information.pdf:PDF},
-  groups        = {H-MADRL, Graphs, Communication},
+  groups        = {Graphs, Communication, Heterogeneous MADRL},
   keywords      = {cs.AI, cs.LG, cs.MA},
   primaryclass  = {cs.AI},
   priority      = {prio2},
@@ -4312,7 +4321,7 @@ agents)},
   archiveprefix = {arXiv},
   eprint        = {2010.02663},
   file          = {:Wakilpoor2020 - Heterogeneous Multi Agent Reinforcement Learning for Unknown Environment Mapping.pdf:PDF},
-  groups        = {H-MADRL},
+  groups        = {Heterogeneous MADRL},
   keywords      = {cs.MA, cs.AI},
   primaryclass  = {cs.MA},
   readstatus    = {skimmed},
@@ -4397,6 +4406,7 @@ agents)},
   year      = {2016},
   file      = {:oliehoek2016concise - A Concise Introduction to Decentralized POMDPs.pdf:PDF},
   groups    = {MAS Reviews},
+  priority  = {prio1},
   url       = {https://www.ccis.northeastern.edu/home/camato/publications/OliehoekAmato16book.pdf},
 }
 
@@ -4599,7 +4609,7 @@ agents)},
   url        = {http://proceedings.mlr.press/v87/das18a.html},
 }
 
-@InProceedings{pmlr-v80-zhang18n,
+@InProceedings{Zhang2018:NetworkedAgents,
   author     = {Zhang, Kaiqing and Yang, Zhuoran and Liu, Han and Zhang, Tong and Basar, Tamer},
   booktitle  = {Proceedings of the 35th International Conference on Machine Learning},
   title      = {Fully Decentralized Multi-Agent Reinforcement Learning with Networked Agents},
@@ -4687,7 +4697,7 @@ agents)},
   doi           = {10.5753/eniac.2020.12161},
   eprint        = {2009.13161},
   file          = {:Meneghetti2020 - Towards Heterogeneous Multi Agent Reinforcement Learning with Graph Neural Networks.pdf:PDF},
-  groups        = {H-MADRL, Graphs, Communication},
+  groups        = {Graphs, Communication, Heterogeneous MADRL},
   keywords      = {cs.AI, cs.LG},
   primaryclass  = {cs.AI},
   priority      = {prio2},
@@ -6760,7 +6770,7 @@ the agent takes as input the current state and goal, the value function depends 
   volume    = {33},
   abstract  = {Numerous deep reinforcement learning agents have been proposed, and each of them has its strengths and flaws. In this work, we present a Cooperative Heterogeneous Deep Reinforcement Learning (CHDRL) framework that can learn a policy by integrating the advantages of heterogeneous agents. Specifically, we propose a cooperative learning framework that classifies heterogeneous agents into two classes: global agents and local agents. Global agents are off-policy agents that can utilize experiences from the other agents. Local agents are either on-policy agents or population-based evolutionary algorithms (EAs) agents that can explore the local area effectively. We employ global agents, which are sample-efficient, to guide the learning of local agents so that local agents can benefit from sample-efficient agents and simultaneously maintain their advantages, e.g., stability. Global agents also benefit from effective local searches. Experimental studies on a range of continuous control tasks from the Mujoco benchmark show that CHDRL achieves better performance compared with state-of-the-art baselines.},
   file      = {:NEURIPS2020_ca3a9be7 - Cooperative Heterogeneous Deep Reinforcement Learning.pdf:PDF},
-  groups    = {H-MADRL},
+  groups    = {Heterogeneous MADRL},
   url       = {https://proceedings.neurips.cc/paper/2020/file/ca3a9be77f7e88708afb20c8cdf44b60-Paper.pdf},
 }
 
@@ -10933,7 +10943,7 @@ ChatGPT},
   doi       = {10.1371/journal.pcbi.1000254},
   editor    = {Behrens, Tim},
   file      = {:Yoshida2008 - Game Theory of Mind.pdf:PDF:https\://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1000254&type=printable},
-  groups    = {Theory of Mind},
+  groups    = {Agent Modelling},
   priority  = {prio1},
   publisher = {Public Library of Science (PLoS)},
   ranking   = {rank3},
@@ -12067,6 +12077,145 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2002/file/04ad5632029cbfbed8e136e5f6f7ddfa-Paper.pdf},
 }
 
+@Book{Albrecht2024,
+  author    = {Stefano V. Albrecht and Filippos Christianos and Lukas Sch\"afer},
+  publisher = {MIT Press},
+  title     = {Multi-Agent Reinforcement Learning: Foundations and Modern Approaches},
+  year      = {2024},
+  file      = {:Albrecht2024 - Multi Agent Reinforcement Learning_ Foundations and Modern Approaches.pdf:PDF:https\://www.marl-book.com/download/marl-book.pdf},
+  groups    = {MAS Reviews},
+  ranking   = {rank1},
+  url       = {https://www.marl-book.com},
+}
+
+@Book{Shoham2008:Multiagent,
+  author    = {Shoham, Yoav and Leyton-Brown, Kevin},
+  publisher = {Cambridge University Press},
+  title     = {Multiagent systems: Algorithmic, game-theoretic, and logical foundations},
+  year      = {2008},
+  groups    = {MAS Reviews},
+  ranking   = {rank5},
+  url       = {http://eecs.harvard.edu/cs286r/courses/fall08/files/SLB.pdf},
+}
+
+@Article{Albrecht2018,
+  author    = {Albrecht, Stefano V. and Stone, Peter},
+  journal   = {Artificial Intelligence},
+  title     = {Autonomous agents modelling other agents: A comprehensive survey and open problems},
+  year      = {2018},
+  issn      = {0004-3702},
+  month     = may,
+  pages     = {66--95},
+  volume    = {258},
+  doi       = {10.1016/j.artint.2018.01.002},
+  groups    = {Agent Modelling},
+  publisher = {Elsevier BV},
+  ranking   = {rank3},
+}
+
+@Book{Owen2013:GameTheory,
+  author    = {Owen, Guillermo},
+  publisher = {Emerald Group Publishing},
+  title     = {Game theory},
+  year      = {2013},
+  groups    = {MAS Reviews, Game theory},
+  ranking   = {rank5},
+  url       = {https://books.google.fr/books?hl=en&lr=&id=yeVbAAAAQBAJ&oi=fnd&pg=PP2&ots=Yp1-UuOAie&sig=1IaP-ESJcbpI7rs7FjB2KmkQdsQ&redir_esc=y#v=onepage&q&f=false},
+}
+
+@Book{Harsanyi1988:EqSec,
+  author    = {John C. Harsanyi and Reinhard Selten},
+  publisher = {The MIT Press},
+  title     = {{A General Theory of Equilibrium Selection in Games}},
+  year      = {1988},
+  isbn      = {ARRAY(0x56531e08)},
+  month     = {December},
+  number    = {0262582384},
+  series    = {MIT Press Books},
+  volume    = {1},
+  abstract  = {The authors, two of the most prominent game theorists of this generation, have devoted a number of years to the development of the theory presented here, and to its economic applications. They propose rational criteria for selecting one particular uniformly perfect equilibrium point as the solution of any noncooperative game. And, because any cooperative game can be remodelled as a noncooperative bargaining game, their theory defines a one-point solution for any cooperative game as well. By providing solutions - based on the same principles of rational behavior - for all classes of games, both cooperative and noncooperative, both those with complete and with incomplete information, Harsanyi and Selten's approach achieves a remarkable degree of theoretical unification for game theory as a whole and provides a deeper insight into the nature of game-theoretic rationality. The book applies this theory to a number of specific game classes, such as unanimity games; bargaining with transaction costs; trade involving one seller and several buyers; two-person bargaining with incomplete information on one side, and on both sides. The last chapter discusses the relationship of the authors' theory to other recently proposed solution concepts, particularly the Kohberg-Mertens stability theory.},
+  groups    = {MAS Reviews, Equilibrium selection},
+  keywords  = {game theory; equlibrium selection},
+  url       = {https://ideas.repec.org/b/mtp/titles/0262582384.html},
+}
+
+@Article{Nash1950,
+  author    = {Nash, John F.},
+  journal   = {Proceedings of the National Academy of Sciences},
+  title     = {Equilibrium points in n -person games},
+  year      = {1950},
+  issn      = {1091-6490},
+  month     = jan,
+  number    = {1},
+  pages     = {48--49},
+  volume    = {36},
+  doi       = {10.1073/pnas.36.1.48},
+  groups    = {Game theory},
+  publisher = {Proceedings of the National Academy of Sciences},
+  ranking   = {rank5},
+}
+
+@Article{Fudenberg1993,
+  author    = {Fudenberg, Drew and Levine, David K.},
+  journal   = {Econometrica},
+  title     = {Steady State Learning and Nash Equilibrium},
+  year      = {1993},
+  issn      = {0012-9682},
+  month     = may,
+  number    = {3},
+  pages     = {547},
+  volume    = {61},
+  doi       = {10.2307/2951717},
+  groups    = {Agent Modelling},
+  publisher = {JSTOR},
+  ranking   = {rank2},
+}
+
+@Article{Lanctot2023RockPaperScissors,
+  author   = {Marc Lanctot and John Schultz and Neil Burch and Max Olan Smith and Daniel Hennes and Thomas Anthony and Julien Perolat},
+  journal  = {Transactions on Machine Learning Research},
+  title    = {Population-based Evaluation in Repeated Rock-Paper-Scissors as a Benchmark for Multiagent Reinforcement Learning},
+  year     = {2023},
+  issn     = {2835-8856},
+  file     = {:Lanctot2023RockPaperScissors - Population Based Evaluation in Repeated Rock Paper Scissors As a Benchmark for Multiagent Reinforcement Learning.pdf:PDF:https\://openreview.net/pdf?id=gQnJ7ODIAx},
+  groups   = {Multi-Agent Environments, Agent Modelling},
+  priority = {prio1},
+  url      = {https://openreview.net/forum?id=gQnJ7ODIAx},
+}
+
+@InProceedings{Papoudakis2021:LIAM,
+  author    = {Papoudakis, Georgios and Christianos, Filippos and Albrecht, Stefano},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Agent Modelling under Partial Observability for Deep Reinforcement Learning},
+  year      = {2021},
+  editor    = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+  pages     = {19210--19222},
+  publisher = {Curran Associates, Inc.},
+  volume    = {34},
+  file      = {:Papoudakis2021_LIAM - Agent Modelling under Partial Observability for Deep Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2021/file/a03caec56cd82478bf197475b48c05f9-Paper.pdf},
+  groups    = {Agent Modelling},
+  ranking   = {rank1},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2021/file/a03caec56cd82478bf197475b48c05f9-Paper.pdf},
+}
+
+@Article{Graves2016:DNC,
+  author    = {Graves, Alex and Wayne, Greg and Reynolds, Malcolm and Harley, Tim and Danihelka, Ivo and Grabska-Barwińska, Agnieszka and Colmenarejo, Sergio Gómez and Grefenstette, Edward and Ramalho, Tiago and Agapiou, John and Badia, Adrià Puigdomènech and Hermann, Karl Moritz and Zwols, Yori and Ostrovski, Georg and Cain, Adam and King, Helen and Summerfield, Christopher and Blunsom, Phil and Kavukcuoglu, Koray and Hassabis, Demis},
+  journal   = {Nature},
+  title     = {Hybrid computing using a neural network with dynamic external memory},
+  year      = {2016},
+  issn      = {1476-4687},
+  month     = oct,
+  number    = {7626},
+  pages     = {471--476},
+  volume    = {538},
+  comment   = {Differentiable Neural Computer},
+  doi       = {10.1038/nature20101},
+  file      = {:Graves2016 - Hybrid Computing Using a Neural Network with Dynamic External Memory.pdf:PDF:https\://clgiles.ist.psu.edu/IST597/materials/papers-computing/DL-computing/2016-graves.pdf},
+  groups    = {Memory},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank5},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -12079,10 +12228,8 @@ ChatGPT},
 1 StaticGroup:Developmental psychology\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Evolution Strategy\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Evolutionary RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Heterogeneous Systems\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:H-MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language\;2\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language\;2\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language generation with RL\;0\;0\;0x8a8a8aff\;\;\;;
@@ -12105,12 +12252,14 @@ ChatGPT},
 1 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent learning\;2\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent learning\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Interaction Networks\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Theory of Mind\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Agent Modelling\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Equilibrium selection\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Game theory\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Centralised execution\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Communication\;2\;1\;0x8a8a8aff\;\;\;;
@@ -12121,7 +12270,8 @@ ChatGPT},
 4 StaticGroup:Comm with LLMs\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Applied MAC\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit assignment\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Exploration in MARL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Heterogeneous MADRL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Exploration in MARL\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Independent Learning\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Intrinsic rewards in MARL\;0\;1\;0x8a8a8aff\;\;\;;
@@ -12129,12 +12279,13 @@ ChatGPT},
 3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Social Learning\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Value factorisation\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Population-based training\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Shared Mental Models\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Memory\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Environments\;0\;0\;0x8a8a8aff\;\;\;;
