@@ -7,7 +7,7 @@
   cdate     = {1514764800000},
   crossref  = {conf/nips/2018},
   file      = {:NguyenKL18 - Credit Assignment for Collective Multiagent RL with Global Rewards.pdf:PDF},
-  groups    = {Multi-agent RL, Credit Assignment, Credit assignment},
+  groups    = {Multi-agent RL, Credit Assignment},
   ranking   = {rank1},
   url       = {http://papers.nips.cc/paper/8033-credit-assignment-for-collective-multiagent-rl-with-global-rewards},
 }
@@ -27,7 +27,7 @@
   url        = {http://papers.nips.cc/paper/7090-hindsight-experience-replay},
 }
 
-@Article{Haarnoja2018:SAC,
+@Article{Haarnoja2018_SAC,
   author     = {Haarnoja, Tuomas and Zhou, Aurick and Abbeel, Pieter and Levine, Sergey},
   title      = {Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor},
   year       = {2018},
@@ -58,7 +58,7 @@
   url        = {https://proceedings.mlr.press/v80/haarnoja18b.html},
 }
 
-@InProceedings{Fujimoto2018:TD3,
+@InProceedings{Fujimoto2018_TD3,
   author     = {Scott Fujimoto and Herke van Hoof and David Meger},
   booktitle  = {Proceedings of the 35th International Conference on Machine Learning},
   title      = {Addressing Function Approximation Error in Actor-Critic Methods},
@@ -88,7 +88,7 @@
   url        = {https://proceedings.mlr.press/v80/fujimoto18a.html},
 }
 
-@Article{Schulman2017:PPO,
+@Article{Schulman2017_PPO,
   author        = {John Schulman and Filip Wolski and Prafulla Dhariwal and Alec Radford and Oleg Klimov},
   title         = {Proximal Policy Optimization Algorithms},
   year          = {2017},
@@ -105,7 +105,7 @@
   readstatus    = {read},
 }
 
-@InProceedings{Schulman2015:TRPO,
+@InProceedings{Schulman2015_TRPO,
   author     = {Schulman, John and Levine, Sergey and Abbeel, Pieter and Jordan, Michael and Moritz, Philipp},
   booktitle  = {Proceedings of the 32nd International Conference on Machine Learning},
   title      = {Trust Region Policy Optimization},
@@ -127,7 +127,7 @@
   url        = {https://proceedings.mlr.press/v37/schulman15.html},
 }
 
-@Article{Schrittwieser2019:Muzero,
+@Article{Schrittwieser2019_Muzero,
   author        = {Julian Schrittwieser and Ioannis Antonoglou and Thomas Hubert and Karen Simonyan and Laurent Sifre and Simon Schmitt and Arthur Guez and Edward Lockhart and Demis Hassabis and Thore Graepel and Timothy Lillicrap and David Silver},
   title         = {Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model},
   year          = {2019},
@@ -160,7 +160,7 @@
   readstatus    = {read},
 }
 
-@InProceedings{Pathak2017:ICM,
+@InProceedings{Pathak2017_ICM,
   author        = {Deepak Pathak and Pulkit Agrawal and Alexei A. Efros and Trevor Darrell},
   title         = {Curiosity-driven Exploration by Self-supervised Prediction},
   year          = {2017},
@@ -180,7 +180,7 @@
   readstatus    = {read},
 }
 
-@InProceedings{Burda2019:RND,
+@InProceedings{Burda2019_RND,
   author        = {Yuri Burda and Harrison Edwards and Amos Storkey and Oleg Klimov},
   booktitle     = {7th International Conference on Learning Representations},
   title         = {Exploration by Random Network Distillation},
@@ -197,7 +197,7 @@
   readstatus    = {read},
 }
 
-@Article{Lillicrap2015:DDPG,
+@Article{Lillicrap2015_DDPG,
   author        = {Timothy P. Lillicrap and Jonathan J. Hunt and Alexander Pritzel and Nicolas Heess and Tom Erez and Yuval Tassa and David Silver and Daan Wierstra},
   title         = {Continuous control with deep reinforcement learning},
   year          = {2015},
@@ -223,7 +223,7 @@
   readstatus    = {read},
 }
 
-@Article{Williams1992:Reinforce,
+@Article{Williams1992_Reinforce,
   author     = {Williams, Ronald J.},
   journal    = {Machine Learning},
   title      = {Simple statistical gradient-following algorithms for connectionist reinforcement learning},
@@ -255,7 +255,7 @@
   readstatus    = {skimmed},
 }
 
-@InProceedings{Sekar2020:Plan2Explore,
+@InProceedings{Sekar2020_Plan2Explore,
   author        = {Ramanan Sekar and Oleh Rybkin and Kostas Daniilidis and Pieter Abbeel and Danijar Hafner and Deepak Pathak},
   title         = {Planning to Explore via Self-Supervised World Models},
   year          = {2020},
@@ -285,7 +285,7 @@
   readstatus    = {read},
 }
 
-@InProceedings{Pathak2019:Disagreement,
+@InProceedings{Pathak2019_Disagreement,
   author        = {Deepak Pathak and Dhiraj Gandhi and Abhinav Gupta},
   booktitle     = {Proceedings of the 36th International Conference on Machine Learning},
   title         = {Self-Supervised Exploration via Disagreement},
@@ -307,7 +307,7 @@
   url           = {https://proceedings.mlr.press/v97/pathak19a.html},
 }
 
-@InProceedings{Hessel2018:Rainbow,
+@InProceedings{Hessel2018_Rainbow,
   author       = {Hessel, Matteo and Modayil, Joseph and van Hasselt, Hado and Schaul, Tom and Ostrovski, Georg and Dabney, Will and Horgan, Dan and Piot, Bilal and Azar, Mohammad and Silver, David},
   title        = {Rainbow: Combining Improvements in Deep Reinforcement Learning},
   year         = {2018},
@@ -324,7 +324,7 @@
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11796},
 }
 
-@Article{Vecerik2017:Demonstrations,
+@Article{Vecerik2017_Demonstrations,
   author        = {Mel Vecerik and Todd Hester and Jonathan Scholz and Fumin Wang and Olivier Pietquin and Bilal Piot and Nicolas Heess and Thomas Rothörl and Thomas Lampe and Martin Riedmiller},
   title         = {Leveraging Demonstrations for Deep Reinforcement Learning on Robotics Problems with Sparse Rewards},
   year          = {2017},
@@ -430,7 +430,7 @@
   readstatus    = {skimmed},
 }
 
-@InProceedings{Shyam2019:MAX,
+@InProceedings{Shyam2019_MAX,
   author        = {Pranav Shyam and Wojciech Jaśkowski and Faustino Gomez},
   title         = {Model-Based Active Exploration},
   year          = {2019},
@@ -537,7 +537,7 @@
   biburl    = {https://dblp.org/rec/journals/ai/BardFCBLSPDMHDM20.bib},
   doi       = {10.1016/j.artint.2019.103216},
   file      = {:Bard2020 - The Hanabi Challenge_ a New Frontier for AI Research.pdf:PDF},
-  groups    = {Multi-agent learning, Multi-agent Systems},
+  groups    = {Multi-agent Systems, Multi-agent learning},
 }
 
 @Article{Long2020,
@@ -695,7 +695,7 @@
   primaryclass  = {cs.AI},
 }
 
-@Article{Mnih2013:DQN,
+@Article{Mnih2013_DQN,
   author        = {Volodymyr Mnih and Koray Kavukcuoglu and David Silver and Alex Graves and Ioannis Antonoglou and Daan Wierstra and Martin Riedmiller},
   title         = {Playing Atari with Deep Reinforcement Learning},
   year          = {2013},
@@ -711,7 +711,7 @@
   readstatus    = {read},
 }
 
-@Article{Mnih2015:DQN,
+@Article{Mnih2015_DQN,
   author     = {Volodymyr Mnih and Koray Kavukcuoglu and David Silver and Andrei A. Rusu and Joel Veness and Marc G. Bellemare and Alex Graves and Martin A. Riedmiller and Andreas Fidjeland and Georg Ostrovski and Stig Petersen and Charles Beattie and Amir Sadik and Ioannis Antonoglou and Helen King and Dharshan Kumaran and Daan Wierstra and Shane Legg and Demis Hassabis},
   journal    = {Nature 518},
   title      = {Human-level control through deep reinforcement learning},
@@ -729,7 +729,7 @@
   readstatus = {skimmed},
 }
 
-@InProceedings{Hasselt2016:DoubleDQN,
+@InProceedings{Hasselt2016_DoubleDQN,
   author     = {Hado van Hasselt and Arthur Guez and David Silver},
   booktitle  = {Proceedings of the Thirtieth {AAAI} Conference on Artificial Intelligence, February 12-17, 2016, Phoenix, Arizona, {USA}},
   title      = {Deep Reinforcement Learning with Double Q-Learning},
@@ -747,7 +747,7 @@
   url        = {http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/view/12389},
 }
 
-@InProceedings{Schaul2016:PER,
+@InProceedings{Schaul2016_PER,
   author     = {Tom Schaul and John Quan and Ioannis Antonoglou and David Silver},
   booktitle  = {4th International Conference on Learning Representations},
   title      = {Prioritized Experience Replay},
@@ -761,7 +761,7 @@
   url        = {http://arxiv.org/abs/1511.05952},
 }
 
-@InProceedings{Wang2016:DuelingDQN,
+@InProceedings{Wang2016_DuelingDQN,
   author     = {Ziyu Wang and Tom Schaul and Matteo Hessel and Hado van Hasselt and Marc Lanctot and Nando de Freitas},
   booktitle  = {Proceedings of the 33rd International Conference on Machine Learning, {ICML} 2016, New York City, NY, USA, June 19-24, 2016},
   title      = {Dueling Network Architectures for Deep Reinforcement Learning},
@@ -780,7 +780,7 @@
   url        = {http://proceedings.mlr.press/v48/wangf16.html},
 }
 
-@Article{Ostrovski2017:PseudoCounts,
+@Article{Ostrovski2017_PseudoCounts,
   author    = {Georg Ostrovski and Marc G. Bellemare and A{\"a}ron van den Oord and R{\'e}mi Munos},
   title     = {Count-Based Exploration with Neural Density Models},
   year      = {2017},
@@ -813,7 +813,7 @@
   url           = {http://arxiv.org/abs/1901.10995},
 }
 
-@InProceedings{Bellemare2017:DistributionalRL,
+@InProceedings{Bellemare2017_DistributionalRL,
   author     = {Marc G. Bellemare and Will Dabney and R{\'e}mi Munos},
   booktitle  = {Proceedings of the 34th International Conference on Machine Learning},
   title      = {A Distributional Perspective on Reinforcement Learning},
@@ -834,7 +834,7 @@
   url        = {http://proceedings.mlr.press/v70/bellemare17a.html},
 }
 
-@InProceedings{Fortunato2018:NoisyDQN,
+@InProceedings{Fortunato2018_NoisyDQN,
   author     = {Meire Fortunato and Mohammad Gheshlaghi Azar and Bilal Piot and Jacob Menick and Ian Osband and Alex Graves and Vlad Mnih and Remi Munos and Demis Hassabis and Olivier Pietquin and Charles Blundell and Shane Legg},
   booktitle  = {International Conference on Learning Representations},
   title      = {Noisy Networks for Exploration},
@@ -847,7 +847,7 @@
   url        = {https://openreview.net/forum?id=rywHCPkAW},
 }
 
-@InProceedings{FletBerliac2021:AGAC,
+@InProceedings{FletBerliac2021_AGAC,
   author     = {Flet-Berliac, Yannis and Ferret, Johan and Pietquin, Olivier and Preux, Philippe and Geist, Matthieu},
   booktitle  = {9th International Conference on Learning Representations},
   title      = {Adversarially Guided Actor-Critic},
@@ -942,7 +942,7 @@
   url           = {http://arxiv.org/abs/1712.01815},
 }
 
-@Article{Schulman2016:GAE,
+@Article{Schulman2016_GAE,
   author    = {John Schulman and Philipp Moritz and Sergey Levine and Michael Jordan and Pieter Abbeel},
   title     = {High-Dimensional Continuous Control Using Generalized Advantage Estimation},
   year      = {2016},
@@ -995,7 +995,7 @@
   archiveprefix = {arXiv},
   eprint        = {1909.07528},
   file          = {:Baker2019 - Emergent Tool Use from Multi Agent Autocurricula.pdf:PDF},
-  groups        = {Multi-agent learning, Multi-agent RL, Multi-agent Systems},
+  groups        = {Multi-agent RL, Multi-agent Systems, Multi-agent learning},
   keywords      = {cs.LG, cs.AI, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
   ranking       = {rank4},
@@ -1011,12 +1011,12 @@
   archiveprefix = {arXiv},
   eprint        = {1710.03748},
   file          = {:Bansal2017 - Emergent Complexity Via Multi Agent Competition.pdf:PDF},
-  groups        = {Multi-agent learning, Multi-agent Systems},
+  groups        = {Multi-agent Systems, Multi-agent learning},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
 }
 
-@Article{Jaderberg2018:FTW,
+@Article{Jaderberg2018_FTW,
   author        = {Max Jaderberg and Wojciech M. Czarnecki and Iain Dunning and Luke Marris and Guy Lever and Antonio Garcia Castaneda and Charles Beattie and Neil C. Rabinowitz and Ari S. Morcos and Avraham Ruderman and Nicolas Sonnerat and Tim Green and Louise Deason and Joel Z. Leibo and David Silver and Demis Hassabis and Koray Kavukcuoglu and Thore Graepel},
   journal       = {Science},
   title         = {Human-level performance in first-person multiplayer games with population-based deep reinforcement learning},
@@ -1076,7 +1076,7 @@
   groups = {Multi-agent learning},
 }
 
-@InProceedings{Sukhbaatar2016:CommNet,
+@InProceedings{Sukhbaatar2016_CommNet,
   author     = {Sainbayar Sukhbaatar and Arthur Szlam and Rob Fergus},
   booktitle  = {Advances in Neural Information Processing Systems, pp. 2244–2252},
   title      = {Learning Multiagent Communication with Backpropagation},
@@ -1089,7 +1089,7 @@
   readstatus = {read},
 }
 
-@InProceedings{Mordatch2018:GroundedCompo,
+@InProceedings{Mordatch2018_GroundedCompo,
   author     = {Igor Mordatch and Pieter Abbeel},
   booktitle  = {Proceedings of the Thirty-Second AAAI Conference on Artificial Intelligence},
   title      = {Emergence of Grounded Compositional Language in Multi-Agent Populations},
@@ -1107,7 +1107,7 @@
   url        = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17007},
 }
 
-@InProceedings{Jaques2019:SocialInfluence,
+@InProceedings{Jaques2019_SocialInfluence,
   author        = {Natasha Jaques and Angeliki Lazaridou and Edward Hughes and Caglar Gulcehre and Pedro A. Ortega and DJ Strouse and Joel Z. Leibo and Nando de Freitas},
   booktitle     = {Proceedings of the 36th International Conference on Machine Learning},
   title         = {Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning},
@@ -1138,7 +1138,7 @@
   primaryclass  = {cs.NE},
 }
 
-@InProceedings{Mnih2016:A3C,
+@InProceedings{Mnih2016_A3C,
   author     = {Volodymyr Mnih and Adria Puigdomenech Badia and Mehdi Mirza and Alex Graves and Timothy Lillicrap and Tim Harley and David Silver and Koray Kavukcuoglu},
   booktitle  = {Proceedings of The 33rd International Conference on Machine Learning},
   title      = {Asynchronous Methods for Deep Reinforcement Learning},
@@ -1217,7 +1217,7 @@
   ranking       = {rank3},
 }
 
-@Article{Hester2018:DQNfDemo,
+@Article{Hester2018_DQNfDemo,
   author       = {Hester, Todd and Vecerik, Matej and Pietquin, Olivier and Lanctot, Marc and Schaul, Tom and Piot, Bilal and Horgan, Dan and Quan, John and Sendonaris, Andrew and Osband, Ian and Dulac-Arnold, Gabriel and Agapiou, John and Leibo, Joel and Gruslys, Audrunas},
   journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
   title        = {Deep Q-learning From Demonstrations},
@@ -1249,7 +1249,7 @@
   readstatus = {skimmed},
 }
 
-@InProceedings{Lowe2017:MADDPG,
+@InProceedings{Lowe2017_MADDPG,
   author     = {Lowe, Ryan and Wu, Yi and Tamar, Aviv and Harb, Jean and Abbeel, Pieter and Mordatch, Igor},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments},
@@ -1276,7 +1276,7 @@
   doi       = {10.1142/9789812777263_0020},
   eprint    = {https://www.worldscientific.com/doi/pdf/10.1142/9789812777263_0020},
   file      = {:doi_10.1142_9789812777263_0020 - Optimal Payoff Functions for Members of Collectives.pdf:PDF},
-  groups    = {Multi-agent learning, Wonderful Life Utility},
+  groups    = {Wonderful Life Utility, Multi-agent learning},
   url       = {https://www.worldscientific.com/doi/abs/10.1142/9789812777263_0020},
 }
 
@@ -1343,7 +1343,7 @@
   readstatus = {skimmed},
 }
 
-@InProceedings{Kim2018:SchedNet,
+@InProceedings{Kim2018_SchedNet,
   author     = {Daewoo Kim and Sangwoo Moon and David Hostallero and Wan Ju Kang and Taeyoung Lee and Kyunghwan Son and Yung Yi},
   booktitle  = {International Conference on Learning Representations},
   title      = {Learning to Schedule Communication in Multi-agent Reinforcement Learning},
@@ -1356,7 +1356,7 @@
   url        = {https://openreview.net/forum?id=SJxu5iR9KQ},
 }
 
-@InProceedings{Das2019:TarMAC,
+@InProceedings{Das2019_TarMAC,
   author     = {Das, Abhishek and Gervet, Th{\'e}ophile and Romoff, Joshua and Batra, Dhruv and Parikh, Devi and Rabbat, Mike and Pineau, Joelle},
   booktitle  = {Proceedings of the 36th International Conference on Machine Learning},
   title      = {{T}ar{MAC}: Targeted Multi-Agent Communication},
@@ -1445,16 +1445,16 @@
   url      = {https://www.sciencedirect.com/science/article/pii/S0004370220301077},
 }
 
-@Book{Wooldridge2009:IntroMAS,
-  author    = {Wooldridge, Michael},
-  publisher = {John wiley \& sons},
-  title     = {An introduction to multiagent systems},
-  year      = {2009},
-  file      = {:An Introduction to MultiAgent Systems ( PDFDrive ).pdf:PDF},
-  groups    = {Multi-agent Systems, MAS Reviews},
-  priority  = {prio1},
-  ranking   = {rank5},
-  url       = {https://books.google.fr/books?hl=en&lr=&id=X3ZQ7yeDn2IC&oi=fnd&pg=PR13&ots=WHohqr4qa_&sig=0NufQwkvOFQvIdmAjHTz0F27huo&redir_esc=y#v=onepage&q&f=false},
+@Book{Wooldridge2009_IntroMAS,
+  author     = {Wooldridge, Michael},
+  publisher  = {John wiley \& sons},
+  title      = {An introduction to multiagent systems},
+  year       = {2009},
+  file       = {:An Introduction to MultiAgent Systems ( PDFDrive ).pdf:PDF},
+  groups     = {Multi-agent Systems, MAS Reviews},
+  ranking    = {rank5},
+  readstatus = {skimmed},
+  url        = {https://books.google.fr/books?hl=en&lr=&id=X3ZQ7yeDn2IC&oi=fnd&pg=PR13&ots=WHohqr4qa_&sig=0NufQwkvOFQvIdmAjHTz0F27huo&redir_esc=y#v=onepage&q&f=false},
 }
 
 @TechReport{wolpert99a,
@@ -1565,7 +1565,7 @@
   file     = {:6303906 - An Overview of Recent Progress in the Study of Distributed Multi Agent Coordination.pdf:PDF},
   groups   = {MAS Reviews},
   keywords = {distributed control;multi-robot systems;distributed multiagent coordination;control systems;robotics journals;distributed coordination;multiple vehicles;unmanned aerial vehicles;unmanned ground vehicles;unmanned underwater vehicles;systems and control community;Delay effects;Network topology;Heuristic algorithms;Vehicle dynamics;Vehicles;Algorithm design and analysis;Delay;Distributed coordination;formation control;multi-agent system;sensor network},
-  ranking  = {rank4},
+  ranking  = {rank5},
 }
 
 @Article{Oliehoek2008,
@@ -1656,7 +1656,7 @@
   readstatus = {read},
 }
 
-@InProceedings{Das2017:CoopVisDial,
+@InProceedings{Das2017_CoopVisDial,
   author     = {Das, Abhishek and Kottur, Satwik and Moura, Jose M. F. and Lee, Stefan and Batra, Dhruv},
   booktitle  = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
   title      = {Learning Cooperative Visual Dialog Agents With Deep Reinforcement Learning},
@@ -1698,7 +1698,7 @@ sharing of policy parameters},
   ranking   = {rank3},
 }
 
-@InProceedings{Foerster2017:StabilisingExpReplay,
+@InProceedings{Foerster2017_StabilisingExpReplay,
   author     = {Jakob Foerster and Nantas Nardelli and Gregory Farquhar and Triantafyllos Afouras and Philip H. S. Torr and Pushmeet Kohli and Shimon Whiteson},
   booktitle  = {Proceedings of the 34th International Conference on Machine Learning},
   title      = {Stabilising Experience Replay for Deep Multi-Agent Reinforcement Learning},
@@ -1720,7 +1720,7 @@ sharing of policy parameters},
   url        = {http://proceedings.mlr.press/v70/foerster17b.html},
 }
 
-@InProceedings{Rashid2018:QMIX,
+@InProceedings{Rashid2018_QMIX,
   author     = {Rashid, Tabish and Samvelyan, Mikayel and Schroeder, Christian and Farquhar, Gregory and Foerster, Jakob and Whiteson, Shimon},
   booktitle  = {Proceedings of the 35th International Conference on Machine Learning},
   title      = {{QMIX}: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning},
@@ -1779,7 +1779,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   ranking       = {rank2},
 }
 
-@InCollection{Littman1994Markov,
+@InCollection{Littman1994_MarkovGames,
   author    = {Michael L. Littman},
   booktitle = {Machine Learning Proceedings 1994},
   publisher = {Morgan Kaufmann},
@@ -1827,7 +1827,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   primaryclass  = {cs.GT},
 }
 
-@InProceedings{Rashid2020:WQMIX,
+@InProceedings{Rashid2020_WQMIX,
   author     = {Rashid, Tabish and Farquhar, Gregory and Peng, Bei and Whiteson, Shimon},
   booktitle  = {Advances in Neural Information Processing Systems 33},
   title      = {Weighted QMIX: Expanding monotonic value function factorisation for deep multi−agent reinforcement learning},
@@ -1859,7 +1859,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   readstatus    = {read},
 }
 
-@InProceedings{Li2022:MAMT,
+@InProceedings{Li2022_MAMT,
   author        = {Wenhao Li and Xiangfeng Wang and Bo Jin and Junjie Sheng and Hongyuan Zha},
   booktitle     = {The Tenth International Conference on Learning Representations, ICLR 2022},
   title         = {Dealing with Non-Stationarity in Multi-Agent Reinforcement Learning via Trust Region Decomposition},
@@ -1892,7 +1892,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   url       = {http://proceedings.mlr.press/v100/liu20a.html},
 }
 
-@Article{hu2003nash,
+@Article{Hu2003_NashQLearning,
   author  = {Hu, Junling and Wellman, Michael P},
   journal = {Journal of machine learning research},
   title   = {Nash Q-learning for general-sum stochastic games},
@@ -1902,7 +1902,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   volume  = {4},
   file    = {:hu2003nash - Nash Q Learning for General Sum Stochastic Games.pdf:PDF},
   groups  = {Multi-agent RL},
-  ranking = {rank3},
+  ranking = {rank4},
 }
 
 @Misc{yu2021benchmarking,
@@ -1916,16 +1916,16 @@ Concurrent Experience Replay Trajectories (CERT)},
   url        = {https://openreview.net/forum?id=t5lNr0Lw84H},
 }
 
-@Article{Papoudakis2020,
-  author    = {Georgios Papoudakis and Filippos Christianos and Lukas Sch{\"a}fer and Stefano V Albrecht},
-  title     = {Benchmarking Multi-Agent Deep Reinforcement Learning Algorithms in Cooperative Tasks},
-  year      = {2021},
-  booktitle = {Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 1)},
-  file      = {:Papoudakis2020 - Comparative Evaluation of Multi Agent Deep Reinforcement Learning Algorithms (1).pdf:PDF},
-  groups    = {MAS Reviews},
-  priority  = {prio1},
-  ranking   = {rank2},
-  url       = {https://openreview.net/forum?id=cIrPX-Sn5n},
+@Article{Papoudakis2020_BenchmarkMADRL,
+  author     = {Georgios Papoudakis and Filippos Christianos and Lukas Sch{\"a}fer and Stefano V Albrecht},
+  title      = {Benchmarking Multi-Agent Deep Reinforcement Learning Algorithms in Cooperative Tasks},
+  year       = {2021},
+  booktitle  = {Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 1)},
+  file       = {:Papoudakis2020 - Comparative Evaluation of Multi Agent Deep Reinforcement Learning Algorithms (1).pdf:PDF},
+  groups     = {MAS Reviews},
+  ranking    = {rank2},
+  readstatus = {skimmed},
+  url        = {https://openreview.net/forum?id=cIrPX-Sn5n},
 }
 
 @InProceedings{Claus1998,
@@ -1951,7 +1951,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   ranking   = {rank2},
 }
 
-@InProceedings{greenwald2003correlated,
+@InProceedings{Greenwald2003_CorrelatedQLearning,
   author    = {Greenwald, Amy and Hall, Keith and Serrano, Roberto},
   booktitle = {ICML},
   title     = {Correlated Q-learning},
@@ -1960,7 +1960,8 @@ Concurrent Experience Replay Trajectories (CERT)},
   volume    = {3},
   file      = {:greenwald2003correlated - Correlated Q Learning.pdf:PDF},
   groups    = {Multi-agent RL},
-  ranking   = {rank1},
+  ranking   = {rank3},
+  url       = {https://dl.acm.org/doi/abs/10.5555/3041838.3041869},
 }
 
 @InBook{Buşoniu2010,
@@ -2004,6 +2005,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   doi       = {10.1145/1015330.1015410},
   file      = {:Kok2004 - Sparse Cooperative Q Learning.pdf:PDF},
   groups    = {Multi-agent RL},
+  ranking   = {rank2},
 }
 
 @InProceedings{guestrin2002coordinated,
@@ -2029,11 +2031,12 @@ Concurrent Experience Replay Trajectories (CERT)},
   biburl    = {https://dblp.org/rec/journals/jmlr/KokV06.bib},
   file      = {:KokV06 - Collaborative Multiagent Reinforcement Learning by Payoff Propagation.pdf:PDF},
   groups    = {Multi-agent RL},
+  ranking   = {rank3},
   timestamp = {Wed, 10 Jul 2019 15:28:11 +0200},
   url       = {http://jmlr.org/papers/v7/kok06a.html},
 }
 
-@InProceedings{bowling2001rational,
+@InProceedings{Bowling2001_Rational,
   author       = {Bowling, Michael and Veloso, Manuela},
   booktitle    = {International joint conference on artificial intelligence},
   title        = {Rational and convergent learning in stochastic games},
@@ -2043,8 +2046,9 @@ Concurrent Experience Replay Trajectories (CERT)},
   pages        = {1021--1026},
   volume       = {17},
   comment      = {WoLF},
-  file         = {:bowling2001rational - Rational and Convergent Learning in Stochastic Games.pdf:PDF},
-  groups       = {Multi-agent RL},
+  groups       = {Multi-agent RL, Bayesian learning},
+  ranking      = {rank3},
+  url          = {https://dl.acm.org/doi/abs/10.5555/1642194.1642231},
 }
 
 @Article{BOWLING2002215,
@@ -2163,7 +2167,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   readstatus = {read},
 }
 
-@InProceedings{Mahajan2019:MAVEN,
+@InProceedings{Mahajan2019_MAVEN,
   author     = {Mahajan, Anuj and Rashid, Tabish and Samvelyan, Mikayel and Whiteson, Shimon},
   booktitle  = {Advances in Neural Information Processing Systems 32},
   title      = {MAVEN: Multi-Agent Variational Exploration},
@@ -2177,7 +2181,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   url        = {https://proceedings.neurips.cc/paper/2019/file/f816dc0acface7498e10496222e9db10-Paper.pdf},
 }
 
-@Article{doi:10.1177/0278364913495721,
+@Article{doi_10.1177/0278364913495721,
   author   = {Jens Kober and J. Andrew Bagnell and Jan Peters},
   journal  = {The International Journal of Robotics Research},
   title    = {Reinforcement learning in robotics: A survey},
@@ -2203,7 +2207,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups      = {Multi-robot},
 }
 
-@Article{Peng2017:BiCNet,
+@Article{Peng2017_BiCNet,
   author        = {Peng Peng and Ying Wen and Yaodong Yang and Quan Yuan and Zhenkun Tang and Haitao Long and Jun Wang},
   title         = {Multiagent Bidirectionally-Coordinated Nets: Emergence of Human-level Coordination in Learning to Play StarCraft Combat Games},
   year          = {2017},
@@ -2280,7 +2284,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups = {Communication},
 }
 
-@InProceedings{Son2019:Qtran,
+@InProceedings{Son2019_Qtran,
   author     = {Son, Kyunghwan and Kim, Daewoo and Kang, Wan Ju and Hostallero, David Earl and Yi, Yung},
   booktitle  = {International Conference on Machine Learning},
   title      = {Qtran: Learning to factorize with transformation for cooperative multi-agent reinforcement learning},
@@ -2294,7 +2298,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   readstatus = {read},
 }
 
-@InProceedings{Foerster2016:DIAL,
+@InProceedings{Foerster2016_DIAL,
   author     = {Foerster, Jakob N. and Assael, Yannis M. and de Freitas, Nando and Whiteson, Shimon},
   booktitle  = {Proceedings of the 30th International Conference on Neural Information Processing Systems},
   title      = {Learning to Communicate with Deep Multi-Agent Reinforcement Learning},
@@ -2314,7 +2318,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   url        = {https://proceedings.neurips.cc/paper_files/paper/2016/file/c7635bfd99248a2cdef8249ef7bfbef4-Paper.pdf},
 }
 
-@Article{schroeder2019:MACKRL,
+@Article{schroeder2019_MACKRL,
   author     = {Schroeder de Witt, Christian and Foerster, Jakob and Farquhar, Gregory and Torr, Philip and Boehmer, Wendelin and Whiteson, Shimon},
   journal    = {Advances in Neural Information Processing Systems},
   title      = {Multi-agent common knowledge reinforcement learning},
@@ -2345,7 +2349,7 @@ FacMADDPG},
   primaryclass  = {cs.LG},
 }
 
-@Article{Levine2016:Endtoend,
+@Article{Levine2016_Endtoend,
   author    = {Levine, Sergey and Finn, Chelsea and Darrell, Trevor and Abbeel, Pieter},
   journal   = {The Journal of Machine Learning Research},
   title     = {End-to-end training of deep visuomotor policies},
@@ -2406,7 +2410,7 @@ FacMADDPG},
   url       = {http://proceedings.mlr.press/v48/he16.html},
 }
 
-@InProceedings{Sunehag2018:VDN,
+@InProceedings{Sunehag2018_VDN,
   author     = {Sunehag, Peter and Lever, Guy and Gruslys, Audrunas and Czarnecki, Wojciech Marian and Zambaldi, Vinicius and Jaderberg, Max and Lanctot, Marc and Sonnerat, Nicolas and Leibo, Joel Z. and Tuyls, Karl and Graepel, Thore},
   booktitle  = {Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems},
   title      = {Value-Decomposition Networks For Cooperative Multi-Agent Learning Based On Team Reward},
@@ -2440,6 +2444,7 @@ FacMADDPG},
   keywords  = {multi-agent learning, starcraft, reinforcement learning},
   location  = {Montreal QC, Canada},
   numpages  = {3},
+  ranking   = {rank4},
 }
 
 @InProceedings{Bohmer2020,
@@ -2461,7 +2466,7 @@ FacMADDPG},
   url       = {http://proceedings.mlr.press/v119/boehmer20a.html},
 }
 
-@Article{Wei2018:MultiSoftQ,
+@Article{Wei2018_MultiSoftQ,
   author        = {Ermo Wei and Drew Wicke and David Freelan and Sean Luke},
   title         = {Multiagent Soft Q-Learning},
   year          = {2018},
@@ -2477,7 +2482,7 @@ FacMADDPG},
   ranking       = {rank1},
 }
 
-@Article{Wei2016:RelOvergen,
+@Article{Wei2016_RelOvergen,
   author    = {Wei, Ermo and Luke, Sean},
   journal   = {The Journal of Machine Learning Research},
   title     = {Lenient learning in independent-learner stochastic cooperative games},
@@ -2518,7 +2523,7 @@ FacMADDPG},
   url      = {https://www.sciencedirect.com/science/article/pii/S0925231220305932},
 }
 
-@Article{doi:10.1177/0278364917719333,
+@Article{doi_10.1177/0278364917719333,
   author   = {Javier Alonso-Mora and Stuart Baker and Daniela Rus},
   journal  = {The International Journal of Robotics Research},
   title    = {Multi-robot formation control and object transport in dynamic environments via constrained optimization},
@@ -2746,7 +2751,7 @@ FacMADDPG},
   url       = {http://proceedings.mlr.press/v87/kahn18a.html},
 }
 
-@Article{Ibarz2021:Howto,
+@Article{Ibarz2021_Howto,
   author     = {Julian Ibarz and Jie Tan and Chelsea Finn and Mrinal Kalakrishnan and Peter Pastor and Sergey Levine},
   journal    = {The International Journal of Robotics Research},
   title      = {How to train your robot with deep reinforcement learning: lessons we have learned},
@@ -2931,7 +2936,7 @@ FacMADDPG},
   ranking   = {rank1},
 }
 
-@Article{doi:10.1177/0278364917692864,
+@Article{doi_10.1177/0278364917692864,
   author   = {Shayegan Omidshafiei and Ali–Akbar Agha–Mohammadi and Christopher Amato and Shih–Yuan Liu and Jonathan P How and John Vian},
   journal  = {The International Journal of Robotics Research},
   title    = {Decentralized control of multi-robot partially observable Markov decision processes using belief space macro-actions},
@@ -3037,7 +3042,7 @@ FacMADDPG},
   ranking   = {rank2},
 }
 
-@InProceedings{Tobin2017:RealityGap,
+@InProceedings{Tobin2017_RealityGap,
   author    = {Tobin, Josh and Fong, Rachel and Ray, Alex and Schneider, Jonas and Zaremba, Wojciech and Abbeel, Pieter},
   booktitle = {2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
   title     = {Domain randomization for transferring deep neural networks from simulation to the real world},
@@ -3096,7 +3101,7 @@ FacMADDPG},
   url      = {https://www.sciencedirect.com/science/article/pii/S092188901500202X},
 }
 
-@Article{Sunderhauf2018:Limits,
+@Article{Sunderhauf2018_Limits,
   author     = {Niko Sünderhauf and Oliver Brock and Walter Scheirer and Raia Hadsell and Dieter Fox and Jürgen Leitner and Ben Upcroft and Pieter Abbeel and Wolfram Burgard and Michael Milford and Peter Corke},
   journal    = {The International Journal of Robotics Research},
   title      = {The limits and potentials of deep learning for robotics},
@@ -4211,7 +4216,7 @@ FacMADDPG},
   ranking   = {rank2},
 }
 
-@Article{Foerster2018:COMA,
+@Article{Foerster2018_COMA,
   author       = {Foerster, Jakob and Farquhar, Gregory and Afouras, Triantafyllos and Nardelli, Nantas and Whiteson, Shimon},
   journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
   title        = {Counterfactual Multi-Agent Policy Gradients},
@@ -4221,7 +4226,7 @@ FacMADDPG},
   abstractnote = {&lt;p&gt; Many real-world problems, such as network packet routing and the coordination of autonomous vehicles, are naturally modelled as cooperative multi-agent systems. There is a great need for new reinforcement learning methods that can efficiently learn decentralised policies for such systems. To this end, we propose a new multi-agent actor-critic method called counterfactual multi-agent (COMA) policy gradients. COMA uses a centralised critic to estimate the Q-function and decentralised actors to optimise the agents’ policies. In addition, to address the challenges of multi-agent credit assignment, it uses a counterfactual baseline that marginalises out a single agent’s action, while keeping the other agents’ actions fixed. COMA also uses a critic representation that allows the counterfactual baseline to be computed efficiently in a single forward pass. We evaluate COMA in the testbed of StarCraft unit micromanagement, using a decentralised variant with significant partial observability. COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state. &lt;/p&gt;},
   comment      = {COMA},
   file         = {:Foerster_Farquhar_Afouras_Nardelli_Whiteson_2018 - Counterfactual Multi Agent Policy Gradients.pdf:PDF},
-  groups       = {Multi-agent RL, Credit Assignment, Credit assignment},
+  groups       = {Multi-agent RL, Credit Assignment},
   ranking      = {rank5},
   readstatus   = {read},
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11794},
@@ -4246,7 +4251,7 @@ FacMADDPG},
   ranking   = {rank2},
 }
 
-@Article{Shalev2016:AutonomousDriving,
+@Article{Shalev2016_AutonomousDriving,
   author        = {Shai Shalev-Shwartz and Shaked Shammah and Amnon Shashua},
   title         = {Safe, Multi-Agent, Reinforcement Learning for Autonomous Driving},
   year          = {2016},
@@ -4278,7 +4283,7 @@ FacMADDPG},
   ranking       = {rank1},
 }
 
-@InProceedings{Jiang2018:ATOC,
+@InProceedings{Jiang2018_ATOC,
   author     = {Jiang, Jiechuan and Lu, Zongqing},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Learning Attentional Communication for Multi-Agent Cooperation},
@@ -4364,7 +4369,7 @@ agents)},
   url       = {http://proceedings.mlr.press/v80/raileanu18a.html},
 }
 
-@Article{Heinrich2016,
+@Article{Heinrich2016_NSFP,
   author        = {Johannes Heinrich and David Silver},
   title         = {Deep Reinforcement Learning from Self-Play in Imperfect-Information Games},
   year          = {2016},
@@ -4374,10 +4379,10 @@ agents)},
   comment       = {NFSP},
   eprint        = {1603.01121},
   file          = {:Heinrich2016 - Deep Reinforcement Learning from Self Play in Imperfect Information Games.pdf:PDF},
-  groups        = {Multi-agent RL},
+  groups        = {Multi-agent RL, Fictituous Play},
   keywords      = {cs.LG, cs.AI, cs.GT},
   primaryclass  = {cs.LG},
-  ranking       = {rank1},
+  ranking       = {rank3},
 }
 
 @InProceedings{Rabinowitz2018,
@@ -4399,15 +4404,16 @@ agents)},
   url       = {http://proceedings.mlr.press/v80/rabinowitz18a.html},
 }
 
-@Book{Oliehoek2016:DecPOMDP,
-  author    = {Oliehoek, Frans A and Amato, Christopher},
-  publisher = {Springer},
-  title     = {A concise introduction to decentralized POMDPs},
-  year      = {2016},
-  file      = {:oliehoek2016concise - A Concise Introduction to Decentralized POMDPs.pdf:PDF},
-  groups    = {MAS Reviews},
-  priority  = {prio1},
-  url       = {https://www.ccis.northeastern.edu/home/camato/publications/OliehoekAmato16book.pdf},
+@Book{Oliehoek2016_DecPOMDP,
+  author     = {Oliehoek, Frans A and Amato, Christopher},
+  publisher  = {Springer},
+  title      = {A concise introduction to decentralized POMDPs},
+  year       = {2016},
+  file       = {:oliehoek2016concise - A Concise Introduction to Decentralized POMDPs.pdf:PDF},
+  groups     = {MAS Reviews},
+  ranking    = {rank4},
+  readstatus = {skimmed},
+  url        = {https://www.ccis.northeastern.edu/home/camato/publications/OliehoekAmato16book.pdf},
 }
 
 @InProceedings{9196684,
@@ -4508,7 +4514,7 @@ agents)},
   url       = {http://proceedings.mlr.press/v100/chen20a.html},
 }
 
-@InProceedings{Haarnoja2017:SoftQLearning,
+@InProceedings{Haarnoja2017_SoftQLearning,
   author    = {Tuomas Haarnoja and Haoran Tang and Pieter Abbeel and Sergey Levine},
   booktitle = {Proceedings of the 34th International Conference on Machine Learning},
   title     = {Reinforcement Learning with Deep Energy-Based Policies},
@@ -4527,7 +4533,7 @@ agents)},
   url       = {http://proceedings.mlr.press/v70/haarnoja17a.html},
 }
 
-@Article{OpenAI2019:DOTA2,
+@Article{OpenAI2019_DOTA2,
   author        = {OpenAI and Christopher Berner and Greg Brockman and Brooke Chan and Vicki Cheung and Przemysław Dębiak and Christy Dennison and David Farhi and Quirin Fischer and Shariq Hashme and Chris Hesse and Rafal Józefowicz and Scott Gray and Catherine Olsson and Jakub Pachocki and Michael Petrov and Henrique P. d. O. Pinto and Jonathan Raiman and Tim Salimans and Jeremy Schlatter and Jonas Schneider and Szymon Sidor and Ilya Sutskever and Jie Tang and Filip Wolski and Susan Zhang},
   title         = {Dota 2 with Large Scale Deep Reinforcement Learning},
   year          = {2019},
@@ -4543,7 +4549,7 @@ agents)},
   readstatus    = {skimmed},
 }
 
-@InProceedings{Singh2019:IC3Net,
+@InProceedings{Singh2019_IC3Net,
   author     = {Amanpreet Singh and Tushar Jain and Sainbayar Sukhbaatar},
   booktitle  = {International Conference on Learning Representations},
   title      = {Learning when to Communicate at Scale in Multiagent Cooperative and Competitive Tasks},
@@ -4570,7 +4576,7 @@ agents)},
   readstatus = {skimmed},
 }
 
-@InProceedings{Hoshen2017:VAIN,
+@InProceedings{Hoshen2017_VAIN,
   author     = {Hoshen, Yedid},
   booktitle  = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
   title      = {VAIN: Attentional Multi-Agent Predictive Modeling},
@@ -4609,7 +4615,7 @@ agents)},
   url        = {http://proceedings.mlr.press/v87/das18a.html},
 }
 
-@InProceedings{Zhang2018:NetworkedAgents,
+@InProceedings{Zhang2018_NetworkedAgents,
   author     = {Zhang, Kaiqing and Yang, Zhuoran and Liu, Han and Zhang, Tong and Basar, Tamer},
   booktitle  = {Proceedings of the 35th International Conference on Machine Learning},
   title      = {Fully Decentralized Multi-Agent Reinforcement Learning with Networked Agents},
@@ -4719,7 +4725,7 @@ agents)},
   publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
 }
 
-@InProceedings{Havrylov2017:EmergenceLang,
+@InProceedings{Havrylov2017_EmergenceLang,
   author     = {Havrylov, Serhii and Titov, Ivan},
   booktitle  = {Proceedings of the 31st International Conference on Neural Information Processing Systems},
   title      = {Emergence of Language with Multi-Agent Games: Learning to Communicate with Sequences of Symbols},
@@ -4738,7 +4744,7 @@ agents)},
   url        = {https://proceedings.neurips.cc/paper_files/paper/2017/hash/70222949cc0db89ab32c9969754d4758-Abstract.html},
 }
 
-@InProceedings{Resnick2020:Emergent,
+@InProceedings{Resnick2020_Emergent,
   author     = {Resnick, Cinjon and Gupta, Abhinav and Foerster, Jakob and Dai, Andrew M. and Cho, Kyunghyun},
   booktitle  = {Proceedings of the 19th International Conference on Autonomous Agents and MultiAgent Systems},
   title      = {Capacity, Bandwidth, and Compositionality in Emergent Language Learning},
@@ -4776,7 +4782,7 @@ agents)},
   url       = {https://www.aclweb.org/anthology/D19-1384},
 }
 
-@InProceedings{Cao2018:Negotiation,
+@InProceedings{Cao2018_Negotiation,
   author     = {Kris Cao and Angeliki Lazaridou and Marc Lanctot and Joel Z Leibo and Karl Tuyls and Stephen Clark},
   booktitle  = {International Conference on Learning Representations},
   title      = {Emergent Communication through Negotiation},
@@ -4801,7 +4807,7 @@ agents)},
   url        = {https://openreview.net/forum?id=rJGZq6g0-},
 }
 
-@InProceedings{Lazaridou2018:Emergence,
+@InProceedings{Lazaridou2018_Emergence,
   author     = {Angeliki Lazaridou and Karl Moritz Hermann and Karl Tuyls and Stephen Clark},
   booktitle  = {International Conference on Learning Representations (ICLR)},
   title      = {Emergence of Linguistic Communication from Referential Games with Symbolic and Pixel Input},
@@ -4826,7 +4832,7 @@ agents)},
   priority     = {prio2},
 }
 
-@InProceedings{Lowe2019:Pitfalls,
+@InProceedings{Lowe2019_Pitfalls,
   author     = {Lowe, Ryan and Foerster, Jakob and Boureau, Y-Lan and Pineau, Joelle and Dauphin, Yann},
   booktitle  = {Proceedings of the 18th International Conference on Autonomous Agents and MultiAgent Systems},
   title      = {On the Pitfalls of Measuring Emergent Communication},
@@ -4882,7 +4888,7 @@ agents)},
   readstatus = {skimmed},
 }
 
-@InProceedings{Lowe2020:S2P,
+@InProceedings{Lowe2020_S2P,
   author     = {Ryan Lowe and Abhinav Gupta and Jakob Foerster and Douwe Kiela and Joelle Pineau},
   booktitle  = {International Conference on Learning Representations},
   title      = {On the interaction between supervision and self-play in emergent communication},
@@ -4894,7 +4900,7 @@ agents)},
   url        = {https://openreview.net/forum?id=rJxGLlBtwH},
 }
 
-@InProceedings{Zhang2019:VBC,
+@InProceedings{Zhang2019_VBC,
   author     = {Zhang, Sai Qian and Zhang, Qi and Lin, Jieyu},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Efficient Communication in Multi-Agent Reinforcement Learning via Variance Based Control},
@@ -4938,13 +4944,13 @@ communication integrated in QMIX, with tricks to make it more efficient},
   comment       = {LICA},
   eprint        = {2007.02529},
   file          = {:Zhou2020a - Learning Implicit Credit Assignment for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-agent RL, Credit assignment, Value factorisation},
+  groups        = {Multi-agent RL, Value factorisation, Credit Assignment},
   keywords      = {cs.LG, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
   priority      = {prio2},
 }
 
-@InProceedings{James2019:Sim2Real,
+@InProceedings{James2019_Sim2Real,
   author    = {James, Stephen and Wohlhart, Paul and Kalakrishnan, Mrinal and Kalashnikov, Dmitry and Irpan, Alex and Ibarz, Julian and Levine, Sergey and Hadsell, Raia and Bousmalis, Konstantinos},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   title     = {Sim-To-Real via Sim-To-Sim: Data-Efficient Robotic Grasping via Randomized-To-Canonical Adaptation Networks},
@@ -4956,7 +4962,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   url       = {https://openaccess.thecvf.com/content_CVPR_2019/html/James_Sim-To-Real_via_Sim-To-Sim_Data-Efficient_Robotic_Grasping_via_Randomized-To-Canonical_Adaptation_Networks_CVPR_2019_paper.html},
 }
 
-@InProceedings{Chebotar2019:Sim2Real,
+@InProceedings{Chebotar2019_Sim2Real,
   author    = {Yevgen Chebotar and Ankur Handa and Viktor Makoviychuk and Miles Macklin and Jan Issac and Nathan Ratliff and Dieter Fox},
   booktitle = {2019 International Conference on Robotics and Automation ({ICRA})},
   title     = {Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience},
@@ -4982,7 +4988,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   ranking   = {rank4},
 }
 
-@Article{Andrychowicz2020:Sim2Real,
+@Article{Andrychowicz2020_Sim2Real,
   author   = {OpenAI: Marcin Andrychowicz and Bowen Baker and Maciek Chociej and Rafal Józefowicz and Bob McGrew and Jakub Pachocki and Arthur Petron and Matthias Plappert and Glenn Powell and Alex Ray and Jonas Schneider and Szymon Sidor and Josh Tobin and Peter Welinder and Lilian Weng and Wojciech Zaremba},
   journal  = {The International Journal of Robotics Research},
   title    = {Learning dexterous in-hand manipulation},
@@ -5151,7 +5157,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   url       = {https://openreview.net/forum?id=0IOX0YcCdTn},
 }
 
-@InProceedings{akakzia:hal-03121146,
+@InProceedings{akakzia_hal-03121146,
   author      = {Akakzia, Ahmed and Colas, C{\'e}dric and Oudeyer, Pierre-Yves and Chetouani, Mohamed and Sigaud, Olivier},
   booktitle   = {{ICLR 2021 - Ninth International Conference on Learning Representation}},
   title       = {{Grounding Language to Autonomously-Acquired Skills via Goal Generation}},
@@ -5169,7 +5175,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   url         = {https://hal.inria.fr/hal-03121146},
 }
 
-@InProceedings{Luketina2019:Language,
+@InProceedings{Luketina2019_Language,
   author     = {Luketina, Jelena and Nardelli, Nantas and Farquhar, Gregory and Foerster, Jakob and Andreas, Jacob and Grefenstette, Edward and Whiteson, Shimon and Rocktäschel, Tim},
   booktitle  = {Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, {IJCAI-19}},
   title      = {A Survey of Reinforcement Learning Informed by Natural Language},
@@ -5265,7 +5271,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   url       = {https://proceedings.neurips.cc/paper/2003/file/c8067ad1937f728f51288b3eb986afaa-Paper.pdf},
 }
 
-@InProceedings{Du2019:LIIR,
+@InProceedings{Du2019_LIIR,
   author     = {Du, Yali and Han, Lei and Fang, Meng and Dai, Tianhong and Liu, Ji and Tao, Dacheng},
   booktitle  = {Advances in Neural Information Processing Systems 32},
   title      = {LIIR: Learning Individual Intrinsic Reward in Multi-Agent Reinforcement Learning},
@@ -5367,7 +5373,7 @@ time step.},
   url        = {https://openreview.net/forum?id=HJx-3grYDB},
 }
 
-@Article{Ding2020:I2C,
+@Article{Ding2020_I2C,
   author    = {Ding, Ziluo and Huang, Tiejun and Lu, Zongqing},
   title     = {Learning Individually Inferred Communication for Multi-Agent Cooperation},
   year      = {2020},
@@ -5411,17 +5417,18 @@ time step.},
   primaryclass  = {cs.AI},
 }
 
-@Article{Gronauer2022,
-  author    = {Sven Gronauer and Klaus Diepold},
-  journal   = {Artificial Intelligence Review},
-  title     = {Multi-agent deep reinforcement learning: a survey},
-  year      = {2022},
-  month     = {apr},
-  doi       = {10.1007/s10462-021-09996-w},
-  file      = {:Gronauer2021 - Multi Agent Deep Reinforcement Learning_ a Survey.pdf:PDF},
-  groups    = {MAS Reviews},
-  publisher = {Springer Science and Business Media {LLC}},
-  ranking   = {rank3},
+@Article{Gronauer2022_MADRLSurvey,
+  author     = {Sven Gronauer and Klaus Diepold},
+  journal    = {Artificial Intelligence Review},
+  title      = {Multi-agent deep reinforcement learning: a survey},
+  year       = {2022},
+  month      = {apr},
+  doi        = {10.1007/s10462-021-09996-w},
+  file       = {:Gronauer2021 - Multi Agent Deep Reinforcement Learning_ a Survey.pdf:PDF},
+  groups     = {MAS Reviews},
+  publisher  = {Springer Science and Business Media {LLC}},
+  ranking    = {rank2},
+  readstatus = {skimmed},
 }
 
 @Article{Seita2019,
@@ -5464,6 +5471,7 @@ time step.},
   eprint   = {https://direct.mit.edu/artl/article-pdf/2/3/319/1661525/artl.1995.2.3.319.pdf},
   file     = {:Steels1995 - A Self Organizing Spatial Vocabulary.pdf:PDF},
   groups   = {Language, Language origins and evolution},
+  priority = {prio1},
   ranking  = {rank3},
   url      = {https://doi.org/10.1162/artl.1995.2.3.319},
 }
@@ -5481,7 +5489,7 @@ time step.},
   url        = {https://openreview.net/forum?id=HJz05o0qK7},
 }
 
-@InProceedings{Wang2020:IMAC,
+@InProceedings{Wang2020_IMAC,
   author     = {Wang, Rundong and He, Xu and Yu, Runsheng and Qiu, Wei and An, Bo and Rabinovich, Zinovi},
   booktitle  = {Proceedings of the 37th International Conference on Machine Learning},
   title      = {Learning Efficient Multi-agent Communication: An Information Bottleneck Approach},
@@ -5607,7 +5615,7 @@ time step.},
   url        = {https://openreview.net/forum?id=Bk9zbyZCZ},
 }
 
-@InProceedings{Oh2016:Minecraft,
+@InProceedings{Oh2016_Minecraft,
   author     = {Oh, Junhyuk and Chockalingam, Valliappa and Singh, Satinder and Lee, Honglak},
   booktitle  = {Proceedings of The 33rd International Conference on Machine Learning},
   title      = {Control of Memory, Active Perception, and Action in Minecraft},
@@ -5792,7 +5800,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   ranking       = {rank4},
 }
 
-@InProceedings{Lin2021:GroundMAC,
+@InProceedings{Lin2021_GroundMAC,
   author     = {Toru Lin and Minyoung Huh and Chris Stauffer and Ser-Nam Lim and Phillip Isola},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Learning to Ground Multi-Agent Communication with Autoencoders},
@@ -5833,7 +5841,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url       = {https://proceedings.mlr.press/v70/finn17a.html},
 }
 
-@Article{Yu2021:MAPPO,
+@Article{Yu2021_MAPPO,
   author        = {Chao Yu and Akash Velu and Eugene Vinitsky and Yu Wang and Alexandre Bayen and Yi Wu},
   title         = {The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games},
   year          = {2021},
@@ -5850,7 +5858,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   ranking       = {rank3},
 }
 
-@Article{Harnad1990:SymbolGrounding,
+@Article{Harnad1990_SymbolGrounding,
   author     = {Stevan Harnad},
   journal    = {Physica D: Nonlinear Phenomena},
   title      = {The symbol grounding problem},
@@ -5868,7 +5876,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url        = {https://www.sciencedirect.com/science/article/pii/0167278990900876},
 }
 
-@Article{jbp:/content/journals/10.1075/eoc.4.1.03ste,
+@Article{jbp_/content/journals/10.1075/eoc.4.1.03ste,
   author    = {Steels, Luc and Kaplan, Frédéric},
   journal   = {Evolution of Communication},
   title     = {AIBO’s first words: The social learning of language and meaning},
@@ -6059,7 +6067,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url       = {https://doi.org/10.1145/3356464.3357707},
 }
 
-@InProceedings{Gupta2021:DynamicPop,
+@InProceedings{Gupta2021_DynamicPop,
   author     = {Abhinav Gupta and Marc Lanctot and Angeliki Lazaridou},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Dynamic population-based meta-learning for multi-agent communication with natural language},
@@ -6085,7 +6093,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url        = {https://openreview.net/forum?id=YSYXmOzlrou},
 }
 
-@InProceedings{Tucker2021:DiscreteEC,
+@InProceedings{Tucker2021_DiscreteEC,
   author     = {Mycal Tucker and Huao Li and Siddharth Agrawal and Dana Hughes and Katia P. Sycara and Michael Lewis and Julie Shah},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Emergent Discrete Communication in Semantic Spaces},
@@ -6293,7 +6301,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   readstatus = {skimmed},
 }
 
-@InProceedings{Shu2018:Hierarchical,
+@InProceedings{Shu2018_Hierarchical,
   author     = {Tianmin Shu and Caiming Xiong and Richard Socher},
   booktitle  = {International Conference on Learning Representations},
   title      = {Hierarchical and Interpretable Skill Acquisition in Multi-task Reinforcement Learning},
@@ -6385,7 +6393,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   ranking   = {rank3},
 }
 
-@InProceedings{Ng1999:Shaping,
+@InProceedings{Ng1999_Shaping,
   author    = {Ng, Andrew Y. and Harada, Daishi and Russell, Stuart J.},
   booktitle = {Proceedings of the Sixteenth International Conference on Machine Learning},
   title     = {Policy Invariance Under Reward Transformations: Theory and Application to Reward Shaping},
@@ -6444,7 +6452,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/7979},
 }
 
-@InProceedings{Wierstra2007:POMDPs,
+@InProceedings{Wierstra2007_POMDPs,
   author    = {Wierstra, Daan and Foerster, Alexander and Peters, Jan and Schmidhuber, J{\"u}rgen},
   booktitle = {Artificial Neural Networks -- ICANN 2007},
   title     = {Solving Deep Memory POMDPs with Recurrent Policy Gradients},
@@ -6846,7 +6854,7 @@ the agent takes as input the current state and goal, the value function depends 
   url       = {https://openreview.net/forum?id=ETBc_MIMgoX},
 }
 
-@InProceedings{Zhang2021:NovelD,
+@InProceedings{Zhang2021_NovelD,
   author     = {Zhang, Tianjun and Xu, Huazhe and Wang, Xiaolong and Wu, Yi and Keutzer, Kurt and Gonzalez, Joseph E and Tian, Yuandong},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {NovelD: A Simple yet Effective Exploration Criterion},
@@ -6876,7 +6884,7 @@ the agent takes as input the current state and goal, the value function depends 
   url        = {https://proceedings.neurips.cc/paper/2021/file/f6f154417c4665861583f9b9c4afafa2-Paper.pdf},
 }
 
-@InProceedings{Lazaridou2020:MACNatLang,
+@InProceedings{Lazaridou2020_MACNatLang,
   author     = {Lazaridou, Angeliki and Potapenko, Anna and Tieleman, Olivier},
   booktitle  = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
   title      = {Multi-agent Communication meets Natural Language: Synergies between Functional and Structural Language Learning},
@@ -6908,7 +6916,7 @@ the agent takes as input the current state and goal, the value function depends 
   primaryclass  = {cs.AI},
 }
 
-@InProceedings{Uchendu2022:Jump,
+@InProceedings{Uchendu2022_Jump,
   author    = {Uchendu, Ikechukwu and Xiao, Ted and Lu, Yao and Zhu, Banghua and Yan, Mengyuan and Simon, Jos\'{e}phine and Bennice, Matthew and Fu, Chuyuan and Ma, Cong and Jiao, Jiantao and Levine, Sergey and Hausman, Karol},
   booktitle = {Proceedings of the 40th International Conference on Machine Learning},
   title     = {Jump-Start Reinforcement Learning},
@@ -7038,7 +7046,7 @@ the agent takes as input the current state and goal, the value function depends 
 
 
 
-@Article{doi:10.1111/j.1467-9280.2007.02028.x,
+@Article{doi_10.1111/j.1467-9280.2007.02028.x,
   author   = {Gary Lupyan and David H. Rakison and James L. McClelland},
   journal  = {Psychological Science},
   title    = {Language is not Just for Talking: Redundant Labels Facilitate Learning of Novel Categories},
@@ -7107,7 +7115,7 @@ the agent takes as input the current state and goal, the value function depends 
   readstatus    = {read},
 }
 
-@InProceedings{Badia2020:NGU,
+@InProceedings{Badia2020_NGU,
   author     = {Adrià Puigdomènech Badia and Pablo Sprechmann and Alex Vitvitskyi and Daniel Guo and Bilal Piot and Steven Kapturowski and Olivier Tieleman and Martin Arjovsky and Alexander Pritzel and Andrew Bolt and Charles Blundell},
   booktitle  = {8th International Conference on Learning Representations, {ICLR} 2020},
   title      = {Never Give Up: Learning Directed Exploration Strategies},
@@ -7119,7 +7127,7 @@ the agent takes as input the current state and goal, the value function depends 
   url        = {https://openreview.net/forum?id=Sye57xStvB},
 }
 
-@InProceedings{Raileanu2020:RIDE,
+@InProceedings{Raileanu2020_RIDE,
   author     = {Roberta Raileanu and Tim Rocktäschel},
   booktitle  = {9th International Conference on Learning Representations},
   title      = {RIDE: Rewarding Impact-Driven Exploration for Procedurally-Generated Environments},
@@ -7148,7 +7156,7 @@ the agent takes as input the current state and goal, the value function depends 
   url        = {https://aclanthology.org/2021.naacl-main.421},
 }
 
-@InProceedings{Lee2019:CounteringLDrift,
+@InProceedings{Lee2019_CounteringLDrift,
   author     = {Lee, Jason and Cho, Kyunghyun and Kiela, Douwe},
   booktitle  = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
   title      = {Countering Language Drift via Visual Grounding},
@@ -7396,7 +7404,7 @@ the agent takes as input the current state and goal, the value function depends 
   url       = {https://proceedings.mlr.press/v119/laskin20a.html},
 }
 
-@Article{Hafner2022:Hierarchical,
+@Article{Hafner2022_Hierarchical,
   author        = {Danijar Hafner and Kuang-Huei Lee and Ian Fischer and Pieter Abbeel},
   title         = {Deep Hierarchical Planning from Pixels},
   year          = {2022},
@@ -7599,7 +7607,7 @@ the agent takes as input the current state and goal, the value function depends 
   url        = {https://openreview.net/forum?id=YDGJ5YExiw6},
 }
 
-@Article{Iqbal2019:MultiExplore,
+@Article{Iqbal2019_MultiExplore,
   author        = {Shariq Iqbal and Fei Sha},
   title         = {Coordinated Exploration via Intrinsic Rewards for Multi-Agent Reinforcement Learning},
   year          = {2019},
@@ -7632,7 +7640,7 @@ Multi-Explore},
 
 
 
-@Article{doi:10.1177/17298814211044946,
+@Article{doi_10.1177/17298814211044946,
   author   = {Haolin Wu and Hui Li and Jianwei Zhang and Zhuang Wang and Jianeng Zhang},
   journal  = {International Journal of Advanced Robotic Systems},
   title    = {Generating individual intrinsic reward for cooperative multiagent reinforcement learning},
@@ -7676,7 +7684,7 @@ Multi-Explore},
   url       = {https://openreview.net/forum?id=Y87Ri-GNHYu},
 }
 
-@InProceedings{Wang2020:EITI,
+@InProceedings{Wang2020_EITI,
   author     = {Tonghan Wang and Jianhao Wang and Yi Wu and Chongjie Zhang},
   booktitle  = {8th International Conference on Learning Representations},
   title      = {Influence-Based Multi-Agent Exploration},
@@ -7702,7 +7710,7 @@ Multi-Explore},
   url       = {https://proceedings.neurips.cc/paper/2021/file/f3f1fa1e4348bfbebdeee8c80a04c3b9-Paper.pdf},
 }
 
-@InProceedings{seurin:hal-03259315,
+@InProceedings{seurin_hal-03259315,
   author      = {Seurin, Mathieu and Strub, Florian and Preux, Philippe and Pietquin, Olivier},
   booktitle   = {{Internationnal Joint Conference on Artificial Intelligence (IJCAI)}},
   title       = {{Don't Do What Doesn't Matter: Intrinsic Motivation with Action Usefulness}},
@@ -7769,7 +7777,7 @@ Multi-Explore},
   publisher = {The Royal Society},
 }
 
-@Article{Ohmer2022:MutualInfluence,
+@Article{Ohmer2022_MutualInfluence,
   author    = {Ohmer, Xenia AND Marino, Michael AND Franke, Michael AND König, Peter},
   journal   = {PLOS Computational Biology},
   title     = {Mutual influence between language and perception in multi-agent communication games},
@@ -7814,7 +7822,7 @@ Multi-Explore},
   url      = {https://www.sciencedirect.com/science/article/pii/S0004370219300116},
 }
 
-@InProceedings{Bellemare2016:PseudoCounts,
+@InProceedings{Bellemare2016_PseudoCounts,
   author     = {Bellemare, Marc and Srinivasan, Sriram and Ostrovski, Georg and Schaul, Tom and Saxton, David and Munos, Remi},
   booktitle  = {Advances in Neural Information Processing Systems 29 (NIPS 2016)},
   title      = {Unifying Count-Based Exploration and Intrinsic Motivation},
@@ -7829,7 +7837,7 @@ Multi-Explore},
   url        = {https://proceedings.neurips.cc/paper/2016/file/afda332245e2af431fb7b672a68b659d-Paper.pdf},
 }
 
-@InProceedings{Henaff2022:E3B,
+@InProceedings{Henaff2022_E3B,
   author     = {Mikael Henaff and Roberta Raileanu and Minqi Jiang and Tim Rockt{\"a}schel},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Exploration via Elliptical Episodic Bonuses},
@@ -7969,7 +7977,7 @@ Multi-Explore},
   url          = {https://par.nsf.gov/biblio/10132613},
 }
 
-@InProceedings{Ma2022:ELIGN,
+@InProceedings{Ma2022_ELIGN,
   author     = {Zixian Ma and Rose E Wang and Li Fei-Fei and Michael S. Bernstein and Ranjay Krishna},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {{ELIGN}: Expectation Alignment as a Multi-Agent Intrinsic Reward},
@@ -8198,7 +8206,7 @@ Multi-Explore},
   ranking   = {rank3},
 }
 
-@InProceedings{Jo2022:LECO,
+@InProceedings{Jo2022_LECO,
   author    = {Daejin Jo and Sungwoong Kim and Daniel Wontae Nam and Taehwan Kwon and Seungeun Rho and Jongmin Kim and Donghoon Lee},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {{LECO}: Learnable Episodic Count for Task-Specific Intrinsic Reward},
@@ -8208,7 +8216,7 @@ Multi-Explore},
   url       = {https://openreview.net/forum?id=FJ42JCNNUYT},
 }
 
-@InProceedings{Huang2022:InnerMonol,
+@InProceedings{Huang2022_InnerMonol,
   author     = {Wenlong Huang and Fei Xia and Ted Xiao and Harris Chan and Jacky Liang and Pete Florence and Andy Zeng and Jonathan Tompson and Igor Mordatch and Yevgen Chebotar and Pierre Sermanet and Tomas Jackson and Noah Brown and Linda Luu and Sergey Levine and Karol Hausman and brian ichter},
   booktitle  = {Proceedings of The 6th Conference on Robot Learning},
   title      = {Inner Monologue: Embodied Reasoning through Planning with Language Models},
@@ -8248,7 +8256,7 @@ Multi-Explore},
   readstatus = {read},
 }
 
-@InProceedings{Wang2022:FCMNet,
+@InProceedings{Wang2022_FCMNet,
   author     = {Wang, Yutong and Sartoretti, Guillaume},
   booktitle  = {Proceedings of the 21st International Conference on Autonomous Agents and Multiagent Systems},
   title      = {FCMNet: Full Communication Memory Net for Team-Level Cooperation in Multi-Agent Systems},
@@ -8305,7 +8313,7 @@ Multi-Explore},
   readstatus    = {read},
 }
 
-@InProceedings{Tucker2022:VQVIB,
+@InProceedings{Tucker2022_VQVIB,
   author    = {Mycal Tucker and Roger P. Levy and Julie Shah and Noga Zaslavsky},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {Trading off Utility, Informativeness, and Complexity in Emergent Communication},
@@ -8349,7 +8357,7 @@ Multi-Explore},
   url       = {https://openreview.net/forum?id=49A1Y6tRhaq},
 }
 
-@InProceedings{Rita2022:PopHetero,
+@InProceedings{Rita2022_PopHetero,
   author    = {Mathieu Rita and Florian Strub and Jean-Bastien Grill and Olivier Pietquin and Emmanuel Dupoux},
   booktitle = {International Conference on Learning Representations},
   title     = {On the role of population heterogeneity in emergent communication},
@@ -8389,7 +8397,7 @@ Multi-Explore},
   url       = {https://openreview.net/forum?id=2t7CkQXNpuq},
 }
 
-@InProceedings{Lu2022:R5,
+@InProceedings{Lu2022_R5,
   author    = {Shengyao Lu and Bang Liu and Keith G Mills and SHANGLING JUI and Di Niu},
   booktitle = {International Conference on Learning Representations},
   title     = {R5: Rule Discovery with Reinforced and Recurrent Relational Reasoning},
@@ -8479,24 +8487,6 @@ Multi-Explore},
   url       = {https://nyuscholars.nyu.edu/en/publications/human-few-shot-learning-of-compositional-instructions},
 }
 
-@InProceedings{pmlr-v80-lake18a,
-  author    = {Lake, Brenden and Baroni, Marco},
-  booktitle = {Proceedings of the 35th International Conference on Machine Learning},
-  title     = {Generalization without Systematicity: On the Compositional Skills of Sequence-to-Sequence Recurrent Networks},
-  year      = {2018},
-  editor    = {Dy, Jennifer and Krause, Andreas},
-  month     = {10--15 Jul},
-  pages     = {2873--2882},
-  publisher = {PMLR},
-  series    = {Proceedings of Machine Learning Research},
-  volume    = {80},
-  abstract  = {Humans can understand and produce new utterances effortlessly, thanks to their compositional skills. Once a person learns the meaning of a new verb "dax," he or she can immediately understand the meaning of "dax twice" or "sing and dax." In this paper, we introduce the SCAN domain, consisting of a set of simple compositional navigation commands paired with the corresponding action sequences. We then test the zero-shot generalization capabilities of a variety of recurrent neural networks (RNNs) trained on SCAN with sequence-to-sequence methods. We find that RNNs can make successful zero-shot generalizations when the differences between training and test commands are small, so that they can apply "mix-and-match" strategies to solve the task. However, when generalization requires systematic compositional skills (as in the "dax" example above), RNNs fail spectacularly. We conclude with a proof-of-concept experiment in neural machine translation, suggesting that lack of systematicity might be partially responsible for neural networks’ notorious training data thirst.},
-  file      = {:pmlr-v80-lake18a - Generalization without Systematicity_ on the Compositional Skills of Sequence to Sequence Recurrent Networks.pdf:PDF},
-  groups    = {Language},
-  pdf       = {http://proceedings.mlr.press/v80/lake18a/lake18a.pdf},
-  url       = {https://proceedings.mlr.press/v80/lake18a.html},
-}
-
 @InProceedings{Lake2019,
   author    = {Lake, Brenden M},
   booktitle = {Advances in Neural Information Processing Systems},
@@ -8554,7 +8544,7 @@ Multi-Explore},
   readstatus = {read},
 }
 
-@Article{Mao2020:GACML,
+@Article{Mao2020_GACML,
   author       = {Mao, Hangyu and Zhang, Zhengchao and Xiao, Zhen and Gong, Zhibo and Ni, Yan},
   journal      = {Proceedings of the AAAI Conference on Artificial Intelligence},
   title        = {Learning Agent Communication under Limited Bandwidth by Message Pruning},
@@ -8670,7 +8660,7 @@ Multi-Explore},
   url       = {https://proceedings.mlr.press/v164/shridhar22a.html},
 }
 
-@InProceedings{Lupu2021:TrajeDi,
+@InProceedings{Lupu2021_TrajeDi,
   author     = {Lupu, Andrei and Cui, Brandon and Hu, Hengyuan and Foerster, Jakob},
   booktitle  = {Proceedings of the 38th International Conference on Machine Learning},
   title      = {Trajectory Diversity for Zero-Shot Coordination},
@@ -8703,23 +8693,6 @@ Multi-Explore},
   groups    = {Multi-agent RL},
   ranking   = {rank2},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2021/file/797134c3e42371bb4979a462eb2f042a-Paper.pdf},
-}
-
-@Article{Ellis2022,
-  author        = {Ellis, Benjamin and Moalla, Skander and Samvelyan, Mikayel and Sun, Mingfei and Mahajan, Anuj and Foerster, Jakob N. and Whiteson, Shimon},
-  title         = {SMACv2: An Improved Benchmark for Cooperative Multi-Agent Reinforcement Learning},
-  year          = {2022},
-  month         = dec,
-  abstract      = {The availability of challenging benchmarks has played a key role in the recent progress of machine learning. In cooperative multi-agent reinforcement learning, the StarCraft Multi-Agent Challenge (SMAC) has become a popular testbed for centralised training with decentralised execution. However, after years of sustained improvement on SMAC, algorithms now achieve near-perfect performance. In this work, we conduct new analysis demonstrating that SMAC is not sufficiently stochastic to require complex closed-loop policies. In particular, we show that an open-loop policy conditioned only on the timestep can achieve non-trivial win rates for many SMAC scenarios. To address this limitation, we introduce SMACv2, a new version of the benchmark where scenarios are procedurally generated and require agents to generalise to previously unseen settings (from the same distribution) during evaluation. We show that these changes ensure the benchmark requires the use of closed-loop policies. We evaluate state-of-the-art algorithms on SMACv2 and show that it presents significant challenges not present in the original benchmark. Our analysis illustrates that SMACv2 addresses the discovered deficiencies of SMAC and can help benchmark the next generation of MARL methods. Videos of training are available at https://sites.google.com/view/smacv2},
-  archiveprefix = {arXiv},
-  copyright     = {Creative Commons Attribution 4.0 International},
-  doi           = {10.48550/ARXIV.2212.07489},
-  eprint        = {2212.07489},
-  file          = {:Ellis2022 - SMACv2_ an Improved Benchmark for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-Agent Environments},
-  keywords      = {Machine Learning (cs.LG), Multiagent Systems (cs.MA), FOS: Computer and information sciences},
-  primaryclass  = {cs.LG},
-  publisher     = {arXiv},
 }
 
 @Article{Schaefer2023,
@@ -8848,7 +8821,7 @@ Multi-Explore},
   url       = {https://openreview.net/forum?id=qpsl2dR9twy},
 }
 
-@InProceedings{Han2023:MBC,
+@InProceedings{Han2023_MBC,
   author     = {Han, Shuai and Dastani, Mehdi and Wang, Shihan},
   booktitle  = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
   title      = {Model-Based Sparse Communication in Multi-Agent Reinforcement Learning},
@@ -8905,7 +8878,7 @@ Multi-Explore},
   primaryclass  = {cs.CV},
 }
 
-@InProceedings{Karten2023:IMGS-MAC,
+@InProceedings{Karten2023_IMGS-MAC,
   author        = {Karten, Seth and Tucker, Mycal and Kailas, Siva and Sycara, Katia},
   booktitle     = {ICRA 2023},
   title         = {Towards True Lossless Sparse Communication in Multi-Agent Systems},
@@ -9080,7 +9053,7 @@ Multi-Explore},
   publisher = {Cambridge University Press},
 }
 
-@Article{claus1998dynamics,
+@Article{Claus1998_CoopMARL,
   author  = {Claus, Caroline and Boutilier, Craig},
   journal = {AAAI/IAAI},
   title   = {The dynamics of reinforcement learning in cooperative multiagent systems},
@@ -9088,12 +9061,13 @@ Multi-Explore},
   number  = {746-752},
   pages   = {2},
   volume  = {1998},
-  groups  = {Multi-agent learning},
+  file    = {:Claus1998_IQL - The Dynamics of Reinforcement Learning in Cooperative Multiagent Systems.pdf:PDF:https\://cdn.aaai.org/AAAI/1998/AAAI98-106.pdf},
+  groups  = {Multi-agent RL, Independent Learning},
   ranking = {rank4},
-  url     = {https://d1wqtxts1xzle7.cloudfront.net/25341154/10.1.1.81.6446-libre.pdf?1390869093=&response-content-disposition=inline;+filename=The_dynamics_of_reinforcement_learning_i.pdf&Expires=1687783879&Signature=HnkjVTXQY7zb-IZpOSpGMEleq4psXNRlh8CpawK4Pu2NHu9-HVifAEUM2xxFnN7SM10UJ8sSFEXZvRvdXHjNmMpqqjDb8sz85-HLI5k0fzOcNQKfgIbtWLqnzeH0JAtXntZzY4JcZkxNCZ0vxzkbQLl0Kr9SAH9hkzM~PvA-qyoFaQsCjsaXR~-EIPnZ4ql0AZa1ygm~Ao22MZDGQcfwouPOETnxCMaJ-ctGGZ9R2twlg642Uwfyw25VysIJkF8DifdKy2LDYCEUn9oh3C-YQ4epUAAHa4wQup0mmfrN~SgwFa2Qm10gRdpN4pMIeschXS4y~kT~WmjN3cI~Xg-bXA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA},
+  url     = {https://cdn.aaai.org/AAAI/1998/AAAI98-106.pdf},
 }
 
-@InProceedings{Ouyang2022:InstructGPT,
+@InProceedings{Ouyang2022_InstructGPT,
   author     = {Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and Schulman, John and Hilton, Jacob and Kelton, Fraser and Miller, Luke and Simens, Maddie and Askell, Amanda and Welinder, Peter and Christiano, Paul F and Leike, Jan and Lowe, Ryan},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Training language models to follow instructions with human feedback},
@@ -9194,7 +9168,7 @@ ChatGPT},
   priority = {prio1},
 }
 
-@Article{Wu2023:AutoGen,
+@Article{Wu2023_AutoGen,
   author        = {Wu, Qingyun and Bansal, Gagan and Zhang, Jieyu and Wu, Yiran and Li, Beibin and Zhu, Erkang and Jiang, Li and Zhang, Xiaoyun and Zhang, Shaokun and Liu, Jiale and Awadallah, Ahmed Hassan and White, Ryen W and Burger, Doug and Wang, Chi},
   title         = {AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation},
   year          = {2023},
@@ -9212,7 +9186,7 @@ ChatGPT},
   ranking       = {rank3},
 }
 
-@InProceedings{Carta2023:GLAM,
+@InProceedings{Carta2023_GLAM,
   author      = {Carta, Thomas and Romac, Cl{\'e}ment and Wolf, Thomas and Lamprier, Sylvain and Sigaud, Olivier and Oudeyer, Pierre-Yves},
   booktitle   = {Proceedings of Machine Learning Research},
   title       = {{Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning}},
@@ -9249,7 +9223,7 @@ ChatGPT},
   readstatus    = {read},
 }
 
-@InProceedings{Rana2023:CLASP,
+@InProceedings{Rana2023_CLASP,
   author     = {Krishan Rana and Andrew Melnik and Niko Suenderhauf},
   booktitle  = {ICRA2023 Workshop on Pretraining for Robotics (PT4R)},
   title      = {Contrastive Language, Action, and State Pre-training for Robot Learning},
@@ -9278,7 +9252,7 @@ ChatGPT},
   readstatus    = {read},
 }
 
-@InProceedings{Driess2023:PaLME,
+@InProceedings{Driess2023_PaLME,
   author     = {Driess, Danny and Xia, Fei and Sajjadi, Mehdi S. M. and Lynch, Corey and Chowdhery, Aakanksha and Ichter, Brian and Wahid, Ayzaan and Tompson, Jonathan and Vuong, Quan and Yu, Tianhe and Huang, Wenlong and Chebotar, Yevgen and Sermanet, Pierre and Duckworth, Daniel and Levine, Sergey and Vanhoucke, Vincent and Hausman, Karol and Toussaint, Marc and Greff, Klaus and Zeng, Andy and Mordatch, Igor and Florence, Pete},
   booktitle  = {Proceedings of the 40th International Conference on Machine Learning},
   title      = {PaLM-E: An Embodied Multimodal Language Model},
@@ -9295,7 +9269,7 @@ ChatGPT},
   readstatus = {read},
 }
 
-@InProceedings{Dosovitskiy2021:VisionTransformer,
+@InProceedings{Dosovitskiy2021_VisionTransformer,
   author    = {Alexey Dosovitskiy and Lucas Beyer and Alexander Kolesnikov and Dirk Weissenborn and Xiaohua Zhai and Thomas Unterthiner and Mostafa Dehghani and Matthias Minderer and Georg Heigold and Sylvain Gelly and Jakob Uszkoreit and Neil Houlsby},
   booktitle = {International Conference on Learning Representations},
   title     = {An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale},
@@ -9409,7 +9383,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Friston2010:FreeEnergy,
+@Article{Friston2010_FreeEnergy,
   author    = {Friston, Karl},
   journal   = {Nature Reviews Neuroscience},
   title     = {The free-energy principle: a unified brain theory?},
@@ -9425,7 +9399,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@InBook{Rescorla1972:Pavlovian,
+@InBook{Rescorla1972_Pavlovian,
   author  = {Rescorla, RA and Wagner, Allan},
   pages   = {64-99},
   title   = {A theory of Pavlovian conditioning: Variations in the effectiveness of reinforcement and nonreinforcement},
@@ -9438,7 +9412,7 @@ ChatGPT},
   ranking = {rank5},
 }
 
-@Article{Brembs2010:FreeWill,
+@Article{Brembs2010_FreeWill,
   author    = {Brembs, Björn},
   journal   = {Proceedings of the Royal Society B: Biological Sciences},
   title     = {Towards a scientific concept of free will as a biological trait: spontaneous actions and decision-making in invertebrates},
@@ -9455,7 +9429,7 @@ ChatGPT},
   ranking   = {rank3},
 }
 
-@Article{Gardner1984:Chimpanzee,
+@Article{Gardner1984_Chimpanzee,
   author    = {Gardner, R. Allen and Gardner, Beatrix T.},
   journal   = {Journal of Comparative Psychology},
   title     = {A vocabulary test for chimpanzees (Pan troglodytes).},
@@ -9522,7 +9496,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Book{Sutton2018:RL,
+@Book{Sutton2018_RL,
   author     = {Richard S. Sutton and Andrew G. Barto},
   publisher  = {The MIT Press},
   title      = {Reinforcement Learning: An Introduction, second edition},
@@ -9534,7 +9508,7 @@ ChatGPT},
   url        = {http://incompleteideas.net/sutton/book/RLbook2018.pdf},
 }
 
-@PhdThesis{Watkins1989:RL,
+@PhdThesis{Watkins1989_RL,
   author         = {Watkins, Christopher J. C. H.},
   title          = {Learning from Delayed Rewards},
   year           = {1989},
@@ -9587,7 +9561,7 @@ ChatGPT},
   url    = {http://www.incompleteideas.net/papers/Andreae-2017b.pdf},
 }
 
-@Article{Silver2021:RewardEnough,
+@Article{Silver2021_RewardEnough,
   author    = {Silver, David and Singh, Satinder and Precup, Doina and Sutton, Richard S.},
   journal   = {Artificial Intelligence},
   title     = {Reward is enough},
@@ -9637,7 +9611,7 @@ ChatGPT},
   ranking       = {rank2},
 }
 
-@InProceedings{Mitchell2021:Harder,
+@InProceedings{Mitchell2021_Harder,
   author     = {Mitchell, Melanie},
   booktitle  = {Proceedings of the Genetic and Evolutionary Computation Conference},
   title      = {Why AI is harder than we think},
@@ -9652,7 +9626,7 @@ ChatGPT},
   ranking    = {rank2},
 }
 
-@Article{Samuel1959:Checkers,
+@Article{Samuel1959_Checkers,
   author    = {Samuel, A. L.},
   journal   = {IBM Journal of Research and Development},
   title     = {Some Studies in Machine Learning Using the Game of Checkers},
@@ -9670,7 +9644,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Barto1983:ActorCritic,
+@Article{Barto1983_ActorCritic,
   author    = {Barto, Andrew G. and Sutton, Richard S. and Anderson, Charles W.},
   journal   = {IEEE Transactions on Systems, Man, and Cybernetics},
   title     = {Neuronlike adaptive elements that can solve difficult learning control problems},
@@ -9688,7 +9662,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Sutton1988:TD,
+@Article{Sutton1988_TD,
   author    = {Sutton, Richard S.},
   journal   = {Machine Learning},
   title     = {Learning to predict by the methods of temporal differences},
@@ -9723,7 +9697,7 @@ ChatGPT},
   ranking   = {rank4},
 }
 
-@Article{Michie1968:Boxes,
+@Article{Michie1968_Boxes,
   author    = {Michie, Donald and Chambers, Roger A},
   journal   = {Machine intelligence},
   title     = {BOXES: An experiment in adaptive control},
@@ -9738,7 +9712,7 @@ ChatGPT},
   url       = {https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=2f027193fb703d0af58ec382bd1438daff9417d7},
 }
 
-@Article{Bellemare2013:Atari,
+@Article{Bellemare2013_Atari,
   author    = {Bellemare, M. G. and Naddaf, Y. and Veness, J. and Bowling, M.},
   journal   = {Journal of Artificial Intelligence Research},
   title     = {The Arcade Learning Environment: An Evaluation Platform for General Agents},
@@ -9754,7 +9728,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Guss2019:MineRL,
+@Article{Guss2019_MineRL,
   author        = {Guss, William H. and Codel, Cayden and Hofmann, Katja and Houghton, Brandon and Kuno, Noboru and Milani, Stephanie and Mohanty, Sharada and Liebana, Diego Perez and Salakhutdinov, Ruslan and Topin, Nicholay and Veloso, Manuela and Wang, Phillip},
   title         = {The MineRL 2019 Competition on Sample Efficient Reinforcement Learning using Human Priors},
   year          = {2019},
@@ -9772,7 +9746,7 @@ ChatGPT},
   ranking       = {rank1},
 }
 
-@InProceedings{Guss2019:MineRLDataset,
+@InProceedings{Guss2019_MineRLDataset,
   author    = {Guss, William H. and Houghton, Brandon and Topin, Nicholay and Wang, Phillip and Codel, Cayden and Veloso, Manuela and Salakhutdinov, Ruslan},
   booktitle = {Proceedings of the 28th International Joint Conference on Artificial Intelligence},
   title     = {MineRL: a large-scale dataset of minecraft demonstrations},
@@ -9789,7 +9763,7 @@ ChatGPT},
   ranking   = {rank2},
 }
 
-@PhdThesis{Laud2004:Shaping,
+@PhdThesis{Laud2004_Shaping,
   author  = {Laud, Adam Daniel},
   school  = {University of Illinois at Urbana-Champaign},
   title   = {Theory and Application of Reward Shaping in Reinforcement Learning},
@@ -9813,7 +9787,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/1996/file/e00406144c1e7e35240afed70f34166a-Paper.pdf},
 }
 
-@Book{Busoniu2017:FuncApprox,
+@Book{Busoniu2017_FuncApprox,
   author    = {Busoniu, Lucian and Babuska, Robert and De Schutter, Bart and Ernst, Damien},
   publisher = {CRC press},
   title     = {Reinforcement learning and dynamic programming using function approximators},
@@ -9824,7 +9798,7 @@ ChatGPT},
   url       = {https://orbi.uliege.be/bitstream/2268/27963/1/book-FA-RL-DP.pdf},
 }
 
-@Book{Bishop2006:Pattern,
+@Book{Bishop2006_Pattern,
   author    = {Bishop, Christopher M.},
   publisher = {Springer New York, NY},
   title     = {Pattern recognition and machine learning},
@@ -9836,7 +9810,7 @@ ChatGPT},
   url       = {https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf},
 }
 
-@InProceedings{Bagnell2001:Helicopter,
+@InProceedings{Bagnell2001_Helicopter,
   author    = {Bagnell, J.A. and Schneider, J.G.},
   booktitle = {Proceedings 2001 ICRA. IEEE International Conference on Robotics and Automation (Cat. No.01CH37164)},
   title     = {Autonomous helicopter control using reinforcement learning policy search methods},
@@ -9896,7 +9870,7 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@InProceedings{Christiano2017:RLHF,
+@InProceedings{Christiano2017_RLHF,
   author    = {Christiano, Paul F and Leike, Jan and Brown, Tom and Martic, Miljan and Legg, Shane and Amodei, Dario},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {Deep Reinforcement Learning from Human Preferences},
@@ -9910,7 +9884,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2017/file/d5e2c0adad503c91f91df240d0cd4e49-Paper.pdf},
 }
 
-@Article{Leike2018:RewardModel,
+@Article{Leike2018_RewardModel,
   author        = {Leike, Jan and Krueger, David and Everitt, Tom and Martic, Miljan and Maini, Vishal and Legg, Shane},
   title         = {Scalable agent alignment via reward modeling: a research direction},
   year          = {2018},
@@ -10016,7 +9990,7 @@ ChatGPT},
   ranking       = {rank3},
 }
 
-@InProceedings{Gao2023:RewardModel,
+@InProceedings{Gao2023_RewardModel,
   author    = {Gao, Leo and Schulman, John and Hilton, Jacob},
   booktitle = {Proceedings of the 40th International Conference on Machine Learning},
   title     = {Scaling Laws for Reward Model Overoptimization},
@@ -10035,7 +10009,7 @@ ChatGPT},
   url       = {https://proceedings.mlr.press/v202/gao23h.html},
 }
 
-@Article{Charpentier2021:Economics,
+@Article{Charpentier2021_Economics,
   author    = {Charpentier, Arthur and Élie, Romuald and Remlinger, Carl},
   journal   = {Computational Economics},
   title     = {Reinforcement Learning in Economics and Finance},
@@ -10051,7 +10025,7 @@ ChatGPT},
   ranking   = {rank2},
 }
 
-@Article{Arthur1991:Economics,
+@Article{Arthur1991_Economics,
   author    = {W. Brian Arthur},
   journal   = {The American Economic Review},
   title     = {Designing Economic Agents that Act like Human Agents: A Behavioral Approach to Bounded Rationality},
@@ -10084,7 +10058,7 @@ ChatGPT},
   ranking   = {rank2},
 }
 
-@Article{Chen2023:EndToEndDriving,
+@Article{Chen2023_EndToEndDriving,
   author        = {Chen, Li and Wu, Penghao and Chitta, Kashyap and Jaeger, Bernhard and Geiger, Andreas and Li, Hongyang},
   title         = {End-to-end Autonomous Driving: Challenges and Frontiers},
   year          = {2023},
@@ -10102,7 +10076,7 @@ ChatGPT},
   ranking       = {rank1},
 }
 
-@Article{Kiran2022:DRLDriving,
+@Article{Kiran2022_DRLDriving,
   author    = {Kiran, B Ravi and Sobh, Ibrahim and Talpaert, Victor and Mannion, Patrick and Sallab, Ahmad A. Al and Yogamani, Senthil and Perez, Patrick},
   journal   = {IEEE Transactions on Intelligent Transportation Systems},
   title     = {Deep Reinforcement Learning for Autonomous Driving: A Survey},
@@ -10118,7 +10092,7 @@ ChatGPT},
   ranking   = {rank4},
 }
 
-@InProceedings{Bengio2009:Curriculum,
+@InProceedings{Bengio2009_Curriculum,
   author     = {Bengio, Yoshua and Louradour, Jérôme and Collobert, Ronan and Weston, Jason},
   booktitle  = {Proceedings of the 26th Annual International Conference on Machine Learning},
   title      = {Curriculum learning},
@@ -10167,7 +10141,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Tassa2018:DeepmindControl,
+@Article{Tassa2018_DeepmindControl,
   author        = {Tassa, Yuval and Doron, Yotam and Muldal, Alistair and Erez, Tom and Li, Yazhe and Casas, Diego de Las and Budden, David and Abdolmaleki, Abbas and Merel, Josh and Lefrancq, Andrew and Lillicrap, Timothy and Riedmiller, Martin},
   title         = {DeepMind Control Suite},
   year          = {2018},
@@ -10185,7 +10159,7 @@ ChatGPT},
   ranking       = {rank3},
 }
 
-@Article{Bellman1957:MDP,
+@Article{Bellman1957_MDP,
   author    = {Richard Bellman},
   journal   = {Journal of Mathematics and Mechanics},
   title     = {A Markovian Decision Process},
@@ -10215,7 +10189,7 @@ ChatGPT},
   ranking   = {rank3},
 }
 
-@PhdThesis{Sutton1984:ActorCritic,
+@PhdThesis{Sutton1984_ActorCritic,
   author    = {Sutton, Richard Stuart},
   title     = {Temporal credit assignment in reinforcement learning},
   year      = {1984},
@@ -10225,7 +10199,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Sutton1991:Dyna,
+@Article{Sutton1991_Dyna,
   author    = {Sutton, Richard S.},
   journal   = {ACM SIGART Bulletin},
   title     = {Dyna, an integrated architecture for learning, planning, and reacting},
@@ -10242,7 +10216,7 @@ ChatGPT},
   ranking   = {rank4},
 }
 
-@InProceedings{Sutton2008:DynaLinearReg,
+@InProceedings{Sutton2008_DynaLinearReg,
   author    = {Sutton, Richard S. and Szepesv\'{a}ri, Csaba and Geramifard, Alborz and Bowling, Michael},
   booktitle = {Proceedings of the Twenty-Fourth Conference on Uncertainty in Artificial Intelligence},
   title     = {Dyna-style planning with linear function approximation and prioritized sweeping},
@@ -10259,7 +10233,7 @@ ChatGPT},
   ranking   = {rank2},
 }
 
-@Article{Narendra1990:NNSystemIdent,
+@Article{Narendra1990_NNSystemIdent,
   author    = {Narendra, K.S. and Parthasarathy, K.},
   journal   = {IEEE Transactions on Neural Networks},
   title     = {Identification and control of dynamical systems using neural networks},
@@ -10276,7 +10250,7 @@ ChatGPT},
   ranking   = {rank4},
 }
 
-@InProceedings{Oh2015:DeepModel,
+@InProceedings{Oh2015_DeepModel,
   author    = {Oh, Junhyuk and Guo, Xiaoxiao and Lee, Honglak and Lewis, Richard L and Singh, Satinder},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {Action-Conditional Video Prediction using Deep Networks in Atari Games},
@@ -10303,7 +10277,7 @@ ChatGPT},
   ranking   = {rank1},
 }
 
-@Article{Hester2012:TEXPLORE,
+@Article{Hester2012_TEXPLORE,
   author    = {Hester, Todd and Stone, Peter},
   journal   = {Machine Learning},
   title     = {TEXPLORE: real-time sample-efficient reinforcement learning for robots},
@@ -10320,7 +10294,7 @@ ChatGPT},
   ranking   = {rank1},
 }
 
-@InProceedings{Silver2014:DPG,
+@InProceedings{Silver2014_DPG,
   author     = {Silver, David and Lever, Guy and Heess, Nicolas and Degris, Thomas and Wierstra, Daan and Riedmiller, Martin},
   booktitle  = {Proceedings of the 31st International Conference on Machine Learning},
   title      = {Deterministic Policy Gradient Algorithms},
@@ -10342,7 +10316,7 @@ ChatGPT},
   url        = {https://proceedings.mlr.press/v32/silver14.html},
 }
 
-@InProceedings{Levine2014:GPSModel,
+@InProceedings{Levine2014_GPSModel,
   author    = {Levine, Sergey and Abbeel, Pieter},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {Learning Neural Network Policies with Guided Policy Search under Unknown Dynamics},
@@ -10356,7 +10330,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2014/file/6766aa2750c19aad2fa1b32f36ed4aee-Paper.pdf},
 }
 
-@InProceedings{Levine2013:GPS,
+@InProceedings{Levine2013_GPS,
   author    = {Levine, Sergey and Koltun, Vladlen},
   booktitle = {Proceedings of the 30th International Conference on Machine Learning},
   title     = {Guided Policy Search},
@@ -10376,7 +10350,7 @@ ChatGPT},
   url       = {https://proceedings.mlr.press/v28/levine13.html},
 }
 
-@InBook{Kocsis2006:MCTS,
+@InBook{Kocsis2006_MCTS,
   author    = {Kocsis, Levente and Szepesvári, Csaba},
   pages     = {282--293},
   publisher = {Springer Berlin Heidelberg},
@@ -10390,7 +10364,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@InProceedings{Tesauro1996:MonteCarloSearch,
+@InProceedings{Tesauro1996_MonteCarloSearch,
   author    = {Tesauro, Gerald and Galperin, Gregory},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {On-line Policy Improvement using Monte-Carlo Search},
@@ -10403,7 +10377,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/1996/file/996009f2374006606f4c0b0fda878af1-Paper.pdf},
 }
 
-@InProceedings{Engstrom2020:PPOImplement,
+@InProceedings{Engstrom2020_PPOImplement,
   author    = {Engstrom, Logan and Ilyas, Andrew and Santurkar, Shibani and Tsipras, Dimitris and Janoos, Firdaus and Rudolph, Larry and Madry, Aleksander},
   booktitle = {8th International Conference on Learning Representations, {ICLR} 2020, Addis Ababa, Ethiopia, April 26-30, 2020},
   title     = {Implementation Matters in Deep Policy Gradients: A Case Study on PPO and TRPO},
@@ -10428,7 +10402,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Book{Thorndike1911:AnimalIntell,
+@Book{Thorndike1911_AnimalIntell,
   author    = {Thorndike, Edward L.},
   publisher = {The Macmillan Company},
   title     = {Animal intelligence; experimental studies},
@@ -10438,7 +10412,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Walter1950:MechTortoise,
+@Article{Walter1950_MechTortoise,
   author    = {W. Grey Walter},
   journal   = {Scientific American},
   title     = {An Imitation Of Life},
@@ -10470,7 +10444,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Garcia2015:SafeRL,
+@Article{Garcia2015_SafeRL,
   author  = {Javier Garc{{\'i}}a and Fern and o Fern{{\'a}}ndez},
   journal = {Journal of Machine Learning Research},
   title   = {A Comprehensive Survey on Safe Reinforcement Learning},
@@ -10483,7 +10457,7 @@ ChatGPT},
   url     = {http://jmlr.org/papers/v16/garcia15a.html},
 }
 
-@InProceedings{Coulom2006:MCTS,
+@InProceedings{Coulom2006_MCTS,
   author    = {Coulom, Rémi},
   booktitle = {Computers and Games},
   title     = {Efficient Selectivity and Backup Operators in Monte-Carlo Tree Search},
@@ -10500,7 +10474,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@InProceedings{Finnsson2008:GamePlaying,
+@InProceedings{Finnsson2008_GamePlaying,
   author    = {Finnsson, Hilmar and Bj\"{o}rnsson, Yngvi},
   booktitle = {Proceedings of the 23rd National Conference on Artificial Intelligence - Volume 1},
   title     = {Simulation-based approach to general game playing},
@@ -10516,7 +10490,7 @@ ChatGPT},
   ranking   = {rank2},
 }
 
-@Article{Rosenblatt1958:Perceptron,
+@Article{Rosenblatt1958_Perceptron,
   author    = {Rosenblatt, F.},
   journal   = {Psychological Review},
   title     = {The perceptron: A probabilistic model for information storage and organization in the brain.},
@@ -10531,7 +10505,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@InProceedings{Glorot2011:ReLU,
+@InProceedings{Glorot2011_ReLU,
   author    = {Glorot, Xavier and Bordes, Antoine and Bengio, Yoshua},
   booktitle = {Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics},
   title     = {Deep Sparse Rectifier Neural Networks},
@@ -10550,7 +10524,7 @@ ChatGPT},
   url       = {https://proceedings.mlr.press/v15/glorot11a.html},
 }
 
-@InProceedings{Tolstikhin2021:MLPMixer,
+@InProceedings{Tolstikhin2021_MLPMixer,
   author    = {Tolstikhin, Ilya O and Houlsby, Neil and Kolesnikov, Alexander and Beyer, Lucas and Zhai, Xiaohua and Unterthiner, Thomas and Yung, Jessica and Steiner, Andreas and Keysers, Daniel and Uszkoreit, Jakob and Lucic, Mario and Dosovitskiy, Alexey},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {MLP-Mixer: An all-MLP Architecture for Vision},
@@ -10564,7 +10538,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2021/file/cba0a4ee5ccd02fda0fe3f9a3e7b89fe-Paper.pdf},
 }
 
-@Article{Hochreiter1997:LSTM,
+@Article{Hochreiter1997_LSTM,
   author    = {Hochreiter, Sepp and Schmidhuber, Jürgen},
   journal   = {Neural Computation},
   title     = {Long Short-Term Memory},
@@ -10580,7 +10554,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Chung2014:GRU,
+@Article{Chung2014_GRU,
   author        = {Chung, Junyoung and Gulcehre, Caglar and Cho, KyungHyun and Bengio, Yoshua},
   title         = {Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling},
   year          = {2014},
@@ -10598,7 +10572,7 @@ ChatGPT},
   ranking       = {rank5},
 }
 
-@InProceedings{Claus1998:JAL,
+@InProceedings{Claus1998_JAL,
   author    = {Claus, Caroline and Boutilier, Craig},
   booktitle = {Proceedings of the Fifteenth National/Tenth Conference on Artificial Intelligence/Innovative Applications of Artificial Intelligence},
   title     = {The dynamics of reinforcement learning in cooperative multiagent systems},
@@ -10617,7 +10591,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@InProceedings{Lake2018:Generalization,
+@InProceedings{Lake2018_Generalization,
   author    = {Lake, Brenden and Baroni, Marco},
   booktitle = {Proceedings of the 35th International Conference on Machine Learning},
   title     = {Generalization without Systematicity: On the Compositional Skills of Sequence-to-Sequence Recurrent Networks},
@@ -10630,14 +10604,14 @@ ChatGPT},
   volume    = {80},
   abstract  = {Humans can understand and produce new utterances effortlessly, thanks to their compositional skills. Once a person learns the meaning of a new verb "dax," he or she can immediately understand the meaning of "dax twice" or "sing and dax." In this paper, we introduce the SCAN domain, consisting of a set of simple compositional navigation commands paired with the corresponding action sequences. We then test the zero-shot generalization capabilities of a variety of recurrent neural networks (RNNs) trained on SCAN with sequence-to-sequence methods. We find that RNNs can make successful zero-shot generalizations when the differences between training and test commands are small, so that they can apply "mix-and-match" strategies to solve the task. However, when generalization requires systematic compositional skills (as in the "dax" example above), RNNs fail spectacularly. We conclude with a proof-of-concept experiment in neural machine translation, suggesting that lack of systematicity might be partially responsible for neural networks’ notorious training data thirst.},
   file      = {:Lake2018_Generalization - Generalization without Systematicity_ on the Compositional Skills of Sequence to Sequence Recurrent Networks.pdf:PDF:http\://proceedings.mlr.press/v80/lake18a/lake18a.pdf},
-  groups    = {NLP},
+  groups    = {NLP, Language},
   pdf       = {http://proceedings.mlr.press/v80/lake18a/lake18a.pdf},
   priority  = {prio1},
   ranking   = {rank4},
   url       = {https://proceedings.mlr.press/v80/lake18a.html},
 }
 
-@InProceedings{Lee2018:EmergentTranslation,
+@InProceedings{Lee2018_EmergentTranslation,
   author     = {Jason Lee and Kyunghyun Cho and Jason Weston and Douwe Kiela},
   booktitle  = {International Conference on Learning Representations},
   title      = {Emergent Translation in Multi-Agent Communication},
@@ -10667,7 +10641,7 @@ ChatGPT},
   readstatus = {skimmed},
 }
 
-@InProceedings{Chaabouni2019:AntiEfficient,
+@InProceedings{Chaabouni2019_AntiEfficient,
   author     = {Chaabouni, Rahma and Kharitonov, Eugene and Dupoux, Emmanuel and Baroni, Marco},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Anti-efficient encoding in emergent communication},
@@ -10682,7 +10656,7 @@ ChatGPT},
   url        = {https://proceedings.neurips.cc/paper_files/paper/2019/file/31ca0ca71184bbdb3de7b20a51e88e90-Paper.pdf},
 }
 
-@InProceedings{Mu2023:EC2,
+@InProceedings{Mu2023_EC2,
   author     = {Mu, Yao and Yao, Shunyu and Ding, Mingyu and Luo, Ping and Gan, Chuang},
   booktitle  = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   title      = {EC2: Emergent Communication for Embodied Control},
@@ -10696,7 +10670,7 @@ ChatGPT},
   url        = {https://openaccess.thecvf.com/content/CVPR2023/html/Mu_EC2_Emergent_Communication_for_Embodied_Control_CVPR_2023_paper.html},
 }
 
-@InProceedings{LeCun1989:CNN,
+@InProceedings{LeCun1989_CNN,
   author    = {LeCun, Yann and Boser, Bernhard and Denker, John and Henderson, Donnie and Howard, R. and Hubbard, Wayne and Jackel, Lawrence},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {Handwritten Digit Recognition with a Back-Propagation Network},
@@ -10709,7 +10683,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/1989/file/53c3bce66e43be4f209556518c2fcb54-Paper.pdf},
 }
 
-@InProceedings{Simonyan2015:VGG,
+@InProceedings{Simonyan2015_VGG,
   author    = {Simonyan, K and Zisserman, A},
   title     = {Very deep convolutional networks for large-scale image recognition},
   year      = {2015},
@@ -10721,7 +10695,7 @@ ChatGPT},
   url       = {https://arxiv.org/abs/1409.1556},
 }
 
-@InProceedings{Krizhevsky2012:AlexNet,
+@InProceedings{Krizhevsky2012_AlexNet,
   author    = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {ImageNet Classification with Deep Convolutional Neural Networks},
@@ -10734,7 +10708,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf},
 }
 
-@InProceedings{Vaswani2017:Transformer,
+@InProceedings{Vaswani2017_Transformer,
   author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, \L ukasz and Polosukhin, Illia},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {Attention is All you Need},
@@ -10764,7 +10738,7 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@PhdThesis{Lin1992:ExperienceReplay,
+@PhdThesis{Lin1992_ExperienceReplay,
   author    = {Lin, Long-Ji},
   title     = {Reinforcement learning for robots using neural networks},
   year      = {1992},
@@ -10774,7 +10748,7 @@ ChatGPT},
   url       = {https://apps.dtic.mil/sti/tr/pdf/ADA261434.pdf},
 }
 
-@Article{Kaplan2020:ScalingLaws,
+@Article{Kaplan2020_ScalingLaws,
   author        = {Kaplan, Jared and McCandlish, Sam and Henighan, Tom and Brown, Tom B. and Chess, Benjamin and Child, Rewon and Gray, Scott and Radford, Alec and Wu, Jeffrey and Amodei, Dario},
   title         = {Scaling Laws for Neural Language Models},
   year          = {2020},
@@ -10792,7 +10766,7 @@ ChatGPT},
   ranking       = {rank5},
 }
 
-@Article{Villalobos2022:ModelSizes,
+@Article{Villalobos2022_ModelSizes,
   author        = {Villalobos, Pablo and Sevilla, Jaime and Besiroglu, Tamay and Heim, Lennart and Ho, Anson and Hobbhahn, Marius},
   title         = {Machine Learning Model Sizes and the Parameter Gap},
   year          = {2022},
@@ -10810,7 +10784,7 @@ ChatGPT},
   ranking       = {rank1},
 }
 
-@InProceedings{Hill2021:Grounded,
+@InProceedings{Hill2021_Grounded,
   author    = {Felix Hill and Olivier Tieleman and Tamara von Glehn and Nathaniel Wong and Hamza Merzic and Stephen Clark},
   booktitle = {International Conference on Learning Representations},
   title     = {Grounded Language Learning Fast and Slow},
@@ -10822,7 +10796,7 @@ ChatGPT},
   url       = {https://openreview.net/forum?id=wpSWuz_hyqA},
 }
 
-@InProceedings{Rita2022:GenOverf,
+@InProceedings{Rita2022_GenOverf,
   author     = {Rita, Mathieu and Tallec, Corentin and Michel, Paul and Grill, Jean-Bastien and Pietquin, Olivier and Dupoux, Emmanuel and Strub, Florian},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Emergent Communication: Generalization and Overfitting in Lewis Games},
@@ -10854,7 +10828,7 @@ ChatGPT},
   ranking   = {rank1},
 }
 
-@InProceedings{Hasselt2010:DoubleQlearning,
+@InProceedings{Hasselt2010_DoubleQlearning,
   author    = {Hasselt, Hado},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {Double Q-learning},
@@ -10867,7 +10841,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2010/file/091d584fced301b442654dd8c23b3fc9-Paper.pdf},
 }
 
-@InProceedings{Plappert2018:Noise,
+@InProceedings{Plappert2018_Noise,
   author    = {Matthias Plappert and Rein Houthooft and Prafulla Dhariwal and Szymon Sidor and Richard Y. Chen and Xi Chen and Tamim Asfour and Pieter Abbeel and Marcin Andrychowicz},
   booktitle = {International Conference on Learning Representations},
   title     = {Parameter Space Noise for Exploration},
@@ -10877,7 +10851,7 @@ ChatGPT},
   url       = {https://openreview.net/forum?id=ByBAl2eAZ},
 }
 
-@InProceedings{Hausknecht2015d:DRQN,
+@InProceedings{Hausknecht2015d_DRQN,
   author     = {Hausknecht, Matthew and Stone, Peter},
   booktitle  = {2015 AAAI Fall Symposium Series},
   title      = {Deep Recurrent Q-Learning for Partially Observable MDPs},
@@ -10889,7 +10863,7 @@ ChatGPT},
   url        = {https://cdn.aaai.org/ocs/11673/11673-51288-1-PB.pdf},
 }
 
-@Article{Serban2017:VHRED,
+@Article{Serban2017_VHRED,
   author    = {Serban, Iulian and Sordoni, Alessandro and Lowe, Ryan and Charlin, Laurent and Pineau, Joelle and Courville, Aaron and Bengio, Yoshua},
   journal   = {Proceedings of the AAAI Conference on Artificial Intelligence},
   title     = {A Hierarchical Latent Variable Encoder-Decoder Model for Generating Dialogues},
@@ -10919,7 +10893,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2016/file/3147da8ab4a0437c15ef51a5cc7f2dc4-Paper.pdf},
 }
 
-@InProceedings{Jang2017:GumbelSoftmax,
+@InProceedings{Jang2017_GumbelSoftmax,
   author    = {Eric Jang and Shixiang Gu and Ben Poole},
   booktitle = {International Conference on Learning Representations},
   title     = {Categorical Reparameterization with Gumbel-Softmax},
@@ -10962,7 +10936,7 @@ ChatGPT},
   url       = {https://ai.vub.ac.be/sites/default/files/steels-03f.pdf},
 }
 
-@InProceedings{Li2023:CAMEL,
+@InProceedings{Li2023_CAMEL,
   author    = {Li, Guohao and Hammoud, Hasan and Itani, Hani and Khizbullin, Dmitrii and Ghanem, Bernard},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society},
@@ -10977,7 +10951,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2023/file/a3621ee907def47c1b952ade25c67698-Paper-Conference.pdf},
 }
 
-@Article{Zhu2024:CognitiveLLMs,
+@Article{Zhu2024_CognitiveLLMs,
   author    = {Zhu, Feiyu and Simmons, Reid},
   journal   = {Proceedings of the AAAI Conference on Artificial Intelligence},
   title     = {Bootstrapping Cognitive Agents with a Large Language Model},
@@ -11009,7 +10983,7 @@ ChatGPT},
   ranking   = {rank2},
 }
 
-@Article{Nowak1999:LanguageEvo,
+@Article{Nowak1999_LanguageEvo,
   author    = {Nowak, Martin A. and Krakauer, David C.},
   journal   = {Proceedings of the National Academy of Sciences},
   title     = {The evolution of language},
@@ -11027,7 +11001,7 @@ ChatGPT},
   ranking   = {rank4},
 }
 
-@InProceedings{Oord2017:VQ-VAE,
+@InProceedings{Oord2017_VQ-VAE,
   author     = {van den Oord, Aaron and Vinyals, Oriol and kavukcuoglu, koray},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Neural Discrete Representation Learning},
@@ -11042,7 +11016,7 @@ ChatGPT},
   url        = {https://proceedings.neurips.cc/paper_files/paper/2017/file/7a98af17e63a0ac09ce2e96d03992fbc-Paper.pdf},
 }
 
-@InProceedings{Iqbal2019:MAAC,
+@InProceedings{Iqbal2019_MAAC,
   author    = {Iqbal, Shariq and Sha, Fei},
   booktitle = {Proceedings of the 36th International Conference on Machine Learning},
   title     = {Actor-Attention-Critic for Multi-Agent Reinforcement Learning},
@@ -11167,7 +11141,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Wagner2003:EC,
+@Article{Wagner2003_EC,
   author    = {Wagner, Kyle and Reggia, James A. and Uriagereka, Juan and Wilkinson, Gerald S.},
   journal   = {Adaptive Behavior},
   title     = {Progress in the Simulation of Emergent Communication and Language},
@@ -11203,7 +11177,7 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@InProceedings{Park2023:LLMtown,
+@InProceedings{Park2023_LLMtown,
   author    = {Park, Joon Sung and O'Brien, Joseph and Cai, Carrie Jun and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S.},
   booktitle = {Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology},
   title     = {Generative Agents: Interactive Simulacra of Human Behavior},
@@ -11224,7 +11198,7 @@ ChatGPT},
   url       = {https://doi.org/10.1145/3586183.3606763},
 }
 
-@InProceedings{Wei2022:ChainOfThought,
+@InProceedings{Wei2022_ChainOfThought,
   author    = {Wei, Jason and Wang, Xuezhi and Schuurmans, Dale and Bosma, Maarten and ichter, brian and Xia, Fei and Chi, Ed and Le, Quoc V and Zhou, Denny},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {Chain-of-Thought Prompting Elicits Reasoning in Large Language Models},
@@ -11254,7 +11228,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/8bb0d291acd4acf06ef112099c16f326-Paper-Conference.pdf},
 }
 
-@InProceedings{Tishby1999:IB,
+@InProceedings{Tishby1999_IB,
   author     = {Tishby, Naftali and Pereira, Fernando C. and Bialek, William},
   booktitle  = {Proceedings of the 37-th Annual Allerton Conference on Communication, Control and Computing},
   title      = {The information bottleneck method},
@@ -11268,7 +11242,7 @@ ChatGPT},
   readstatus = {skimmed},
 }
 
-@InProceedings{Rezende2014:VAE,
+@InProceedings{Rezende2014_VAE,
   author    = {Rezende, Danilo Jimenez and Mohamed, Shakir and Wierstra, Daan},
   booktitle = {Proceedings of the 31st International Conference on Machine Learning},
   title     = {Stochastic Backpropagation and Approximate Inference in Deep Generative Models},
@@ -11312,7 +11286,7 @@ ChatGPT},
   url       = {https://openreview.net/forum?id=HyxQzBceg},
 }
 
-@Article{Smith2003:IteratedLearning,
+@Article{Smith2003_IteratedLearning,
   author    = {Smith, Kenny and Kirby, Simon and Brighton, Henry},
   journal   = {Artificial Life},
   title     = {Iterated Learning: A Framework for the Emergence of Language},
@@ -11330,7 +11304,7 @@ ChatGPT},
   ranking   = {rank3},
 }
 
-@Article{Brighton2006:TopographicMapping,
+@Article{Brighton2006_TopographicMapping,
   author     = {Brighton, Henry and Kirby, Simon},
   journal    = {Artificial Life},
   title      = {Understanding Linguistic Evolution by Visualizing the Emergence of Topographic Mappings},
@@ -11393,7 +11367,7 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@InProceedings{Karten2023:CompoConcept,
+@InProceedings{Karten2023_CompoConcept,
   author    = {Karten, Seth and Kailas, Siva and Sycara, Katia},
   booktitle = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
   title     = {Emergent Compositional Concept Communication through Mutual Information in Multi-Agent Teams},
@@ -11412,7 +11386,7 @@ ChatGPT},
   priority  = {prio2},
 }
 
-@Article{Zaslavsky2018:ColorNamingEvo,
+@Article{Zaslavsky2018_ColorNamingEvo,
   author    = {Zaslavsky, Noga and Kemp, Charles and Regier, Terry and Tishby, Naftali},
   journal   = {Proceedings of the National Academy of Sciences},
   title     = {Efficient compression in color naming and its evolution},
@@ -11429,7 +11403,7 @@ ChatGPT},
   ranking   = {rank3},
 }
 
-@InProceedings{Higgins2017:BetaVAE,
+@InProceedings{Higgins2017_BetaVAE,
   author    = {Irina Higgins and Loic Matthey and Arka Pal and Christopher Burgess and Xavier Glorot and Matthew Botvinick and Shakir Mohamed and Alexander Lerchner},
   booktitle = {International Conference on Learning Representations},
   title     = {beta-{VAE}: Learning Basic Visual Concepts with a Constrained Variational Framework},
@@ -11440,7 +11414,7 @@ ChatGPT},
   url       = {https://openreview.net/forum?id=Sy2fzU9gl},
 }
 
-@Book{Lewis1969:Convention,
+@Book{Lewis1969_Convention,
   author    = {David Lewis},
   publisher = {Harvard University Press},
   title     = {Convention: A Philosophical Study},
@@ -11468,7 +11442,7 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@InProceedings{Zhang2024:CoELA,
+@InProceedings{Zhang2024_CoELA,
   author    = {Hongxin Zhang and Weihua Du and Jiaming Shan and Qinhong Zhou and Yilun Du and Joshua B. Tenenbaum and Tianmin Shu and Chuang Gan},
   booktitle = {International Conference on Learning Representations},
   title     = {Building Cooperative Embodied Agents Modularly with Large Language Models},
@@ -11478,7 +11452,7 @@ ChatGPT},
   url       = {https://openreview.net/forum?id=EnXJfQqy0K},
 }
 
-@Article{Perez2024:CulturalEvo,
+@Article{Perez2024_CulturalEvo,
   author        = {Perez, Jérémy and Léger, Corentin and Ovando-Tellez, Marcela and Foulon, Chris and Dussauld, Joan and Oudeyer, Pierre-Yves and Moulin-Frier, Clément},
   title         = {Cultural evolution in populations of Large Language Models},
   year          = {2024},
@@ -11496,7 +11470,7 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@InProceedings{Lyu2021:DecentralisedCritic,
+@InProceedings{Lyu2021_DecentralisedCritic,
   author    = {Lyu, Xueguang and Xiao, Yuchen and Daley, Brett and Amato, Christopher},
   booktitle = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
   title     = {Contrasting Centralized and Decentralized Critics in Multi-Agent Reinforcement Learning},
@@ -11532,7 +11506,7 @@ ChatGPT},
   publisher = {Springer Science and Business Media LLC},
 }
 
-@Article{Acerbi2023:LLMsBias,
+@Article{Acerbi2023_LLMsBias,
   author    = {Acerbi, Alberto and Stubbersfield, Joseph M.},
   journal   = {Proceedings of the National Academy of Sciences},
   title     = {Large language models show human-like content biases in transmission chain experiments},
@@ -11548,7 +11522,7 @@ ChatGPT},
   publisher = {Proceedings of the National Academy of Sciences},
 }
 
-@Article{Vezhnevets2023:Concordia,
+@Article{Vezhnevets2023_Concordia,
   author        = {Vezhnevets, Alexander Sasha and Agapiou, John P. and Aharon, Avia and Ziv, Ron and Matyas, Jayd and Duéñez-Guzmán, Edgar A. and Cunningham, William A. and Osindero, Simon and Karmon, Danny and Leibo, Joel Z.},
   title         = {Generative agent-based modeling with actions grounded in physical, social, or digital space using Concordia},
   year          = {2023},
@@ -11565,7 +11539,7 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@Article{Hinton2006:Autoencoder,
+@Article{Hinton2006_Autoencoder,
   author    = {Hinton, G. E. and Salakhutdinov, R. R.},
   journal   = {Science},
   title     = {Reducing the Dimensionality of Data with Neural Networks},
@@ -11581,7 +11555,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@InProceedings{Hunt2024:LLMMultiRobot,
+@InProceedings{Hunt2024_LLMMultiRobot,
   author    = {Hunt, William and Godfrey, Toby and Soorati, Mohammad D.},
   booktitle = {Demonstration at International Conference on Autonomous Agents and Multi-Agent Systems},
   title     = {Conversational Language Models for Human-in-the-Loop Multi-Robot Coordination},
@@ -11593,26 +11567,26 @@ ChatGPT},
   url       = {https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2809.pdf},
 }
 
-@InProceedings{Ekila2024:LingConvent,
-  author    = {Botoko Ekila, J\'{e}r\^{o}me},
-  booktitle = {Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems},
-  title     = {Emergence of Linguistic Conventions In Multi-Agent Systems Through Situated Communicative Interactions},
-  year      = {2024},
-  address   = {Richland, SC},
-  pages     = {2725–2727},
-  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
-  series    = {AAMAS '24},
-  abstract  = {The field of emergent communication investigates the emergence of shared linguistic conventions among autonomous agents engaged in cooperative tasks that require communication. Conventions that arise through self-organisation are known to be more robust, flexible, and adaptive, and it removes the need for hand-crafting communication protocols. In my PhD research, I investigate how artificial agents can co-construct such conventions of linguistic structures in reference-based tasks. This problem is tackled using the language game experimental paradigm which aims to model the processes underlying the emergence and evolution of human languages. My primary contribution thus far introduces a novel methodology for the language game paradigm in the emergent setting. Using the methodology, agents can establish through self-organisation an emergent language that enables them to refer to arbitrary entities in their environment using single-word utterances. For the first time, the methodology is directly applicable to any dataset that describes entities in terms of continuously-valued features. The next phase in my research is to move from single-word utterances to multi-word utterances through the emergence of grammatical structures.},
-  file      = {:Ekila2024_LingConvent - Emergence of Linguistic Conventions in Multi Agent Systems through Situated Communicative Interactions.pdf:PDF:https\://arxiv.org/pdf/2401.08461},
-  groups    = {Discrete language, Language origins and evolution},
-  isbn      = {9798400704864},
-  keywords  = {autonomous agents, emergent communication, language emergence, language evolution, multi-agent systems, self-organisation},
-  location  = {Auckland, New Zealand},
-  numpages  = {3},
-  priority  = {prio1},
+@InProceedings{Ekila2024_LingConvent,
+  author     = {Botoko Ekila, J\'{e}r\^{o}me},
+  booktitle  = {Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems},
+  title      = {Emergence of Linguistic Conventions In Multi-Agent Systems Through Situated Communicative Interactions},
+  year       = {2024},
+  address    = {Richland, SC},
+  pages      = {2725–2727},
+  publisher  = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series     = {AAMAS '24},
+  abstract   = {The field of emergent communication investigates the emergence of shared linguistic conventions among autonomous agents engaged in cooperative tasks that require communication. Conventions that arise through self-organisation are known to be more robust, flexible, and adaptive, and it removes the need for hand-crafting communication protocols. In my PhD research, I investigate how artificial agents can co-construct such conventions of linguistic structures in reference-based tasks. This problem is tackled using the language game experimental paradigm which aims to model the processes underlying the emergence and evolution of human languages. My primary contribution thus far introduces a novel methodology for the language game paradigm in the emergent setting. Using the methodology, agents can establish through self-organisation an emergent language that enables them to refer to arbitrary entities in their environment using single-word utterances. For the first time, the methodology is directly applicable to any dataset that describes entities in terms of continuously-valued features. The next phase in my research is to move from single-word utterances to multi-word utterances through the emergence of grammatical structures.},
+  file       = {:Ekila2024_LingConvent - Emergence of Linguistic Conventions in Multi Agent Systems through Situated Communicative Interactions.pdf:PDF:https\://arxiv.org/pdf/2401.08461},
+  groups     = {Discrete language, Language origins and evolution},
+  keywords   = {autonomous agents, emergent communication, language emergence, language evolution, multi-agent systems, self-organisation},
+  location   = {Auckland, New Zealand},
+  numpages   = {3},
+  readstatus = {read},
+  url        = {https://dl.acm.org/doi/10.5555/3635637.3663267},
 }
 
-@InProceedings{Liu2024:HLA,
+@InProceedings{Liu2024_HLA,
   author    = {Liu, Jijia and Yu, Chao and Gao, Jiaxuan and Xie, Yuqing and Liao, Qingmin and Wu, Yi and Wang, Yu},
   booktitle = {International Conference on Autonomous Agents and Multiagent Systems},
   title     = {LLM-Powered Hierarchical Language Agent for Real-time Human-AI Coordination},
@@ -11625,7 +11599,7 @@ ChatGPT},
   url       = {https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1219.pdf},
 }
 
-@InProceedings{Choi2018:CompComm,
+@InProceedings{Choi2018_CompComm,
   author    = {Edward Choi and Angeliki Lazaridou and Nando de Freitas},
   booktitle = {International Conference on Learning Representations},
   title     = {Multi-Agent Compositional Communication Learning from Raw Visual Input},
@@ -11700,7 +11674,7 @@ ChatGPT},
   readstatus = {read},
 }
 
-@Article{Ji2023:Hallucinations,
+@Article{Ji2023_Hallucinations,
   author    = {Ji, Ziwei and Lee, Nayeon and Frieske, Rita and Yu, Tiezheng and Su, Dan and Xu, Yan and Ishii, Etsuko and Bang, Ye Jin and Madotto, Andrea and Fung, Pascale},
   journal   = {ACM Computing Surveys},
   title     = {Survey of Hallucination in Natural Language Generation},
@@ -11716,7 +11690,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Hong2023:MetaGPT,
+@Article{Hong2023_MetaGPT,
   author        = {Hong, Sirui and Zhuge, Mingchen and Chen, Jonathan and Zheng, Xiawu and Cheng, Yuheng and Zhang, Ceyao and Wang, Jinlin and Wang, Zili and Yau, Steven Ka Shing and Lin, Zijuan and Zhou, Liyang and Ran, Chenyu and Xiao, Lingfeng and Wu, Chenglin and Schmidhuber, Jürgen},
   title         = {MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework},
   year          = {2023},
@@ -11733,22 +11707,22 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@Article{Vogt2005:EmergenceCompo,
-  author    = {Vogt, Paul},
-  journal   = {Artificial Intelligence},
-  title     = {The emergence of compositional structures in perceptually grounded language games},
-  year      = {2005},
-  issn      = {0004-3702},
-  month     = sep,
-  number    = {1–2},
-  pages     = {206--242},
-  volume    = {167},
-  doi       = {10.1016/j.artint.2005.04.010},
-  file      = {:1-s2.0-S0004370205001001-main.pdf:PDF},
-  groups    = {Language origins and evolution, Symbol grounding},
-  priority  = {prio1},
-  publisher = {Elsevier BV},
-  ranking   = {rank2},
+@Article{Vogt2005_EmergenceCompo,
+  author     = {Vogt, Paul},
+  journal    = {Artificial Intelligence},
+  title      = {The emergence of compositional structures in perceptually grounded language games},
+  year       = {2005},
+  issn       = {0004-3702},
+  month      = sep,
+  number     = {1–2},
+  pages      = {206--242},
+  volume     = {167},
+  doi        = {10.1016/j.artint.2005.04.010},
+  file       = {:1-s2.0-S0004370205001001-main.pdf:PDF},
+  groups     = {Language origins and evolution, Symbol grounding},
+  publisher  = {Elsevier BV},
+  ranking    = {rank2},
+  readstatus = {read},
 }
 
 @Article{Nagel1974,
@@ -11784,7 +11758,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Article{Hinton1987:LearningEvolution,
+@Article{Hinton1987_LearningEvolution,
   author  = {Hinton, Geoffrey E and Nowlan, Steven J and others},
   journal = {Complex systems},
   title   = {How learning can guide evolution},
@@ -11798,7 +11772,7 @@ ChatGPT},
   url     = {https://icts.res.in/sites/default/files/How Learning Can Guide Evolution -1987.pdf},
 }
 
-@Article{Baldwin1896:BaldwinEffect,
+@Article{Baldwin1896_BaldwinEffect,
   author    = {Baldwin, J. Mark},
   journal   = {The American Naturalist},
   title     = {A New Factor in Evolution},
@@ -11846,7 +11820,7 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
-@TechReport{Rummery1994:SARSA,
+@TechReport{Rummery1994_SARSA,
   author      = {Rummery, G. A. and Niranjan, M.},
   institution = {Engineering Department, Cambridge University},
   title       = {On-line Q-learning using connectionnist systems},
@@ -11888,7 +11862,7 @@ ChatGPT},
   url       = {https://dl.acm.org/doi/10.5555/645531.656005},
 }
 
-@PhdThesis{Ziebart2010:MaxEntropyRL,
+@PhdThesis{Ziebart2010_MaxEntropyRL,
   author    = {Ziebart, Brian D},
   title     = {Modeling purposeful adaptive behavior with the principle of maximum causal entropy},
   year      = {2010},
@@ -11897,7 +11871,7 @@ ChatGPT},
   url       = {http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/bziebart/publications/thesis-bziebart.pdf},
 }
 
-@Article{Haarnoja2018:SAC2,
+@Article{Haarnoja2018_SAC2,
   author        = {Haarnoja, Tuomas and Zhou, Aurick and Hartikainen, Kristian and Tucker, George and Ha, Sehoon and Tan, Jie and Kumar, Vikash and Zhu, Henry and Gupta, Abhishek and Abbeel, Pieter and Levine, Sergey},
   title         = {Soft Actor-Critic Algorithms and Applications},
   year          = {2018},
@@ -11915,7 +11889,7 @@ ChatGPT},
   ranking       = {rank5},
 }
 
-@InProceedings{Steels1997:Grounding,
+@InProceedings{Steels1997_Grounding,
   author    = {L. Steels and P.A. Vogt},
   booktitle = {Advances in artificial life},
   title     = {Grounding adaptive language games in robotic agents},
@@ -11932,7 +11906,7 @@ ChatGPT},
   ranking   = {rank2},
 }
 
-@Article{Vogt2002:PhysicalGrounding,
+@Article{Vogt2002_PhysicalGrounding,
   author    = {Vogt, Paul},
   journal   = {Cognitive Systems Research},
   title     = {The physical symbol grounding problem},
@@ -11984,7 +11958,7 @@ ChatGPT},
   ranking   = {rank3},
 }
 
-@Article{Beuls2013:GrammaticalAgreement,
+@Article{Beuls2013_GrammaticalAgreement,
   author    = {Beuls, Katrien and Steels, Luc},
   journal   = {PLoS ONE},
   title     = {Agent-Based Models of Strategies for the Emergence and Evolution of Grammatical Agreement},
@@ -12017,7 +11991,7 @@ ChatGPT},
   url      = {https://www.frontiersin.org/articles/10.3389/frobt.2020.00084},
 }
 
-@Article{Wellens2008:FlexibleWordMeaning,
+@Article{Wellens2008_FlexibleWordMeaning,
   author    = {Wellens, Peter and Loetzsch, Martin and Steels, Luc},
   journal   = {Connection Science},
   title     = {Flexible word meaning in embodied agents},
@@ -12035,7 +12009,7 @@ ChatGPT},
   ranking   = {rank1},
 }
 
-@Article{Kirby2001:ILM,
+@Article{Kirby2001_ILM,
   author    = {Kirby, S.},
   journal   = {IEEE Transactions on Evolutionary Computation},
   title     = {Spontaneous evolution of linguistic structure-an iterated learning model of the emergence of regularity and irregularity},
@@ -12053,7 +12027,7 @@ ChatGPT},
   ranking   = {rank3},
 }
 
-@Book{Steels1999:TalkingHeads1,
+@Book{Steels1999_TalkingHeads1,
   author   = {Luc Steels},
   editor   = {Special pre-edition for LABORATORIUM},
   title    = {The Talking Heads Experiment. Volume I. Words and Meanings},
@@ -12084,11 +12058,12 @@ ChatGPT},
   year      = {2024},
   file      = {:Albrecht2024 - Multi Agent Reinforcement Learning_ Foundations and Modern Approaches.pdf:PDF:https\://www.marl-book.com/download/marl-book.pdf},
   groups    = {MAS Reviews},
+  priority  = {prio3},
   ranking   = {rank1},
   url       = {https://www.marl-book.com},
 }
 
-@Book{Shoham2008:Multiagent,
+@Book{Shoham2008_Multiagent,
   author    = {Shoham, Yoav and Leyton-Brown, Kevin},
   publisher = {Cambridge University Press},
   title     = {Multiagent systems: Algorithmic, game-theoretic, and logical foundations},
@@ -12098,7 +12073,7 @@ ChatGPT},
   url       = {http://eecs.harvard.edu/cs286r/courses/fall08/files/SLB.pdf},
 }
 
-@Article{Albrecht2018,
+@Article{Albrecht2018_AgentModelling,
   author    = {Albrecht, Stefano V. and Stone, Peter},
   journal   = {Artificial Intelligence},
   title     = {Autonomous agents modelling other agents: A comprehensive survey and open problems},
@@ -12109,11 +12084,12 @@ ChatGPT},
   volume    = {258},
   doi       = {10.1016/j.artint.2018.01.002},
   groups    = {Agent Modelling},
+  priority  = {prio1},
   publisher = {Elsevier BV},
   ranking   = {rank3},
 }
 
-@Book{Owen2013:GameTheory,
+@Book{Owen2013_GameTheory,
   author    = {Owen, Guillermo},
   publisher = {Emerald Group Publishing},
   title     = {Game theory},
@@ -12123,7 +12099,7 @@ ChatGPT},
   url       = {https://books.google.fr/books?hl=en&lr=&id=yeVbAAAAQBAJ&oi=fnd&pg=PP2&ots=Yp1-UuOAie&sig=1IaP-ESJcbpI7rs7FjB2KmkQdsQ&redir_esc=y#v=onepage&q&f=false},
 }
 
-@Book{Harsanyi1988:EqSec,
+@Book{Harsanyi1988_EqSec,
   author    = {John C. Harsanyi and Reinhard Selten},
   publisher = {The MIT Press},
   title     = {{A General Theory of Equilibrium Selection in Games}},
@@ -12183,7 +12159,7 @@ ChatGPT},
   url      = {https://openreview.net/forum?id=gQnJ7ODIAx},
 }
 
-@InProceedings{Papoudakis2021:LIAM,
+@InProceedings{Papoudakis2021_LIAM,
   author    = {Papoudakis, Georgios and Christianos, Filippos and Albrecht, Stefano},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {Agent Modelling under Partial Observability for Deep Reinforcement Learning},
@@ -12198,7 +12174,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2021/file/a03caec56cd82478bf197475b48c05f9-Paper.pdf},
 }
 
-@Article{Graves2016:DNC,
+@Article{Graves2016_DNC,
   author    = {Graves, Alex and Wayne, Greg and Reynolds, Malcolm and Harley, Tim and Danihelka, Ivo and Grabska-Barwińska, Agnieszka and Colmenarejo, Sergio Gómez and Grefenstette, Edward and Ramalho, Tiago and Agapiou, John and Badia, Adrià Puigdomènech and Hermann, Karl Moritz and Zwols, Yori and Ostrovski, Georg and Cain, Adam and King, Helen and Summerfield, Christopher and Blunsom, Phil and Kavukcuoglu, Koray and Hassabis, Demis},
   journal   = {Nature},
   title     = {Hybrid computing using a neural network with dynamic external memory},
@@ -12216,6 +12192,220 @@ ChatGPT},
   ranking   = {rank5},
 }
 
+@InProceedings{Brown1951_FictitiousPlay,
+  author    = {George W. Brown},
+  booktitle = {Proceedingsof the Conference on Activity Analysis of Production and Allocation, Cowles CommissionMonograph 13},
+  title     = {Iterative solution of games by fictitious play},
+  year      = {1951},
+  pages     = {374-376},
+  groups    = {Agent Modelling, Fictituous Play},
+  ranking   = {rank5},
+  url       = {https://econwpa.ub.uni-muenchen.de/econ-wp/game/papers/0503/0503008.pdf},
+}
+
+@Article{Robinson1951_FictitiousPlay,
+  author    = {Robinson, Julia},
+  journal   = {The Annals of Mathematics},
+  title     = {An Iterative Method of Solving a Game},
+  year      = {1951},
+  issn      = {0003-486X},
+  month     = sep,
+  number    = {2},
+  pages     = {296},
+  volume    = {54},
+  doi       = {10.2307/1969530},
+  groups    = {Agent Modelling, Fictituous Play},
+  publisher = {JSTOR},
+  ranking   = {rank5},
+}
+
+@Article{Fudenberg1995_FictitiousPlay,
+  author    = {Fudenberg, Drew and Levine, David K.},
+  journal   = {Journal of Economic Dynamics and Control},
+  title     = {Consistency and cautious fictitious play},
+  year      = {1995},
+  issn      = {0165-1889},
+  month     = jul,
+  number    = {5–7},
+  pages     = {1065--1089},
+  volume    = {19},
+  doi       = {10.1016/0165-1889(94)00819-4},
+  groups    = {Fictituous Play},
+  publisher = {Elsevier BV},
+  ranking   = {rank3},
+}
+
+@Article{Hofbauer2002_FictitiousPlay,
+  author    = {Hofbauer, Josef and Sandholm, William H.},
+  journal   = {Econometrica},
+  title     = {On the Global Convergence of Stochastic Fictitious Play},
+  year      = {2002},
+  issn      = {1468-0262},
+  month     = nov,
+  number    = {6},
+  pages     = {2265--2294},
+  volume    = {70},
+  doi       = {10.1111/j.1468-0262.2002.00440.x},
+  groups    = {Fictituous Play},
+  publisher = {The Econometric Society},
+  ranking   = {rank3},
+}
+
+@InProceedings{Heinrich2015_FictituousPlay,
+  author    = {Heinrich, Johannes and Lanctot, Marc and Silver, David},
+  booktitle = {Proceedings of the 32nd International Conference on Machine Learning},
+  title     = {Fictitious Self-Play in Extensive-Form Games},
+  year      = {2015},
+  address   = {Lille, France},
+  editor    = {Bach, Francis and Blei, David},
+  month     = {07--09 Jul},
+  pages     = {805--813},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {37},
+  abstract  = {Fictitious play is a popular game-theoretic model of learning in games. However, it has received little attention in practical applications to large problems. This paper introduces two variants of fictitious play that are implemented in behavioural strategies of an extensive-form game. The first variant is a full-width process that is realization equivalent to its normal-form counterpart and therefore inherits its convergence guarantees. However, its computational requirements are linear in time and space rather than exponential. The second variant, Fictitious Self-Play, is a machine learning framework that implements fictitious play in a sample-based fashion. Experiments in imperfect-information poker games compare our approaches and demonstrate their convergence to approximate Nash equilibria.},
+  groups    = {Fictituous Play},
+  pdf       = {http://proceedings.mlr.press/v37/heinrich15.pdf},
+  ranking   = {rank3},
+  url       = {https://proceedings.mlr.press/v37/heinrich15.html},
+}
+
+@Article{Jordan1991_Bayesian,
+  author    = {Jordan, J.S},
+  journal   = {Games and Economic Behavior},
+  title     = {Bayesian learning in normal form games},
+  year      = {1991},
+  issn      = {0899-8256},
+  month     = feb,
+  number    = {1},
+  pages     = {60--81},
+  volume    = {3},
+  doi       = {10.1016/0899-8256(91)90005-y},
+  groups    = {Bayesian learning},
+  publisher = {Elsevier BV},
+  ranking   = {rank3},
+}
+
+@Article{Kalai1993_Rational,
+  author    = {Kalai, Ehud and Lehrer, Ehud},
+  journal   = {Econometrica},
+  title     = {Rational Learning Leads to Nash Equilibrium},
+  year      = {1993},
+  issn      = {0012-9682},
+  month     = sep,
+  number    = {5},
+  pages     = {1019},
+  volume    = {61},
+  doi       = {10.2307/2951492},
+  groups    = {Bayesian learning},
+  publisher = {JSTOR},
+  ranking   = {rank4},
+}
+
+@Article{VanEecke2022,
+  author    = {Van Eecke, Paul and Beuls, Katrien and Botoko Ekila, Jérôme and Rădulescu, Roxana},
+  journal   = {Journal of Language Evolution},
+  title     = {Language games meet multi-agent reinforcement learning: A case study for the naming game},
+  year      = {2022},
+  issn      = {2058-458X},
+  month     = jul,
+  number    = {2},
+  pages     = {213--223},
+  volume    = {7},
+  doi       = {10.1093/jole/lzad001},
+  file      = {:VanEecke2022 - Language Games Meet Multi Agent Reinforcement Learning_ a Case Study for the Naming Game.pdf:PDF:https\://watermark.silverchair.com/lzad001.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA0owggNGBgkqhkiG9w0BBwagggM3MIIDMwIBADCCAywGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMM220hCvjm2XLuqhNAgEQgIIC_SUkOhWKKuTB8JAc3EJ0je-6GDrJln5RQFqMFyPpVtUiXTBwKexY_fQBihdRzRHP4KZ76PJnFWlEX7L0VRX4akXGUaThsbVDXnV3t2B19udpkeg9C900VyeW414HFQFdJdEq6wzvwe8KrFXXFRq_5L9P-SINJExTnWHGRnqkaFbs1-ZsIXKFxicj6YiqgjfqiPj3sSTtG4jKMUdqACjY54YaPi-drrpRZVsfu47S_Wdjx3ZZYr9kLaKUO749QqqgYSd0lhPwI71Nk-FDNijUTn6Oc6H2t6I4jsI3sU_4KuW2FIJ7-DjaXGG8BqdFx64k4PVVslhcnSR9CHGYWEyeN2XZ2cgo-f1EDCIwmAGhM_nbGVrQAnC2RsKQoP73Mmw-u0yh_MvVx6gYLVde0CREhhogplKWbMY0IRi5LXiQTIdjmCrpmZfJOr_UqePf9O3V6vuhb9lvYXYJZ8S_KZp5Bq7DEWkdRUcrVzgHrs3VeCxhfBriaApuC_KaXR_IJNgSt3XVj2zq-sVTyE85p96SI9hpW7cpjWrQFntp9iK0olw-igviwymywbWL7G5zgd7j8OtNH9u3OH2oeW7SkK3gs9bpmrxDGr0bjskaHGFGleu3lkIxkE0ulDEPLDdieEp73lC5liqdIox-7RnzYw-7egwygZ9k3UXxUe-wbYycBWieDq6ixDAdyVhhNwwyDhDGybhrTP-74nKUnNml2UMgq9sRuUtSOuyXy7Ar3GSxfenYj_2Mxo6Q4YWj6NxhUg_K9yB5pZEtdi-Bm5q-v69BHGQguq2yDD6Eo1-Ly8N-TTbK06Zksu2bhlC3AZtVb3H5qM0cRHINM8SYo-wouf-YgbWIb4tZ4mBBVj-kZ7ov7d5sqDPhVOasQ8qBsjsQreVqdd50nbAMxCpOiKy8qgv-TGiuvx1RMniVb03VaY9_nkHIgz2QjSbCDCbk7dxsWYFx-r65IAk1izvLfF0Dw9LwTXfe9woJqkywY4yHGbaZmASbTzZ0cQvb4K-9_5F-lg},
+  groups    = {Language origins and evolution, Communication, Discrete language},
+  priority  = {prio1},
+  publisher = {Oxford University Press (OUP)},
+}
+
+@InBook{Mikolov2018,
+  author    = {Mikolov, Tomas and Joulin, Armand and Baroni, Marco},
+  pages     = {29--61},
+  publisher = {Springer International Publishing},
+  title     = {A Roadmap Towards Machine Intelligence},
+  year      = {2018},
+  isbn      = {9783319754772},
+  booktitle = {Lecture Notes in Computer Science},
+  doi       = {10.1007/978-3-319-75477-2_2},
+  file      = {:ARoadmaptowardsMachineIntelligence.pdf:PDF},
+  groups    = {Communication},
+  issn      = {1611-3349},
+  priority  = {prio1},
+  ranking   = {rank2},
+}
+
+@Article{Minaee2024,
+  author        = {Minaee, Shervin and Mikolov, Tomas and Nikzad, Narjes and Chenaghlu, Meysam and Socher, Richard and Amatriain, Xavier and Gao, Jianfeng},
+  title         = {Large Language Models: A Survey},
+  year          = {2024},
+  month         = feb,
+  abstract      = {Large Language Models (LLMs) have drawn a lot of attention due to their strong performance on a wide range of natural language tasks, since the release of ChatGPT in November 2022. LLMs' ability of general-purpose language understanding and generation is acquired by training billions of model's parameters on massive amounts of text data, as predicted by scaling laws \cite{kaplan2020scaling,hoffmann2022training}. The research area of LLMs, while very recent, is evolving rapidly in many different ways. In this paper, we review some of the most prominent LLMs, including three popular LLM families (GPT, LLaMA, PaLM), and discuss their characteristics, contributions and limitations. We also give an overview of techniques developed to build, and augment LLMs. We then survey popular datasets prepared for LLM training, fine-tuning, and evaluation, review widely used LLM evaluation metrics, and compare the performance of several popular LLMs on a set of representative benchmarks. Finally, we conclude the paper by discussing open challenges and future research directions.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2402.06196},
+  eprint        = {2402.06196},
+  file          = {:Minaee2024 - Large Language Models_ a Survey.pdf:PDF:http\://arxiv.org/pdf/2402.06196v2},
+  groups        = {Large Language Models},
+  keywords      = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), FOS: Computer and information sciences},
+  primaryclass  = {cs.CL},
+  publisher     = {arXiv},
+  ranking       = {rank1},
+}
+
+@Book{Weiss1999_MAS,
+  author    = {Weiss, Gerhard},
+  editor    = {Weiss, Gerhard},
+  publisher = {MIT Press},
+  title     = {Multiagent systems: a modern approach to distributed artificial intelligence},
+  year      = {1999},
+  address   = {Cambridge, MA, USA},
+  isbn      = {0262232030},
+  groups    = {MAS Reviews},
+  ranking   = {rank5},
+}
+
+@InProceedings{Ellis2023,
+  author    = {Ellis, Benjamin and Cook, Jonathan and Moalla, Skander and Samvelyan, Mikayel and Sun, Mingfei and Mahajan, Anuj and Foerster, Jakob and Whiteson, Shimon},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {SMACv2: An Improved Benchmark for Cooperative Multi-Agent Reinforcement Learning},
+  year      = {2023},
+  editor    = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+  pages     = {37567--37593},
+  publisher = {Curran Associates, Inc.},
+  volume    = {36},
+  file      = {:Ellis2023 - SMACv2_ an Improved Benchmark for Cooperative Multi Agent Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2023/file/764c18ad230f9e7bf6a77ffc2312c55e-Paper-Datasets_and_Benchmarks.pdf},
+  groups    = {Multi-Agent Environments},
+  ranking   = {rank1},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/file/764c18ad230f9e7bf6a77ffc2312c55e-Paper-Datasets_and_Benchmarks.pdf},
+}
+
+@InProceedings{octo_2023,
+  author    = {{Octo Model Team} and Dibya Ghosh and Homer Walke and Karl Pertsch and Kevin Black and Oier Mees and Sudeep Dasari and Joey Hejna and Charles Xu and Jianlan Luo and Tobias Kreiman and {You Liang} Tan and Lawrence Yunliang Chen and Pannag Sanketi and Quan Vuong and Ted Xiao and Dorsa Sadigh and Chelsea Finn and Sergey Levine},
+  booktitle = {Proceedings of Robotics: Science and Systems},
+  title     = {Octo: An Open-Source Generalist Robot Policy},
+  year      = {2024},
+  address   = {Delft, Netherlands},
+  groups    = {Vision Language Action Models},
+}
+
+@Article{Kim2024,
+  author        = {Kim, Moo Jin and Pertsch, Karl and Karamcheti, Siddharth and Xiao, Ted and Balakrishna, Ashwin and Nair, Suraj and Rafailov, Rafael and Foster, Ethan and Lam, Grace and Sanketi, Pannag and Vuong, Quan and Kollar, Thomas and Burchfiel, Benjamin and Tedrake, Russ and Sadigh, Dorsa and Levine, Sergey and Liang, Percy and Finn, Chelsea},
+  title         = {OpenVLA: An Open-Source Vision-Language-Action Model},
+  year          = {2024},
+  month         = jun,
+  abstract      = {Large policies pretrained on a combination of Internet-scale vision-language data and diverse robot demonstrations have the potential to change how we teach robots new skills: rather than training new behaviors from scratch, we can fine-tune such vision-language-action (VLA) models to obtain robust, generalizable policies for visuomotor control. Yet, widespread adoption of VLAs for robotics has been challenging as 1) existing VLAs are largely closed and inaccessible to the public, and 2) prior work fails to explore methods for efficiently fine-tuning VLAs for new tasks, a key component for adoption. Addressing these challenges, we introduce OpenVLA, a 7B-parameter open-source VLA trained on a diverse collection of 970k real-world robot demonstrations. OpenVLA builds on a Llama 2 language model combined with a visual encoder that fuses pretrained features from DINOv2 and SigLIP. As a product of the added data diversity and new model components, OpenVLA demonstrates strong results for generalist manipulation, outperforming closed models such as RT-2-X (55B) by 16.5% in absolute task success rate across 29 tasks and multiple robot embodiments, with 7x fewer parameters. We further show that we can effectively fine-tune OpenVLA for new settings, with especially strong generalization results in multi-task environments involving multiple objects and strong language grounding abilities, and outperform expressive from-scratch imitation learning methods such as Diffusion Policy by 20.4%. We also explore compute efficiency; as a separate contribution, we show that OpenVLA can be fine-tuned on consumer GPUs via modern low-rank adaptation methods and served efficiently via quantization without a hit to downstream success rate. Finally, we release model checkpoints, fine-tuning notebooks, and our PyTorch codebase with built-in support for training VLAs at scale on Open X-Embodiment datasets.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2406.09246},
+  eprint        = {2406.09246},
+  file          = {:Kim2024 - OpenVLA_ an Open Source Vision Language Action Model.pdf:PDF:http\://arxiv.org/pdf/2406.09246v1},
+  groups        = {Vision Language Action Models},
+  keywords      = {Robotics (cs.RO), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.RO},
+  publisher     = {arXiv},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -12229,7 +12419,7 @@ ChatGPT},
 1 StaticGroup:Evolution Strategy\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Evolutionary RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language\;2\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language generation with RL\;0\;0\;0x8a8a8aff\;\;\;;
@@ -12252,16 +12442,12 @@ ChatGPT},
 1 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-agent learning\;2\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
-4 StaticGroup:Shapley value\;2\;1\;0x8a8a8aff\;\;\;;
-4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Interaction Networks\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Agent Modelling\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Equilibrium selection\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Game theory\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-agent learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Centralised execution\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Agent Modelling\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Fictituous Play\;2\;0\;0x7c7c7cff\;\;\;;
+4 StaticGroup:Bayesian learning\;0\;1\;0x7c7c7cff\;\;\;;
+3 StaticGroup:Centralised execution\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Communication\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Discrete language\;2\;1\;0x8a8a8aff\;\;\;;
 5 StaticGroup:Natural language\;0\;1\;0x8a8a8aff\;\;\;;
@@ -12269,17 +12455,22 @@ ChatGPT},
 4 StaticGroup:Language-Grounded Communication\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Comm with LLMs\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Applied MAC\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Credit assignment\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Heterogeneous MADRL\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Exploration in MARL\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Shapley value\;2\;0\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Equilibrium selection\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Exploration in MARL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Game theory\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Heterogeneous MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Independent Learning\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Interaction Networks\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Intrinsic rewards in MARL\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Memory in MARL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Memory in MARL\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Population-based training\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Social Learning\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Value factorisation\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Population-based training\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Shared Mental Models\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Memory\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;0\;0x8a8a8aff\;\;\;;
@@ -12321,7 +12512,7 @@ ChatGPT},
 2 StaticGroup:Transformers in RL\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Reward Shaping\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Implementation tricks in RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Autonomous Driving\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
@@ -12335,4 +12526,5 @@ ChatGPT},
 2 StaticGroup:Sim to Real\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Space Exploration\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visual-and-Language Navigation\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Vision Language Action Models\;0\;1\;0x8a8a8aff\;\;\;;
 }
