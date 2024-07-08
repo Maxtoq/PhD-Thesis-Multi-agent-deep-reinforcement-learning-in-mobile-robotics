@@ -1029,7 +1029,7 @@
   archiveprefix = {arXiv},
   doi           = {10.1126/science.aau6249},
   file          = {:Jaderberg2018 - Human Level Performance in First Person Multiplayer Games with Population Based Deep Reinforcement Learning.pdf:PDF},
-  groups        = {Multi-agent RL, Independent Learning, Population-based training},
+  groups        = {Multi-agent RL, Population-based training, Independent Learning},
   primaryclass  = {cs.LG},
   priority      = {prio1},
   ranking       = {rank4},
@@ -1179,23 +1179,23 @@
   url       = {https://arxiv.org/pdf/1702.03037.pdf},
 }
 
-@Article{SHOHAM2007365,
-  author   = {Yoav Shoham and Rob Powers and Trond Grenager},
-  journal  = {Artificial Intelligence},
-  title    = {If multi-agent learning is the answer, what is the question?},
-  year     = {2007},
-  issn     = {0004-3702},
-  note     = {Foundations of Multi-Agent Learning},
-  number   = {7},
-  pages    = {365-377},
-  volume   = {171},
-  abstract = {The area of learning in multi-agent systems is today one of the most fertile grounds for interaction between game theory and artificial intelligence. We focus on the foundational questions in this interdisciplinary area, and identify several distinct agendas that ought to, we argue, be separated. The goal of this article is to start a discussion in the research community that will result in firmer foundations for the area.11This article has a long history and owes many debts. A first version was presented at the NIPS workshop, Multi-Agent Learning: Theory and Practice, in 2002. A later version was presented at the AAAI Fall Symposium in 2004 [Y. Shoham, R. Powers, T. Grenager, On the agenda(s) of research on multi-agent learning, in: AAAI 2004 Symposium on Artificial Multi-Agent Learning (FS-04-02), AAAI Press, 2004]. Over time it has gradually evolved into the current form, as a result of our own work in the area as well as the feedback of many colleagues. We thank them all collectively, with special thanks to members of the multi-agent group at Stanford in the past three years. Rakesh Vohra and Michael Wellman provided detailed comments on the latest draft which resulted in substantive improvements, although we alone are responsible for the views put forward. This work was supported by NSF ITR grant IIS-0205633 and DARPA grant HR0011-05-1.},
-  doi      = {https://doi.org/10.1016/j.artint.2006.02.006},
-  file     = {:SHOHAM2007365 - If Multi Agent Learning Is the Answer, What Is the Question_ (2).pdf:PDF},
-  groups   = {MAS Reviews, Multi-agent Systems},
-  priority = {prio1},
-  ranking  = {rank3},
-  url      = {https://www.sciencedirect.com/science/article/pii/S0004370207000495},
+@Article{Shoham2007_MAL,
+  author     = {Yoav Shoham and Rob Powers and Trond Grenager},
+  journal    = {Artificial Intelligence},
+  title      = {If multi-agent learning is the answer, what is the question?},
+  year       = {2007},
+  issn       = {0004-3702},
+  note       = {Foundations of Multi-Agent Learning},
+  number     = {7},
+  pages      = {365-377},
+  volume     = {171},
+  abstract   = {The area of learning in multi-agent systems is today one of the most fertile grounds for interaction between game theory and artificial intelligence. We focus on the foundational questions in this interdisciplinary area, and identify several distinct agendas that ought to, we argue, be separated. The goal of this article is to start a discussion in the research community that will result in firmer foundations for the area.11This article has a long history and owes many debts. A first version was presented at the NIPS workshop, Multi-Agent Learning: Theory and Practice, in 2002. A later version was presented at the AAAI Fall Symposium in 2004 [Y. Shoham, R. Powers, T. Grenager, On the agenda(s) of research on multi-agent learning, in: AAAI 2004 Symposium on Artificial Multi-Agent Learning (FS-04-02), AAAI Press, 2004]. Over time it has gradually evolved into the current form, as a result of our own work in the area as well as the feedback of many colleagues. We thank them all collectively, with special thanks to members of the multi-agent group at Stanford in the past three years. Rakesh Vohra and Michael Wellman provided detailed comments on the latest draft which resulted in substantive improvements, although we alone are responsible for the views put forward. This work was supported by NSF ITR grant IIS-0205633 and DARPA grant HR0011-05-1.},
+  doi        = {https://doi.org/10.1016/j.artint.2006.02.006},
+  file       = {:SHOHAM2007365 - If Multi Agent Learning Is the Answer, What Is the Question_ (2).pdf:PDF},
+  groups     = {MAS Reviews, Multi-agent Systems},
+  ranking    = {rank3},
+  readstatus = {read},
+  url        = {https://www.sciencedirect.com/science/article/pii/S0004370207000495},
 }
 
 @Article{Ecoffet2021,
@@ -1531,7 +1531,7 @@
   groups = {MAS Reviews},
 }
 
-@InBook{Nowé2012,
+@InBook{Nowé2012_GameTheory,
   author     = {Now{\'e}, Ann and Vrancx, Peter and De Hauwere, Yann-Micha{\"e}l},
   editor     = {Wiering, Marco and van Otterlo, Martijn},
   pages      = {441--470},
@@ -1619,7 +1619,7 @@
   readstatus    = {skimmed},
 }
 
-@Article{Tampuu2017,
+@Article{Tampuu2017_IDQN,
   author    = {Tampuu, Ardi AND Matiisen, Tambet AND Kodelja, Dorian AND Kuzovkin, Ilya AND Korjus, Kristjan AND Aru, Juhan AND Aru, Jaan AND Vicente, Raul},
   journal   = {PLOS ONE},
   title     = {Multiagent cooperation and competition with deep reinforcement learning},
@@ -1632,7 +1632,7 @@
   comment   = {Independent Deep-Q-learning},
   doi       = {10.1371/journal.pone.0172395},
   file      = {:10.1371_journal.pone.0172395 - Multiagent Cooperation and Competition with Deep Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL, Independent Learning},
+  groups    = {Multi-agent RL, IDQN, Independent Learning},
   publisher = {Public Library of Science},
   ranking   = {rank3},
   url       = {https://doi.org/10.1371/journal.pone.0172395},
@@ -1649,11 +1649,11 @@
   series     = {ICML'93},
   file       = {:tan1993.pdf:PDF},
   groups     = {Multi-agent RL, Independent Learning},
-  isbn       = {1558603077},
   location   = {Amherst, MA, USA},
   numpages   = {8},
-  ranking    = {rank3},
+  ranking    = {rank5},
   readstatus = {read},
+  url        = {https://web.media.mit.edu/~cynthiab/Readings/tan-MAS-reinfLearn.pdf},
 }
 
 @InProceedings{Das2017_CoopVisDial,
@@ -1683,19 +1683,20 @@
   url        = {https://openreview.net/forum?id=Hk8N3Sclg},
 }
 
-@InCollection{Gupta2017,
-  author    = {Jayesh K. Gupta and Maxim Egorov and Mykel Kochenderfer},
-  booktitle = {Autonomous Agents and Multiagent Systems},
-  publisher = {Springer International Publishing},
-  title     = {Cooperative Multi-agent Control Using Deep Reinforcement Learning},
-  year      = {2017},
-  pages     = {66--83},
-  comment   = {centralised actor-critic algorithm with per-agent critics
+@InCollection{Gupta2017_PSTRPO,
+  author     = {Jayesh K. Gupta and Maxim Egorov and Mykel Kochenderfer},
+  booktitle  = {Autonomous Agents and Multiagent Systems},
+  publisher  = {Springer International Publishing},
+  title      = {Cooperative Multi-agent Control Using Deep Reinforcement Learning},
+  year       = {2017},
+  pages      = {66--83},
+  comment    = {centralised actor-critic algorithm with per-agent critics
 sharing of policy parameters},
-  doi       = {10.1007/978-3-319-71682-4_5},
-  file      = {:Gupta2017 - Cooperative Multi Agent Control Using Deep Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
-  ranking   = {rank3},
+  doi        = {10.1007/978-3-319-71682-4_5},
+  file       = {:Gupta2017 - Cooperative Multi Agent Control Using Deep Reinforcement Learning.pdf:PDF},
+  groups     = {Multi-agent RL, Centralised Training and Execution, Independent Learning},
+  ranking    = {rank4},
+  readstatus = {skimmed},
 }
 
 @InProceedings{Foerster2017_StabilisingExpReplay,
@@ -1741,27 +1742,28 @@ sharing of policy parameters},
   url        = {http://proceedings.mlr.press/v80/rashid18a.html},
 }
 
-@InProceedings{omidshafiei17a,
-  author    = {Shayegan Omidshafiei and Jason Pazis and Christopher Amato and Jonathan P. How and John Vian},
-  booktitle = {Proceedings of the 34th International Conference on Machine Learning},
-  title     = {Deep Decentralized Multi-task Multi-Agent Reinforcement Learning under Partial Observability},
-  year      = {2017},
-  address   = {International Convention Centre, Sydney, Australia},
-  editor    = {Doina Precup and Yee Whye Teh},
-  month     = {06--11 Aug},
-  pages     = {2681--2690},
-  publisher = {PMLR},
-  series    = {Proceedings of Machine Learning Research},
-  volume    = {70},
-  abstract  = {Many real-world tasks involve multiple agents with partial observability and limited communication. Learning is challenging in these settings due to local viewpoints of agents, which perceive the world as non-stationary due to concurrently-exploring teammates. Approaches that learn specialized policies for individual tasks face problems when applied to the real world: not only do agents have to learn and store distinct policies for each task, but in practice identities of tasks are often non-observable, making these approaches inapplicable. This paper formalizes and addresses the problem of multi-task multi-agent reinforcement learning under partial observability. We introduce a decentralized single-task learning approach that is robust to concurrent interactions of teammates, and present an approach for distilling single-task policies into a unified policy that performs well across multiple related tasks, without explicit provision of task identity.},
-  comment   = {Multi-task MARL
+@InProceedings{Omidshafiei2017_DecentrMultiTask,
+  author     = {Shayegan Omidshafiei and Jason Pazis and Christopher Amato and Jonathan P. How and John Vian},
+  booktitle  = {Proceedings of the 34th International Conference on Machine Learning},
+  title      = {Deep Decentralized Multi-task Multi-Agent Reinforcement Learning under Partial Observability},
+  year       = {2017},
+  address    = {International Convention Centre, Sydney, Australia},
+  editor     = {Doina Precup and Yee Whye Teh},
+  month      = {06--11 Aug},
+  pages      = {2681--2690},
+  publisher  = {PMLR},
+  series     = {Proceedings of Machine Learning Research},
+  volume     = {70},
+  abstract   = {Many real-world tasks involve multiple agents with partial observability and limited communication. Learning is challenging in these settings due to local viewpoints of agents, which perceive the world as non-stationary due to concurrently-exploring teammates. Approaches that learn specialized policies for individual tasks face problems when applied to the real world: not only do agents have to learn and store distinct policies for each task, but in practice identities of tasks are often non-observable, making these approaches inapplicable. This paper formalizes and addresses the problem of multi-task multi-agent reinforcement learning under partial observability. We introduce a decentralized single-task learning approach that is robust to concurrent interactions of teammates, and present an approach for distilling single-task policies into a unified policy that performs well across multiple related tasks, without explicit provision of task identity.},
+  comment    = {Multi-task MARL
 Dec-Histeretic Deep Recurrent Q-Network
 Concurrent Experience Replay Trajectories (CERT)},
-  file      = {:omidshafiei17a - Deep Decentralized Multi Task Multi Agent Reinforcement Learning under Partial Observability.pdf:PDF},
-  groups    = {Multi-agent RL, Multi-task},
-  pdf       = {http://proceedings.mlr.press/v70/omidshafiei17a/omidshafiei17a.pdf},
-  ranking   = {rank3},
-  url       = {http://proceedings.mlr.press/v70/omidshafiei17a.html},
+  file       = {:omidshafiei17a - Deep Decentralized Multi Task Multi Agent Reinforcement Learning under Partial Observability.pdf:PDF},
+  groups     = {Multi-agent RL, Multi-task, IDQN, Independent Learning},
+  pdf        = {http://proceedings.mlr.press/v70/omidshafiei17a/omidshafiei17a.pdf},
+  ranking    = {rank3},
+  readstatus = {skimmed},
+  url        = {http://proceedings.mlr.press/v70/omidshafiei17a.html},
 }
 
 @Article{Usunier2016,
@@ -1792,7 +1794,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   abstract  = {In the Markov decision process (MDP) formalization of reinforcement learning, a single adaptive agent interacts with an environment defined by a probabilistic transition function. In this solipsis-tic view, secondary agents can only be part of the environment and are therefore fixed in their behavior. The framework of Markov games allows us to widen this view to include multiple adaptive agents with interacting or competing goals. This paper considers a step in this direction in which exactly two agents with diametrically opposed goals share an environment. It describes a Q-learning-like algorithm for finding optimal policies and demonstrates its application to a simple two-player game in which the optimal policy is probabilistic.},
   doi       = {https://doi.org/10.1016/B978-1-55860-335-6.50027-1},
   file      = {:LITTMAN1994157 - Markov Games As a Framework for Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Joint Action Learning},
   ranking   = {rank3},
   url       = {https://www.sciencedirect.com/science/article/pii/B9781558603356500271},
 }
@@ -1842,7 +1844,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   url        = {https://proceedings.neurips.cc/paper/2020/hash/73a427badebe0e32caa2e1fc7530b7f3-Abstract.html},
 }
 
-@Article{Witt2020,
+@Article{Witt2020_IPPO,
   author        = {Schroeder de Witt, Christian and Tarun Gupta and Denys Makoviichuk and Viktor Makoviychuk and Philip H. S. Torr and Mingfei Sun and Shimon Whiteson},
   title         = {Is Independent Learning All You Need in the StarCraft Multi-Agent Challenge?},
   year          = {2020},
@@ -1901,7 +1903,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   pages   = {1039--1069},
   volume  = {4},
   file    = {:hu2003nash - Nash Q Learning for General Sum Stochastic Games.pdf:PDF},
-  groups  = {Multi-agent RL},
+  groups  = {Multi-agent RL, Joint Action Learning},
   ranking = {rank4},
 }
 
@@ -1947,7 +1949,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   pages     = {322--328},
   volume    = {1},
   file      = {:littman2001friend - Friend or Foe Q Learning in General Sum Games.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Joint Action Learning},
   ranking   = {rank2},
 }
 
@@ -1959,7 +1961,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   pages     = {242--249},
   volume    = {3},
   file      = {:greenwald2003correlated - Correlated Q Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Joint Action Learning},
   ranking   = {rank3},
   url       = {https://dl.acm.org/doi/abs/10.5555/3041838.3041869},
 }
@@ -2150,9 +2152,9 @@ Concurrent Experience Replay Trajectories (CERT)},
   pages     = {23--43},
   volume    = {67},
   file      = {:conitzer2007awesome - AWESOME_ a General Multiagent Learning Algorithm That Converges in Self Play and Learns a Best Response against Stationary Opponents.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Equilibrium selection},
   publisher = {Springer},
-  ranking   = {rank1},
+  ranking   = {rank3},
 }
 
 @Article{foerster2017learning,
@@ -2205,6 +2207,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   year        = {2004},
   file        = {:yang2004multiagent - Multiagent Reinforcement Learning for Multi Robot Systems_ a Survey.pdf:PDF},
   groups      = {Multi-robot},
+  ranking     = {rank2},
 }
 
 @Article{Peng2017_BiCNet,
@@ -2249,7 +2252,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   url       = {https://openreview.net/pdf?id=rkpACe1lx},
 }
 
-@Article{rizk2019cooperative,
+@Article{Rizk2019_CoopHeteroMRS,
   author     = {Rizk, Yara and Awad, Mariette and Tunstel, Edward W},
   journal    = {ACM Computing Surveys (CSUR)},
   title      = {Cooperative heterogeneous multi-robot systems: A survey},
@@ -2257,10 +2260,11 @@ Concurrent Experience Replay Trajectories (CERT)},
   number     = {2},
   pages      = {1--31},
   volume     = {52},
+  doi        = {https://doi.org/10.1145/3303848},
   file       = {:rizk2019cooperative - Cooperative Heterogeneous Multi Robot Systems_ a Survey.pdf:PDF},
   groups     = {Multi-robot, Heterogeneous},
   publisher  = {ACM New York, NY, USA},
-  ranking    = {rank2},
+  ranking    = {rank3},
   readstatus = {skimmed},
 }
 
@@ -2460,7 +2464,7 @@ FacMADDPG},
   volume    = {119},
   abstract  = {This paper introduces the deep coordination graph (DCG) for collaborative multi-agent reinforcement learning. DCG strikes a flexible trade-off between representational capacity and generalization by factoring the joint value function of all agents according to a coordination graph into payoffs between pairs of agents. The value can be maximized by local message passing along the graph, which allows training of the value function end-to-end with Q-learning. Payoff functions are approximated with deep neural networks that employ parameter sharing and low-rank approximations to significantly improve sample efficiency. We show that DCG can solve predator-prey tasks that highlight the relative overgeneralization pathology, as well as challenging StarCraft II micromanagement tasks.},
   file      = {:Boehmer2020 - Deep Coordination Graphs.pdf:PDF},
-  groups    = {Multi-agent RL, Centralised execution, Graphs},
+  groups    = {Multi-agent RL, Graphs, Centralised Training and Execution},
   pdf       = {http://proceedings.mlr.press/v119/boehmer20a/boehmer20a.pdf},
   ranking   = {rank2},
   url       = {http://proceedings.mlr.press/v119/boehmer20a.html},
@@ -2627,7 +2631,7 @@ FacMADDPG},
   pages     = {821--835},
   volume    = {31},
   file      = {:pierson2017deep - Deep Learning in Robotics_ a Review of Recent Research.pdf:PDF},
-  groups    = {Multi-robot},
+  groups    = {MADRL in Robotics, Robotics},
   publisher = {Taylor \& Francis},
 }
 
@@ -3571,7 +3575,7 @@ FacMADDPG},
   groups    = {Multi-Robot Communication},
 }
 
-@InBook{Parker2016,
+@InBook{Parker2016_MRS,
   author    = {Parker, Lynne E. and Rus, Daniela and Sukhatme, Gaurav S.},
   editor    = {Siciliano, Bruno and Khatib, Oussama},
   pages     = {1335--1384},
@@ -4097,7 +4101,7 @@ FacMADDPG},
   numpages  = {9},
 }
 
-@Article{Foerster2016b,
+@Article{Foerster2016_SolveRiddles,
   author        = {Jakob N. Foerster and Yannis M. Assael and Nando de Freitas and Shimon Whiteson},
   title         = {Learning to Communicate to Solve Riddles with Deep Distributed Recurrent Q-Networks},
   year          = {2016},
@@ -4106,9 +4110,12 @@ FacMADDPG},
   archiveprefix = {arXiv},
   eprint        = {1602.02672},
   file          = {:Foerster2016 - Learning to Communicate to Solve Riddles with Deep Distributed Recurrent Q Networks.pdf:PDF},
-  groups        = {Communication},
+  groups        = {Communication, Independent Learning},
   keywords      = {cs.AI, cs.LG},
   primaryclass  = {cs.AI},
+  priority      = {prio1},
+  ranking       = {rank1},
+  readstatus    = {skimmed},
 }
 
 @InProceedings{Kurek2016,
@@ -4299,7 +4306,7 @@ FacMADDPG},
   url        = {https://proceedings.neurips.cc/paper/2018/file/6a8018b3a00b69c008601b8becae392b-Paper.pdf},
 }
 
-@Article{Stone2000,
+@Article{Stone2000_MASMachineLearning,
   author    = {Peter Stone and Manuela Veloso},
   journal   = {Autonomous Robots},
   title     = {Multiagent Systems: A Survey from a Machine Learning Perspective},
@@ -4934,20 +4941,27 @@ communication integrated in QMIX, with tricks to make it more efficient},
   url       = {https://www.research.ed.ac.uk/en/publications/shared-experience-actor-critic-for-multi-agent-reinforcement-lear},
 }
 
-@Article{Zhou2020a,
+@InProceedings{Zhou2020_LICA,
   author        = {Meng Zhou and Ziyu Liu and Pengwei Sui and Yixuan Li and Yuk Ying Chung},
+  booktitle     = {Advances in Neural Information Processing Systems},
   title         = {Learning Implicit Credit Assignment for Cooperative Multi-Agent Reinforcement Learning},
   year          = {2020},
+  editor        = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
   month         = jul,
+  pages         = {11853--11864},
+  publisher     = {Curran Associates, Inc.},
+  volume        = {33},
   abstract      = {We present a multi-agent actor-critic method that aims to implicitly address the credit assignment problem under fully cooperative settings. Our key motivation is that credit assignment among agents may not require an explicit formulation as long as (1) the policy gradients derived from a centralized critic carry sufficient information for the decentralized agents to maximize their joint action value through optimal cooperation and (2) a sustained level of exploration is enforced throughout training. Under the centralized training with decentralized execution (CTDE) paradigm, we achieve the former by formulating the centralized critic as a hypernetwork such that a latent state representation is integrated into the policy gradients through its multiplicative association with the stochastic policies; to achieve the latter, we derive a simple technique called adaptive entropy regularization where magnitudes of the entropy gradients are dynamically rescaled based on the current policy stochasticity to encourage consistent levels of exploration. Our algorithm, referred to as LICA, is evaluated on several benchmarks including the multi-agent particle environments and a set of challenging StarCraft II micromanagement tasks, and we show that LICA significantly outperforms previous methods.},
   archiveprefix = {arXiv},
   comment       = {LICA},
   eprint        = {2007.02529},
-  file          = {:Zhou2020a - Learning Implicit Credit Assignment for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
+  file          = {:Zhou2020_LICA - Learning Implicit Credit Assignment for Cooperative Multi Agent Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2020/file/8977ecbb8cb82d77fb091c7a7f186163-Paper.pdf},
   groups        = {Multi-agent RL, Value factorisation, Credit Assignment},
   keywords      = {cs.LG, cs.MA, stat.ML},
   primaryclass  = {cs.LG},
-  priority      = {prio2},
+  priority      = {prio1},
+  ranking       = {rank2},
+  url           = {https://proceedings.neurips.cc/paper_files/paper/2020/file/8977ecbb8cb82d77fb091c7a7f186163-Paper.pdf},
 }
 
 @InProceedings{James2019_Sim2Real,
@@ -6059,7 +6073,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   abstract  = {Deep Q-learning has achieved significant success in single-agent decision making tasks. However, it is challenging to extend Q-learning to large-scale multi-agent scenarios, due to the explosion of action space resulting from the complex dynamics between the environment and the agents. In this paper, we propose to make the computation of multi-agent Q-learning tractable by treating the Q-function (w.r.t. state and joint-action) as a high-order high-dimensional tensor and then approximate it with factorized pairwise interactions. Furthermore, we utilize a composite deep neural network architecture for computing the factorized Q-function, share the model parameters among all the agents within the same group, and estimate the agents' optimal joint actions through a coordinate descent type algorithm. All these simplifications greatly reduce the model complexity and accelerate the learning process. Extensive experiments on two different multi-agent problems demonstrate the performance gain of our proposed approach in comparison with strong baselines, particularly when there are a large number of agents.},
   articleno = {7},
   doi       = {10.1145/3356464.3357707},
-  groups    = {Centralised execution},
+  groups    = {Centralised Training and Execution},
   isbn      = {9781450376563},
   keywords  = {multi-agent reinforcement learning, large-scale multi-agent systems},
   location  = {Beijing, China},
@@ -7183,7 +7197,7 @@ the agent takes as input the current state and goal, the value function depends 
   archiveprefix = {arXiv},
   eprint        = {2205.14953},
   file          = {:Wen2022 - Multi Agent Reinforcement Learning Is a Sequence Modeling Problem.pdf:PDF},
-  groups        = {Centralised execution, Transformers in RL},
+  groups        = {Transformers in RL, Centralised Training and Execution},
   keywords      = {cs.MA, cs.LG},
   primaryclass  = {cs.MA},
   readstatus    = {skimmed},
@@ -7707,6 +7721,8 @@ Multi-Explore},
   volume    = {34},
   file      = {:NEURIPS2021_f3f1fa1e - Towards Understanding Cooperative Multi Agent Q Learning with Value Factorization.pdf:PDF},
   groups    = {Value factorisation},
+  priority  = {prio1},
+  ranking   = {rank1},
   url       = {https://proceedings.neurips.cc/paper/2021/file/f3f1fa1e4348bfbebdeee8c80a04c3b9-Paper.pdf},
 }
 
@@ -9049,7 +9065,8 @@ Multi-Explore},
   volume    = {27},
   doi       = {10.1017/S0269888912000057},
   file      = {:matignon_laurent_lefort-piat_2012 - Independent Reinforcement Learners in Cooperative Markov Games_ a Survey Regarding Coordination Problems.pdf:PDF},
-  groups    = {Multi-agent learning},
+  groups    = {Multi-agent learning, MAS Reviews, Independent Learning},
+  priority  = {prio1},
   publisher = {Cambridge University Press},
 }
 
@@ -9062,7 +9079,7 @@ Multi-Explore},
   pages   = {2},
   volume  = {1998},
   file    = {:Claus1998_IQL - The Dynamics of Reinforcement Learning in Cooperative Multiagent Systems.pdf:PDF:https\://cdn.aaai.org/AAAI/1998/AAAI98-106.pdf},
-  groups  = {Multi-agent RL, Independent Learning},
+  groups  = {Multi-agent RL, Joint Action Learning, Independent Learning},
   ranking = {rank4},
   url     = {https://cdn.aaai.org/AAAI/1998/AAAI98-106.pdf},
 }
@@ -9315,6 +9332,7 @@ ChatGPT},
   eprint   = {https://doi.org/10.1146/annurev-control-101119-071628},
   file     = {:Tellex2020 - Robots That Use Language.pdf:PDF},
   groups   = {Robotics},
+  priority = {prio1},
   ranking  = {rank2},
   url      = {https://doi.org/10.1146/annurev-control-101119-071628},
 }
@@ -10583,7 +10601,7 @@ ChatGPT},
   series    = {AAAI '98/IAAI '98},
   abstract  = {Reinforcement learning can provide a robust and natural means for agents to learn how to coordinate their action choices in multi agent systems. We examine some of the factors that can influence the dynamics of the learning process in such a setting. We first distinguish reinforcement learners that are unaware of (or ignore) the presence of other agents from those that explicitly attempt to learn the value of joint actions and the strategies of their counterparts. We study (a simple form of) Q-leaming in cooperative multi agent systems under these two perspectives, focusing on the influence of that game structure and exploration strategies on convergence to (optimal and suboptimal) Nash equilibria. We then propose alternative optimistic exploration strategies that increase the likelihood of convergence to an optimal equilibrium.},
   file      = {:Claus1998_JAL - The Dynamics of Reinforcement Learning in Cooperative Multiagent Systems.pdf:PDF},
-  groups    = {Centralised execution},
+  groups    = {Centralised Training and Execution},
   isbn      = {0262510987},
   location  = {Madison, Wisconsin, USA},
   numpages  = {7},
@@ -10917,7 +10935,7 @@ ChatGPT},
   doi       = {10.1371/journal.pcbi.1000254},
   editor    = {Behrens, Tim},
   file      = {:Yoshida2008 - Game Theory of Mind.pdf:PDF:https\://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1000254&type=printable},
-  groups    = {Agent Modelling},
+  groups    = {Agent Modelling, Theory of Mind},
   priority  = {prio1},
   publisher = {Public Library of Science (PLoS)},
   ranking   = {rank3},
@@ -11480,13 +11498,14 @@ ChatGPT},
   publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
   series    = {AAMAS '21},
   abstract  = {Centralized Training for Decentralized Execution, where agents are trained offline using centralized information but execute in a decentralized manner online, has gained popularity in the multi-agent reinforcement learning community. In particular, actor-critic methods with a centralized critic and decentralized actors are a common instance of this idea. However, the implications of using a centralized critic in this context are not fully discussed and understood even though it is the standard choice of many algorithms. We therefore formally analyze centralized and decentralized critic approaches, providing a deeper understanding of the implications of critic choice. Because our theory makes unrealistic assumptions, we also empirically compare the centralized and decentralized critic methods over a wide set of environments to validate our theories and to provide practical advice. We show that there exist misconceptions regarding centralized critics in the current literature and show that the centralized critic design is not strictly beneficial, but rather both centralized and decentralized critics have different pros and cons that should be taken into account by algorithm designers.},
+  file      = {:Lyu2021_DecentralisedCritic - Contrasting Centralized and Decentralized Critics in Multi Agent Reinforcement Learning.pdf:PDF:https\://www.ifaamas.org/Proceedings/aamas2021/pdfs/p844.pdf},
   groups    = {Independent Learning},
-  isbn      = {9781450383073},
   keywords  = {reinforcement learning, policy gradient, multi-agent system},
   location  = {Virtual Event, United Kingdom},
   numpages  = {9},
   priority  = {prio1},
   ranking   = {rank2},
+  url       = {https://dl.acm.org/doi/10.5555/3463952.3464053},
 }
 
 @Article{Brinkmann2023,
@@ -12052,15 +12071,15 @@ ChatGPT},
 }
 
 @Book{Albrecht2024,
-  author    = {Stefano V. Albrecht and Filippos Christianos and Lukas Sch\"afer},
-  publisher = {MIT Press},
-  title     = {Multi-Agent Reinforcement Learning: Foundations and Modern Approaches},
-  year      = {2024},
-  file      = {:Albrecht2024 - Multi Agent Reinforcement Learning_ Foundations and Modern Approaches.pdf:PDF:https\://www.marl-book.com/download/marl-book.pdf},
-  groups    = {MAS Reviews},
-  priority  = {prio3},
-  ranking   = {rank1},
-  url       = {https://www.marl-book.com},
+  author     = {Stefano V. Albrecht and Filippos Christianos and Lukas Sch\"afer},
+  publisher  = {MIT Press},
+  title      = {Multi-Agent Reinforcement Learning: Foundations and Modern Approaches},
+  year       = {2024},
+  file       = {:Albrecht2024 - Multi Agent Reinforcement Learning_ Foundations and Modern Approaches.pdf:PDF:https\://www.marl-book.com/download/marl-book.pdf},
+  groups     = {MAS Reviews},
+  ranking    = {rank1},
+  readstatus = {read},
+  url        = {https://www.marl-book.com},
 }
 
 @Book{Shoham2008_Multiagent,
@@ -12406,6 +12425,360 @@ ChatGPT},
   publisher     = {arXiv},
 }
 
+@Article{Fudenberg1993a,
+  author    = {Fudenberg, Drew and Kreps, David M.},
+  journal   = {Games and Economic Behavior},
+  title     = {Learning Mixed Equilibria},
+  year      = {1993},
+  issn      = {0899-8256},
+  month     = jul,
+  number    = {3},
+  pages     = {320--367},
+  volume    = {5},
+  doi       = {10.1006/game.1993.1021},
+  groups    = {Fictituous Play},
+  publisher = {Elsevier BV},
+  ranking   = {rank3},
+}
+
+@InProceedings{Sen1994_CoordQlearning,
+  author    = {Sen, Sandip and Sekaran, Mahendra and Hale, John},
+  booktitle = {Proceedings of the Twelfth AAAI National Conference on Artificial Intelligence},
+  title     = {Learning to coordinate without sharing information},
+  year      = {1994},
+  pages     = {426–431},
+  publisher = {AAAI Press},
+  series    = {AAAI'94},
+  abstract  = {Researchers in the field of Distributed Artificial Intelligence (DAI) have been developing efficient mechanisms to coordinate the activities of multiple autonomous agents. The need for coordination arises because agents have to share resources and expertise required to achieve their goals. Previous work in the area includes using sophisticated information exchange protocols, investigating heuristics for negotiation, and developing formal models of possibilities of conflict and cooperation among agent interests. In order to handle the changing requirements of continuous and dynamic environments, we propose learning as a means to provide additional possibilities for effective coordination. We use reinforcement learning techniques on a block pushing problem to show that agents can learn complimentary policies to follow a desired path without any knowledge about each other. We theoretically analyze and experimentally verify the effects of learning rate on system convergence, and demonstrate benefits of using learned coordination knowledge on similar problems. Reinforcement learning based coordination can be achieved in both cooperative and non-cooperative domains, and in domains with noisy communication channels and other stochastic characteristics that present a formidable challenge to using other coordination schemes.},
+  groups    = {Multi-agent RL, Independent Learning},
+  location  = {Seattle, Washington},
+  numpages  = {6},
+  ranking   = {rank3},
+  url       = {https://dl.acm.org/doi/abs/10.5555/2891730.2891796},
+}
+
+@Book{LeytonBrown2008_GameTheory,
+  author    = {Leyton-Brown, Kevin and Shoham, Yoav},
+  publisher = {Springer International Publishing},
+  title     = {Essentials of Game Theory: A Concise, Multidisciplinary Introduction},
+  year      = {2008},
+  isbn      = {9783031015458},
+  doi       = {10.1007/978-3-031-01545-8},
+  groups    = {Game theory},
+  journal   = {Synthesis Lectures on Artificial Intelligence and Machine Learning},
+  ranking   = {rank3},
+}
+
+@InProceedings{Li2023,
+  author    = {Li, Huao and Chong, Yu and Stepputtis, Simon and Campbell, Joseph and Hughes, Dana and Lewis, Charles and Sycara, Katia},
+  booktitle = {Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
+  title     = {Theory of Mind for Multi-Agent Collaboration via Large Language Models},
+  year      = {2023},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2023.emnlp-main.13},
+  file      = {:Li2023 - Theory of Mind for Multi Agent Collaboration Via Large Language Models.pdf:PDF:https\://aclanthology.org/2023.emnlp-main.13.pdf},
+  groups    = {Agent-based LLMs, Theory of Mind},
+  ranking   = {rank1},
+}
+
+@InProceedings{Guo2024_LLMsMA,
+  author       = {Guo, T and Chen, X and Wang, Y and Chang, R and Pei, S and Chawla, NV and Wiest, O and Zhang, X},
+  booktitle    = {33rd International Joint Conference on Artificial Intelligence (IJCAI 2024)},
+  title        = {Large Language Model based Multi-Agents: A Survey of Progress and Challenges.},
+  year         = {2024},
+  abstractnote = {Large Language Models (LLMs) have achieved remarkable success across a wide array of tasks. Due to the impressive planning and reasoning abilities of LLMs, they have been used as autonomous agents to do many tasks automatically. Recently, based on the development of using one LLM as a single planning or decision-making agent, LLM-based multi-agent systems have achieved considerable progress in complex problem-solving and world simulation. To provide the community with an overview of this dynamic field, we present this survey to offer an in-depth discussion on the essential aspects of multi-agent systems based on LLMs, as well as the challenges. Our goal is for readers to gain substantial insights on the following questions: What domains and environments do LLM-based multi-agents simulate? How are these agents profiled and how do they communicate? What mechanisms contribute to the growth of agents' capacities? For those interested in delving into this field of study, we also summarize the commonly used datasets or benchmarks for them to have convenient access. To keep researchers updated on the latest studies, we maintain an open-source GitHub repository, dedicated to outlining the research on LLM-based multi-agent systems.},
+  file         = {:Guo2024_LLMsMA - Large Language Model Based Multi Agents_ a Survey of Progress and Challenges..pdf:PDF:https\://arxiv.org/pdf/2402.01680},
+  groups       = {Agent-based LLMs},
+  place        = {Country unknown/Code not available},
+  priority     = {prio2},
+  url          = {https://par.nsf.gov/biblio/10508149},
+}
+
+@Article{Orr2023_MADRLRobots,
+  author    = {Orr, James and Dutta, Ayan},
+  journal   = {Sensors},
+  title     = {Multi-Agent Deep Reinforcement Learning for Multi-Robot Applications: A Survey},
+  year      = {2023},
+  issn      = {1424-8220},
+  month     = mar,
+  number    = {7},
+  pages     = {3625},
+  volume    = {23},
+  doi       = {10.3390/s23073625},
+  file      = {:Orr2023 - Multi Agent Deep Reinforcement Learning for Multi Robot Applications_ a Survey.pdf:PDF:https\://pdfs.semanticscholar.org/2581/887cd2848fc28a78019360953e2046368326.pdf},
+  groups    = {MADRL in Robotics},
+  priority  = {prio1},
+  publisher = {MDPI AG},
+  ranking   = {rank1},
+}
+
+@InProceedings{Huang2020,
+  author    = {Huang, Yixin and Wu, Shufan and Mu, Zhongcheng and Long, Xiangyu and Chu, Sunhao and Zhao, Guohong},
+  booktitle = {2020 6th International Conference on Control, Automation and Robotics (ICCAR)},
+  title     = {A Multi-agent Reinforcement Learning Method for Swarm Robots in Space Collaborative Exploration},
+  year      = {2020},
+  month     = apr,
+  publisher = {IEEE},
+  doi       = {10.1109/iccar49639.2020.9107997},
+  file      = {:https\://www.researchgate.net/profile/Yixin-Huang-10/publication/341918517_A_Multi-agent_Reinforcement_Learning_Method_for_Swarm_Robots_in_Space_Collaborative_Exploration/links/60580407299bf173675c2fe7/A-Multi-agent-Reinforcement-Learning-Method-for-Swarm-Robots-in-Space-Collaborative-Exploration.pdf:},
+  groups    = {Space Exploration},
+  ranking   = {rank1},
+}
+
+@Article{Dutta2021,
+  author    = {Dutta, Ayan and Roy, Swapnoneel and Kreidl, O. Patrick and Boloni, Ladislau},
+  journal   = {IEEE Access},
+  title     = {Multi-Robot Information Gathering for Precision Agriculture: Current State, Scope, and Challenges},
+  year      = {2021},
+  issn      = {2169-3536},
+  pages     = {161416--161430},
+  volume    = {9},
+  doi       = {10.1109/access.2021.3130900},
+  groups    = {Multi-robot, Information gathering},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking   = {rank1},
+}
+
+@Article{Zhou2022,
+  author    = {Zhou, Ziye and Liu, Jincun and Yu, Junzhi},
+  journal   = {IEEE/CAA Journal of Automatica Sinica},
+  title     = {A Survey of Underwater Multi-Robot Systems},
+  year      = {2022},
+  issn      = {2329-9274},
+  month     = jan,
+  number    = {1},
+  pages     = {1--18},
+  volume    = {9},
+  doi       = {10.1109/jas.2021.1004269},
+  groups    = {Multi-robot},
+  publisher = {Institute of Electrical and Electronics Engineers (IEEE)},
+  ranking   = {rank1},
+}
+
+@Article{Yliniemi2014,
+  author    = {Yliniemi, Logan and Agogino, Adrian K. and Tumer, Kagan},
+  journal   = {AI Magazine},
+  title     = {Multirobot Coordination for Space Exploration},
+  year      = {2014},
+  issn      = {2371-9621},
+  month     = dec,
+  number    = {4},
+  pages     = {61--74},
+  volume    = {35},
+  doi       = {10.1609/aimag.v35i4.2556},
+  groups    = {Multi-robot, Space Exploration},
+  publisher = {Wiley},
+  ranking   = {rank1},
+}
+
+@Article{Galceran2013,
+  author    = {Galceran, Enric and Carreras, Marc},
+  journal   = {Robotics and Autonomous Systems},
+  title     = {A survey on coverage path planning for robotics},
+  year      = {2013},
+  issn      = {0921-8890},
+  month     = dec,
+  number    = {12},
+  pages     = {1258--1276},
+  volume    = {61},
+  doi       = {10.1016/j.robot.2013.09.004},
+  groups    = {Coverage Path Planning},
+  publisher = {Elsevier BV},
+  ranking   = {rank4},
+}
+
+@Article{Oroojlooy2022,
+  author    = {Oroojlooy, Afshin and Hajinezhad, Davood},
+  journal   = {Applied Intelligence},
+  title     = {A review of cooperative multi-agent deep reinforcement learning},
+  year      = {2022},
+  issn      = {1573-7497},
+  month     = oct,
+  number    = {11},
+  pages     = {13677--13722},
+  volume    = {53},
+  doi       = {10.1007/s10489-022-04105-y},
+  file      = {:Oroojlooy2022 - A Review of Cooperative Multi Agent Deep Reinforcement Learning.pdf:PDF:https\://arxiv.org/pdf/1908.03963},
+  groups    = {MAS Reviews},
+  priority  = {prio1},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank3},
+}
+
+@Article{Wong2022,
+  author    = {Wong, Annie and Bäck, Thomas and Kononova, Anna V. and Plaat, Aske},
+  journal   = {Artificial Intelligence Review},
+  title     = {Deep multiagent reinforcement learning: challenges and directions},
+  year      = {2022},
+  issn      = {1573-7462},
+  month     = oct,
+  number    = {6},
+  pages     = {5023--5056},
+  volume    = {56},
+  doi       = {10.1007/s10462-022-10299-x},
+  file      = {:s10462-022-10299-x.pdf:PDF},
+  groups    = {MAS Reviews},
+  priority  = {prio1},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@InProceedings{moulinfrier:hal-03051029,
+  author      = {Moulin-Frier, Cl{\'e}ment and Oudeyer, Pierre-Yves},
+  booktitle   = {{COMARL AAAI 2020-2021 - Challenges and Opportunities for Multi-Agent Reinforcement Learning, AAAI Spring Symposium Series}},
+  title       = {{Multi-Agent Reinforcement Learning as a Computational Tool for Language Evolution Research: Historical Context and Future Challenges}},
+  year        = {2021},
+  address     = {Palo Alto, California / Virtual, United States},
+  month       = Feb,
+  series      = {COMARL AAAI 2020-2021 - Challenges and Opportunities for Multi-Agent Reinforcement Learning, AAAI Spring Symposium Series},
+  groups      = {MAS Reviews, Communication},
+  hal_id      = {hal-03051029},
+  hal_version = {v1},
+  pdf         = {https://hal.science/hal-03051029/file/2002.08878.pdf},
+  url         = {https://hal.science/hal-03051029},
+}
+
+@Article{Papoudakis2019,
+  author        = {Papoudakis, Georgios and Christianos, Filippos and Rahman, Arrasy and Albrecht, Stefano V.},
+  title         = {Dealing with Non-Stationarity in Multi-Agent Deep Reinforcement Learning},
+  year          = {2019},
+  month         = jun,
+  abstract      = {Recent developments in deep reinforcement learning are concerned with creating decision-making agents which can perform well in various complex domains. A particular approach which has received increasing attention is multi-agent reinforcement learning, in which multiple agents learn concurrently to coordinate their actions. In such multi-agent environments, additional learning problems arise due to the continually changing decision-making policies of agents. This paper surveys recent works that address the non-stationarity problem in multi-agent deep reinforcement learning. The surveyed methods range from modifications in the training procedure, such as centralized training, to learning representations of the opponent's policy, meta-learning, communication, and decentralized learning. The survey concludes with a list of open problems and possible lines of future research.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1906.04737},
+  eprint        = {1906.04737},
+  file          = {:Papoudakis2019 - Dealing with Non Stationarity in Multi Agent Deep Reinforcement Learning.pdf:PDF:http\://arxiv.org/pdf/1906.04737v1},
+  groups        = {MAS Reviews},
+  keywords      = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Multiagent Systems (cs.MA), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  publisher     = {arXiv},
+  ranking       = {rank2},
+}
+
+@Article{Tuyls2012,
+  author    = {Tuyls, Karl and Weiss, Gerhard},
+  journal   = {AI Magazine},
+  title     = {Multiagent Learning: Basics, Challenges, and Prospects},
+  year      = {2012},
+  issn      = {2371-9621},
+  month     = sep,
+  number    = {3},
+  pages     = {41--52},
+  volume    = {33},
+  doi       = {10.1609/aimag.v33i3.2426},
+  file      = {:2426-Article Text-4046-1-10-20121011.pdf:PDF},
+  groups    = {MAS Reviews},
+  publisher = {Wiley},
+  ranking   = {rank3},
+}
+
+@Article{Doran1995_EOS,
+  author  = {Doran, Jim and Palmer, Mike},
+  journal = {Artificial Societies: The ComputerSimulation of Social Life},
+  title   = {The EOS project: integrating two models of Palaeolithic social change},
+  year    = {1995},
+  pages   = {103--125},
+  groups  = {MAS in Social Sciences},
+  ranking = {rank1},
+  url     = {https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9780203993699-13/eos-project-integrating-two-models-palaeolithic-social-change-jim-doran-mike-palmer},
+}
+
+@Article{Barreteau2000_SHADOC,
+  author    = {Barreteau, Olivier and Bousquet, François},
+  journal   = {Annals of Operations Research},
+  title     = {SHADOC: a multi‐agent model to tackle viability of irrigated systems},
+  year      = {2000},
+  issn      = {0254-5330},
+  number    = {1/4},
+  pages     = {139--162},
+  volume    = {94},
+  doi       = {10.1023/a:1018908931155},
+  groups    = {MAS in Economics},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank3},
+}
+
+@Article{Bousquet2004_MASEcosystem,
+  author    = {Bousquet, F and Le Page, C},
+  journal   = {Ecological Modelling},
+  title     = {Multi-agent simulations and ecosystem management: a review},
+  year      = {2004},
+  issn      = {0304-3800},
+  month     = sep,
+  number    = {3–4},
+  pages     = {313--332},
+  volume    = {176},
+  doi       = {10.1016/j.ecolmodel.2004.01.011},
+  groups    = {MAS in Social Sciences},
+  publisher = {Elsevier BV},
+  ranking   = {rank4},
+}
+
+@Book{Hamill2015_ABMEconomics,
+  author    = {Hamill, L and Gilbert, N},
+  publisher = {John Wiley & Sons},
+  title     = {Agent-Based Modelling in Economics},
+  year      = {2015},
+  isbn      = {1118456076},
+  abstract  = {New methods of economic modelling have been sought as a result of the global economic downturn in 2008. This unique book highlights the benefits of an agent-based modelling (ABM) approach. It demonstrates how ABM can easily handle complexity: heterogeneous people, households and firms interacting dynamically. Unlike traditional methods, ABM does not require people or firms to optimise or economic systems to reach equilibrium. ABM offers a way to link micro foundations directly to the macro situation.   Key features: •         Introduces the concept of agent-based modelling and shows how it differs from existing approaches.  •         Provides a theoretical and methodological rationale for using ABM in economics, along with practical advice on how to design and create the models. •         Starts each chapter with a short summary of the relevant economic theory and then shows how to apply ABM.  •         Explores both topics covered in basic economics textbooks and current important policy themes; unemployment, exchange rates, banking and environmental issues. •         Describes the models in pseudocode, enabling the reader to develop programs in their chosen language. •         Is supported by a website featuring the NetLogo models described in the book. Agent-based Modelling in Economics provides students and researchers with the skills to design, implement, and analyze agent-based models. Third year undergraduate, master and doctoral students, faculty and professional economists will find this book an invaluable resource.},
+  groups    = {MAS in Economics, MAS Reviews},
+  keywords  = {Economics;computer simulation;Economics";" computer simulation},
+  pages     = {272},
+  ranking   = {rank2},
+}
+
+@Book{Ben-Ari2006_DistribProg,
+  author    = {Ben-Ari, M.},
+  publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+  title     = {Principles of Concurrent and Distributed Programming (2nd Edition)},
+  year      = {2006},
+  isbn      = {032131283X},
+  groups    = {MAS in Software Engineering},
+}
+
+@Book{Rosenschein1994_Encounter,
+  author    = {Jeffrey S. Rosenschein and Gilad Zlotkin},
+  publisher = {pub-mit},
+  title     = {Rules of Encounter},
+  year      = {1994},
+  isbn      = {0262181592},
+  abstract  = {Rules of Encounter applies the general approach and
+                  the mathematical tools of game theory in a formal
+                  analysis of rules (or protocols) governing the
+                  high-level behavior of interacting heterogeneous
+                  computer systems. It describes a theory of
+                  high-level protocol design that can be used to
+                  constrain manipulation and harness the potential of
+                  automated negotiation and coordination strategies to
+                  attain more effective interaction among machines
+                  that have been programmed by different entities to
+                  pursue different goals. While game theoretic ideas
+                  have been used to answer the question of how a
+                  computer should be programmed to act in a given
+                  specific interaction, here they are used in a new
+                  way, to address the question of how to design the
+                  rules of interaction themselves for automated
+                  agents. Rules of Encounter provides a unified,
+                  coherent account of machine interaction at the level
+                  of the machine designers (the society of designers)
+                  and the level of the machine interaction itself (the
+                  resulting artificial society). Taking into account
+                  such attributes of the artificial society as
+                  efficiency, and the self-interest of each member in
+                  the society of designers, it analyzes what kinds of
+                  rules should be instituted to govern interaction
+                  among these autonomous agents. The authors point out
+                  that adjusting the rules of public behavior -- or
+                  the rules of the game -- by which the programs must
+                  interact can influence the private strategies that
+                  designers set up in their machines, shaping design
+                  choices and run-time behavior, as well as social
+                  behavior. Artificial Intelligence series.},
+  googleid  = {mD24BWOMbgYJ:scholar.google.com/},
+  groups    = {MAS in Economics, MAS Reviews, Game theory},
+  ranking   = {rank5},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -12440,17 +12813,24 @@ ChatGPT},
 2 StaticGroup:NLP\;0\;0\;0x838383ff\;\;\;;
 2 StaticGroup:Auto-Encoding\;0\;0\;0x838383ff\;\;\;;
 1 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:MAS Reviews\;2\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent learning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:MAS in Social Sciences\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:MAS in Economics\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:MAS in Software Engineering\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Shared Mental Models\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Agent Modelling\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Fictituous Play\;2\;0\;0x7c7c7cff\;\;\;;
 4 StaticGroup:Bayesian learning\;0\;1\;0x7c7c7cff\;\;\;;
-3 StaticGroup:Centralised execution\;0\;0\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Theory of Mind\;0\;1\;0x7c7c7cff\;\;\;;
+3 StaticGroup:Centralised Training and Execution\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Independent Learning\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:IDQN\;0\;0\;0x7c7c7cff\;\;\;;
 3 StaticGroup:Communication\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Discrete language\;2\;1\;0x8a8a8aff\;\;\;;
-5 StaticGroup:Natural language\;0\;1\;0x8a8a8aff\;\;\;;
+5 StaticGroup:Natural language\;0\;0\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Speaker-Listener\;0\;0\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Language-Grounded Communication\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Comm with LLMs\;0\;1\;0x8a8a8aff\;\;\;;
@@ -12463,15 +12843,14 @@ ChatGPT},
 3 StaticGroup:Game theory\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous MADRL\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Independent Learning\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Interaction Networks\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Intrinsic rewards in MARL\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Intrinsic rewards in MARL\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Joint Action Learning\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Memory in MARL\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Population-based training\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Social Learning\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Value factorisation\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Shared Mental Models\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Memory\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
@@ -12520,6 +12899,7 @@ ChatGPT},
 2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:MADRL in Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-task robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Navigation\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
