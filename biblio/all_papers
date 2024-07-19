@@ -8,7 +8,7 @@
   crossref  = {conf/nips/2018},
   file      = {:NguyenKL18 - Credit Assignment for Collective Multiagent RL with Global Rewards.pdf:PDF},
   groups    = {Multi-agent RL, Credit Assignment},
-  ranking   = {rank1},
+  ranking   = {rank2},
   url       = {http://papers.nips.cc/paper/8033-credit-assignment-for-collective-multiagent-rl-with-global-rewards},
 }
 
@@ -565,7 +565,7 @@
   comment = {M3DDPG},
   doi     = {10.1609/aaai.v33i01.33014213},
   file    = {:Li - Robust Multi Agent Reinforcement Learning Via Minimax Deep Deterministic Policy Gradient.pdf:PDF},
-  groups  = {Multi-agent RL, Multi-agent Systems},
+  groups  = {Multi-agent RL, Multi-agent Systems, Centralised Critics},
   ranking = {rank2},
 }
 
@@ -1044,7 +1044,7 @@
   archiveprefix = {arXiv},
   eprint        = {1902.07151},
   file          = {:Liu2019 - Emergent Coordination through Competition.pdf:PDF},
-  groups        = {Multi-agent RL, Multi-agent Systems},
+  groups        = {Multi-agent RL, Multi-agent Systems, Population-based training},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
 }
@@ -1258,7 +1258,7 @@
   abstract   = {We explore deep reinforcement learning methods for multi-agent domains. We begin by analyzing the difficulty of traditional algorithms in the multi-agent case: Q-learning is challenged by an inherent non-stationarity of the environment, while policy gradient suffers from a variance that increases as the number of agents grows. We then present an adaptation of actor-critic methods that considers action policies of other agents and is able to successfully learn policies that require complex multi-agent coordination. Additionally, we introduce a training regimen utilizing an ensemble of policies for each agent that leads to more robust multi-agent policies. We show the strength of our approach compared to existing methods in cooperative as well as competitive scenarios, where agent populations are able to discover various physical and informational coordination strategies.},
   comment    = {MADDPG},
   file       = {:10.5555_3295222.3295385 - Multi Agent Actor Critic for Mixed Cooperative Competitive Environments.pdf:PDF},
-  groups     = {Multi-agent RL},
+  groups     = {Multi-agent RL, Centralised Critics},
   location   = {Long Beach, California, USA},
   numpages   = {12},
   ranking    = {rank5},
@@ -1266,9 +1266,11 @@
   url        = {https://dl.acm.org/doi/abs/10.5555/3295222.3295385},
 }
 
-@InBook{Wolpert2002,
+@InBook{Wolpert2002_AristoUtility,
   author    = {David H. Wolpert and Kagan Tumer},
+  editor    = {Frank Schweitzer},
   pages     = {355-369},
+  publisher = {World Scientific Publishing Co. Pte. Ltd.},
   title     = {Optimal Payoff Functions for Members of Collectives},
   year      = {2002},
   abstract  = {Abstract We consider the problem of designing (perhaps massively distributed) collectives of computational processes to maximize a provided “world utility” function. We consider this problem when the behavior of each process in the collective can be cast as striving to maximize its own payoff utility function. For such cases the central design issue is how to initialize/update those payoff utility functions of the individual processes so as to induce behavior of the entire collective having good values of the world utility. Traditional “team game” approaches to this problem simply assign to each process the world utility as its payoff utility function. In previous work we used the “Collective Intelligence” (COIN) framework to derive a better choice of payoff utility functions, one that results in world utility performance up to orders of magnitude superior to that ensuing from the use of the team game utility. In this paper, we extend these results using a novel mathematical framework. Under that new framework we review the derivation of the general class of payoff utility functions that both (i) are easy for the individual processes to try to maximize, and (ii) have the property that if good values of them are achieved, then we are assured a high value of world utility. These are the “Aristocrat Utility” and a new variant of the “Wonderful Life Utility” that was introduced in the previous COIN work. We demonstrate experimentally that using these new utility functions can result in significantly improved performance over that of previously investigated COIN payoff utilities, over and above those previous utilities’ superiority to the conventional team game utility. These results also illustrate the substantial superiority of these payoff functions to perhaps the most natural version of the economics technique of “endogenizing externalities.”},
@@ -1276,24 +1278,21 @@
   doi       = {10.1142/9789812777263_0020},
   eprint    = {https://www.worldscientific.com/doi/pdf/10.1142/9789812777263_0020},
   file      = {:doi_10.1142_9789812777263_0020 - Optimal Payoff Functions for Members of Collectives.pdf:PDF},
-  groups    = {Wonderful Life Utility, Multi-agent learning},
+  groups    = {Multi-agent learning, Counterfactual Utilities},
+  ranking   = {rank3},
   url       = {https://www.worldscientific.com/doi/abs/10.1142/9789812777263_0020},
 }
 
-@Article{Michalak2014,
-  author        = {Tomasz Pawel Michalak and Karthik V Aadithya and Piotr L. Szczepanski and Balaraman Ravindran and Nicholas R. Jennings},
-  journal       = {Journal Of Artificial Intelligence Research, Volume 46, pages 607-650, 2013},
-  title         = {Efficient Computation of the Shapley Value for Game-Theoretic Network Centrality},
-  year          = {2014},
-  month         = feb,
-  abstract      = {The Shapley value---probably the most important normative payoff division scheme in coalitional games---has recently been advocated as a useful measure of centrality in networks. However, although this approach has a variety of real-world applications (including social and organisational networks, biological networks and communication networks), its computational properties have not been widely studied. To date, the only practicable approach to compute Shapley value-based centrality has been via Monte Carlo simulations which are computationally expensive and not guaranteed to give an exact answer. Against this background, this paper presents the first study of the computational aspects of the Shapley value for network centralities. Specifically, we develop exact analytical formulae for Shapley value-based centrality in both weighted and unweighted networks and develop efficient (polynomial time) and exact algorithms based on them. We empirically evaluate these algorithms on two real-life examples (an infrastructure network representing the topology of the Western States Power Grid and a collaboration network from the field of astrophysics) and demonstrate that they deliver significant speedups over the Monte Carlo approach. For instance, in the case of unweighted networks our algorithms are able to return the exact solution about 1600 times faster than the Monte Carlo approximation, even if we allow for a generous 10% error margin for the latter method.},
-  archiveprefix = {arXiv},
-  doi           = {10.1613/jair.3806},
-  eprint        = {1402.0567},
-  file          = {:Michalak2014 - Efficient Computation of the Shapley Value for Game Theoretic Network Centrality (2).pdf:PDF},
-  groups        = {Shapley value},
-  keywords      = {cs.GT},
-  primaryclass  = {cs.GT},
+@Article{Michalak2014_ShapleyEffComp,
+  author   = {Tomasz Pawel Michalak and Karthik V Aadithya and Piotr L. Szczepanski and Balaraman Ravindran and Nicholas R. Jennings},
+  journal  = {Journal Of Artificial Intelligence Research, Volume 46, pages 607-650, 2013},
+  title    = {Efficient Computation of the Shapley Value for Game-Theoretic Network Centrality},
+  year     = {2014},
+  abstract = {The Shapley value---probably the most important normative payoff division scheme in coalitional games---has recently been advocated as a useful measure of centrality in networks. However, although this approach has a variety of real-world applications (including social and organisational networks, biological networks and communication networks), its computational properties have not been widely studied. To date, the only practicable approach to compute Shapley value-based centrality has been via Monte Carlo simulations which are computationally expensive and not guaranteed to give an exact answer. Against this background, this paper presents the first study of the computational aspects of the Shapley value for network centralities. Specifically, we develop exact analytical formulae for Shapley value-based centrality in both weighted and unweighted networks and develop efficient (polynomial time) and exact algorithms based on them. We empirically evaluate these algorithms on two real-life examples (an infrastructure network representing the topology of the Western States Power Grid and a collaboration network from the field of astrophysics) and demonstrate that they deliver significant speedups over the Monte Carlo approach. For instance, in the case of unweighted networks our algorithms are able to return the exact solution about 1600 times faster than the Monte Carlo approximation, even if we allow for a generous 10% error margin for the latter method.},
+  doi      = {10.1613/jair.3806},
+  file     = {:Michalak2014 - Efficient Computation of the Shapley Value for Game Theoretic Network Centrality (2).pdf:PDF},
+  groups   = {Shapley value},
+  ranking  = {rank2},
 }
 
 @Article{Anshelevich2008,
@@ -1310,6 +1309,7 @@
   file       = {:Anshelevich2008 - The Price of Stability for Network Design with Fair Cost Allocation.pdf:PDF},
   groups     = {Shapley value},
   publisher  = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+  ranking    = {rank4},
   readstatus = {skimmed},
 }
 
@@ -1324,22 +1324,24 @@
   file      = {:10013542751 - A Value for N Person Games.pdf:PDF},
   groups    = {Shapley value},
   publisher = {Princeton University Press},
+  ranking   = {rank5},
   url       = {https://ci.nii.ac.jp/naid/10013542751/en/},
 }
 
-@Article{Wang2020a,
+@InProceedings{Wang2020_ShapleyQValue,
   author     = {Jianhong Wang and Yuan Zhang and Tae-Kyun Kim and Yunjie Gu},
-  journal    = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
+  booktitle  = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
   title      = {Shapley Q-Value: A Local Reward Approach to Solve Global Reward Games},
   year       = {2020},
   month      = {apr},
   number     = {05},
   pages      = {7285--7292},
+  publisher  = {Association for the Advancement of Artificial Intelligence ({AAAI})},
   volume     = {34},
   doi        = {10.1609/aaai.v34i05.6220},
   file       = {:Wang2020 - Shapley Q Value_ a Local Reward Approach to Solve Global Reward Games.pdf:PDF},
   groups     = {Shapley value},
-  publisher  = {Association for the Advancement of Artificial Intelligence ({AAAI})},
+  ranking    = {rank2},
   readstatus = {skimmed},
 }
 
@@ -1374,26 +1376,6 @@
   ranking    = {rank3},
   readstatus = {read},
   url        = {http://proceedings.mlr.press/v97/das19a.html},
-}
-
-@InProceedings{Iqbal2019,
-  author    = {Iqbal, Shariq and Sha, Fei},
-  booktitle = {Proceedings of the 36th International Conference on Machine Learning},
-  title     = {Actor-Attention-Critic for Multi-Agent Reinforcement Learning},
-  year      = {2019},
-  editor    = {Kamalika Chaudhuri and Ruslan Salakhutdinov},
-  month     = {09--15 Jun},
-  pages     = {2961--2970},
-  publisher = {PMLR},
-  series    = {Proceedings of Machine Learning Research},
-  volume    = {97},
-  abstract  = {Reinforcement learning in multi-agent scenarios is important for real-world applications but presents challenges beyond those seen in single-agent settings. We present an actor-critic algorithm that trains decentralized policies in multi-agent settings, using centrally computed critics that share an attention mechanism which selects relevant information for each agent at every timestep. This attention mechanism enables more effective and scalable learning in complex multi-agent environments, when compared to recent approaches. Our approach is applicable not only to cooperative settings with shared rewards, but also individualized reward settings, including adversarial settings, as well as settings that do not provide global states, and it makes no assumptions about the action spaces of the agents. As such, it is flexible enough to be applied to most multi-agent learning problems.},
-  file      = {:Iqbal2019 - Actor Attention Critic for Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
-  pdf       = {http://proceedings.mlr.press/v97/iqbal19a/iqbal19a.pdf},
-  priority  = {prio2},
-  ranking   = {rank3},
-  url       = {http://proceedings.mlr.press/v97/iqbal19a.html},
 }
 
 @InProceedings{Lanctot2017,
@@ -1442,6 +1424,7 @@
   file     = {:BACHRACH2020103356 - Negotiating Team Formation Using Deep Reinforcement Learning.pdf:PDF},
   groups   = {Shapley value},
   keywords = {Multi-agent systems, Team formation, Coalition formation, Reinforcement learning, Deep learning, Cooperative games, Shapley value},
+  ranking  = {rank1},
   url      = {https://www.sciencedirect.com/science/article/pii/S0004370220301077},
 }
 
@@ -1457,7 +1440,7 @@
   url        = {https://books.google.fr/books?hl=en&lr=&id=X3ZQ7yeDn2IC&oi=fnd&pg=PR13&ots=WHohqr4qa_&sig=0NufQwkvOFQvIdmAjHTz0F27huo&redir_esc=y#v=onepage&q&f=false},
 }
 
-@TechReport{wolpert99a,
+@TechReport{Wolpert1999_WLU,
   author      = {David H. Wolpert and Kagan Tumer},
   institution = {NASA},
   title       = {An Introduction to Collective Intelligence},
@@ -1502,8 +1485,9 @@
   comment     = {Shows how to set the agents' reward functions (using the "wonderful life" reward) so that the global utility is maximized. Extensive related work section.},
   file        = {:wolpert99a - An Introduction to Collective Intelligence.pdf:PDF},
   googleid    = {89pRsJDcBLUJ:scholar.google.com/},
-  groups      = {Wonderful Life Utility},
+  groups      = {MAS Reviews, Counterfactual Utilities},
   keywords    = {multiagent learning},
+  ranking     = {rank3},
   url         = {http://jmvidal.cse.sc.edu/library/wolpert99a.pdf},
 }
 
@@ -1699,7 +1683,7 @@ sharing of policy parameters},
   readstatus = {skimmed},
 }
 
-@InProceedings{Foerster2017_StabilisingExpReplay,
+@InProceedings{Foerster2017_StabExpReplay,
   author     = {Jakob Foerster and Nantas Nardelli and Gregory Farquhar and Triantafyllos Afouras and Philip H. S. Torr and Pushmeet Kohli and Shimon Whiteson},
   booktitle  = {Proceedings of the 34th International Conference on Machine Learning},
   title      = {Stabilising Experience Replay for Deep Multi-Agent Reinforcement Learning},
@@ -1737,7 +1721,7 @@ sharing of policy parameters},
   file       = {:rashid18a - QMIX_ Monotonic Value Function Factorisation for Deep Multi Agent Reinforcement Learning.pdf:PDF;:rashid18a - QMIX_ Monotonic Value Function Factorisation for Deep Multi Agent Reinforcement Learning (1).pdf:PDF},
   groups     = {Multi-agent RL, Value factorisation},
   pdf        = {http://proceedings.mlr.press/v80/rashid18a/rashid18a.pdf},
-  ranking    = {rank4},
+  ranking    = {rank5},
   readstatus = {read},
   url        = {http://proceedings.mlr.press/v80/rashid18a.html},
 }
@@ -1759,7 +1743,7 @@ sharing of policy parameters},
 Dec-Histeretic Deep Recurrent Q-Network
 Concurrent Experience Replay Trajectories (CERT)},
   file       = {:omidshafiei17a - Deep Decentralized Multi Task Multi Agent Reinforcement Learning under Partial Observability.pdf:PDF},
-  groups     = {Multi-agent RL, Multi-task, IDQN, Independent Learning},
+  groups     = {Multi-agent RL, Multi-task, IDQN, Independent Learning, Leniency/Hysteresis},
   pdf        = {http://proceedings.mlr.press/v70/omidshafiei17a/omidshafiei17a.pdf},
   ranking    = {rank3},
   readstatus = {skimmed},
@@ -1839,12 +1823,12 @@ Concurrent Experience Replay Trajectories (CERT)},
   file       = {:Rashid2020 - Weighted QMIX_ Expanding Monotonic Value Function Factorisation for Deep Multi−agent Reinforcement Learning.pdf:PDF},
   groups     = {Multi-agent RL, Value factorisation},
   organizer  = {34th Annual Conference on Neural Information Processing Systems (NeurIPS 2020)},
-  ranking    = {rank2},
+  ranking    = {rank3},
   readstatus = {read},
   url        = {https://proceedings.neurips.cc/paper/2020/hash/73a427badebe0e32caa2e1fc7530b7f3-Abstract.html},
 }
 
-@Article{Witt2020_IPPO,
+@Article{SchroederDeWitt2020_IPPO,
   author        = {Schroeder de Witt, Christian and Tarun Gupta and Denys Makoviichuk and Viktor Makoviychuk and Philip H. S. Torr and Mingfei Sun and Shimon Whiteson},
   title         = {Is Independent Learning All You Need in the StarCraft Multi-Agent Challenge?},
   year          = {2020},
@@ -1907,13 +1891,13 @@ Concurrent Experience Replay Trajectories (CERT)},
   ranking = {rank4},
 }
 
-@Misc{yu2021benchmarking,
+@Misc{Yu2021_Benchmark,
   author     = {Chao Yu and Akash Velu and Eugene Vinitsky and Yu Wang and Alexandre Bayen and Yi Wu},
   title      = {Benchmarking Multi-Agent Deep Reinforcement Learning Algorithms},
   year       = {2021},
   comment    = {MAPPO},
   file       = {:NeurIPS_DRL_Workshop_BenchmarkingMARL.pdf:PDF},
-  groups     = {MAS Reviews},
+  groups     = {MAS Reviews, Benchmarking MAL},
   readstatus = {skimmed},
   url        = {https://openreview.net/forum?id=t5lNr0Lw84H},
 }
@@ -1924,7 +1908,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   year       = {2021},
   booktitle  = {Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 1)},
   file       = {:Papoudakis2020 - Comparative Evaluation of Multi Agent Deep Reinforcement Learning Algorithms (1).pdf:PDF},
-  groups     = {MAS Reviews},
+  groups     = {MAS Reviews, Benchmarking MAL},
   ranking    = {rank2},
   readstatus = {skimmed},
   url        = {https://openreview.net/forum?id=cIrPX-Sn5n},
@@ -2010,16 +1994,17 @@ Concurrent Experience Replay Trajectories (CERT)},
   ranking   = {rank2},
 }
 
-@InProceedings{guestrin2002coordinated,
-  author       = {Guestrin, Carlos and Lagoudakis, Michail and Parr, Ronald},
-  booktitle    = {ICML},
-  title        = {Coordinated reinforcement learning},
-  year         = {2002},
-  organization = {Citeseer},
-  pages        = {227--234},
-  volume       = {2},
-  file         = {:guestrin2002coordinated - Coordinated Reinforcement Learning.pdf:PDF},
-  groups       = {Multi-agent RL},
+@InProceedings{Guestrin2002_CoordGraphs,
+  author    = {Guestrin, Carlos and Lagoudakis, Michail and Parr, Ronald},
+  booktitle = {Proceedings of 19th International Conference on Machine Learning},
+  title     = {Coordinated reinforcement learning},
+  year      = {2002},
+  pages     = {227--234},
+  volume    = {2},
+  file      = {:guestrin2002coordinated - Coordinated Reinforcement Learning.pdf:PDF:https\://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=29893127a377d37f16662dc482e012ff900bd55a},
+  groups    = {Multi-agent RL, Coordination Graphs},
+  ranking   = {rank3},
+  url       = {https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=29893127a377d37f16662dc482e012ff900bd55a},
 }
 
 @Article{KokV06,
@@ -2053,7 +2038,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   url          = {https://dl.acm.org/doi/abs/10.5555/1642194.1642231},
 }
 
-@Article{BOWLING2002215,
+@Article{Bowling2002_WoLFIGA,
   author   = {Michael Bowling and Manuela Veloso},
   journal  = {Artificial Intelligence},
   title    = {Multiagent learning using a variable learning rate},
@@ -2066,7 +2051,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   comment  = {WoLF},
   doi      = {https://doi.org/10.1016/S0004-3702(02)00121-2},
   file     = {:BOWLING2002215 - Multiagent Learning Using a Variable Learning Rate.pdf:PDF},
-  groups   = {Multi-agent RL},
+  groups   = {Multi-agent RL, Equilibrium selection},
   keywords = {Multiagent learning, Reinforcement learning, Game theory},
   ranking  = {rank3},
   url      = {https://www.sciencedirect.com/science/article/pii/S0004370202001212},
@@ -2143,7 +2128,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups    = {Multi-agent RL},
 }
 
-@Article{conitzer2007awesome,
+@Article{Conitzer2007_Awesome,
   author    = {Conitzer, Vincent and Sandholm, Tuomas},
   journal   = {Machine Learning},
   title     = {AWESOME: A general multiagent learning algorithm that converges in self-play and learns a best response against stationary opponents},
@@ -2151,7 +2136,6 @@ Concurrent Experience Replay Trajectories (CERT)},
   number    = {1-2},
   pages     = {23--43},
   volume    = {67},
-  file      = {:conitzer2007awesome - AWESOME_ a General Multiagent Learning Algorithm That Converges in Self Play and Learns a Best Response against Stationary Opponents.pdf:PDF},
   groups    = {Multi-agent RL, Equilibrium selection},
   publisher = {Springer},
   ranking   = {rank3},
@@ -2298,8 +2282,9 @@ Concurrent Experience Replay Trajectories (CERT)},
   volume     = {PMLR 97},
   file       = {:son2019qtran - Qtran_ Learning to Factorize with Transformation for Cooperative Multi Agent Reinforcement Learning.pdf:PDF},
   groups     = {Multi-agent RL, Value factorisation},
-  ranking    = {rank2},
+  ranking    = {rank4},
   readstatus = {read},
+  url        = {https://proceedings.mlr.press/v97/son19a.html},
 }
 
 @InProceedings{Foerster2016_DIAL,
@@ -2374,8 +2359,10 @@ FacMADDPG},
   year         = {2007},
   organization = {IEEE},
   pages        = {64--69},
+  doi          = {10.1109/IROS.2007.4399095},
   file         = {:matignon2007hysteretic - Hysteretic Q Learning_ an Algorithm for Decentralized Reinforcement Learning in Cooperative Multi Agent Teams.pdf:PDF},
-  groups       = {Multi-agent RL},
+  groups       = {Multi-agent RL, Leniency/Hysteresis},
+  ranking      = {rank3},
 }
 
 @Article{Sukhbaatar2017,
@@ -2429,10 +2416,12 @@ FacMADDPG},
   keywords   = {neural networks, reinforcement learning, collaborative, q-learning, dqn, multi-agent, value-decomposition},
   location   = {Stockholm, Sweden},
   numpages   = {3},
+  ranking    = {rank5},
   readstatus = {read},
+  url        = {https://dl.acm.org/doi/abs/10.5555/3237383.3238080},
 }
 
-@InProceedings{10.5555/3306127.3332052,
+@InProceedings{Samvelyan2019_SMAC,
   author    = {Samvelyan, Mikayel and Rashid, Tabish and Schroeder de Witt, Christian and Farquhar, Gregory and Nardelli, Nantas and Rudner, Tim G. J. and Hung, Chia-Man and Torr, Philip H. S. and Foerster, Jakob and Whiteson, Shimon},
   booktitle = {Proceedings of the 18th International Conference on Autonomous Agents and MultiAgent Systems},
   title     = {The StarCraft Multi-Agent Challenge},
@@ -2451,7 +2440,7 @@ FacMADDPG},
   ranking   = {rank4},
 }
 
-@InProceedings{Bohmer2020,
+@InProceedings{Bohmer2020_DeepCoordGraphs,
   author    = {Böhmer, Wendelin and Kurin, Vitaly and Whiteson, Shimon},
   booktitle = {Proceedings of the 37th International Conference on Machine Learning},
   title     = {Deep Coordination Graphs},
@@ -2464,7 +2453,7 @@ FacMADDPG},
   volume    = {119},
   abstract  = {This paper introduces the deep coordination graph (DCG) for collaborative multi-agent reinforcement learning. DCG strikes a flexible trade-off between representational capacity and generalization by factoring the joint value function of all agents according to a coordination graph into payoffs between pairs of agents. The value can be maximized by local message passing along the graph, which allows training of the value function end-to-end with Q-learning. Payoff functions are approximated with deep neural networks that employ parameter sharing and low-rank approximations to significantly improve sample efficiency. We show that DCG can solve predator-prey tasks that highlight the relative overgeneralization pathology, as well as challenging StarCraft II micromanagement tasks.},
   file      = {:Boehmer2020 - Deep Coordination Graphs.pdf:PDF},
-  groups    = {Multi-agent RL, Graphs, Centralised Training and Execution},
+  groups    = {Multi-agent RL, Graphs, Centralised Training and Execution, Coordination Graphs},
   pdf       = {http://proceedings.mlr.press/v119/boehmer20a/boehmer20a.pdf},
   ranking   = {rank2},
   url       = {http://proceedings.mlr.press/v119/boehmer20a.html},
@@ -2480,7 +2469,7 @@ FacMADDPG},
   booktitle     = {2018 AAAI Spring Symposium Series},
   eprint        = {1804.09817},
   file          = {:Wei2018 - Multiagent Soft Q Learning.pdf:PDF},
-  groups        = {Multi-agent RL},
+  groups        = {Multi-agent RL, Exploration in MARL},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
   ranking       = {rank1},
@@ -2496,8 +2485,9 @@ FacMADDPG},
   volume    = {17},
   comment   = {Relative overgeneralization},
   file      = {:wei2016lenient - Lenient Learning in Independent Learner Stochastic Cooperative Games.pdf:PDF},
-  groups    = {Multi-agent RL, Independent Learning},
+  groups    = {Multi-agent RL, Independent Learning, Leniency/Hysteresis},
   publisher = {JMLR. org},
+  ranking   = {rank2},
   url       = {https://www.jmlr.org/papers/v17/15-417.html},
 }
 
@@ -2622,7 +2612,7 @@ FacMADDPG},
   groups  = {Multi-robot},
 }
 
-@Article{pierson2017deep,
+@Article{Pierson2017_DRLinRobots,
   author    = {Pierson, Harry A and Gashler, Michael S},
   journal   = {Advanced Robotics},
   title     = {Deep learning in robotics: a review of recent research},
@@ -2633,6 +2623,8 @@ FacMADDPG},
   file      = {:pierson2017deep - Deep Learning in Robotics_ a Review of Recent Research.pdf:PDF},
   groups    = {MADRL in Robotics, Robotics},
   publisher = {Taylor \& Francis},
+  ranking   = {rank3},
+  url       = {https://www.tandfonline.com/doi/abs/10.1080/01691864.2017.1365009},
 }
 
 @InProceedings{elfakharany2020towards,
@@ -4142,16 +4134,18 @@ FacMADDPG},
   publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
 }
 
-@Article{Li2020,
+@InProceedings{Li2021_DeepImpCoordGraphs,
   author    = {Sheng Li and Jayesh K. Gupta and Peter Morales and Ross Allen and Mykel J. Kochenderfer},
+  booktitle = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
   title     = {Deep Implicit Coordination Graphs for Multi-agent Reinforcement Learning},
   year      = {2021},
   pages     = {764–772},
   abstract  = {Multi-agent reinforcement learning (MARL) requires coordination to efficiently solve certain tasks. Fully centralized control is often infeasible in such domains due to the size of joint action spaces. Coordination graph based formalization allows reasoning about the joint action based on the structure of interactions. However, they often require domain expertise in their design. This paper introduces the deep implicit coordination graph (DICG) architecture for such scenarios. DICG consists of a module for inferring the dynamic coordination graph structure which is then used by a graph neural network based module to learn to implicitly reason about the joint actions or values. DICG allows learning the tradeoff between full centralization and decentralization via standard actor-critic methods to significantly improve coordination for domains with large number of agents. We apply DICG to both centralized-training-centralized-execution and centralized-training-decentralized-execution regimes. We demonstrate that DICG solves the relative overgeneralization pathology in predatory-prey tasks as well as outperforms various MARL baselines on the challenging StarCraft II Multi-agent Challenge (SMAC) and traffic junction environments.},
-  booktitle = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
   file      = {:Li2020 - Deep Implicit Coordination Graphs for Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL, Graphs},
+  groups    = {Multi-agent RL, Graphs, Coordination Graphs},
   priority  = {prio1},
+  ranking   = {rank2},
+  url       = {https://dl.acm.org/doi/abs/10.5555/3463952.3464044},
 }
 
 @InProceedings{Jiang2020Graph,
@@ -4233,7 +4227,7 @@ FacMADDPG},
   abstractnote = {&lt;p&gt; Many real-world problems, such as network packet routing and the coordination of autonomous vehicles, are naturally modelled as cooperative multi-agent systems. There is a great need for new reinforcement learning methods that can efficiently learn decentralised policies for such systems. To this end, we propose a new multi-agent actor-critic method called counterfactual multi-agent (COMA) policy gradients. COMA uses a centralised critic to estimate the Q-function and decentralised actors to optimise the agents’ policies. In addition, to address the challenges of multi-agent credit assignment, it uses a counterfactual baseline that marginalises out a single agent’s action, while keeping the other agents’ actions fixed. COMA also uses a critic representation that allows the counterfactual baseline to be computed efficiently in a single forward pass. We evaluate COMA in the testbed of StarCraft unit micromanagement, using a decentralised variant with significant partial observability. COMA significantly improves average performance over other multi-agent actor-critic methods in this setting, and the best performing agents are competitive with state-of-the-art centralised controllers that get access to the full state. &lt;/p&gt;},
   comment      = {COMA},
   file         = {:Foerster_Farquhar_Afouras_Nardelli_Whiteson_2018 - Counterfactual Multi Agent Policy Gradients.pdf:PDF},
-  groups       = {Multi-agent RL, Credit Assignment},
+  groups       = {Multi-agent RL, Credit Assignment, Counterfactual Utilities, Centralised Critics},
   ranking      = {rank5},
   readstatus   = {read},
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11794},
@@ -4273,7 +4267,7 @@ FacMADDPG},
   ranking       = {rank3},
 }
 
-@Article{Wang2020d,
+@Article{Wang2020_RMADDPG,
   author        = {Rose E. Wang and Michael Everett and Jonathan P. How},
   journal       = {Reinforcement Learning for Real Life (RL4RealLife) Workshop in the 36th International Conference on Machine Learning, Long Beach, California, USA, 2019},
   title         = {R-MADDPG for Partially Observable Environments and Limited Communication},
@@ -4281,13 +4275,12 @@ FacMADDPG},
   month         = feb,
   abstract      = {There are several real-world tasks that would benefit from applying multiagent reinforcement learning (MARL) algorithms, including the coordination among self-driving cars. The real world has challenging conditions for multiagent learning systems, such as its partial observable and nonstationary nature. Moreover, if agents must share a limited resource (e.g. network bandwidth) they must all learn how to coordinate resource use. This paper introduces a deep recurrent multiagent actor-critic framework (R-MADDPG) for handling multiagent coordination under partial observable set-tings and limited communication. We investigate recurrency effects on performance and communication use of a team of agents. We demonstrate that the resulting framework learns time dependencies for sharing missing observations, handling resource limitations, and developing different communication patterns among agents.},
   archiveprefix = {arXiv},
-  eprint        = {2002.06684},
   file          = {:Wang2020a - R MADDPG for Partially Observable Environments and Limited Communication.pdf:PDF},
-  groups        = {Multi-agent RL, Communication},
-  keywords      = {cs.MA, cs.AI},
+  groups        = {Multi-agent RL, Communication, Centralised Critics},
   primaryclass  = {cs.MA},
   priority      = {prio2},
   ranking       = {rank1},
+  url           = {https://openreview.net/forum?id=Ske_NJK2s4},
 }
 
 @InProceedings{Jiang2018_ATOC,
@@ -4339,7 +4332,7 @@ agents)},
   readstatus    = {skimmed},
 }
 
-@InProceedings{10.5555/3237383.3237451,
+@InProceedings{Palmer2018_Lenient,
   author    = {Palmer, Gregory and Tuyls, Karl and Bloembergen, Daan and Savani, Rahul},
   booktitle = {Proceedings of the 17th International Conference on Autonomous Agents and MultiAgent Systems},
   title     = {Lenient Multi-Agent Deep Reinforcement Learning},
@@ -4350,11 +4343,12 @@ agents)},
   series    = {AAMAS '18},
   abstract  = {Much of the success of single agent deep reinforcement learning (DRL) in recent years can be attributed to the use of experience replay memories (ERM), which allow Deep Q-Networks (DQNs) to be trained efficiently through sampling stored state transitions. However, care is required when using ERMs for multi-agent deep reinforcement learning (MA-DRL), as stored transitions can become outdated when agents update their policies in parallel citefoerster2017stabilising. In this work we apply leniency citepanait2006lenient to MA-DRL. Lenient agents map state-action pairs to decaying temperature values that control the amount of leniency applied towards negative policy updates that are sampled from the ERM. This introduces optimism in the value-function update, and has been shown to facilitate cooperation in tabular fully-cooperative multi-agent reinforcement learning problems. We evaluate our Lenient-DQN (LDQN) empirically against the related Hysteretic-DQN (HDQN) algorithm citeomidshafiei2017deep as well as a modified version we call scheduled -HDQN, that uses average reward learning near terminal states. Evaluations take place in extended variations of the Coordinated Multi-Agent Object Transportation Problem (CMOTP) citebucsoniu2010multi. We find that LDQN agents are more likely to converge to the optimal policy in a stochastic reward CMOTP compared to standard and scheduled-HDQN agents.},
   file      = {:10.5555_3237383.3237451 - Lenient Multi Agent Deep Reinforcement Learning (1).pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Leniency/Hysteresis},
   keywords  = {leniency, multi-agent deep reinforcement learning},
   location  = {Stockholm, Sweden},
   numpages  = {9},
-  ranking   = {rank1},
+  ranking   = {rank2},
+  url       = {https://dl.acm.org/doi/abs/10.5555/3237383.3237451},
 }
 
 @InProceedings{Raileanu2018,
@@ -4370,7 +4364,7 @@ agents)},
   volume    = {80},
   abstract  = {We consider the multi-agent reinforcement learning setting with imperfect information. The reward function depends on the hidden goals of both agents, so the agents must infer the other players’ goals from their observed behavior in order to maximize their returns. We propose a new approach for learning in these domains: Self Other-Modeling (SOM), in which an agent uses its own policy to predict the other agent’s actions and update its belief of their hidden goal in an online manner. We evaluate this approach on three different tasks and show that the agents are able to learn better policies using their estimate of the other players’ goals, in both cooperative and competitive settings.},
   file      = {:Raileanu2018 - Modeling Others Using Oneself in Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Agent Modelling},
   pdf       = {http://proceedings.mlr.press/v80/raileanu18a/raileanu18a.pdf},
   ranking   = {rank1},
   url       = {http://proceedings.mlr.press/v80/raileanu18a.html},
@@ -4405,7 +4399,7 @@ agents)},
   volume    = {80},
   abstract  = {Theory of mind (ToM) broadly refers to humans’ ability to represent the mental states of others, including their desires, beliefs, and intentions. We design a Theory of Mind neural network {–} a ToMnet {–} which uses meta-learning to build such models of the agents it encounters. The ToMnet learns a strong prior model for agents’ future behaviour, and, using only a small number of behavioural observations, can bootstrap to richer predictions about agents’ characteristics and mental states. We apply the ToMnet to agents behaving in simple gridworld environments, showing that it learns to model random, algorithmic, and deep RL agents from varied populations, and that it passes classic ToM tasks such as the "Sally-Anne" test of recognising that others can hold false beliefs about the world.},
   file      = {:Rabinowitz2018 - Machine Theory of Mind.pdf:PDF},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Theory of Mind},
   pdf       = {http://proceedings.mlr.press/v80/rabinowitz18a/rabinowitz18a.pdf},
   ranking   = {rank2},
   url       = {http://proceedings.mlr.press/v80/rabinowitz18a.html},
@@ -4468,7 +4462,7 @@ agents)},
   groups        = {Multi-agent RL},
   keywords      = {cs.LG, stat.ML},
   primaryclass  = {cs.LG},
-  ranking       = {rank1},
+  ranking       = {rank2},
 }
 
 @Article{Liu2021,
@@ -5371,6 +5365,7 @@ time step.},
   file      = {:Iqbal2021 - Randomized Entity Wise Factorization for Multi Agent Reinforcement Learning.pdf:PDF},
   groups    = {Multi-agent RL, Value factorisation},
   pdf       = {http://proceedings.mlr.press/v139/iqbal21a/iqbal21a.pdf},
+  ranking   = {rank1},
   url       = {http://proceedings.mlr.press/v139/iqbal21a.html},
 }
 
@@ -5865,7 +5860,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   comment       = {MAPPO},
   eprint        = {2103.01955},
   file          = {:- The Surprising Effectiveness of PPO in Cooperative, Multi Agent Games.pdf:PDF},
-  groups        = {Multi-agent RL},
+  groups        = {Multi-agent RL, Centralised Critics},
   keywords      = {cs.LG, cs.AI, cs.MA},
   primaryclass  = {cs.LG},
   priority      = {prio2},
@@ -6775,7 +6770,7 @@ the agent takes as input the current state and goal, the value function depends 
   archiveprefix = {arXiv},
   eprint        = {2012.08630},
   file          = {:Dafoe2020 - Open Problems in Cooperative AI.pdf:PDF},
-  groups        = {Multi-agent RL},
+  groups        = {Multi-agent RL, MAS Reviews},
   keywords      = {cs.AI, cs.MA},
   primaryclass  = {cs.AI},
   ranking       = {rank2},
@@ -7723,7 +7718,7 @@ Multi-Explore},
   groups    = {Value factorisation},
   priority  = {prio1},
   ranking   = {rank1},
-  url       = {https://proceedings.neurips.cc/paper/2021/file/f3f1fa1e4348bfbebdeee8c80a04c3b9-Paper.pdf},
+  url       = {https://proceedings.neurips.cc/paper/2021/hash/f3f1fa1e4348bfbebdeee8c80a04c3b9-Abstract.html},
 }
 
 @InProceedings{seurin_hal-03259315,
@@ -7789,8 +7784,9 @@ Multi-Explore},
   volume    = {371},
   doi       = {10.1098/rstb.2015.0447},
   file      = {:Steels2016 - Agent Based Models for the Emergence and Evolution of Grammar.pdf:PDF},
-  groups    = {Language},
+  groups    = {Language, Language origins and evolution},
   publisher = {The Royal Society},
+  ranking   = {rank1},
 }
 
 @Article{Ohmer2022_MutualInfluence,
@@ -7821,7 +7817,7 @@ Multi-Explore},
   url       = {https://aclanthology.org/2022.coling-1.501/},
 }
 
-@Article{BARD2020103216,
+@Article{Bard2020_Hanabi,
   author   = {Nolan Bard and Jakob N. Foerster and Sarath Chandar and Neil Burch and Marc Lanctot and H. Francis Song and Emilio Parisotto and Vincent Dumoulin and Subhodeep Moitra and Edward Hughes and Iain Dunning and Shibl Mourad and Hugo Larochelle and Marc G. Bellemare and Michael Bowling},
   journal  = {Artificial Intelligence},
   title    = {The Hanabi challenge: A new frontier for AI research},
@@ -7830,7 +7826,7 @@ Multi-Explore},
   pages    = {103216},
   volume   = {280},
   abstract = {From the early days of computing, games have been important testbeds for studying how well machines can do sophisticated decision making. In recent years, machine learning has made dramatic advances with artificial agents reaching superhuman performance in challenge domains like Go, Atari, and some variants of poker. As with their predecessors of chess, checkers, and backgammon, these game domains have driven research by providing sophisticated yet well-defined challenges for artificial intelligence practitioners. We continue this tradition by proposing the game of Hanabi as a new challenge domain with novel problems that arise from its combination of purely cooperative gameplay with two to five players and imperfect information. In particular, we argue that Hanabi elevates reasoning about the beliefs and intentions of other agents to the foreground. We believe developing novel techniques for such theory of mind reasoning will not only be crucial for success in Hanabi, but also in broader collaborative efforts, especially those with human partners. To facilitate future research, we introduce the open-source Hanabi Learning Environment, propose an experimental framework for the research community to evaluate algorithmic advances, and assess the performance of current state-of-the-art techniques.},
-  doi      = {https://doi.org/10.1016/j.artint.2019.103216},
+  doi      = {10.1016/j.artint.2019.103216},
   file     = {:1-s2.0-S0004370219300116-main.pdf:PDF},
   groups   = {Multi-Agent Environments},
   keywords = {Multi-agent learning, Challenge paper, Reinforcement learning, Games, Theory of mind, Communication, Imperfect information, Cooperative},
@@ -8080,7 +8076,7 @@ Multi-Explore},
   url       = {https://proceedings.mlr.press/v119/yang20i.html},
 }
 
-@Article{Wang_2020,
+@Article{Wang2020_SQDDPG,
   author    = {Jianhong Wang and Yuan Zhang and Tae-Kyun Kim and Yunjie Gu},
   journal   = {Proceedings of the {AAAI} Conference on Artificial Intelligence},
   title     = {Shapley Q-Value: A Local Reward Approach to Solve Global Reward Games},
@@ -8090,8 +8086,10 @@ Multi-Explore},
   pages     = {7285--7292},
   volume    = {34},
   doi       = {10.1609/aaai.v34i05.6220},
+  file      = {:6220-Article Text-9445-1-10-20200516-1.pdf:PDF},
   groups    = {Multi-agent RL},
   publisher = {Association for the Advancement of Artificial Intelligence ({AAAI})},
+  ranking   = {rank2},
 }
 
 @Article{Boehmer2019,
@@ -11047,7 +11045,7 @@ ChatGPT},
   volume    = {97},
   abstract  = {Reinforcement learning in multi-agent scenarios is important for real-world applications but presents challenges beyond those seen in single-agent settings. We present an actor-critic algorithm that trains decentralized policies in multi-agent settings, using centrally computed critics that share an attention mechanism which selects relevant information for each agent at every timestep. This attention mechanism enables more effective and scalable learning in complex multi-agent environments, when compared to recent approaches. Our approach is applicable not only to cooperative settings with shared rewards, but also individualized reward settings, including adversarial settings, as well as settings that do not provide global states, and it makes no assumptions about the action spaces of the agents. As such, it is flexible enough to be applied to most multi-agent learning problems.},
   file      = {:Iqbal2019_MAAC - Actor Attention Critic for Multi Agent Reinforcement Learning.pdf:PDF:http\://proceedings.mlr.press/v97/iqbal19a/iqbal19a.pdf},
-  groups    = {Multi-agent RL},
+  groups    = {Multi-agent RL, Centralised Critics},
   pdf       = {http://proceedings.mlr.press/v97/iqbal19a/iqbal19a.pdf},
   priority  = {prio1},
   ranking   = {rank4},
@@ -12123,7 +12121,6 @@ ChatGPT},
   publisher = {The MIT Press},
   title     = {{A General Theory of Equilibrium Selection in Games}},
   year      = {1988},
-  isbn      = {ARRAY(0x56531e08)},
   month     = {December},
   number    = {0262582384},
   series    = {MIT Press Books},
@@ -12131,13 +12128,14 @@ ChatGPT},
   abstract  = {The authors, two of the most prominent game theorists of this generation, have devoted a number of years to the development of the theory presented here, and to its economic applications. They propose rational criteria for selecting one particular uniformly perfect equilibrium point as the solution of any noncooperative game. And, because any cooperative game can be remodelled as a noncooperative bargaining game, their theory defines a one-point solution for any cooperative game as well. By providing solutions - based on the same principles of rational behavior - for all classes of games, both cooperative and noncooperative, both those with complete and with incomplete information, Harsanyi and Selten's approach achieves a remarkable degree of theoretical unification for game theory as a whole and provides a deeper insight into the nature of game-theoretic rationality. The book applies this theory to a number of specific game classes, such as unanimity games; bargaining with transaction costs; trade involving one seller and several buyers; two-person bargaining with incomplete information on one side, and on both sides. The last chapter discusses the relationship of the authors' theory to other recently proposed solution concepts, particularly the Kohberg-Mertens stability theory.},
   groups    = {MAS Reviews, Equilibrium selection},
   keywords  = {game theory; equlibrium selection},
+  ranking   = {rank5},
   url       = {https://ideas.repec.org/b/mtp/titles/0262582384.html},
 }
 
 @Article{Nash1950,
   author    = {Nash, John F.},
   journal   = {Proceedings of the National Academy of Sciences},
-  title     = {Equilibrium points in n -person games},
+  title     = {Equilibrium points in n-person games},
   year      = {1950},
   issn      = {1091-6490},
   month     = jan,
@@ -12145,7 +12143,7 @@ ChatGPT},
   pages     = {48--49},
   volume    = {36},
   doi       = {10.1073/pnas.36.1.48},
-  groups    = {Game theory},
+  groups    = {Game theory, Equilibrium selection},
   publisher = {Proceedings of the National Academy of Sciences},
   ranking   = {rank5},
 }
@@ -12189,6 +12187,7 @@ ChatGPT},
   volume    = {34},
   file      = {:Papoudakis2021_LIAM - Agent Modelling under Partial Observability for Deep Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2021/file/a03caec56cd82478bf197475b48c05f9-Paper.pdf},
   groups    = {Agent Modelling},
+  priority  = {prio1},
   ranking   = {rank1},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2021/file/a03caec56cd82478bf197475b48c05f9-Paper.pdf},
 }
@@ -12384,7 +12383,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@InProceedings{Ellis2023,
+@InProceedings{Ellis2023_SMACv2,
   author    = {Ellis, Benjamin and Cook, Jonathan and Moalla, Skander and Samvelyan, Mikayel and Sun, Mingfei and Mahajan, Anuj and Foerster, Jakob and Whiteson, Shimon},
   booktitle = {Advances in Neural Information Processing Systems},
   title     = {SMACv2: An Improved Benchmark for Cooperative Multi-Agent Reinforcement Learning},
@@ -12779,6 +12778,402 @@ ChatGPT},
   ranking   = {rank5},
 }
 
+@Article{Fatima2008_ShapleyLinApprox,
+  author    = {Fatima, Shaheen S. and Wooldridge, Michael and Jennings, Nicholas R.},
+  journal   = {Artificial Intelligence},
+  title     = {A linear approximation method for the Shapley value},
+  year      = {2008},
+  issn      = {0004-3702},
+  month     = sep,
+  number    = {14},
+  pages     = {1673--1699},
+  volume    = {172},
+  doi       = {10.1016/j.artint.2008.05.003},
+  file      = {:1-s2.0-S0004370208000696-main.pdf:PDF},
+  groups    = {Shapley value},
+  publisher = {Elsevier BV},
+  ranking   = {rank3},
+}
+
+@InProceedings{Liu2021_CMAE,
+  author    = {Liu, Iou-Jen and Jain, Unnat and Yeh, Raymond A and Schwing, Alexander},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+  title     = {Cooperative Exploration for Multi-Agent Deep Reinforcement Learning},
+  year      = {2021},
+  editor    = {Meila, Marina and Zhang, Tong},
+  month     = {18--24 Jul},
+  pages     = {6826--6836},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {139},
+  abstract  = {Exploration is critical for good results in deep reinforcement learning and has attracted much attention. However, existing multi-agent deep reinforcement learning algorithms still use mostly noise-based techniques. Very recently, exploration methods that consider cooperation among multiple agents have been developed. However, existing methods suffer from a common challenge: agents struggle to identify states that are worth exploring, and hardly coordinate exploration efforts toward those states. To address this shortcoming, in this paper, we propose cooperative multi-agent exploration (CMAE): agents share a common goal while exploring. The goal is selected from multiple projected state spaces by a normalized entropy-based technique. Then, agents are trained to reach the goal in a coordinated manner. We demonstrate that CMAE consistently outperforms baselines on various tasks, including a sparse-reward version of multiple-particle environment (MPE) and the Starcraft multi-agent challenge (SMAC).},
+  file      = {:Liu2021_CMAE - Cooperative Exploration for Multi Agent Deep Reinforcement Learning.pdf:PDF:http\://proceedings.mlr.press/v139/liu21j/liu21j.pdf},
+  groups    = {Exploration in MARL},
+  pdf       = {http://proceedings.mlr.press/v139/liu21j/liu21j.pdf},
+  priority  = {prio1},
+  ranking   = {rank2},
+  url       = {https://proceedings.mlr.press/v139/liu21j.html},
+}
+
+@Article{Huettenrauch2019,
+  author  = {Maximilian H{{\"u}}ttenrauch and Adrian {\v{S}}o{\v{s}}i{{\'c}} and Gerhard Neumann},
+  journal = {Journal of Machine Learning Research},
+  title   = {Deep Reinforcement Learning for Swarm Systems},
+  year    = {2019},
+  number  = {54},
+  pages   = {1--31},
+  volume  = {20},
+  groups  = {Swarm learning},
+  ranking = {rank3},
+  url     = {http://jmlr.org/papers/v20/18-476.html},
+}
+
+@Book{Hamann2018_SwarmRobotics,
+  author    = {Hamann, Heiko},
+  publisher = {Springer International Publishing},
+  title     = {Swarm Robotics: A Formal Approach},
+  year      = {2018},
+  isbn      = {9783319745282},
+  doi       = {10.1007/978-3-319-74528-2},
+  groups    = {Swarm learning},
+}
+
+@Article{Kirby2015,
+  author    = {Kirby, Simon and Tamariz, Monica and Cornish, Hannah and Smith, Kenny},
+  journal   = {Cognition},
+  title     = {Compression and communication in the cultural evolution of linguistic structure},
+  year      = {2015},
+  issn      = {0010-0277},
+  month     = aug,
+  pages     = {87--102},
+  volume    = {141},
+  doi       = {10.1016/j.cognition.2015.03.016},
+  file      = {:Kirby2015 - Compression and Communication in the Cultural Evolution of Linguistic Structure.pdf:PDF:https\://langev.com/pdf/0daaeedba75b73df74be6aa8e9dc2657fa37e157.pdf},
+  groups    = {Language origins and evolution},
+  priority  = {prio1},
+  publisher = {Elsevier BV},
+  ranking   = {rank3},
+}
+
+@Article{Perfors2014,
+  author    = {Perfors, Andrew and Navarro, Daniel J.},
+  journal   = {Cognitive Science},
+  title     = {Language Evolution Can Be Shaped by the Structure of the World},
+  year      = {2014},
+  issn      = {1551-6709},
+  month     = jan,
+  number    = {4},
+  pages     = {775--793},
+  volume    = {38},
+  doi       = {10.1111/cogs.12102},
+  file      = {:https\://onlinelibrary.wiley.com/doi/pdf/10.1111/cogs.12102:},
+  groups    = {Language origins and evolution},
+  publisher = {Wiley},
+  ranking   = {rank1},
+}
+
+@Article{RICK2012,
+  author    = {DALE, RICK and LUPYAN, GARY},
+  journal   = {Advances in Complex Systems},
+  title     = {UNDERSTANDING THE ORIGINS OF MORPHOLOGICAL DIVERSITY: THE LINGUISTIC NICHE HYPOTHESIS},
+  year      = {2012},
+  issn      = {1793-6802},
+  month     = may,
+  number    = {03n04},
+  pages     = {1150017},
+  volume    = {15},
+  doi       = {10.1142/s0219525911500172},
+  groups    = {Language origins and evolution},
+  publisher = {World Scientific Pub Co Pte Ltd},
+  ranking   = {rank2},
+}
+
+@Article{Taddeo2005,
+  author    = {Taddeo, Mariarosaria and Floridi, Luciano},
+  journal   = {Journal of Experimental &amp; Theoretical Artificial Intelligence},
+  title     = {Solving the symbol grounding problem: a critical review of fifteen years of research},
+  year      = {2005},
+  issn      = {1362-3079},
+  month     = dec,
+  number    = {4},
+  pages     = {419--445},
+  volume    = {17},
+  doi       = {10.1080/09528130500284053},
+  file      = {:Taddeo2005 - Solving the Symbol Grounding Problem_ a Critical Review of Fifteen Years of Research.pdf:PDF:https\://uhra.herts.ac.uk/bitstream/handle/2299/1824/901825.pdf?sequence=1},
+  groups    = {Symbol grounding},
+  priority  = {prio1},
+  publisher = {Informa UK Limited},
+  ranking   = {rank2},
+}
+
+@Article{Smith2008,
+  author    = {Smith, Kenny and Kirby, Simon},
+  journal   = {Philosophical Transactions of the Royal Society B: Biological Sciences},
+  title     = {Cultural evolution: implications for understanding the human language faculty and its evolution},
+  year      = {2008},
+  issn      = {1471-2970},
+  month     = sep,
+  number    = {1509},
+  pages     = {3591--3603},
+  volume    = {363},
+  doi       = {10.1098/rstb.2008.0145},
+  groups    = {Language origins and evolution},
+  publisher = {The Royal Society},
+  ranking   = {rank2},
+}
+
+@Article{SMITH2003,
+  author    = {SMITH, KENNY and BRIGHTON, HENRY and KIRBY, SIMON},
+  journal   = {Advances in Complex Systems},
+  title     = {COMPLEX SYSTEMS IN LANGUAGE EVOLUTION: THE CULTURAL EMERGENCE OF COMPOSITIONAL STRUCTURE},
+  year      = {2003},
+  issn      = {1793-6802},
+  month     = dec,
+  number    = {04},
+  pages     = {537--558},
+  volume    = {06},
+  doi       = {10.1142/s0219525903001055},
+  groups    = {Language origins and evolution},
+  publisher = {World Scientific Pub Co Pte Ltd},
+  ranking   = {rank2},
+}
+
+@InProceedings{Galke2022_Emergent,
+  author    = {Lukas Galke and Yoav Ram and Limor Raviv},
+  booktitle = {Emergent Communication Workshop at ICLR 2022},
+  title     = {Emergent Communication for Understanding Human Language Evolution: What's Missing?},
+  year      = {2022},
+  file      = {:galke2022emergent - Emergent Communication for Understanding Human Language Evolution_ What's Missing_.pdf:PDF:https\://openreview.net/pdf?id=rqUGZQ-0XZ5},
+  groups    = {Language origins and evolution},
+  priority  = {prio1},
+  ranking   = {rank1},
+  url       = {https://openreview.net/forum?id=rqUGZQ-0XZ5},
+}
+
+@Book{Steels2012_ExperimentsLangEvo,
+  author    = {Steels, Luc},
+  editor    = {Luc Steels},
+  publisher = {John Benjamins Publishing Company},
+  title     = {Experiments in Cultural Language Evolution},
+  year      = {2012},
+  isbn      = {9789027274953},
+  month     = feb,
+  doi       = {10.1075/ais.3},
+  groups    = {Language origins and evolution},
+  issn      = {1879-873X},
+  journal   = {Advances in Interaction Studies},
+  ranking   = {rank2},
+}
+
+@Article{Selten2007,
+  author    = {Selten, Reinhard and Warglien, Massimo},
+  journal   = {Proceedings of the National Academy of Sciences},
+  title     = {The emergence of simple languages in an experimental coordination game},
+  year      = {2007},
+  issn      = {1091-6490},
+  month     = may,
+  number    = {18},
+  pages     = {7361--7366},
+  volume    = {104},
+  doi       = {10.1073/pnas.0702077104},
+  groups    = {Language origins and evolution},
+  publisher = {Proceedings of the National Academy of Sciences},
+  ranking   = {rank2},
+}
+
+@Article{WINTERS2014,
+  author    = {WINTERS, JAMES and KIRBY, SIMON and SMITH, KENNY},
+  journal   = {Language and Cognition},
+  title     = {Languages adapt to their contextual niche},
+  year      = {2014},
+  issn      = {1866-9859},
+  month     = nov,
+  number    = {3},
+  pages     = {415--449},
+  volume    = {7},
+  doi       = {10.1017/langcog.2014.35},
+  groups    = {Language origins and evolution},
+  publisher = {Cambridge University Press (CUP)},
+  ranking   = {rank2},
+}
+
+@Article{Raviv2019,
+  author    = {Raviv, Limor and Meyer, Antje and Lev-Ari, Shiri},
+  journal   = {Proceedings of the Royal Society B: Biological Sciences},
+  title     = {Larger communities create more systematic languages},
+  year      = {2019},
+  issn      = {1471-2954},
+  month     = jul,
+  number    = {1907},
+  pages     = {20191262},
+  volume    = {286},
+  doi       = {10.1098/rspb.2019.1262},
+  groups    = {Language origins and evolution},
+  publisher = {The Royal Society},
+  ranking   = {rank2},
+}
+
+@Book{Austin1975_SpeechActs,
+  author    = {J. L. Austin},
+  editor    = {Urmson, J. O. and Sbisà, Marina},
+  publisher = {Harvard university press},
+  title     = {How to do things with words},
+  year      = {1975},
+  address   = {Cambridge, Massachusetts},
+  groups    = {Theory of Communication},
+  ranking   = {rank5},
+}
+
+@InProceedings{Panait2006,
+  author     = {Panait, Liviu and Sullivan, Keith and Luke, Sean},
+  booktitle  = {Proceedings of the fifth international joint conference on Autonomous agents and multiagent systems},
+  title      = {Lenient learners in cooperative multiagent systems},
+  year       = {2006},
+  month      = may,
+  publisher  = {ACM},
+  series     = {AAMAS06},
+  collection = {AAMAS06},
+  doi        = {10.1145/1160633.1160776},
+  file       = {:Panait2006 - Lenient Learners in Cooperative Multiagent Systems.pdf:PDF:https\://dl.acm.org/doi/pdf/10.1145/1160633.1160776},
+  groups     = {Leniency/Hysteresis},
+  ranking    = {rank1},
+}
+
+@InProceedings{Hu2020Simplified,
+  author    = {Hengyuan Hu and Jakob N Foerster},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Simplified Action Decoder for Deep Multi-Agent Reinforcement Learning},
+  year      = {2020},
+  groups    = {Bayesian learning},
+  ranking   = {rank2},
+  url       = {https://openreview.net/forum?id=B1xm3RVtwB},
+}
+
+@InProceedings{pmlr-v97-foerster19a,
+  author    = {Foerster, Jakob and Song, Francis and Hughes, Edward and Burch, Neil and Dunning, Iain and Whiteson, Shimon and Botvinick, Matthew and Bowling, Michael},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning},
+  title     = {{B}ayesian Action Decoder for Deep Multi-Agent Reinforcement Learning},
+  year      = {2019},
+  editor    = {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  month     = {09--15 Jun},
+  pages     = {1942--1951},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {97},
+  abstract  = {When observing the actions of others, humans make inferences about why they acted as they did, and what this implies about the world; humans also use the fact that their actions will be interpreted in this manner, allowing them to act informatively and thereby communicate efficiently with others. Although learning algorithms have recently achieved superhuman performance in a number of two-player, zero-sum games, scalable multi-agent reinforcement learning algorithms that can discover effective strategies and conventions in complex, partially observable settings have proven elusive. We present the <em>Bayesian action decoder</em> (BAD), a new multi-agent learning method that uses an approximate Bayesian update to obtain a public belief that conditions on the actions taken by all agents in the environment. BAD introduces a new Markov decision process, the <em>public belief MDP</em>, in which the action space consists of all deterministic partial policies, and exploits the fact that an agent acting only on this public belief state can still learn to use its private information if the action space is augmented to be over all partial policies mapping private information into environment actions. The Bayesian update is closely related to the <em>theory of mind</em> reasoning that humans carry out when observing others’ actions. We first validate BAD on a proof-of-principle two-step matrix game, where it outperforms policy gradient methods; we then evaluate BAD on the challenging, cooperative partial-information card game Hanabi, where, in the two-player setting, it surpasses all previously published learning and hand-coded approaches, establishing a new state of the art.},
+  groups    = {Bayesian learning},
+  pdf       = {http://proceedings.mlr.press/v97/foerster19a/foerster19a.pdf},
+  ranking   = {rank2},
+  url       = {https://proceedings.mlr.press/v97/foerster19a.html},
+}
+
+@Article{Lyu2023_CentralisedCritics,
+  author    = {Lyu, Xueguang and Baisero, Andrea and Xiao, Yuchen and Daley, Brett and Amato, Christopher},
+  journal   = {Journal of Artificial Intelligence Research},
+  title     = {On Centralized Critics in Multi-Agent Reinforcement Learning},
+  year      = {2023},
+  issn      = {1076-9757},
+  month     = may,
+  pages     = {295--354},
+  volume    = {77},
+  doi       = {10.1613/jair.1.14386},
+  file      = {:14386final.pdf:PDF},
+  groups    = {Centralised Critics},
+  publisher = {AI Access Foundation},
+}
+
+@Article{Ackermann2019_MATD3,
+  author        = {Ackermann, Johannes and Gabler, Volker and Osa, Takayuki and Sugiyama, Masashi},
+  title         = {Reducing Overestimation Bias in Multi-Agent Domains Using Double Centralized Critics},
+  year          = {2019},
+  month         = oct,
+  abstract      = {Many real world tasks require multiple agents to work together. Multi-agent reinforcement learning (RL) methods have been proposed in recent years to solve these tasks, but current methods often fail to efficiently learn policies. We thus investigate the presence of a common weakness in single-agent RL, namely value function overestimation bias, in the multi-agent setting. Based on our findings, we propose an approach that reduces this bias by using double centralized critics. We evaluate it on six mixed cooperative-competitive tasks, showing a significant advantage over current methods. Finally, we investigate the application of multi-agent methods to high-dimensional robotic tasks and show that our approach can be used to learn decentralized policies in this domain.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1910.01465},
+  eprint        = {1910.01465},
+  file          = {:Ackermann2019 - Reducing Overestimation Bias in Multi Agent Domains Using Double Centralized Critics.pdf:PDF:http\://arxiv.org/pdf/1910.01465v2},
+  groups        = {Centralised Critics},
+  keywords      = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Multiagent Systems (cs.MA), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  publisher     = {arXiv},
+}
+
+@InProceedings{Gorsane2022,
+  author    = {Gorsane, Rihab and Mahjoub, Omayma and de Kock, Ruan John and Dubb, Roland and Singh, Siddarth and Pretorius, Arnu},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Towards a Standardised Performance Evaluation Protocol for Cooperative MARL},
+  year      = {2022},
+  editor    = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+  pages     = {5510--5521},
+  publisher = {Curran Associates, Inc.},
+  volume    = {35},
+  file      = {:Gorsane2022 - Towards a Standardised Performance Evaluation Protocol for Cooperative MARL.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2022/file/249f73e01f0a2bb6c8d971b565f159a7-Paper-Conference.pdf},
+  groups    = {Benchmarking MAL},
+  priority  = {prio1},
+  ranking   = {rank1},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/249f73e01f0a2bb6c8d971b565f159a7-Paper-Conference.pdf},
+}
+
+@InProceedings{Hong2022,
+  author    = {Hong, Yitian and Jin, Yaochu and Tang, Yang},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Rethinking Individual Global Max in Cooperative Multi-Agent Reinforcement Learning},
+  year      = {2022},
+  editor    = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+  pages     = {32438--32449},
+  publisher = {Curran Associates, Inc.},
+  volume    = {35},
+  file      = {:Hong2022 - Rethinking Individual Global Max in Cooperative Multi Agent Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2022/file/d112fdd31c830900d1f2e4ccebffb54f-Paper-Conference.pdf},
+  groups    = {Value factorisation},
+  priority  = {prio1},
+  ranking   = {rank1},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/d112fdd31c830900d1f2e4ccebffb54f-Paper-Conference.pdf},
+}
+
+@InProceedings{ren2022learning,
+  author    = {Zhizhou Ren and Ruihan Guo and Yuan Zhou and Jian Peng},
+  booktitle = {International Conference on Learning Representations},
+  title     = {Learning Long-Term Reward Redistribution via Randomized Return Decomposition},
+  year      = {2022},
+  file      = {:ren2022learning - Learning Long Term Reward Redistribution Via Randomized Return Decomposition.pdf:PDF:https\://openreview.net/pdf?id=lpkGn3k2YdD},
+  groups    = {Value factorisation},
+  priority  = {prio2},
+  ranking   = {rank1},
+  url       = {https://openreview.net/forum?id=lpkGn3k2YdD},
+}
+
+@InProceedings{Sun2023_DFAC,
+  author   = {Wei-Fang Sun and Cheng-Kuang Lee and Simon See and Chun-Yi Lee},
+  title    = {A Unified Framework for Factorizing Distributional Value Functions for Multi-Agent Reinforcement Learning},
+  year     = {2023},
+  number   = {220},
+  pages    = {1--32},
+  volume   = {24},
+  file     = {:Sun2023_DFAC - A Unified Framework for Factorizing Distributional Value Functions for Multi Agent Reinforcement Learning.pdf:PDF:https\://www.jmlr.org/papers/volume24/22-0630/22-0630.pdf},
+  groups   = {Value factorisation},
+  journal  = {Journal of Machine Learning Research},
+  priority = {prio1},
+  url      = {http://jmlr.org/papers/v24/22-0630.html},
+}
+
+@Article{Papadimitriou1987,
+  author    = {Papadimitriou, Christos H. and Tsitsiklis, John N.},
+  journal   = {Mathematics of Operations Research},
+  title     = {The Complexity of Markov Decision Processes},
+  year      = {1987},
+  issn      = {1526-5471},
+  month     = aug,
+  number    = {3},
+  pages     = {441--450},
+  volume    = {12},
+  doi       = {10.1287/moor.12.3.441},
+  file      = {:Papadimitriou-ComplexityMarkovDecision-1987.pdf:PDF},
+  groups    = {POMDP},
+  publisher = {Institute for Operations Research and the Management Sciences (INFORMS)},
+  ranking   = {rank4},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -12804,6 +13199,7 @@ ChatGPT},
 2 StaticGroup:Visual-Language Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language origins and evolution\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Symbol grounding\;0\;1\;0x7c7c7cff\;\;\;;
+2 StaticGroup:Theory of Communication\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Machine Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Computer Vision\;0\;0\;\;\;\;;
 2 StaticGroup:Confidence\;0\;1\;0x7c7c7cff\;\;\;;
@@ -12813,49 +13209,54 @@ ChatGPT},
 2 StaticGroup:NLP\;0\;0\;0x838383ff\;\;\;;
 2 StaticGroup:Auto-Encoding\;0\;0\;0x838383ff\;\;\;;
 1 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:MAS Reviews\;2\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Benchmarking MAL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-Agent Environments\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS in Social Sciences\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS in Economics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS in Software Engineering\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Shared Mental Models\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Swarm learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-agent RL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Agent Modelling\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Fictituous Play\;2\;0\;0x7c7c7cff\;\;\;;
 4 StaticGroup:Bayesian learning\;0\;1\;0x7c7c7cff\;\;\;;
-4 StaticGroup:Theory of Mind\;0\;1\;0x7c7c7cff\;\;\;;
+4 StaticGroup:Theory of Mind\;0\;0\;0x7c7c7cff\;\;\;;
+3 StaticGroup:Centralised Critics\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Centralised Training and Execution\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Independent Learning\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:IDQN\;0\;0\;0x7c7c7cff\;\;\;;
+3 StaticGroup:Value factorisation\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Communication\;2\;1\;0x8a8a8aff\;\;\;;
-4 StaticGroup:Discrete language\;2\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Discrete language\;2\;0\;0x8a8a8aff\;\;\;;
 5 StaticGroup:Natural language\;0\;0\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Speaker-Listener\;0\;0\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Language-Grounded Communication\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Comm with LLMs\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Applied MAC\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Coordination Graphs\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Credit Assignment\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Shapley value\;2\;0\;0x8a8a8aff\;\;\;;
-4 StaticGroup:Wonderful Life Utility\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Equilibrium selection\;0\;1\;0x8a8a8aff\;\;\;;
+4 StaticGroup:Counterfactual Utilities\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Equilibrium selection\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Exploration in MARL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Game theory\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Interaction Networks\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Intrinsic rewards in MARL\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Intrinsic rewards in MARL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Joint Action Learning\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Leniency/Hysteresis\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Memory in MARL\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Population-based training\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Social Learning\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Value factorisation\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Memory\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Meta-Learning\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:RL\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Environments\;0\;0\;0x8a8a8aff\;\;\;;
