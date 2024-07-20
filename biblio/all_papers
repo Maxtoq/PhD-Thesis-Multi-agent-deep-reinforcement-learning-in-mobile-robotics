@@ -1031,7 +1031,6 @@
   file          = {:Jaderberg2018 - Human Level Performance in First Person Multiplayer Games with Population Based Deep Reinforcement Learning.pdf:PDF},
   groups        = {Multi-agent RL, Population-based training, Independent Learning},
   primaryclass  = {cs.LG},
-  priority      = {prio1},
   ranking       = {rank4},
 }
 
@@ -2226,13 +2225,13 @@ Concurrent Experience Replay Trajectories (CERT)},
   url        = {https://www.aaai.org/ocs/index.php/FSS/FSS15/paper/view/11673},
 }
 
-@InProceedings{45823,
+@InProceedings{Ha2017_Hypernetworks,
   author    = {David Ha and Andrew Dai and Quoc V. Le},
-  booktitle = {ICLR 2017},
+  booktitle = {5th International Conference on Learning Representations (ICLR)},
   title     = {HyperNetworks},
   year      = {2017},
   file      = {:45823 - HyperNetworks.pdf:PDF},
-  ranking   = {rank3},
+  ranking   = {rank4},
   url       = {https://openreview.net/pdf?id=rkpACe1lx},
 }
 
@@ -2272,10 +2271,10 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups = {Communication},
 }
 
-@InProceedings{Son2019_Qtran,
+@InProceedings{Son2019_QTRAN,
   author     = {Son, Kyunghwan and Kim, Daewoo and Kang, Wan Ju and Hostallero, David Earl and Yi, Yung},
-  booktitle  = {International Conference on Machine Learning},
-  title      = {Qtran: Learning to factorize with transformation for cooperative multi-agent reinforcement learning},
+  booktitle  = {Proceedings of the 36th International Conference on Machine Learning},
+  title      = {QTRAN: Learning to factorize with transformation for cooperative multi-agent reinforcement learning},
   year       = {2019},
   month      = may,
   pages      = {5887--5896},
@@ -2320,22 +2319,6 @@ Concurrent Experience Replay Trajectories (CERT)},
   ranking    = {rank1},
   readstatus = {read},
   url        = {https://proceedings.neurips.cc/paper_files/paper/2019/file/f968fdc88852a4a3a27a81fe3f57bfc5-Paper.pdf},
-}
-
-@Article{Witt2020a,
-  author        = {Schroeder de Witt, Christian and Bei Peng and Pierre-Alexandre Kamienny and Philip Torr and Wendelin Böhmer and Shimon Whiteson},
-  title         = {Deep Multi-Agent Reinforcement Learning for Decentralized Continuous Cooperative Control},
-  year          = {2020},
-  month         = mar,
-  abstract      = {Centralised training with decentralised execution (CTDE) is an important learning paradigm in multi-agent reinforcement learning (MARL). To make progress in CTDE, we introduce Multi-Agent MuJoCo (MAMuJoCo), a novel benchmark suite that, unlike StarCraft Multi-Agent Challenge (SMAC), the predominant benchmark environment, applies to continuous robotic control tasks. To demonstrate the utility of MAMuJoCo, we present a range of benchmark results on this new suite, including comparing the state-of-the-art actor-critic method MADDPG against two novel variants of existing methods. These new methods outperform MADDPG on a number of MAMuJoCo tasks. In addition, we show that, in these continuous cooperative MAMuJoCo tasks, value factorisation plays a greater role in performance than the underlying algorithmic choices. This motivates the necessity of extending the study of value factorisations from $Q$-learning to actor-critic algorithms.},
-  archiveprefix = {arXiv},
-  comment       = {COMIX
-FacMADDPG},
-  eprint        = {2003.06709},
-  file          = {:Witt2020a - Deep Multi Agent Reinforcement Learning for Decentralized Continuous Cooperative Control.pdf:PDF},
-  groups        = {Multi-agent RL},
-  keywords      = {cs.LG, cs.AI, stat.ML},
-  primaryclass  = {cs.LG},
 }
 
 @Article{Levine2016_Endtoend,
@@ -4936,26 +4919,22 @@ communication integrated in QMIX, with tricks to make it more efficient},
 }
 
 @InProceedings{Zhou2020_LICA,
-  author        = {Meng Zhou and Ziyu Liu and Pengwei Sui and Yixuan Li and Yuk Ying Chung},
-  booktitle     = {Advances in Neural Information Processing Systems},
-  title         = {Learning Implicit Credit Assignment for Cooperative Multi-Agent Reinforcement Learning},
-  year          = {2020},
-  editor        = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
-  month         = jul,
-  pages         = {11853--11864},
-  publisher     = {Curran Associates, Inc.},
-  volume        = {33},
-  abstract      = {We present a multi-agent actor-critic method that aims to implicitly address the credit assignment problem under fully cooperative settings. Our key motivation is that credit assignment among agents may not require an explicit formulation as long as (1) the policy gradients derived from a centralized critic carry sufficient information for the decentralized agents to maximize their joint action value through optimal cooperation and (2) a sustained level of exploration is enforced throughout training. Under the centralized training with decentralized execution (CTDE) paradigm, we achieve the former by formulating the centralized critic as a hypernetwork such that a latent state representation is integrated into the policy gradients through its multiplicative association with the stochastic policies; to achieve the latter, we derive a simple technique called adaptive entropy regularization where magnitudes of the entropy gradients are dynamically rescaled based on the current policy stochasticity to encourage consistent levels of exploration. Our algorithm, referred to as LICA, is evaluated on several benchmarks including the multi-agent particle environments and a set of challenging StarCraft II micromanagement tasks, and we show that LICA significantly outperforms previous methods.},
-  archiveprefix = {arXiv},
-  comment       = {LICA},
-  eprint        = {2007.02529},
-  file          = {:Zhou2020_LICA - Learning Implicit Credit Assignment for Cooperative Multi Agent Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2020/file/8977ecbb8cb82d77fb091c7a7f186163-Paper.pdf},
-  groups        = {Multi-agent RL, Value factorisation, Credit Assignment},
-  keywords      = {cs.LG, cs.MA, stat.ML},
-  primaryclass  = {cs.LG},
-  priority      = {prio1},
-  ranking       = {rank2},
-  url           = {https://proceedings.neurips.cc/paper_files/paper/2020/file/8977ecbb8cb82d77fb091c7a7f186163-Paper.pdf},
+  author     = {Meng Zhou and Ziyu Liu and Pengwei Sui and Yixuan Li and Yuk Ying Chung},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Learning Implicit Credit Assignment for Cooperative Multi-Agent Reinforcement Learning},
+  year       = {2020},
+  editor     = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+  month      = jul,
+  pages      = {11853--11864},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {33},
+  abstract   = {We present a multi-agent actor-critic method that aims to implicitly address the credit assignment problem under fully cooperative settings. Our key motivation is that credit assignment among agents may not require an explicit formulation as long as (1) the policy gradients derived from a centralized critic carry sufficient information for the decentralized agents to maximize their joint action value through optimal cooperation and (2) a sustained level of exploration is enforced throughout training. Under the centralized training with decentralized execution (CTDE) paradigm, we achieve the former by formulating the centralized critic as a hypernetwork such that a latent state representation is integrated into the policy gradients through its multiplicative association with the stochastic policies; to achieve the latter, we derive a simple technique called adaptive entropy regularization where magnitudes of the entropy gradients are dynamically rescaled based on the current policy stochasticity to encourage consistent levels of exploration. Our algorithm, referred to as LICA, is evaluated on several benchmarks including the multi-agent particle environments and a set of challenging StarCraft II micromanagement tasks, and we show that LICA significantly outperforms previous methods.},
+  comment    = {LICA},
+  file       = {:Zhou2020_LICA - Learning Implicit Credit Assignment for Cooperative Multi Agent Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2020/file/8977ecbb8cb82d77fb091c7a7f186163-Paper.pdf},
+  groups     = {Multi-agent RL, Value factorisation, Credit Assignment},
+  ranking    = {rank2},
+  readstatus = {read},
+  url        = {https://proceedings.neurips.cc/paper/2020/hash/8977ecbb8cb82d77fb091c7a7f186163-Abstract.html},
 }
 
 @InProceedings{James2019_Sim2Real,
@@ -5234,15 +5213,16 @@ communication integrated in QMIX, with tricks to make it more efficient},
   url       = {http://proceedings.mlr.press/v119/wang20f.html},
 }
 
-@InProceedings{Wang2021,
-  author    = {Jianhao Wang and Zhizhou Ren and Terry Liu and Yang Yu and Chongjie Zhang},
-  booktitle = {International Conference on Learning Representations},
-  title     = {QPLEX: Duplex Dueling Multi-Agent Q-Learning},
-  year      = {2021},
-  file      = {:Wang2021 - QPLEX_ Duplex Dueling Multi Agent Q Learning.pdf:PDF},
-  groups    = {Multi-agent RL, Value factorisation},
-  ranking   = {rank2},
-  url       = {https://openreview.net/forum?id=Rcmk0xxIQV},
+@InProceedings{Wang2021_QPLEX,
+  author     = {Jianhao Wang and Zhizhou Ren and Terry Liu and Yang Yu and Chongjie Zhang},
+  booktitle  = {9th International Conference on Learning Representations},
+  title      = {QPLEX: Duplex Dueling Multi-Agent Q-Learning},
+  year       = {2021},
+  file       = {:Wang2021 - QPLEX_ Duplex Dueling Multi Agent Q Learning.pdf:PDF},
+  groups     = {Multi-agent RL, Value factorisation},
+  ranking    = {rank2},
+  readstatus = {read},
+  url        = {https://openreview.net/forum?id=Rcmk0xxIQV},
 }
 
 @Book{Vygotsky1934,
@@ -5350,7 +5330,7 @@ time step.},
   url       = {http://proceedings.mlr.press/v139/gupta21a.html},
 }
 
-@InProceedings{Iqbal2021,
+@InProceedings{Iqbal2021_REFIL,
   author    = {Iqbal, Shariq and De Witt, Christian A Schroeder and Peng, Bei and Boehmer, Wendelin and Whiteson, Shimon and Sha, Fei},
   booktitle = {Proceedings of the 38th International Conference on Machine Learning},
   title     = {Randomized Entity-wise Factorization for Multi-Agent Reinforcement Learning},
@@ -5369,7 +5349,7 @@ time step.},
   url       = {http://proceedings.mlr.press/v139/iqbal21a.html},
 }
 
-@InProceedings{Wang2020c,
+@InProceedings{Wang2020_NDQ,
   author     = {Tonghan Wang and Jianhao Wang and Chongyi Zheng and Chongjie Zhang},
   booktitle  = {International Conference on Learning Representations},
   title      = {Learning Nearly Decomposable Value Functions Via Communication Minimization},
@@ -5377,7 +5357,6 @@ time step.},
   comment    = {NDQ},
   file       = {:Wang2020 - Learning Nearly Decomposable Value Functions Via Communication Minimization.pdf:PDF},
   groups     = {Multi-agent RL, Communication},
-  priority   = {prio2},
   readstatus = {read},
   url        = {https://openreview.net/forum?id=HJx-3grYDB},
 }
@@ -7705,20 +7684,20 @@ Multi-Explore},
   url        = {https://openreview.net/forum?id=BJgy96EYvr},
 }
 
-@InProceedings{NEURIPS2021_f3f1fa1e,
-  author    = {Wang, Jianhao and Ren, Zhizhou and Han, Beining and Ye, Jianing and Zhang, Chongjie},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {Towards Understanding Cooperative Multi-Agent Q-Learning with Value Factorization},
-  year      = {2021},
-  editor    = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
-  pages     = {29142--29155},
-  publisher = {Curran Associates, Inc.},
-  volume    = {34},
-  file      = {:NEURIPS2021_f3f1fa1e - Towards Understanding Cooperative Multi Agent Q Learning with Value Factorization.pdf:PDF},
-  groups    = {Value factorisation},
-  priority  = {prio1},
-  ranking   = {rank1},
-  url       = {https://proceedings.neurips.cc/paper/2021/hash/f3f1fa1e4348bfbebdeee8c80a04c3b9-Abstract.html},
+@InProceedings{Wang2021_UndestandValueFac,
+  author     = {Wang, Jianhao and Ren, Zhizhou and Han, Beining and Ye, Jianing and Zhang, Chongjie},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Towards Understanding Cooperative Multi-Agent Q-Learning with Value Factorization},
+  year       = {2021},
+  editor     = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+  pages      = {29142--29155},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {34},
+  file       = {:NEURIPS2021_f3f1fa1e - Towards Understanding Cooperative Multi Agent Q Learning with Value Factorization.pdf:PDF},
+  groups     = {Value factorisation},
+  ranking    = {rank1},
+  readstatus = {skimmed},
+  url        = {https://proceedings.neurips.cc/paper/2021/hash/f3f1fa1e4348bfbebdeee8c80a04c3b9-Abstract.html},
 }
 
 @InProceedings{seurin_hal-03259315,
@@ -9064,7 +9043,6 @@ Multi-Explore},
   doi       = {10.1017/S0269888912000057},
   file      = {:matignon_laurent_lefort-piat_2012 - Independent Reinforcement Learners in Cooperative Markov Games_ a Survey Regarding Coordination Problems.pdf:PDF},
   groups    = {Multi-agent learning, MAS Reviews, Independent Learning},
-  priority  = {prio1},
   publisher = {Cambridge University Press},
 }
 
@@ -11487,23 +11465,23 @@ ChatGPT},
 }
 
 @InProceedings{Lyu2021_DecentralisedCritic,
-  author    = {Lyu, Xueguang and Xiao, Yuchen and Daley, Brett and Amato, Christopher},
-  booktitle = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
-  title     = {Contrasting Centralized and Decentralized Critics in Multi-Agent Reinforcement Learning},
-  year      = {2021},
-  address   = {Richland, SC},
-  pages     = {844–852},
-  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
-  series    = {AAMAS '21},
-  abstract  = {Centralized Training for Decentralized Execution, where agents are trained offline using centralized information but execute in a decentralized manner online, has gained popularity in the multi-agent reinforcement learning community. In particular, actor-critic methods with a centralized critic and decentralized actors are a common instance of this idea. However, the implications of using a centralized critic in this context are not fully discussed and understood even though it is the standard choice of many algorithms. We therefore formally analyze centralized and decentralized critic approaches, providing a deeper understanding of the implications of critic choice. Because our theory makes unrealistic assumptions, we also empirically compare the centralized and decentralized critic methods over a wide set of environments to validate our theories and to provide practical advice. We show that there exist misconceptions regarding centralized critics in the current literature and show that the centralized critic design is not strictly beneficial, but rather both centralized and decentralized critics have different pros and cons that should be taken into account by algorithm designers.},
-  file      = {:Lyu2021_DecentralisedCritic - Contrasting Centralized and Decentralized Critics in Multi Agent Reinforcement Learning.pdf:PDF:https\://www.ifaamas.org/Proceedings/aamas2021/pdfs/p844.pdf},
-  groups    = {Independent Learning},
-  keywords  = {reinforcement learning, policy gradient, multi-agent system},
-  location  = {Virtual Event, United Kingdom},
-  numpages  = {9},
-  priority  = {prio1},
-  ranking   = {rank2},
-  url       = {https://dl.acm.org/doi/10.5555/3463952.3464053},
+  author     = {Lyu, Xueguang and Xiao, Yuchen and Daley, Brett and Amato, Christopher},
+  booktitle  = {Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems},
+  title      = {Contrasting Centralized and Decentralized Critics in Multi-Agent Reinforcement Learning},
+  year       = {2021},
+  address    = {Richland, SC},
+  pages      = {844–852},
+  publisher  = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series     = {AAMAS '21},
+  abstract   = {Centralized Training for Decentralized Execution, where agents are trained offline using centralized information but execute in a decentralized manner online, has gained popularity in the multi-agent reinforcement learning community. In particular, actor-critic methods with a centralized critic and decentralized actors are a common instance of this idea. However, the implications of using a centralized critic in this context are not fully discussed and understood even though it is the standard choice of many algorithms. We therefore formally analyze centralized and decentralized critic approaches, providing a deeper understanding of the implications of critic choice. Because our theory makes unrealistic assumptions, we also empirically compare the centralized and decentralized critic methods over a wide set of environments to validate our theories and to provide practical advice. We show that there exist misconceptions regarding centralized critics in the current literature and show that the centralized critic design is not strictly beneficial, but rather both centralized and decentralized critics have different pros and cons that should be taken into account by algorithm designers.},
+  file       = {:Lyu2021_DecentralisedCritic - Contrasting Centralized and Decentralized Critics in Multi Agent Reinforcement Learning.pdf:PDF:https\://www.ifaamas.org/Proceedings/aamas2021/pdfs/p844.pdf},
+  groups     = {Independent Learning},
+  keywords   = {reinforcement learning, policy gradient, multi-agent system},
+  location   = {Virtual Event, United Kingdom},
+  numpages   = {9},
+  ranking    = {rank2},
+  readstatus = {skimmed},
+  url        = {https://dl.acm.org/doi/10.5555/3463952.3464053},
 }
 
 @Article{Brinkmann2023,
@@ -13115,20 +13093,20 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/249f73e01f0a2bb6c8d971b565f159a7-Paper-Conference.pdf},
 }
 
-@InProceedings{Hong2022,
-  author    = {Hong, Yitian and Jin, Yaochu and Tang, Yang},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {Rethinking Individual Global Max in Cooperative Multi-Agent Reinforcement Learning},
-  year      = {2022},
-  editor    = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
-  pages     = {32438--32449},
-  publisher = {Curran Associates, Inc.},
-  volume    = {35},
-  file      = {:Hong2022 - Rethinking Individual Global Max in Cooperative Multi Agent Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2022/file/d112fdd31c830900d1f2e4ccebffb54f-Paper-Conference.pdf},
-  groups    = {Value factorisation},
-  priority  = {prio1},
-  ranking   = {rank1},
-  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/d112fdd31c830900d1f2e4ccebffb54f-Paper-Conference.pdf},
+@InProceedings{Hong2022_RethinkingIGM,
+  author     = {Hong, Yitian and Jin, Yaochu and Tang, Yang},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Rethinking Individual Global Max in Cooperative Multi-Agent Reinforcement Learning},
+  year       = {2022},
+  editor     = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+  pages      = {32438--32449},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {35},
+  file       = {:Hong2022 - Rethinking Individual Global Max in Cooperative Multi Agent Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2022/file/d112fdd31c830900d1f2e4ccebffb54f-Paper-Conference.pdf},
+  groups     = {Value factorisation},
+  ranking    = {rank1},
+  readstatus = {skimmed},
+  url        = {https://proceedings.neurips.cc/paper_files/paper/2022/file/d112fdd31c830900d1f2e4ccebffb54f-Paper-Conference.pdf},
 }
 
 @InProceedings{ren2022learning,
@@ -13137,24 +13115,23 @@ ChatGPT},
   title     = {Learning Long-Term Reward Redistribution via Randomized Return Decomposition},
   year      = {2022},
   file      = {:ren2022learning - Learning Long Term Reward Redistribution Via Randomized Return Decomposition.pdf:PDF:https\://openreview.net/pdf?id=lpkGn3k2YdD},
-  groups    = {Value factorisation},
-  priority  = {prio2},
+  groups    = {RL},
   ranking   = {rank1},
   url       = {https://openreview.net/forum?id=lpkGn3k2YdD},
 }
 
 @InProceedings{Sun2023_DFAC,
-  author   = {Wei-Fang Sun and Cheng-Kuang Lee and Simon See and Chun-Yi Lee},
-  title    = {A Unified Framework for Factorizing Distributional Value Functions for Multi-Agent Reinforcement Learning},
-  year     = {2023},
-  number   = {220},
-  pages    = {1--32},
-  volume   = {24},
-  file     = {:Sun2023_DFAC - A Unified Framework for Factorizing Distributional Value Functions for Multi Agent Reinforcement Learning.pdf:PDF:https\://www.jmlr.org/papers/volume24/22-0630/22-0630.pdf},
-  groups   = {Value factorisation},
-  journal  = {Journal of Machine Learning Research},
-  priority = {prio1},
-  url      = {http://jmlr.org/papers/v24/22-0630.html},
+  author     = {Wei-Fang Sun and Cheng-Kuang Lee and Simon See and Chun-Yi Lee},
+  title      = {A Unified Framework for Factorizing Distributional Value Functions for Multi-Agent Reinforcement Learning},
+  year       = {2023},
+  number     = {220},
+  pages      = {1--32},
+  volume     = {24},
+  file       = {:Sun2023_DFAC - A Unified Framework for Factorizing Distributional Value Functions for Multi Agent Reinforcement Learning.pdf:PDF:https\://www.jmlr.org/papers/volume24/22-0630/22-0630.pdf},
+  groups     = {Value factorisation},
+  journal    = {Journal of Machine Learning Research},
+  readstatus = {skimmed},
+  url        = {http://jmlr.org/papers/v24/22-0630.html},
 }
 
 @Article{Papadimitriou1987,
@@ -13174,12 +13151,221 @@ ChatGPT},
   ranking   = {rank4},
 }
 
+@InProceedings{Peng2021_FACMAC,
+  author     = {Peng, Bei and Rashid, Tabish and Schroeder de Witt, Christian and Kamienny, Pierre-Alexandre and Torr, Philip and Boehmer, Wendelin and Whiteson, Shimon},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {FACMAC: Factored Multi-Agent Centralised Policy Gradients},
+  year       = {2021},
+  editor     = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+  pages      = {12208--12221},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {34},
+  file       = {:Peng2021 - FACMAC_ Factored Multi Agent Centralised Policy Gradients.pdf:PDF:https\://proceedings.neurips.cc/paper/2021/file/65b9eea6e1cc6bb9f0cd2a47751a186f-Paper.pdf},
+  groups     = {Value factorisation},
+  ranking    = {rank2},
+  readstatus = {skimmed},
+  url        = {https://proceedings.neurips.cc/paper/2021/hash/65b9eea6e1cc6bb9f0cd2a47751a186f-Abstract.html},
+}
+
+@InProceedings{Wang2022_SHAQ,
+  author    = {Wang, Jianhong and Zhang, Yuan and Gu, Yunjie and Kim, Tae-Kyun},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {SHAQ: Incorporating Shapley Value Theory into Multi-Agent Q-Learning},
+  year      = {2022},
+  editor    = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+  pages     = {5941--5954},
+  publisher = {Curran Associates, Inc.},
+  volume    = {35},
+  groups    = {Shapley value},
+  ranking   = {rank1},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/27985d21f0b751b933d675930aa25022-Paper-Conference.pdf},
+}
+
+@InProceedings{Zhang2024_LLaMAC,
+  author    = {Bin Zhang and Hangyu Mao and Jingqing Ruan and Ying Wen and Yang Li and Shao Zhang and Zhiwei Xu and Dapeng Li and Ziyue Li and Rui Zhao and Lijuan Li and Guoliang Fan},
+  booktitle = {ICLR 2024 Workshop on Large Language Model (LLM) Agents},
+  title     = {Controlling Large Language Model-based Agents for Large-Scale Decision-Making: An Actor-Critic Approach},
+  year      = {2024},
+  file      = {:Zhang2024_LLaMAC - Controlling Large Language Model Based Agents for Large Scale Decision Making_ an Actor Critic Approach.pdf:PDF:https\://openreview.net/pdf?id=QC7tHi7m1H},
+  groups    = {LLM towns},
+  url       = {https://openreview.net/forum?id=QC7tHi7m1H},
+}
+
+@Article{Levine2020,
+  author        = {Levine, Sergey and Kumar, Aviral and Tucker, George and Fu, Justin},
+  title         = {Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems},
+  year          = {2020},
+  month         = may,
+  abstract      = {In this tutorial article, we aim to provide the reader with the conceptual tools needed to get started on research on offline reinforcement learning algorithms: reinforcement learning algorithms that utilize previously collected data, without additional online data collection. Offline reinforcement learning algorithms hold tremendous promise for making it possible to turn large datasets into powerful decision making engines. Effective offline reinforcement learning methods would be able to extract policies with the maximum possible utility out of the available data, thereby allowing automation of a wide range of decision-making domains, from healthcare and education to robotics. However, the limitations of current algorithms make this difficult. We will aim to provide the reader with an understanding of these challenges, particularly in the context of modern deep reinforcement learning methods, and describe some potential solutions that have been explored in recent work to mitigate these challenges, along with recent applications, and a discussion of perspectives on open problems in the field.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2005.01643},
+  eprint        = {2005.01643},
+  file          = {:Levine2020 - Offline Reinforcement Learning_ Tutorial, Review, and Perspectives on Open Problems.pdf:PDF:http\://arxiv.org/pdf/2005.01643v3},
+  groups        = {RL, RL Review},
+  keywords      = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Machine Learning (stat.ML), FOS: Computer and information sciences},
+  primaryclass  = {cs.LG},
+  publisher     = {arXiv},
+  ranking       = {rank4},
+}
+
+@Article{Yang2020_Qatten,
+  author        = {Yang, Yaodong and Hao, Jianye and Liao, Ben and Shao, Kun and Chen, Guangyong and Liu, Wulong and Tang, Hongyao},
+  title         = {Qatten: A General Framework for Cooperative Multiagent Reinforcement Learning},
+  year          = {2020},
+  month         = feb,
+  abstract      = {In many real-world tasks, multiple agents must learn to coordinate with each other given their private observations and limited communication ability. Deep multiagent reinforcement learning (Deep-MARL) algorithms have shown superior performance in such challenging settings. One representative class of work is multiagent value decomposition, which decomposes the global shared multiagent Q-value $Q_{tot}$ into individual Q-values $Q^{i}$ to guide individuals' behaviors, i.e. VDN imposing an additive formation and QMIX adopting a monotonic assumption using an implicit mixing method. However, most of the previous efforts impose certain assumptions between $Q_{tot}$ and $Q^{i}$ and lack theoretical groundings. Besides, they do not explicitly consider the agent-level impact of individuals to the whole system when transforming individual $Q^{i}$s into $Q_{tot}$. In this paper, we theoretically derive a general formula of $Q_{tot}$ in terms of $Q^{i}$, based on which we can naturally implement a multi-head attention formation to approximate $Q_{tot}$, resulting in not only a refined representation of $Q_{tot}$ with an agent-level attention mechanism, but also a tractable maximization algorithm of decentralized policies. Extensive experiments demonstrate that our method outperforms state-of-the-art MARL methods on the widely adopted StarCraft benchmark across different scenarios, and attention analysis is further conducted with valuable insights.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2002.03939},
+  eprint        = {2002.03939},
+  file          = {:Yang2020a - Qatten_ a General Framework for Cooperative Multiagent Reinforcement Learning.pdf:PDF:http\://arxiv.org/pdf/2002.03939v2},
+  groups        = {Value factorisation},
+  keywords      = {Multiagent Systems (cs.MA), FOS: Computer and information sciences},
+  primaryclass  = {cs.MA},
+  publisher     = {arXiv},
+  ranking       = {rank2},
+}
+
+@Article{Gu2022,
+  author        = {Gu, Shangding and Yang, Long and Du, Yali and Chen, Guang and Walter, Florian and Wang, Jun and Knoll, Alois},
+  title         = {A Review of Safe Reinforcement Learning: Methods, Theory and Applications},
+  year          = {2022},
+  month         = may,
+  abstract      = {Reinforcement Learning (RL) has achieved tremendous success in many complex decision-making tasks. However, safety concerns are raised during deploying RL in real-world applications, leading to a growing demand for safe RL algorithms, such as in autonomous driving and robotics scenarios. While safe control has a long history, the study of safe RL algorithms is still in the early stages. To establish a good foundation for future safe RL research, in this paper, we provide a review of safe RL from the perspectives of methods, theories, and applications. Firstly, we review the progress of safe RL from five dimensions and come up with five crucial problems for safe RL being deployed in real-world applications, coined as "2H3W". Secondly, we analyze the algorithm and theory progress from the perspectives of answering the "2H3W" problems. Particularly, the sample complexity of safe RL algorithms is reviewed and discussed, followed by an introduction to the applications and benchmarks of safe RL algorithms. Finally, we open the discussion of the challenging problems in safe RL, hoping to inspire future research on this thread. To advance the study of safe RL algorithms, we release an open-sourced repository containing the implementations of major safe RL algorithms at the link: https://github.com/chauncygu/Safe-Reinforcement-Learning-Baselines.git.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2205.10330},
+  eprint        = {2205.10330},
+  file          = {:Gu2022 - A Review of Safe Reinforcement Learning_ Methods, Theory and Applications.pdf:PDF:http\://arxiv.org/pdf/2205.10330v5},
+  groups        = {Safe RL},
+  keywords      = {Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.AI},
+  publisher     = {arXiv},
+  ranking       = {rank2},
+}
+
+@InProceedings{Xu2023_DAVE,
+  author     = {Xu, Zhiwei and Zhang, Bin and li, dapeng and Zhou, Guangchong and Zhang, Zeren and Fan, Guoliang},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {Dual Self-Awareness Value Decomposition Framework without Individual Global Max for Cooperative MARL},
+  year       = {2023},
+  editor     = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+  pages      = {73898--73918},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {36},
+  groups     = {Value factorisation},
+  readstatus = {skimmed},
+  url        = {https://proceedings.neurips.cc/paper_files/paper/2023/file/e9e140df6de01afb672cb859d203c307-Paper-Conference.pdf},
+}
+
+@Article{Jo2024,
+  author    = {Jo, Yonghyeon and Lee, Sunwoo and Yeom, Junghyuk and Han, Seungyul},
+  journal   = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  title     = {FoX: Formation-Aware Exploration in Multi-Agent Reinforcement Learning},
+  year      = {2024},
+  issn      = {2159-5399},
+  month     = mar,
+  number    = {12},
+  pages     = {12985--12994},
+  volume    = {38},
+  doi       = {10.1609/aaai.v38i12.29196},
+  file      = {:29196-Article Text-33250-1-2-20240324.pdf:PDF},
+  groups    = {Exploration in MARL},
+  publisher = {Association for the Advancement of Artificial Intelligence (AAAI)},
+}
+
+@InProceedings{Lechner2023,
+  author    = {Lechner, Mathias and yin, lianhao and Seyde, Tim and Wang, Tsun-Hsuan Johnson and Xiao, Wei and Hasani, Ramin and Rountree, Joshua and Rus, Daniela},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Gigastep - One Billion Steps per Second Multi-agent Reinforcement Learning},
+  year      = {2023},
+  editor    = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+  pages     = {155--170},
+  publisher = {Curran Associates, Inc.},
+  volume    = {36},
+  file      = {:Lechner2023 - Gigastep One Billion Steps Per Second Multi Agent Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2023/file/00ba06ba5c324efdfb068865ca44cf0b-Paper-Datasets_and_Benchmarks.pdf},
+  groups    = {Multi-Agent Environments},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/file/00ba06ba5c324efdfb068865ca44cf0b-Paper-Datasets_and_Benchmarks.pdf},
+}
+
+@InProceedings{Jiang2022_I2Q,
+  author    = {Jiang, Jiechuan and Lu, Zongqing},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {I2Q: A Fully Decentralized Q-Learning Algorithm},
+  year      = {2022},
+  editor    = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+  pages     = {20469--20481},
+  publisher = {Curran Associates, Inc.},
+  volume    = {35},
+  file      = {:Jiang2022 - I2Q_ a Fully Decentralized Q Learning Algorithm.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2022/file/8078e8c3055303a884ffae2d3ea00338-Paper-Conference.pdf},
+  groups    = {IDQN},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/8078e8c3055303a884ffae2d3ea00338-Abstract-Conference.html},
+}
+
+@Article{Jiang2024_DecentralizedMARL,
+  author        = {Jiang, Jiechuan and Su, Kefan and Lu, Zongqing},
+  title         = {Fully Decentralized Cooperative Multi-Agent Reinforcement Learning: A Survey},
+  year          = {2024},
+  month         = jan,
+  abstract      = {Cooperative multi-agent reinforcement learning is a powerful tool to solve many real-world cooperative tasks, but restrictions of real-world applications may require training the agents in a fully decentralized manner. Due to the lack of information about other agents, it is challenging to derive algorithms that can converge to the optimal joint policy in a fully decentralized setting. Thus, this research area has not been thoroughly studied. In this paper, we seek to systematically review the fully decentralized methods in two settings: maximizing a shared reward of all agents and maximizing the sum of individual rewards of all agents, and discuss open questions and future research directions.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2401.04934},
+  eprint        = {2401.04934},
+  file          = {:Jiang2024 - Fully Decentralized Cooperative Multi Agent Reinforcement Learning_ a Survey.pdf:PDF:http\://arxiv.org/pdf/2401.04934v1},
+  groups        = {Independent Learning},
+  keywords      = {Multiagent Systems (cs.MA), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.MA},
+  priority      = {prio1},
+  publisher     = {arXiv},
+}
+
+@InProceedings{Niu2023,
+  author    = {Niu, Yazhe and PU, YUAN and Yang, Zhenjie and Li, Xueyan and Zhou, Tong and Ren, Jiyuan and Hu, Shuai and Li, Hongsheng and Liu, Yu},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {LightZero: A Unified Benchmark for Monte Carlo Tree Search in General Sequential Decision Scenarios},
+  year      = {2023},
+  editor    = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+  pages     = {37594--37635},
+  publisher = {Curran Associates, Inc.},
+  volume    = {36},
+  file      = {:Niu2023 - LightZero_ a Unified Benchmark for Monte Carlo Tree Search in General Sequential Decision Scenarios.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2023/file/765043fe026f7d704c96cec027f13843-Paper-Datasets_and_Benchmarks.pdf},
+  groups    = {Model based},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/file/765043fe026f7d704c96cec027f13843-Paper-Datasets_and_Benchmarks.pdf},
+}
+
+@InProceedings{Wang2021_DOP,
+  author    = {Yihan Wang and Beining Han and Tonghan Wang and Heng Dong and Chongjie Zhang},
+  booktitle = {International Conference on Learning Representations},
+  title     = {DOP: Off-Policy Multi-Agent Decomposed Policy Gradients},
+  year      = {2021},
+  file      = {:Wang2021_DOP - DOP_ off Policy Multi Agent Decomposed Policy Gradients.pdf:PDF:https\://openreview.net/pdf?id=6FqKiVAdI3Y},
+  groups    = {Multi-agent RL},
+  ranking   = {rank2},
+  url       = {https://openreview.net/forum?id=6FqKiVAdI3Y},
+}
+
+@InProceedings{Zhou2022_PAC,
+  author    = {Zhou, Hanhan and Lan, Tian and Aggarwal, Vaneet},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {PAC: Assisted Value Factorization with Counterfactual Predictions in Multi-Agent Reinforcement Learning},
+  year      = {2022},
+  editor    = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+  pages     = {15757--15769},
+  publisher = {Curran Associates, Inc.},
+  volume    = {35},
+  file      = {:Zhou2022a - PAC_ Assisted Value Factorization with Counterfactual Predictions in Multi Agent Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2022/file/65338cfb603d4871a2c38e53a3e039c9-Paper-Conference.pdf},
+  groups    = {Value factorisation},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/65338cfb603d4871a2c38e53a3e039c9-Paper-Conference.pdf},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
 1 StaticGroup:Artificial Intelligence\;0\;1\;\;\;\;;
-1 StaticGroup:Biology\;0\;1\;\;\;\;;
+1 StaticGroup:Biology\;0\;0\;\;\;\;;
 2 StaticGroup:Conciousness\;0\;1\;\;\;\;;
 2 StaticGroup:Evolution\;0\;1\;\;\;\;;
 1 StaticGroup:Data Augmentation\;0\;0\;0x8a8a8aff\;\;\;;
@@ -13187,7 +13373,7 @@ ChatGPT},
 1 StaticGroup:Evolution Strategy\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Evolutionary RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language\;2\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language\;2\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language generation with RL\;0\;0\;0x8a8a8aff\;\;\;;
@@ -13200,7 +13386,7 @@ ChatGPT},
 2 StaticGroup:Language origins and evolution\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Symbol grounding\;0\;1\;0x7c7c7cff\;\;\;;
 2 StaticGroup:Theory of Communication\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Machine Learning\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Machine Learning\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Computer Vision\;0\;0\;\;\;\;;
 2 StaticGroup:Confidence\;0\;1\;0x7c7c7cff\;\;\;;
 2 StaticGroup:Contrastive Learning\;0\;0\;0x8a8a8aff\;\;\;;
@@ -13257,6 +13443,7 @@ ChatGPT},
 2 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:ZPD\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:RL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:RL Review\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Exploration\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Environments\;0\;0\;0x8a8a8aff\;\;\;;
@@ -13269,12 +13456,12 @@ ChatGPT},
 3 StaticGroup:Diversity\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Random Exploration\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Visitation count\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Language-Augmented RL\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Language-Augmented RL\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:LA Reward shaping\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model based\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Policy based\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Actor Critic\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:DDPG\;0\;0\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Soft Actor Critic\;0\;1\;0x8a8a8aff\;\;\;;
@@ -13292,7 +13479,7 @@ ChatGPT},
 2 StaticGroup:Transformers in RL\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Reward Shaping\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Implementation tricks in RL\;0\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Autonomous Driving\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
