@@ -170,7 +170,7 @@
   abstract   = {In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent's ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: VizDoom and Super Mario Bros. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch. Demo video and code available at https://pathak22.github.io/noreward-rl/},
   comment    = {Intrinsinc Curiosity Module},
   file       = {:Pathak2017 - Curiosity Driven Exploration by Self Supervised Prediction.pdf:PDF},
-  groups     = {Curiosity, Intrinsic goals},
+  groups     = {Curiosity, Intrinsic Motivation},
   journal    = {Proceedings of the 34th International Conference on Machine Learning},
   ranking    = {rank4},
   readstatus = {read},
@@ -186,7 +186,7 @@
   archiveprefix = {arXiv},
   eprint        = {1810.12894},
   file          = {:Burda2018 - Exploration by Random Network Distillation.pdf:PDF},
-  groups        = {Curiosity, Intrinsic goals},
+  groups        = {Curiosity, Intrinsic Motivation},
   keywords      = {cs.LG, cs.AI, stat.ML},
   primaryclass  = {cs.LG},
   ranking       = {rank4},
@@ -273,7 +273,7 @@
 	After learning the world model through exploration, adapts on tasks in zero-shot (only imagination) or few-shot (imagination and few iteraction)},
   eprint        = {2005.05960},
   file          = {:Sekar2020 - Planning to Explore Via Self Supervised World Models.pdf:PDF},
-  groups        = {Disagreement, Model-based exploration, Model based, Zero-shot generalisation, Planning to Explore, Intrinsic goals},
+  groups        = {Disagreement, Model-based exploration, Model based, Zero-shot generalisation, Planning to Explore, Intrinsic Motivation},
   journal       = {Proceedings of the 37th International Conference on Machine Learning},
   keywords      = {cs.LG, cs.AI, cs.CV, cs.NE, cs.RO, stat.ML},
   primaryclass  = {cs.LG},
@@ -295,7 +295,7 @@
   archiveprefix = {arXiv},
   eprint        = {1906.04161},
   file          = {:Pathak2019 - Self Supervised Exploration Via Disagreement.pdf:PDF},
-  groups        = {Disagreement, Intrinsic goals},
+  groups        = {Disagreement, Intrinsic Motivation},
   keywords      = {cs.LG, cs.AI, cs.CV, cs.RO, stat.ML},
   primaryclass  = {cs.LG},
   ranking       = {rank2},
@@ -344,7 +344,7 @@
   archiveprefix = {arXiv},
   eprint        = {1802.06070},
   file          = {:Eysenbach2018 - Diversity Is All You Need_ Learning Skills without a Reward Function.pdf:PDF},
-  groups        = {Diversity, Intrinsic goals},
+  groups        = {Diversity, Intrinsic Motivation},
   keywords      = {cs.AI, cs.RO},
   primaryclass  = {cs.AI},
   readstatus    = {skimmed},
@@ -357,7 +357,7 @@
   abstract   = {Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups. Game-play videos and code are at https://pathak22.github.io/large-scale-curiosity/},
   booktitle  = {International Conference on Learning Representations},
   file       = {:Burda2018a - Large Scale Study of Curiosity Driven Learning.pdf:PDF},
-  groups     = {Curiosity, Intrinsic goals},
+  groups     = {Curiosity, Intrinsic Motivation},
   ranking    = {rank4},
   readstatus = {read},
   url        = {https://openreview.net/forum?id=rJNwDjAqYX},
@@ -372,7 +372,7 @@
   archiveprefix = {arXiv},
   eprint        = {1703.01732},
   file          = {:Achiam2017 - Surprise Based Intrinsic Motivation for Deep Reinforcement Learning.pdf:PDF},
-  groups        = {Curiosity, Intrinsic goals},
+  groups        = {Curiosity, Intrinsic Motivation},
   keywords      = {cs.LG},
   primaryclass  = {cs.LG},
   readstatus    = {skimmed},
@@ -6830,7 +6830,7 @@ the agent takes as input the current state and goal, the value function depends 
   title     = {Learning with AMIGo: Adversarially Motivated Intrinsic Goals},
   year      = {2021},
   file      = {:campero2021learning - Learning with AMIG_o_ Adversarially Motivated Intrinsic Goals.pdf:PDF},
-  groups    = {Adversary Guidance, Intrinsic goals},
+  groups    = {Adversary Guidance, Intrinsic Motivation},
   ranking   = {rank2},
   url       = {https://openreview.net/forum?id=ETBc_MIMgoX},
 }
@@ -6845,7 +6845,7 @@ the agent takes as input the current state and goal, the value function depends 
   publisher  = {Curran Associates, Inc.},
   volume     = {34},
   file       = {:NEURIPS2021_d428d070 - NovelD_ a Simple yet Effective Exploration Criterion.pdf:PDF},
-  groups     = {Curiosity, Intrinsic goals},
+  groups     = {Curiosity, Intrinsic Motivation},
   readstatus = {read},
   url        = {https://proceedings.neurips.cc/paper/2021/file/d428d070622e0f4363fceae11f4a3576-Paper.pdf},
 }
@@ -7049,7 +7049,7 @@ the agent takes as input the current state and goal, the value function depends 
   author     = {Gary Lupyan},
   booktitle  = {The Psychology of Learning and Motivation},
   publisher  = {Academic Press},
-  title      = {Chapter Seven - What Do Words Do? Toward a Theory of Language-Augmented Thought},
+  title      = {What Do Words Do? Toward a Theory of Language-Augmented Thought},
   year       = {2012},
   editor     = {Brian H. Ross},
   pages      = {255-297},
@@ -7058,7 +7058,7 @@ the agent takes as input the current state and goal, the value function depends 
   abstract   = {Much of human communication involves language—a system of communication qualitatively different from those used by other animals. In this chapter, I focus on a fundamental property of language: referring to objects with labels (e.g., using the word “chair” to refer to a chair). What consequences does such labeling have on cognitive and perceptual processes? I review evidence indicating that verbal labels do not simply point or refer to nonlinguistic concepts, but rather actively modulate object representations that are brought on-line during “nonverbal” tasks. Using words to refer to concrete objects affects the learning of new categories, memory for and reasoning about familiar object categories, and even basic visual processing. Object representations activated by verbal means appear to be different, and specifically, more categorical, than ostensibly the same object representations activated by nonverbal means. A connectionist model of “language augmented thought” provides a computational account of how labels may augment cognitive and perceptual processing.},
   doi        = {https://doi.org/10.1016/B978-0-12-394293-7.00007-8},
   file       = {:LUPYAN2012255 - Chapter Seven What Do Words Do_ toward a Theory of Language Augmented Thought.pdf:PDF},
-  groups     = {Language},
+  groups     = {Language, Developmental psychology},
   issn       = {0079-7421},
   ranking    = {rank2},
   readstatus = {skimmed},
@@ -7650,8 +7650,9 @@ Multi-Explore},
   abstract = {Cognitive Robotics can be defined as the study of cognitive phenomena by their modeling in physical artifacts such as robots. This is a very lively and fascinating field which has already given fundamental contributions to our understanding of natural cognition. Nonetheless, robotics has to date addressed mainly very basic, low-level cognitive phenomena like sensory-motor coordination, perception, and navigation, and it is not clear how the current approach might scale up to explain high-level human cognition. In this paper we argue that a promising way to do that is to merge current ideas and methods of ‘embodied cognition’ with the Russian tradition of theoretical psychology which views language not only as a communication system but also as a cognitive tool, that is by developing a Vygotskyan cognitive robotics. We substantiate this idea by discussing several domains in which language can improve basic cognitive abilities and permit the development of high-level cognition: learning, categorization, abstraction, memory, voluntary control, and mental life.},
   doi      = {https://doi.org/10.1016/j.newideapsych.2009.07.001},
   file     = {:MIROLLI2011298 - Towards a Vygotskyan Cognitive Robotics_ the Role of Language As a Cognitive Tool.pdf:PDF},
-  groups   = {Language-Augmented RL},
+  groups   = {Language-Augmented RL, Language},
   keywords = {Robotics, Cognition, Language, Vygotsky, Categorization, Learning},
+  ranking  = {rank2},
   url      = {https://www.sciencedirect.com/science/article/pii/S0732118X09000348},
 }
 
@@ -7702,7 +7703,7 @@ Multi-Explore},
   month       = Aug,
   pages       = {2950--2956},
   file        = {:seurin_hal-03259315 - Don't Do What Doesn't Matter_ Intrinsic Motivation with Action Usefulness.pdf:PDF},
-  groups      = {Intrinsic goals},
+  groups      = {Intrinsic Motivation},
   hal_id      = {hal-03259315},
   hal_version = {v1},
   pdf         = {https://hal.archives-ouvertes.fr/hal-03259315/file/Rare_Actions_Matter_IJCAI.pdf},
@@ -7722,7 +7723,7 @@ Multi-Explore},
   publisher  = {International Joint Conferences on Artificial Intelligence Organization},
   doi        = {10.24963/ijcai.2020/390},
   file       = {:ijcai2020p390 - Reward Prediction Error As an Exploration Objective in Deep RL.pdf:PDF},
-  groups     = {Adversary Guidance, Intrinsic goals},
+  groups     = {Adversary Guidance, Intrinsic Motivation},
   ranking    = {rank4},
   readstatus = {read},
   url        = {https://doi.org/10.24963/ijcai.2020/390},
@@ -7741,7 +7742,7 @@ Multi-Explore},
   volume    = {80},
   abstract  = {In continuous action domains, standard deep reinforcement learning algorithms like DDPG suffer from inefficient exploration when facing sparse or deceptive reward problems. Conversely, evolutionary and developmental methods focusing on exploration like Novelty Search, Quality-Diversity or Goal Exploration Processes explore more robustly but are less efficient at fine-tuning policies using gradient-descent. In this paper, we present the GEP-PG approach, taking the best of both worlds by sequentially combining a Goal Exploration Process and two variants of DDPG . We study the learning performance of these components and their combination on a low dimensional deceptive reward problem and on the larger Half-Cheetah benchmark. We show that DDPG fails on the former and that GEP-PG improves over the best DDPG variant in both environments.},
   file      = {:pmlr-v80-colas18a - GEP PG_ Decoupling Exploration and Exploitation in Deep Reinforcement Learning Algorithms.pdf:PDF},
-  groups    = {Intrinsic goals},
+  groups    = {Intrinsic Motivation},
   pdf       = {http://proceedings.mlr.press/v80/colas18a/colas18a.pdf},
   url       = {https://proceedings.mlr.press/v80/colas18a.html},
 }
@@ -7845,7 +7846,7 @@ Multi-Explore},
   archiveprefix = {arXiv},
   eprint        = {2205.11184},
   file          = {:Andres2022 - An Evaluation Study of Intrinsic Motivation Techniques Applied to Reinforcement Learning Over Hard Exploration Environments (1).pdf:PDF},
-  groups        = {Intrinsic goals},
+  groups        = {Intrinsic Motivation},
   keywords      = {cs.LG, cs.AI},
   primaryclass  = {cs.LG},
   readstatus    = {read},
@@ -7873,7 +7874,7 @@ Multi-Explore},
   title     = {On Bonus Based Exploration Methods In The Arcade Learning Environment},
   year      = {2020},
   file      = {:Taiga2020On - On Bonus Based Exploration Methods in the Arcade Learning Environment.pdf:PDF},
-  groups    = {Intrinsic goals},
+  groups    = {Intrinsic Motivation},
   ranking   = {rank5},
   url       = {https://openreview.net/forum?id=BJewlyStDr},
 }
@@ -7883,7 +7884,7 @@ Multi-Explore},
   title      = {Divide and Explore: Multi-Agent Separate Exploration with Shared Intrinsic Motivations},
   year       = {2022},
   file       = {:jing2022divide - Divide and Explore_ Multi Agent Separate Exploration with Shared Intrinsic Motivations.pdf:PDF},
-  groups     = {Intrinsic goals},
+  groups     = {Intrinsic Motivation},
   readstatus = {skimmed},
   url        = {https://openreview.net/forum?id=NgmcJ66xQz_},
 }
@@ -8007,7 +8008,7 @@ Multi-Explore},
   publisher = {Curran Associates, Inc.},
   volume    = {28},
   file      = {:NIPS2015_e0040614 - Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning.pdf:PDF},
-  groups    = {Intrinsic goals},
+  groups    = {Intrinsic Motivation},
   ranking   = {rank3},
   url       = {https://proceedings.neurips.cc/paper/2015/file/e00406144c1e7e35240afed70f34166a-Paper.pdf},
 }
@@ -8139,7 +8140,7 @@ Multi-Explore},
   abstract = {Intrinsic motivation, centrally involved in spontaneous exploration and curiosity, is a crucial concept in developmental psychology. It has been argued to be a crucial mechanism for open-ended cognitive development in humans, and as such has gathered a growing interest from developmental roboticists in the recent years. The goal of this paper is threefold. First, it provides a synthesis of the different approaches of intrinsic motivation in psychology. Second, by interpreting these approaches in a computational reinforcement learning framework, we argue that they are not operational and even sometimes inconsistent. Third, we set the ground for a systematic operational study of intrinsic motivation by presenting a formal typology of possible computational approaches. This typology is partly based on existing computational models, but also presents new ways of conceptualizing intrinsic motivation. We argue that this kind of computational typology might be useful for opening new avenues for research both in psychology and developmental robotics.},
   doi      = {10.3389/neuro.12.006.2007},
   file     = {:14505970.pdf:PDF},
-  groups   = {Intrinsic goals},
+  groups   = {Intrinsic Motivation},
   ranking  = {rank3},
 }
 
@@ -8153,7 +8154,7 @@ Multi-Explore},
   volume  = {11},
   doi     = {10.1109/TEVC.2006.890271},
   file    = {:4141061 - Intrinsic Motivation Systems for Autonomous Mental Development (1).pdf:PDF},
-  groups  = {Intrinsic goals},
+  groups  = {Intrinsic Motivation},
   ranking = {rank4},
 }
 
@@ -8189,7 +8190,7 @@ Multi-Explore},
   year      = {1991},
   pages     = {222--227},
   file      = {:Schmidhuber1991 - A Possibility for Implementing Curiosity and Boredom in Model Building Neural Controllers.pdf:PDF},
-  groups    = {Intrinsic goals},
+  groups    = {Intrinsic Motivation},
   ranking   = {rank3},
 }
 
@@ -8199,7 +8200,7 @@ Multi-Explore},
   title     = {{LECO}: Learnable Episodic Count for Task-Specific Intrinsic Reward},
   year      = {2022},
   editor    = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
-  groups    = {Intrinsic goals},
+  groups    = {Intrinsic Motivation},
   url       = {https://openreview.net/forum?id=FJ42JCNNUYT},
 }
 
@@ -8216,7 +8217,7 @@ Multi-Explore},
   volume     = {205},
   abstract   = {Recent works have shown how the reasoning capabilities of Large Language Models (LLMs) can be applied to domains beyond natural language processing, such as planning and interaction for robots. These embodied problems require an agent to understand many semantic aspects of the world: the repertoire of skills available, how these skills influence the world, and how changes to the world map back to the language. LLMs planning in embodied environments need to consider not just what skills to do, but also how and when to do them - answers that change over time in response to the agent’s own choices. In this work, we investigate to what extent LLMs used in such embodied contexts can reason over sources of feedback provided through natural language, without any additional training. We propose that by leveraging environment feedback, LLMs are able to form an inner monologue that allows them to more richly process and plan in robotic control scenarios. We investigate a variety of sources of feedback, such as success detection, scene description, and human interaction. We find that closed-loop language feedback significantly improves high level instruction completion on three domains, including simulated and real table top rearrangement tasks and long-horizon mobile manipulation tasks in a kitchen environment in the real world.},
   file       = {:Huang2022_InnerMonol - Inner Monologue_ Embodied Reasoning through Planning with Language Models.pdf:PDF},
-  groups     = {Language-Augmented RL},
+  groups     = {Language-Augmented Robotic Control},
   pdf        = {https://proceedings.mlr.press/v205/huang23c/huang23c.pdf},
   ranking    = {rank3},
   readstatus = {read},
@@ -8441,7 +8442,7 @@ Multi-Explore},
   title     = {Reward Uncertainty for Exploration in Preference-based Reinforcement Learning},
   year      = {2022},
   file      = {:liang2022reward - Reward Uncertainty for Exploration in Preference Based Reinforcement Learning.pdf:PDF},
-  groups    = {RLHF, Exploration, Intrinsic goals},
+  groups    = {RLHF, Exploration, Intrinsic Motivation},
   ranking   = {rank1},
   url       = {https://openreview.net/forum?id=OWZVD-l-ZrC},
 }
@@ -8488,20 +8489,20 @@ Multi-Explore},
   url       = {https://proceedings.neurips.cc/paper/2019/file/f4d0e2e7fc057a58f7ca4a391f01940a-Paper.pdf},
 }
 
-@InProceedings{Ruis2020,
-  author    = {Ruis, Laura and Andreas, Jacob and Baroni, Marco and Bouchacourt, Diane and Lake, Brenden M},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {A Benchmark for Systematic Generalization in Grounded Language Understanding},
-  year      = {2020},
-  editor    = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
-  pages     = {19861--19872},
-  publisher = {Curran Associates, Inc.},
-  volume    = {33},
-  file      = {:Ruis2020 - A Benchmark for Systematic Generalization in Grounded Language Understanding.pdf:PDF},
-  groups    = {Language},
-  priority  = {prio1},
-  ranking   = {rank2},
-  url       = {https://proceedings.neurips.cc/paper/2020/file/e5a90182cc81e12ab5e72d66e0b46fe3-Paper.pdf},
+@InProceedings{Ruis2020_gSCAN,
+  author     = {Ruis, Laura and Andreas, Jacob and Baroni, Marco and Bouchacourt, Diane and Lake, Brenden M},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {A Benchmark for Systematic Generalization in Grounded Language Understanding},
+  year       = {2020},
+  editor     = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+  pages      = {19861--19872},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {33},
+  file       = {:Ruis2020 - A Benchmark for Systematic Generalization in Grounded Language Understanding.pdf:PDF},
+  groups     = {Language, LA-RL Environments},
+  ranking    = {rank2},
+  readstatus = {skimmed},
+  url        = {https://proceedings.neurips.cc/paper/2020/file/e5a90182cc81e12ab5e72d66e0b46fe3-Paper.pdf},
 }
 
 @Article{Lake2021,
@@ -8750,7 +8751,7 @@ Multi-Explore},
   url        = {https://proceedings.neurips.cc/paper_files/paper/2020/file/72ab54f9b8c11fae5b923d7f854ef06a-Paper.pdf},
 }
 
-@Article{Pesce2020,
+@Article{Pesce2020_MDMADDPG,
   author     = {Emanuele Pesce and Giovanni Montana},
   journal    = {Machine Learning},
   title      = {Improving coordination in small-scale multi-agent deep reinforcement learning through memory-driven communication},
@@ -8842,27 +8843,10 @@ Multi-Explore},
   doi           = {10.48550/ARXIV.2210.01911},
   eprint        = {2210.01911},
   file          = {:Mees2022 - Grounding Language with Visual Affordances Over Unstructured Data.pdf:PDF},
-  groups        = {Language-Augmented RL},
+  groups        = {Language-Augmented Robotic Control},
   keywords      = {Robotics (cs.RO), Artificial Intelligence (cs.AI), Computation and Language (cs.CL), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences},
   primaryclass  = {cs.RO},
-}
-
-@InProceedings{Jain2023,
-  author        = {Jain, Kanishk and Chhangani, Varun and Tiwari, Amogh and Krishna, K. Madhava and Gandhi, Vineet},
-  booktitle     = {ICRA 2023},
-  title         = {Ground then Navigate: Language-guided Navigation in Dynamic Scenes},
-  year          = {2023},
-  month         = sep,
-  publisher     = {arXiv},
-  abstract      = {We investigate the Vision-and-Language Navigation (VLN) problem in the context of autonomous driving in outdoor settings. We solve the problem by explicitly grounding the navigable regions corresponding to the textual command. At each timestamp, the model predicts a segmentation mask corresponding to the intermediate or the final navigable region. Our work contrasts with existing efforts in VLN, which pose this task as a node selection problem, given a discrete connected graph corresponding to the environment. We do not assume the availability of such a discretised map. Our work moves towards continuity in action space, provides interpretability through visual feedback and allows VLN on commands requiring finer manoeuvres like "park between the two cars". Furthermore, we propose a novel meta-dataset CARLA-NAV to allow efficient training and validation. The dataset comprises pre-recorded training sequences and a live environment for validation and testing. We provide extensive qualitative and quantitive empirical results to validate the efficacy of the proposed approach.},
-  archiveprefix = {arXiv},
-  copyright     = {Creative Commons Attribution 4.0 International},
-  doi           = {10.48550/ARXIV.2209.11972},
-  eprint        = {2209.11972},
-  file          = {:Jain2022 - Ground Then Navigate_ Language Guided Navigation in Dynamic Scenes.pdf:PDF},
-  groups        = {Language-Augmented RL},
-  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
-  primaryclass  = {cs.CV},
+  ranking       = {rank1},
 }
 
 @InProceedings{Karten2023_IMGS-MAC,
@@ -8965,22 +8949,22 @@ Multi-Explore},
   url       = {https://dl.acm.org/doi/abs/10.5555/3463952.3464010},
 }
 
-@Article{Weir2022,
-  author        = {Weir, Nathaniel and Yuan, Xingdi and Côté, Marc-Alexandre and Hausknecht, Matthew and Laroche, Romain and Momennejad, Ida and Van Seijen, Harm and Van Durme, Benjamin},
-  title         = {One-Shot Learning from a Demonstration with Hierarchical Latent Language},
-  year          = {2022},
-  month         = mar,
-  abstract      = {Humans have the capability, aided by the expressive compositionality of their language, to learn quickly by demonstration. They are able to describe unseen task-performing procedures and generalize their execution to other contexts. In this work, we introduce DescribeWorld, an environment designed to test this sort of generalization skill in grounded agents, where tasks are linguistically and procedurally composed of elementary concepts. The agent observes a single task demonstration in a Minecraft-like grid world, and is then asked to carry out the same task in a new map. To enable such a level of generalization, we propose a neural agent infused with hierarchical latent language--both at the level of task inference and subtask planning. Our agent first generates a textual description of the demonstrated unseen task, then leverages this description to replicate it. Through multiple evaluation scenarios and a suite of generalization tests, we find that agents that perform text-based inference are better equipped for the challenge under a random split of tasks.},
-  archiveprefix = {arXiv},
-  copyright     = {arXiv.org perpetual, non-exclusive license},
-  doi           = {10.48550/ARXIV.2203.04806},
-  eprint        = {2203.04806},
-  file          = {:Weir2022 - One Shot Learning from a Demonstration with Hierarchical Latent Language.pdf:PDF},
-  groups        = {Language-Augmented RL},
-  keywords      = {Computation and Language (cs.CL), FOS: Computer and information sciences},
-  primaryclass  = {cs.CL},
-  priority      = {prio3},
-  publisher     = {arXiv},
+@InProceedings{Weir2022,
+  author    = {Weir, Nathaniel and Yuan, Xingdi and Côté, Marc-Alexandre and Hausknecht, Matthew and Laroche, Romain and Momennejad, Ida and Van Seijen, Harm and Van Durme, Benjamin},
+  booktitle = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
+  title     = {One-Shot Learning from a Demonstration with Hierarchical Latent Language},
+  year      = {2022},
+  address   = {Richland, SC},
+  pages     = {2388–2390},
+  publisher = {International Foundation for Autonomous Agents and Multiagent Systems},
+  series    = {AAMAS '23},
+  abstract  = {Humans have the capability, aided by the expressive compositionality of their language, to learn quickly by demonstration. They are able to describe unseen task-performing procedures and generalize their execution to other contexts. In this work, we introduce DescribeWorld, an environment designed to test this sort of generalization skill in grounded agents, where tasks are linguistically and procedurally composed of elementary concepts. The agent observes a single task demonstration in a Minecraft-like grid world, and is then asked to carry out the same task in a new map. To enable such a level of generalization, we propose a neural agent infused with hierarchical latent language--both at the level of task inference and subtask planning. Our agent first generates a textual description of the demonstrated unseen task, then leverages this description to replicate it. Through multiple evaluation scenarios and a suite of generalization tests, we find that agents that perform text-based inference are better equipped for the challenge under a random split of tasks.},
+  file      = {:Weir2022 - One Shot Learning from a Demonstration with Hierarchical Latent Language.pdf:PDF},
+  groups    = {Language-Augmented RL, Intructions, LA-RL Environments, Task Descriptions},
+  isbn      = {9781450394321},
+  location  = {London, United Kingdom},
+  priority  = {prio3},
+  url       = {https://dl.acm.org/doi/abs/10.5555/3545946.3598943},
 }
 
 @Article{Haarnoja2024_Soccer,
@@ -9126,7 +9110,7 @@ ChatGPT},
   readstatus    = {skimmed},
 }
 
-@Article{Lin2023,
+@Article{Lin2023_Dynalang,
   author        = {Lin, Jessy and Du, Yuqing and Watkins, Olivia and Hafner, Danijar and Abbeel, Pieter and Klein, Dan and Dragan, Anca},
   title         = {Learning to Model the World with Language},
   year          = {2023},
@@ -9137,11 +9121,11 @@ ChatGPT},
   doi           = {10.48550/ARXIV.2308.01399},
   eprint        = {2308.01399},
   file          = {:Lin2023 - Learning to Model the World with Language.pdf:PDF},
-  groups        = {Language-Augmented RL},
+  groups        = {Language-Augmented RL, Intructions, State Descriptions},
   keywords      = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences},
   primaryclass  = {cs.CL},
-  priority      = {prio1},
   publisher     = {arXiv},
+  readstatus    = {skimmed},
 }
 
 @Article{Brohan2023,
@@ -9149,8 +9133,9 @@ ChatGPT},
   title    = {RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control},
   year     = {2023},
   file     = {:Brohan2023 - RT 2_ Vision Language Action Models Transfer Web Knowledge to Robotic Control.pdf:PDF},
-  groups   = {Visual-Language Learning},
+  groups   = {Visual-Language Learning, Language-Augmented Robotic Control},
   priority = {prio1},
+  ranking  = {rank3},
 }
 
 @Article{Wu2023_AutoGen,
@@ -9180,7 +9165,7 @@ ChatGPT},
   publisher   = {{PMLR}},
   volume      = {202},
   file        = {:Carta2023 - Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning.pdf:PDF},
-  groups      = {Language-Augmented RL, Agent-based LLMs},
+  groups      = {Language-Augmented RL, Agent-based LLMs, Actions, State Descriptions},
   hal_id      = {hal-03970122},
   hal_version = {v3},
   pdf         = {https://hal.science/hal-03970122v3/file/extended_version.pdf},
@@ -9189,7 +9174,7 @@ ChatGPT},
   url         = {https://hal.science/hal-03970122},
 }
 
-@Article{Ahn2022,
+@Article{Ahn2022_SayCan,
   author        = {Ahn, Michael and Brohan, Anthony and Brown, Noah and Chebotar, Yevgen and Cortes, Omar and David, Byron and Finn, Chelsea and Fu, Chuyuan and Gopalakrishnan, Keerthana and Hausman, Karol and Herzog, Alex and Ho, Daniel and Hsu, Jasmine and Ibarz, Julian and Ichter, Brian and Irpan, Alex and Jang, Eric and Ruano, Rosario Jauregui and Jeffrey, Kyle and Jesmonth, Sally and Joshi, Nikhil J and Julian, Ryan and Kalashnikov, Dmitry and Kuang, Yuheng and Lee, Kuang-Huei and Levine, Sergey and Lu, Yao and Luu, Linda and Parada, Carolina and Pastor, Peter and Quiambao, Jornell and Rao, Kanishka and Rettinghouse, Jarek and Reyes, Diego and Sermanet, Pierre and Sievers, Nicolas and Tan, Clayton and Toshev, Alexander and Vanhoucke, Vincent and Xia, Fei and Xiao, Ted and Xu, Peng and Xu, Sichun and Yan, Mengyuan and Zeng, Andy},
   title         = {Do As I Can, Not As I Say: Grounding Language in Robotic Affordances},
   year          = {2022},
@@ -9200,7 +9185,7 @@ ChatGPT},
   doi           = {10.48550/ARXIV.2204.01691},
   eprint        = {2204.01691},
   file          = {:Ahn2022 - Do As I Can, Not As I Say_ Grounding Language in Robotic Affordances.pdf:PDF},
-  groups        = {Language-Augmented RL},
+  groups        = {Language-Augmented RL, Intructions},
   keywords      = {Robotics (cs.RO), Computation and Language (cs.CL), Machine Learning (cs.LG), FOS: Computer and information sciences},
   primaryclass  = {cs.RO},
   publisher     = {arXiv},
@@ -9214,12 +9199,12 @@ ChatGPT},
   title      = {Contrastive Language, Action, and State Pre-training for Robot Learning},
   year       = {2023},
   file       = {:Rana2023_CLASP - Contrastive Language, Action, and State Pre Training for Robot Learning.pdf:PDF},
-  groups     = {Language-Augmented RL},
+  groups     = {Language-Augmented RL, State Descriptions},
   readstatus = {read},
   url        = {https://openreview.net/forum?id=sxKR6zhBDH},
 }
 
-@Article{Karamcheti2023,
+@Article{Karamcheti2023_Voltron,
   author        = {Karamcheti, Siddharth and Nair, Suraj and Chen, Annie S. and Kollar, Thomas and Finn, Chelsea and Sadigh, Dorsa and Liang, Percy},
   title         = {Language-Driven Representation Learning for Robotics},
   year          = {2023},
@@ -9230,10 +9215,11 @@ ChatGPT},
   doi           = {10.48550/ARXIV.2302.12766},
   eprint        = {2302.12766},
   file          = {:Karamcheti2023 - Language Driven Representation Learning for Robotics.pdf:PDF},
-  groups        = {Language-Augmented RL},
+  groups        = {Visual-Language Learning, Language-Augmented Robotic Control},
   keywords      = {Robotics (cs.RO), Artificial Intelligence (cs.AI), Computation and Language (cs.CL), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences},
   primaryclass  = {cs.RO},
   publisher     = {arXiv},
+  ranking       = {rank2},
   readstatus    = {read},
 }
 
@@ -9319,7 +9305,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2019/file/757f843a169cc678064d9530d12a1881-Paper.pdf},
 }
 
-@Article{Huang2023,
+@Article{Huang2023_GroundedDecoding,
   author        = {Huang, Wenlong and Xia, Fei and Shah, Dhruv and Driess, Danny and Zeng, Andy and Lu, Yao and Florence, Pete and Mordatch, Igor and Levine, Sergey and Hausman, Karol and Ichter, Brian},
   title         = {Grounded Decoding: Guiding Text Generation with Grounded Models for Embodied Agents},
   year          = {2023},
@@ -9330,11 +9316,12 @@ ChatGPT},
   doi           = {10.48550/ARXIV.2303.00855},
   eprint        = {2303.00855},
   file          = {:Huang2023 - Grounded Decoding_ Guiding Text Generation with Grounded Models for Embodied Agents.pdf:PDF},
-  groups        = {Language-Augmented RL},
+  groups        = {Language-Augmented RL, Actions, Intructions},
   keywords      = {Robotics (cs.RO), Artificial Intelligence (cs.AI), Computation and Language (cs.CL), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences},
   primaryclass  = {cs.RO},
   publisher     = {arXiv},
   ranking       = {rank2},
+  readstatus    = {read},
 }
 
 @Article{Montague2012,
@@ -9825,18 +9812,19 @@ ChatGPT},
 }
 
 @InProceedings{Sumers2022a,
-  author    = {Sumers, Theodore and Hawkins, Robert and Ho, Mark K and Griffiths, Tom and Hadfield-Menell, Dylan},
-  booktitle = {Advances in Neural Information Processing Systems},
-  title     = {How to talk so AI will learn: Instructions, descriptions, and autonomy},
-  year      = {2022},
-  editor    = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
-  pages     = {34762--34775},
-  publisher = {Curran Associates, Inc.},
-  volume    = {35},
-  file      = {:Sumers2022a - How to Talk so AI Will Learn_ Instructions, Descriptions, and Autonomy.pdf:PDF},
-  groups    = {Language-Augmented RL},
-  priority  = {prio1},
-  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/e0cfde0ff720fa9674bb976e7f1b99d4-Paper-Conference.pdf},
+  author     = {Sumers, Theodore and Hawkins, Robert and Ho, Mark K and Griffiths, Tom and Hadfield-Menell, Dylan},
+  booktitle  = {Advances in Neural Information Processing Systems},
+  title      = {How to talk so AI will learn: Instructions, descriptions, and autonomy},
+  year       = {2022},
+  editor     = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+  pages      = {34762--34775},
+  publisher  = {Curran Associates, Inc.},
+  volume     = {35},
+  file       = {:Sumers2022a - How to Talk so AI Will Learn_ Instructions, Descriptions, and Autonomy.pdf:PDF},
+  groups     = {Language-Augmented RL, Intructions, State Descriptions, Task Descriptions},
+  ranking    = {rank1},
+  readstatus = {skimmed},
+  url        = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/e0cfde0ff720fa9674bb976e7f1b99d4-Abstract-Conference.html},
 }
 
 @Article{Sigaud2023,
@@ -10109,7 +10097,8 @@ ChatGPT},
   groups     = {Language-Augmented RL},
   priority   = {prio1},
   publisher  = {Springer Science and Business Media LLC},
-  readstatus = {read},
+  ranking    = {rank1},
+  readstatus = {skimmed},
   refid      = {Colas2022},
   url        = {https://doi.org/10.1038/s42256-022-00591-4},
 }
@@ -10722,6 +10711,7 @@ ChatGPT},
   keywords      = {Machine Learning (cs.LG), FOS: Computer and information sciences},
   primaryclass  = {cs.LG},
   publisher     = {arXiv},
+  readstatus    = {skimmed},
 }
 
 @PhdThesis{Lin1992_ExperienceReplay,
@@ -10778,7 +10768,7 @@ ChatGPT},
   file      = {:Hill2021_Grounded - Grounded Language Learning Fast and Slow.pdf:PDF:https\://openreview.net/pdf?id=wpSWuz_hyqA},
   groups    = {Language-Augmented RL},
   priority  = {prio1},
-  ranking   = {rank1},
+  ranking   = {rank2},
   url       = {https://openreview.net/forum?id=wpSWuz_hyqA},
 }
 
@@ -13888,7 +13878,7 @@ ChatGPT},
   booktitle = {Psychology of Learning and Motivation Volume 43},
   doi       = {10.1016/s0079-7421(03)01011-9},
   file      = {:Barsalou2003 - Social Embodiment.pdf:PDF:https\://d1wqtxts1xzle7.cloudfront.net/30709738/the_psychology_of_learning_and_motivation_-_advances_in_research_and_theory_-_2003-libre.pdf?1392085431=&response-content-disposition=inline%3B+filename%3DThe_bodys_contribution_to_language.pdf&Expires=1722162694&Signature=ZZp21Gz5Vkx1RMbnAM4EOtSufPdsBd2uD-AAjbRuKlNKRKFpLCSz60Mq~cWaJhkrXqw836w4JjnydEXSddMPYYeM7cOw-wVv1ePLWz5gGfCZYYKOls13mttlyuy~UJR0iBU60WdwCPNIKd4f7NZeOP1OZ7kAvXc93o3yeg-Mt1YDRy9Dng--YzKWb~TUBng9Qp2IFPtwuskfHiSgUTmAZASu6m5hCtBuTuPXDcopj4hyUJK2zW9536g74-coNwZ129kNBlNk8FFkq13tXVTLqWoGYBu0Il6Pk2foQEUgDNQdmHgNy5uZlC9ACZ~z~PXKyiu5DfTJTooiGW2SESmwgA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=55},
-  groups    = {Embodiment},
+  groups    = {Embodiment, Social embodiment},
   issn      = {0079-7421},
   ranking   = {rank4},
 }
@@ -15014,7 +15004,7 @@ ChatGPT},
   volume    = {119},
   abstract  = {Atari games have been a long-standing benchmark in the reinforcement learning (RL) community for the past decade. This benchmark was proposed to test general competency of RL algorithms. Previous work has achieved good average performance by doing outstandingly well on many games of the set, but very poorly in several of the most challenging games. We propose Agent57, the first deep RL agent that outperforms the standard human benchmark on all 57 Atari games. To achieve this result, we train a neural network which parameterizes a family of policies ranging from very exploratory to purely exploitative. We propose an adaptive mechanism to choose which policy to prioritize throughout the training process. Additionally, we utilize a novel parameterization of the architecture that allows for more consistent and stable learning.},
   file      = {:Badia2020 - Agent57_ Outperforming the Atari Human Benchmark.pdf:PDF:http\://proceedings.mlr.press/v119/badia20a/badia20a.pdf},
-  groups    = {Exploration, Intrinsic goals},
+  groups    = {Exploration, Intrinsic Motivation},
   pdf       = {http://proceedings.mlr.press/v119/badia20a/badia20a.pdf},
   ranking   = {rank3},
   url       = {https://proceedings.mlr.press/v119/badia20a.html},
@@ -15139,6 +15129,225 @@ ChatGPT},
   url       = {https://openreview.net/forum?id=Skc-Fo4Yg},
 }
 
+@Article{Lu2024,
+  author        = {Lu, Chris and Lu, Cong and Lange, Robert Tjarko and Foerster, Jakob and Clune, Jeff and Ha, David},
+  title         = {The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery},
+  year          = {2024},
+  month         = aug,
+  abstract      = {One of the grand challenges of artificial general intelligence is developing agents capable of conducting scientific research and discovering new knowledge. While frontier models have already been used as aides to human scientists, e.g. for brainstorming ideas, writing code, or prediction tasks, they still conduct only a small part of the scientific process. This paper presents the first comprehensive framework for fully automatic scientific discovery, enabling frontier large language models to perform research independently and communicate their findings. We introduce The AI Scientist, which generates novel research ideas, writes code, executes experiments, visualizes results, describes its findings by writing a full scientific paper, and then runs a simulated review process for evaluation. In principle, this process can be repeated to iteratively develop ideas in an open-ended fashion, acting like the human scientific community. We demonstrate its versatility by applying it to three distinct subfields of machine learning: diffusion modeling, transformer-based language modeling, and learning dynamics. Each idea is implemented and developed into a full paper at a cost of less than $15 per paper. To evaluate the generated papers, we design and validate an automated reviewer, which we show achieves near-human performance in evaluating paper scores. The AI Scientist can produce papers that exceed the acceptance threshold at a top machine learning conference as judged by our automated reviewer. This approach signifies the beginning of a new era in scientific discovery in machine learning: bringing the transformative benefits of AI agents to the entire research process of AI itself, and taking us closer to a world where endless affordable creativity and innovation can be unleashed on the world's most challenging problems. Our code is open-sourced at https://github.com/SakanaAI/AI-Scientist},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2408.06292},
+  eprint        = {2408.06292},
+  file          = {:Lu2024 - The AI Scientist_ Towards Fully Automated Open Ended Scientific Discovery.pdf:PDF:http\://arxiv.org/pdf/2408.06292v2},
+  groups        = {Large Language Models},
+  keywords      = {Artificial Intelligence (cs.AI), Computation and Language (cs.CL), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.AI},
+  publisher     = {arXiv},
+}
+
+@Article{Wang2024a,
+  author        = {Wang, Qian and Wang, Tianyu and Li, Qinbin and Liang, Jingsheng and He, Bingsheng},
+  title         = {MegaAgent: A Practical Framework for Autonomous Cooperation in Large-Scale LLM Agent Systems},
+  year          = {2024},
+  month         = aug,
+  abstract      = {With the emergence of large language models (LLMs), LLM-powered multi-agent systems (LLM-MA systems) have been proposed to tackle real-world tasks. However, their agents mostly follow predefined Standard Operating Procedures (SOPs) that remain unchanged across the whole interaction, lacking autonomy and scalability. Additionally, current solutions often overlook the necessity for effective agent cooperation. To address the above limitations, we propose MegaAgent, a practical framework designed for autonomous cooperation in large-scale LLM Agent systems. MegaAgent leverages the autonomy of agents to dynamically generate agents based on task requirements, incorporating features such as automatically dividing tasks, systematic planning and monitoring of agent activities, and managing concurrent operations. In addition, MegaAgent is designed with a hierarchical structure and employs system-level parallelism to enhance performance and boost communication. We demonstrate the effectiveness of MegaAgent through Gobang game development, showing that it outperforms popular LLM-MA systems; and national policy simulation, demonstrating its high autonomy and potential to rapidly scale up to 590 agents while ensuring effective cooperation among them. Our results indicate that MegaAgent is the first autonomous large-scale LLM-MA system with no pre-defined SOPs, high effectiveness and scalability, paving the way for further research in this field. Our code is at https://anonymous.4open.science/r/MegaAgent-81F3.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2408.09955},
+  eprint        = {2408.09955},
+  file          = {:Wang2024a - MegaAgent_ a Practical Framework for Autonomous Cooperation in Large Scale LLM Agent Systems.pdf:PDF:http\://arxiv.org/pdf/2408.09955v2},
+  groups        = {LLM towns},
+  keywords      = {Multiagent Systems (cs.MA), FOS: Computer and information sciences},
+  primaryclass  = {cs.MA},
+  publisher     = {arXiv},
+}
+
+@Book{Piaget1952,
+  author    = {Piaget, Jean},
+  editor    = {Cook, Margaret},
+  publisher = {W W Norton & Co},
+  title     = {The origins of intelligence in children.},
+  year      = {1952},
+  doi       = {10.1037/11494-000},
+  groups    = {Developmental psychology},
+  ranking   = {rank5},
+}
+
+@InProceedings{Dautenhahn,
+  author     = {Dautenhahn, K. and Billard, A.},
+  booktitle  = {1999 Third European Workshop on Advanced Mobile Robots (Eurobot’99). Proceedings (Cat. No.99EX355)},
+  title      = {Studying robot social cognition within a developmental psychology framework},
+  publisher  = {IEEE},
+  series     = {EURBOT-99},
+  collection = {EURBOT-99},
+  doi        = {10.1109/eurbot.1999.827639},
+  file       = {:Dautenhahn - Studying Robot Social Cognition within a Developmental Psychology Framework.pdf:PDF:https\://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=1567cdc180c470694dd09d282ba7103cb68bbfee},
+  groups     = {Developmental psychology},
+  ranking    = {rank1},
+}
+
+@Article{Colas2022a,
+  author    = {Colas, Cédric and Karch, Tristan and Sigaud, Olivier and Oudeyer, Pierre-Yves},
+  journal   = {Journal of Artificial Intelligence Research},
+  title     = {Autotelic Agents with Intrinsically Motivated Goal-Conditioned Reinforcement Learning: A Short Survey},
+  year      = {2022},
+  issn      = {1076-9757},
+  month     = jul,
+  pages     = {1159--1199},
+  volume    = {74},
+  doi       = {10.1613/jair.1.13554},
+  groups    = {Goal-conditioned RL},
+  publisher = {AI Access Foundation},
+  ranking   = {rank2},
+}
+
+@Article{Berlyne1966,
+  author    = {Berlyne, D. E.},
+  journal   = {Science},
+  title     = {Curiosity and Exploration: Animals spend much of their time seeking stimuli whose significance raises problems for psychology.},
+  year      = {1966},
+  issn      = {1095-9203},
+  month     = jul,
+  number    = {3731},
+  pages     = {25--33},
+  volume    = {153},
+  doi       = {10.1126/science.153.3731.25},
+  groups    = {Intrinsic Motivation},
+  publisher = {American Association for the Advancement of Science (AAAS)},
+  ranking   = {rank4},
+}
+
+@Article{5ffa1145-a2a2-3e2b-a999-ba9d9db6ba19,
+  author    = {Laura E. Berk},
+  journal   = {Scientific American},
+  title     = {Why Children Talk to Themselves},
+  year      = {1994},
+  issn      = {00368733, 19467087},
+  number    = {5},
+  pages     = {78--83},
+  volume    = {271},
+  groups    = {Developmental psychology},
+  publisher = {Scientific American, a division of Nature America, Inc.},
+  ranking   = {rank3},
+  url       = {http://www.jstor.org/stable/24942909},
+  urldate   = {2024-08-22},
+}
+
+@Book{whorf2012language,
+  author    = {Whorf, Benjamin Lee},
+  publisher = {MIT press},
+  title     = {Language, thought, and reality: Selected writings of Benjamin Lee Whorf},
+  year      = {1956},
+  file      = {:whorf2012language - Language, Thought, and Reality_ Selected Writings of Benjamin Lee Whorf.pdf:PDF:https\://d1wqtxts1xzle7.cloudfront.net/36027090/whorf-libre.pdf?1419321519=&response-content-disposition=inline%3B+filename%3DWhorf.pdf&Expires=1724349932&Signature=KjjucKQlhnpuMwZRLT4aokzdfy7feXcAX4yMnit8CcJDdO-4cJINNusx0V0GhPEF3YyrYMNlB~KYAkMXqUT9Rp9HyWwjlccNKyXyWN7CuD4mQxL-eB7AVF7AMO1juaK4QPtVEPJm656JrKHGum-HIKJVKpw2Gd3od17kLxRWYUvki0UCgSjL8OSByr~sQCaPHf6NSzElXKvcztjqBwewUQ9SRNOsEwyN6qWZ6nsxYl3je8KxggRWBxAU~ZyeQzRFxp3NVyYd2VKHr83q8rvPf5W9AL-TF1cn04lKik-e72n6bgZsPAa9R6z~AWuz1nM5lrPFr1LgWTo56os~I-uxwA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA},
+  groups    = {Developmental psychology},
+  ranking   = {rank5},
+}
+
+@InBook{Clark1998,
+  author    = {Clark, Andy},
+  pages     = {162--183},
+  publisher = {Cambridge University Press},
+  title     = {Magic words: how language augments human computation},
+  year      = {1998},
+  month     = aug,
+  booktitle = {Language and Thought},
+  doi       = {10.1017/cbo9780511597909.011},
+  groups    = {Language},
+  ranking   = {rank4},
+}
+
+@Book{tomasello2009cultural,
+  author    = {Tomasello, Michael},
+  publisher = {Harvard university press},
+  title     = {The cultural origins of human cognition},
+  year      = {2009},
+  groups    = {Intelligence, Developmental psychology},
+  ranking   = {rank5},
+}
+
+@Article{Tomasello2005,
+  author    = {Tomasello, Michael and Carpenter, Malinda and Call, Josep and Behne, Tanya and Moll, Henrike},
+  journal   = {Behavioral and Brain Sciences},
+  title     = {Understanding and sharing intentions: The origins of cultural cognition},
+  year      = {2005},
+  issn      = {1469-1825},
+  month     = oct,
+  number    = {5},
+  pages     = {675--691},
+  volume    = {28},
+  doi       = {10.1017/s0140525x05000129},
+  groups    = {Developmental psychology},
+  publisher = {Cambridge University Press (CUP)},
+}
+
+@Article{Gentner2017,
+  author    = {Gentner, Dedre and Hoyos, Christian},
+  journal   = {Topics in Cognitive Science},
+  title     = {Analogy and Abstraction},
+  year      = {2017},
+  issn      = {1756-8765},
+  month     = jun,
+  number    = {3},
+  pages     = {672--693},
+  volume    = {9},
+  doi       = {10.1111/tops.12278},
+  groups    = {Developmental psychology},
+  publisher = {Wiley},
+  ranking   = {rank2},
+}
+
+@Article{Dove2018,
+  author    = {Dove, Guy},
+  journal   = {Philosophical Transactions of the Royal Society B: Biological Sciences},
+  title     = {Language as a disruptive technology: abstract concepts, embodiment and the flexible mind},
+  year      = {2018},
+  issn      = {1471-2970},
+  month     = jun,
+  number    = {1752},
+  pages     = {20170135},
+  volume    = {373},
+  doi       = {10.1098/rstb.2017.0135},
+  groups    = {Language, Developmental psychology},
+  publisher = {The Royal Society},
+  ranking   = {rank2},
+}
+
+@Article{Lindblom2003,
+  author    = {Lindblom, Jessica and Ziemke, Tom},
+  journal   = {Adaptive Behavior},
+  title     = {Social Situatedness of Natural and Artificial Intelligence: Vygotsky and Beyond},
+  year      = {2003},
+  issn      = {1741-2633},
+  month     = jun,
+  number    = {2},
+  pages     = {79--96},
+  volume    = {11},
+  doi       = {10.1177/10597123030112002},
+  groups    = {Social embodiment},
+  publisher = {SAGE Publications},
+  ranking   = {rank2},
+}
+
+@InProceedings{Jain2023,
+  author        = {Jain, Kanishk and Chhangani, Varun and Tiwari, Amogh and Krishna, K. Madhava and Gandhi, Vineet},
+  booktitle     = {ICRA 2023},
+  title         = {Ground then Navigate: Language-guided Navigation in Dynamic Scenes},
+  year          = {2023},
+  month         = sep,
+  publisher     = {arXiv},
+  abstract      = {We investigate the Vision-and-Language Navigation (VLN) problem in the context of autonomous driving in outdoor settings. We solve the problem by explicitly grounding the navigable regions corresponding to the textual command. At each timestamp, the model predicts a segmentation mask corresponding to the intermediate or the final navigable region. Our work contrasts with existing efforts in VLN, which pose this task as a node selection problem, given a discrete connected graph corresponding to the environment. We do not assume the availability of such a discretised map. Our work moves towards continuity in action space, provides interpretability through visual feedback and allows VLN on commands requiring finer manoeuvres like "park between the two cars". Furthermore, we propose a novel meta-dataset CARLA-NAV to allow efficient training and validation. The dataset comprises pre-recorded training sequences and a live environment for validation and testing. We provide extensive qualitative and quantitive empirical results to validate the efficacy of the proposed approach.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2209.11972},
+  eprint        = {2209.11972},
+  file          = {:Jain2022 - Ground Then Navigate_ Language Guided Navigation in Dynamic Scenes.pdf:PDF},
+  groups        = {Visual-Language Learning, Autonomous Driving, Language-Augmented Robotic Control},
+  keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
+  primaryclass  = {cs.CV},
+  ranking       = {rank1},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -15154,19 +15363,19 @@ ChatGPT},
 2 StaticGroup:Evolutionary RL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Intelligence\;2\;1\;\;\;\;;
-1 StaticGroup:Language\;2\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language generation with RL\;0\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Large Language Models\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Agent-based LLMs\;0\;0\;0x8a8a8aff\;\;\;;
-3 StaticGroup:LLM towns\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Question Answering\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Text-based environments\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Visual-Language Learning\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language origins and evolution\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Symbol grounding\;0\;1\;0x7c7c7cff\;\;\;;
 2 StaticGroup:Theory of Communication\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Large Language Models\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Agent-based LLMs\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:LLM towns\;0\;0\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Machine Learning\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Computer Vision\;0\;0\;\;\;\;;
 2 StaticGroup:Confidence\;0\;1\;0x7c7c7cff\;\;\;;
@@ -15175,7 +15384,7 @@ ChatGPT},
 2 StaticGroup:Multi-Task Learning\;0\;1\;0x838383ff\;\;\;;
 2 StaticGroup:NLP\;0\;0\;0x838383ff\;\;\;;
 2 StaticGroup:Auto-Encoding\;0\;0\;0x838383ff\;\;\;;
-1 StaticGroup:Multi-agent Systems\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Multi-agent Systems\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Benchmarking MAL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:MAS Reviews\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Multi-Agent Environments\;0\;1\;0x8a8a8aff\;\;\;;
@@ -15198,7 +15407,7 @@ ChatGPT},
 3 StaticGroup:Independent Learning\;0\;0\;0x8a8a8aff\;\;\;;
 4 StaticGroup:IDQN\;0\;0\;0x7c7c7cff\;\;\;;
 3 StaticGroup:Value factorisation\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Communication\;2\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Communication\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Discrete language\;2\;1\;0x8a8a8aff\;\;\;;
 5 StaticGroup:Natural language\;0\;0\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Speaker-Listener\;0\;0\;0x8a8a8aff\;\;\;;
@@ -15232,7 +15441,7 @@ ChatGPT},
 2 StaticGroup:RL Review\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Exploration\;2\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Intrinsic goals\;2\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Intrinsic Motivation\;2\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Adversary Guidance\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Curiosity\;0\;1\;0x8a8a8aff\;\;\;;
 4 StaticGroup:Disagreement\;0\;1\;0x8a8a8aff\;\;\;;
@@ -15244,11 +15453,16 @@ ChatGPT},
 3 StaticGroup:Planning to Explore\;2\;1\;0x838383ff\;\;\;;
 2 StaticGroup:Environments\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Generalisation in RL\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Hierarchical RL\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Macro-actions\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Language-Augmented RL\;2\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Language-Augmented RL\;2\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:LA-RL Environments\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:LA Reward shaping\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Model based\;2\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Intructions\;2\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:State Descriptions\;2\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Task Descriptions\;2\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Actions\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Model based\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Model-based exploration\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Policy based\;0\;0\;0x8a8a8aff\;\;\;;
@@ -15271,16 +15485,18 @@ ChatGPT},
 2 StaticGroup:Reward Shaping\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Implementation tricks in RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Zero-shot generalisation\;2\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Autonomous Driving\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Embodiment\;2\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Human-Robot Interaction\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Embodiment\;2\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Social embodiment\;2\;1\;0x7c7c7cff\;\;\;;
+2 StaticGroup:Human-Robot Interaction\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Human-robot interfaces\;2\;1\;0x7c7c7cff\;\;\;;
 2 StaticGroup:Humanoid robots\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Interactivity\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Language-Augmented Robotic Control\;2\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-robot\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:MADRL in Robotics\;0\;1\;0x8a8a8aff\;\;\;;
@@ -15288,7 +15504,7 @@ ChatGPT},
 2 StaticGroup:Navigation\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Object manipulation\;2\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Sim to Real\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Sim to Real\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Domain adaptation\;2\;1\;0x7c7c7cff\;\;\;;
 3 StaticGroup:Domain randomisation\;2\;1\;0x7c7c7cff\;\;\;;
 2 StaticGroup:Space Exploration\;0\;0\;0x8a8a8aff\;\;\;;
