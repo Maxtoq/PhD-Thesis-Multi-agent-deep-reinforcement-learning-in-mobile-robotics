@@ -103,6 +103,7 @@
   primaryclass  = {cs.LG},
   ranking       = {rank5},
   readstatus    = {read},
+  url           = {https://arxiv.org/abs/1707.06347},
 }
 
 @InProceedings{Schulman2015_TRPO,
@@ -174,6 +175,7 @@
   journal    = {Proceedings of the 34th International Conference on Machine Learning},
   ranking    = {rank4},
   readstatus = {read},
+  url        = {https://pathak22.github.io/noreward-rl/},
 }
 
 @InProceedings{Burda2019_RND,
@@ -191,6 +193,7 @@
   primaryclass  = {cs.LG},
   ranking       = {rank4},
   readstatus    = {read},
+  url           = {https://arxiv.org/abs/1810.12894},
 }
 
 @Article{Lillicrap2015_DDPG,
@@ -217,6 +220,7 @@
   primaryclass  = {cs.LG},
   ranking       = {rank5},
   readstatus    = {read},
+  url           = {https://arxiv.org/abs/1509.02971},
 }
 
 @Article{Williams1992_Reinforce,
@@ -279,6 +283,7 @@
   primaryclass  = {cs.LG},
   ranking       = {rank2},
   readstatus    = {read},
+  url           = {http://proceedings.mlr.press/v119/sekar20a.html},
 }
 
 @InProceedings{Pathak2019_Disagreement,
@@ -333,6 +338,7 @@
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
   ranking       = {rank3},
+  url           = {https://arxiv.org/abs/1707.08817},
 }
 
 @Article{Eysenbach2018,
@@ -447,6 +453,7 @@
   journal    = {Proceedings of the 36th International Conference on Machine Learning},
   ranking    = {rank2},
   readstatus = {skimmed},
+  url        = {https://proceedings.mlr.press/v97/shyam19a.html},
 }
 
 @InProceedings{Lee2019_SLAC,
@@ -690,6 +697,7 @@
   primaryclass  = {cs.LG},
   ranking       = {rank5},
   readstatus    = {read},
+  url           = {https://arxiv.org/abs/1312.5602},
 }
 
 @Article{Mnih2015_DQN,
@@ -739,7 +747,7 @@
   groups     = {PER, Value based},
   ranking    = {rank5},
   readstatus = {skimmed},
-  url        = {http://arxiv.org/abs/1511.05952},
+  url        = {https://dblp.org/rec/journals/corr/SchaulQAS15.html},
 }
 
 @InProceedings{Wang2016_DuelingDQN,
@@ -937,7 +945,7 @@
   groups    = {TRPO-PPO, RL},
   ranking   = {rank5},
   timestamp = {Thu, 25 Jul 2019 14:25:38 +0200},
-  url       = {http://arxiv.org/abs/1506.02438},
+  url       = {https://www.semanticscholar.org/paper/High-Dimensional-Continuous-Control-Using-Advantage-Schulman-Moritz/d316c82c12cf4c45f9e85211ef3d1fa62497bff8},
 }
 
 @Article{Heess2017,
@@ -1090,19 +1098,17 @@
 }
 
 @InProceedings{Jaques2019_SocialInfluence,
-  author        = {Natasha Jaques and Angeliki Lazaridou and Edward Hughes and Caglar Gulcehre and Pedro A. Ortega and DJ Strouse and Joel Z. Leibo and Nando de Freitas},
-  booktitle     = {Proceedings of the 36th International Conference on Machine Learning},
-  title         = {Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning},
-  year          = {2019},
-  pages         = {3040--3049},
-  abstract      = {We propose a unified mechanism for achieving coordination and communication in Multi-Agent Reinforcement Learning (MARL), through rewarding agents for having causal influence over other agents' actions. Causal influence is assessed using counterfactual reasoning. At each timestep, an agent simulates alternate actions that it could have taken, and computes their effect on the behavior of other agents. Actions that lead to bigger changes in other agents' behavior are considered influential and are rewarded. We show that this is equivalent to rewarding agents for having high mutual information between their actions. Empirical results demonstrate that influence leads to enhanced coordination and communication in challenging social dilemma environments, dramatically increasing the learning curves of the deep RL agents, and leading to more meaningful learned communication protocols. The influence rewards for all agents can be computed in a decentralized way by enabling agents to learn a model of other agents using deep neural networks. In contrast, key previous works on emergent communication in the MARL setting were unable to learn diverse policies in a decentralized manner and had to resort to centralized training. Consequently, the influence reward opens up a window of new opportunities for research in this area.},
-  archiveprefix = {arXiv},
-  eprint        = {1810.08647},
-  file          = {:Jaques2018 - Social Influence As Intrinsic Motivation for Multi Agent Deep Reinforcement Learning.pdf:PDF},
-  groups        = {Social Learning, Intrinsic rewards in MARL, Multi-agent RL, Emergent Communication},
-  primaryclass  = {cs.LG},
-  ranking       = {rank3},
-  readstatus    = {read},
+  author     = {Natasha Jaques and Angeliki Lazaridou and Edward Hughes and Caglar Gulcehre and Pedro A. Ortega and DJ Strouse and Joel Z. Leibo and Nando de Freitas},
+  booktitle  = {Proceedings of the 36th International Conference on Machine Learning},
+  title      = {Social Influence as Intrinsic Motivation for Multi-Agent Deep Reinforcement Learning},
+  year       = {2019},
+  pages      = {3040--3049},
+  abstract   = {We propose a unified mechanism for achieving coordination and communication in Multi-Agent Reinforcement Learning (MARL), through rewarding agents for having causal influence over other agents' actions. Causal influence is assessed using counterfactual reasoning. At each timestep, an agent simulates alternate actions that it could have taken, and computes their effect on the behavior of other agents. Actions that lead to bigger changes in other agents' behavior are considered influential and are rewarded. We show that this is equivalent to rewarding agents for having high mutual information between their actions. Empirical results demonstrate that influence leads to enhanced coordination and communication in challenging social dilemma environments, dramatically increasing the learning curves of the deep RL agents, and leading to more meaningful learned communication protocols. The influence rewards for all agents can be computed in a decentralized way by enabling agents to learn a model of other agents using deep neural networks. In contrast, key previous works on emergent communication in the MARL setting were unable to learn diverse policies in a decentralized manner and had to resort to centralized training. Consequently, the influence reward opens up a window of new opportunities for research in this area.},
+  file       = {:Jaques2018 - Social Influence As Intrinsic Motivation for Multi Agent Deep Reinforcement Learning.pdf:PDF},
+  groups     = {Intrinsic rewards in MARL, Multi-agent RL, Emergent Communication, Social Learning in MARL},
+  ranking    = {rank3},
+  readstatus = {read},
+  url        = {http://proceedings.mlr.press/v97/jaques19a/jaques19a.pdf},
 }
 
 @Article{Leibo2019,
@@ -1241,7 +1247,7 @@
   numpages   = {12},
   ranking    = {rank5},
   readstatus = {read},
-  url        = {https://dl.acm.org/doi/abs/10.5555/3295222.3295385},
+  url        = {https://proceedings.neurips.cc/paper/2017/hash/68a9750337a418a86fe06c1991a1d64c-Abstract.html},
 }
 
 @InBook{Wolpert2002_AristoUtility,
@@ -1408,7 +1414,7 @@
 
 @Book{Wooldridge2009_IntroMAS,
   author     = {Wooldridge, Michael},
-  publisher  = {John wiley \& sons},
+  publisher  = {John Wiley \& Sons},
   title      = {An introduction to multiagent systems},
   year       = {2009},
   file       = {:An Introduction to MultiAgent Systems ( PDFDrive ).pdf:PDF},
@@ -1615,7 +1621,7 @@
   numpages   = {8},
   ranking    = {rank5},
   readstatus = {read},
-  url        = {https://web.media.mit.edu/~cynthiab/Readings/tan-MAS-reinfLearn.pdf},
+  url        = {https://dl.acm.org/doi/10.5555/3091529.3091572},
 }
 
 @InProceedings{Das2017_CoopVisDial,
@@ -1625,8 +1631,8 @@
   year       = {2017},
   month      = {Oct},
   file       = {:Das_2017_ICCV - Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning.pdf:PDF},
-  groups     = {Discrete language, Visual-Language Learning, Language-Grounded Communication, Speaker-Listener, Emergent Communication},
-  ranking    = {rank3},
+  groups     = {Discrete language, Language-Grounded Communication, Speaker-Listener, Emergent Communication, Natural language, Vision-Language Models},
+  ranking    = {rank5},
   readstatus = {read},
   url        = {https://openaccess.thecvf.com/content_iccv_2017/html/Das_Learning_Cooperative_Visual_ICCV_2017_paper.html},
 }
@@ -1821,6 +1827,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   primaryclass  = {cs.AI},
   ranking       = {rank1},
   readstatus    = {read},
+  url           = {https://arxiv.org/abs/2011.09533},
 }
 
 @InProceedings{Li2022_MAMT,
@@ -2114,6 +2121,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   number    = {1-2},
   pages     = {23--43},
   volume    = {67},
+  doi       = {10.1007/s10994-006-0143-1},
   groups    = {Equilibrium selection, Multi-agent RL},
   publisher = {Springer},
   ranking   = {rank3},
@@ -2230,7 +2238,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   readstatus = {skimmed},
 }
 
-@InProceedings{Kapturowski2018,
+@InProceedings{Kapturowski2018_R2D2,
   author     = {Kapturowski, Steven and Ostrovski, Georg and Quan, John and Munos, Remi and Dabney, Will},
   booktitle  = {International conference on learning representations},
   title      = {Recurrent experience replay in distributed reinforcement learning},
@@ -2240,6 +2248,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   groups     = {Value based},
   ranking    = {rank3},
   readstatus = {skimmed},
+  url        = {https://openreview.net/forum?id=r1lyTjAqYX},
 }
 
 @PhdThesis{hausknecht2016cooperation,
@@ -2402,6 +2411,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   location  = {Montreal QC, Canada},
   numpages  = {3},
   ranking   = {rank4},
+  url       = {https://dl.acm.org/doi/abs/10.5555/3306127.3332052},
 }
 
 @InProceedings{Bohmer2020_DeepCoordGraphs,
@@ -2437,6 +2447,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   keywords      = {cs.AI},
   primaryclass  = {cs.AI},
   ranking       = {rank1},
+  url           = {https://arxiv.org/abs/1804.09817},
 }
 
 @Article{Wei2016_RelOvergen,
@@ -2453,16 +2464,6 @@ Concurrent Experience Replay Trajectories (CERT)},
   publisher = {JMLR. org},
   ranking   = {rank2},
   url       = {https://www.jmlr.org/papers/v17/15-417.html},
-}
-
-@PhdThesis{wiegand2003analysis,
-  author  = {Wiegand, R Paul},
-  school  = {Citeseer},
-  title   = {An analysis of cooperative coevolutionary algorithms},
-  year    = {2003},
-  file    = {:wiegand2003analysis - An Analysis of Cooperative Coevolutionary Algorithms.pdf:PDF},
-  groups  = {Multi-agent RL},
-  ranking = {rank3},
 }
 
 @Article{WANG202068,
@@ -2853,7 +2854,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   file      = {:8202312 - Socially Aware Motion Planning with Deep Reinforcement Learning.pdf:PDF},
   groups    = {Navigation, Multi-robot},
   issn      = {2153-0866},
-  ranking   = {rank2},
+  ranking   = {rank4},
 }
 
 @InProceedings{Chen2017_CollisionAvoidance,
@@ -4075,6 +4076,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   priority      = {prio1},
   ranking       = {rank1},
   readstatus    = {skimmed},
+  url           = {https://arxiv.org/abs/1602.02672},
 }
 
 @InProceedings{Kurek2016,
@@ -4232,6 +4234,7 @@ Concurrent Experience Replay Trajectories (CERT)},
   keywords      = {cs.AI, cs.LG, stat.ML},
   primaryclass  = {cs.AI},
   ranking       = {rank3},
+  url           = {https://arxiv.org/abs/1610.03295},
 }
 
 @Article{Wang2020_RMADDPG,
@@ -4351,6 +4354,7 @@ agents)},
   keywords      = {cs.LG, cs.AI, cs.GT},
   primaryclass  = {cs.LG},
   ranking       = {rank3},
+  url           = {https://arxiv.org/abs/1603.01121},
 }
 
 @InProceedings{Rabinowitz2018,
@@ -4466,6 +4470,7 @@ agents)},
   priority      = {prio2},
   ranking       = {rank1},
   readstatus    = {read},
+  url           = {https://arxiv.org/abs/2006.02419},
 }
 
 @InProceedings{Chen2020a,
@@ -4520,6 +4525,7 @@ agents)},
   primaryclass  = {cs.LG},
   ranking       = {rank4},
   readstatus    = {skimmed},
+  url           = {https://arxiv.org/abs/1912.06680},
 }
 
 @InProceedings{Singh2019_IC3Net,
@@ -4867,7 +4873,7 @@ agents)},
   title      = {On the interaction between supervision and self-play in emergent communication},
   year       = {2020},
   file       = {:Lowe2020On - On the Interaction between Supervision and Self Play in Emergent Communication.pdf:PDF},
-  groups     = {Emergent Communication},
+  groups     = {Emergent Communication, Natural language},
   ranking    = {rank1},
   readstatus = {read},
   url        = {https://openreview.net/forum?id=rJxGLlBtwH},
@@ -5001,7 +5007,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   url      = {https://www.sciencedirect.com/science/article/pii/S0004370299000521},
 }
 
-@InProceedings{Colas2020,
+@InProceedings{Colas2020_Imagine,
   author     = {Colas, C\'{e}dric and Karch, Tristan and Lair, Nicolas and Dussoux, Jean-Michel and Moulin-Frier, Cl\'{e}ment and Dominey, Peter and Oudeyer, Pierre-Yves},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Language as a Cognitive Tool to Imagine Goals in Curiosity Driven Exploration},
@@ -5015,7 +5021,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   groups     = {Curiosity, ZPD, Language-Augmented Learning},
   ranking    = {rank2},
   readstatus = {read},
-  url        = {https://proceedings.neurips.cc/paper/2020/file/274e6fcf4a583de4a81c6376f17673e7-Paper.pdf},
+  url        = {https://proceedings.neurips.cc/paper/2020/hash/274e6fcf4a583de4a81c6376f17673e7-Abstract.html},
 }
 
 @Article{Chan2019,
@@ -5032,7 +5038,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   primaryclass  = {cs.LG},
 }
 
-@InProceedings{NEURIPS2019_0af78794,
+@InProceedings{Jiang2019_CLEVR,
   author     = {Jiang, YiDing and Gu, Shixiang (Shane) and Murphy, Kevin P and Finn, Chelsea},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Language as an Abstraction for Hierarchical Deep Reinforcement Learning},
@@ -5135,7 +5141,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   url       = {https://openreview.net/forum?id=0IOX0YcCdTn},
 }
 
-@InProceedings{akakzia_hal-03121146,
+@InProceedings{Akakzia2021_DECSTR,
   author      = {Akakzia, Ahmed and Colas, C{\'e}dric and Oudeyer, Pierre-Yves and Chetouani, Mohamed and Sigaud, Olivier},
   booktitle   = {{ICLR 2021 - Ninth International Conference on Learning Representation}},
   title       = {{Grounding Language to Autonomously-Acquired Skills via Goal Generation}},
@@ -5163,7 +5169,7 @@ communication integrated in QMIX, with tricks to make it more efficient},
   publisher  = {International Joint Conferences on Artificial Intelligence Organization},
   doi        = {10.24963/ijcai.2019/880},
   file       = {:Luketina2019 - A Survey of Reinforcement Learning Informed by Natural Language.pdf:PDF},
-  groups     = {Language-Augmented Learning},
+  groups     = {Language-Augmented Learning, LLA Surveys},
   ranking    = {rank3},
   readstatus = {read},
   url        = {https://doi.org/10.24963/ijcai.2019/880},
@@ -5219,11 +5225,13 @@ communication integrated in QMIX, with tricks to make it more efficient},
 }
 
 @Book{Vygotsky1934,
-  author  = {Lev S. Vygotsky},
-  title   = {Thought and Language},
-  year    = {1934},
-  groups  = {Developmental psychology, Language},
-  ranking = {rank5},
+  author    = {Lev S. Vygotsky},
+  publisher = {MIT Press},
+  title     = {Thought and Language},
+  year      = {1934},
+  groups    = {Developmental psychology, Language, Social Learning},
+  ranking   = {rank5},
+  url       = {https://mitpress.mit.edu/9780262720014/thought-and-language/},
 }
 
 @InProceedings{Andreas2018,
@@ -5712,7 +5720,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   journal  = {Proceedings of the 5th Conference on Robot Learning},
   title    = {Learning Language-Conditioned Robot Behavior from Offline Data and Crowd-Sourced Annotation},
   year     = {2022},
-  abstract = {We study the problem of learning a range of vision-based manipulation tasks from a large offline dataset of robot interaction. In order to accomplish this, humans need easy and effective ways of specifying tasks to the robot. Goal images are one popular form of task specification, as they are already grounded in the robot's observation space. However, goal images also have a number of drawbacks: they are inconvenient for humans to provide, they can over-specify the desired behavior leading to a sparse reward signal, or under-specify task information in the case of non-goal reaching tasks. Natural language provides a convenient and flexible alternative for task specification, but comes with the challenge of grounding language in the robot's observation space. To scalably learn this grounding we propose to leverage offline robot datasets (including highly sub-optimal, autonomously collected data) with crowd-sourced natural language labels. With this data, we learn a simple classifier which predicts if a change in state completes a language instruction. This provides a language-conditioned reward function that can then be used for offline multi-task RL. In our experiments, we find that on language-conditioned manipulation tasks our approach outperforms both goal-image specifications and language conditioned imitation techniques by more than 25%, and is able to perform visuomotor tasks from natural language, such as "open the right drawer" and "move the stapler", on a Franka Emika Panda robot.},
+  abstract = {We study the problem of learning a range of vision-based manipulation tasks from a large offline dataset of robot interaction. In order to accomplish this, humans need easy and effective ways of specifying tasks to the robot. Goal images are one popular form of task specification, as they are already grounded in the robot's observation space. However, goal images also have a number of drawbacks: they ware inconvenient for humans to provide, they can over-specify the desired behavior leading to a sparse reward signal, or under-specify task information in the case of non-goal reaching tasks. Natural language provides a convenient and flexible alternative for task specification, but comes with the challenge of grounding language in the robot's observation space. To scalably learn this grounding we propose to leverage offline robot datasets (including highly sub-optimal, autonomously collected data) with crowd-sourced natural language labels. With this data, we learn a simple classifier which predicts if a change in state completes a language instruction. This provides a language-conditioned reward function that can then be used for offline multi-task RL. In our experiments, we find that on language-conditioned manipulation tasks our approach outperforms both goal-image specifications and language conditioned imitation techniques by more than 25%, and is able to perform visuomotor tasks from natural language, such as "open the right drawer" and "move the stapler", on a Franka Emika Panda robot.},
   file     = {:Nair2021 - Learning Language Conditioned Robot Behavior from Offline Data and Crowd Sourced Annotation.pdf:PDF},
   groups   = {Language-Augmented Learning},
   ranking  = {rank2},
@@ -5833,7 +5841,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   priority  = {prio2},
   publisher = {Curran Associates, Inc.},
   ranking   = {rank3},
-  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/9c1535a02f0ce079433344e14d910597-Paper-Datasets_and_Benchmarks.pdf},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/9c1535a02f0ce079433344e14d910597-Abstract-Datasets_and_Benchmarks.html},
 }
 
 @Article{Harnad1990_SymbolGrounding,
@@ -5854,7 +5862,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url        = {https://www.sciencedirect.com/science/article/pii/0167278990900876},
 }
 
-@Article{jbp_/content/journals/10.1075/eoc.4.1.03ste,
+@Article{Steels2000_AIBO,
   author    = {Steels, Luc and Kaplan, Frédéric},
   journal   = {Evolution of Communication},
   title     = {AIBO’s first words: The social learning of language and meaning},
@@ -5867,6 +5875,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   doi       = {https://doi.org/10.1075/eoc.4.1.03ste},
   file      = {:jbp__content_journals_10.1075_eoc.4.1.03ste - AIBO’s First Words_ the Social Learning of Language and Meaning.pdf:PDF},
   groups    = {Language, Language origins and evolution},
+  priority  = {prio1},
   publisher = {John Benjamins},
   ranking   = {rank3},
   type      = {Journal Article},
@@ -5971,7 +5980,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url        = {https://openreview.net/forum?id=H1xsSjC9Ym},
 }
 
-@Article{Narasimhan2018,
+@Article{Narasimhan2018_Transfer,
   author     = {Karthik Narasimhan and Regina Barzilay and Tommi Jaakkola},
   journal    = {Journal of Artificial Intelligence Research},
   title      = {Grounding Language for Transfer in Deep Reinforcement Learning},
@@ -5983,6 +5992,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   file       = {:Narasimhan2018 - Grounding Language for Transfer in Deep Reinforcement Learning (3).pdf:PDF},
   groups     = {Language-Augmented Learning},
   publisher  = {{AI} Access Foundation},
+  ranking    = {rank2},
   readstatus = {read},
 }
 
@@ -5994,7 +6004,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   file       = {:HermannHGWFSSCJ17 - Grounded Language Learning in a Simulated 3D World.pdf:PDF},
   groups     = {Language-Augmented Learning},
   publtype   = {informal},
-  ranking    = {rank2},
+  ranking    = {rank3},
   readstatus = {read},
   url        = {http://arxiv.org/abs/1706.06551},
 }
@@ -6092,11 +6102,11 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   file      = {:Chevalier2018 - BabyAI_ First Steps Towards Grounded Language Learning with a Human in the Loop.pdf:PDF},
   groups    = {Language-Augmented Learning, LA-L Environments},
   priority  = {prio1},
-  ranking   = {rank5},
+  ranking   = {rank2},
   url       = {https://openreview.net/forum?id=rJeXCo0cYX},
 }
 
-@InProceedings{WangLM16,
+@InProceedings{Wang2016_LangGameInteract,
   author    = {Sida I. Wang and Percy Liang and Christopher D. Manning},
   booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics},
   title     = {Learning Language Games through Interaction},
@@ -6288,7 +6298,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   year       = {2018},
   file       = {:shu2018hierarchical - Hierarchical and Interpretable Skill Acquisition in Multi Task Reinforcement Learning.pdf:PDF},
   groups     = {Hierarchical RL, Language-Augmented Learning},
-  ranking    = {rank1},
+  ranking    = {rank2},
   readstatus = {skimmed},
   url        = {https://openreview.net/forum?id=SJJQVZW0b},
 }
@@ -6307,7 +6317,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url       = {https://proceedings.neurips.cc/paper/2016/file/c4492cbe90fbdbf88a5aec486aa81ed5-Paper.pdf},
 }
 
-@InProceedings{NEURIPS2019_7967cc8e,
+@InProceedings{Hu2019_HierarLang,
   author     = {Hu, Hengyuan and Yarats, Denis and Gong, Qucheng and Tian, Yuandong and Lewis, Mike},
   booktitle  = {Advances in Neural Information Processing Systems},
   title      = {Hierarchical Decision Making by Generating and Following Natural Language Instructions},
@@ -6334,7 +6344,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   volume    = {139},
   abstract  = {Social learning is a key component of human and animal intelligence. By taking cues from the behavior of experts in their environment, social learners can acquire sophisticated behavior and rapidly adapt to new circumstances. This paper investigates whether independent reinforcement learning (RL) agents in a multi-agent environment can learn to use social learning to improve their performance. We find that in most circumstances, vanilla model-free RL agents do not use social learning. We analyze the reasons for this deficiency, and show that by imposing constraints on the training environment and introducing a model-based auxiliary loss we are able to obtain generalized social learning policies which enable agents to: i) discover complex skills that are not learned from single-agent training, and ii) adapt online to novel environments by taking cues from experts present in the new environment. In contrast, agents trained with model-free RL or imitation learning generalize poorly and do not succeed in the transfer tasks. By mixing multi-agent and solo training, we can obtain agents that use social learning to gain skills that they can deploy when alone, even out-performing agents trained alone from the start.},
   file      = {:Ndousse2021 - Emergent Social Learning Via Multi Agent Reinforcement Learning.pdf:PDF},
-  groups    = {Social Learning},
+  groups    = {Social Learning in MARL},
   pdf       = {http://proceedings.mlr.press/v139/ndousse21a/ndousse21a.pdf},
   url       = {https://proceedings.mlr.press/v139/ndousse21a.html},
 }
@@ -6347,7 +6357,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   file      = {:yu2018 - Interactive Grounded Language Acquisition and Generalization in a 2D World.pdf:PDF},
   groups    = {Language-Augmented Learning},
   priority  = {prio2},
-  ranking   = {rank5},
+  ranking   = {rank2},
   url       = {https://openreview.net/forum?id=H1UOm4gA-},
 }
 
@@ -6387,6 +6397,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   isbn      = {1558606122},
   numpages  = {10},
   ranking   = {rank4},
+  url       = {https://dl.acm.org/doi/10.5555/645528.657613},
 }
 
 @Article{Chen_Mooney_2011,
@@ -6442,6 +6453,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   pages     = {697--706},
   publisher = {Springer Berlin Heidelberg},
   abstract  = {This paper presents Recurrent Policy Gradients, a model-free reinforcement learning (RL) method creating limited-memory sto-chastic policies for partially observable Markov decision problems (POMDPs) that require long-term memories of past observations. The approach involves approximating a policy gradient for a Recurrent Neural Network (RNN) by backpropagating return-weighted characteristic eligibilities through time. Using a ``Long Short-Term Memory'' architecture, we are able to outperform other RL methods on two important benchmark tasks. Furthermore, we show promising results on a complex car driving simulation task.},
+  doi       = {10.1007/978-3-540-74690-4_71},
   file      = {:10.1007_978-3-540-74690-4_71 - Solving Deep Memory POMDPs with Recurrent Policy Gradients.pdf:PDF},
   groups    = {POMDP},
   isbn      = {978-3-540-74690-4},
@@ -6458,8 +6470,8 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   publisher = {Curran Associates, Inc.},
   volume    = {29},
   file      = {:NIPS2016_9dcb88e0 - Hierarchical Question Image Co Attention for Visual Question Answering.pdf:PDF},
-  groups    = {Visual-Language Learning},
-  ranking   = {rank4},
+  groups    = {Vision-Language Models},
+  ranking   = {rank5},
   url       = {https://proceedings.neurips.cc/paper/2016/file/9dcb88e0137649590b755372b040afad-Paper.pdf},
 }
 
@@ -6470,8 +6482,8 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   year      = {2016},
   month     = {June},
   file      = {:Yang_2016_CVPR - Stacked Attention Networks for Image Question Answering.pdf:PDF},
-  groups    = {Visual-Language Learning},
-  ranking   = {rank4},
+  groups    = {Vision-Language Models},
+  ranking   = {rank5},
 }
 
 @InProceedings{Anderson_2018_CVPR,
@@ -6481,7 +6493,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   year      = {2018},
   month     = {June},
   file      = {:Anderson_2018_CVPR - Bottom up and Top down Attention for Image Captioning and Visual Question Answering.pdf:PDF},
-  groups    = {Visual-Language Learning},
+  groups    = {Vision-Language Models},
   ranking   = {rank5},
 }
 
@@ -6530,6 +6542,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   groups        = {Language-Augmented Learning},
   ranking       = {rank2},
   readstatus    = {read},
+  url           = {https://www.roboticsproceedings.org/rss17/p047.pdf},
 }
 
 @Article{Najar2020,
@@ -6568,7 +6581,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   volume    = {29},
   file      = {:NIPS2016_f442d33f - Hierarchical Deep Reinforcement Learning_ Integrating Temporal Abstraction and Intrinsic Motivation.pdf:PDF},
   groups    = {Hierarchical RL},
-  ranking   = {rank4},
+  ranking   = {rank3},
   url       = {https://proceedings.neurips.cc/paper/2016/file/f442d33fa06832082290ad8544a8da27-Paper.pdf},
 }
 
@@ -6653,7 +6666,7 @@ significantly outperforming regular DQN and other episodic memory based RL algor
   url        = {https://proceedings.neurips.cc/paper/2018/file/6a81681a7af700c6385d36577ebec359-Paper.pdf},
 }
 
-@InProceedings{co-reyes2018metalearning,
+@InProceedings{CoReyes2018_GPL,
   author     = {John D Co-Reyes and Abhishek Gupta and Suvansh Sanjeev and Nick Altieri and John DeNero and Pieter Abbeel and Sergey Levine},
   booktitle  = {International Conference on Learning Representations},
   title      = {Guiding Policies with Language via Meta-Learning},
@@ -6846,7 +6859,7 @@ the agent takes as input the current state and goal, the value function depends 
   file       = {:NEURIPS2021_d428d070 - NovelD_ a Simple yet Effective Exploration Criterion.pdf:PDF},
   groups     = {Curiosity, Intrinsic Motivation},
   readstatus = {read},
-  url        = {https://proceedings.neurips.cc/paper/2021/file/d428d070622e0f4363fceae11f4a3576-Paper.pdf},
+  url        = {https://proceedings.neurips.cc/paper/2021/hash/d428d070622e0f4363fceae11f4a3576-Abstract.html},
 }
 
 @InProceedings{Mirchandani2021_ELLA,
@@ -6955,7 +6968,7 @@ the agent takes as input the current state and goal, the value function depends 
   language  = {English (US)},
 }
 
-@InProceedings{Lu2020,
+@InProceedings{Lu2020_CounterLangDrift,
   author     = {Lu, Yuchen and Singhal, Soumye and Strub, Florian and Courville, Aaron and Pietquin, Olivier},
   booktitle  = {Proceedings of the 37th International Conference on Machine Learning},
   title      = {Countering Language Drift with Seeded Iterated Learning},
@@ -6968,7 +6981,7 @@ the agent takes as input the current state and goal, the value function depends 
   volume     = {119},
   abstract   = {Pretraining on human corpus and then finetuning in a simulator has become a standard pipeline for training a goal-oriented dialogue agent. Nevertheless, as soon as the agents are finetuned to maximize task completion, they suffer from the so-called language drift phenomenon: they slowly lose syntactic and semantic properties of language as they only focus on solving the task. In this paper, we propose a generic approach to counter language drift called Seeded iterated learning (SIL). We periodically refine a pretrained student agent by imitating data sampled from a newly generated teacher agent. At each time step, the teacher is created by copying the student agent, before being finetuned to maximize task completion. SIL does not require external syntactic constraint nor semantic knowledge, making it a valuable task-agnostic finetuning protocol. We evaluate SIL in a toy-setting Lewis Game, and then scale it up to the translation game with natural language. In both settings, SIL helps counter language drift as well as it improves the task completion compared to baselines.},
   file       = {:Lu2020 - Countering Language Drift with Seeded Iterated Learning.pdf:PDF},
-  groups     = {Dialogue agents, Natural language},
+  groups     = {Natural language},
   pdf        = {http://proceedings.mlr.press/v119/lu20c/lu20c.pdf},
   readstatus = {read},
   url        = {https://proceedings.mlr.press/v119/lu20c.html},
@@ -7048,7 +7061,7 @@ the agent takes as input the current state and goal, the value function depends 
   url      = {https://doi.org/10.1111/j.1467-9280.2007.02028.x},
 }
 
-@InCollection{LUPYAN2012255,
+@InCollection{Lupyan2012_WhatWordsDo,
   author     = {Gary Lupyan},
   booktitle  = {The Psychology of Learning and Motivation},
   publisher  = {Academic Press},
@@ -7063,6 +7076,7 @@ the agent takes as input the current state and goal, the value function depends 
   file       = {:LUPYAN2012255 - Chapter Seven What Do Words Do_ toward a Theory of Language Augmented Thought.pdf:PDF},
   groups     = {Language, Developmental psychology},
   issn       = {0079-7421},
+  priority   = {prio1},
   ranking    = {rank2},
   readstatus = {skimmed},
   url        = {https://www.sciencedirect.com/science/article/pii/B9780123942937000078},
@@ -7215,7 +7229,7 @@ the agent takes as input the current state and goal, the value function depends 
   abstractnote = {&lt;p&gt; We introduce a general-purpose conditioning method for neural networks called FiLM: Feature-wise Linear Modulation. FiLM layers influence neural network computation via a simple, feature-wise affine transformation based on conditioning information. We show that FiLM layers are highly effective for visual reasoning - answering image-related questions which require a multi-step, high-level process - a task which has proven difficult for standard deep learning methods that do not explicitly model reasoning. Specifically, we show on visual reasoning tasks that FiLM layers 1) halve state-of-the-art error for the CLEVR benchmark, 2) modulate features in a coherent manner, 3) are robust to ablations and architectural modifications, and 4) generalize well to challenging, new data from few examples or even zero-shot. &lt;/p&gt;},
   doi          = {10.1609/aaai.v32i1.11671},
   file         = {:Perez_Strub_deVries_Dumoulin_Courville_2018 - FiLM_ Visual Reasoning with a General Conditioning Layer.pdf:PDF},
-  groups       = {Question Answering, Visual-Language Learning},
+  groups       = {Question Answering, Vision-Language Models},
   ranking      = {rank4},
   readstatus   = {skimmed},
   url          = {https://ojs.aaai.org/index.php/AAAI/article/view/11671},
@@ -7233,6 +7247,7 @@ the agent takes as input the current state and goal, the value function depends 
   groups        = {Language-Augmented Learning},
   keywords      = {cs.AI, cs.CL, cs.LG},
   primaryclass  = {cs.AI},
+  ranking       = {rank1},
 }
 
 @InProceedings{andreas-2020-good,
@@ -7276,7 +7291,7 @@ the agent takes as input the current state and goal, the value function depends 
   abstract   = {State-of-the-art computer vision systems are trained to predict a fixed set of predetermined object categories. This restricted form of supervision limits their generality and usability since additional labeled data is needed to specify any other visual concept. Learning directly from raw text about images is a promising alternative which leverages a much broader source of supervision. We demonstrate that the simple pre-training task of predicting which caption goes with which image is an efficient and scalable way to learn SOTA image representations from scratch on a dataset of 400 million (image, text) pairs collected from the internet. After pre-training, natural language is used to reference learned visual concepts (or describe new ones) enabling zero-shot transfer of the model to downstream tasks. We study the performance of this approach by benchmarking on over 30 different existing computer vision datasets, spanning tasks such as OCR, action recognition in videos, geo-localization, and many types of fine-grained object classification. The model transfers non-trivially to most tasks and is often competitive with a fully supervised baseline without the need for any dataset specific training. For instance, we match the accuracy of the original ResNet-50 on ImageNet zero-shot without needing to use any of the 1.28 million training examples it was trained on.},
   comment    = {CLIP},
   file       = {:pmlr-v139-radford21a - Learning Transferable Visual Models from Natural Language Supervision.pdf:PDF},
-  groups     = {Visual-Language Learning, Contrastive Learning},
+  groups     = {Contrastive Learning, Vision-Language Models},
   pdf        = {http://proceedings.mlr.press/v139/radford21a/radford21a.pdf},
   ranking    = {rank5},
   readstatus = {read},
@@ -7291,7 +7306,7 @@ the agent takes as input the current state and goal, the value function depends 
   month     = {June},
   pages     = {11162-11173},
   file      = {:Desai_2021_CVPR - VirTex_ Learning Visual Representations from Textual Annotations.pdf:PDF},
-  groups    = {Visual-Language Learning},
+  groups    = {Vision-Language Models},
   ranking   = {rank3},
   url       = {https://openaccess.thecvf.com/content/CVPR2021/html/Desai_VirTex_Learning_Visual_Representations_From_Textual_Annotations_CVPR_2021_paper.html},
 }
@@ -7306,10 +7321,10 @@ the agent takes as input the current state and goal, the value function depends 
   comment       = {ConVIRT},
   eprint        = {2010.00747},
   file          = {:Zhang2020a - Contrastive Learning of Medical Visual Representations from Paired Images and Text.pdf:PDF},
-  groups        = {Visual-Language Learning, Contrastive Learning},
+  groups        = {Contrastive Learning, Vision-Language Models},
   keywords      = {cs.CV, cs.CL, cs.LG},
   primaryclass  = {cs.CV},
-  ranking       = {rank3},
+  ranking       = {rank4},
 }
 
 @Article{Caccia2022,
@@ -7334,7 +7349,7 @@ the agent takes as input the current state and goal, the value function depends 
   month     = {June},
   pages     = {16816-16825},
   file      = {:Zhou_2022_CVPR - Conditional Prompt Learning for Vision Language Models.pdf:PDF},
-  groups    = {Visual-Language Learning},
+  groups    = {Vision-Language Models},
   ranking   = {rank2},
   url       = {https://openaccess.thecvf.com/content/CVPR2022/html/Zhou_Conditional_Prompt_Learning_for_Vision-Language_Models_CVPR_2022_paper.html},
 }
@@ -7397,7 +7412,6 @@ the agent takes as input the current state and goal, the value function depends 
   volume    = {35},
   booktitle = {Advances in Neural Information Processing Systems},
   editor    = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
-  eprint    = {2206.04114},
   file      = {:Hafner2022 - Deep Hierarchical Planning from Pixels.pdf:PDF},
   groups    = {Hierarchical RL},
   publisher = {Curran Associates, Inc.},
@@ -7495,7 +7509,8 @@ the agent takes as input the current state and goal, the value function depends 
   groups    = {LA Reward shaping},
   priority  = {prio2},
   publisher = {Curran Associates, Inc.},
-  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/file/50eb39ab717507cccbe2b8590de32030-Paper-Conference.pdf},
+  ranking   = {rank1},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/50eb39ab717507cccbe2b8590de32030-Abstract-Conference.html},
 }
 
 @InProceedings{radulescu2022name,
@@ -7566,7 +7581,7 @@ the agent takes as input the current state and goal, the value function depends 
   pages     = {259--274},
   publisher = {Springer International Publishing},
   abstract  = {Following a navigation instruction such as `Walk down the stairs and stop at the brown sofa' requires embodied AI agents to ground referenced scene elements referenced (e.g. `stairs') to visual content in the environment (pixels corresponding to `stairs'). We ask the following question -- can we leverage abundant `disembodied' web-scraped vision-and-language corpora (e.g. Conceptual Captions) to learn the visual groundings that improve performance on a relatively data-starved embodied perception task (Vision-and-Language Navigation)? Specifically, we develop VLN-BERT, a visiolinguistic transformer-based model for scoring the compatibility between an instruction (`...stop at the brown sofa') and a trajectory of panoramic RGB images captured by the agent. We demonstrate that pretraining VLN-BERT on image-text pairs from the web before fine-tuning on embodied path-instruction data significantly improves performance on VLN -- outperforming prior state-of-the-art in the fully-observed setting by 4 absolute percentage points on success rate. Ablations of our pretraining curriculum show each stage to be impactful -- with their combination resulting in further gains.},
-  groups    = {Visual-Language Learning},
+  groups    = {Vision-Language Models},
   isbn      = {978-3-030-58539-6},
   ranking   = {rank2},
 }
@@ -7851,7 +7866,7 @@ Multi-Explore},
   url        = {https://openreview.net/forum?id=Xg-yZos9qJQ},
 }
 
-@Article{Andres2022,
+@Article{Andres2022_EvalIntrRew,
   author        = {Alain Andres and Esther Villar-Rodriguez and Javier Del Ser},
   title         = {An Evaluation Study of Intrinsic Motivation Techniques applied to Reinforcement Learning over Hard Exploration Environments},
   year          = {2022},
@@ -7864,6 +7879,7 @@ Multi-Explore},
   keywords      = {cs.LG, cs.AI},
   primaryclass  = {cs.LG},
   readstatus    = {read},
+  url           = {https://arxiv.org/abs/2205.11184},
 }
 
 @Article{Bougie2020,
@@ -7988,7 +8004,7 @@ Multi-Explore},
   file       = {:ma2022elign - ELIGN_ Expectation Alignment As a Multi Agent Intrinsic Reward.pdf:PDF},
   groups     = {Intrinsic rewards in MARL},
   readstatus = {read},
-  url        = {https://openreview.net/forum?id=uPyNR2yPoe},
+  url        = {https://proceedings.neurips.cc/paper_files/paper/2022/hash/3753163b089e405ef10302698cd9a7fc-Abstract-Conference.html},
 }
 
 @InProceedings{chen2021randomized,
@@ -8144,7 +8160,7 @@ Multi-Explore},
   url       = {https://proceedings.neurips.cc/paper/2018/file/1ef03ed0cd5863c550128836b28ec3e9-Paper.pdf},
 }
 
-@Article{Oudeyer2007,
+@Article{Oudeyer2007_IntrMotiv,
   author   = {Oudeyer, Pierre-Yves and Kaplan, Frederic},
   journal  = {Frontiers in neurorobotics},
   title    = {What is Intrinsic Motivation? A Typology of Computational Approaches},
@@ -8187,14 +8203,14 @@ Multi-Explore},
   url       = {https://proceedings.neurips.cc/paper/2017/file/3a20f62a0af1aa152670bab3c602feed-Paper.pdf},
 }
 
-@PhdThesis{wiegand2003analysis,
+@PhdThesis{Wiegand2003_RelOvergen,
   author  = {Wiegand, R Paul},
   school  = {George Mason University},
   title   = {An Analysis of Cooperative Coevolutionary Algorithms},
   year    = {2003},
   comment = {Definition of relative overgeneralization},
-  groups  = {Multi-agent learning},
-  ranking = {rank2},
+  groups  = {Multi-agent learning, Multi-agent RL},
+  ranking = {rank3},
   url     = {http://l.academicdirect.org/Horticulture/GAs/Refs/PhD_Wiegand&Jong_2003.pdf},
 }
 
@@ -8204,6 +8220,7 @@ Multi-Explore},
   title     = {A possibility for implementing curiosity and boredom in model-building neural controllers},
   year      = {1991},
   pages     = {222--227},
+  doi       = {10.7551/mitpress/3115.003.0030},
   file      = {:Schmidhuber1991 - A Possibility for Implementing Curiosity and Boredom in Model Building Neural Controllers.pdf:PDF},
   groups    = {Intrinsic Motivation},
   ranking   = {rank3},
@@ -8515,7 +8532,7 @@ Multi-Explore},
   volume     = {33},
   file       = {:Ruis2020 - A Benchmark for Systematic Generalization in Grounded Language Understanding.pdf:PDF},
   groups     = {Language, LA-L Environments},
-  ranking    = {rank4},
+  ranking    = {rank2},
   readstatus = {skimmed},
   url        = {https://proceedings.neurips.cc/paper/2020/file/e5a90182cc81e12ab5e72d66e0b46fe3-Paper.pdf},
 }
@@ -8528,7 +8545,7 @@ Multi-Explore},
   month      = {jul},
   doi        = {10.1037/rev0000297},
   file       = {:Lake2021 - Word Meaning in Minds and Machines..pdf:PDF},
-  groups     = {Language},
+  groups     = {Language, Knowledge and Understanding},
   publisher  = {American Psychological Association ({APA})},
   ranking    = {rank3},
   readstatus = {skimmed},
@@ -8571,10 +8588,10 @@ Multi-Explore},
   year      = {2017},
   month     = {July},
   file      = {:Das_2017_CVPR - Visual Dialog.pdf:PDF},
-  groups    = {Visual-Language Learning},
+  groups    = {Vision-Language Models},
 }
 
-@InProceedings{Agarwal2019,
+@InProceedings{Agarwal2019_CommunityRegul,
   author     = {Agarwal, Akshat and Gurumurthy, Swaminathan and Sharma, Vasu and Lewis, Mike and Sycara, Katia},
   booktitle  = {Proceedings of the 18th International Conference on Autonomous Agents and MultiAgent Systems},
   title      = {Community Regularization of Visually-Grounded Dialog},
@@ -8585,7 +8602,7 @@ Multi-Explore},
   series     = {AAMAS '19},
   abstract   = {The task of conducting visually grounded dialog involves learning goal-oriented cooperative dialog between autonomous agents who exchange information about a scene through several rounds of questions and answers in natural language. We posit that requiring artificial agents to adhere to the rules of human language, while also requiring them to maximize information exchange through dialog is an ill-posed problem. We observe that humans do not stray from a common language because they are social creatures who live in communities, and have to communicate with many people everyday, so it is far easier to stick to a common language even at the cost of some efficiency loss. Using this as inspiration, we propose and evaluate a multi-agent community-based dialog framework where each agent interacts with, and learns from, multiple agents, and show that this community-enforced regularization results in more relevant and coherent dialog (as judged by human evaluators) without sacrificing task performance (as judged by quantitative metrics).},
   file       = {:Agarwal2019 - Community Regularization of Visually Grounded Dialog (1).pdf:PDF},
-  groups     = {Visual-Language Learning, Natural language, Dialogue agents},
+  groups     = {Natural language, Dialogue agents, Vision-Language Models},
   isbn       = {9781450363099},
   keywords   = {curriculum learning, visual dialog, emergent communication, multi-agent reinforcement learning},
   location   = {Montreal QC, Canada},
@@ -8607,7 +8624,7 @@ Multi-Explore},
   abstract  = {Recent work has shown how to learn better visual-semantic embeddings by leveraging image descriptions in more than one language. Here, we investigate in detail which conditions affect the performance of this type of grounded language learning model. We show that multilingual training improves over bilingual training, and that low-resource languages benefit from training with higher-resource languages. We demonstrate that a multilingual model can be trained equally well on either translations or comparable sentence pairs, and that annotating the same set of images in multiple language enables further improvements via an additional caption-caption ranking objective.},
   doi       = {10.18653/v1/K18-1039},
   file      = {:Kadar2018 - Lessons Learned in Multilingual Grounded Language Learning.pdf:PDF},
-  groups    = {Visual-Language Learning},
+  groups    = {Vision-Language Models},
   url       = {https://aclanthology.org/K18-1039},
 }
 
@@ -8633,7 +8650,7 @@ Multi-Explore},
   month     = apr,
   abstract  = {Large pretrained (e.g., "foundation") models exhibit distinct capabilities depending on the domain of data they are trained on. While these domains are generic, they may only barely overlap. For example, visual-language models (VLMs) are trained on Internet-scale image captions, but large language models (LMs) are further trained on Internet-scale text with no images (e.g., spreadsheets, SAT questions, code). As a result, these models store different forms of commonsense knowledge across different domains. In this work, we show that this diversity is symbiotic, and can be leveraged through Socratic Models (SMs): a modular framework in which multiple pretrained models may be composed zero-shot i.e., via multimodal-informed prompting, to exchange information with each other and capture new multimodal capabilities, without requiring finetuning. With minimal engineering, SMs are not only competitive with state-of-the-art zero-shot image captioning and video-to-text retrieval, but also enable new applications such as (i) answering free-form questions about egocentric video, (ii) engaging in multimodal assistive dialogue with people (e.g., for cooking recipes) by interfacing with external APIs and databases (e.g., web search), and (iii) robot perception and planning.},
   file      = {:Zeng2022_Socratic - Socratic Models_ Composing Zero Shot Multimodal Reasoning with Language.pdf:PDF:https\://openreview.net/pdf?id=G2Q2Mh3avow},
-  groups    = {Visual-Language Learning, Large Language Models},
+  groups    = {Large Language Models, Vision-Language Models},
   ranking   = {rank3},
   url       = {https://openreview.net/forum?id=G2Q2Mh3avow},
 }
@@ -8802,7 +8819,7 @@ Multi-Explore},
   year      = {2020},
   month     = {June},
   file      = {:Zhu_2020_CVPR - Vision Dialog Navigation by Exploring Cross Modal Memory.pdf:PDF},
-  groups    = {Visual-Language Learning, Language for memory, Memory},
+  groups    = {Language for memory, Memory, Vision-Language Models},
   priority  = {prio1},
   ranking   = {rank1},
   url       = {https://openaccess.thecvf.com/content_CVPR_2020/html/Zhu_Vision-Dialog_Navigation_by_Exploring_Cross-Modal_Memory_CVPR_2020_paper.html},
@@ -8952,7 +8969,7 @@ Multi-Explore},
   author     = {Weir, Nathaniel and Yuan, Xingdi and Côté, Marc-Alexandre and Hausknecht, Matthew and Laroche, Romain and Momennejad, Ida and Van Seijen, Harm and Van Durme, Benjamin},
   booktitle  = {Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems},
   title      = {One-Shot Learning from a Demonstration with Hierarchical Latent Language},
-  year       = {2022},
+  year       = {2023},
   address    = {Richland, SC},
   pages      = {2388–2390},
   publisher  = {International Foundation for Autonomous Agents and Multiagent Systems},
@@ -9128,7 +9145,7 @@ ChatGPT},
 }
 
 @InProceedings{Brohan2023_RT2,
-  author     = {Anthony Brohan, Noah Brown, Justice Carbajal, Yevgen Chebotar, Xi Chen, Krzysztof Choromanski, Tianli Ding, Danny Driess, Avinava Dubey, Chelsea Finn, Pete Florence, Chuyuan Fu, Montse Gonzalez Arenas, Keerthana Gopalakrishnan, Kehang Han, Karol Hausman, Alexander Herzog, Jasmine Hsu, Brian Ichter, Alex Irpan, Nikhil Joshi, Ryan Julian, Dmitry Kalashnikov, Yuheng Kuang, Isabel Leal, Lisa Lee, Tsang-Wei Edward Lee, Sergey Levine, Yao Lu, Henryk Michalewski, Igor Mordatch, Karl Pertsch, Kanishka Rao, Krista Reymann, Michael Ryoo, Grecia Salazar, Pannag Sanketi, Pierre Sermanet, Jaspiar Singh, Anikait Singh, Radu Soricut, Huong Tran, Vincent Vanhoucke, Quan Vuong,Ayzaan Wahid, Stefan Welker, Paul Wohlhart, Jialin Wu, Fei Xia, Ted Xiao, Peng Xu, Sichun Xu, Tianhe Yu, Brianna Zitkovich},
+  author     = {Zitkovich, Brianna and Yu, Tianhe and Xu, Sichun and Xu, Peng and Xiao, Ted and Xia, Fei and Wu, Jialin and Wohlhart, Paul and Welker, Stefan and Wahid, Ayzaan and Vuong, Quan and Vanhoucke, Vincent and Tran, Huong and Soricut, Radu and Singh, Anikait and Singh, Jaspiar and Sermanet, Pierre and Sanketi, Pannag R. and Salazar, Grecia and Ryoo, Michael S. and Reymann, Krista and Rao, Kanishka and Pertsch, Karl and Mordatch, Igor and Michalewski, Henryk and Lu, Yao and Levine, Sergey and Lee, Lisa and Lee, Tsang-Wei Edward and Leal, Isabel and Kuang, Yuheng and Kalashnikov, Dmitry and Julian, Ryan and Joshi, Nikhil J. and Irpan, Alex and Ichter, Brian and Hsu, Jasmine and Herzog, Alexander and Hausman, Karol and Gopalakrishnan, Keerthana and Fu, Chuyuan and Florence, Pete and Finn, Chelsea and Dubey, Kumar Avinava and Driess, Danny and Ding, Tianli and Choromanski, Krzysztof Marcin and Chen, Xi and Chebotar, Yevgen and Carbajal, Justice and Brown, Noah and Brohan, Anthony and Arenas, Montserrat Gonzalez and Han, Kehang},
   booktitle  = {Proceedings of The 7th Conference on Robot Learning},
   title      = {RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control},
   year       = {2023},
@@ -9140,7 +9157,7 @@ ChatGPT},
   volume     = {229},
   abstract   = {We study how vision-language models trained on Internet-scale data can be incorporated directly into end-to-end robotic control to boost generalization and enable emergent semantic reasoning. Our goal is to enable a single end-to-end trained model to both learn to map robot observations to actions and enjoy the benefits of large-scale pretraining on language and vision-language data from the web. To this end, we propose to co-fine-tune state-of-the-art vision-language models on both robotic trajectory data and Internet-scale vision-language tasks, such as visual question answering. In contrast to other approaches, we propose a simple, general recipe to achieve this goal: in order to fit both natural language responses and robotic actions into the same format, we express the actions as text tokens and incorporate them directly into the training set of the model in the same way as natural language tokens. We refer to such category of models as vision-language-action models (VLA) and instantiate an example of such a model, which we call RT-2. Our extensive evaluation (6k evaluation trials) shows that our approach leads to performant robotic policies and enables RT-2 to obtain a range of emergent capabilities from Internet-scale training. This includes significantly improved generalization to novel objects, the ability to interpret commands not present in the robot training data (such as placing an object onto a particular number or icon), and the ability to perform rudimentary reasoning in response to user commands (such as picking up the smallest or largest object, or the one closest to another object). We further show that incorporating chain of thought reasoning allows RT-2 to perform multi-stage semantic reasoning, for example figuring out which object to pick up for use as an improvised hammer (a rock), or which type of drink is best suited for someone who is tired (an energy drink).},
   file       = {:Brohan2023 - RT 2_ Vision Language Action Models Transfer Web Knowledge to Robotic Control.pdf:PDF},
-  groups     = {Visual-Language Learning, Language-Augmented Robotic Control, Vision-Language-Action models},
+  groups     = {Language-Augmented Robotic Control, Vision-Language-Action models},
   pdf        = {https://proceedings.mlr.press/v229/zitkovich23a/zitkovich23a.pdf},
   ranking    = {rank3},
   readstatus = {skimmed},
@@ -9178,7 +9195,7 @@ ChatGPT},
   hal_id      = {hal-03970122},
   hal_version = {v3},
   pdf         = {https://hal.science/hal-03970122v3/file/extended_version.pdf},
-  ranking     = {rank3},
+  ranking     = {rank2},
   readstatus  = {read},
   url         = {https://hal.science/hal-03970122},
 }
@@ -9224,29 +9241,12 @@ ChatGPT},
   doi           = {10.48550/ARXIV.2302.12766},
   eprint        = {2302.12766},
   file          = {:Karamcheti2023 - Language Driven Representation Learning for Robotics.pdf:PDF},
-  groups        = {Visual-Language Learning, Language-Augmented Robotic Control},
+  groups        = {Language-Augmented Robotic Control, Vision-Language Models},
   keywords      = {Robotics (cs.RO), Artificial Intelligence (cs.AI), Computation and Language (cs.CL), Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences},
   primaryclass  = {cs.RO},
   publisher     = {arXiv},
   ranking       = {rank2},
   readstatus    = {read},
-}
-
-@InProceedings{Driess2023_PaLME,
-  author     = {Driess, Danny and Xia, Fei and Sajjadi, Mehdi S. M. and Lynch, Corey and Chowdhery, Aakanksha and Ichter, Brian and Wahid, Ayzaan and Tompson, Jonathan and Vuong, Quan and Yu, Tianhe and Huang, Wenlong and Chebotar, Yevgen and Sermanet, Pierre and Duckworth, Daniel and Levine, Sergey and Vanhoucke, Vincent and Hausman, Karol and Toussaint, Marc and Greff, Klaus and Zeng, Andy and Mordatch, Igor and Florence, Pete},
-  booktitle  = {Proceedings of the 40th International Conference on Machine Learning},
-  title      = {PaLM-E: An Embodied Multimodal Language Model},
-  year       = {2023},
-  editor     = {PMLR},
-  volume     = {202},
-  abstract   = {Large language models excel at a wide range of complex tasks. However, enabling general inference in the real world, e.g., for robotics problems, raises the challenge of grounding. We propose embodied language models to directly incorporate real-world continuous sensor modalities into language models and thereby establish the link between words and percepts. Input to our embodied language model are multi-modal sentences that interleave visual, continuous state estimation, and textual input encodings. We train these encodings end-to-end, in conjunction with a pre-trained large language model, for multiple embodied tasks including sequential robotic manipulation planning, visual question answering, and captioning. Our evaluations show that PaLM-E, a single large embodied multimodal model, can address a variety of embodied reasoning tasks, from a variety of observation modalities, on multiple embodiments, and further, exhibits positive transfer: the model benefits from diverse joint training across internet-scale language, vision, and visual-language domains. Our largest model, PaLM-E-562B with 562B parameters, in addition to being trained on robotics tasks, is a visual-language generalist with state-of-the-art performance on OK-VQA, and retains generalist language capabilities with increasing scale.},
-  doi        = {10.48550/ARXIV.2303.03378},
-  eprint     = {2303.03378},
-  file       = {:Driess2023 - PaLM E_ an Embodied Multimodal Language Model.pdf:PDF},
-  groups     = {Large Language Models, Visual-and-Language Navigation, Agent-based LLMs, Vision-Language-Action models},
-  keywords   = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Robotics (cs.RO), FOS: Computer and information sciences},
-  ranking    = {rank4},
-  readstatus = {read},
 }
 
 @InProceedings{Dosovitskiy2021_VisionTransformer,
@@ -9314,7 +9314,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2019/file/757f843a169cc678064d9530d12a1881-Paper.pdf},
 }
 
-@Article{Huang2023_GroundedDecoding,
+@Article{Huang2023_GroundDec,
   author        = {Huang, Wenlong and Xia, Fei and Shah, Dhruv and Driess, Danny and Zeng, Andy and Lu, Yao and Florence, Pete and Mordatch, Igor and Levine, Sergey and Hausman, Karol and Ichter, Brian},
   title         = {Grounded Decoding: Guiding Text Generation with Grounded Models for Embodied Agents},
   year          = {2023},
@@ -9392,6 +9392,7 @@ ChatGPT},
   groups  = {RL in Biology and Neuroscience},
   journal = {Classical Conditioning II: Current Research and Theory},
   ranking = {rank5},
+  url     = {https://www.researchgate.net/publication/233820243_A_theory_of_Pavlovian_conditioning_Variations_in_the_effectiveness_of_reinforcement_and_nonreinforcement},
 }
 
 @Article{Brembs2010_FreeWill,
@@ -9427,7 +9428,7 @@ ChatGPT},
   ranking   = {rank3},
 }
 
-@Article{Moerland2023,
+@Article{Moerland2023_ModelRL,
   author    = {Moerland, Thomas M. and Broekens, Joost and Plaat, Aske and Jonker, Catholijn M.},
   journal   = {Foundations and Trends® in Machine Learning},
   title     = {Model-based Reinforcement Learning: A Survey},
@@ -9443,7 +9444,7 @@ ChatGPT},
   ranking   = {rank4},
 }
 
-@Article{Hafner2023,
+@Article{Hafner2023_DreamerV3,
   author        = {Hafner, Danijar and Pasukonis, Jurgis and Ba, Jimmy and Lillicrap, Timothy},
   title         = {Mastering Diverse Domains through World Models},
   year          = {2023},
@@ -9753,6 +9754,7 @@ ChatGPT},
   file    = {:Theory and Application of Reward Shaping in Reinforcement Learning.pdf:PDF},
   groups  = {Reward Shaping, RL},
   ranking = {rank2},
+  url     = {http://hdl.handle.net/2142/10797},
 }
 
 @InProceedings{Tsitsiklis1996,
@@ -9901,22 +9903,20 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2020/file/1f89885d556929e98d3ef9b86448f951-Paper.pdf},
 }
 
-@Article{Casper2023,
-  author        = {Casper, Stephen and Davies, Xander and Shi, Claudia and Gilbert, Thomas Krendl and Scheurer, Jérémy and Rando, Javier and Freedman, Rachel and Korbak, Tomasz and Lindner, David and Freire, Pedro and Wang, Tony and Marks, Samuel and Segerie, Charbel-Raphaël and Carroll, Micah and Peng, Andi and Christoffersen, Phillip and Damani, Mehul and Slocum, Stewart and Anwar, Usman and Siththaranjan, Anand and Nadeau, Max and Michaud, Eric J. and Pfau, Jacob and Krasheninnikov, Dmitrii and Chen, Xin and Langosco, Lauro and Hase, Peter and Bıyık, Erdem and Dragan, Anca and Krueger, David and Sadigh, Dorsa and Hadfield-Menell, Dylan},
-  title         = {Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback},
-  year          = {2023},
-  month         = jul,
-  abstract      = {Reinforcement learning from human feedback (RLHF) is a technique for training AI systems to align with human goals. RLHF has emerged as the central method used to finetune state-of-the-art large language models (LLMs). Despite this popularity, there has been relatively little public work systematizing its flaws. In this paper, we (1) survey open problems and fundamental limitations of RLHF and related methods; (2) overview techniques to understand, improve, and complement RLHF in practice; and (3) propose auditing and disclosure standards to improve societal oversight of RLHF systems. Our work emphasizes the limitations of RLHF and highlights the importance of a multi-faceted approach to the development of safer AI systems.},
-  archiveprefix = {arXiv},
-  copyright     = {Creative Commons Attribution 4.0 International},
-  doi           = {10.48550/ARXIV.2307.15217},
-  eprint        = {2307.15217},
-  file          = {:Casper2023 - Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback.pdf:PDF},
-  groups        = {RLHF},
-  keywords      = {Artificial Intelligence (cs.AI), Computation and Language (cs.CL), Machine Learning (cs.LG), FOS: Computer and information sciences},
-  primaryclass  = {cs.AI},
-  publisher     = {arXiv},
-  ranking       = {rank2},
+@Article{Casper2023_RLHFLimits,
+  author       = {Stephen Casper and Xander Davies and Claudia Shi and Thomas Krendl Gilbert and J{\'e}r{\'e}my Scheurer and Javier Rando and Rachel Freedman and Tomasz Korbak and David Lindner and Pedro Freire and Tony Tong Wang and Samuel Marks and Charbel-Raphael Segerie and Micah Carroll and Andi Peng and Phillip Christoffersen and Mehul Damani and Stewart Slocum and Usman Anwar and Anand Siththaranjan and Max Nadeau and Eric J Michaud and Jacob Pfau and Dmitrii Krasheninnikov and Xin Chen and Lauro Langosco and Peter Hase and Erdem Biyik and Anca Dragan and David Krueger and Dorsa Sadigh and Dylan Hadfield-Menell},
+  journal      = {Transactions on Machine Learning Research},
+  title        = {Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback},
+  year         = {2023},
+  issn         = {2835-8856},
+  note         = {Survey Certification},
+  file         = {:Casper2023 - Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback.pdf:PDF},
+  groups       = {RLHF, AI Safety},
+  keywords     = {Artificial Intelligence (cs.AI), Computation and Language (cs.CL), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass = {cs.AI},
+  publisher    = {arXiv},
+  ranking      = {rank2},
+  url          = {https://openreview.net/forum?id=bx24KpJ4Eb},
 }
 
 @Article{Wu2021,
@@ -10090,7 +10090,7 @@ ChatGPT},
   ranking    = {rank5},
 }
 
-@Article{Colas2022,
+@Article{Colas2022_Autotelic,
   author     = {Colas, Cédric and Karch, Tristan and Moulin-Frier, Clément and Oudeyer, Pierre-Yves},
   journal    = {Nature Machine Intelligence},
   title      = {Language and culture internalization for human-like autotelic AI},
@@ -10159,7 +10159,7 @@ ChatGPT},
   urldate   = {2024-03-04},
 }
 
-@Article{Vandenhende2021,
+@Article{Vandenhende2021_MultiTask,
   author    = {Vandenhende, Simon and Georgoulis, Stamatios and Van Gansbeke, Wouter and Proesmans, Marc and Dai, Dengxin and Van Gool, Luc},
   journal   = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
   title     = {Multi-Task Learning for Dense Prediction Tasks: A Survey},
@@ -10181,6 +10181,7 @@ ChatGPT},
   groups    = {RL},
   publisher = {University of Massachusetts Amherst},
   ranking   = {rank5},
+  url       = {https://gwern.net/doc/reinforcement-learning/model-free/1984-sutton.pdf},
 }
 
 @Article{Sutton1991_Dyna,
@@ -10215,6 +10216,7 @@ ChatGPT},
   location  = {Helsinki, Finland},
   numpages  = {9},
   ranking   = {rank2},
+  url       = {https://dl.acm.org/doi/abs/10.5555/3023476.3023539},
 }
 
 @Article{Narendra1990_NNSystemIdent,
@@ -10472,6 +10474,7 @@ ChatGPT},
   location  = {Chicago, Illinois},
   numpages  = {6},
   ranking   = {rank2},
+  url       = {https://dl.acm.org/doi/abs/10.5555/1619995.1620038},
 }
 
 @Article{Rosenblatt1958_Perceptron,
@@ -10601,7 +10604,7 @@ ChatGPT},
   title      = {Emergent Translation in Multi-Agent Communication},
   year       = {2018},
   file       = {:Lee2018_Emergent - Emergent Translation in Multi Agent Communication.pdf:PDF:https\://openreview.net/pdf?id=H1vEXaxA-},
-  groups     = {Language-Grounded Communication, Emergent Communication},
+  groups     = {Language-Grounded Communication, Emergent Communication, Natural language},
   ranking    = {rank1},
   readstatus = {read},
   url        = {https://openreview.net/forum?id=H1vEXaxA-},
@@ -10676,7 +10679,7 @@ ChatGPT},
   groups    = {Computer Vision},
   journal   = {3rd International Conference on Learning Representations (ICLR 2015)},
   ranking   = {rank5},
-  url       = {https://arxiv.org/abs/1409.1556},
+  url       = {https://www.semanticscholar.org/paper/Very-Deep-Convolutional-Networks-for-Large-Scale-Simonyan-Zisserman/eb42cf88027de515750f230b23b1a057dc782108},
 }
 
 @InProceedings{Krizhevsky2012_AlexNet,
@@ -10705,7 +10708,7 @@ ChatGPT},
   url       = {https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf},
 }
 
-@Article{Baumli2023,
+@Article{Baumli2023_VLRewards,
   author        = {Baumli, Kate and Baveja, Satinder and Behbahani, Feryal and Chan, Harris and Comanici, Gheorghe and Flennerhag, Sebastian and Gazeau, Maxime and Holsheimer, Kristian and Horgan, Dan and Laskin, Michael and Lyle, Clare and Masoom, Hussain and McKinney, Kay and Mnih, Volodymyr and Neitz, Alexander and Pardo, Fabio and Parker-Holder, Jack and Quan, John and Rocktäschel, Tim and Sahni, Himanshu and Schaul, Tom and Schroecker, Yannick and Spencer, Stephen and Steigerwald, Richie and Wang, Luyu and Zhang, Lei},
   title         = {Vision-Language Models as a Source of Rewards},
   year          = {2023},
@@ -11309,14 +11312,15 @@ ChatGPT},
   readstatus = {skimmed},
 }
 
-@InProceedings{Lewis2017,
+@InProceedings{Lewis2017_Deal,
   author    = {Lewis, Mike and Yarats, Denis and Dauphin, Yann and Parikh, Devi and Batra, Dhruv},
   booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
   title     = {Deal or No Deal? End-to-End Learning of Negotiation Dialogues},
   year      = {2017},
   publisher = {Association for Computational Linguistics},
   doi       = {10.18653/v1/d17-1259},
-  groups    = {Dialogue agents},
+  file      = {:Lewis2017 - Deal or No Deal_ End to End Learning of Negotiation Dialogues.pdf:PDF:https\://aclanthology.org/D17-1259.pdf},
+  groups    = {Dialogue agents, Natural language},
   ranking   = {rank3},
 }
 
@@ -11406,7 +11410,7 @@ ChatGPT},
   publisher = {Harvard University Press},
   title     = {Convention: A Philosophical Study},
   year      = {1969},
-  groups    = {Emergent Communication},
+  groups    = {Emergent Communication, Language},
   priority  = {prio1},
   ranking   = {rank5},
   url       = {https://eclass.upatras.gr/modules/document/file.php/CEID1184/0 Γενικά/David Lewis - Convention_ A Philosophical Study (2002, Wiley-Blackwell).pdf},
@@ -11555,7 +11559,7 @@ ChatGPT},
   url       = {https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2809.pdf},
 }
 
-@InProceedings{Ekila2024_LingConvent,
+@InProceedings{Botoko2024_LingConvent,
   author     = {Botoko Ekila, J\'{e}r\^{o}me},
   booktitle  = {Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems},
   title      = {Emergence of Linguistic Conventions In Multi-Agent Systems Through Situated Communicative Interactions},
@@ -11581,7 +11585,7 @@ ChatGPT},
   year      = {2024},
   abstract  = {AI agents powered by Large Language Models (LLMs) have made significant advances, enabling them to assist humans in diverse complex tasks and leading to a revolution in human-AI coordination. LLM-powered agents typically require invoking LLM APIs and employing artificially designed complex prompts, which results in high inference latency. While this paradigm works well in scenarios with minimal interactive demands, such as code generation, it is unsuitable for highly interactive and real-time applications, such as gaming. Traditional gaming AI often employs small models or reactive policies, enabling fast inference but offering limited task completion and interaction abilities. In this work, we consider Overcooked as our testbed where players could communicate with natural language and cooperate to serve orders. We propose a Hierarchical Language Agent (HLA) for human-AI coordination that provides both strong reasoning abilities while keeping real-time execution. In particular, HLA adopts a hierarchical framework and comprises three modules: a proficient LLM, referred to as Slow Mind, for intention reasoning and language interaction, a lightweight LLM, referred to as Fast Mind, for generating macro actions, and a reactive policy, referred to as Executor, for transforming macro actions into atomic actions. Human studies show that HLA outperforms other baseline agents, including slow-mind-only agents and fast-mind-only agents, with stronger cooperation abilities, faster responses, and more consistent language communications.},
   file      = {:Liu2023 - LLM Powered Hierarchical Language Agent for Real Time Human AI Coordination.pdf:PDF:http\://arxiv.org/pdf/2312.15224v2},
-  groups    = {Comm with LLMs, Human-AI teaming},
+  groups    = {Comm with LLMs, Human-AI teaming, Agent-based LLMs},
   keywords  = {Artificial Intelligence (cs.AI), Human-Computer Interaction (cs.HC), FOS: Computer and information sciences},
   priority  = {prio1},
   url       = {https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1219.pdf},
@@ -11674,7 +11678,7 @@ ChatGPT},
   pages     = {1--38},
   volume    = {55},
   doi       = {10.1145/3571730},
-  groups    = {Large Language Models},
+  groups    = {Large Language Models, Hallucinations},
   publisher = {Association for Computing Machinery (ACM)},
   ranking   = {rank5},
 }
@@ -11728,6 +11732,7 @@ ChatGPT},
   file      = {:Nagel1974 - What Is It like to Be a Bat_.pdf:PDF:https\://www.sas.upenn.edu/~cavitch/pdf-library/Nagel_Bat.pdf},
   groups    = {Conciousness},
   publisher = {JSTOR},
+  ranking   = {rank5},
 }
 
 @Article{Searle1980,
@@ -11778,7 +11783,7 @@ ChatGPT},
   ranking   = {rank5},
 }
 
-@Book{Steels2015,
+@Book{Steels2015_TalkingHeads,
   author    = {Steels, Luc L.},
   publisher = {Language Science Press},
   title     = {{The} {Talking} {Heads} experiment},
@@ -11966,7 +11971,7 @@ ChatGPT},
   ranking   = {rank2},
 }
 
-@Article{Nevens2020,
+@Article{Nevens2020_ConceptLearn,
   author   = {Nevens, Jens and Van Eecke, Paul and Beuls, Katrien},
   journal  = {Frontiers in Robotics and AI},
   title    = {From Continuous Observations to Symbolic Concepts: A Discrimination-Based Strategy for Grounded Concept Learning},
@@ -12019,7 +12024,7 @@ ChatGPT},
 @Book{Steels1999_TalkingHeads1,
   author   = {Luc Steels},
   editor   = {Special pre-edition for LABORATORIUM},
-  title    = {The Talking Heads Experiment. Volume I. Words and Meanings},
+  title    = {The Talking Heads Experiment Volume I. Words and Meanings},
   year     = {1999},
   groups   = {Language origins and evolution},
   priority = {prio1},
@@ -12440,7 +12445,7 @@ ChatGPT},
   ranking   = {rank3},
 }
 
-@InProceedings{Li2023,
+@InProceedings{Li2023_ToMLLM,
   author    = {Li, Huao and Chong, Yu and Stepputtis, Simon and Campbell, Joseph and Hughes, Dana and Lewis, Charles and Sycara, Katia},
   booktitle = {Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
   title     = {Theory of Mind for Multi-Agent Collaboration via Large Language Models},
@@ -12455,7 +12460,7 @@ ChatGPT},
 @InProceedings{Guo2024_LLMsMA,
   author       = {Guo, T and Chen, X and Wang, Y and Chang, R and Pei, S and Chawla, NV and Wiest, O and Zhang, X},
   booktitle    = {33rd International Joint Conference on Artificial Intelligence (IJCAI 2024)},
-  title        = {Large Language Model based Multi-Agents: A Survey of Progress and Challenges.},
+  title        = {Large Language Model based Multi-Agents: A Survey of Progress and Challenges},
   year         = {2024},
   abstractnote = {Large Language Models (LLMs) have achieved remarkable success across a wide array of tasks. Due to the impressive planning and reasoning abilities of LLMs, they have been used as autonomous agents to do many tasks automatically. Recently, based on the development of using one LLM as a single planning or decision-making agent, LLM-based multi-agent systems have achieved considerable progress in complex problem-solving and world simulation. To provide the community with an overview of this dynamic field, we present this survey to offer an in-depth discussion on the essential aspects of multi-agent systems based on LLMs, as well as the challenges. Our goal is for readers to gain substantial insights on the following questions: What domains and environments do LLM-based multi-agents simulate? How are these agents profiled and how do they communicate? What mechanisms contribute to the growth of agents' capacities? For those interested in delving into this field of study, we also summarize the commonly used datasets or benchmarks for them to have convenient access. To keep researchers updated on the latest studies, we maintain an open-source GitHub repository, dedicated to outlining the research on LLM-based multi-agent systems.},
   file         = {:Guo2024_LLMsMA - Large Language Model Based Multi Agents_ a Survey of Progress and Challenges..pdf:PDF:https\://arxiv.org/pdf/2402.01680},
@@ -12692,6 +12697,7 @@ ChatGPT},
   year      = {2015},
   isbn      = {1118456076},
   abstract  = {New methods of economic modelling have been sought as a result of the global economic downturn in 2008. This unique book highlights the benefits of an agent-based modelling (ABM) approach. It demonstrates how ABM can easily handle complexity: heterogeneous people, households and firms interacting dynamically. Unlike traditional methods, ABM does not require people or firms to optimise or economic systems to reach equilibrium. ABM offers a way to link micro foundations directly to the macro situation.   Key features: •         Introduces the concept of agent-based modelling and shows how it differs from existing approaches.  •         Provides a theoretical and methodological rationale for using ABM in economics, along with practical advice on how to design and create the models. •         Starts each chapter with a short summary of the relevant economic theory and then shows how to apply ABM.  •         Explores both topics covered in basic economics textbooks and current important policy themes; unemployment, exchange rates, banking and environmental issues. •         Describes the models in pseudocode, enabling the reader to develop programs in their chosen language. •         Is supported by a website featuring the NetLogo models described in the book. Agent-based Modelling in Economics provides students and researchers with the skills to design, implement, and analyze agent-based models. Third year undergraduate, master and doctoral students, faculty and professional economists will find this book an invaluable resource.},
+  doi       = {10.1002/9781118945520},
   groups    = {MAS in Economics, MAS Reviews},
   keywords  = {Economics;computer simulation;Economics";" computer simulation},
   pages     = {272},
@@ -12705,14 +12711,15 @@ ChatGPT},
   year      = {2006},
   isbn      = {032131283X},
   groups    = {MAS in Software Engineering},
+  url       = {https://books.google.fr/books?hl=en&lr=&id=oP-2hpMEdb8C&oi=fnd&pg=PR11&dq=Principles+of+Concurrent+and+Distributed+Programming+(2nd+Edition)+&ots=HYkyOSjOTg&sig=OGWGMdsM_9GKTNmaqoKZRES0DPY&redir_esc=y#v=onepage&q=Principles of Concurrent and Distributed Programming (2nd Edition)&f=false},
 }
 
 @Book{Rosenschein1994_Encounter,
   author    = {Jeffrey S. Rosenschein and Gilad Zlotkin},
-  publisher = {pub-mit},
+  publisher = {The MIT Press},
   title     = {Rules of Encounter},
   year      = {1994},
-  isbn      = {0262181592},
+  isbn      = {9780262181594},
   abstract  = {Rules of Encounter applies the general approach and
                   the mathematical tools of game theory in a formal
                   analysis of rules (or protocols) governing the
@@ -12748,6 +12755,7 @@ ChatGPT},
   googleid  = {mD24BWOMbgYJ:scholar.google.com/},
   groups    = {MAS in Economics, MAS Reviews, Game theory},
   ranking   = {rank5},
+  url       = {https://mitpress.mit.edu/9780262181594/rules-of-encounter/},
 }
 
 @Article{Fatima2008_ShapleyLinApprox,
@@ -12838,6 +12846,7 @@ ChatGPT},
   pages     = {775--793},
   volume    = {38},
   doi       = {10.1111/cogs.12102},
+  file      = {:Cognitive Science - 2014 - Perfors - Language Evolution Can Be Shaped by the Structure of the World.pdf:PDF},
   groups    = {Language origins and evolution},
   publisher = {Wiley},
   ranking   = {rank1},
@@ -12994,6 +13003,7 @@ ChatGPT},
   address   = {Cambridge, Massachusetts},
   groups    = {Human communication},
   ranking   = {rank5},
+  url       = {https://books.google.fr/books?hl=en&lr=&id=B3ILEAAAQBAJ&oi=fnd&pg=PA1&dq=How+to+do+things+with+words+&ots=ika0YHioz8&sig=nnHnJYs-TKVO9cqUxEFsTVW3qUo&redir_esc=y#v=onepage&q=How to do things with words&f=false},
 }
 
 @InProceedings{Panait2006,
@@ -13510,6 +13520,7 @@ ChatGPT},
   location  = {St. Paul, MN, USA},
   numpages  = {2},
   ranking   = {rank2},
+  url       = {https://www.research.ed.ac.uk/en/publications/a-game-theoretic-model-and-best-response-learning-method-for-ad-h},
 }
 
 @Article{Sartoretti2019_DistribArticulat,
@@ -13876,6 +13887,7 @@ ChatGPT},
   publisher = {New York: Basic Books},
   title     = {Philosophy in the Flesh: The embodied mind and its challenge to Western thought},
   year      = {1999},
+  doi       = {10.1590/S0102-44502001000100008},
   groups    = {Embodiment},
   ranking   = {rank5},
 }
@@ -14952,6 +14964,7 @@ ChatGPT},
   title     = {Mindreaders: The Cognitive Basis of "Theory of Mind"},
   year      = {2011},
   address   = {New York},
+  doi       = {10.4324/9780203833926},
   groups    = {Theory of Mind},
   ranking   = {rank4},
 }
@@ -15197,7 +15210,7 @@ ChatGPT},
   collection = {EURBOT-99},
   doi        = {10.1109/eurbot.1999.827639},
   file       = {:Dautenhahn - Studying Robot Social Cognition within a Developmental Psychology Framework.pdf:PDF:https\://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=1567cdc180c470694dd09d282ba7103cb68bbfee},
-  groups     = {Developmental psychology},
+  groups     = {Developmental psychology, Social Learning},
   ranking    = {rank1},
 }
 
@@ -15271,13 +15284,15 @@ ChatGPT},
   ranking   = {rank4},
 }
 
-@Book{tomasello2009cultural,
+@Book{Tomasello2009_Cultural,
   author    = {Tomasello, Michael},
   publisher = {Harvard university press},
   title     = {The cultural origins of human cognition},
   year      = {2009},
-  groups    = {Intelligence, Developmental psychology},
+  groups    = {Intelligence, Developmental psychology, Language, Language-Augmented Learning, Social Learning},
+  priority  = {prio1},
   ranking   = {rank5},
+  url       = {https://books.google.fr/books?id=ji2_pY4mKwYC},
 }
 
 @Article{Tomasello2005_CulturalCognition,
@@ -15292,6 +15307,7 @@ ChatGPT},
   volume    = {28},
   doi       = {10.1017/s0140525x05000129},
   groups    = {Developmental psychology},
+  priority  = {prio1},
   publisher = {Cambridge University Press (CUP)},
   ranking   = {rank5},
 }
@@ -15357,7 +15373,7 @@ ChatGPT},
   doi           = {10.48550/ARXIV.2209.11972},
   eprint        = {2209.11972},
   file          = {:Jain2022 - Ground Then Navigate_ Language Guided Navigation in Dynamic Scenes.pdf:PDF},
-  groups        = {Visual-Language Learning, Autonomous Driving, Language-Augmented Robotic Control},
+  groups        = {Autonomous Driving, Language-Augmented Robotic Control, Vision-Language-Action models},
   keywords      = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences},
   primaryclass  = {cs.CV},
   ranking       = {rank1},
@@ -15441,6 +15457,7 @@ ChatGPT},
   series    = {Proceedings of Machine Learning Research},
   volume    = {202},
   abstract  = {Reinforcement learning (RL) agents typically learn tabula rasa, without prior knowledge of the world. However, if initialized with knowledge of high-level subgoals and transitions between subgoals, RL agents could utilize this Abstract World Model (AWM) for planning and exploration. We propose using few-shot large language models (LLMs) to hypothesize an AWM, that will be verified through world experience, to improve sample efficiency of RL agents. Our DECKARD agent applies LLM-guided exploration to item crafting in Minecraft in two phases: (1) the Dream phase where the agent uses an LLM to decompose a task into a sequence of subgoals, the hypothesized AWM; and (2) the Wake phase where the agent learns a modular policy for each subgoal and verifies or corrects the hypothesized AWM. Our method of hypothesizing an AWM with LLMs and then verifying the AWM based on agent experience not only increases sample efficiency over contemporary methods by an order of magnitude but is also robust to and corrects errors in the LLM, successfully blending noisy internet-scale information from LLMs with knowledge grounded in environment dynamics.},
+  groups    = {Language-Augmented Learning},
   pdf       = {https://proceedings.mlr.press/v202/nottingham23a/nottingham23a.pdf},
   url       = {https://proceedings.mlr.press/v202/nottingham23a.html},
 }
@@ -15705,7 +15722,7 @@ ChatGPT},
   pages     = {408--424},
   volume    = {8},
   doi       = {10.1111/tops.12155},
-  groups    = {Language},
+  groups    = {Language, Knowledge and Understanding},
   publisher = {Wiley},
   ranking   = {rank2},
 }
@@ -15816,15 +15833,6 @@ ChatGPT},
   priority  = {prio2},
   publisher = {Elsevier BV},
   ranking   = {rank1},
-}
-
-@Book{Frisch1993_BeeDance,
-  author    = {Frisch, Karl von},
-  publisher = {Harvard University Press},
-  title     = {The dance language and orientation of bees},
-  year      = {1993},
-  groups    = {Animal communication},
-  ranking   = {rank5},
 }
 
 @Article{Carr2016_CulturalEvoLang,
@@ -16092,6 +16100,1002 @@ ChatGPT},
   url       = {https://books.google.fr/books?id=SUA51MeG1lcC},
 }
 
+@Article{Brewer2013,
+  author    = {Brewer, Kelly and Pollock, Nancy and Wright, F. Virginia},
+  journal   = {Physical &amp; Occupational Therapy In Pediatrics},
+  title     = {Addressing the Challenges of Collaborative Goal Setting with Children and Their Families},
+  year      = {2013},
+  issn      = {1541-3144},
+  month     = may,
+  number    = {2},
+  pages     = {138--152},
+  volume    = {34},
+  doi       = {10.3109/01942638.2013.794187},
+  groups    = {Developmental psychology},
+  publisher = {Informa UK Limited},
+  ranking   = {rank2},
+}
+
+@Book{Chomsky1993_LangThought,
+  author    = {Noam Chomsky},
+  publisher = {Moyer Bell},
+  title     = {Language and Thought},
+  year      = {1993},
+  groups    = {Language},
+  ranking   = {rank4},
+  url       = {https://philpapers.org/rec/CHOLAT-2},
+}
+
+@Article{gleitman2005language,
+  author  = {Gleitman, Lila and Papafragou, Anna},
+  journal = {Cambridge handbook of thinking and reasoning},
+  title   = {Language and thought},
+  year    = {2005},
+  pages   = {633--661},
+  groups  = {Language},
+  ranking = {rank3},
+  url     = {https://philpapers.org/rec/GLELAT},
+}
+
+@InProceedings{Liu2019_MTAN,
+  author    = {Liu, Shikun and Johns, Edward and Davison, Andrew J.},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  title     = {End-To-End Multi-Task Learning With Attention},
+  year      = {2019},
+  month     = {June},
+  groups    = {Multi-Task Learning},
+  ranking   = {rank4},
+  url       = {https://openaccess.thecvf.com/content_CVPR_2019/html/Liu_End-To-End_Multi-Task_Learning_With_Attention_CVPR_2019_paper.html},
+}
+
+@Article{Mikolov2013_Embedding,
+  author        = {Mikolov, Tomas and Chen, Kai and Corrado, Greg and Dean, Jeffrey},
+  title         = {Efficient Estimation of Word Representations in Vector Space},
+  year          = {2013},
+  month         = jan,
+  abstract      = {We propose two novel model architectures for computing continuous vector representations of words from very large data sets. The quality of these representations is measured in a word similarity task, and the results are compared to the previously best performing techniques based on different types of neural networks. We observe large improvements in accuracy at much lower computational cost, i.e. it takes less than a day to learn high quality word vectors from a 1.6 billion words data set. Furthermore, we show that these vectors provide state-of-the-art performance on our test set for measuring syntactic and semantic word similarities.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.1301.3781},
+  eprint        = {1301.3781},
+  file          = {:Mikolov2013 - Efficient Estimation of Word Representations in Vector Space.pdf:PDF:http\://arxiv.org/pdf/1301.3781v3},
+  groups        = {NLP},
+  keywords      = {Computation and Language (cs.CL), FOS: Computer and information sciences},
+  primaryclass  = {cs.CL},
+  publisher     = {arXiv},
+  ranking       = {rank5},
+}
+
+@Article{Hutchinson1959,
+  author    = {Hutchinson, G. E.},
+  journal   = {The American Naturalist},
+  title     = {Homage to Santa Rosalia or Why Are There So Many Kinds of Animals?},
+  year      = {1959},
+  issn      = {1537-5323},
+  month     = may,
+  number    = {870},
+  pages     = {145--159},
+  volume    = {93},
+  doi       = {10.1086/282070},
+  groups    = {Evolution},
+  publisher = {University of Chicago Press},
+  ranking   = {rank5},
+}
+
+@Article{10.1641/0006-3568(2004)054[0101:CAFED]2.0.CO;2,
+  author   = {Day, Troy and Young, Kyle A.},
+  journal  = {BioScience},
+  title    = {{Competitive and Facilitative Evolutionary Diversification}},
+  year     = {2004},
+  issn     = {0006-3568},
+  month    = {02},
+  number   = {2},
+  pages    = {101-109},
+  volume   = {54},
+  abstract = {{A central goal of evolutionary ecology is to understand the role of different ecological processes in producing patterns of macroevolutionary diversification. Theory and empirical evidence have shown that competition between existing species can promote evolutionary diversification through ecological character displacement and, more recently, that competition may play a role both in producing species and in driving their subsequent evolutionary divergence. However, recent theory and experiments suggest that other ecological interactions, such as facilitation, may also be important in the evolutionary diversification of some taxa. Future research in this area will be invaluable in dissecting the relative roles of different ecological processes in producing and maintaining biodiversity.}},
+  doi      = {10.1641/0006-3568(2004)054[0101:CAFED]2.0.CO;2},
+  eprint   = {https://academic.oup.com/bioscience/article-pdf/54/2/101/26895223/54-2-101.pdf},
+  groups   = {Evolution},
+  ranking  = {rank2},
+  url      = {https://doi.org/10.1641/0006-3568(2004)054[0101:CAFED]2.0.CO;2},
+}
+
+@Article{Pinker1990_NaturalLang,
+  author    = {Pinker, Steven and Bloom, Paul},
+  journal   = {Behavioral and Brain Sciences},
+  title     = {Natural language and natural selection},
+  year      = {1990},
+  issn      = {1469-1825},
+  month     = dec,
+  number    = {4},
+  pages     = {707--727},
+  volume    = {13},
+  doi       = {10.1017/s0140525x00081061},
+  file      = {:Pinker1990_NaturalLang - Natural Language and Natural Selection.pdf:PDF:https\://stevenpinker.com/files/pinker/files/pinker_and_bloom_1990_natural_language.pdf},
+  groups    = {Language},
+  priority  = {prio1},
+  publisher = {Cambridge University Press (CUP)},
+  ranking   = {rank5},
+}
+
+@InProceedings{Myers2023_LangInterf,
+  author    = {Myers, Vivek and He, Andre Wang and Fang, Kuan and Walke, Homer Rich and Hansen-Estruch, Philippe and Cheng, Ching-An and Jalobeanu, Mihai and Kolobov, Andrey and Dragan, Anca and Levine, Sergey},
+  booktitle = {Proceedings of The 7th Conference on Robot Learning},
+  title     = {Goal Representations for Instruction Following: A Semi-Supervised Language Interface to Control},
+  year      = {2023},
+  editor    = {Tan, Jie and Toussaint, Marc and Darvish, Kourosh},
+  month     = {06--09 Nov},
+  pages     = {3894--3908},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {229},
+  abstract  = {Our goal is for robots to follow natural language instructions like “put the towel next to the microwave.” But getting large amounts of labeled data, i.e. data that contains demonstrations of tasks labeled with the language instruction, is prohibitive. In contrast, obtaining policies that respond to image goals is much easier, because any autonomous trial or demonstration can be labeled in hindsight with its final state as the goal. In this work, we contribute a method that taps into joint image- and goal- conditioned policies with language using only a small amount of language data. Prior work has made progress on this using vision-language models or by jointly training language-goal-conditioned policies, but so far neither method has scaled effectively to real-world robot tasks without significant human annotation. Our method achieves robust performance in the real world by learning an embedding from the labeled data that aligns language not to the goal image, but rather to the desired change between the start and goal images that the instruction corresponds to. We then train a policy on this embedding: the policy benefits from all the unlabeled data, but the aligned embedding provides an *interface* for language to steer the policy. We show instruction following across a variety of manipulation tasks in different scenes, with generalization to language instructions outside of the labeled data.},
+  groups    = {Intructions},
+  pdf       = {https://proceedings.mlr.press/v229/myers23a/myers23a.pdf},
+  url       = {https://proceedings.mlr.press/v229/myers23a.html},
+}
+
+@TechReport{Baird1993_Advantage,
+  author      = {Baird, L. C.},
+  institution = {Wright-Patterson Air Force Base},
+  title       = {Advantage updating},
+  year        = {1993},
+  number      = {WL-TR-93-1146},
+  groups      = {Value based},
+  ranking     = {rank2},
+}
+
+@InProceedings{Baird1995_ResidAlgs,
+  author    = {Baird, Leemon},
+  booktitle = {Machine Learning Proceedings 1995},
+  title     = {Residual Algorithms: Reinforcement Learning with Function Approximation},
+  year      = {1995},
+  pages     = {30--37},
+  publisher = {Elsevier},
+  doi       = {10.1016/b978-1-55860-377-6.50013-x},
+  groups    = {Value based},
+  isbn      = {9781558603776},
+  ranking   = {rank4},
+}
+
+@InBook{Jakobi1995_RealityGap,
+  author    = {Jakobi, Nick and Husbands, Phil and Harvey, Inman},
+  pages     = {704--720},
+  publisher = {Springer Berlin Heidelberg},
+  title     = {Noise and the reality gap: The use of simulation in evolutionary robotics},
+  year      = {1995},
+  isbn      = {9783540492863},
+  booktitle = {Advances in Artificial Life},
+  doi       = {10.1007/3-540-59496-5_337},
+  groups    = {Sim to Real},
+  issn      = {1611-3349},
+  ranking   = {rank4},
+}
+
+@Book{Pfeifer2006_Embodiment,
+  author    = {Pfeifer, R. and Bongard, J.},
+  publisher = {MIT Press},
+  title     = {How the Body Shapes the Way We Think: A New View of Intelligence},
+  year      = {2006},
+  isbn      = {9780262288521},
+  series    = {A Bradford Book},
+  groups    = {Embodiment},
+  url       = {https://books.google.fr/books?id=EHPMv9MfgWwC},
+}
+
+@Article{Siskind1995,
+  author    = {Siskind, Jeffrey Mark},
+  journal   = {Artificial Intelligence Review},
+  title     = {Grounding language in perception},
+  year      = {1995},
+  issn      = {1573-7462},
+  number    = {5–6},
+  pages     = {371--391},
+  volume    = {8},
+  doi       = {10.1007/bf00849726},
+  file      = {:siskind1995grounding.pdf:PDF},
+  groups    = {Symbol grounding},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank2},
+}
+
+@PhdThesis{Siskind1992_LangAcquis,
+  author = {Siskind, Jeffrey M.},
+  school = {Massachusetts Institute of Technology},
+  title  = {Naive Physics, Event Perception, Lexical Semantics, and Language Acquisition},
+  year   = {1992},
+  groups = {Symbol grounding},
+  url    = {http://hdl.handle.net/1721.1/6784},
+}
+
+@Article{Brent2001_VocDev,
+  author    = {Brent, Michael R and Siskind, Jeffrey Mark},
+  journal   = {Cognition},
+  title     = {The role of exposure to isolated words in early vocabulary development},
+  year      = {2001},
+  issn      = {0010-0277},
+  month     = sep,
+  number    = {2},
+  pages     = {B33--B44},
+  volume    = {81},
+  doi       = {10.1016/s0010-0277(01)00122-6},
+  file      = {:Brent2001 - The Role of Exposure to Isolated Words in Early Vocabulary Development.pdf:PDF:https\://engineering.purdue.edu/~qobi/papers/cognition2001.pdf},
+  groups    = {Symbol grounding},
+  publisher = {Elsevier BV},
+  ranking   = {rank3},
+}
+
+@InProceedings{Driess2023_PaLME,
+  author     = {Driess, Danny and Xia, Fei and Sajjadi, Mehdi S. M. and Lynch, Corey and Chowdhery, Aakanksha and Ichter, Brian and Wahid, Ayzaan and Tompson, Jonathan and Vuong, Quan and Yu, Tianhe and Huang, Wenlong and Chebotar, Yevgen and Sermanet, Pierre and Duckworth, Daniel and Levine, Sergey and Vanhoucke, Vincent and Hausman, Karol and Toussaint, Marc and Greff, Klaus and Zeng, Andy and Mordatch, Igor and Florence, Pete},
+  booktitle  = {Proceedings of the 40th International Conference on Machine Learning},
+  title      = {PaLM-E: An Embodied Multimodal Language Model},
+  year       = {2023},
+  editor     = {PMLR},
+  volume     = {202},
+  abstract   = {Large language models excel at a wide range of complex tasks. However, enabling general inference in the real world, e.g., for robotics problems, raises the challenge of grounding. We propose embodied language models to directly incorporate real-world continuous sensor modalities into language models and thereby establish the link between words and percepts. Input to our embodied language model are multi-modal sentences that interleave visual, continuous state estimation, and textual input encodings. We train these encodings end-to-end, in conjunction with a pre-trained large language model, for multiple embodied tasks including sequential robotic manipulation planning, visual question answering, and captioning. Our evaluations show that PaLM-E, a single large embodied multimodal model, can address a variety of embodied reasoning tasks, from a variety of observation modalities, on multiple embodiments, and further, exhibits positive transfer: the model benefits from diverse joint training across internet-scale language, vision, and visual-language domains. Our largest model, PaLM-E-562B with 562B parameters, in addition to being trained on robotics tasks, is a visual-language generalist with state-of-the-art performance on OK-VQA, and retains generalist language capabilities with increasing scale.},
+  doi        = {10.48550/ARXIV.2303.03378},
+  file       = {:Driess2023 - PaLM E_ an Embodied Multimodal Language Model.pdf:PDF},
+  groups     = {Large Language Models, Visual-and-Language Navigation, Agent-based LLMs, Vision-Language-Action models},
+  keywords   = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Robotics (cs.RO), FOS: Computer and information sciences},
+  ranking    = {rank4},
+  readstatus = {read},
+  url        = {https://proceedings.mlr.press/v202/driess23a.html},
+}
+
+@Article{Tulving2002,
+  author    = {Tulving, Endel},
+  journal   = {Annual Review of Psychology},
+  title     = {Episodic Memory: From Mind to Brain},
+  year      = {2002},
+  issn      = {1545-2085},
+  month     = feb,
+  number    = {1},
+  pages     = {1--25},
+  volume    = {53},
+  doi       = {10.1146/annurev.psych.53.100901.135114},
+  file      = {:Tulving2002 - Episodic Memory_ from Mind to Brain.pdf:PDF:https\://www.annualreviews.org/docserver/fulltext/psych/53/1/annurev.psych.53.100901.135114.pdf?expires=1729777087&id=id&accname=guest&checksum=033BC1394988AA99C27154F89C61D85E},
+  groups    = {Memory},
+  publisher = {Annual Reviews},
+  ranking   = {rank5},
+}
+
+@InProceedings{nevens-etal-2022-language,
+  author    = {Nevens, Jens and Doumen, Jonas and Van Eecke, Paul and Beuls, Katrien},
+  booktitle = {Proceedings of the 29th International Conference on Computational Linguistics},
+  title     = {Language Acquisition through Intention Reading and Pattern Finding},
+  year      = {2022},
+  address   = {Gyeongju, Republic of Korea},
+  editor    = {Calzolari, Nicoletta and Huang, Chu-Ren and Kim, Hansaem and Pustejovsky, James and Wanner, Leo and Choi, Key-Sun and Ryu, Pum-Mo and Chen, Hsin-Hsi and Donatelli, Lucia and Ji, Heng and Kurohashi, Sadao and Paggio, Patrizia and Xue, Nianwen and Kim, Seokhwan and Hahm, Younggyun and He, Zhong and Lee, Tony Kyungil and Santus, Enrico and Bond, Francis and Na, Seung-Hoon},
+  month     = oct,
+  pages     = {15--25},
+  publisher = {International Committee on Computational Linguistics},
+  abstract  = {One of AI{'}s grand challenges consists in the development of autonomous agents with communication systems offering the robustness, flexibility and adaptivity found in human languages. While the processes through which children acquire language are by now relatively well understood, a faithful computational operationalisation of the underlying mechanisms is still lacking. Two main cognitive processes are involved in child language acquisition. First, children need to reconstruct the intended meaning of observed utterances, a process called intention reading. Then, they can gradually abstract away from concrete utterances in a process called pattern finding and acquire productive schemata that generalise over form and meaning. In this paper, we introduce a mechanistic model of the intention reading process and its integration with pattern finding capacities. Concretely, we present an agent-based simulation in which an agent learns a grammar that enables them to ask and answer questions about a scene. This involves the reconstruction of queries that correspond to observed questions based on the answer and scene alone, and the generalization of linguistic schemata based on these reconstructed question-query pairs. The result is a productive grammar which can be used to map between natural language questions and queries without ever having observed the queries.},
+  file      = {:nevens-etal-2022-language - Language Acquisition through Intention Reading and Pattern Finding.pdf:PDF:https\://aclanthology.org/2022.coling-1.2.pdf},
+  groups    = {Language origins and evolution},
+  priority  = {prio1},
+  ranking   = {rank1},
+  url       = {https://aclanthology.org/2022.coling-1.2},
+}
+
+@Article{Beuls2024,
+  author    = {Beuls, Katrien and Van Eecke, Paul},
+  journal   = {Computational Linguistics},
+  title     = {Humans Learn Language from Situated Communicative Interactions. What about Machines?},
+  year      = {2024},
+  issn      = {1530-9312},
+  month     = oct,
+  pages     = {1--35},
+  doi       = {10.1162/coli_a_00534},
+  groups    = {Language origins and evolution, Language},
+  priority  = {prio2},
+  publisher = {MIT Press},
+}
+
+@Article{Felten2024,
+  author    = {Felten, Florian and Talbi, El-Ghazali and Danoy, Grégoire},
+  journal   = {Journal of Artificial Intelligence Research},
+  title     = {Multi-Objective Reinforcement Learning Based on Decomposition: A Taxonomy and Framework},
+  year      = {2024},
+  issn      = {1076-9757},
+  month     = feb,
+  pages     = {679--723},
+  volume    = {79},
+  doi       = {10.1613/jair.1.15702},
+  file      = {:15702wPg#s.pdf:PDF},
+  groups    = {Multi-Objective},
+  publisher = {AI Access Foundation},
+}
+
+@Article{Burton2024,
+  author    = {Burton, Jason W. and Lopez-Lopez, Ezequiel and Hechtlinger, Shahar and Rahwan, Zoe and Aeschbach, Samuel and Bakker, Michiel A. and Becker, Joshua A. and Berditchevskaia, Aleks and Berger, Julian and Brinkmann, Levin and Flek, Lucie and Herzog, Stefan M. and Huang, Saffron and Kapoor, Sayash and Narayanan, Arvind and Nussberger, Anne-Marie and Yasseri, Taha and Nickl, Pietro and Almaatouq, Abdullah and Hahn, Ulrike and Kurvers, Ralf H. J. M. and Leavy, Susan and Rahwan, Iyad and Siddarth, Divya and Siu, Alice and Woolley, Anita W. and Wulff, Dirk U. and Hertwig, Ralph},
+  journal   = {Nature Human Behaviour},
+  title     = {How large language models can reshape collective intelligence},
+  year      = {2024},
+  issn      = {2397-3374},
+  month     = sep,
+  number    = {9},
+  pages     = {1643--1655},
+  volume    = {8},
+  doi       = {10.1038/s41562-024-01959-9},
+  file      = {:burton-et-al-2024-nhb-llms-ci.pdf:PDF},
+  groups    = {Large Language Models},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Mitchell2023,
+  author    = {Mitchell, Melanie and Krakauer, David C.},
+  journal   = {Proceedings of the National Academy of Sciences},
+  title     = {The debate over understanding in AI’s large language models},
+  year      = {2023},
+  issn      = {1091-6490},
+  month     = mar,
+  number    = {13},
+  volume    = {120},
+  doi       = {10.1073/pnas.2215907120},
+  file      = {:mitchell-krakauer-2023-the-debate-over-understanding-in-ai-s-large-language-models.pdf:PDF},
+  groups    = {Large Language Models},
+  publisher = {Proceedings of the National Academy of Sciences},
+  ranking   = {rank2},
+}
+
+@InBook{Baumberger2016_WhatsUnderstanding,
+  author    = {Christoph Baumberger, Claus Beisbart, Georg Brun},
+  editor    = {Stephen R. Grimm, Christoph Baumberger, Sabine Ammon},
+  pages     = {34},
+  publisher = {Routledge},
+  title     = {What is Understanding? An Overview of Recent Debates in Epistemology and Philosophy of Science},
+  year      = {2016},
+  booktitle = {Explaining Understanding: New Perspectives from Epistemology and Philosophy of Science},
+  groups    = {Knowledge and Understanding},
+  ranking   = {rank2},
+  url       = {https://www.taylorfrancis.com/chapters/edit/10.4324/9781315686110-1/understanding-overview-recent-debates-epistemology-philosophy-science-christoph-baumberger-claus-beisbart-georg-brun},
+}
+
+@InProceedings{Chen2023_PaLI,
+  author    = {Xi Chen and Xiao Wang and Soravit Changpinyo and AJ Piergiovanni and Piotr Padlewski and Daniel Salz and Sebastian Goodman and Adam Grycner and Basil Mustafa and Lucas Beyer and Alexander Kolesnikov and Joan Puigcerver and Nan Ding and Keran Rong and Hassan Akbari and Gaurav Mishra and Linting Xue and Ashish V Thapliyal and James Bradbury and Weicheng Kuo and Mojtaba Seyedhosseini and Chao Jia and Burcu Karagol Ayan and Carlos Riquelme Ruiz and Andreas Peter Steiner and Anelia Angelova and Xiaohua Zhai and Neil Houlsby and Radu Soricut},
+  booktitle = {The Eleventh International Conference on Learning Representations},
+  title     = {Pa{LI}: A Jointly-Scaled Multilingual Language-Image Model},
+  year      = {2023},
+  groups    = {Vision-Language Models},
+  ranking   = {rank3},
+  url       = {https://openreview.net/forum?id=mWVoBz4W0u},
+}
+
+@Article{Qian2023,
+  author        = {Qian, Chen and Liu, Wei and Liu, Hongzhang and Chen, Nuo and Dang, Yufan and Li, Jiahao and Yang, Cheng and Chen, Weize and Su, Yusheng and Cong, Xin and Xu, Juyuan and Li, Dahai and Liu, Zhiyuan and Sun, Maosong},
+  title         = {ChatDev: Communicative Agents for Software Development},
+  year          = {2023},
+  month         = jul,
+  abstract      = {Software development is a complex task that necessitates cooperation among multiple members with diverse skills. Numerous studies used deep learning to improve specific phases in a waterfall model, such as design, coding, and testing. However, the deep learning model in each phase requires unique designs, leading to technical inconsistencies across various phases, which results in a fragmented and ineffective development process. In this paper, we introduce ChatDev, a chat-powered software development framework in which specialized agents driven by large language models (LLMs) are guided in what to communicate (via chat chain) and how to communicate (via communicative dehallucination). These agents actively contribute to the design, coding, and testing phases through unified language-based communication, with solutions derived from their multi-turn dialogues. We found their utilization of natural language is advantageous for system design, and communicating in programming language proves helpful in debugging. This paradigm demonstrates how linguistic communication facilitates multi-agent collaboration, establishing language as a unifying bridge for autonomous task-solving among LLM agents. The code and data are available at https://github.com/OpenBMB/ChatDev.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2307.07924},
+  eprint        = {2307.07924},
+  file          = {:Qian2023 - ChatDev_ Communicative Agents for Software Development.pdf:PDF:http\://arxiv.org/pdf/2307.07924v5},
+  groups        = {LLM towns},
+  keywords      = {Software Engineering (cs.SE), Computation and Language (cs.CL), Multiagent Systems (cs.MA), FOS: Computer and information sciences},
+  primaryclass  = {cs.SE},
+  publisher     = {arXiv},
+  ranking       = {rank3},
+}
+
+@Article{Zhang2023a,
+  author        = {Zhang, Yue and Li, Yafu and Cui, Leyang and Cai, Deng and Liu, Lemao and Fu, Tingchen and Huang, Xinting and Zhao, Enbo and Zhang, Yu and Chen, Yulong and Wang, Longyue and Luu, Anh Tuan and Bi, Wei and Shi, Freda and Shi, Shuming},
+  title         = {Siren's Song in the AI Ocean: A Survey on Hallucination in Large Language Models},
+  year          = {2023},
+  month         = sep,
+  abstract      = {While large language models (LLMs) have demonstrated remarkable capabilities across a range of downstream tasks, a significant concern revolves around their propensity to exhibit hallucinations: LLMs occasionally generate content that diverges from the user input, contradicts previously generated context, or misaligns with established world knowledge. This phenomenon poses a substantial challenge to the reliability of LLMs in real-world scenarios. In this paper, we survey recent efforts on the detection, explanation, and mitigation of hallucination, with an emphasis on the unique challenges posed by LLMs. We present taxonomies of the LLM hallucination phenomena and evaluation benchmarks, analyze existing approaches aiming at mitigating LLM hallucination, and discuss potential directions for future research.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution Non Commercial Share Alike 4.0 International},
+  doi           = {10.48550/ARXIV.2309.01219},
+  eprint        = {2309.01219},
+  file          = {:Zhang2023a - Siren's Song in the AI Ocean_ a Survey on Hallucination in Large Language Models.pdf:PDF:http\://arxiv.org/pdf/2309.01219v2},
+  groups        = {Hallucinations},
+  keywords      = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Computers and Society (cs.CY), Machine Learning (cs.LG), FOS: Computer and information sciences},
+  primaryclass  = {cs.CL},
+  publisher     = {arXiv},
+  ranking       = {rank3},
+}
+
+@InProceedings{Yang2024,
+  author    = {Yang, Jianing and Chen, Xuweiyi and Qian, Shengyi and Madaan, Nikhil and Iyengar, Madhavan and Fouhey, David F. and Chai, Joyce},
+  booktitle = {2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  title     = {LLM-Grounder: Open-Vocabulary 3D Visual Grounding with Large Language Model as an Agent},
+  year      = {2024},
+  month     = may,
+  pages     = {7694--7701},
+  publisher = {IEEE},
+  doi       = {10.1109/icra57147.2024.10610443},
+  groups    = {LLM-based tutoring},
+  ranking   = {rank1},
+}
+
+@Article{Tan2024,
+  author        = {Tan, Zhen and Li, Dawei and Wang, Song and Beigi, Alimohammad and Jiang, Bohan and Bhattacharjee, Amrita and Karami, Mansooreh and Li, Jundong and Cheng, Lu and Liu, Huan},
+  title         = {Large Language Models for Data Annotation: A Survey},
+  year          = {2024},
+  month         = feb,
+  abstract      = {Data annotation generally refers to the labeling or generating of raw data with relevant information, which could be used for improving the efficacy of machine learning models. The process, however, is labor-intensive and costly. The emergence of advanced Large Language Models (LLMs), exemplified by GPT-4, presents an unprecedented opportunity to automate the complicated process of data annotation. While existing surveys have extensively covered LLM architecture, training, and general applications, we uniquely focus on their specific utility for data annotation. This survey contributes to three core aspects: LLM-Based Annotation Generation, LLM-Generated Annotations Assessment, and LLM-Generated Annotations Utilization. Furthermore, this survey includes an in-depth taxonomy of data types that LLMs can annotate, a comprehensive review of learning strategies for models utilizing LLM-generated annotations, and a detailed discussion of the primary challenges and limitations associated with using LLMs for data annotation. Serving as a key guide, this survey aims to assist researchers and practitioners in exploring the potential of the latest LLMs for data annotation, thereby fostering future advancements in this critical field.},
+  archiveprefix = {arXiv},
+  copyright     = {arXiv.org perpetual, non-exclusive license},
+  doi           = {10.48550/ARXIV.2402.13446},
+  eprint        = {2402.13446},
+  file          = {:Tan2024 - Large Language Models for Data Annotation_ a Survey.pdf:PDF:http\://arxiv.org/pdf/2402.13446v2},
+  groups        = {LLM-based tutoring},
+  keywords      = {Computation and Language (cs.CL), FOS: Computer and information sciences},
+  primaryclass  = {cs.CL},
+  publisher     = {arXiv},
+  ranking       = {rank1},
+}
+
+@InProceedings{Shinn2023,
+  author    = {Shinn, Noah and Cassano, Federico and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu},
+  booktitle = {Advances in Neural Information Processing Systems},
+  title     = {Reflexion: language agents with verbal reinforcement learning},
+  year      = {2023},
+  editor    = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+  pages     = {8634--8652},
+  publisher = {Curran Associates, Inc.},
+  volume    = {36},
+  file      = {:Shinn2023 - Reflexion_ Language Agents with Verbal Reinforcement Learning.pdf:PDF:https\://proceedings.neurips.cc/paper_files/paper/2023/file/1b44b878bb782e6954cd888628510e90-Paper-Conference.pdf},
+  groups    = {Agent-based LLMs},
+  ranking   = {rank3},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2023/hash/1b44b878bb782e6954cd888628510e90-Abstract-Conference.html},
+}
+
+@Article{Chowdherry2023_PaLM,
+  author  = {Aakanksha Chowdhery and Sharan Narang and Jacob Devlin and Maarten Bosma and Gaurav Mishra and Adam Roberts and Paul Barham and Hyung Won Chung and Charles Sutton and Sebastian Gehrmann and Parker Schuh and Kensen Shi and Sasha Tsvyashchenko and Joshua Maynez and Abhishek Rao and Parker Barnes and Yi Tay and Noam Shazeer and Vinodkumar Prabhakaran and Emily Reif and Nan Du and Ben Hutchinson and Reiner Pope and James Bradbury and Jacob Austin and Michael Isard and Guy Gur-Ari and Pengcheng Yin and Toju Duke and Anselm Levskaya and Sanjay Ghemawat and Sunipa Dev and Henryk Michalewski and Xavier Garcia and Vedant Misra and Kevin Robinson and Liam Fedus and Denny Zhou and Daphne Ippolito and David Luan and Hyeontaek Lim and Barret Zoph and Alexander Spiridonov and Ryan Sepassi and David Dohan and Shivani Agrawal and Mark Omernick and Andrew M. Dai and Thanumalayan Sankaranarayana Pillai and Marie Pellat and Aitor Lewkowycz and Erica Moreira and Rewon Child and Oleksandr Polozov and Katherine Lee and Zongwei Zhou and Xuezhi Wang and Brennan Saeta and Mark Diaz and Orhan Firat and Michele Catasta and Jason Wei and Kathy Meier-Hellstern and Douglas Eck and Jeff Dean and Slav Petrov and Noah Fiedel},
+  journal = {Journal of Machine Learning Research},
+  title   = {PaLM: Scaling Language Modeling with Pathways},
+  year    = {2023},
+  number  = {240},
+  pages   = {1--113},
+  volume  = {24},
+  groups  = {Large Language Models},
+  ranking = {rank5},
+  url     = {http://jmlr.org/papers/v24/22-1144.html},
+}
+
+@InCollection{Kvanvig2018,
+  author    = {Kvanvig, Jonathan L.},
+  booktitle = {The Oxford Handbook of Reasons and Normativity},
+  publisher = {Oxford University Press},
+  title     = {Knowledge, Understanding, and Reasons for Belief},
+  year      = {2018},
+  isbn      = {9780199657889},
+  month     = {06},
+  abstract  = {{There is a deep and important intellectual predilection for reduction and simplicity, and this predilection appears nowhere more strongly than when we reflect on intellectual achievements themselves—ones that answer to our interests in truth as such, independently of any benefit or cost attached to what we find. Among these achievements are knowledge, understanding, and finding good reasons or evidence. The drive to reduce and simplify then appears, asking which of these great epistemic goods is fundamental. Here we will assess the prospects and difficulties facing reductive efforts. As we will see, the prospects for reduction are left open by the results of our discussion, but significantly dimmed as well.}},
+  doi       = {10.1093/oxfordhb/9780199657889.013.0030},
+  eprint    = {https://academic.oup.com/book/0/chapter/295008373/chapter-ag-pdf/44511990/book\_34623\_section\_295008373.ag.pdf},
+  groups    = {Knowledge and Understanding},
+  ranking   = {rank1},
+  url       = {https://doi.org/10.1093/oxfordhb/9780199657889.013.0030},
+}
+
+@Article{Keil2006,
+  author    = {Keil, Frank C.},
+  journal   = {Annual Review of Psychology},
+  title     = {Explanation and Understanding},
+  year      = {2006},
+  issn      = {1545-2085},
+  month     = jan,
+  number    = {1},
+  pages     = {227--254},
+  volume    = {57},
+  doi       = {10.1146/annurev.psych.57.102904.190100},
+  groups    = {Knowledge and Understanding},
+  publisher = {Annual Reviews},
+  ranking   = {rank4},
+}
+
+@Article{Lake2016,
+  author    = {Lake, Brenden M. and Ullman, Tomer D. and Tenenbaum, Joshua B. and Gershman, Samuel J.},
+  journal   = {Behavioral and Brain Sciences},
+  title     = {Building machines that learn and think like people},
+  year      = {2016},
+  issn      = {1469-1825},
+  month     = nov,
+  volume    = {40},
+  doi       = {10.1017/s0140525x16001837},
+  groups    = {Artificial Life, Knowledge and Understanding},
+  priority  = {prio1},
+  publisher = {Cambridge University Press (CUP)},
+  ranking   = {rank5},
+}
+
+@Article{Regt2004,
+  author    = {de Regt, Henk W.},
+  journal   = {Philosophy of Science},
+  title     = {Discussion Note: Making Sense of Understanding},
+  year      = {2004},
+  issn      = {1539-767X},
+  month     = jan,
+  number    = {1},
+  pages     = {98--109},
+  volume    = {71},
+  doi       = {10.1086/381415},
+  groups    = {Knowledge and Understanding},
+  publisher = {Cambridge University Press (CUP)},
+  ranking   = {rank2},
+}
+
+@Article{Spelke2007,
+  author    = {Spelke, Elizabeth S. and Kinzler, Katherine D.},
+  journal   = {Developmental Science},
+  title     = {Core knowledge},
+  year      = {2007},
+  issn      = {1467-7687},
+  month     = jan,
+  number    = {1},
+  pages     = {89--96},
+  volume    = {10},
+  doi       = {10.1111/j.1467-7687.2007.00569.x},
+  groups    = {Knowledge and Understanding},
+  publisher = {Wiley},
+  ranking   = {rank5},
+}
+
+@Article{Murphy1996,
+  author    = {Murphy, Gregory L.},
+  journal   = {Cognition},
+  title     = {On metaphoric representation},
+  year      = {1996},
+  issn      = {0010-0277},
+  month     = aug,
+  number    = {2},
+  pages     = {173--204},
+  volume    = {60},
+  doi       = {10.1016/0010-0277(96)00711-1},
+  groups    = {Knowledge and Understanding},
+  publisher = {Elsevier BV},
+  ranking   = {rank4},
+}
+
+@Article{Barsalou2008,
+  author    = {Barsalou, Lawrence W.},
+  journal   = {Annual Review of Psychology},
+  title     = {Grounded Cognition},
+  year      = {2008},
+  issn      = {1545-2085},
+  month     = jan,
+  number    = {1},
+  pages     = {617--645},
+  volume    = {59},
+  doi       = {10.1146/annurev.psych.59.103006.093639},
+  file      = {:Barsalou2008 - Grounded Cognition.pdf:PDF:http\://barsaloulab.org/Online_Articles/2008-Barsalou-ARP-grounded_cognition.pdf},
+  groups    = {Knowledge and Understanding},
+  publisher = {Annual Reviews},
+  ranking   = {rank5},
+}
+
+@Article{Villiers2014,
+  author    = {de Villiers, Jill G. and de Villiers, Peter A.},
+  journal   = {Topics in Language Disorders},
+  title     = {The Role of Language in Theory of Mind Development},
+  year      = {2014},
+  issn      = {0271-8294},
+  month     = oct,
+  number    = {4},
+  pages     = {313--328},
+  volume    = {34},
+  doi       = {10.1097/tld.0000000000000037},
+  groups    = {Developmental psychology, Language},
+  priority  = {prio1},
+  publisher = {Ovid Technologies (Wolters Kluwer Health)},
+  ranking   = {rank2},
+}
+
+@Article{Tomasello2000,
+  author    = {Tomasello, Michael},
+  journal   = {Pragmatics},
+  title     = {The social-pragmatic theory of word learning},
+  year      = {2000},
+  issn      = {2406-4238},
+  month     = jan,
+  pages     = {401--413},
+  doi       = {10.1075/prag.10.4.01tom},
+  groups    = {Developmental psychology, Knowledge and Understanding, Social Learning},
+  publisher = {John Benjamins Publishing Company},
+  ranking   = {rank3},
+}
+
+@Article{Gelman2009,
+  author    = {Gelman, Susan A.},
+  journal   = {Annual Review of Psychology},
+  title     = {Learning from Others: Children’s Construction of Concepts},
+  year      = {2009},
+  issn      = {1545-2085},
+  month     = jan,
+  number    = {1},
+  pages     = {115--140},
+  volume    = {60},
+  doi       = {10.1146/annurev.psych.59.103006.093659},
+  groups    = {Knowledge and Understanding, Social Learning, Developmental psychology},
+  publisher = {Annual Reviews},
+  ranking   = {rank3},
+}
+
+@Article{Norenzayan2000,
+  author    = {Norenzayan, Ara and Nisbett, Richard E.},
+  journal   = {Current Directions in Psychological Science},
+  title     = {Culture and Causal Cognition},
+  year      = {2000},
+  issn      = {1467-8721},
+  month     = aug,
+  number    = {4},
+  pages     = {132--135},
+  volume    = {9},
+  doi       = {10.1111/1467-8721.00077},
+  groups    = {Knowledge and Understanding},
+  publisher = {SAGE Publications},
+  ranking   = {rank2},
+}
+
+@Article{Trott2023,
+  author    = {Trott, Sean and Jones, Cameron and Chang, Tyler and Michaelov, James and Bergen, Benjamin},
+  journal   = {Cognitive Science},
+  title     = {Do Large Language Models Know What Humans Know?},
+  year      = {2023},
+  issn      = {1551-6709},
+  month     = jul,
+  number    = {7},
+  volume    = {47},
+  doi       = {10.1111/cogs.13309},
+  groups    = {LLM understanding},
+  publisher = {Wiley},
+  ranking   = {rank2},
+}
+
+@Article{Halliday1993,
+  author    = {Halliday, M.A.K.},
+  journal   = {Linguistics and Education},
+  title     = {Towards a language-based theory of learning},
+  year      = {1993},
+  issn      = {0898-5898},
+  month     = jan,
+  number    = {2},
+  pages     = {93--116},
+  volume    = {5},
+  doi       = {10.1016/0898-5898(93)90026-7},
+  file      = {:Halliday1993 - Towards a Language Based Theory of Learning.pdf:PDF:https\://coehuman.uodiyala.edu.iq/uploads/Coehuman%20library%20pdf/English%20library%D9%83%D8%AA%D8%A8%20%D8%A7%D9%84%D8%A7%D9%86%D9%83%D9%84%D9%8A%D8%B2%D9%8A/linguistics/HallidayLangBased.pdf},
+  groups    = {Learning},
+  publisher = {Elsevier BV},
+  ranking   = {rank5},
+}
+
+@Article{AhKing2013,
+  author    = {Ah-King, Malin and Ahnesjö, Ingrid},
+  journal   = {Evolutionary Biology},
+  title     = {The “Sex Role” Concept: An Overview and Evaluation},
+  year      = {2013},
+  issn      = {1934-2845},
+  month     = mar,
+  number    = {4},
+  pages     = {461--470},
+  volume    = {40},
+  doi       = {10.1007/s11692-013-9226-7},
+  groups    = {Sex roles},
+  publisher = {Springer Science and Business Media LLC},
+}
+
+@Article{Bubeck2023,
+  author        = {Bubeck, Sébastien and Chandrasekaran, Varun and Eldan, Ronen and Gehrke, Johannes and Horvitz, Eric and Kamar, Ece and Lee, Peter and Lee, Yin Tat and Li, Yuanzhi and Lundberg, Scott and Nori, Harsha and Palangi, Hamid and Ribeiro, Marco Tulio and Zhang, Yi},
+  title         = {Sparks of Artificial General Intelligence: Early experiments with GPT-4},
+  year          = {2023},
+  month         = mar,
+  abstract      = {Artificial intelligence (AI) researchers have been developing and refining large language models (LLMs) that exhibit remarkable capabilities across a variety of domains and tasks, challenging our understanding of learning and cognition. The latest model developed by OpenAI, GPT-4, was trained using an unprecedented scale of compute and data. In this paper, we report on our investigation of an early version of GPT-4, when it was still in active development by OpenAI. We contend that (this early version of) GPT-4 is part of a new cohort of LLMs (along with ChatGPT and Google's PaLM for example) that exhibit more general intelligence than previous AI models. We discuss the rising capabilities and implications of these models. We demonstrate that, beyond its mastery of language, GPT-4 can solve novel and difficult tasks that span mathematics, coding, vision, medicine, law, psychology and more, without needing any special prompting. Moreover, in all of these tasks, GPT-4's performance is strikingly close to human-level performance, and often vastly surpasses prior models such as ChatGPT. Given the breadth and depth of GPT-4's capabilities, we believe that it could reasonably be viewed as an early (yet still incomplete) version of an artificial general intelligence (AGI) system. In our exploration of GPT-4, we put special emphasis on discovering its limitations, and we discuss the challenges ahead for advancing towards deeper and more comprehensive versions of AGI, including the possible need for pursuing a new paradigm that moves beyond next-word prediction. We conclude with reflections on societal influences of the recent technological leap and future research directions.},
+  archiveprefix = {arXiv},
+  copyright     = {Creative Commons Attribution 4.0 International},
+  doi           = {10.48550/ARXIV.2303.12712},
+  eprint        = {2303.12712},
+  file          = {:Bubeck2023 - Sparks of Artificial General Intelligence_ Early Experiments with GPT 4.pdf:PDF:http\://arxiv.org/pdf/2303.12712v5},
+  groups        = {LLM understanding},
+  keywords      = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), FOS: Computer and information sciences},
+  primaryclass  = {cs.CL},
+  publisher     = {arXiv},
+  ranking       = {rank5},
+}
+
+@Article{Bakhtin2022,
+  author    = {Bakhtin, Anton and Brown, Noam and Dinan, Emily and Farina, Gabriele and Flaherty, Colin and Fried, Daniel and Goff, Andrew and Gray, Jonathan and Hu, Hengyuan and Jacob, Athul Paul and Komeili, Mojtaba and Konath, Karthik and Kwon, Minae and Lerer, Adam and Lewis, Mike and Miller, Alexander H. and Mitts, Sasha and Renduchintala, Adithya and Roller, Stephen and Rowe, Dirk and Shi, Weiyan and Spisak, Joe and Wei, Alexander and Wu, David and Zhang, Hugh and Zijlstra, Markus},
+  journal   = {Science},
+  title     = {Human-level play in the game ofDiplomacyby combining language models with strategic reasoning},
+  year      = {2022},
+  issn      = {1095-9203},
+  month     = dec,
+  number    = {6624},
+  pages     = {1067--1074},
+  volume    = {378},
+  doi       = {10.1126/science.ade9097},
+  groups    = {Agent-based LLMs},
+  publisher = {American Association for the Advancement of Science (AAAS)},
+  ranking   = {rank2},
+}
+
+@InProceedings{Turner2024_SeekPower,
+  author    = {Turner, Alexander Matt and Smith, Logan and Shah, Rohin and Critch, Andrew and Tadepalli, Prasad},
+  booktitle = {Proceedings of the 35th International Conference on Neural Information Processing Systems},
+  title     = {Optimal policies tend to seek power},
+  year      = {2024},
+  address   = {Red Hook, NY, USA},
+  publisher = {Curran Associates Inc.},
+  series    = {NIPS '21},
+  abstract  = {Some researchers speculate that intelligent reinforcement learning (RL) agents would be incentivized to seek resources and power in pursuit of the objectives we specify for them. Other researchers point out that RL agents need not have human-like power-seeking instincts. To clarify this discussion, we develop the first formal theory of the statistical tendencies of optimal policies. In the context of Markov decision processes (MDPs), we prove that certain environmental symmetries are sufficient for optimal policies to tend to seek power over the environment. These symmetries exist in many environments in which the agent can be shut down or destroyed. We prove that in these environments, most reward functions make it optimal to seek power by keeping a range of options available and, when maximizing average reward, by navigating towards larger sets of potential terminal states.},
+  articleno = {1766},
+  groups    = {Benchmarking RL},
+  isbn      = {9781713845393},
+  numpages  = {12},
+  ranking   = {rank2},
+}
+
+@Article{Park2024,
+  author    = {Park, Peter S. and Goldstein, Simon and O’Gara, Aidan and Chen, Michael and Hendrycks, Dan},
+  journal   = {Patterns},
+  title     = {AI deception: A survey of examples, risks, and potential solutions},
+  year      = {2024},
+  issn      = {2666-3899},
+  month     = may,
+  number    = {5},
+  pages     = {100988},
+  volume    = {5},
+  doi       = {10.1016/j.patter.2024.100988},
+  groups    = {AI Safety},
+  publisher = {Elsevier BV},
+  ranking   = {rank2},
+}
+
+@InProceedings{Nisioti2023_AutotelicMARL,
+  author    = {Nisioti, Eleni and Masquil, Elias and Hamon, Gautier and Moulin-Frier, Cl\'ement},
+  booktitle = {Proceedings of The 2nd Conference on Lifelong Learning Agents},
+  title     = {Autotelic Reinforcement Learning in Multi-Agent Environments},
+  year      = {2023},
+  editor    = {Chandar, Sarath and Pascanu, Razvan and Sedghi, Hanie and Precup, Doina},
+  month     = {22--25 Aug},
+  pages     = {137--161},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {232},
+  abstract  = {In the intrinsically motivated skills acquisition problem, the agent is set in an environment with- out any pre-defined goals and needs to acquire an open-ended repertoire of skills. To do so the agent needs to be autotelic (deriving from the Greek auto (self) and telos (end goal)): it needs to generate goals and learn to achieve them following its own intrinsic motivation rather than external supervision. Autotelic agents have so far been considered in isolation. But many applications of open-ended learning entail groups of agents. Multi-agent environments pose an additional challenge for autotelic agents: to discover and master goals that require cooperation agents must pursue them simultaneously, but they have low chances of doing so if they sample them independently. In this work, we propose a new learning paradigm for modelling such settings, the Decentralized Intrinsically Motivated Skills Acquisition Problem (Dec-IMSAP), and employ it to solve cooperative navigation tasks. First, we show that agents setting their goals independently fail to master the full diversity of goals. Then, we show that a sufficient condition for achieving this is to ensure that a group aligns its goals, i.e., the agents pursue the same cooperative goal. Our empirical analysis shows that alignment enables specialization, an efficient strategy for cooperation. Finally, we intro- duce the Goal-coordination game, a fully-decentralized emergent communication algorithm, where goal alignment emerges from the maximization of individual rewards in multi-goal cooperative environments and show that it is able to reach equal performance to a centralized training baseline that guarantees aligned goals. To our knowledge, this is the first contribution addressing the problem of intrinsically motivated multi-agent goal exploration in a decentralized training paradigm.},
+  file      = {:Nisioti2023_AutotelicMARL - Autotelic Reinforcement Learning in Multi Agent Environments.pdf:PDF:https\://proceedings.mlr.press/v232/nisioti23a/nisioti23a.pdf},
+  groups    = {Goal-Conditioned MARL},
+  pdf       = {https://proceedings.mlr.press/v232/nisioti23a/nisioti23a.pdf},
+  url       = {https://proceedings.mlr.press/v232/nisioti23a.html},
+}
+
+@Article{Shanahan2024,
+  author    = {Shanahan, Murray},
+  journal   = {Communications of the ACM},
+  title     = {Talking about Large Language Models},
+  year      = {2024},
+  issn      = {1557-7317},
+  month     = jan,
+  number    = {2},
+  pages     = {68--79},
+  volume    = {67},
+  doi       = {10.1145/3624724},
+  file      = {:Shanahan2024 - Talking about Large Language Models.pdf:PDF:https\://dl.acm.org/doi/pdf/10.1145/3624724},
+  groups    = {Large Language Models},
+  publisher = {Association for Computing Machinery (ACM)},
+  ranking   = {rank3},
+}
+
+@Book{ORegan2011_RedBell,
+  author    = {O'Regan, J.K.},
+  publisher = {Oxford University Press},
+  title     = {Why Red Doesn't Sound Like a Bell: Understanding the feel of consciousness},
+  year      = {2011},
+  isbn      = {9780199777471},
+  groups    = {Conciousness},
+  ranking   = {rank3},
+  url       = {https://books.google.fr/books?id=_4dpAgAAQBAJ},
+}
+
+@Article{O’Regan_Noë_2001,
+  author  = {O’Regan, J. Kevin and Noë, Alva},
+  journal = {Behavioral and Brain Sciences},
+  title   = {A sensorimotor account of vision and visual consciousness},
+  year    = {2001},
+  number  = {5},
+  pages   = {939–973},
+  volume  = {24},
+  doi     = {10.1017/S0140525X01000115},
+  groups  = {Conciousness},
+  ranking = {rank5},
+}
+
+@Article{Whiten2011,
+  author    = {Whiten, Andrew and Hinde, Robert A. and Laland, Kevin N. and Stringer, Christopher B.},
+  journal   = {Philosophical Transactions of the Royal Society B: Biological Sciences},
+  title     = {Culture evolves},
+  year      = {2011},
+  issn      = {1471-2970},
+  month     = apr,
+  number    = {1567},
+  pages     = {938--948},
+  volume    = {366},
+  doi       = {10.1098/rstb.2010.0372},
+  groups    = {Culture},
+  publisher = {The Royal Society},
+  ranking   = {rank3},
+}
+
+@Book{Hoppitt2013,
+  author    = {Hoppitt, William and Laland, Kevin N.},
+  publisher = {Princeton University Press},
+  title     = {Social Learning: An Introduction to Mechanisms, Methods, and Models},
+  year      = {2013},
+  isbn      = {9781400846504},
+  month     = jul,
+  doi       = {10.1515/9781400846504},
+  groups    = {Social Learning},
+  ranking   = {rank4},
+}
+
+@Article{Whiten1999,
+  author    = {Whiten, A. and Goodall, J. and McGrew, W. C. and Nishida, T. and Reynolds, V. and Sugiyama, Y. and Tutin, C. E. G. and Wrangham, R. W. and Boesch, C.},
+  journal   = {Nature},
+  title     = {Cultures in chimpanzees},
+  year      = {1999},
+  issn      = {1476-4687},
+  month     = jun,
+  number    = {6737},
+  pages     = {682--685},
+  volume    = {399},
+  doi       = {10.1038/21415},
+  groups    = {Culture},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank5},
+}
+
+@Article{Schaik2003,
+  author    = {van Schaik, Carel P. and Ancrenaz, Marc and Borgen, Gwendolyn and Galdikas, Birute and Knott, Cheryl D. and Singleton, Ian and Suzuki, Akira and Utami, Sri Suci and Merrill, Michelle},
+  journal   = {Science},
+  title     = {Orangutan Cultures and the Evolution of Material Culture},
+  year      = {2003},
+  issn      = {1095-9203},
+  month     = jan,
+  number    = {5603},
+  pages     = {102--105},
+  volume    = {299},
+  doi       = {10.1126/science.1078004},
+  groups    = {Culture},
+  publisher = {American Association for the Advancement of Science (AAAS)},
+}
+
+@Article{Fuhrmann2014,
+  author    = {Fuhrmann, Delia and Ravignani, Andrea and Marshall-Pescini, Sarah and Whiten, Andrew},
+  journal   = {Scientific Reports},
+  title     = {Synchrony and motor mimicking in chimpanzee observational learning},
+  year      = {2014},
+  issn      = {2045-2322},
+  month     = jun,
+  number    = {1},
+  volume    = {4},
+  doi       = {10.1038/srep05283},
+  groups    = {Social Learning},
+  publisher = {Springer Science and Business Media LLC},
+  ranking   = {rank2},
+}
+
+@Article{Friedlaender2011,
+  author    = {Friedlaender, Ari and Bocconcelli, Alessandro and Wiley, David and Cholewiak, Danielle and Ware, Colin and Weinrich, Mason and Thompson, Michael},
+  journal   = {Behaviour},
+  title     = {Underwater components of humpback whale bubble-net feeding behaviour},
+  year      = {2011},
+  issn      = {1568-539X},
+  number    = {5–6},
+  pages     = {575--602},
+  volume    = {148},
+  doi       = {10.1163/000579511x570893},
+  groups    = {Group behaviours},
+  publisher = {Brill},
+  ranking   = {rank2},
+}
+
+@Book{Frisch1993,
+  author    = {Frisch, Karl von},
+  publisher = {Harvard University Press},
+  title     = {The dance language and orientation of bees},
+  year      = {1993},
+  isbn      = {9780674418769},
+  month     = dec,
+  doi       = {10.4159/harvard.9780674418776},
+  groups    = {Animal communication},
+  ranking   = {rank5},
+}
+
+@Book{andersson1994sexual,
+  author    = {Andersson, M.},
+  publisher = {Princeton University Press},
+  title     = {Sexual Selection},
+  year      = {1994},
+  isbn      = {9780691000572},
+  series    = {Monographs in behavior and ecology},
+  groups    = {Sex roles},
+  lccn      = {93033276},
+  ranking   = {rank5},
+  url       = {https://books.google.fr/books?id=QV65DwAAQBAJ},
+}
+
+@Article{Rudenko2020,
+  author    = {Rudenko, Andrey and Palmieri, Luigi and Herman, Michael and Kitani, Kris M and Gavrila, Dariu M and Arras, Kai O},
+  journal   = {The International Journal of Robotics Research},
+  title     = {Human motion trajectory prediction: a survey},
+  year      = {2020},
+  issn      = {1741-3176},
+  month     = jun,
+  number    = {8},
+  pages     = {895--935},
+  volume    = {39},
+  doi       = {10.1177/0278364920917446},
+  groups    = {Navigation},
+  publisher = {SAGE Publications},
+  ranking   = {rank4},
+}
+
+@Article{Whiten2021,
+  author    = {Whiten, Andrew and Biro, Dora and Bredeche, Nicolas and Garland, Ellen C. and Kirby, Simon},
+  journal   = {Philosophical Transactions of the Royal Society B: Biological Sciences},
+  title     = {The emergence of collective knowledge and cumulative culture in animals, humans and machines},
+  year      = {2021},
+  issn      = {1471-2970},
+  month     = dec,
+  number    = {1843},
+  volume    = {377},
+  doi       = {10.1098/rstb.2020.0306},
+  groups    = {Culture},
+  publisher = {The Royal Society},
+  ranking   = {rank1},
+}
+
+@Article{McCowan2023,
+  author    = {McCowan, Brenda and Hubbard, Josephine and Walker, Lisa and Sharpe, Fred and Frediani, Jodi and Doyle, Laurance},
+  journal   = {PeerJ},
+  title     = {Interactive bioacoustic playback as a tool for detecting and exploring nonhuman intelligence: “conversing” with an Alaskan humpback whale},
+  year      = {2023},
+  issn      = {2167-8359},
+  month     = nov,
+  pages     = {e16349},
+  volume    = {11},
+  doi       = {10.7717/peerj.16349},
+  groups    = {Animal communication},
+  publisher = {PeerJ},
+}
+
+@Book{,
+  author = {Bradbury, J. W. and Vehrencamp, S. L.},
+  editor = {Sinauer Associates},
+  title  = {Principles of animal communication (Seconde Edition)},
+  year   = {2011},
+  groups = {Animal communication},
+}
+
+@Article{Payne1971,
+  author    = {Payne, Roger S. and McVay, Scott},
+  journal   = {Science},
+  title     = {Songs of Humpback Whales: Humpbacks emit sounds in long, predictable patterns ranging over frequencies audible to humans.},
+  year      = {1971},
+  issn      = {1095-9203},
+  month     = aug,
+  number    = {3997},
+  pages     = {585--597},
+  volume    = {173},
+  doi       = {10.1126/science.173.3997.585},
+  groups    = {Animal communication},
+  publisher = {American Association for the Advancement of Science (AAAS)},
+  ranking   = {rank5},
+}
+
+@InProceedings{Li2024_LGMARL,
+  author    = {Huao Li and Hossein Nourkhiz Mahjoub and Behdad Chalaki and Vaishnav Tadiparthi and Kwonjoon Lee and Ehsan Moradi Pari and Charles Michael Lewis and Katia P. Sycara},
+  booktitle = {The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+  title     = {Language Grounded Multi-agent Reinforcement Learning with Human-interpretable Communication},
+  year      = {2024},
+  file      = {:Li2024_LGMARL - Language Grounded Multi Agent Reinforcement Learning with Human Interpretable Communication.pdf:PDF:https\://openreview.net/pdf?id=DUHX779C5q},
+  groups    = {Language-Grounded Communication},
+  url       = {https://openreview.net/forum?id=DUHX779C5q},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: grouping:
@@ -16101,34 +17105,43 @@ ChatGPT},
 2 StaticGroup:Evolution Strategy\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Evolutionary RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Explainability\;2\;0\;\;\;\;;
+2 StaticGroup:AI Safety\;0\;1\;\;\;\;;
 1 StaticGroup:Biology\;0\;1\;\;\;\;;
 2 StaticGroup:Evolution\;0\;1\;\;\;\;;
+2 StaticGroup:Sex roles\;0\;1\;\;\;\;;
+2 StaticGroup:Culture\;0\;1\;\;\;\;;
+2 StaticGroup:Group behaviours\;0\;1\;\;\;\;;
 1 StaticGroup:Cognitive Science\;2\;1\;\;\;\;;
-2 StaticGroup:Human communication\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Animal communication\;2\;1\;\;\;\;;
-2 StaticGroup:Intelligence\;2\;1\;\;\;\;;
+2 StaticGroup:Human communication\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Conciousness\;0\;0\;\;\;\;;
-1 StaticGroup:Data Augmentation\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Developmental psychology\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Developmental psychology\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Intelligence\;2\;0\;\;\;\;;
+2 StaticGroup:Knowledge and Understanding\;2\;1\;\;\;\;;
+2 StaticGroup:Social Learning\;0\;1\;\;\;\;;
+2 StaticGroup:Learning\;0\;1\;\;\;\;;
 1 StaticGroup:Language\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Dialogue agents\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language for memory\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language generation with RL\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Question Answering\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Text-based environments\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Visual-Language Learning\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Vision-Language Models\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language origins and evolution\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Symbol grounding\;0\;1\;0x7c7c7cff\;\;\;;
 1 StaticGroup:Large Language Models\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Agent-based LLMs\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:LLM towns\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Language-Augmented Learning\;2\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:LLA Surveys\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Hallucinations\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:LLM-based tutoring\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:LLM understanding\;0\;1\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Language-Augmented Learning\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:LLA Surveys\;2\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:LA-L Environments\;2\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Language-Augmented Robotic Control\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:LA Reward shaping\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Intructions\;2\;0\;0x8a8a8aff\;\;\;;
-2 StaticGroup:State Descriptions\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:State Descriptions\;2\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Task Descriptions\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Actions\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Vision-Language-Action models\;2\;1\;0x8a8a8aff\;\;\;;
@@ -16136,6 +17149,7 @@ ChatGPT},
 2 StaticGroup:Computer Vision\;0\;0\;\;\;\;;
 2 StaticGroup:Confidence\;0\;1\;0x7c7c7cff\;\;\;;
 2 StaticGroup:Contrastive Learning\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Data Augmentation\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Deep Learning\;0\;1\;\;\;\;;
 2 StaticGroup:Meta-Learning\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Curriculum Learning\;0\;1\;0x8a8a8aff\;\;\;;
@@ -16180,6 +17194,7 @@ ChatGPT},
 3 StaticGroup:Equilibrium selection\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Exploration in MARL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Game theory\;0\;1\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Goal-Conditioned MARL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Graphs\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous MADRL\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Interaction Networks\;0\;1\;0x8a8a8aff\;\;\;;
@@ -16190,9 +17205,9 @@ ChatGPT},
 3 StaticGroup:Memory in MARL\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-task\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Population-based training\;0\;1\;0x8a8a8aff\;\;\;;
-3 StaticGroup:Social Learning\;0\;0\;0x8a8a8aff\;\;\;;
+3 StaticGroup:Social Learning in MARL\;0\;1\;0x8a8a8aff\;\;\;;
 1 StaticGroup:Memory\;0\;0\;0x8a8a8aff\;\;\;;
-1 StaticGroup:RL\;2\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:RL\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Benchmarking RL\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:RL Review\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Continual RL\;0\;1\;0x8a8a8aff\;\;\;;
@@ -16207,9 +17222,10 @@ ChatGPT},
 3 StaticGroup:Noisy estimates\;2\;1\;0x7c7c7cff\;\;\;;
 3 StaticGroup:Unsupervised skill discovery\;2\;1\;0x838383ff\;\;\;;
 3 StaticGroup:Planning to Explore\;2\;1\;0x838383ff\;\;\;;
+2 StaticGroup:Multi-Objective\;2\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Environments\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Generalisation in RL\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Hierarchical RL\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Generalisation in RL\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Hierarchical RL\;0\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Macro-actions\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Model based\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Latent Dynamics Model\;0\;0\;0x8a8a8aff\;\;\;;
@@ -16234,11 +17250,11 @@ ChatGPT},
 2 StaticGroup:Reward Shaping\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Implementation tricks in RL\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Zero-shot generalisation\;2\;1\;0x8a8a8aff\;\;\;;
-1 StaticGroup:Robotics\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:Robotics\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Affordances\;0\;1\;0x7c7c7cff\;\;\;;
 2 StaticGroup:Autonomous Driving\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Coverage Path Planning\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Embodiment\;2\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Embodiment\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Social embodiment\;2\;1\;0x7c7c7cff\;\;\;;
 2 StaticGroup:Human-Robot Interaction\;2\;0\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Human-robot interfaces\;2\;1\;0x7c7c7cff\;\;\;;
@@ -16246,7 +17262,7 @@ ChatGPT},
 2 StaticGroup:Imitation\;0\;1\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Information gathering\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Interactivity\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Multi-robot\;0\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Multi-robot\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Heterogeneous\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Multi-Robot Communication\;0\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:MADRL in Robotics\;0\;1\;0x8a8a8aff\;\;\;;
@@ -16254,7 +17270,7 @@ ChatGPT},
 2 StaticGroup:Navigation\;0\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Object manipulation\;2\;0\;0x8a8a8aff\;\;\;;
 2 StaticGroup:Platforms\;0\;1\;0x8a8a8aff\;\;\;;
-2 StaticGroup:Sim to Real\;2\;0\;0x8a8a8aff\;\;\;;
+2 StaticGroup:Sim to Real\;2\;1\;0x8a8a8aff\;\;\;;
 3 StaticGroup:Domain adaptation\;2\;1\;0x7c7c7cff\;\;\;;
 3 StaticGroup:Domain randomisation\;2\;1\;0x7c7c7cff\;\;\;;
 2 StaticGroup:Space Exploration\;0\;0\;0x8a8a8aff\;\;\;;
