@@ -1,0 +1,57 @@
+\chapter{Joint Intrinsic Motivation} 
+
+\section{Hyperparameters}\label{app:JIM:hpp}
+
+\begin{table}[h]
+    \centering
+    \caption{Hyperparameters used in the climbing game.}
+    \begin{tabular}{cccc}
+        \hline
+        \multirow{2}{*}{Hyperparameter}               & \multicolumn{3}{c}{Algorithm} \\ \cline{2-4} 
+                                                      & JIM & JIM 4 agents & LIM \\ \hline
+        Intrinsic reward weight $\beta$               & \multicolumn{3}{c}{1}   \\ 
+        Encoding dim $D_{\phi/\psi}$                  & 64 & 64 & 32  \\ 
+        Hidden dim $D_{hidden}$                       & 128 & 256 & 64  \\ 
+        Scaling factor $\alpha$                       & \multicolumn{3}{c}{\textbf{0.5}, $0.6$}     \\ 
+        Intrinsic reward learning rate $\alpha_{int}$ & $0.0001$ & $0.0001$, \textbf{0.0002} & $0.0001$  \\ \hline
+    \end{tabular}      
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \caption{Hyperparameters used in the cooperative box pushing scenario.}
+    \begin{tabular}{ccc}
+        \hline
+        \multirow{2}{*}{Hyperparameter}               & \multicolumn{2}{c}{Algorithm} \\ \cline{2-3} 
+                                                      & \multicolumn{1}{c}{JIM} & LIM \\ \hline
+        Intrinsic reward weight $\beta$               & \multicolumn{1}{c}{1}   & 1   \\ 
+        Encoding dim $D_{\phi/\psi}$                  & \multicolumn{1}{c}{64}  & 32  \\ 
+        Hidden dim $D_{hidden}$                       & \multicolumn{1}{c}{128} & 64  \\ 
+        Scaling factor $\alpha$                       & \multicolumn{2}{c}{$0.5$}     \\ 
+        Intrinsic reward learning rate $\alpha_{int}$ & \multicolumn{2}{c}{$0.0001$}  \\ \hline
+    \end{tabular} 
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \caption{Hyperparameters used in the coordinated placement scenario.}
+    \begin{tabular}{ccccc}
+        \hline
+        \multirow{2}{*}{Hyperparameter}               & \multicolumn{4}{c}{Algorithm}                                                                        \\ \cline{2-5} 
+                                                      & \multicolumn{1}{c}{JIM}     & \multicolumn{1}{c}{LIM}     & \multicolumn{1}{c}{JIM-LLEC} & JIM-EEC \\ \hline
+        Intrinsic reward weight $\beta$               & \multicolumn{1}{c}{1, \textbf{2}, 4} & \multicolumn{1}{c}{1, \textbf{4}, 8} & \multicolumn{1}{c}{1, \textbf{3}}     & \textbf{0.1}, 1  \\ 
+        Encoding dim $D_{\phi/\psi}$                  & \multicolumn{1}{c}{64}      & \multicolumn{1}{c}{36}      & \multicolumn{1}{c}{64}       & 64      \\ 
+        Hidden dim $D_{hidden}$                       & \multicolumn{1}{c}{512}     & \multicolumn{1}{c}{256}     & \multicolumn{1}{c}{512}      & 512     \\ 
+        Scaling factor $\alpha$                       & \multicolumn{4}{c}{$0.5$}                                                                            \\ 
+        Intrinsic reward learning rate $\alpha_{int}$ & \multicolumn{4}{c}{$0.0001$}                                                                         \\ \hline
+    \end{tabular}
+\end{table}
+
+Tables 1 to 3 present the values chosen for hyperparameters. We only list hyperparameters specific to the intrinsic reward module, as for QMIX we use the default hyperparameters described in the original paper~\citep{Rashid2018_QMIX}. When we performed some search over a specific hyperparameter, we put the list of all the values we tried and put the best one in bold. Here, we detail the different parameters presented:
+\begin{itemize}
+    \item Intrinsic reward weight $\beta$: weight of the intrinsic reward $r_i$ against the extrinsic reward $r_e$ in the reward given to agents: $r_t=r^e_t+\beta r^{int}_t$. 
+    \item Encoding dimension $D_{\phi/\psi}$: dimension of the output of the embedding networks $\phi$ and $\psi$ used in $N_{LLEC}$ and $N_{EEC}$ respectively (see Section 3).
+    \item Hidden dimension $D_{hidden}$: dimension of the hidden layers in the embedding network $\phi$ and $\psi$ used in $N_{LLEC}$ and $N_{EEC}$ respectively.
+    \item Scaling factor $\alpha$: parameter used in the definition of $N_{LLEC}$ (see Eq. (6)). It controls how much novelty gain we want agents to find between each step.
+    \item Intrinsic reward learning rate $\alpha_{int}$: learning rate used for training the intrinsic reward module.
+\end{itemize}

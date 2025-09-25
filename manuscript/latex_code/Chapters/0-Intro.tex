@@ -1,0 +1,66 @@
+
+
+\chapter{Introduction}
+
+\label{ChapterIntro} 
+
+\subsubsection{Intelligence in a Group}
+
+% artificial intelligence to MAS
+One important component of intelligence resides in the ability to behave in a group. As an individual in a group, one must be able to observe others and react to incoming information to fulfil their own objective. This may require cooperating with others or entering into conflicts. In one case or the other, the individual must be able to align their behaviour with their known capacities, personal intentions, and expected capacities and intentions of others. Learning in a group also requires specific abilities. An individual can acquire knowledge about their environment by observing it and can learn to adapt their behaviour from the results of their actions. But, it can also observe others and internalise their experiences to modify its own behaviour. However, in both cases, effective learning requires being able to assert what elements caused the observed results, and how to modify these elements to obtain different results. Specifically, in a group, any outcome can be produced by a combination of individual behaviours. Thus, learning in a group requires identifying both the impact of individual behaviours and how to combine them to achieve certain desired outcomes. 
+
+These challenges are faced by living beings. First, because being alone is often not an option. Most ecological settings include a large variety of different living beings, with both unrelated or interconnected objectives, and with different kinds of intelligence. Being able to cope with this diversity is a matter of survival. Second, because living in a group often comes with great advantages. By composing the individual's capabilities, a group can gain strength, resilience, longevity, and many other advantages that are profitable to the concerned individuals. This is common in nature, where most living beings are organised in populations of individuals sharing common biological traits, as a product of evolution. This can also take the form of social relations, with groups of individuals relying on each other to fulfil the needs of the group together. 
+
+In an attempt to model intelligence with computational tools, and without a clear definition of intelligence, nor a recipe for obtaining it, artificial intelligence research has studied the many known or presumed components of intelligence. Thus, this is no surprise that the study of groups of artificial entities is an important matter in the field. Previously mentioned aspects of individuals in groups can all be applied to artificial beings that live in environments populated with other beings. 
+So-called multi-agent systems have been developed to describe these interactions between multiple agents -- i.e., beings, artificial or natural, that live in a given environment --, and propose methods for providing them intelligent ways of behaving and learning. 
+% 
+
+\subsubsection{Groups of Artificial Intelligent Agents}
+
+While the learning part was not always preeminently considered for building artificial intelligence, it has now been widely accepted as central to the problem. Enabling artificial learning provides a mechanism for artificial agents to acquire knowledge by themselves. Without it, building artificial intelligence would require transmitting the required knowledge and reasoning capacities -- again, not clearly defined -- from humans to the lucky recipients, through any way of coding this information. Thus, for the past few decades, the field has largely focused on developing various ways of enabling computational models to learn from human-generated data or from their own experience. The latter case is the one we will concentrate on throughout this thesis. 
+
+The idea of enabling artificial agents to learn by themselves through trial-and-error is a longstanding ambition of artificial intelligence research. First because, conceptually, reproducing the way living beings learn seems both logical and extremely appealing. Second because, more practically, supervised training of intelligent agents requires time, effort -- these two, we will put anyway --, and, crucially, a lot of data describing all aspects of intelligence we are expecting. Instead, a more preferable avenue could be to define the tools that allow the emergence of intelligence and let agents learn from their experience. This is the general idea behind \textbf{reinforcement learning}, that mathematically formulates the trial-and-error problem. With reinforcement learning, agents are placed in a learning environment where they can freely experiment different series of actions. Resulting of the explored behaviours, they will receive rewards, either positive or negative, from which they will learn by modifying their behaviour. Actions that lead to larger returns will be performed more often, and conversely. The rewards define the objectives given to the agents, with positive rewards being assigned to actions that work towards the given objective. The study of reinforcement learning comprises the definition of mathematical tools allowing this process and the design of learning algorithms that use them. 
+
+To investigate how intelligence can emerge in multi-agent systems, reinforcement learning tools can be adapted to allow multiple agents to interact and learn together. This implicates a series of important challenges, all resulting from having multiple agents learning together in an environment. Agents must now handle more dynamic environments, where other agents live by their side, and observed outcomes may be independent of one's actions. But, this also provides the benefits to the group. More complex tasks can be envisioned, with simple agent combining their capacities to achieve greater results. Realistic settings where various types of entities live together can be described more precisely to try learning better agents. 
+
+
+\subsubsection{Thesis Subject: Improving Multi-Agent Learning for Robotic Settings}
+
+% MADRL
+In the last decade, deep learning techniques have been introduced in the fields of single-agent and multi-agent reinforcement learning. They have greatly increased the potential of reinforcement learning for tackling more realistic environments. \textbf{Multi-agent deep reinforcement learning} approaches have been proposed to handle the numerous challenges of multi-agent learning. But, there are still many issues remaining to solve for building efficient agents capable of interacting with other agents and with human beings. 
+
+In this thesis, we take the perspective of robotics by looking at how multi-agent learning approaches can work towards robotic applications. While robotics has always been an important drive of artificial intelligence and reinforcement learning research, there are still many challenges to overcome for learning robotic behaviour with multi-agent deep reinforcement learning. Therefore, we will explore the implications of building agents for the robotic setting, asking
+\vspace{3pt}
+\begin{center}
+    \textit{What constraints should be put on learning?}
+\end{center}
+and
+\begin{center}
+    \textit{What skills should be sought in our agents?} 
+\end{center}
+\vspace{3pt} 
+These questions have many important implications on how and agents and learning algorithms should be designed. For now, research on multi-agent deep reinforcement learning has mainly avoided these issues to focus on tackling issues of multi-agent learning and building algorithms that perform better on the existing benchmarks. While this is justified by the many problems brought by learning in a multi-agent setting, this also limits the relevance and potential of current research. Taking requirements of the robotic domain into consideration will certainly bring additional issues, but may also help focus research on the right problems. 
+
+Following this idea, our objective is to provide an analysis of the current state of research on multi-agent deep reinforcement learning algorithms and provide ways for improving them. We will focus on the cooperative setting that corresponds to most robotic applications in our daily lives, identify key challenges of these settings and possible approaches for tackling them. Consequently, we will propose two contributions for improving cooperative multi-agent learning algorithms, specifically targeting the problems of exploration and communication. 
+
+
+\subsubsection{Reading Guide}
+
+The following manuscript will be organised into four main chapters. \textbf{Chapter}~\ref{ChapterRL} presents the reinforcement learning problem and its proposed approaches. This problem and the learning tools that result from it are at the core of this work: they define the challenges we face and the solutions we can employ. Therefore, it is crucial to introduce them formally before any other matter. We start by presenting the field of reinforcement learning research, with its foundational tools and algorithms. Next, we introduce the techniques of deep learning that will be employed extensively throughout this thesis. Lastly, we present a short review of important deep reinforcement learning algorithms, focusing on the kind of approaches used in our works. 
+
+In \textbf{Chapter}~\ref{ChapterMADRL}, we present an overview of the field of multi-agent deep reinforcement learning research, from the perspective of robotics. We formally introduce the tools used in the multi-agent reinforcement learning algorithms. Then, we introduce the challenges faced in both multi-agent learning and robotic environments, looking at how they are often closely related. We then present a review of the main approaches featured in recent research on multi-agent deep reinforcement learning, describing state-of-the-art algorithms that will be used in further chapters. Finally, we propose a critical analysis of the current state of research on multi-agent deep reinforcement learning, specifically regarding problems related to robotic applications: how the field tackles these issues and what could be improved. 
+
+In \textbf{Chapter}~\ref{ChapterJIM}, we tackle the problem of multi-agent exploration. As in the single-agent case, reinforcement learning tools require efficient exploration strategies to work well, especially in environments where rewards do not provide enough guidance. We demonstrate how, in the multi-agent case, exploring locally can be inefficient as it can fail to unveil optimal joint behaviours. Thus, tackling this issue requires a specific, multi-agent strategy for exploration. We propose a method based on intrinsic motivation, that incites agents to explore new coordinated behaviours. We show that state-of-the-art approaches fail to learn highly coordinated behaviours, and can benefit from our joint intrinsic motivation method to improve their convergence properties. 
+
+Lastly, in \textbf{Chapter}~\ref{ChapterComm}, we tackle the problem of learning to communicate in multi-agent systems. A popular approach to this problem in multi-agent deep reinforcement learning is to learn differentiable emergent communication, where agents develop their own communication system through the optimisation of their reinforcement learning objectives. While this conveniently fits the gradient-based learning paradigm of deep reinforcement learning, we argue that it fails to fulfil the needs of communicating artificial agents. We instead advocate for the deployment of language-augmented agents in multi-agent robotic settings. Teaching a pre-defined language to agents provides them with multiple advantages: efficient communication, grounding of representation learning, better generalisation abilities, and interactions with humans. We propose a method for training language-augmented agents and a series of experiments to demonstrate their qualities. 
+
+
+\subsubsection{Communications and Publications}
+
+In the course of my thesis, I had multiple opportunities to share my work with other researchers and students:
+\begin{itemize}
+    \item Our work on joint intrinsic motivation, presented in Chapter~\ref{ChapterJIM}, has been \textbf{published} in the \textit{Conference on Autonomous Agents and Multi-Agent Systems (AAMAS)} in 2024 (\href{https://dl.acm.org/doi/abs/10.5555/3635637.3663214}{link}), following a preliminary presentation in the \textit{Adaptive and Learning Agents (ALA)} workshop at AAMAS 2023.
+    \item I took part in the redaction of a journal article investigating different approaches to communication in swarm robotics, the article is currently \textbf{under review} in the \textit{Philosophical Transactions of Royal Society A}.
+    \item Chapter~\ref{ChapterMADRL} was the subject of a course on multi-agent deep reinforcement learning for master's students at \textit{Sorbonne Université}.
+\end{itemize}
+In addition, our work on language-based communication, described in Chapter~\ref{ChapterComm}, is currently in preparation for a submission to a conference next January. 

@@ -1,0 +1,425 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Masters/Doctoral Thesis 
+% LaTeX Template
+% Version 2.5 (27/8/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Version 2.x major modifications by:
+% Vel (vel@latextemplates.com)
+%
+% This template is based on a template by:
+% Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+%
+% Template license:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+11pt, % The default document font size, options: 10pt, 11pt, 12pt
+%oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+english, % ngerman for German
+singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+headsepline, % Uncomment to get a line under the header
+%chapterinoneline, % Uncomment to place the chapter title next to the number on one line
+% consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+]{MastersDoctoralThesis} % The class file specifying the document structure
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+% \usepackage{mathpazo} % Use the Palatino font by default
+
+% \usepackage[backend=biber,style=authoryear,natbib=true, doi=false,  url=false, uniquename=false]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA) , maxcitenames=1
+\usepackage[backend=biber,style=apa, natbib=true, doi=false,  url=false, uniquename=false]{biblatex} 
+
+\addbibresource{mainA-G.bib} % The filename of the bibliography
+\addbibresource{mainH-M.bib}
+\addbibresource{mainN-S.bib}
+\addbibresource{mainT-Z.bib}
+
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+
+% ##############
+% M I N E 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{dsfont}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{wrapfig}
+\usepackage{svg}
+\usepackage[toc,page]{appendix}
+% \usepackage{siunitx}
+\usepackage{csquotes}
+\usepackage[htt]{hyphenat}
+\usepackage{tabularx}
+
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{20pt}
+\usepackage{tikz}
+
+% \setcounter{secnumdepth}{3}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% Make title of refs clickable with url or doi
+\newbibmacro{string+doi}[1]{%
+  \iffieldundef{doi}{\iffieldundef{url}{#1}{\href{\thefield{url}}{#1}}}{\href{http://dx.doi.org/\thefield{doi}}{#1}}}	
+\DeclareFieldFormat*{title}{\usebibmacro{string+doi}{\mkbibemph{#1}}}
+
+% M I N E 
+% ##############
+
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=2.5cm, % Inner margin
+	outer=3.8cm, % Outer margin
+	bindingoffset=.5cm, % Binding offset
+	top=1.5cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thesistitle{Improving Cooperation in Multi-agent Deep Reinforcement Learning for Mobile Robotics} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\supervisor{Dr. Faïz \textsc{Ben Amar}\\Dr. Nicolas \textsc{Bredeche}\\Dr. Jae Yun \textsc{Jun Kim}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\degree{Doctor of Philosophy} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\author{Maxime \textsc{Toquebiau}} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
+
+\subject{Artificial Intelligence} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+\keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
+\university{Sorbonne Université} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\department{\href{http://department.university.com}{}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{ECE Paris \& Institut des Systèmes Intelligents et de Robotique (ISIR)} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\faculty{} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+}
+
+
+\begin{document}
+
+
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+% \begin{titlepage}
+% \begin{center}
+
+% \vspace*{.06\textheight}
+% {\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
+% \textsc{\Large Doctoral Thesis}\\[0.5cm] % Thesis type
+
+% \HRule \\[0.4cm] % Horizontal line
+% {\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
+% \HRule \\[1.5cm] % Horizontal line
+ 
+% \begin{minipage}[t]{0.4\textwidth}
+% \begin{flushleft} \large
+% \emph{Author:}\\
+% \href{http://www.johnsmith.com}{\authorname} % Author name - remove the \href bracket to remove the link
+% \end{flushleft}
+% \end{minipage}
+% \begin{minipage}[t]{0.4\textwidth}
+% \begin{flushright} \large
+% \emph{Supervisors:} \\
+% \href{http://www.jamessmith.com}{\supname} % Supervisor name - remove the \href bracket to remove the link  
+% \end{flushright}
+% \end{minipage}\\[3cm]
+ 
+% \vfill
+
+% \large \textit{A thesis submitted in fulfillment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
+% \textit{in the}\\[0.4cm]
+% \groupname\\[2cm] % Research group name and department name
+ 
+% \vfill
+
+% {\large \today}\\[4cm] % Date
+% %\includegraphics{Logo} % University/department logo - uncomment to place it
+ 
+% \vfill
+% \end{center}
+% \end{titlepage}
+
+\begin{titlepage}
+\centering
+\vspace*{1cm}
+
+{\Huge \textbf{Improving Cooperation in Multi-agent Deep Reinforcement Learning for Mobile Robotics}}\\[1.5cm]
+
+{\Large Maxime Toquebiau}\\[2cm]
+
+
+{\large \textit{under the supervision of Faïz Ben Amar, Nicolas Bredeche, and Jae Yun Jun Kim}}\\[2cm]
+
+\large \textit{A thesis submitted in fulfillment of the requirements\\ for the degree of \degreename}\\[0.3cm]
+
+\textit{at}\\
+\textit{Institut des Systèmes Intelligents et de Robotique (ISIR), Sorbonne Université \& ECE Paris}\\[2cm]
+\textit{École doctorale Sciences mécaniques, acoustique, électronique et robotique de Paris (SMAER) - ED 391}\\[2cm]
+
+\begin{tabular}{>{\centering\arraybackslash}p{0.33\textwidth}%
+                >{\centering\arraybackslash}p{0.36\textwidth}%
+                >{\centering\arraybackslash}p{0.3\textwidth}}
+% \toprule
+% \textbf{Jury Member} & \textbf{Institution} & \textbf{Role} \\
+\midrule
+Katrien Beuls & University of Namur & Rapportrice \\
+Clément Moulin-Frier & INRIA & Rapporteur \\
+Sylvain Chevalier & Univ. Paris-Saclay, CNRS & Examinateur \\
+Aurélie Beynier & LIP6, Sorbonne Université & Examinatrice \\
+Olivier Simonin & INSA Lyon, INRIA & Examinateur \\
+Faïz Ben Amar & ISIR, Sorbonne Université & Co-directeur \\
+Nicolas Bredeche & ISIR, Sorbonne Université & Co-directeur \\
+Jae Yun Jun Kim & École Centrale d'Électronique (ECE) & Co-encadrant \\
+\bottomrule
+\end{tabular}
+
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%----------------------------------------------------------------------------------------
+
+% \begin{declaration}
+% \addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
+% \noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
+
+% \begin{itemize} 
+% \item This work was done wholly or mainly while in candidature for a research degree at this University.
+% \item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
+% \item Where I have consulted the published work of others, this is always clearly attributed.
+% \item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+% \item I have acknowledged all main sources of help.
+% \item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+% \end{itemize}
+ 
+% \noindent Signed:\\
+% \rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
+ 
+% \noindent Date:\\
+% \rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+% \end{declaration}
+
+% \cleardoublepage
+
+%----------------------------------------------------------------------------------------
+%	QUOTATION PAGE
+%----------------------------------------------------------------------------------------
+
+% \vspace*{0.2\textheight}
+
+% \noindent\enquote{\itshape Thanks to my solid academic training, today I can write hundreds of words on virtually any topic without possessing a shred of information, which is how I got a good job in journalism.}\bigbreak
+
+% \hfill Dave Barry
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+\textbf{Improving Cooperation in Multi-agent Deep Reinforcement Learning for Mobile Robotics}
+
+Multi-agent deep reinforcement learning (MADRL) algorithms propose ways of learning multi-agent behaviour in a variety of different settings. Despite significant advancements in the past decade, it still faces important challenges for learning skills required in robotic settings. This work examines the current state of MADRL, identifies some of its shortcomings, and proposes novel methods to improve the existing approaches. Specifically, the thesis focuses on two critical challenges: exploration and communication. For exploration, traditional approaches may struggle to discover optimal joint behaviours due to inefficient local exploration strategies. We introduce a method based on intrinsic motivation that encourages agents to explore new coordinated actions, thereby improving the convergence to optimal joint strategies. For tackling communication, while differentiable emergent communication is a popular approach, we argue that it may not fully meet the needs of artificial agents, especially for working towards robotic applications. We advocate for language-augmented agents to be deployed in multi-agent environments. We propose a training method for these language-augmented agents and present experiments demonstrating their effectiveness. Teaching agents a predefined language offers multiple benefits: efficient communication, grounded representation learning, enhanced generalization, and improved interaction with humans. 
+\end{abstract}
+
+\begin{FrenchAbstract}
+\addchaptertocentry{Résumé}
+\textbf{Améliorer les Stratégies de Coopération dans l'Apprentissage par Renforcement Profond Multi-Agent en Robotique Mobile}
+
+L'apprentissage par renforcement profond permet l'apprentissage de stratégies multi-agents dans divers contextes. Malgré des avancées significatives au cours de la dernière décennie, il rencontre encore d'importants défis pour l'apprentissage des compétences nécessaires dans les contextes robotiques. Ce travail examine l'état actuel du MADRL, identifie certaines de ses lacunes et propose des méthodes innovantes pour améliorer les approches existantes. La thèse se concentre sur deux défis critiques : l'exploration et la communication. Les approches d'apprentissage multi-agent reconnues ont des difficultés à découvrir des comportements conjoints optimaux en raison de stratégies d'exploration locales inefficaces. Pour résoudre ce problème, nous introduisons une méthode basée sur la motivation intrinsèque qui encourage les agents à explorer de nouvelles actions coordonnées, améliorant ainsi la convergence vers des stratégies conjointes optimales. Dans le cas de l'apprentissage de la communication, bien que la communication émergente différentiable soit une approche populaire, nous soutenons qu'elle pourrait ne pas répondre pleinement aux besoins des agents artificiels, notamment pour les applications robotiques. À la place, nous proposons d'enseigner une langue prédéfinie aux agents. Nous proposons un algorithme d'apprentissage pour enseigner un langage à des agents et présentons des expériences démontrant l'efficacité de cette approche. Ceci permet d'acquérir de multiples avantages : communication efficace, apprentissage de représentation ancré dans le langage, généralisation améliorée et interaction plus facile avec les êtres humains. 
+\end{FrenchAbstract}
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{Acknowledgements}
+\addchaptertocentry{Acknowledgments} % Add the acknowledgements to the table of contents
+Working on this thesis has been the most challenging, exciting, and enriching experience of my life. This could not have been achieved without the help of several people. 
+
+First of all, my dear supervisors. Thank you for your guidance and implication in my research. 
+
+My parents for their abundant support. Thank you for everything.
+
+The friends made along the way, both at ECE and ISIR. Thank you for your support, wise insights, and great moments spent together. 
+\end{Acknowledgements}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the main table of contents
+
+% \listoffigures % Prints the list of figures
+
+% \listoftables % Prints the list of tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{abbreviations}{} % Include a list of abbreviations (a table of two columns)
+
+\begin{tabularx}{\textwidth}{lXc}
+\textbf{ANN} & \textbf{A}rtificial \textbf{N}eural \textbf{N}etwork & \ref{sec:NN:ANN} \\
+\textbf{CLIP} & \textbf{C}ontrastive \textbf{L}anguage-\textbf{I}mage \textbf{P}re-training & \ref{sec:LAMAC:LangLearning} \\
+\textbf{CNN} & \textbf{C}onvolutional \textbf{N}eural \textbf{N}etwork & \ref{sec:NN:DeepLearning} \\
+\textbf{CTDE} & \textbf{C}entralised \textbf{T}raining with \textbf{D}ecentralised \textbf{E}xecution & \ref{sec:MAL:Paradigms} \\
+\textbf{CTE} & \textbf{C}entralised \textbf{T}raining and \textbf{E}xecution & \ref{sec:MAL:Paradigms} \\
+\textbf{(D)DPG} & (\textbf{D}eep) \textbf{D}eterministic \textbf{P}olicy \textbf{G}radient & \ref{sec:Policy:Actor-Critic}, \ref{sec:DRL:DDPG} \\
+\textbf{Dec-POMDP} & \textbf{Dec}entralised \textbf{P}artially-\textbf{O}bservable \textbf{M}arkov \textbf{D}ecision \textbf{P}rocess & \ref{sec:MAL:Dec-POMDP} \\
+\textbf{DQN} & \textbf{D}eep \textbf{Q}-\textbf{N}etwork & \ref{sec:DRL:DQN} \\
+\textbf{DTE} & \textbf{D}ecentralised \textbf{T}raining and \textbf{E}xecution & \ref{sec:MAL:Paradigms} \\
+\textbf{E3B} & \textbf{E}xploration via \textbf{E}lliptical \textbf{E}pisodic \textbf{B}onuses & \ref{sec:JIM:E3B} \\
+\textbf{EEC} & \textbf{E}pisodic \textbf{E}xploration \textbf{C}riterion & \ref{sec:JIM:DoubleTimeReward} \\
+\textbf{GRU} & \textbf{G}ated \textbf{R}ecurrent \textbf{U}nit & \ref{sec:NN:RNN} \\
+\textbf{HRI} & \textbf{H}uman-\textbf{R}obot \textbf{I}nteraction & \ref{sec:MADRL:Interaction} \\
+\textbf{IGM} & \textbf{I}ndividual-\textbf{G}lobal-\textbf{M}ax & \ref{sec:MADRL:ValueFac} \\
+\textbf{JIM} & \textbf{J}oint \textbf{I}ntrinsic \textbf{M}otivation & \ref{ChapterJIM} \\
+\textbf{KL} & \textbf{K}ullback-\textbf{L}eibler & \ref{sec:DRL:PPO} \\
+\textbf{LIM} & \textbf{L}ocal \textbf{I}ntrinsic \textbf{M}otivation & \ref{sec:JIM:ImpDetails} \\
+\textbf{LLEC} & \textbf{L}ife-\textbf{L}ong \textbf{E}xploration \textbf{C}riterion & \ref{sec:JIM:DoubleTimeReward} \\
+\textbf{LLM} & \textbf{L}arge \textbf{L}anguage \textbf{M}odel & \ref{sec:LAMAC:RW_NaturalLang} \\
+\textbf{MADDPG} & \textbf{M}ulti-\textbf{A}gent \textbf{D}eep \textbf{D}eterministic \textbf{P}olicy \textbf{G}radient & \ref{sec:MADRL:CentralCritic} \\
+\textbf{MADRL} & \textbf{M}ulti-\textbf{A}gent \textbf{D}eep \textbf{R}einforcement \textbf{L}earning & \ref{ChapterMADRL} \\
+\textbf{MAPPO} & \textbf{M}ulti-\textbf{A}gent \textbf{P}roximal \textbf{P}olicy \textbf{O}ptimisation & \ref{sec:MADRL:CentralCritic} \\
+\textbf{MAS} & \textbf{M}ulti-\textbf{A}gent \textbf{S}ystem & \ref{ChapterMADRL} \\
+\textbf{MDP} & \textbf{M}arkov \textbf{D}ecision \textbf{P}rocess & \ref{sec:RL:MDPs} \\
+\textbf{MLP} & \textbf{M}ulti-\textbf{L}ayer \textbf{P}erceptron & \ref{sec:NN:DeepLearning} \\
+\textbf{MPE} & \textbf{M}ulti-agent \textbf{P}article \textbf{E}nvrionment & \ref{sec:MADRL:Benchmark} \\
+\textbf{MSBE} & \textbf{M}ean \textbf{S}quared \textbf{B}ellman \textbf{E}rror & \ref{sec:DRL:DQN} \\
+\textbf{NovelD} & \textbf{Novel}ty \textbf{D}iversity & \ref{sec:JIM:NovelD} \\
+\textbf{POMDP} & \textbf{P}artially-\textbf{O}bservable \textbf{M}arkov \textbf{D}ecision \textbf{P}rocess & \ref{sec:MAL:Dec-POMDP} \\
+\textbf{PPO} & \textbf{P}roximal \textbf{P}olicy \textbf{O}ptimisation & \ref{sec:DRL:PPO} \\
+\textbf{RL} & \textbf{R}einforcement \textbf{L}earning & \ref{sec:RL:Intro} \\
+\textbf{RLHF} & \textbf{R}einforcement \textbf{L}earning from \textbf{H}uman \textbf{F}eedback & \ref{sec:RL:Intro} \\
+\textbf{RNN} & \textbf{R}ecurrent \textbf{N}eural \textbf{N}etwork & \ref{sec:NN:RNN} \\
+\textbf{RND} & \textbf{R}andom \textbf{N}etwork \textbf{D}istillation & \ref{sec:JIM:RND} \\
+\textbf{SAC} & \textbf{S}oft \textbf{A}ctor-\textbf{C}ritic & \ref{sec:DRL:SAC} \\
+\textbf{SMAC} & \textbf{S}tarcraft \textbf{M}ulti-\textbf{A}gent \textbf{C}hallenge & \ref{sec:MADRL:Benchmark} \\
+\textbf{TD} & \textbf{T}emporal \textbf{D}ifference & \ref{sec:RL:TD} \\
+\textbf{TD3} & \textbf{T}win \textbf{D}elayed \textbf{N}etwork \textbf{D}eep \textbf{D}eterministic \textbf{P}olicy \textbf{G}radient & \ref{sec:DRL:DDPG} \\
+\textbf{TRPO} & \textbf{T}rust \textbf{R}egion \textbf{P}olicy \textbf{O}ptimisation & \ref{sec:DRL:PPO} \\
+\textbf{VDN} & \textbf{V}alue \textbf{D}ecomposition \textbf{N}etwork & \ref{sec:MADRL:ValueFac} \\
+\end{tabularx}
+
+
+
+\end{abbreviations}
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+% \begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
+
+% % The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
+
+% % Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
+% %Constant Name & $Symbol$ & $Constant Value$ with units\\
+
+% \end{constants}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+% \begin{symbols}{lll} % Include a list of Symbols (a three column table)
+
+% % $a$ & distance & \si{\meter} \\
+% % $P$ & power & \si{\watt} (\si{\joule\per\second}) \\
+% % %Symbol & Name & Unit \\
+
+% % \addlinespace % Gap to separate the Roman symbols from the Greek
+
+% % $\omega$ & angular frequency & \si{\radian} \\
+
+% \end{symbols}
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+% \dedicatory{For/Dedicated to/To my\ldots} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\include{Chapters/0-Intro}
+\include{Chapters/1-ChapterRL}
+\include{Chapters/2-ChapterMADRL}
+\include{Chapters/3-ChapterJIM}
+\include{Chapters/4-ChapterCommunication}
+\include{Chapters/N-Conclusion}
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+
+\appendix
+
+% \include{Appendices/1-RL}
+\include{Appendices/2-JIM}
+\include{Appendices/3-LAMAC}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\printbibliography[heading=bibintoc]
+
+%----------------------------------------------------------------------------------------
+
+\end{document}  
